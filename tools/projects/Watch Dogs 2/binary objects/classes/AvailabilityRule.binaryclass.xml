@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="AvailabilityRuleParameters">
+    <object name="AvailabilityRule">
+		<field name="text_availabilityruleRuleType" type="String"/>
+		<field name="availabilityruleRuleType" type="BinHex"/>
+		<object name="RuleParameters">
+			<field name="districtDistrict" type="BinHex"/>
+			<field name="selRulesOperator" type="Enum"/>
+			<field name="progressiontagProgressionTag" type="BinHex"/>
+            <field name="availabilityrulegroupAvailabilityRuleGroup" type="BinHex"/>
+            <field name="itemsItem" type="BinHex"/>
+            <field name="selProgressionCurrency" type="Enum"/>
+            <field name="fFactor1000CurrencyTarget" type="Float"/>
+            <field name="selMissionMode" type="Enum"/>
+            <field name="playerprogressionnodeProgressionNode" type="BinHex"/>
+            <field name="selOnlineGameMode" type="Enum"/>
+            <field name="fMinDistanceBetweenPlayers" type="Float"/>
+            <field name="selDemoFlag" type="Enum"/>
+            <field name="bUseRainingRule" type="Boolean"/>
+            <field name="bUseSunnyRule" type="Boolean"/>
+            <field name="bUseTimeOfDay" type="Boolean"/>
+            <field name="bUseCustomTimeOfDayParams" type="Boolean"/>
+            <field name="bCurrentlyDayTime" type="Boolean"/>
+            <field name="bCurrentlyNightTime" type="Boolean"/>
+            <field name="missionlistFromMission" type="BinHex"/>
+            <field name="missionlistToMission" type="BinHex"/>
+            <field name="selPlayerMode" type="Enum"/>
+            <field name="missionlistMission" type="BinHex"/>
+            <field name="ulccodeULCDbObject" type="BinHex"/>
+            <field name="missionlistFromAfterMission" type="BinHex"/>
+            <field name="accessidAccessId" type="BinHex"/>
+            <field name="perkdescsinglePerkSingle" type="BinHex"/>
+            <field name="uiSkillPointCountTarget" type="UInt32"/>
+            <field name="fTimeOfDayStart" type="Float"/>
+            <field name="fTimeOfDayEnd" type="Float"/>
+			<object name="AvailabilityRules">
+			    <inherit name="AvailabilityRuleParameters"/>
+			</object>
+		</object>
+	</object>
+</class>

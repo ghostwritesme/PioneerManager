@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RemotecontrolmodulesParameters">
+	<inherit name="SharedParameters"/>
+	<object name="RemoteControlModule">
+		<field name="text_selType" type="String"/>
+		<field name="selType" type="Enum"/>
+		<object name="Object">
+			<field name="fSteeringViolentEndThreshold" type="Float"/>
+			<field name="fCooldownTime" type="Float"/>
+			<field name="fShootingRange" type="Float"/>
+			<field name="uiBatteryUsedForStun" type="Int64"/>
+			<field name="archItemArchetypeTaser" type="BinHex"/>
+			<field name="fLevel" type="Float"/>
+			<field name="fRadius" type="Float"/>
+			<field name="fDamage" type="Float"/>
+			<field name="fShockWaveSpeed" type="Float"/>
+			<field name="fImpulseStrength" type="Float"/>
+			<field name="uiBatteryUsedForExplode" type="Int64"/>
+			<field name="bUseCustomItemArchetype" type="Boolean"/>
+			<field name="text_archDropItemArchetype" type="String"/>
+			<field name="archDropItemArchetype" type="BinHex"/>
+			<field name="uiDropObjectCount" type="Int64"/>
+			<field name="uiBatteryCost" type="Int64"/>
+			<field name="vectorDropPosOffset" type="Vector3"/>
+			<field name="itemsRCObjectItemSchematics" type="BinHex"/>
+			<field name="ActionMap" type="String"/>
+			<field name="uiBatteryUsedForAttract" type="Int64"/>
+			<field name="fEscalatingSoundInputMaxDelay" type="Float"/>
+			<field name="fFoVAngleToAttractTarget" type="Float"/>
+			<object name="SoundsAndFxs">
+				<field name="sndSteeringLoopStartSound" type="BinHex"/>
+				<field name="sndSteeringLoopEndSound" type="BinHex"/>
+				<field name="sndSteeringLoopViolentEndSound" type="BinHex"/>
+				<object name="sndvarSteeringValueSoundRtpcVariable">
+					<field name="SoundId" type="BinHex"/>
+					<field name="SoundGuid" type="BinHex"/>
+				</object>
+				<field name="text_psArcFx" type="String"/>
+				<field name="psArcFx" type="BinHex"/>
+				<field name="text_psHitFx" type="String"/>
+				<field name="psHitFx" type="BinHex"/>
+				<field name="text_sndTaserSound" type="String"/>
+				<field name="sndTaserSound" type="BinHex"/>
+				<field name="matimpExplosionImpact" type="BinHex"/>
+				<field name="archItemArchetypeExplosive" type="BinHex"/>
+				<field name="text_sndExplosionSound" type="String"/>
+				<field name="sndExplosionSound" type="BinHex"/>
+				<field name="text_sndDropSound" type="String"/>
+				<field name="sndDropSound" type="BinHex"/>
+				<field name="text_sndDepletedSound" type="String"/>
+				<field name="sndDepletedSound" type="BinHex"/>
+				<field name="bUseEscalating" type="Boolean"/>
+				<object name="OneShotAttractSounds">
+					<object name="Sound">
+						<field name="text_sndAttractSound" type="String"/>
+						<field name="sndAttractSound" type="BinHex"/>
+					</object>
+				</object>
+				<object name="EscalatingAttractSoundsA">
+					<object name="Sound">
+						<field name="sndAttractSound" type="BinHex"/>
+					</object>
+				</object>
+				<object name="EscalatingAttractSoundsB">
+					<object name="Sound">
+						<field name="sndAttractSound" type="BinHex"/>
+					</object>
+				</object>
+				<object name="EscalatingAttractSoundsC">
+					<object name="Sound">
+						<field name="sndAttractSound" type="BinHex"/>
+					</object>
+				</object>
+				<object name="EscalatingAttractSoundsD">
+					<object name="Sound">
+						<field name="sndAttractSound" type="BinHex"/>
+					</object>
+				</object>
+				<object name="EscalatingAttractSoundsE">
+					<object name="Sound">
+						<field name="sndAttractSound" type="BinHex"/>
+					</object>
+				</object>
+				<object name="EscalatingAttractSoundsF">
+					<object name="Sound">
+						<field name="sndAttractSound" type="BinHex"/>
+					</object>
+				</object>
+				<object name="EscalatingAttractSoundsG">
+					<object name="Sound">
+						<field name="sndAttractSound" type="BinHex"/>
+					</object>
+				</object>
+				<object name="EscalatingAttractSoundsH">
+					<object name="Sound">
+						<field name="sndAttractSound" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+			<object name="StimsOnActivate">
+				<object name="GeneratedStims">
+					<object name="Stim">
+						<field name="stims" type="BinHex"/>
+						<field name="vectorLocalTranslationOffset" type="Vector3"/>
+						<field name="bIsPersistent" type="Boolean"/>
+					</object>
+				</object>
+			</object>
+			<object name="NegativeStimsOnAttract">
+				<field name="stims" type="BinHex"/>
+				<field name="vectorLocalTranslationOffset" type="Vector3"/>
+				<field name="bIsPersistent" type="Boolean"/>
+			</object>
+		</object>
+	</object>
+</class>

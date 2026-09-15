@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="HackablenpcprofilesetupParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bGenericResponse" type="Boolean"/>
+	<object name="Response">
+		<field name="hackednpcresponsehandleResponse" type="BinHex"/>
+	</object>
+	<object name="PossibleHackResponseSetups">
+		<object name="hackablenpchackresponsesetupHackableNPCHackResponseSetup">
+			<field name="hackablenpchackresponsesetupHackableNPCHackResponseSetup" type="BinHex"/>
+		</object>
+	</object>
+</class>

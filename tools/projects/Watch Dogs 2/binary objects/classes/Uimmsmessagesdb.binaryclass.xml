@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UimmsmessagesdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="sTag" type="BinHex"/>
+	<field name="fileImage" type="String"/>
+	<field name="fWidth" type="Float"/>
+	<field name="fHeight" type="Float"/>
+</class>

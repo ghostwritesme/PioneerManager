@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Reactionstims_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="ReactionStims">
+		<object name="AimingWithGun">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="AlertNearbyGuards">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="AlertNearbyGuardsCivilianCallout">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="AnimalCuteness">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="Arrest">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="ArrestForcedOutcomeCombat">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="ArrestForcedOutcomeFlee">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="ArrestOnGoing">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="BulletImpact">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="BulletWhiz">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="CarBreak">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="CarCrash">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="CarCrashBig">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="CarCrashBigPersistant">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="CarCrashPileup">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="CarHonk">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="CarOnOpenBridge">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="CarSiren">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="CarTakeDownBollard">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="CarTheft">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="CarTireDeflate">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="Carjacking">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="Cheer">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="CivilianPanic">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="CrimeOnGoing">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="CuriousBhv">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="DeadBody">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="DrivingVehicleHacked">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="EscalationAttract">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="Flirt">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="Greet">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="GuardSearching">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="GunShot">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="HackedEntityMalfunction">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="HitByGrenade">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="HitByProjectile">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="HitByVehicle">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="IncomingClimber">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="Insult">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="KeypadDestroyed">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="Laugh">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="LayoutBeingHacked">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="Look">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="MakeFunOf">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="MyCarAccident">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="NPCHacked">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="NPCHacked_Attrat">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="NPCHacked_Exposed">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="NPCHacked_Traitor">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="OffRoadDriving">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="ObjectCollisionNoise">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="OnCLOInterrupted">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="OnLeaderQuit">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="PacifiedCalmDown">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="Pacify">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="PeopleDie">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="PersonAttacked">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="PersonCrushed">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="PersonPushed">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="PersonWarned">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="PetAttacked">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="PetBusy">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="PetDisturbed">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="PhoneOverheat">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="Photobomb">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="PlayerIEDExplosion">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="PlayerPlayingARGame">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="PoliceVehicleHighHeat">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="Projectile">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="PuddleSplash">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="RCMalfunction">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="RCMoveOutOfContext">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="RemoteControlAttract">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="RobotAttack">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="RobotAttract">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="RobotFakeAlarm">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="RunningPeopleProximity">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="SecurityAlarm">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="SecurityAlarmNoise">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="SeeIntruder">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="SeekAttention">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="SeekAttentionEmote">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="SeekAttentionMusic">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="Sexy">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="ShopTheft">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="ShutDownMediaBroadcast">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="Silly">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="SpecialBroadcast">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="SquadVehicleHacked">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="SteamPipe">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="SteamPipeExplosion">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="Swimming">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="TakePicture">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="Threaten">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="TrafficBlockedStatus">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="TraitorThreatenExposed">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="Trapped">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="UncommonAction">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="UnholsteredGun">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="VehicleDisabled">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="VehicleEntered">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="VehicleHacked">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="VehicleStunt">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="VehicleStuntSexy">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="WakeUp">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="WaterPipe">
+			<field name="stims" type="BinHex"/>
+		</object>
+	</object>
+	<object name="PerceptionStims">
+		<object name="InCameraRecticle">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="MyCarJackingFinished">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="MyCloseObjectBroken">
+			<field name="stims" type="BinHex"/>
+		</object>
+		<object name="PerceptionStim">
+			<field name="stims" type="BinHex"/>
+		</object>
+	</object>
+	<object name="DebugManagerStims">
+		<object name="Explosion">
+			<field name="stims" type="BinHex"/>
+		</object>
+	</object>
+</class>

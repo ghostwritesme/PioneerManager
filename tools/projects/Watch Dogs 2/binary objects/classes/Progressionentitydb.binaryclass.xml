@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ProgressionentitydbParameters">
+	<inherit name="SharedParameters"/>
+	<object name="EntityProgressionItem">
+		<field name="availabilityrulegroupAvailabilityRuleGroup" type="BinHex"/>
+		<field name="bEnableGlobalIlluminationOverride" type="Boolean"/>
+		<field name="entEntityId" type="BinHex"/>
+        <field name="accessidAccessId" type="BinHex"/>
+        <field name="progressiontagProgressionTag" type="BinHex"/>
+	    <object name="EntityStateList">
+            <object name="EntityState">
+                <field name="entEntityId" type="BinHex"/>
+                <field name="bIsVisible" type="Boolean"/>
+            </object>
+        </object>
+	</object>
+</class>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UihudelementcontextsdbobjectParameters">
+	<inherit name="SharedParameters"/>
+	<field name="uielementsettingsUIElementSetting" type="BinHex"/>
+	<object name="ActivationContexts">
+		<field name="uilayoutdbobjectLayoutSetting" type="BinHex"/>
+		<field name="text_uihudcontexttypeidContext" type="String"/>
+		<field name="uihudcontexttypeidContext" type="BinHex"/>
+		<field name="uitweensettingDefaultTweenSetting" type="BinHex"/>
+		<object name="ContextualTweenSettingOverrides">
+			<object name="ContextualTweenSettingOverride">
+					<field name="text_uihudcontexttypeidFromContext" type="String"/>
+					<field name="uihudcontexttypeidFromContext" type="BinHex"/>
+					<field name="uitweensettingOverrideTweenSetting" type="BinHex"/>
+				</object>
+		</object>
+		<object name="ActivationContexts">
+			<field name="uilayoutdbobjectLayoutSetting" type="BinHex"/>
+			<field name="text_uihudcontexttypeidContext" type="String"/>
+			<field name="uihudcontexttypeidContext" type="BinHex"/>
+			<field name="uitweensettingDefaultTweenSetting" type="BinHex"/>
+			<object name="ContextualTweenSettingOverrides">
+				<object name="ContextualTweenSettingOverride">
+					<field name="text_uihudcontexttypeidFromContext" type="String"/>
+					<field name="uihudcontexttypeidFromContext" type="BinHex"/>
+					<field name="uitweensettingOverrideTweenSetting" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="DeactivationContexts">
+		<field name="text_uihudcontexttypeidDeactivationContexts" type="String"/>
+		<field name="uihudcontexttypeidDeactivationContexts" type="BinHex"/>
+		<object name="DeactivationContexts">
+			<field name="text_uihudcontexttypeidDeactivationContexts" type="String"/>
+			<field name="uihudcontexttypeidDeactivationContexts" type="BinHex"/>
+		</object>
+	</object>
+</class>

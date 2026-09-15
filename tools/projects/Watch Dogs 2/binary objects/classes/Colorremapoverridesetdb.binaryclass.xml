@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ColorremapoverridesetdbParameters">
+	<inherit name="SharedParameters"/>
+	<object name="SetItems">
+		<object name="SetItem">
+			<field name="fStartHour" type="Float"/>
+			<field name="fEndHour" type="Float"/>
+			<field name="text_fileColorRemapTexturePath" type="String"/>
+			<field name="fileColorRemapTexturePath" type="BinHex"/>
+		</object>
+	</object>
+</class>

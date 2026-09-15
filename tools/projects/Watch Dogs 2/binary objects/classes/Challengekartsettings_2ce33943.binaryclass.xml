@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Challengekartsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="PimpMyEKartProgressionTags">
+		<object name="progressiontagProgressionTag">
+			<field name="progressiontagProgressionTag" type="BinHex"/>
+		</object>
+	</object>
+</class>

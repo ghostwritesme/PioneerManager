@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehicledifferentialParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selDifferentialType" type="Enum"/>
+	<field name="fSpindDiffLSDConstant" type="Float"/>
+	<field name="fViscousDampingCoefficient" type="Float"/>
+	<object name="PowerSplit">
+		<field name="bUsingEnginePowerSplit" type="Boolean"/>
+		<field name="fFrontVersusRearEnginePowerRatio" type="Float"/>
+	</object>
+</class>

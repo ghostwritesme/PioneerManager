@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UitweensettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selTweenType" type="Enum"/>
+	<field name="fTweenDelay" type="Float"/>
+	<field name="fTweenDuration" type="Float"/>
+</class>

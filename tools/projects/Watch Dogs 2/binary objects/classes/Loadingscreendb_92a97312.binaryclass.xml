@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Loadingscreendb_92a97312Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="texturedbobjectDoomloadBackground" type="BinHex"/>
+	<field name="texturedbobjectPickupBackground" type="BinHex"/>
+	<field name="texturedbobjectProtectBackground" type="BinHex"/>
+	<object name="Backgrounds">
+		<object name="texturedbobjectBackground">
+			<field name="texturedbobjectBackground" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Videos">
+		<object name="videosVideo">
+			<field name="videosVideo" type="BinHex"/>
+		</object>
+	</object>
+</class>

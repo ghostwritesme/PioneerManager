@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="TaxiridestrategyconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fStartingRating" type="Float"/>
+	<field name="text_selType" type="String"/>
+	<field name="selType" type="Enum"/>
+	<object name="Object">
+		<field name="bShowHud" type="Boolean"/>
+		<field name="fAffectedRating" type="Float"/>
+		<field name="trfdFeedbackData" type="BinHex"/>
+		<field name="bRepeatable" type="Boolean"/>
+		<field name="fMinKmh" type="Float"/>
+		<field name="fMaxKmh" type="Float"/>
+		<field name="fMaxTimeOutOfRange" type="Float"/>
+		<field name="fMaxTimeOutOfRangeRepeatStep" type="Float"/>
+		<field name="nMaxHits" type="Int32"/>
+		<field name="nMaxHitsRepeatStep" type="Int32"/>
+		<field name="fRequiredAirTime" type="Float"/>
+		<field name="fAirTimeRepeatStep" type="Float"/>
+		<field name="fSeconds" type="Float"/>
+		<field name="fSecondsRepeatStep" type="Float"/>
+		<field name="fDistanceMultiplier" type="Float"/>
+		<field name="fDamageLimit" type="Float"/>
+		<field name="fDamageLimitRepeatStep" type="Float"/>
+		<object name="Tips">
+			<object name="Tip">
+				<object name="locstridTip">
+					<field name="LocalizationId" type="Int64"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="SecondaryStrategies">
+		<object name="Properties">
+			<field name="text_selType" type="String"/>
+			<field name="selType" type="Enum"/>
+			<object name="Object">
+				<field name="bShowHud" type="Boolean"/>
+				<field name="fAffectedRating" type="Float"/>
+				<field name="trfdFeedbackData" type="BinHex"/>
+				<field name="bRepeatable" type="Boolean"/>
+				<field name="fMinKmh" type="Float"/>
+				<field name="fMaxKmh" type="Float"/>
+				<field name="fMaxTimeOutOfRange" type="Float"/>
+				<field name="fMaxTimeOutOfRangeRepeatStep" type="Float"/>
+				<field name="nMaxHits" type="Int32"/>
+				<field name="nMaxHitsRepeatStep" type="Int32"/>
+				<field name="fRequiredAirTime" type="Float"/>
+				<field name="fAirTimeRepeatStep" type="Float"/>
+				<field name="fSeconds" type="Float"/>
+				<field name="fSecondsRepeatStep" type="Float"/>
+				<field name="fDistanceMultiplier" type="Float"/>
+				<field name="fDamageLimit" type="Float"/>
+				<field name="fDamageLimitRepeatStep" type="Float"/>
+				<object name="Tips">
+					<object name="Tip">
+						<object name="locstridTip">
+							<field name="LocalizationId" type="Int64"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PgtaispawningconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsFaaConfig" type="Boolean"/>
+    <field name="bIsDefaultConfig" type="Boolean"/>
+    <field name="reinforcementconfigDefaultReinforcementConfig" type="BinHex"/>
+    <field name="selNpcCountTargetType" type="Enum"/>
+    <field name="selIngredientCountTargetType" type="Enum"/>
+    <object name="AiEntityGroupConfigs">
+        <object name="AiEntityGroupConfigs">
+            <field name="pgtaientitygroupAiEntityGroup" type="BinHex"/>
+            <field name="nMin" type="Enum"/>
+            <field name="nMax" type="Enum"/>
+            <field name="bEnabledByDefault" type="Boolean"/>
+            <object name="AffiliationOverrides">
+			    <object name="AffiliationOverride">
+                    <field name="selAffiliation" type="Enum"/>
+                    <field name="nMin" type="Enum"/>
+                    <field name="nMax" type="Enum"/>
+                </object>
+			</object>
+        </object>
+    </object>
+</class>

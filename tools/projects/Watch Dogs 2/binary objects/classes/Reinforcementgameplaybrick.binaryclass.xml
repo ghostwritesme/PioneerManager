@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ReinforcementgameplaybrickParameters">
+	<inherit name="SharedParameters"/>
+	<field name="reinforcementconfigReinforcementConfig" type="BinHex"/>
+	<field name="selAffiliation" type="Enum"/>
+	<field name="bIsFelony" type="BinHex"/>
+	<field name="bUseReinforcementFeedback" type="Boolean"/>
+	<field name="text_sDispatchCallID" type="String"/>
+	<field name="sDispatchCallID" type="BinHex"/>
+	<field name="text_sDispatch2ndCallID" type="String"/>
+	<field name="sDispatch2ndCallID" type="BinHex"/>
+	<field name="sDispatch3rdCallID" type="BinHex"/>
+	<object name="locstridWarningHeaderLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridWarningMessageLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+</class>

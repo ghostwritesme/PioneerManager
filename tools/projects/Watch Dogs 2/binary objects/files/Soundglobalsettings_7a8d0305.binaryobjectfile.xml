@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Soundglobalsettings_7a8d0305">
+	<object name="obj">
+		<inherit name="Soundglobalsettings_7a8d0305Parameters"/>
+	</object>
+</file>

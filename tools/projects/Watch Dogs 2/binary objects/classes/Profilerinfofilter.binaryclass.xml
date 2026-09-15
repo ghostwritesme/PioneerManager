@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ProfilerinfofilterParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bUseDefaultVisualStereotypeOccupationType" type="Boolean"/>
+	<field name="bUseDefaultVisualStereotypeNoveltyFactType" type="Boolean"/>
+	<field name="criminalrecordarchetypedescCriminalRecordArchetypeDefault" type="BinHex"/>
+	<object name="OccupationTypeGenerator">
+		<object name="OccupationTypeGenerator">
+			<field name="fWeight" type="Float"/>
+			<object name="locsectionidOasisSectionId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+	<object name="NoveltyFactTypeGenerator">
+		<field name="fWeight" type="Float"/>
+		<object name="locsectionidOasisSectionId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="NoveltyFactTypeGenerator">
+			<field name="fWeight" type="Float"/>
+			<object name="locsectionidOasisSectionId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+</class>

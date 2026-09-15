@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Graphickit_modeltypesParameters">
+	<inherit name="SharedParameters"/>
+	<field name="tagconflictconfigurationTagConflictConfiguration" type="BinHex"/>
+	<field name="bIsLegacy" type="Boolean"/>
+	<object name="PartTypes">
+		<object name="PartType">
+			<field name="graphickitparttypePartType" type="BinHex"/>
+			<field name="bIsRequired" type="Boolean"/>
+			<field name="bAllowsMultiple" type="Boolean"/>
+		</object>
+	</object>
+	<object name="TagCategorySelectionBlackboardDescriptor">
+		<object name="TagCategorySelectionDescriptors">
+			<object name="TagCategorySelectionDescriptor">
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+				<field name="bMultiSelect" type="Boolean"/>
+			</object>
+		</object>
+	</object>
+	<object name="TagCategoryFilters">
+		<object name="TagCategoryFilter">
+			<field name="tagcategoryTagCategory" type="BinHex"/>
+		</object>
+	</object>
+	<object name="GraphicKitTagPropagationConfig">
+		<object name="ModelPropagationRuleList">
+			<object name="ModelPropagationRule">
+				<field name="tagcategoryModelTagCategory" type="BinHex"/>
+				<object name="PartPropagationRuleList">
+					<object name="PartPropagationRule">
+						<field name="graphickitparttypeGraphicKitPartType" type="BinHex"/>
+						<field name="bCustomTagCategoryEnabled" type="Boolean"/>
+						<field name="tagcategoryCustomPartTagCategory" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="GraphicKitTagsToArchetypeRulesSet">
+		<field name="text_archDefaultArchetype" type="String"/>
+		<field name="archDefaultArchetype" type="BinHex"/>
+		<object name="Rules">
+			<object name="Rule">
+				<field name="text_archArchetype" type="String"/>
+				<field name="archArchetype" type="BinHex"/>
+				<object name="TagSpec">
+					<object name="IncludeTags">
+						<object name="Tag">
+							<object name="tagcategoryselectionTag">
+								<field name="text_UITagCategorySelectionClassID" type="String"/>
+								<field name="UITagCategorySelectionClassID" type="BinHex"/>
+								<field name="tagcategoryUITagCategory" type="BinHex"/>
+								<field name="tagcategoryTagCategory" type="BinHex"/>
+								<field name="tagTag" type="BinHex"/>
+							</object>
+						</object>
+					</object>
+					<object name="ExcludeTags"/>
+					<object name="TagConstraintsAny"/>
+				</object>
+				<object name="Specializations"/>
+			</object>
+		</object>
+	</object>
+</class>

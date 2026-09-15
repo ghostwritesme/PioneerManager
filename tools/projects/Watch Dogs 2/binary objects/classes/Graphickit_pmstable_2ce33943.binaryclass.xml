@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Graphickit_pmstable_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Table">
+		<object name="Entry">
+			<object name="Tag">
+				<object name="tagcategoryselectionTag">
+					<field name="text_UITagCategorySelectionClassID" type="String"/>
+					<field name="UITagCategorySelectionClassID" type="BinHex"/>
+					<field name="tagcategoryUITagCategory" type="BinHex"/>
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="tagTag" type="BinHex"/>
+				</object>
+			</object>
+			<object name="PMSList">
+				<object name="PMS">
+					<field name="text_pmsPMSName" type="String"/>
+					<field name="pmsPMSName" type="BinHex"/>
+					<field name="selEnumValue" type="Enum"/>
+					<field name="bBoolValue" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

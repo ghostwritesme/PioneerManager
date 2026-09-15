@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uitagrectangularicons_3fa7a728Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="uiDefaultWidth" type="Int64"/>
+	<field name="uiDefaultHeight" type="Int64"/>
+	<object name="Keys">
+		<object name="KeyIconName">
+			<field name="KeyIconName" type="String"/>
+		</object>
+	</object>
+</class>

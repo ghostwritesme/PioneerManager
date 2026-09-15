@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PersecutiongameplaybrickParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fUnspawnDistance" type="Float"/>
+	<field name="failTimerMaxDuration" type="BinHex"/>
+	<field name="failTimerMaxDistanceWhenDurationAtZero" type="BinHex"/>
+	<field name="itemlistsProgressionReward" type="BinHex"/>
+	<field name="uiNumberOfSucceededEventToUnlockProgressionReward" type="Int64"/>
+	<field name="fDistFromEventToSwicthMode" type="Float"/>
+	<field name="fDistToDeactivateEvent" type="Float"/>
+	<field name="possyselementEventMarker" type="BinHex"/>
+	<field name="possyselementObjectiveMarker" type="BinHex"/>
+	<field name="possyselementObjectiveMarkerTeammate" type="BinHex"/>
+	<field name="possyselementObjectiveMarkerOpponent" type="BinHex"/>
+	<field name="texturedbobjectMissionModuleTextureIcon" type="BinHex"/>
+	<field name="discoverysettingsDiscoverySettings" type="BinHex"/>
+	<field name="fSearchAreaRadius" type="Float"/>
+	<field name="fMinRadiusRatioFromEventPos" type="Float"/>
+	<field name="fMaxRadiusRatioFromEventPos" type="Float"/>
+	<field name="selHowToReactToEvent" type="Enum"/>
+	<field name="fEventPropositionDisplayduration" type="Float"/>
+	<field name="bUseDistanceForEngagement" type="BinHex"/>
+	<field name="fEngagementDistFromEvent" type="Float"/>
+	<field name="fDisengagementDistFromEvent" type="Float"/>
+	<field name="selHackingConnectionColor" type="Enum"/>
+	<field name="fCheckHackableToArmFrequency" type="Float"/>
+	<field name="uiMaxElementToArm" type="Int64"/>
+	<field name="fMaxDistWithHacker" type="Float"/>
+	<field name="fMaxDistBetweenPlayerAndHackableToArm" type="Float"/>
+	<field name="fMaxDistBetweenPlayerAndHackableToDisarm" type="Float"/>
+	<field name="fMaxDistBetweenPlayerAndHackableToEnable" type="Float"/>
+	<field name="fMaxDistBetweenPlayerAndHackableToEnableForLight" type="Float"/>
+	<field name="fMinDistBetweenHackerAndHackableToEnable" type="Float"/>
+	<field name="fMinDistBetweenHackerAndDangerousHackable" type="Float"/>
+	<field name="fDelayToEnableHackable" type="Float"/>
+	<field name="bEnableWhenHackableBehindHacker" type="Boolean"/>
+	<field name="fMinDistBetweenPlayerAndHackableWhenWantToArm" type="Float"/>
+	<field name="vehiclebhvsetupVehicleGoToBhvSetup" type="BinHex"/>
+	<field name="vehiclebhvsetupVehicleWanderBhvSetup" type="BinHex"/>
+	<field name="vehiclebhvsetupVehicleFleeBhvSetup" type="BinHex"/>
+	<field name="vehiclebhvsetupVehicleGoAwayBhvSetup" type="BinHex"/>
+	<field name="vehiclebhvsetupVehicleStopBhvSetup" type="BinHex"/>
+	<field name="fPlayerReachRadius" type="Float"/>
+	<field name="fMinDistToGoToSecondPlayer" type="Float"/>
+	<field name="phonecommunicationsettingsPhoneCommunicationSettings" type="BinHex"/>
+	<field name="fTriggerTeamSpeakRadius" type="Float"/>
+	<field name="fMinDistFromEntityToFleeTo" type="Float"/>
+	<field name="bSendTrackingEvent" type="Boolean"/>
+	<field name="bShouldOverrideHackerSettings" type="Boolean"/>
+	<field name="fDelayBeforeSearchStart" type="Float"/>
+	<field name="selAffiliation" type="Enum"/>
+	<field name="fMinDistWithHackerToStart" type="Float"/>
+	<field name="fMaxDistWithHackerToStart" type="Float"/>
+	<field name="uiMinCivilianCountToStart" type="Int64"/>
+	<field name="searchingZoneEndRadius" type="BinHex"/>
+	<field name="searchingZoneDecreaseDuration" type="BinHex"/>
+	<field name="fHackerMaxDistPercentOfCenterToMoveSearchArea" type="Float"/>
+	<field name="fRepositionningSpeedWhenMoveSearchArea" type="Float"/>
+	<field name="fTurnBackDistFromPlayer" type="Float"/>
+	<field name="fTurnBackCheckDelay" type="Float"/>
+	<field name="bCanHideInVehicle" type="Boolean"/>
+	<field name="fGotoInVehicleSpeed" type="Float"/>
+	<field name="fStayInVehicleDuration" type="Float"/>
+	<field name="hackerSound" type="BinHex"/>
+	<field name="fMinDelayToIdentifyHackerWhenNetHack" type="Float"/>
+	<field name="fSuspiciousCoolDownDuration" type="Float"/>
+	<field name="fSuspiciousFastSpeedTimerDuration" type="Float"/>
+	<field name="fSuspiciousFastSpeedMoveSpeed" type="Float"/>
+	<field name="fDetectHackerIfTooNearDistance" type="Float"/>
+	<field name="fDetectHackerIfTooNearDelay" type="Float"/>
+	<field name="fReduceSearchRadiusDuration" type="Float"/>
+	<field name="bIsDisplayMarkerDuringSearch" type="Boolean"/>
+	<field name="fEventFailMessageDuration" type="Float"/>
+	<field name="fEventCompletedMessageDuration" type="Float"/>
+	<field name="fDuration" type="Float"/>
+	<field name="phonecommunicationsettingsHelperPhoneCommunicationSettings" type="BinHex"/>
+	<field name="bUseNetEffect" type="Boolean" />
+	<object name="locstridTutorialUseNetHackMessageLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridTutorialUseNetHackMessageWhenInCarLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridWarningMessageWhenQuitSearchAreaLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridWarningMessageHeaderWhenQuitSearchAreaLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEventPropositionTitleLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEventPropositionDescriptionLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEventPropositionInputActionLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEventPropositionInputActionLocIdPCSpecific">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEventFailedAIEscapedLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEventAbortedByAnotherPlayerLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="IAHackingLineSettings">
+		<field name="fileLineTexture" type="BinHex"/>
+		<field name="fWorldOffset" type="Float"/>
+		<field name="fTimedLineDuration" type="Float"/>
+		<object name="curveLineWidthOverDist">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="ProfilerSettings">
+		<field name="profilerinfofilterProfileFilter" type="BinHex"/>
+		<field name="fileProfilerThumbnailOverride" type="BinHex"/>
+		<field name="vectorProfilerSquareTargetOffset" type="Vector3"/>
+		<field name="vectorProfilerLineTargetOffset" type="Vector3"/>
+		<field name="bIsProfilerSticky" type="Boolean"/>
+		<field name="selProfileColorTypeOverride" type="Enum"/>
+		<object name="locsectionidProfile">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="IconLocations"/>
+		<object name="TargetingBoneNames"/>
+	</object>
+	<object name="VehicleDescriptor">
+		<field name="bAllowInInterior" type="Boolean"/>
+		<field name="bExcluseToplessCar" type="Boolean"/>
+		<field name="bAllowDamagedVehicle" type="Boolean"/>
+		<object name="TagSpec">
+			<object name="IncludeTags"/>
+			<object name="ExcludeTags"/>
+			<object name="TagConstraintsAny"/>
+		</object>
+		<object name="TagSpecDbs">
+			<object name="TagSpecDbs">
+				<field name="graphickittagspecTagSpec" type="BinHex"/>
+			</object>
+		</object>
+		<object name="VehicleTypesAllowed">
+			<object name="Flags">
+				<field name="bAgile" type="Boolean"/>
+				<field name="bBike" type="Boolean"/>
+				<field name="bBoat" type="Boolean"/>
+				<field name="bHeavy" type="Boolean"/>
+				<field name="bHelicopter" type="Boolean"/>
+				<field name="bMuscle" type="Boolean"/>
+				<field name="bOffroad" type="Boolean"/>
+				<field name="bSpeed" type="Boolean"/>
+				<field name="bTraffic" type="Boolean"/>
+				<field name="bCar" type="Boolean"/>
+				<field name="bVan" type="Boolean"/>
+				<field name="bTruck" type="Boolean"/>
+				<field name="bBus" type="Boolean"/>
+				<field name="bPolice" type="Boolean"/>
+				<field name="bFire" type="Boolean"/>
+				<field name="bAmbulance" type="Boolean"/>
+				<field name="bTaxi" type="Boolean"/>
+				<field name="bNews" type="Boolean"/>
+				<field name="bLimo" type="Boolean"/>
+				<field name="bServiceVehicle" type="Boolean"/>
+				<field name="bRail" type="Boolean"/>
+				<field name="bToyCar" type="Boolean"/>
+				<field name="bScissorLift" type="Boolean"/>
+				<field name="bFlyingDrone" type="Boolean"/>
+				<field name="bArmoredCar" type="Boolean"/>
+				<field name="bKart" type="BinHex"/>
+				<field name="bATV" type="BinHex"/>
+			</object>
+		</object>
+		<object name="VehicleTypesBanned">
+			<object name="Flags">
+				<field name="bAgile" type="Boolean"/>
+				<field name="bBike" type="Boolean"/>
+				<field name="bBoat" type="Boolean"/>
+				<field name="bHeavy" type="Boolean"/>
+				<field name="bHelicopter" type="Boolean"/>
+				<field name="bMuscle" type="Boolean"/>
+				<field name="bOffroad" type="Boolean"/>
+				<field name="bSpeed" type="Boolean"/>
+				<field name="bTraffic" type="Boolean"/>
+				<field name="bCar" type="Boolean"/>
+				<field name="bVan" type="Boolean"/>
+				<field name="bTruck" type="Boolean"/>
+				<field name="bBus" type="Boolean"/>
+				<field name="bPolice" type="Boolean"/>
+				<field name="bFire" type="Boolean"/>
+				<field name="bAmbulance" type="Boolean"/>
+				<field name="bTaxi" type="Boolean"/>
+				<field name="bNews" type="Boolean"/>
+				<field name="bLimo" type="Boolean"/>
+				<field name="bServiceVehicle" type="Boolean"/>
+				<field name="bRail" type="Boolean"/>
+				<field name="bToyCar" type="Boolean"/>
+				<field name="bScissorLift" type="Boolean"/>
+				<field name="bFlyingDrone" type="Boolean"/>
+				<field name="bArmoredCar" type="Boolean"/>
+				<field name="bKart" type="BinHex"/>
+				<field name="bATV" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="ReduceSearchRadiusSize">
+		<field name="fLevel" type="Float"/>
+		<field name="fRatio" type="Float"/>
+		<object name="ReduceSearchRadiusSize">
+			<field name="fLevel" type="Float"/>
+			<field name="fRatio" type="Float"/>
+		</object>
+	</object>
+	<object name="locstridWarningMessageLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridWarningHeaderLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEventLocateHackerLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEventNeutralizeHackerLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEventReachZoneLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEventHelpToFindHackerLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEventCompletedLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEventNeutralizeHackerMarkerLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridTipDuringNetHackLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridRemoteNotificationMiddleTextP2LocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridRemoteNotificationBottomTextP2LocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridFailReasonPlayerDeadMessageLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridFailReasonPlayerDisengagementMessageLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridFailReasonDownloadCompletedLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridHelperDownloadTitleLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+</class>

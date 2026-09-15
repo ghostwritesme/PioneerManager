@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Versusshowdownteamamatchingsessionconfig_a8afc8d5Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fWeight" type="Float"/>
+	<field name="fScoreOffset" type="Float"/>
+	<object name="MergingLogicStrategiesConfig">
+		<inherit name="SharedParameters"/>
+		<object name="CandidateMergeLogicConfig">
+			<inherit name="SharedParameters"/>
+			<field name="fSeamlessStrategyTime" type="Float"/>
+			<field name="fLowImpactStrategyTime" type="Float"/>
+			<field name="fHighImpactStrategyTime" type="Float"/>
+		</object>
+		<object name="ParticipantMergeLogicConfig">
+			<inherit name="SharedParameters"/>
+			<field name="fSeamlessStrategyTime" type="Float"/>
+			<field name="fLowImpactStrategyTime" type="Float"/>
+			<field name="fHighImpactStrategyTime" type="Float"/>
+		</object>
+	</object>
+	<object name="AvailabilityConfig">
+		<inherit name="SharedParameters"/>
+		<field name="fWeight" type="Float"/>
+		<field name="fScoreOffset" type="Float"/>
+		<field name="selOnlineActivityType" type="Enum"/>
+		<field name="selAttractedToType" type="Enum"/>
+		<field name="selLocomotionType" type="Enum"/>
+		<field name="selAttractedToLocomotionType" type="Enum"/>
+	</object>
+</class>

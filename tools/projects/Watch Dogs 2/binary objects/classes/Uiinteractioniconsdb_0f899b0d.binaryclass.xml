@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uiinteractioniconsdb_0f899b0dParameters">
+	<inherit name="SharedParameters"/>
+	<field name="mapicondescGeneric" type="BinHex"/>
+	<field name="mapicondescCash" type="BinHex"/>
+	<field name="mapicondescAmmo" type="BinHex"/>
+	<field name="mapicondescWeapon" type="BinHex"/>
+	<field name="mapicondescClothingShop" type="BinHex"/>
+	<field name="mapicondescPawnShop" type="BinHex"/>
+	<field name="mapicondescCarDealership" type="BinHex"/>
+	<field name="mapicondescThreeDPrinter" type="BinHex"/>
+	<field name="mapicondescSailBoat" type="BinHex"/>
+	<field name="mapicondescDroneRace" type="BinHex"/>
+	<field name="mapicondescEKartRace" type="BinHex"/>
+	<field name="mapicondescBikeRace" type="BinHex"/>
+	<field name="mapicondescPickup" type="BinHex"/>
+	<field name="mapicondescTalker" type="BinHex"/>
+	<field name="mapicondescSleep" type="BinHex"/>
+	<field name="mapicondescKiosk" type="BinHex"/>
+	<field name="mapicondescBounty" type="BinHex"/>
+	<field name="mapicondescCOOP" type="BinHex"/>
+	<field name="mapicondescOnlineHacking" type="BinHex"/>
+	<field name="mapicondescYachtShop" type="BinHex"/>
+	<field name="mapicondescEKartStory" type="BinHex"/>
+	<field name="mapicondescHack" type="BinHex"/>
+	<field name="mapicondescCoffeeShop" type="BinHex"/>
+	<field name="mapicondescBar" type="BinHex"/>
+	<field name="mapicondescRestaurant" type="BinHex"/>
+	<field name="mapicondescTimeTrialRace" type="BinHex"/>
+	<field name="mapicondescCombatRobot" type="BinHex"/>
+</class>

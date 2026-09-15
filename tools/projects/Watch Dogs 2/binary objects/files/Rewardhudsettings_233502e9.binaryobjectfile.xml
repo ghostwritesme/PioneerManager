@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Rewardhudsettings_233502e9">
+	<object name="obj">
+		<inherit name="Rewardhudsettings_233502e9Parameters"/>
+	</object>
+</file>

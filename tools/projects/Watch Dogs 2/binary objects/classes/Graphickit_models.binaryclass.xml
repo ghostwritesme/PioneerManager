@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Graphickit_modelsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="graphickitmodeltypeGraphicKitModelType" type="BinHex"/>
+	<field name="bAllowMetricsTracking" type="Boolean"/>
+	<field name="bIsConsiredForSkeletonMerge" type="Boolean"/>
+	<object name="Parts">
+		<object name="Part">
+			<field name="hidVersion" type="BinHex"/>
+			<field name="uniqueidnocopyUniqueID" type="BinHex"/>
+			<field name="graphickitpartPart" type="BinHex"/>
+			<field name="selPoseDefinitionId" type="BinHex"/>
+			<field name="text_selPoseDefinitionPathID" type="String"/>
+			<field name="selPoseDefinitionPathID" type="BinHex"/>
+			<field name="facialposedefinitionExtraFacialPoseDefinition" type="BinHex"/>
+			<field name="text_selVisualModelOverride" type="String"/>
+			<field name="selVisualModelOverride" type="BinHex"/>
+			<object name="BoneAnchor">
+				<field name="text_selBoneName" type="String"/>
+				<field name="selBoneName" type="Enum"/>
+				<field name="vectorTranslation" type="Vector3"/>
+				<field name="angvecRotation" type="Vector3"/>
+				<field name="vectorNonUniformScale" type="Vector3"/>
+			</object>
+		</object>
+	</object>
+	<object name="tagcategoryselectionblackboardoverrideTagCategorySelectionBlackboardOverride">
+		<object name="TagCategorySelectionOverrideArray">
+			<object name="TagCategoryOverrideSelection">
+				<field name="text_hid_DTCTH_ClassName" type="String"/>
+				<field name="hid_DTCTH_ClassName" type="BinHex"/>
+				<field name="bInheritSource" type="Boolean"/>
+				<object name="OverrideTagCategorySelection">
+					<field name="text_hid_DTCTH_ClassName" type="String"/>
+					<field name="hid_DTCTH_ClassName" type="BinHex"/>
+					<field name="text_UITagCategorySelectionClassID" type="String"/>
+					<field name="UITagCategorySelectionClassID" type="BinHex"/>
+					<field name="tagcategoryUITagCategory" type="BinHex"/>
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<object name="Tags">
+						<object name="Tag">
+							<field name="tagTag" type="BinHex"/>
+						</object>
+					</object>
+					<field name="tagTag" type="BinHex"/>
+				</object>
+				<object name="ExcludedTags">
+					<object name="ExcludedTag">
+				  		<field name="ExcludedTag" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="TagCategorySelectionBlackboardSourceUI">
+			<field name="text_hid_DTCTH_ClassName" type="String"/>
+			<field name="hid_DTCTH_ClassName" type="BinHex"/>
+			<object name="TagCategorySelectionArray">
+				<object name="TagCategorySelection">
+					<field name="text_hid_DTCTH_ClassName" type="String"/>
+					<field name="hid_DTCTH_ClassName" type="BinHex"/>
+					<field name="text_UITagCategorySelectionClassID" type="String"/>
+					<field name="UITagCategorySelectionClassID" type="BinHex"/>
+					<field name="tagcategoryUITagCategory" type="BinHex"/>
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="tagTag" type="BinHex"/>
+					<object name="Tags">
+						<object name="Tag">
+						<field name="tagTag" type="BinHex"/>
+					</object>
+					</object>
+				</object>
+			</object>
+			<object name="TagDescriptorUI">
+				<field name="text_hid_DTCTH_ClassName" type="String"/>
+				<field name="hid_DTCTH_ClassName" type="BinHex"/>
+				<object name="TagCategorySelectionDescriptors">
+					<object name="TagCategorySelectionDescriptor">
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<field name="bMultiSelect" type="Boolean"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="ResultingTagCategorySelectionBlackboard">
+		<object name="TagCategorySelectionArray">
+			<object name="TagCategorySelection">
+				<field name="text_hid_DTCTH_ClassName" type="String"/>
+				<field name="hid_DTCTH_ClassName" type="BinHex"/>
+				<field name="text_UITagCategorySelectionClassID" type="String"/>
+				<field name="UITagCategorySelectionClassID" type="BinHex"/>
+				<field name="tagcategoryUITagCategory" type="BinHex"/>
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+				<object name="Tags">
+					<object name="Tag">
+						<field name="tagTag" type="BinHex"/>
+					</object>
+				</object>
+				<field name="tagTag" type="BinHex"/>
+			</object>
+		</object>
+		<object name="TagDescriptorUI">
+			<field name="text_hid_DTCTH_ClassName" type="String"/>
+			<field name="hid_DTCTH_ClassName" type="BinHex"/>
+			<object name="TagCategorySelectionDescriptors">
+				<object name="TagCategorySelectionDescriptor">
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="bMultiSelect" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="PartsSet">
+		<object name="Part">
+			<field name="hidVersion" type="BinHex"/>
+			<field name="uniqueidnocopyUniqueID" type="BinHex"/>
+			<field name="graphickitpartPart" type="BinHex"/>
+			<field name="selPoseDefinitionId" type="BinHex"/>
+			<field name="text_selPoseDefinitionPathID" type="String"/>
+			<field name="selPoseDefinitionPathID" type="BinHex"/>
+			<field name="facialposedefinitionExtraFacialPoseDefinition" type="BinHex"/>
+			<field name="text_selVisualModelOverride" type="String"/>
+			<field name="selVisualModelOverride" type="BinHex"/>
+			<object name="BoneAnchor">
+				<field name="text_selBoneName" type="String"/>
+				<field name="selBoneName" type="Enum"/>
+				<field name="vectorTranslation" type="Vector3"/>
+				<field name="angvecRotation" type="Vector3"/>
+				<field name="vectorNonUniformScale" type="Vector3"/>
+			</object>
+		</object>
+	</object>
+</class>

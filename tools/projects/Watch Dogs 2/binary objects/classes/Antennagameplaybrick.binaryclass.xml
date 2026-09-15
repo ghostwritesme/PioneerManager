@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="AntennagameplaybrickParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bStartAntennaBroadcasting" type="Boolean"/>
+	<field name="fHoldingDurationBeforeValidation" type="Float"/>
+	<field name="fMaxRotationAngle" type="Float"/>
+	<field name="fTurnOffRotation" type="Float"/>
+	<field name="vecBBoxExtension" type="Vector3"/>
+	<field name="fLockAgentRadius" type="Float"/>
+	<field name="fDelayBeforeAgentSelection" type="Float"/>
+	<object name="AntennaProfiler">
+		<field name="profilerinfofilterProfileFilter" type="BinHex"/>
+		<field name="fileProfilerThumbnailOverride" type="BinHex"/>
+		<field name="vectorProfilerSquareTargetOffset" type="Vector3"/>
+		<field name="vectorProfilerLineTargetOffset" type="Vector3"/>
+		<field name="bIsProfilerSticky" type="Boolean"/>
+		<field name="selProfileColorTypeOverride" type="Enum"/>
+		<object name="locsectionidProfile">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="IconLocations"/>
+		<object name="TargetingBoneNames"/>
+	</object>
+	<object name="TargetProfiler">
+		<field name="profilerinfofilterProfileFilter" type="BinHex"/>
+		<field name="fileProfilerThumbnailOverride" type="BinHex"/>
+		<field name="vectorProfilerSquareTargetOffset" type="Vector3"/>
+		<field name="vectorProfilerLineTargetOffset" type="Vector3"/>
+		<field name="bIsProfilerSticky" type="Boolean"/>
+		<field name="selProfileColorTypeOverride" type="Enum"/>
+		<object name="locsectionidProfile">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="IconLocations"/>
+		<object name="TargetingBoneNames"/>
+	</object>
+</class>

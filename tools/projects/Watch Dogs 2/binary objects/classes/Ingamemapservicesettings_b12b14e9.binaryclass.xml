@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Ingamemapservicesettings_b12b14e9Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="ingamemapservicesettingsentryDefaultMap" type="BinHex"/>
+	<field name="mapicondescNorthMapIconDescription" type="BinHex"/>
+	<field name="vec2NorthDirection" type="Vector2"/>
+</class>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="NpcidentityParameters">
+	<inherit name="SharedParameters"/>
+	<field name="rewardconfigRewardConfig" type="BinHex"/>
+	<field name="selBehaviorModifier" type="Enum"/>
+	<object name="ProfilerSettings">
+		<field name="profilerinfofilterProfileFilter" type="BinHex"/>
+		<field name="fileProfilerThumbnailOverride" type="BinHex"/>
+		<field name="vectorProfilerSquareTargetOffset" type="Vector3"/>
+		<field name="vectorProfilerLineTargetOffset" type="Vector3"/>
+		<field name="bIsProfilerSticky" type="Boolean"/>
+		<field name="selProfileColorTypeOverride" type="Enum"/>
+		<object name="locsectionidProfile">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="IconLocations"/>
+		<object name="TargetingBoneNames"/>
+	</object>
+	<object name="DialogSettings">
+		<field name="text_tmplDialogActor" type="String"/>
+		<field name="tmplDialogActor" type="BinHex"/>
+		<field name="dialactorlistDialogActorList" type="BinHex"/>
+	</object>
+	<object name="PersonalitySettings">
+		<object name="PersonalitySetting">
+			<field name="npcpersonalityPersonality" type="BinHex"/>
+			<field name="Weight" type="BinHex"/>
+			<field name="fWeightAsPercent" type="Float"/>
+		</object>
+	</object>
+</class>

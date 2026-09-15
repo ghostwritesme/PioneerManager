@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CameraanimatedlistdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bLooping" type="Boolean"/>
+	<object name="CameraAnimations">
+		<object name="fileCameraAnimation">
+			<field name="text_fileCameraAnimation" type="String"/>
+			<field name="fileCameraAnimation" type="BinHex"/>
+		</object>
+	</object>
+</class>

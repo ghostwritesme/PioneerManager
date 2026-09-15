@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="SnipershootinglagsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="vectorShootingPositionOffset" type="Vector3"/>
+	<field name="fTargetAimingOvershoot" type="Float"/>
+	<field name="fFirstTargetAimingNoiseRadius" type="Float"/>
+	<object name="TargetAimingStiffness">
+		<field name="fMinimumValue" type="Float"/>
+		<field name="fInitialValue" type="Float"/>
+		<field name="fMaximumValue" type="Float"/>
+		<field name="fTargetAccelerationAtMinimum" type="Float"/>
+		<field name="fTargetAccelerationAtMaximum" type="Float"/>
+		<field name="fStiffnessIncreaseSmootherStiffness" type="Float"/>
+	</object>
+</class>

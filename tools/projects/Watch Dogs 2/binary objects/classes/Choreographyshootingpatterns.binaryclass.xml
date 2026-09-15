@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ChoreographyshootingpatternsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fPreShootingAimingTimeMin" type="Float"/>
+	<field name="fPreShootingAimingTimeMax" type="Float"/>
+	<field name="fPostShootingCooldownTimeMin" type="Float"/>
+	<field name="fPostShootingCooldownTimeMax" type="Float"/>
+	<field name="fPeekOutProbability" type="Float"/>
+	<object name="Pattern">
+		<field name="selShootingType" type="Enum"/>
+		<field name="iBurstAmountMin" type="Int32"/>
+		<field name="iBurstAmountMax" type="Int32"/>
+		<field name="fBurstDelayMin" type="Float"/>
+		<field name="fBurstDelayMax" type="Float"/>
+		<field name="iBulletByBurstMin" type="Int32"/>
+		<field name="iBulletByBurstMax" type="Int32"/>
+		<field name="fShotDelayMin" type="Float"/>
+		<field name="fShotDelayMax" type="Float"/>
+		<field name="fMaxLength" type="Float"/>
+	</object>
+</class>

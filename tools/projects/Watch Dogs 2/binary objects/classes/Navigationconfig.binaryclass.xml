@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="NavigationconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="NavigationLogicSettings">
+		<field name="bEnableAvoidance" type="Boolean"/>
+		<field name="bCanPassThroughGates" type="Boolean"/>
+		<field name="bReachActionable" type="BinHex"/>
+		<field name="bCanBeTrapped" type="BinHex"/>
+		<field name="fPrecomputeNextPathTimeToDestination" type="Float"/>
+		<object name="SNavMeshPathFollowerSettings">
+			<field name="fAnticipationLength" type="Float"/>
+		</object>
+	</object>
+	<object name="TimeSlicingConfig">
+		<field name="fMinDist" type="Float"/>
+		<field name="fMaxDist" type="Float"/>
+		<field name="iMinModulo" type="Int32"/>
+		<field name="iMedModulo" type="Int32"/>
+		<field name="iMaxModulo" type="Int32"/>
+	</object>
+</class>

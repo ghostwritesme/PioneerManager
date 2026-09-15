@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Defaultconversationsettings_8098e9e8">
+	<object name="obj">
+		<inherit name="Defaultconversationsettings_8098e9e8Parameters"/>
+	</object>
+</file>

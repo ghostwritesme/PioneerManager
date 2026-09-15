@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Humanonfootoptimizationsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="CivilSettings">
+		<field name="fSlicingMinDistance" type="Float"/>
+		<field name="fSlicingMaxDistance" type="Float"/>
+		<field name="iClothSizeLimitOnScreen" type="Int32"/>
+		<field name="iClothMaxModulo" type="Int32"/>
+		<object name="SlicingConfigs">
+			<object name="ControllerUpdate">
+				<field name="fMinDist" type="Float"/>
+				<field name="fMaxDist" type="Float"/>
+				<field name="iMinModulo" type="Int32"/>
+				<field name="iMedModulo" type="Int32"/>
+				<field name="iMaxModulo" type="Int32"/>
+			</object>
+			<object name="Perception">
+				<field name="fMinDist" type="Float"/>
+				<field name="fMaxDist" type="Float"/>
+				<field name="iMinModulo" type="Int32"/>
+				<field name="iMedModulo" type="Int32"/>
+				<field name="iMaxModulo" type="Int32"/>
+			</object>
+			<object name="PropagatePanic">
+				<field name="fMinDist" type="Float"/>
+				<field name="fMaxDist" type="Float"/>
+				<field name="iMinModulo" type="Int32"/>
+				<field name="iMedModulo" type="Int32"/>
+				<field name="iMaxModulo" type="Int32"/>
+			</object>
+			<object name="UpdateThreatProximity">
+				<field name="fMinDist" type="Float"/>
+				<field name="fMaxDist" type="Float"/>
+				<field name="iMinModulo" type="Int32"/>
+				<field name="iMedModulo" type="Int32"/>
+				<field name="iMaxModulo" type="Int32"/>
+			</object>
+			<object name="Animation">
+				<field name="fMinDist" type="Float"/>
+				<field name="fMaxDist" type="Float"/>
+				<field name="iMinModulo" type="Int32"/>
+				<field name="iMedModulo" type="Int32"/>
+				<field name="iMaxModulo" type="Int32"/>
+			</object>
+			<object name="FakeCrowd">
+				<field name="fMinDist" type="Float"/>
+				<field name="fMaxDist" type="Float"/>
+				<field name="iMinModulo" type="Int32"/>
+				<field name="iMedModulo" type="Int32"/>
+				<field name="iMaxModulo" type="Int32"/>
+			</object>
+			<object name="AIHumanOnFootLogic">
+				<field name="fMinDist" type="Float"/>
+				<field name="fMaxDist" type="Float"/>
+				<field name="iMinModulo" type="Int32"/>
+				<field name="iMedModulo" type="Int32"/>
+				<field name="iMaxModulo" type="Int32"/>
+			</object>
+		</object>
+	</object>
+</class>

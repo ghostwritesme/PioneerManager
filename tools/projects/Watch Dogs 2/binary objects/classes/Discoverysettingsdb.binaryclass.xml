@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DiscoverysettingsdbParameters">
+	<inherit name="SharedParameters"/>
+	<object name="DiscoverySettings">
+		<field name="fAvatarProximityTeaseRangeHide" type="Float"/>
+		<field name="fAvatarProximityTeaseRangeShow" type="Float"/>
+		<field name="fRevealByProximityRange" type="Float"/>
+		<field name="bRevealByInSight" type="Boolean"/>
+		<field name="fRevealByInSightFocusDuration" type="Float"/>
+		<field name="fRevealByProximityNetSurfingRange" type="Float"/>
+		<field name="fRevealByProfilingRange" type="Float"/>
+		<field name="fNetHackVFXRange" type="Float"/>
+		<field name="fNetHackTeaseRange" type="Float"/>
+		<field name="text_psDiscoveryParticles" type="String"/>
+		<field name="psDiscoveryParticles" type="BinHex"/>
+		<field name="nethackingconfigNetHackingConfigOverride" type="BinHex"/>
+		<field name="bIsIntel" type="Boolean"/>
+		<field name="possyselementTeaseIcon" type="BinHex"/>
+		<field name="bTeasedIconPersistent" type="Boolean"/>
+		<field name="bShowIconsInWorld" type="Boolean"/>
+		<field name="possyselementIconRevealed" type="BinHex"/>
+		<field name="bRevealIconPersistent" type="Boolean"/>
+		<field name="bIsOnlySaveIfCompleted" type="Boolean"/>
+		<field name="possyselementIconAcquired" type="BinHex"/>
+		<field name="bUsePersonOfInterestUIOnReveal" type="Boolean"/>
+		<field name="fPersonOfInterestUIShowDuration" type="Float"/>
+		<field name="text_sndRevealSound" type="String"/>
+		<field name="sndRevealSound" type="BinHex"/>
+		<field name="bIsLocateObjective" type="Boolean"/>
+		<object name="locstridRevealMessage">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+</class>

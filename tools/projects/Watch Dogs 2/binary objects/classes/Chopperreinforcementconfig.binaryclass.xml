@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ChopperreinforcementconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="uiMaxSpawnedChopperUnits" type="Int64"/>
+	<field name="vehicleentityconfigChopperConfig" type="BinHex"/>
+	<field name="humanconfigSniperConfig" type="BinHex"/>
+	<field name="fRespawnOverride" type="Float"/>
+</class>

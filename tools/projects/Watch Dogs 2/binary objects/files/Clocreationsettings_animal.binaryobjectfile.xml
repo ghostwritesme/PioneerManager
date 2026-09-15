@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Clocreationsettings_animal">
+	<object name="lib">
+		<object name="libobj">
+			<inherit name="Clocreationsettings_animalParameters"/>
+		</object>
+	</object>
+</file>

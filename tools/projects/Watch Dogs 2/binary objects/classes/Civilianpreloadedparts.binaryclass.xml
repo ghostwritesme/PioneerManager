@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CivilianpreloadedpartsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="PartsToPreload">
+		<object name="Part">
+			<field name="graphickitpartPart" type="BinHex"/>
+		</object>
+	</object>
+</class>

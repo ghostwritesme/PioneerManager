@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BirdsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selSimpleAnimalType" type="Enum"/>
+	<field name="selStartState" type="Enum"/>
+	<object name="Physics">
+		<field name="fPhantomRadius" type="Float"/>
+		<field name="vectorPhantomOffset" type="Vector3"/>
+	</object>
+	<object name="Threat">
+		<field name="fFleeProximityRange" type="Float"/>
+		<field name="fSearchRanage" type="Float"/>
+		<field name="fThreatSpeed" type="Float"/>
+		<field name="fEventDeathRadius" type="Float"/>
+	</object>
+	<object name="Movement">
+		<field name="fDestinationGroundBuffer" type="Float"/>
+		<field name="fDestinationAirBuffer" type="Float"/>
+		<field name="fFleeAlititude" type="Float"/>
+		<field name="fFleeDisplacement" type="Float"/>
+		<field name="fFlightFleeDisplacement" type="Float"/>
+		<field name="fAccelerationRate" type="Float"/>
+		<field name="fMaxSpeed" type="Float"/>
+		<field name="fTurnRate" type="Float"/>
+		<field name="fPitchTurnRate" type="Float"/>
+		<field name="fRollTurnRate" type="Float"/>
+		<field name="bIsContinuousPath" type="Boolean"/>
+	</object>
+	<object name="MoveStateEntries">
+		<object name="Idle">
+			<inherit name="SharedParameters"/>
+			<field name="text_fileMoveStateId" type="String"/>
+			<field name="fileMoveStateId" type="BinHex"/>
+		</object>
+		<object name="Perched">
+			<inherit name="SharedParameters"/>
+			<field name="text_fileMoveStateId" type="String"/>
+			<field name="fileMoveStateId" type="BinHex"/>
+		</object>
+		<object name="Walk">
+			<inherit name="SharedParameters"/>
+			<field name="text_fileMoveStateId" type="String"/>
+			<field name="fileMoveStateId" type="BinHex"/>
+		</object>
+		<object name="Takeoff">
+			<inherit name="SharedParameters"/>
+			<field name="text_fileMoveStateId" type="String"/>
+			<field name="fileMoveStateId" type="BinHex"/>
+		</object>
+		<object name="Elevate">
+			<inherit name="SharedParameters"/>
+			<field name="text_fileMoveStateId" type="String"/>
+			<field name="fileMoveStateId" type="BinHex"/>
+		</object>
+		<object name="Cruise">
+			<inherit name="SharedParameters"/>
+			<field name="text_fileMoveStateId" type="String"/>
+			<field name="fileMoveStateId" type="BinHex"/>
+		</object>
+		<object name="Descend">
+			<inherit name="SharedParameters"/>
+			<field name="fileMoveStateId" type="BinHex"/>
+		</object>
+		<object name="End">
+			<inherit name="SharedParameters"/>
+			<field name="text_fileMoveStateId" type="String"/>
+			<field name="fileMoveStateId" type="BinHex"/>
+		</object>
+	</object>
+</class>

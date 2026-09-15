@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehiclemiscsounddbParameters">
+	<inherit name="SharedParameters"/>
+	<object name="HornAndSiren">
+		<field name="text_sndStartHorn" type="String"/>
+		<field name="sndStartHorn" type="BinHex"/>
+		<field name="text_sndStopHorn" type="String"/>
+		<field name="sndStopHorn" type="BinHex"/>
+		<field name="text_sndStartHornNpc" type="String"/>
+		<field name="sndStartHornNpc" type="BinHex"/>
+		<field name="text_sndStopHornNpc" type="String"/>
+		<field name="sndStopHornNpc" type="BinHex"/>
+		<field name="text_sndStartSiren" type="String"/>
+		<field name="sndStartSiren" type="BinHex"/>
+		<field name="text_sndStopSiren" type="String"/>
+		<field name="sndStopSiren" type="BinHex"/>
+		<field name="bUseHornToggle" type="Boolean"/>
+		<object name="TrafficHornSettings">
+			<field name="vec2ToleranceChangeSpeed" type="Vector2"/>
+			<field name="vec2ChanceAtTolerance" type="Vector2"/>
+			<field name="vec2MinHornTime" type="Vector2"/>
+			<field name="vec2MaxHornTime" type="Vector2"/>
+			<field name="vec2HornPauseTime" type="Vector2"/>
+			<field name="vec2BlockedTimeToleranceTimeLimits" type="Vector2"/>
+			<field name="vec2BlockedTimeTolerancePows" type="Vector2"/>
+			<field name="fAbruptBrakeSmootherLag" type="Float"/>
+			<field name="vec2AbruptBrakeSpeedMinMax" type="Vector2"/>
+			<field name="vec2AbruptBrakeSpeedCffMinMax" type="Vector2"/>
+			<field name="fAbruptBrakeSpeedMinValue" type="Float"/>
+			<field name="vec2AbruptBrakesPlayTimeMinMax" type="Vector2"/>
+			<field name="vec2AbruptBrakesPauseTimeMinMax" type="Vector2"/>
+		</object>
+		<object name="IntersectionBuzzSettings">
+			<field name="text_sndStartBuzzIntersection" type="String"/>
+			<field name="sndStartBuzzIntersection" type="BinHex"/>
+			<field name="sndStopBuzzIntersection" type="BinHex"/>
+			<field name="vec2MinBuzzTime" type="Vector2"/>
+			<field name="vec2MaxBuzzTime" type="Vector2"/>
+			<field name="vec2RepeatBuzzTime" type="Vector2"/>
+			<field name="iMaxNumberBuzzes" type="Int32"/>
+		</object>
+	</object>
+	<object name="Brake">
+		<field name="text_sndBrake" type="String"/>
+		<field name="sndBrake" type="BinHex"/>
+		<field name="sndHandbrakeSoundStartID" type="BinHex"/>
+		<field name="sndHandbrakeSoundEndID" type="BinHex"/>
+	</object>
+	<object name="Misc">
+		<field name="sndTriggerPressedDestroy" type="BinHex"/>
+		<field name="sndTriggerReleasedDestroy" type="BinHex"/>
+		<field name="text_sndLocalPlayerGotIn" type="String"/>
+		<field name="sndLocalPlayerGotIn" type="BinHex"/>
+		<field name="text_sndLocalPlayerGotOut" type="String"/>
+		<field name="sndLocalPlayerGotOut" type="BinHex"/>
+		<object name="SoundFakeTransmission">
+			<field name="bUseRevereseSoundGear" type="Boolean"/>
+			<field name="fMaxRPM" type="Float"/>
+			<field name="fGranularSynthesisMinRPM" type="Float"/>
+			<field name="fGranularSynthesisMaxRPM" type="Float"/>
+			<field name="fWeightsAdd" type="Float"/>
+			<field name="fWeightsMul" type="Float"/>
+			<field name="nMaxValues" type="Int32"/>
+			<field name="selRpmAccelerationDecelerationType" type="Enum"/>
+			<field name="ThrottleAdjustedRpmPow" type="BinHex"/>
+			<field name="ThrottleAdjustedRpmCff" type="BinHex"/>
+			<field name="ZeroThrottleAddSpeed" type="BinHex"/>
+			<object name="RpmThrottleInputRpmModifier">
+				<field name="bUseThrottleInpuRpmModifier" type="Boolean"/>
+			</object>
+		</object>
+	</object>
+</class>

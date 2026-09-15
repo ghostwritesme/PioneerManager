@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DynamiceventParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_dynamiceventdescriptorDynamicEventType" type="String"/>
+	<field name="dynamiceventdescriptorDynamicEventType" type="BinHex"/>
+	<field name="sEventName" type="String"/>
+	<field name="selFamilyMode" type="Enum"/>
+	<field name="sFamilyName" type="String"/>
+	<object name="DynamicEventDescriptor">
+		<field name="bMustSendEventTrackingData" type="Boolean"/>
+		<field name="bMustStopDuringCinematics" type="Boolean"/>
+		<field name="driveandshootbrickdescriptorBrickDescriptor" type="BinHex"/>
+		<field name="fTimeAheadOfPlayerToTriggerEvent" type="Float"/>
+		<field name="fShooterSelectionRadius" type="Float"/>
+		<object name="ShooterDescriptor">
+			<field name="bAllowInInterior" type="Boolean"/>
+			<field name="bAllowDead" type="Boolean"/>
+			<field name="bAllowAlreadyProfiledNpc" type="Boolean"/>
+			<field name="bAllowPlayer" type="Boolean"/>
+			<field name="bIgnoreLogicDataModule" type="Boolean"/>
+			<field name="selGenderRestriction" type="Enum"/>
+			<field name="fMaxCandidateSpeed" type="Float"/>
+			<object name="TagSpec">
+				<object name="IncludeTags"/>
+				<object name="ExcludeTags"/>
+				<object name="TagConstraintsAny">
+					<object name="ConstraintAny">
+							<object name="Tags">
+								<object name="tagcategoryselectionTag">
+									<field name="text_UITagCategorySelectionClassID" type="String"/>
+									<field name="UITagCategorySelectionClassID" type="BinHex"/>
+									<field name="tagcategoryUITagCategory" type="BinHex"/>
+									<field name="tagcategoryTagCategory" type="BinHex"/>
+									<field name="tagTag" type="BinHex"/>
+								</object>
+							</object>
+						</object>
+				</object>
+			</object>
+			<object name="TagSpecDbs">
+				<field name="graphickittagspecTagSpec" type="BinHex"/>
+				<object name="TagSpecDbs">
+					<field name="graphickittagspecTagSpec" type="BinHex"/>
+				</object>
+			</object>
+			<object name="SocialClassRestrictions"/>
+			<object name="NPCStateRestrictions"/>
+			<object name="PmsRestriction">
+				<object name="Needed">
+					<object name="PMSValueOR">
+						<object name="PMSValuesAND"/>
+					</object>
+				</object>
+				<object name="Excluded">
+					<object name="PMSValue">
+						<field name="text_pmsPMSName" type="String"/>
+						<field name="pmsPMSName" type="BinHex"/>
+						<field name="selEnumValue" type="Enum"/>
+					</object>
+				</object>
+			</object>
+			<object name="PmsRestrictionDbs">
+				<object name="pmsrestrictionsettingsPmsRestrictionDb">
+					<field name="pmsrestrictionsettingsPmsRestrictionDb" type="BinHex"/>
+				</object>
+			</object>
+			<object name="DialogActorRestrictions">
+				<object name="dialactorlistDialogActor">
+					<field name="dialactorlistDialogActor" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="ShooterVehicleDescriptor">
+			<field name="bAllowInInterior" type="Boolean"/>
+			<field name="bExcluseToplessCar" type="Boolean"/>
+			<field name="bAllowDamagedVehicle" type="Boolean"/>
+			<object name="TagSpec">
+				<object name="IncludeTags"/>
+				<object name="ExcludeTags"/>
+				<object name="TagConstraintsAny">
+					<object name="ConstraintAny">
+							<object name="Tags">
+								<object name="tagcategoryselectionTag">
+									<field name="text_UITagCategorySelectionClassID" type="String"/>
+									<field name="UITagCategorySelectionClassID" type="BinHex"/>
+									<field name="tagcategoryUITagCategory" type="BinHex"/>
+									<field name="tagcategoryTagCategory" type="BinHex"/>
+									<field name="tagTag" type="BinHex"/>
+								</object>
+							</object>
+						</object>
+				</object>
+			</object>
+			<object name="TagSpecDbs">
+				<field name="graphickittagspecTagSpec" type="BinHex"/>
+				<object name="TagSpecDbs">
+					<field name="graphickittagspecTagSpec" type="BinHex"/>
+				</object>
+			</object>
+			<object name="VehicleTypesAllowed">
+				<object name="Flags">
+					<field name="bAgile" type="Boolean"/>
+					<field name="bBike" type="Boolean"/>
+					<field name="bBoat" type="Boolean"/>
+					<field name="bHeavy" type="Boolean"/>
+					<field name="bHelicopter" type="Boolean"/>
+					<field name="bMuscle" type="Boolean"/>
+					<field name="bOffroad" type="Boolean"/>
+					<field name="bSpeed" type="Boolean"/>
+					<field name="bTraffic" type="Boolean"/>
+					<field name="bCar" type="Boolean"/>
+					<field name="bVan" type="Boolean"/>
+					<field name="bTruck" type="Boolean"/>
+					<field name="bBus" type="Boolean"/>
+					<field name="bPolice" type="Boolean"/>
+					<field name="bFire" type="Boolean"/>
+					<field name="bAmbulance" type="Boolean"/>
+					<field name="bTaxi" type="Boolean"/>
+					<field name="bNews" type="Boolean"/>
+					<field name="bLimo" type="Boolean"/>
+					<field name="bServiceVehicle" type="Boolean"/>
+					<field name="bRail" type="Boolean"/>
+					<field name="bToyCar" type="Boolean"/>
+					<field name="bScissorLift" type="Boolean"/>
+					<field name="bFlyingDrone" type="Boolean"/>
+					<field name="bArmoredCar" type="Boolean"/>
+					<field name="bKart" type="BinHex"/>
+					<field name="bATV" type="BinHex"/>
+				</object>
+			</object>
+			<object name="VehicleTypesBanned">
+				<object name="Flags">
+					<field name="bAgile" type="Boolean"/>
+					<field name="bBike" type="Boolean"/>
+					<field name="bBoat" type="Boolean"/>
+					<field name="bHeavy" type="Boolean"/>
+					<field name="bHelicopter" type="Boolean"/>
+					<field name="bMuscle" type="Boolean"/>
+					<field name="bOffroad" type="Boolean"/>
+					<field name="bSpeed" type="Boolean"/>
+					<field name="bTraffic" type="Boolean"/>
+					<field name="bCar" type="Boolean"/>
+					<field name="bVan" type="Boolean"/>
+					<field name="bTruck" type="Boolean"/>
+					<field name="bBus" type="Boolean"/>
+					<field name="bPolice" type="Boolean"/>
+					<field name="bFire" type="Boolean"/>
+					<field name="bAmbulance" type="Boolean"/>
+					<field name="bTaxi" type="Boolean"/>
+					<field name="bNews" type="Boolean"/>
+					<field name="bLimo" type="Boolean"/>
+					<field name="bServiceVehicle" type="Boolean"/>
+					<field name="bRail" type="Boolean"/>
+					<field name="bToyCar" type="Boolean"/>
+					<field name="bScissorLift" type="Boolean"/>
+					<field name="bFlyingDrone" type="Boolean"/>
+					<field name="bArmoredCar" type="Boolean"/>
+					<field name="bKart" type="BinHex"/>
+					<field name="bATV" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="TargetDescriptor">
+			<field name="bAllowInInterior" type="Boolean"/>
+			<field name="bAllowDead" type="Boolean"/>
+			<field name="bAllowAlreadyProfiledNpc" type="Boolean"/>
+			<field name="bAllowPlayer" type="Boolean"/>
+			<field name="bIgnoreLogicDataModule" type="Boolean"/>
+			<field name="selGenderRestriction" type="Enum"/>
+			<field name="fMaxCandidateSpeed" type="Float"/>
+			<object name="TagSpec">
+				<object name="IncludeTags"/>
+				<object name="ExcludeTags"/>
+				<object name="TagConstraintsAny">
+					<object name="ConstraintAny">
+							<object name="Tags">
+								<object name="tagcategoryselectionTag">
+									<field name="text_UITagCategorySelectionClassID" type="String"/>
+									<field name="UITagCategorySelectionClassID" type="BinHex"/>
+									<field name="tagcategoryUITagCategory" type="BinHex"/>
+									<field name="tagcategoryTagCategory" type="BinHex"/>
+									<field name="tagTag" type="BinHex"/>
+								</object>
+							</object>
+						</object>
+				</object>
+			</object>
+			<object name="TagSpecDbs">
+				<field name="graphickittagspecTagSpec" type="BinHex"/>
+				<object name="TagSpecDbs">
+					<field name="graphickittagspecTagSpec" type="BinHex"/>
+				</object>
+			</object>
+			<object name="SocialClassRestrictions"/>
+			<object name="NPCStateRestrictions"/>
+			<object name="PmsRestriction">
+				<object name="Needed">
+					<object name="PMSValueOR">
+						<object name="PMSValuesAND"/>
+					</object>
+				</object>
+				<object name="Excluded">
+					<object name="PMSValue">
+						<field name="text_pmsPMSName" type="String"/>
+						<field name="pmsPMSName" type="BinHex"/>
+						<field name="selEnumValue" type="Enum"/>
+					</object>
+				</object>
+			</object>
+			<object name="PmsRestrictionDbs">
+				<object name="pmsrestrictionsettingsPmsRestrictionDb">
+					<field name="pmsrestrictionsettingsPmsRestrictionDb" type="BinHex"/>
+				</object>
+			</object>
+			<object name="DialogActorRestrictions">
+				<object name="dialactorlistDialogActor">
+					<field name="dialactorlistDialogActor" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<field name="carclobrickdescriptorBrickDescriptor" type="BinHex"/>
+		<object name="Civilian">
+			<field name="fCivilianSearchRadius" type="Float"/>
+			<object name="CivilianDescriptor">
+				<field name="bAllowInInterior" type="Boolean"/>
+				<field name="bAllowDead" type="Boolean"/>
+				<field name="bAllowAlreadyProfiledNpc" type="Boolean"/>
+				<field name="bAllowPlayer" type="Boolean"/>
+				<field name="bIgnoreLogicDataModule" type="Boolean"/>
+				<field name="selGenderRestriction" type="Enum"/>
+				<field name="fMaxCandidateSpeed" type="Float"/>
+				<object name="TagSpec">
+					<object name="IncludeTags"/>
+					<object name="ExcludeTags"/>
+					<object name="TagConstraintsAny">
+						<object name="ConstraintAny">
+							<object name="Tags">
+								<object name="tagcategoryselectionTag">
+									<field name="text_UITagCategorySelectionClassID" type="String"/>
+									<field name="UITagCategorySelectionClassID" type="BinHex"/>
+									<field name="tagcategoryUITagCategory" type="BinHex"/>
+									<field name="tagcategoryTagCategory" type="BinHex"/>
+									<field name="tagTag" type="BinHex"/>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+				<object name="TagSpecDbs">
+					<field name="graphickittagspecTagSpec" type="BinHex"/>
+					<object name="TagSpecDbs">
+						<field name="graphickittagspecTagSpec" type="BinHex"/>
+					</object>
+				</object>
+				<object name="SocialClassRestrictions"/>
+				<object name="NPCStateRestrictions">
+					<object name="selNPCState">
+						<field name="selNPCState" type="Enum"/>
+					</object>
+				</object>
+				<object name="PmsRestriction">
+					<object name="Needed">
+						<object name="PMSValueOR">
+							<object name="PMSValuesAND">
+								<object name="PMSValueAND">
+									<field name="text_pmsPMSName" type="String"/>
+									<field name="pmsPMSName" type="BinHex"/>
+									<field name="selEnumValue" type="Enum"/>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object name="Excluded">
+						<object name="PMSValue">
+							<field name="text_pmsPMSName" type="String"/>
+							<field name="pmsPMSName" type="BinHex"/>
+							<field name="selEnumValue" type="Enum"/>
+						</object>
+					</object>
+				</object>
+				<object name="PmsRestrictionDbs">
+					<object name="pmsrestrictionsettingsPmsRestrictionDb">
+						<field name="pmsrestrictionsettingsPmsRestrictionDb" type="BinHex"/>
+					</object>
+				</object>
+				<object name="DialogActorRestrictions">
+					<object name="dialactorlistDialogActor">
+						<field name="dialactorlistDialogActor" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<field name="clotriggerbhvsettingsVictimTriggerBehaviorSettings" type="BinHex"/>
+		<field name="singleclocreationsettingsAttractorCreationSettings" type="BinHex"/>
+		<field name="bVictimNeedToQuitCloToCompleteEvent" type="Boolean"/>
+		<field name="selCriminalCycleBreakerWhenPicked" type="Enum"/>
+		<field name="selVictimCycleBreakerWhenPicked" type="Enum"/>
+		<field name="bCriminalNeedToQuitCloToCompleteEvent" type="Boolean"/>
+		<field name="bCanPickVictimOnWalker" type="Boolean"/>
+		<field name="bCanPickVictimOnClo" type="Boolean"/>
+		<field name="bCanBeTriggerOnSlope" type="Boolean"/>
+		<field name="bCanBeTriggerOnFlatGround" type="Boolean"/>
+		<field name="groupclocreationsettingsGroupCreationSettingsWhenPickingAWalker" type="BinHex"/>
+		<field name="bOverrideCriminalProfilerSettings" type="Boolean"/>
+		<field name="bOverrideVictimProfilerSettings" type="Boolean"/>
+		<object name="CriminalDescriptor">
+			<field name="bAllowInInterior" type="Boolean"/>
+			<field name="bAllowDead" type="Boolean"/>
+			<field name="bAllowAlreadyProfiledNpc" type="Boolean"/>
+			<field name="bAllowPlayer" type="Boolean"/>
+			<field name="bIgnoreLogicDataModule" type="Boolean"/>
+			<field name="selGenderRestriction" type="Enum"/>
+			<field name="fMaxCandidateSpeed" type="Float"/>
+			<object name="TagSpec">
+				<object name="IncludeTags"/>
+				<object name="ExcludeTags"/>
+				<object name="TagConstraintsAny">
+					<object name="ConstraintAny">
+							<object name="Tags">
+								<object name="tagcategoryselectionTag">
+									<field name="text_UITagCategorySelectionClassID" type="String"/>
+									<field name="UITagCategorySelectionClassID" type="BinHex"/>
+									<field name="tagcategoryUITagCategory" type="BinHex"/>
+									<field name="tagcategoryTagCategory" type="BinHex"/>
+									<field name="tagTag" type="BinHex"/>
+								</object>
+							</object>
+						</object>
+				</object>
+			</object>
+			<object name="TagSpecDbs">
+				<field name="graphickittagspecTagSpec" type="BinHex"/>
+				<object name="TagSpecDbs">
+					<field name="graphickittagspecTagSpec" type="BinHex"/>
+				</object>
+			</object>
+			<object name="SocialClassRestrictions"/>
+			<object name="NPCStateRestrictions">
+				<object name="selNPCState">
+						<field name="selNPCState" type="Enum"/>
+					</object>
+			</object>
+			<object name="PmsRestriction">
+				<object name="Needed">
+					<object name="PMSValueOR">
+						<object name="PMSValuesAND">
+							<object name="PMSValueAND">
+								<field name="text_pmsPMSName" type="String"/>
+								<field name="pmsPMSName" type="BinHex"/>
+								<field name="selEnumValue" type="Enum"/>
+							</object>
+						</object>
+					</object>
+				</object>
+				<object name="Excluded">
+					<object name="PMSValue">
+						<field name="text_pmsPMSName" type="String"/>
+						<field name="pmsPMSName" type="BinHex"/>
+						<field name="selEnumValue" type="Enum"/>
+					</object>
+				</object>
+			</object>
+			<object name="PmsRestrictionDbs">
+				<object name="pmsrestrictionsettingsPmsRestrictionDb">
+					<field name="pmsrestrictionsettingsPmsRestrictionDb" type="BinHex"/>
+				</object>
+			</object>
+			<object name="DialogActorRestrictions">
+				<object name="dialactorlistDialogActor">
+					<field name="dialactorlistDialogActor" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="VictimDescriptor">
+			<field name="bAllowInInterior" type="Boolean"/>
+			<field name="bAllowDead" type="Boolean"/>
+			<field name="bAllowAlreadyProfiledNpc" type="Boolean"/>
+			<field name="bAllowPlayer" type="Boolean"/>
+			<field name="bIgnoreLogicDataModule" type="Boolean"/>
+			<field name="selGenderRestriction" type="Enum"/>
+			<field name="fMaxCandidateSpeed" type="Float"/>
+			<object name="TagSpec">
+				<object name="IncludeTags"/>
+				<object name="ExcludeTags"/>
+				<object name="TagConstraintsAny">
+					<object name="ConstraintAny">
+							<object name="Tags">
+								<object name="tagcategoryselectionTag">
+									<field name="text_UITagCategorySelectionClassID" type="String"/>
+									<field name="UITagCategorySelectionClassID" type="BinHex"/>
+									<field name="tagcategoryUITagCategory" type="BinHex"/>
+									<field name="tagcategoryTagCategory" type="BinHex"/>
+									<field name="tagTag" type="BinHex"/>
+								</object>
+							</object>
+						</object>
+				</object>
+			</object>
+			<object name="TagSpecDbs">
+				<field name="graphickittagspecTagSpec" type="BinHex"/>
+				<object name="TagSpecDbs">
+					<field name="graphickittagspecTagSpec" type="BinHex"/>
+				</object>
+			</object>
+			<object name="SocialClassRestrictions"/>
+			<object name="NPCStateRestrictions">
+				<object name="selNPCState">
+						<field name="selNPCState" type="Enum"/>
+					</object>
+			</object>
+			<object name="PmsRestriction">
+				<object name="Needed">
+					<object name="PMSValueOR">
+						<object name="PMSValuesAND">
+							<object name="PMSValueAND">
+								<field name="text_pmsPMSName" type="String"/>
+								<field name="pmsPMSName" type="BinHex"/>
+								<field name="selEnumValue" type="Enum"/>
+							</object>
+						</object>
+					</object>
+				</object>
+				<object name="Excluded">
+					<object name="PMSValue">
+						<field name="text_pmsPMSName" type="String"/>
+						<field name="pmsPMSName" type="BinHex"/>
+						<field name="selEnumValue" type="Enum"/>
+					</object>
+				</object>
+			</object>
+			<object name="PmsRestrictionDbs">
+				<object name="pmsrestrictionsettingsPmsRestrictionDb">
+					<field name="pmsrestrictionsettingsPmsRestrictionDb" type="BinHex"/>
+				</object>
+			</object>
+			<object name="DialogActorRestrictions">
+				<object name="dialactorlistDialogActor">
+					<field name="dialactorlistDialogActor" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="TriggerSettings">
+			<field name="fTimeAheadOfPlayerToTriggerEvent" type="Float"/>
+			<field name="fMinDistanceFromVictimToPickCriminal" type="Float"/>
+			<field name="fMaxDistanceFromVictimToPickCriminal" type="Float"/>
+		</object>
+		<object name="CriminalProfilerSettings">
+			<field name="profilerinfofilterProfileFilter" type="BinHex"/>
+			<field name="fileProfilerThumbnailOverride" type="BinHex"/>
+			<field name="vectorProfilerSquareTargetOffset" type="Vector3"/>
+			<field name="vectorProfilerLineTargetOffset" type="Vector3"/>
+			<field name="bIsProfilerSticky" type="Boolean"/>
+			<field name="selProfileColorTypeOverride" type="Enum"/>
+			<object name="locsectionidProfile">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="IconLocations"/>
+			<object name="TargetingBoneNames"/>
+		</object>
+		<object name="VictimProfilerSettings">
+			<field name="profilerinfofilterProfileFilter" type="BinHex"/>
+			<field name="fileProfilerThumbnailOverride" type="BinHex"/>
+			<field name="vectorProfilerSquareTargetOffset" type="Vector3"/>
+			<field name="vectorProfilerLineTargetOffset" type="Vector3"/>
+			<field name="bIsProfilerSticky" type="Boolean"/>
+			<field name="selProfileColorTypeOverride" type="Enum"/>
+			<object name="locsectionidProfile">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="IconLocations"/>
+			<object name="TargetingBoneNames"/>
+		</object>
+		<field name="objectcrusherbrickdescriptorBrickDescriptor" type="BinHex"/>
+		<object name="CrusherParameters">
+			<field name="fCrusherSearchRadius" type="Float"/>
+			<object name="CrusherDescriptor">
+				<field name="bAllowInInterior" type="Boolean"/>
+				<field name="bAllowDead" type="Boolean"/>
+				<field name="bAllowAlreadyProfiledNpc" type="Boolean"/>
+				<field name="bAllowPlayer" type="Boolean"/>
+				<field name="bIgnoreLogicDataModule" type="Boolean"/>
+				<field name="selGenderRestriction" type="Enum"/>
+				<field name="fMaxCandidateSpeed" type="Float"/>
+				<object name="TagSpec">
+					<object name="IncludeTags"/>
+					<object name="ExcludeTags"/>
+					<object name="TagConstraintsAny">
+						<object name="ConstraintAny">
+							<object name="Tags">
+								<object name="tagcategoryselectionTag">
+									<field name="text_UITagCategorySelectionClassID" type="String"/>
+									<field name="UITagCategorySelectionClassID" type="BinHex"/>
+									<field name="tagcategoryUITagCategory" type="BinHex"/>
+									<field name="tagcategoryTagCategory" type="BinHex"/>
+									<field name="tagTag" type="BinHex"/>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+				<object name="TagSpecDbs">
+					<field name="graphickittagspecTagSpec" type="BinHex"/>
+					<object name="TagSpecDbs">
+						<field name="graphickittagspecTagSpec" type="BinHex"/>
+					</object>
+				</object>
+				<object name="SocialClassRestrictions"/>
+				<object name="NPCStateRestrictions">
+					<object name="selNPCState">
+						<field name="selNPCState" type="Enum"/>
+					</object>
+				</object>
+				<object name="PmsRestriction">
+					<object name="Needed">
+						<object name="PMSValueOR">
+							<object name="PMSValuesAND">
+								<object name="PMSValueAND">
+									<field name="text_pmsPMSName" type="String"/>
+									<field name="pmsPMSName" type="BinHex"/>
+									<field name="selEnumValue" type="Enum"/>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object name="Excluded">
+						<object name="PMSValue">
+							<field name="text_pmsPMSName" type="String"/>
+							<field name="pmsPMSName" type="BinHex"/>
+							<field name="selEnumValue" type="Enum"/>
+						</object>
+					</object>
+				</object>
+				<object name="PmsRestrictionDbs">
+					<object name="pmsrestrictionsettingsPmsRestrictionDb">
+						<field name="pmsrestrictionsettingsPmsRestrictionDb" type="BinHex"/>
+					</object>
+				</object>
+				<object name="DialogActorRestrictions">
+					<object name="dialactorlistDialogActor">
+						<field name="dialactorlistDialogActor" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="VehicleSelectionParameters">
+			<field name="fTimeAheadOfPlayerToTriggerEvent" type="Float"/>
+			<field name="fVehicleSearchRadius" type="Float"/>
+			<field name="bOnlyParkedVehicle" type="Boolean"/>
+			<object name="VehicleDescriptor">
+				<field name="bAllowInInterior" type="Boolean"/>
+				<field name="bExcluseToplessCar" type="Boolean"/>
+				<field name="bAllowDamagedVehicle" type="Boolean"/>
+				<object name="TagSpec">
+					<object name="IncludeTags"/>
+					<object name="ExcludeTags">
+					    <object name="Tag">
+                            <object name="tagcategoryselectionTag">
+                                <field name="text_UITagCategorySelectionClassID" type="String"/>
+                                <field name="UITagCategorySelectionClassID" type="BinHex"/>
+                                <field name="tagcategoryUITagCategory" type="BinHex"/>
+                                <field name="tagcategoryTagCategory" type="BinHex"/>
+                                <field name="tagTag" type="BinHex"/>
+                            </object>
+                        </object>
+					</object>
+					<object name="TagConstraintsAny">
+						<object name="ConstraintAny">
+							<object name="Tags">
+								<object name="tagcategoryselectionTag">
+									<field name="text_UITagCategorySelectionClassID" type="String"/>
+									<field name="UITagCategorySelectionClassID" type="BinHex"/>
+									<field name="tagcategoryUITagCategory" type="BinHex"/>
+									<field name="tagcategoryTagCategory" type="BinHex"/>
+									<field name="tagTag" type="BinHex"/>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+				<object name="TagSpecDbs">
+					<field name="graphickittagspecTagSpec" type="BinHex"/>
+					<object name="TagSpecDbs">
+						<field name="graphickittagspecTagSpec" type="BinHex"/>
+					</object>
+				</object>
+				<object name="VehicleTypesAllowed">
+					<object name="Flags">
+						<field name="bAgile" type="Boolean"/>
+						<field name="bBike" type="Boolean"/>
+						<field name="bBoat" type="Boolean"/>
+						<field name="bHeavy" type="Boolean"/>
+						<field name="bHelicopter" type="Boolean"/>
+						<field name="bMuscle" type="Boolean"/>
+						<field name="bOffroad" type="Boolean"/>
+						<field name="bSpeed" type="Boolean"/>
+						<field name="bTraffic" type="Boolean"/>
+						<field name="bCar" type="Boolean"/>
+						<field name="bVan" type="Boolean"/>
+						<field name="bTruck" type="Boolean"/>
+						<field name="bBus" type="Boolean"/>
+						<field name="bPolice" type="Boolean"/>
+						<field name="bFire" type="Boolean"/>
+						<field name="bAmbulance" type="Boolean"/>
+						<field name="bTaxi" type="Boolean"/>
+						<field name="bNews" type="Boolean"/>
+						<field name="bLimo" type="Boolean"/>
+						<field name="bServiceVehicle" type="Boolean"/>
+						<field name="bRail" type="Boolean"/>
+						<field name="bToyCar" type="Boolean"/>
+						<field name="bScissorLift" type="Boolean"/>
+						<field name="bFlyingDrone" type="Boolean"/>
+						<field name="bArmoredCar" type="Boolean"/>
+						<field name="bKart" type="BinHex"/>
+						<field name="bATV" type="BinHex"/>
+					</object>
+				</object>
+				<object name="VehicleTypesBanned">
+					<object name="Flags">
+						<field name="bAgile" type="Boolean"/>
+						<field name="bBike" type="Boolean"/>
+						<field name="bBoat" type="Boolean"/>
+						<field name="bHeavy" type="Boolean"/>
+						<field name="bHelicopter" type="Boolean"/>
+						<field name="bMuscle" type="Boolean"/>
+						<field name="bOffroad" type="Boolean"/>
+						<field name="bSpeed" type="Boolean"/>
+						<field name="bTraffic" type="Boolean"/>
+						<field name="bCar" type="Boolean"/>
+						<field name="bVan" type="Boolean"/>
+						<field name="bTruck" type="Boolean"/>
+						<field name="bBus" type="Boolean"/>
+						<field name="bPolice" type="Boolean"/>
+						<field name="bFire" type="Boolean"/>
+						<field name="bAmbulance" type="Boolean"/>
+						<field name="bTaxi" type="Boolean"/>
+						<field name="bNews" type="Boolean"/>
+						<field name="bLimo" type="Boolean"/>
+						<field name="bServiceVehicle" type="Boolean"/>
+						<field name="bRail" type="Boolean"/>
+						<field name="bToyCar" type="Boolean"/>
+						<field name="bScissorLift" type="Boolean"/>
+						<field name="bFlyingDrone" type="Boolean"/>
+						<field name="bArmoredCar" type="Boolean"/>
+						<field name="bKart" type="BinHex"/>
+						<field name="bATV" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<field name="missionlistMission" type="BinHex"/>
+		<field name="dynamicobjectiveDynamicObjective" type="BinHex"/>
+		<field name="fMinTriggerDist" type="Float"/>
+		<field name="fMaxTriggerDist" type="Float"/>
+		<field name="robotbossbrickdescriptorRobotBossBrickDescriptor" type="BinHex"/>
+		<field name="persecutionbrickdescriptorPersecutionBrickDescriptor" type="BinHex"/>
+		<field name="loottruckbrickdescriptorLootTruckBrickDescriptor" type="BinHex"/>
+		<field name="downloadbrickdescriptorDownloadBrickDescriptor" type="BinHex"/>
+		<field name="downloadbrickdescriptorDecryptDownloadBrickDescriptor" type="BinHex"/>
+		<field name="scbrickdescriptorSuitCaseBrickDescriptor" type="BinHex"/>
+		<field name="hthbrickdescriptorHackTheHackerBrickDescriptor" type="BinHex"/>
+		<field name="downloadbrickdescriptorDownloadDescriptor" type="BinHex"/>
+		<field name="fleebrickdescriptorFleeDescriptor" type="BinHex"/>
+		<field name="convoybrickdescriptorConvoyBrickDescriptor" type="BinHex"/>
+		<field name="fleebrickdescriptorFleeBrickDescriptor" type="BinHex"/>
+		<field name="vehicleinfoLootTruckVehicleSpawnInfo" type="BinHex"/>
+		<field name="text_archPackageArchetype" type="String"/>
+		<field name="archPackageArchetype" type="BinHex"/>
+		<field name="reinforcementbrickReinforcementDescriptor" type="BinHex"/>
+		<field hash="543BB365" type="BinHex"/>
+		<field name="dexeventEventRefPointOverride" type="BinHex"/>
+		<field name="fMinTriggerDistInParty" type="Float"/>
+		<field name="fMaxTriggerDistInParty" type="Float"/>
+		<object name="TriggerConditions">
+			<field name="fMinTriggerDistance" type="Float"/>
+			<field name="fMaxTriggerDistance" type="Float"/>
+			<field name="bUseClosestRefPoint" type="Boolean"/>
+			<field name="fMinTriggerDistanceInParty" type="Float"/>
+			<field name="fMaxTriggerDistanceInParty" type="Float"/>
+		</object>
+	</object>
+</class>

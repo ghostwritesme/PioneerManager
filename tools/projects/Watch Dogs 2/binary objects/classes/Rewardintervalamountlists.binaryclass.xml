@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RewardintervalamountlistsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="RewardIntervalAmountList">
+		<object name="RewardIntervalAmountValue">
+			<field name="iSlotValue" type="Int32"/>
+		</object>
+	</object>
+</class>

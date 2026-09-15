@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Coopmissionmatchingsessionconfig_f09044d4">
+	<object name="obj">
+		<inherit name="Coopmissionmatchingsessionconfig_f09044d4Parameters"/>
+	</object>
+</file>

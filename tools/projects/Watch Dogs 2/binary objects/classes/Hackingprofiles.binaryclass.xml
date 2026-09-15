@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="HackingprofilesParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fConnectionDuration" type="Float"/>
+	<field name="fCooldownDuration" type="Float"/>
+	<object name="BehaviorTypes">
+		<object name="BehaviorType">
+			<field name="hackingbehaviordefBhvType" type="BinHex"/>
+		</object>
+	</object>
+</class>

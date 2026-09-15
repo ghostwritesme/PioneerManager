@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UnitpresetParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selAffiliation" type="Enum"/>
+	<field name="bValid" type="Boolean"/>
+	<field name="bDisabled" type="Boolean"/>
+	<field name="bIsMPPreset" type="Boolean"/>
+	<field name="bSpawnInChase" type="Boolean"/>
+	<field name="bSpawnInSearch" type="Boolean"/>
+	<field name="iMinRepThreshold" type="Int32"/>
+	<field name="iMaxRepThreshold" type="Int32"/>
+	<field name="text_sBark" type="String"/>
+	<field name="sBark" type="BinHex"/>
+	<object name="ValidBehaviors">
+		<field name="bEasy" type="Boolean"/>
+		<field name="bMedium" type="Boolean"/>
+		<field name="bHard" type="Boolean"/>
+		<field name="bUltimate" type="Boolean"/>
+		<field name="bBounty" type="Boolean"/>
+		<field name="bOnFoot" type="Boolean"/>
+		<field name="bOnFootMedium" type="Boolean"/>
+		<field name="bOnFootHard" type="Boolean"/>
+		<field name="bOnFootUltimate" type="Boolean"/>
+		<field name="bSwatTruck" type="Boolean"/>
+		<field name="bSwatTruckNPC" type="Boolean"/>
+		<field name="bCustom" type="Boolean"/>
+		<field name="bAmbient" type="Boolean"/>
+		<field name="bBoat" type="Boolean"/>
+		<field name="bVirus4Player" type="BinHex" />
+	</object>
+	<object name="UnitConfigList">
+		<object name="unitconfigUnitConfig">
+			<field name="unitconfigUnitConfig" type="BinHex"/>
+		</object>
+	</object>
+</class>

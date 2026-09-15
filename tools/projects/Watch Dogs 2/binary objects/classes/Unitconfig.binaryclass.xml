@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UnitconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selUnitType" type="Enum"/>
+	<field name="humanconfigHumanConfig" type="BinHex"/>
+	<field name="vehicleentityconfigVehicleConfig" type="BinHex"/>
+	<field name="animalconfigAnimalConfig" type="BinHex"/>
+	<field name="robotconfigRobotConfig" type="BinHex"/>
+</class>

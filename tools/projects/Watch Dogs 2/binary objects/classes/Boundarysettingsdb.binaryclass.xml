@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BoundarysettingsdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fWarningTime" type="Float"/>
+	<field name="fMaximumDistanceOutOfBounds" type="Float"/>
+	<field name="entBoundary" type="BinHex"/>
+	<field name="entFallbackEntity" type="BinHex"/>
+	<field name="bTeleportToRoadNetwork" type="Boolean"/>
+	<field name="bUseAutoNavWhenOnFoot" type="Boolean"/>
+	<field name="availabilityrulegroupAvailabilityRule" type="BinHex"/>
+	<field name="selBoundaryType" type="Enum"/>
+	<object name="locstridWarningMessage">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+</class>

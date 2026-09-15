@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RobotphysicsparametersParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMass" type="Float"/>
+	<field name="fRadius" type="Float"/>
+	<field name="fHalfHeight" type="Float"/>
+	<field name="fGroundCheckAdjust" type="Float"/>
+	<field name="fGroundCheckDepth" type="Float"/>
+</class>

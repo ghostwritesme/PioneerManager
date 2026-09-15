@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BuddyaisettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_TooFarBark" type="String"/>
+	<field name="TooFarBark" type="BinHex"/>
+	<field name="text_TooFarPhoneBark" type="String"/>
+	<field name="TooFarPhoneBark" type="BinHex"/>
+	<field name="text_CantEnterVehicleBark" type="String"/>
+	<field name="CantEnterVehicleBark" type="BinHex"/>
+	<field name="text_UnderFireBark" type="String"/>
+	<field name="UnderFireBark" type="BinHex"/>
+	<field name="text_CantReachPlayerBark" type="String"/>
+	<field name="CantReachPlayerBark" type="BinHex"/>
+	<field name="bIsVisible" type="Boolean"/>
+	<field name="bIsInvincible" type="Boolean"/>
+	<field name="fMaxDelayBetweenBuddyGunshot" type="Float"/>
+	<field name="bShouldDieInWater" type="BinHex"/>
+	<field name="bDontChaseBuddysCar" type="BinHex"/>
+	<field name="bCantOpenAnyDoor" type="BinHex"/>
+	<field name="bDisplayWarningMessageWhenACloInUnrechable" type="BinHex"/>
+	<object name="StopAndGoFollowEntitySettings">
+		<field name="fDistanceToFollowBarking" type="Float"/>
+		<field name="fDistanceToRestoreNormalFollow" type="Float"/>
+		<field name="TimeBetweenBark" type="BinHex"/>
+		<field name="fDistanceToIdle" type="Float"/>
+		<field name="fDistanceToUnspawn" type="Float"/>
+	</object>
+	<object name="StopAndGoFollowEntityStealthSettings">
+		<field name="fDistanceToFollowBarking" type="Float"/>
+		<field name="fDistanceToRestoreNormalFollow" type="Float"/>
+		<field name="TimeBetweenBark" type="BinHex"/>
+		<field name="fDistanceToIdle" type="Float"/>
+		<field name="fDistanceToUnspawn" type="Float"/>
+	</object>
+	<object name="StopAndGoFollowPathSettings">
+		<field name="fDistanceToFollowBarking" type="Float"/>
+		<field name="fDistanceToRestoreNormalFollow" type="Float"/>
+		<field name="TimeBetweenBark" type="BinHex"/>
+		<field name="fDistanceToIdle" type="Float"/>
+		<field name="fDistanceToUnspawn" type="Float"/>
+	</object>
+	<object name="FollowEntitySettings">
+		<field name="fDistanceToTargetReached" type="Float"/>
+		<field name="fMinDistanceToStart" type="Float"/>
+	</object>
+	<object name="FollowEntityStealthSettings">
+		<field name="fDistanceToTargetReached" type="Float"/>
+		<field name="fMinDistanceToStart" type="Float"/>
+	</object>
+	<object name="locstridWarningTooFar">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridWarningTooFarUnspawn">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridWarning_NoSeat">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridWarning_BuddyCantReach">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridLogWindowMessageFollowLocalPlayer">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridLogWindowMessageFollowCoopPlayer">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+</class>

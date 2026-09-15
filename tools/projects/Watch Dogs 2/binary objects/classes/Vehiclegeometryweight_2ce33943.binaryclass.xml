@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Vehiclegeometryweight_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="DefaultWeight">
+		<field name="Normal" type="Float"/>
+		<field name="HighEnd" type="Float"/>
+	</object>
+	<object name="Geometries">
+		<object name="Geometry">
+			<field name="text_fileModel" type="String"/>
+			<field name="fileModel" type="BinHex"/>
+			<object name="Weight">
+				<field name="Normal" type="Float"/>
+				<field name="HighEnd" type="Float"/>
+			</object>
+		</object>
+	</object>
+</class>

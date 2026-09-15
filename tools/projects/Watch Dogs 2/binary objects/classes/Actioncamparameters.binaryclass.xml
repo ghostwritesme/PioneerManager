@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ActioncamparametersParameters">
+	<inherit name="SharedParameters"/>
+	<field name="cameraframingdatabaseInVehicleFramingElement" type="BinHex"/>
+	<field name="cameraframingdatabaseOnFootFramingElement" type="BinHex"/>
+	<object name="SlowMotion">
+		<field name="fRatio" type="Float"/>
+		<field name="fLagTime" type="Float"/>
+		<field name="fDurationInRealWorld" type="Float"/>
+		<field name="fBlendInTime" type="Float"/>
+		<field name="fBlendOutTime" type="Float"/>
+		<field name="vec2BlendSCurve" type="Vector2"/>
+		<field name="text_sndStartSound" type="String"/>
+		<field name="sndStartSound" type="BinHex"/>
+		<field name="text_sndStopSound" type="String"/>
+		<field name="sndStopSound" type="BinHex"/>
+	</object>
+</class>

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehicleconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Detection">
+		<object name="ConeAndRadiusConfig">
+			<object name="Default">
+				<object name="curveAutoDetectionRadius">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+			<object name="InCombat">
+				<object name="curveAutoDetectionRadiusInCombat">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+		</object>
+		<object name="RangeModifierConfig">
+			<field name="fMediumRange" type="Float"/>
+			<field name="fCloseRange" type="Float"/>
+			<field name="fPersonalRange" type="Float"/>
+			<field name="fDetectionRadiusRatioOnBackup" type="Float"/>
+			<field name="fDetectionRadiusRatioOnBlackout" type="Float"/>
+			<field name="fReputationModifer" type="Float"/>
+		</object>
+		<object name="FOVDetection">
+			<object name="FOVFront">
+				<field name="fLateralBase" type="Float"/>
+				<field name="fLateralMidRatio" type="Float"/>
+				<field name="fLateralMax" type="Float"/>
+				<field name="fHeightBase" type="Float"/>
+				<field name="fHeightMidRatio" type="Float"/>
+				<field name="fMinDistToUseBodyDir" type="Float"/>
+				<field name="fMaxDistToUseMobileElementDir" type="Float"/>
+				<object name="curveMaxDepthByTimeOfDayCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+				<object name="curveMaxHeightByTimeOfDayCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+			<object name="FOVFrontCombat">
+				<field name="fLateralBase" type="Float"/>
+				<field name="fLateralMidRatio" type="Float"/>
+				<field name="fLateralMax" type="Float"/>
+				<field name="fHeightBase" type="Float"/>
+				<field name="fHeightMidRatio" type="Float"/>
+				<field name="fMinDistToUseBodyDir" type="Float"/>
+				<field name="fMaxDistToUseMobileElementDir" type="Float"/>
+				<object name="curveMaxDepthByTimeOfDayCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+				<object name="curveMaxHeightByTimeOfDayCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+			<object name="FOVRear">
+				<field name="fLateralBase" type="Float"/>
+				<field name="fLateralMidRatio" type="Float"/>
+				<field name="fLateralMax" type="Float"/>
+				<field name="fHeightBase" type="Float"/>
+				<field name="fHeightMidRatio" type="Float"/>
+				<field name="fMinDistToUseBodyDir" type="Float"/>
+				<field name="fMaxDistToUseMobileElementDir" type="Float"/>
+				<object name="curveMaxDepthByTimeOfDayCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+				<object name="curveMaxHeightByTimeOfDayCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+			<object name="FOVRearCombat">
+				<field name="fLateralBase" type="Float"/>
+				<field name="fLateralMidRatio" type="Float"/>
+				<field name="fLateralMax" type="Float"/>
+				<field name="fHeightBase" type="Float"/>
+				<field name="fHeightMidRatio" type="Float"/>
+				<field name="fMinDistToUseBodyDir" type="Float"/>
+				<field name="fMaxDistToUseMobileElementDir" type="Float"/>
+				<object name="curveMaxDepthByTimeOfDayCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+				<object name="curveMaxHeightByTimeOfDayCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+			<object name="FOVSpotlight">
+				<field name="fLateralBase" type="Float"/>
+				<field name="fLateralMidRatio" type="Float"/>
+				<field name="fLateralMax" type="Float"/>
+				<field name="fHeightBase" type="Float"/>
+				<field name="fHeightMidRatio" type="Float"/>
+				<field name="fMinDistToUseBodyDir" type="Float"/>
+				<field name="fMaxDistToUseMobileElementDir" type="Float"/>
+				<object name="curveMaxDepthByTimeOfDayCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+				<object name="curveMaxHeightByTimeOfDayCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+			<object name="FOVSpotlightCombat">
+				<field name="fLateralBase" type="Float"/>
+				<field name="fLateralMidRatio" type="Float"/>
+				<field name="fLateralMax" type="Float"/>
+				<field name="fHeightBase" type="Float"/>
+				<field name="fHeightMidRatio" type="Float"/>
+				<field name="fMinDistToUseBodyDir" type="Float"/>
+				<field name="fMaxDistToUseMobileElementDir" type="Float"/>
+				<object name="curveMaxDepthByTimeOfDayCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+				<object name="curveMaxHeightByTimeOfDayCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+			<object name="FOVSides">
+				<field name="fLateralBase" type="Float"/>
+				<field name="fLateralMidRatio" type="Float"/>
+				<field name="fLateralMax" type="Float"/>
+				<field name="fHeightBase" type="Float"/>
+				<field name="fHeightMidRatio" type="Float"/>
+				<field name="fMinDistToUseBodyDir" type="Float"/>
+				<field name="fMaxDistToUseMobileElementDir" type="Float"/>
+				<object name="curveMaxDepthByTimeOfDayCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+				<object name="curveMaxHeightByTimeOfDayCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+			<object name="FOVSidesCombat">
+				<field name="fLateralBase" type="Float"/>
+				<field name="fLateralMidRatio" type="Float"/>
+				<field name="fLateralMax" type="Float"/>
+				<field name="fHeightBase" type="Float"/>
+				<field name="fHeightMidRatio" type="Float"/>
+				<field name="fMinDistToUseBodyDir" type="Float"/>
+				<field name="fMaxDistToUseMobileElementDir" type="Float"/>
+				<object name="curveMaxDepthByTimeOfDayCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+				<object name="curveMaxHeightByTimeOfDayCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+			<object name="Chopper">
+				<object name="FOVDown">
+					<field name="fLateralBase" type="Float"/>
+					<field name="fLateralMidRatio" type="Float"/>
+					<field name="fLateralMax" type="Float"/>
+					<field name="fHeightBase" type="Float"/>
+					<field name="fHeightMidRatio" type="Float"/>
+					<field name="fMinDistToUseBodyDir" type="Float"/>
+					<field name="fMaxDistToUseMobileElementDir" type="Float"/>
+					<object name="curveMaxDepthByTimeOfDayCurve">
+						<inherit name="KnotsParameters"/>
+					</object>
+					<object name="curveMaxHeightByTimeOfDayCurve">
+						<inherit name="KnotsParameters"/>
+					</object>
+				</object>
+				<object name="FOVDownCombat">
+					<field name="fLateralBase" type="Float"/>
+					<field name="fLateralMidRatio" type="Float"/>
+					<field name="fLateralMax" type="Float"/>
+					<field name="fHeightBase" type="Float"/>
+					<field name="fHeightMidRatio" type="Float"/>
+					<field name="fMinDistToUseBodyDir" type="Float"/>
+					<field name="fMaxDistToUseMobileElementDir" type="Float"/>
+					<object name="curveMaxDepthByTimeOfDayCurve">
+						<inherit name="KnotsParameters"/>
+					</object>
+					<object name="curveMaxHeightByTimeOfDayCurve">
+						<inherit name="KnotsParameters"/>
+					</object>
+				</object>
+			</object>
+			<object name="curveTargetSpeedVsMaxDepthModifierCurve">
+				<inherit name="KnotsParameters"/>
+			</object>
+		</object>
+		<object name="Chopper">
+			<object name="FOVDown">
+				<field name="fLateralBase" type="Float"/>
+				<field name="fLateralMidRatio" type="Float"/>
+				<field name="fLateralMax" type="Float"/>
+				<field name="fHeightBase" type="Float"/>
+				<field name="fHeightMidRatio" type="Float"/>
+				<field name="fMinDistToUseBodyDir" type="Float"/>
+				<field name="fMaxDistToUseMobileElementDir" type="Float"/>
+				<object name="curveMaxDepthByTimeOfDayCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+				<object name="curveMaxHeightByTimeOfDayCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+			<object name="FOVDownCombat">
+				<field name="fLateralBase" type="Float"/>
+				<field name="fLateralMidRatio" type="Float"/>
+				<field name="fLateralMax" type="Float"/>
+				<field name="fHeightBase" type="Float"/>
+				<field name="fHeightMidRatio" type="Float"/>
+				<field name="fMinDistToUseBodyDir" type="Float"/>
+				<field name="fMaxDistToUseMobileElementDir" type="Float"/>
+				<object name="curveMaxDepthByTimeOfDayCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+				<object name="curveMaxHeightByTimeOfDayCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+			<field name="EnableFOVDownDetection" type="BinHex"/>
+			<field name="FOVDownPitchDegrees" type="BinHex"/>
+			<field name="FOVFrontPitchDegrees" type="BinHex"/>
+			<field name="EnableFOVRearDetection" type="BinHex"/>
+			<field name="EnableFOVFrontTracking" type="BinHex"/>
+			<field name="EnableFOVRearTracking" type="BinHex"/>
+			<field name="bUseHelicopterVision" type="Boolean"/>
+		</object>
+	</object>
+	<object name="GaugeModifier">
+		<field name="fGaugeTimeToReachTopAlert" type="Float"/>
+		<field name="fGaugeTimeToReachBottomAlert" type="Float"/>
+		<field name="fGaugeTimeToReachTopPlayerBlackoutModifier" type="Float"/>
+		<field name="fGaugeTimeToReachBottomPlayerBlackoutModifier" type="Float"/>
+		<field name="fGaugeTimeToReachTopPlayerBackupModifier" type="Float"/>
+		<object name="curveGaugeMaxDepthFOVvsTimeModifierCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveGaugeAngleToTargetvsTimeModifierCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="Stimulus">
+			<field name="fGaugeTimeToReachTopGunFireModifier" type="Float"/>
+			<field name="fGaugeTimeToReachTopWeaponInHandsModifier" type="Float"/>
+			<field name="fGaugeTimeToReachTopCollisionModifier" type="Float"/>
+		</object>
+	</object>
+	<object name="TireBlowoutBhv">
+		<field name="bAmplifyDamage" type="Boolean"/>
+		<field name="fEnginePowerBoostFactor" type="Float"/>
+		<object name="Swerve">
+			<field name="fMinSpeedToSwerve_kmh" type="Float"/>
+			<object name="curveGripRatioOverTime">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="curveCenterOfMassZOffsetOverTime">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="curveBreakRatioOverTime">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="curveAccelerationRatioOverTime">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="curveSteerTime">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="curveSteeringAngleDegOverTime">
+				<inherit name="KnotsParameters"/>
+			</object>
+		</object>
+		<object name="SpintOut">
+			<field name="fMinSpeedToSpinOut_kmh" type="Float"/>
+			<field name="fTireGripRatio" type="Float"/>
+			<field name="fCenterMassZOffset" type="Float"/>
+		</object>
+		<object name="DrivingWithDeflatedTire">
+			<field name="fImmobilizedDriveTime" type="Float"/>
+			<field name="fSlowSpeedDriveTime" type="Float"/>
+			<field name="fSlowSpeedKmh" type="Float"/>
+		</object>
+	</object>
+	<object name="OutOfControl">
+		<field name="vehicleoutofcontrolconfigConfig" type="BinHex"/>
+	</object>
+	<object name="VehicleHacked">
+		<field name="bEngineOverheatPlayerHandBrakeAllowed" type="Boolean"/>
+		<field name="fEngineOverHeatDamagePercentage" type="Float"/>
+		<field name="bWheelLockPlayerHandBrakeAllowed" type="Boolean"/>
+		<field name="bLockBrakesPlayerHandBrakeAllowed" type="Boolean"/>
+		<field name="fLockBrakesHackMaxSpeedToGoBackward" type="Float"/>
+		<field name="fHackedDamageModifier" type="Float"/>
+		<field name="fHackedPlayerDamageModifier" type="Float"/>
+		<field name="fFallHardVerticalSpeed" type="Float"/>
+		<field name="selFallHardStimType" type="Enum"/>
+		<field name="fFallHardStimRadius" type="Float"/>
+		<field name="NitroBatteryConsumption" type="BinHex"/>
+		<field name="fNitroBatteryTimerInterval" type="Float"/>
+		<field name="fAlarmHackDuration" type="Float"/>
+		<field name="fCrashMagnetMaxDuration" type="Float"/>
+		<field name="fCrashMagnetMaxDistance" type="Float"/>
+		<field name="fCrashMagnetMaxAngle" type="Float"/>
+		<field name="fCrashMagnetMinSpeed" type="Float"/>
+		<field name="fDisableCrashMagnetOnCollisionSpeed" type="Float"/>
+		<field name="fCrashMagnetWheelLockMinTurnCos" type="Float"/>
+		<field name="fWheelLockHackMaxSpeedToGoBackwardDuringBrakesHack" type="Float"/>
+		<object name="curveEngineOverheatSwerve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveEngineOverheatAcceleration">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveEngineOverheatHandBrake">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveEngineOverheatPlayerSteerRatio">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveEngineOverheatPlayerAccelBrakeRatio">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveWheelLockSwerve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveWheelLockAcceleration">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveWheelLockHandBrake">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveWheelLockPlayerSteerRatio">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveWheelLockPlayerAccelBrakeRatio">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveLockBrakesSwerve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveLockBrakesAcceleration">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveLockBrakesHandBrake">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveLockBrakesPlayerSteerRatio">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveLockBrakesPlayerAccelBrakeRatio">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="AmplifiedDamage">
+		<object name="curveBollardAmplifiedDamageVSWeight">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="HardCollision">
+		<field name="fCooldown" type="Float"/>
+		<field name="fMinRealtiveCollisionSpeedInKmh" type="Float"/>
+		<field name="fSpeedLostRatio" type="Float"/>
+	</object>
+</class>

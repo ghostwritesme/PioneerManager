@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PoseanimationremapParameters">
+	<inherit name="SharedParameters"/>
+	<object name="PoseRemapEntries">
+		<object name="PoseRemapEntry">
+			<field name="text_InputPose" type="String"/>
+			<field name="InputPose" type="BinHex"/>
+			<field name="text_OutputPose" type="String"/>
+			<field name="OutputPose" type="BinHex"/>
+		</object>
+	</object>
+</class>

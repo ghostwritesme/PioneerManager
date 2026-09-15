@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BreakableparametersParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fHealth" type="Float"/>
+	<field name="selDestroyBehavior" type="Enum"/>
+	<field name="bIgnoreVehicles" type="Boolean"/>
+	<field name="bSmashable" type="Boolean"/>
+	<object name="DamageScaleMadeBy">
+		<field name="fVehicleCollision" type="Float"/>
+		<field name="fDynamicCollision" type="Float"/>
+		<field name="fStaticCollision" type="Float"/>
+		<field name="fBullet" type="Float"/>
+		<field name="fExplosion" type="Float"/>
+		<field name="fBurn" type="Float"/>
+	</object>
+	<object name="TimedAutodestruction">
+		<field name="bUseTimedAutodestruction" type="Boolean"/>
+		<field name="fTriggerHealthPercentage" type="Float"/>
+		<field name="fMinTime" type="Float"/>
+		<field name="fMaxTime" type="Float"/>
+	</object>
+	<object name="MotionRelatedParams">
+		<field name="fLinearDamping" type="Float"/>
+		<field name="fAngularDamping" type="Float"/>
+		<field name="fWaterFriction" type="Float"/>
+		<field name="fWaterFloatingScale" type="Float"/>
+		<object name="VehicleCollisionSpeedScale">
+			<field name="fSpeedScale" type="Float"/>
+			<field name="fSpeedScaleVariation" type="Float"/>
+		</object>
+		<object name="BulletSpeedScale">
+			<field name="fSpeedScale" type="Float"/>
+			<field name="fSpeedScaleVariation" type="Float"/>
+		</object>
+		<object name="ExplosionSpeedScale">
+			<field name="fSpeedScale" type="Float"/>
+			<field name="fSpeedScaleVariation" type="Float"/>
+		</object>
+		<object name="InitialMotionsAkaBlastImpulses">
+			<object name="InitialMotion">
+				<field name="bUseForVehicleCollisions" type="Boolean"/>
+				<field name="bUseForDynamicCollisions" type="Boolean"/>
+				<field name="bUseForStaticCollisions" type="Boolean"/>
+				<field name="bUseForBullets" type="Boolean"/>
+				<field name="bUseForExplosions" type="Boolean"/>
+				<field name="bUseForTimed" type="Boolean"/>
+				<field name="bUseForEvents" type="Boolean"/>
+				<object name="Settings">
+					<field name="bUseDirectional" type="Boolean"/>
+					<field name="bUseRadial" type="Boolean"/>
+					<field name="bUseTowardsCamera" type="Boolean"/>
+					<field name="bUseRotational" type="Boolean"/>
+					<object name="Directional">
+						<field name="vectorMinVelocity" type="Vector3"/>
+						<field name="vectorMaxVelocity" type="Vector3"/>
+						<field name="bLocalSpace" type="Boolean"/>
+					</object>
+					<object name="Radial">
+						<field name="vectorCenterOffset" type="Vector3"/>
+						<field name="fMinSpeed" type="Float"/>
+						<field name="fMaxSpeed" type="Float"/>
+					</object>
+					<object name="TowardsCamera">
+						<field name="fMinSpeed" type="Float"/>
+						<field name="fMaxSpeed" type="Float"/>
+						<object name="Targets">
+							<object name="Target">
+								<field name="vectorTarget" type="Vector3"/>
+							</object>
+						</object>
+					</object>
+					<object name="Rotational">
+						<field name="vectorMinVelocity" type="Vector3"/>
+						<field name="vectorMaxVelocity" type="Vector3"/>
+						<field name="bLocalSpace" type="Boolean"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="Connectivity">
+		<object name="VehicleCollision">
+			<field name="selConnectivity" type="Enum"/>
+		</object>
+		<object name="DynamicCollision">
+			<field name="selConnectivity" type="Enum"/>
+		</object>
+		<object name="StaticCollision">
+			<field name="selConnectivity" type="Enum"/>
+		</object>
+		<object name="Bullet">
+			<field name="selConnectivity" type="Enum"/>
+		</object>
+		<object name="Explosion">
+			<field name="selConnectivity" type="Enum"/>
+		</object>
+		<object name="Burn">
+			<field name="selConnectivity" type="Enum"/>
+		</object>
+	</object>
+	<object name="StimGeneration">
+		<field name="bExplodes" type="Boolean"/>
+		<field name="bGeneratesFireOnDestroy" type="Boolean"/>
+		<field name="bGeneratesStimsOnDestroy" type="Boolean"/>
+		<field name="bGeneratesStimsOnActivate" type="Boolean"/>
+		<object name="GenerateExplosion">
+			<field name="ExplosionCenter" type="BinHex"/>
+			<field name="ExplosionImpulseDividerHACK" type="BinHex"/>
+			<object name="ExplosionStim">
+				<field name="text_hidEventName" type="String"/>
+				<field name="hidEventName" type="BinHex"/>
+				<field name="hidTargetEntityId" type="BinHex"/>
+				<field name="text_sDetail" type="String"/>
+				<field name="sDetail" type="BinHex"/>
+				<field name="selType" type="Enum"/>
+				<field name="bShowCone" type="Boolean"/>
+				<field name="bUseOcclusion" type="Boolean"/>
+				<field name="fDamage" type="Float"/>
+				<field name="curvelibDamageFalloff" type="BinHex"/>
+				<field name="fPhysImpulse" type="Float"/>
+				<field name="fPhysImpulseFalloffFactor" type="Float"/>
+				<field name="fShockWaveSpeed" type="Float"/>
+				<field name="fWindStartRadius" type="Float"/>
+				<field name="fWindEndRadius" type="Float"/>
+				<field name="fWindStartItensity" type="Float"/>
+				<field name="fWindEndIntensity" type="Float"/>
+				<field name="fWindTime" type="Float"/>
+				<object name="RadiusSettings">
+					<field name="fRadius" type="Float"/>
+				</object>
+				<object name="AltitudeSliceSettings">
+					<field name="fMaxAlt" type="Float"/>
+					<field name="fMinAlt" type="Float"/>
+				</object>
+				<object name="LevelSettings">
+					<field name="fLevel" type="Float"/>
+					<field name="bFalloff" type="Boolean"/>
+					<field name="fFalloffMinLevel" type="Float"/>
+				</object>
+				<object name="EntityRestrictions">
+					<field name="bRestrictToEntities" type="Boolean"/>
+				</object>
+			</object>
+			<object name="ExtraStims">
+				<object name="Stim">
+					<field name="stims" type="BinHex"/>
+					<field name="vectorLocalTranslationOffset" type="Vector3"/>
+					<field name="bIsPersistent" type="Boolean"/>
+					<field name="fPersistenceDuration" type="Float"/>
+					<field name="fPersistenceInterval" type="Float"/>
+					<field name="text_hidEventName" type="String"/>
+					<field name="hidEventName" type="BinHex"/>
+					<field name="hidTargetEntityId" type="BinHex"/>
+					<field name="sDetail" type="BinHex"/>
+					<field name="selType" type="Enum"/>
+					<field name="bShowCone" type="Boolean"/>
+					<field name="fConeAngle" type="Float"/>
+					<field name="vectorLimitsExtraRotations" type="Vector3"/>
+					<field name="bAllowPersistanceOverride" type="Boolean"/>
+					<object name="RadiusSettings">
+						<field name="fRadius" type="Float"/>
+					</object>
+					<object name="AltitudeSliceSettings">
+						<field name="fMaxAlt" type="Float"/>
+						<field name="fMinAlt" type="Float"/>
+					</object>
+					<object name="LevelSettings">
+						<field name="fLevel" type="Float"/>
+						<field name="bFalloff" type="Boolean"/>
+						<field name="fFalloffMinLevel" type="Float"/>
+					</object>
+					<object name="EntityRestrictions">
+						<field name="bRestrictToEntities" type="Boolean"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="Fire">
+			<field name="vectorCenterPosition" type="Vector3"/>
+			<field name="fRadius" type="Float"/>
+			<field name="fDuration" type="Float"/>
+			<field name="fLevelPerSecond" type="Float"/>
+			<field name="bFalloff" type="Boolean"/>
+			<field name="fMinimumLevelPerSecond" type="Float"/>
+		</object>
+		<object name="StimsOnDestroy">
+			<object name="GeneratedStims">
+				<object name="Stim">
+					<field name="text_hidEventName" type="String"/>
+					<field name="hidEventName" type="BinHex"/>
+					<field name="hidTargetEntityId" type="BinHex"/>
+					<field name="sDetail" type="BinHex"/>
+					<field name="selType" type="Enum"/>
+					<field name="bShowCone" type="Boolean"/>
+					<field name="fConeAngle" type="Float"/>
+					<field name="stims" type="BinHex"/>
+					<field name="vectorLocalTranslationOffset" type="Vector3"/>
+					<field name="bIsPersistent" type="Boolean"/>
+					<field name="fPersistenceDuration" type="Float"/>
+					<field name="fPersistenceInterval" type="Float"/>
+					<field name="vectorLimitsExtraRotations" type="Vector3"/>
+					<object name="RadiusSettings">
+						<field name="fRadius" type="Float"/>
+					</object>
+					<object name="AltitudeSliceSettings">
+						<field name="fMaxAlt" type="Float"/>
+						<field name="fMinAlt" type="Float"/>
+					</object>
+					<object name="LevelSettings">
+						<field name="fLevel" type="Float"/>
+						<field name="bFalloff" type="Boolean"/>
+						<field name="fFalloffMinLevel" type="Float"/>
+					</object>
+					<object name="EntityRestrictions">
+						<field name="bRestrictToEntities" type="Boolean"/>
+					</object>
+					<field name="bAllowPersistanceOverride" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BinkmissiontransitiondatabaseParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bEnablePDAExtraction" type="Boolean"/>
+	<field name="text_sndIntroSoundTrack" type="String"/>
+	<field name="sndIntroSoundTrack" type="BinHex"/>
+	<field name="text_sndOutroSoundTrack" type="String"/>
+	<field name="sndOutroSoundTrack" type="BinHex"/>
+	<object name="IntroVideoProperties">
+		<field name="videosBinkVideo" type="BinHex"/>
+	</object>
+	<object name="LoopingVideoProperties">
+		<field name="videosBinkVideo" type="BinHex"/>
+	</object>
+	<object name="OutroVideoProperties">
+		<field name="videosBinkVideo" type="BinHex"/>
+	</object>
+</class>

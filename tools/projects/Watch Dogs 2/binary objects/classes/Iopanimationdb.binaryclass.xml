@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="IopanimationdbParameters">
+	<inherit name="SharedParameters"/>
+	<object name="IOPAnimations">
+		<object name="IOPMoveStateEntry">
+			<inherit name="SharedParameters"/>
+			<field name="text_fileMoveStateId" type="String"/>
+			<field name="fileMoveStateId" type="BinHex"/>
+		</object>
+	</object>
+</class>

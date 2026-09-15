@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ChasestageconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="ChaseLevels">
+		<object name="chaselevelparametersChaseLevelConfig">
+			<field name="chaselevelparametersChaseLevelConfig" type="BinHex"/>
+		</object>
+	</object>
+</class>

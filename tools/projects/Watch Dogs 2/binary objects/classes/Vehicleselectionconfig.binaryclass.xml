@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehicleselectionconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bCanHijack" type="Boolean"/>
+	<field name="fSearchRadius" type="Float"/>
+	<object name="AllowedVehicles">
+		<object name="Flags">
+			<field name="bAgile" type="Boolean"/>
+			<field name="bBike" type="Boolean"/>
+			<field name="bBoat" type="Boolean"/>
+			<field name="bHeavy" type="Boolean"/>
+			<field name="bHelicopter" type="Boolean"/>
+			<field name="bMuscle" type="Boolean"/>
+			<field name="bOffroad" type="Boolean"/>
+			<field name="bSpeed" type="Boolean"/>
+			<field name="bTraffic" type="Boolean"/>
+			<field name="bCar" type="Boolean"/>
+			<field name="bVan" type="Boolean"/>
+			<field name="bTruck" type="Boolean"/>
+			<field name="bBus" type="Boolean"/>
+			<field name="bPolice" type="Boolean"/>
+			<field name="bFire" type="Boolean"/>
+			<field name="bAmbulance" type="Boolean"/>
+			<field name="bTaxi" type="Boolean"/>
+			<field name="bNews" type="Boolean"/>
+			<field name="bLimo" type="Boolean"/>
+			<field name="bServiceVehicle" type="Boolean"/>
+			<field name="bRail" type="Boolean"/>
+			<field name="bToyCar" type="Boolean"/>
+			<field name="bScissorLift" type="Boolean"/>
+			<field name="bFlyingDrone" type="Boolean"/>
+			<field name="bArmoredCar" type="Boolean"/>
+			<field name="bKart" type="BinHex"/>
+			<field name="bATV" type="BinHex"/>
+		</object>
+	</object>
+	<object name="ExcludedVehicles">
+		<object name="Flags">
+			<field name="bAgile" type="Boolean"/>
+			<field name="bBike" type="Boolean"/>
+			<field name="bBoat" type="Boolean"/>
+			<field name="bHeavy" type="Boolean"/>
+			<field name="bHelicopter" type="Boolean"/>
+			<field name="bMuscle" type="Boolean"/>
+			<field name="bOffroad" type="Boolean"/>
+			<field name="bSpeed" type="Boolean"/>
+			<field name="bTraffic" type="Boolean"/>
+			<field name="bCar" type="Boolean"/>
+			<field name="bVan" type="Boolean"/>
+			<field name="bTruck" type="Boolean"/>
+			<field name="bBus" type="Boolean"/>
+			<field name="bPolice" type="Boolean"/>
+			<field name="bFire" type="Boolean"/>
+			<field name="bAmbulance" type="Boolean"/>
+			<field name="bTaxi" type="Boolean"/>
+			<field name="bNews" type="Boolean"/>
+			<field name="bLimo" type="Boolean"/>
+			<field name="bServiceVehicle" type="Boolean"/>
+			<field name="bRail" type="Boolean"/>
+			<field name="bToyCar" type="Boolean"/>
+			<field name="bScissorLift" type="Boolean"/>
+			<field name="bFlyingDrone" type="Boolean"/>
+			<field name="bArmoredCar" type="Boolean"/>
+			<field name="bKart" type="BinHex"/>
+			<field name="bATV" type="BinHex"/>
+		</object>
+	</object>
+</class>

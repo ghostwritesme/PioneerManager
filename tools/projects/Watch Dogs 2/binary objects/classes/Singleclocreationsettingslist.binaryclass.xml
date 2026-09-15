@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="SingleclocreationsettingslistParameters">
+	<inherit name="SharedParameters"/>
+	<object name="List">
+		<object name="singleclocreationsettingsSettings">
+			<field name="singleclocreationsettingsSettings" type="BinHex"/>
+		</object>
+	</object>
+</class>

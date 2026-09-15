@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Qosmatchingsessionconfig_5b619374Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fWeight" type="Float"/>
+	<field name="fScoreOffset" type="Float"/>
+	<field name="nIdealRTT" type="Int32"/>
+	<field name="nBadRTT" type="Int32"/>
+	<field name="nIncompatibleRTT" type="Int32"/>
+</class>

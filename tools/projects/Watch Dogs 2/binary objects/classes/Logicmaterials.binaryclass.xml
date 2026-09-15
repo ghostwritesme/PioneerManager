@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="LogicmaterialsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="disId" type="BinHex"/>
+	<field name="physmatPhysicMaterial" type="BinHex"/>
+	<field name="iPiercingResistance" type="Int32"/>
+	<field name="fTransparency" type="Float"/>
+	<field name="wfmWheelFxMaterial" type="BinHex"/>
+	<field name="clrDisplayColor" type="VectorColor"/>
+	<field name="bSoundOccluder" type="Boolean"/>
+	<field name="bBlocksExplosions" type="Boolean"/>
+	<object name="sndswvlSoundSwitchValue">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="String"/>
+	</object>
+	<object name="sndswvlWallMaterialSoundSwitchValue">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="String"/>
+	</object>
+	<object name="curveCameraShakeStrength">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveRumbleIntensityCurve">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="DirtAccumulator">
+		<field name="fDustAccumulatorFactor" type="Float"/>
+		<field name="fDirtAccMinSpeed" type="Float"/>
+		<field name="fDustBurnoutFactor" type="Float"/>
+		<field name="fMudBurnoutFactor" type="Float"/>
+		<field name="fMudAccumulatorFactor" type="Float"/>
+	</object>
+</class>

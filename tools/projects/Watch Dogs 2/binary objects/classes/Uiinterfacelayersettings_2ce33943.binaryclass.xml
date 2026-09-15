@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uiinterfacelayersettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="interfaceMenuLayer">
+		<field name="text_InterfacePathID" type="String"/>
+		<field name="InterfacePathID" type="BinHex"/>
+		<field name="MainAccesorName" type="String"/>
+		<field name="fLayerRenderingOrder" type="Float"/>
+		<field name="InterfaceLayerDescription" type="String"/>
+	</object>
+	<object name="interfaceHudOneLayer">
+		<field name="text_InterfacePathID" type="String"/>
+		<field name="InterfacePathID" type="BinHex"/>
+		<field name="MainAccesorName" type="String"/>
+		<field name="fLayerRenderingOrder" type="Float"/>
+		<field name="InterfaceLayerDescription" type="String"/>
+	</object>
+	<object name="interfaceHudTwoLayer">
+		<field name="text_InterfacePathID" type="String"/>
+		<field name="InterfacePathID" type="BinHex"/>
+		<field name="MainAccesorName" type="String"/>
+		<field name="fLayerRenderingOrder" type="Float"/>
+		<field name="InterfaceLayerDescription" type="String"/>
+	</object>
+	<object name="interfaceHudThreeLayer">
+		<field name="text_InterfacePathID" type="String"/>
+		<field name="InterfacePathID" type="BinHex"/>
+		<field name="MainAccesorName" type="String"/>
+		<field name="fLayerRenderingOrder" type="Float"/>
+		<field name="InterfaceLayerDescription" type="String"/>
+	</object>
+	<object name="interfaceDebugLayer">
+		<field name="text_InterfacePathID" type="String"/>
+		<field name="InterfacePathID" type="BinHex"/>
+		<field name="MainAccesorName" type="String"/>
+		<field name="fLayerRenderingOrder" type="Float"/>
+		<field name="InterfaceLayerDescription" type="String"/>
+	</object>
+	<object name="interfaceIngameMapComponents">
+		<field name="text_InterfacePathID" type="String"/>
+		<field name="InterfacePathID" type="BinHex"/>
+		<field name="MainAccesorName" type="String"/>
+		<field name="fLayerRenderingOrder" type="Float"/>
+		<field name="InterfaceLayerDescription" type="String"/>
+	</object>
+</class>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="NeutralizegameplaybrickParameters">
+	<inherit name="SharedParameters"/>
+	<field name="mapicondescMapIconDescription" type="BinHex"/>
+	<object name="EntityList">
+		<object name="Entity">
+			<field name="entEntity" type="BinHex"/>
+		</object>
+	</object>
+</class>

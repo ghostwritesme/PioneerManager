@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PhotocameraeffectdescParameters">
+	<inherit name="SharedParameters"/>
+	<field name="cinematicmodeColorGradingFilter" type="BinHex"/>
+	<field name="sUIElementIconLabel" type="String"/>
+	<object name="locstridFilterNameId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<field name="selImplementType" type="Enum"/>
+	<field name="selShaderFilterType" type="Enum"/>
+</class>

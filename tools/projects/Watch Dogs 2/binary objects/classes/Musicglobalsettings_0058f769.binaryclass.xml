@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Musicglobalsettings_0058f769Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="sndTransitionSoundID" type="BinHex"/>
+	<object name="DiegeticMusicRtpcs">
+		<object name="sndvarPositioningRtpc">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarInVehicleRtpc">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarSpeakerSizeRtpc">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+	</object>
+	<object name="MusicSwitch">
+		<object name="sndswtpMusicSwitchGroup">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswvlMusicSwitchExterior">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswvlMusicSwitchInterior">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+	</object>
+</class>

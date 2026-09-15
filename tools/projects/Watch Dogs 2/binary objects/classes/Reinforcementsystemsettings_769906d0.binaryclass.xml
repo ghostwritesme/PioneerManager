@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Reinforcementsystemsettings_769906d0Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="uiMaxAgentBudget" type="Int64"/>
+	<field name="gpctxspecCinematicGameplayContext" type="BinHex"/>
+	<object name="MaxAgentBudgetsPerType">
+		<field name="uiVehicleMaxAgentBudget" type="Int64"/>
+		<field name="uiNPCMaxAgentBudget" type="Int64"/>
+		<field name="uiChopperMaxAgentBudget" type="Int64"/>
+		<field name="uiBoatMaxAgentBudget" type="Int64"/>
+	</object>
+	<object name="Chopper">
+		<field name="fDefaultRespawnTime" type="Float"/>
+	</object>
+	<object name="AffiliationReinforcementConfig">
+		<object name="affiliationreinforcementconfigAffiliationReinforcementConfig">
+			<field name="affiliationreinforcementconfigAffiliationReinforcementConfig" type="BinHex"/>
+		</object>
+	</object>
+</class>

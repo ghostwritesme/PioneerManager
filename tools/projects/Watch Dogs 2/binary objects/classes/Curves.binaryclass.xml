@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CurvesParameters">
+	<inherit name="SharedParameters"/>
+	<object name="curveCurve">
+		<inherit name="KnotsParameters"/>
+	</object>
+</class>

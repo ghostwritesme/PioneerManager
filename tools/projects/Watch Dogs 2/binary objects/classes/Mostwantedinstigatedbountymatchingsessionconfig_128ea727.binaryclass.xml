@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Mostwantedinstigatedbountymatchingsessionconfig_128ea727Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="PawnConfig">
+		<inherit name="SharedParameters"/>
+		<field name="fWeight" type="Float"/>
+		<field name="fScoreOffset" type="Float"/>
+		<field name="fDistanceMin" type="Float"/>
+		<field name="fDistanceIdealMin" type="Float"/>
+		<field name="fDistanceIdealMax" type="Float"/>
+		<field name="fDistanceMax" type="Float"/>
+		<field name="fDistanceWeight" type="Float"/>
+		<field name="fClosingSpeedMin" type="Float"/>
+		<field name="fClosingSpeedMax" type="Float"/>
+		<field name="fDistanceModulationFactor" type="Float"/>
+	</object>
+	<object name="GameSessionInfoConfig">
+		<inherit name="SharedParameters"/>
+		<field name="fWeight" type="Float"/>
+		<field name="fScoreOffset" type="Float"/>
+		<field name="sDesiredClientCount" type="BinHex"/>
+		<field name="selCoopPreference" type="BinHex"/>
+		<field name="selCoopRestriction" type="BinHex"/>
+	</object>
+</class>

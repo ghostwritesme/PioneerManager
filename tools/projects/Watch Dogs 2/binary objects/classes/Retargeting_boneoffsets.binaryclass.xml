@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Retargeting_boneoffsetsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="BoneOffsets">
+		<object name="SRetargetingBoneOffset">
+			<field name="text_BoneName" type="String"/>
+			<field name="BoneName" type="BinHex"/>
+			<field name="Offset" type="BinHex"/>
+		</object>
+	</object>
+</class>

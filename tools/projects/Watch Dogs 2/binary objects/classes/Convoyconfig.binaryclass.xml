@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ConvoyconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="vehiclebhvsetupLeaderVehicleBhv" type="BinHex"/>
+	<field name="vehiclebhvsetupFollowersBhv" type="BinHex"/>
+	<field name="convoybarksconfigBarkConfig" type="BinHex"/>
+	<field name="destinationAreaRadius" type="BinHex"/>
+	<object name="visual">
+		<field name="bShowPath" type="Boolean"/>
+		<field name="bShowIcon" type="Boolean"/>
+		<field name="bBlinkIcon" type="Boolean"/>
+		<field name="fBlinkShowDuration" type="Float"/>
+		<field name="fBlinkHideDuration" type="Float"/>
+	</object>
+</class>

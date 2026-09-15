@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Avatarconfig_50bcb219Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="NetSurfing">
+		<field name="fNodeDiscardDistance" type="Float"/>
+		<field name="fNodeUsageDistance" type="Float"/>
+		<field name="fNodeConnectionDistance" type="Float"/>
+		<field name="fNodeUpdatableDistance" type="Float"/>
+		<field name="fNodeSize" type="Float"/>
+		<field name="colorNodeVirtualColor" type="Vector3"/>
+		<field name="fNodeVirtualAlpha" type="Float"/>
+		<field name="colorNodeHackableColor" type="Vector3"/>
+		<field name="fNodeHackableAlpha" type="Float"/>
+		<field name="colorNodeCameraColor" type="Vector3"/>
+		<field name="fNodeCameraAlpha" type="Float"/>
+		<field name="colorNodePlayerColor" type="Vector3"/>
+		<field name="fNodePlayerAlpha" type="Float"/>
+		<field name="colorNodeSelectionColor" type="Vector3"/>
+		<field name="colorLineColor" type="Vector3"/>
+		<field name="fLineAlpha" type="Float"/>
+		<field name="fSpeedNormal" type="Float"/>
+		<field name="fSpeedMax" type="Float"/>
+		<field name="fSpeedMaxExtra" type="Float"/>
+		<field name="fSpeedAccel" type="Float"/>
+		<field name="fSpeedDecel" type="Float"/>
+	</object>
+	<object name="Locomotion">
+		<field name="curvelibJoystickSpeedCurve" type="BinHex"/>
+		<field name="fPlantAngleThreshold" type="Float"/>
+		<field name="fBankingAngleDeadzone" type="Float"/>
+		<field name="fBankingLagCenter" type="Float"/>
+		<field name="fBankingLagOut" type="Float"/>
+		<field name="bIsObstacleAvoidanceActive" type="Boolean"/>
+		<field name="fAvoidanceWalkForce" type="Float"/>
+		<field name="fAvoidanceJogForce" type="Float"/>
+		<field name="fAvoidanceSprintForce" type="Float"/>
+		<field name="bBlockedByObstacleActivated" type="Boolean"/>
+		<field name="bBlockedByCliffsActivated" type="Boolean"/>
+		<field name="bEdgeSlideActivated" type="Boolean"/>
+		<field name="bSurfacePosAdjustmentActivated" type="Boolean"/>
+		<field name="fHighProfileCooldown" type="Float"/>
+		<object name="CollisionStumbleReaction">
+			<field name="bIsStumbleActive" type="Boolean"/>
+			<field name="bIsPolesAndCornersDetectionActive" type="Boolean"/>
+			<field name="fImmunityDelayAfterSmallStumbles" type="Float"/>
+			<field name="fImmunityDelayAfterBigStumbles" type="Float"/>
+			<field name="fMinStressRatioForBigStumbles" type="Float"/>
+			<field name="fFrequentStumbleDelay" type="Float"/>
+			<field name="fObstacleMinHeightForCollisionStumbles" type="Float"/>
+		</object>
+		<object name="Accessories">
+			<field name="text_archBaton" type="String"/>
+			<field name="archBaton" type="BinHex"/>
+			<field name="text_archMonkeyFist" type="String"/>
+			<field name="archMonkeyFist" type="BinHex"/>
+			<field name="text_archARPhone" type="String"/>
+			<field name="archARPhone" type="BinHex"/>
+			<field name="text_archSniperScope" type="String"/>
+			<field name="archSniperScope" type="BinHex"/>
+			<field name="nExtractFromPDAOverrideMaterialIndex" type="Enum"/>
+		</object>
+		<object name="IdleCycleBreakers">
+			<field name="fIdleBreakerStartDelay" type="Float"/>
+			<field name="fIdleBreakerWalkInterruptDelay" type="Float"/>
+			<field name="fIdleBreakerJogInterruptDelay" type="Float"/>
+			<field name="fIdleBreakerSprintInterruptDelay" type="Float"/>
+			<field name="fIdleBreakerCoverInterruptDelay" type="Float"/>
+		</object>
+	</object>
+	<object name="GenericActions">
+		<field name="bUseShapeCastSensor" type="Boolean"/>
+		<field name="bIsUsingStepFalling" type="Boolean"/>
+		<field name="bIsPreventingDeadlyDrops" type="Boolean"/>
+		<field name="fAutoInteractMaxHeight" type="Float"/>
+		<field name="bUseJumpOverGaps" type="Boolean"/>
+		<field name="bUseFollowingInteractionDetection" type="Boolean"/>
+		<field name="iRandomSequenceItemCount" type="Int32"/>
+		<field name="fInputMaxFrontAngle" type="Float"/>
+		<field name="fIdleInteractionMinDist" type="Float"/>
+		<field name="fWalkInteractionMinDist" type="Float"/>
+		<field name="fJogInteractionMinDist" type="Float"/>
+		<field name="fSprintInteractionMinDist" type="Float"/>
+		<field name="fClimbDownWalkStartDist1M" type="Float"/>
+		<field name="fClimbDownWalkStartDist3M" type="Float"/>
+		<field name="fClimbDownJogStartDist1M" type="Float"/>
+		<field name="fClimbDownJogStartDist3M" type="Float"/>
+		<field name="fClimbDownSprintStartDist1M" type="Float"/>
+		<field name="fClimbDownSprintStartDist3M" type="Float"/>
+		<field name="fWallJumpStartDist" type="Float"/>
+		<field name="fStartAngleDiffMax" type="Float"/>
+		<field name="fStartAngleDiffMaxForChaining" type="Float"/>
+		<field name="fClimbOverJogStartDist30_60cm" type="Float"/>
+		<field name="fClimbOverJogStartDist60_80cm" type="Float"/>
+		<field name="fClimbOverSprintStartDist30_60cm" type="Float"/>
+		<field name="fClimbOverSprintStartDist60_80cm" type="Float"/>
+		<field name="fShapecastHitNormalMaxCosAngle" type="Float"/>
+		<field name="fFrontCastHitNormalMaxCosAngle" type="Float"/>
+		<field name="fShapecastFrontHeightOffset" type="Float"/>
+		<field name="fShapecastFrontBaseDist" type="Float"/>
+		<field name="fShapecastFrontSpeedOffset" type="Float"/>
+		<field name="fShapecastDropFrontOffset" type="Float"/>
+		<field name="fRaycastHitMaxDist" type="Float"/>
+		<field name="fClimbUpDistMin" type="Float"/>
+		<field name="fClimbUpDistMax" type="Float"/>
+		<field name="fClimbUpOnVehicleDistMax" type="Float"/>
+		<field name="fClimbDownDistMin" type="Float"/>
+		<field name="fClimbDownDistMax" type="Float"/>
+		<field name="fLadderClimbUpDistMax" type="Float"/>
+		<field name="fLadder4mEnterHeightLowSpeed" type="Float"/>
+		<field name="fLadder4mEnterHeightHighSpeed" type="Float"/>
+		<field name="fLadder5mEnterHeightLowSpeed" type="Float"/>
+		<field name="fLadder5mEnterHeightHighSpeed" type="Float"/>
+		<field name="fLadder6mEnterHeightLowSpeed" type="Float"/>
+		<field name="fLadder6mEnterHeightHighSpeed" type="Float"/>
+		<field name="fSlideOverMinWidth" type="Float"/>
+		<field name="fSlideOverMaxWidth" type="Float"/>
+		<field name="fSlideOverInterruptDist" type="Float"/>
+		<field name="bClimbDownAnchorUseCurrentSight" type="Boolean"/>
+		<field name="fSwimMaxHeightClimbUpReach" type="Float"/>
+		<object name="AnnotationScan">
+			<field name="fScanBoxAboveDist" type="Float"/>
+			<field name="fScanBoxBelowDist" type="Float"/>
+		</object>
+		<object name="GapJumping">
+			<field name="fJumpOverGapMaxHorizDist" type="Float"/>
+			<field name="fJumpOverGapMaxElevation" type="Float"/>
+			<field name="fJumpOverGapMaxDrop" type="Float"/>
+			<field name="fJumpOverGapIdealWidthWalk" type="Float"/>
+			<field name="fJumpOverGapIdealWidthJog" type="Float"/>
+			<field name="fJumpOverGapIdealWidthSprint" type="Float"/>
+			<field name="fChainedJumpOverGapIdealWidth" type="Float"/>
+		</object>
+		<object name="InteractionChaining">
+			<field name="fInteractionChainingMinTimeInterval" type="Float"/>
+			<object name="ChainMaxHorizontalDistance">
+				<field name="ClimbUp_To_ClimbUp" type="BinHex"/>
+				<field name="ClimbUp_To_ClimbOver" type="BinHex"/>
+				<field name="ClimbUp_To_SlideOver" type="BinHex"/>
+				<field name="ClimbUp_To_ClimbDown" type="BinHex"/>
+				<field name="ClimbUp_To_JumpOver" type="BinHex"/>
+				<field name="ClimbOver_To_ClimbUp" type="BinHex"/>
+				<field name="ClimbOver_To_ClimbOver" type="BinHex"/>
+				<field name="ClimbOver_To_SlideOver" type="BinHex"/>
+				<field name="ClimbOver_To_ClimbDown" type="BinHex"/>
+				<field name="ClimbOver_To_JumpOver" type="BinHex"/>
+				<field name="SlideOver_To_ClimbUp" type="BinHex"/>
+				<field name="SlideOver_To_ClimbOver" type="BinHex"/>
+				<field name="SlideOver_To_SlideOver" type="BinHex"/>
+				<field name="SlideOver_To_ClimbDown" type="BinHex"/>
+				<field name="SlideOver_To_JumpOver" type="BinHex"/>
+				<field name="ClimbDown_To_ClimbUp" type="BinHex"/>
+				<field name="ClimbDown_To_ClimbOver" type="BinHex"/>
+				<field name="ClimbDown_To_SlideOver" type="BinHex"/>
+				<field name="ClimbDown_To_ClimbDown" type="BinHex"/>
+				<field name="ClimbDown_To_JumpOver" type="BinHex"/>
+				<field name="JumpOver_To_ClimbUp" type="BinHex"/>
+				<field name="JumpOver_To_ClimbOver" type="BinHex"/>
+				<field name="JumpOver_To_SlideOver" type="BinHex"/>
+				<field name="JumpOver_To_ClimbDown" type="BinHex"/>
+				<field name="JumpOver_To_JumpOver" type="BinHex"/>
+			</object>
+			<object name="ChainParams">
+				<object name="ChainType">
+					<inherit name="SharedParameters"/>
+					<field name="selChainType" type="Enum"/>
+					<field name="fMinIntroHeight" type="Float"/>
+					<field name="fMaxIntroHeight" type="Float"/>
+					<field name="fMinHeightDiff" type="Float"/>
+					<field name="fMaxHeightDiff" type="Float"/>
+					<field name="fMaxWidth" type="Float"/>
+					<field name="fMinFreeSpaceAfter" type="Float"/>
+					<field name="bCanBranchFromAnotherChain" type="Boolean"/>
+					<field name="bNeedToFollowAnotherChain" type="Boolean"/>
+					<field name="bCanBranchFromAnyChain" type="Boolean"/>
+					<object name="BranchPreConditions">
+						<object name="LastChain">
+							<inherit name="SharedParameters"/>
+							<field name="selChainType" type="Enum"/>
+							<field name="fMinIntroHeight" type="Float"/>
+							<field name="fMaxIntroHeight" type="Float"/>
+							<field name="fMinHeightDiff" type="Float"/>
+							<field name="fMaxHeightDiff" type="Float"/>
+							<field name="fMaxWidth" type="Float"/>
+							<field name="fMinFreeSpaceAfter" type="Float"/>
+							<field name="bCanBranchFromAnotherChain" type="Boolean"/>
+							<field name="bNeedToFollowAnotherChain" type="Boolean"/>
+							<field name="bCanBranchFromAnyChain" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="FallDisplacements">
+			<object name="FallDisplacementsWALK">
+				<field name="Index0" type="Vector3"/>
+				<field name="Index1" type="Vector3"/>
+				<field name="Index2" type="Vector3"/>
+				<field name="Index3" type="Vector3"/>
+				<field name="Index4" type="Vector3"/>
+				<field name="Index5" type="Vector3"/>
+			</object>
+			<object name="FallDisplacementsJOG">
+				<field name="Index0" type="Vector3"/>
+				<field name="Index1" type="Vector3"/>
+				<field name="Index2" type="Vector3"/>
+				<field name="Index3" type="Vector3"/>
+				<field name="Index4" type="Vector3"/>
+				<field name="Index5" type="Vector3"/>
+			</object>
+			<object name="FallDisplacementsSPRINT">
+				<field name="Index0" type="Vector3"/>
+				<field name="Index1" type="Vector3"/>
+				<field name="Index2" type="Vector3"/>
+				<field name="Index3" type="Vector3"/>
+				<field name="Index4" type="Vector3"/>
+				<field name="Index5" type="Vector3"/>
+			</object>
+		</object>
+		<object name="LandingReactionStims">
+			<field name="fLandingReactionStimMinDropHeight" type="Float"/>
+			<field name="fLandingReactionStimRadius" type="Float"/>
+		</object>
+		<object name="FacingStiffness">
+			<field name="fFacingStiffnessNoContact" type="Float"/>
+			<field name="fFacingStiffnessClimbUpWithContact" type="Float"/>
+			<field name="fFacingStiffnessClimbOverWithContact" type="Float"/>
+		</object>
+		<object name="InteractionStressReaction">
+			<field name="fSmallReactionStressThreshold" type="Float"/>
+			<field name="fBigReactionStressThreshold" type="Float"/>
+			<field name="fDelayBetweenReactions" type="Float"/>
+		</object>
+	</object>
+	<object name="TakeDown">
+		<field name="bFrontTakedownAllowedInMP" type="Boolean"/>
+		<field name="fTakedownFrontAngleRadians" type="Float"/>
+		<field name="fTakedownMaxDistanceNormal" type="Float"/>
+		<field name="fTakedownMaxDistanceJog" type="Float"/>
+		<field name="fTakedownMaxDistanceSprint" type="Float"/>
+		<field name="fTakedownMaxDistanceFleeingTarget" type="Float"/>
+		<field name="fTakedownMaxDistanceAiming" type="Float"/>
+		<field name="bUseWallJumpTakeDowns" type="Boolean"/>
+	</object>
+	<object name="MeleeActions">
+		<field name="fAttackerAnchorRotStiffness" type="Float"/>
+		<field name="fAttackerAnchorPosStiffness" type="Float"/>
+		<field name="fAttackerHighContactChanceAnchorRotStiffness" type="Float"/>
+		<field name="fAttackerHighContactChanceAnchorPosStiffness" type="Float"/>
+		<field name="fSmashObjectAttackerAnchorRotStiffness" type="Float"/>
+		<field name="fSmashObjectAttackerAnchorPosStiffness" type="Float"/>
+		<object name="Damage">
+			<field name="LowIntensity" type="BinHex"/>
+			<field name="MediumIntensity" type="BinHex"/>
+			<field name="HighIntensity" type="BinHex"/>
+			<field name="VeryHighIntensity" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Clothing">
+		<object name="ClothingStylePMSKits">
+			<object name="Kit">
+				<field name="selPMS" type="BinHex"/>
+				<object name="Parts">
+					<object name="Part">
+						<field name="graphickitpartPart" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

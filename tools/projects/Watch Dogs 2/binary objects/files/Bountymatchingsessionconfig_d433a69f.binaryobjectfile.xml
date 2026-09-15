@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Bountymatchingsessionconfig_d433a69f">
+	<object name="obj">
+		<inherit name="Bountymatchingsessionconfig_d433a69fParameters"/>
+	</object>
+</file>

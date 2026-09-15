@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RewardconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="RewardLists">
+		<object name="RewardList">
+			<field name="selEventType" type="Enum"/>
+			<field name="bUseItemList" type="Boolean"/>
+			<field name="itemlistsItemList" type="BinHex"/>
+			<field name="bIsNotable" type="Boolean"/>
+			<object name="Items">
+				<object name="Item">
+					<field name="bUseCandidateRewards" type="Boolean"/>
+					<field name="bSpawnItem" type="Boolean"/>
+					<field name="bIsPersistent" type="Boolean"/>
+					<field name="rewarditemlistsItemFromCandidateList" type="BinHex"/>
+					<field name="itemsItemDBObject" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

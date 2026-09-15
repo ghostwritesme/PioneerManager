@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Racemanagerconfig_571b44a0">
+	<object name="obj">
+		<inherit name="Racemanagerconfig_571b44a0Parameters"/>
+	</object>
+</file>

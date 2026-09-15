@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Scoutxmanagerdescriptor_0ecd0470Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="possyselementPosSysElement" type="BinHex"/>
+	<field name="itemsFollowersReward" type="BinHex"/>
+	<field name="uiappAppScoutX" type="BinHex"/>
+	<field name="uiFriendNotificationDeltaTimeMin" type="Int64"/>
+	<field name="uiFriendNotificationDeltaTimeMax" type="Int64"/>
+	<field name="uiFriendNotificationPollingInterval" type="Int64"/>
+	<field name="uiInitialFriendCommentsCount" type="Int64"/>
+	<field name="uiNotificationDeactivationLimit" type="Int64"/>
+	<object name="ProgressionRewards">
+		<object name="ScoutXProgressionReward">
+			<field name="uiNumTargetsToComplete" type="Int64"/>
+			<field name="itemlistsRewardItem" type="BinHex"/>
+		</object>
+	</object>
+	<object name="ScoutXRewards">
+		<object name="ScoutXReward">
+			<field name="uiNumTargetsToComplete" type="Int64"/>
+			<field name="bUnlocksPhotoFilter" type="Boolean"/>
+			<field name="selPhotoFilter" type="Enum"/>
+			<field name="pcfilterdescEffectFilter" type="BinHex"/>
+			<field name="bUnlocksGesture" type="Boolean"/>
+			<field name="sRewardLinkageName" type="String"/>
+			<object name="locstridRewardName">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+	<object name="FriendsData">
+		<object name="FriendData">
+			<field name="scoutfriendFriendData" type="BinHex"/>
+		</object>
+	</object>
+</class>

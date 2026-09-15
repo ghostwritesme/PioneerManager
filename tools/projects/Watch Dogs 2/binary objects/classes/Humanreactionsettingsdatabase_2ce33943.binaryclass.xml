@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Humanreactionsettingsdatabase_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="ReputationSettings">
+		<field name="fCoolDown" type="Float"/>
+		<field name="iGoodReputationThreshold" type="Int32"/>
+		<field name="iBadReputationThreshold" type="Int32"/>
+		<field name="dialactorlistDialogActorsList" type="BinHex"/>
+		<field name="text_sGoodReputationReactionbark" type="String"/>
+		<field name="sGoodReputationReactionbark" type="BinHex"/>
+		<object name="PMSValuesNeeded"/>
+		<object name="PMSValuesExcluded">
+			<object name="PMSValue">
+				<field name="text_pmsPMSName" type="String"/>
+				<field name="pmsPMSName" type="BinHex"/>
+				<field name="selEnumValue" type="Enum"/>
+			</object>
+		</object>
+	</object>
+</class>

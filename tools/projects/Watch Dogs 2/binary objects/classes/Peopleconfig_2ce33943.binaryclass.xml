@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Peopleconfig_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="DefaultArchetypes">
+		<field name="text_archMaleNewArchetype" type="String"/>
+		<field name="archMaleNewArchetype" type="BinHex"/>
+		<field name="text_archFemaleNewArchetype" type="String"/>
+		<field name="archFemaleNewArchetype" type="BinHex"/>
+	</object>
+</class>

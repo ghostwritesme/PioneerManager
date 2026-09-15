@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Ragdollconfig_ea08db54Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="iRigidbodyCtrlConfigKeyCount" type="Int32"/>
+	<field name="iPoweredConstraintConfigKeyCount" type="Int32"/>
+	<field name="fRagdollFlyingImpactAnticipDelay" type="Float"/>
+	<field name="gunshotrigidbodyimpulseconfigGunShotRigidBodyConfig" type="BinHex"/>
+	<field name="fGunShotlDeadRagdolImpulse" type="Float"/>
+	<object name="PresetMapping">
+		<object name="RigidBodyCtrlPresetDBMappings">
+			<object name="PresetMap">
+				<field name="rigidbodyctrlpresetsPresetDbRef" type="BinHex"/>
+				<field name="disPresetEnumID" type="BinHex"/>
+			</object>
+		</object>
+		<object name="PoweredContraintPresetDBMappings">
+			<object name="PresetMap">
+				<field name="poweredconstraintpresetsPresetDbRef" type="BinHex"/>
+				<field name="disPresetEnumID" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="curveImpulseCurve">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveImpactMotorForceCurve">
+		<inherit name="KnotsParameters"/>
+	</object>
+</class>

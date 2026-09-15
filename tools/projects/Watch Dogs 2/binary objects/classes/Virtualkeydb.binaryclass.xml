@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VirtualkeydbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_sVirtualKeyAction" type="String"/>
+	<field name="sVirtualKeyAction" type="BinHex"/>
+	<field name="selControlSchemeContextType" type="Enum"/>
+	<field name="selDefaultDeviceType" type="Enum"/>
+	<field name="text_sDefaultControlID" type="String"/>
+	<field name="sDefaultControlID" type="BinHex"/>
+</class>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RoadmaterialbankParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_matRoadMaterial" type="String"/>
+	<field name="matRoadMaterial" type="BinHex"/>
+	<field name="logmatRoadLogicMaterial" type="BinHex"/>
+</class>

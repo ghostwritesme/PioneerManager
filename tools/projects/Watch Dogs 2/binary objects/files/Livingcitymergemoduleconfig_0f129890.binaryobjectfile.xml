@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Livingcitymergemoduleconfig_0f129890">
+	<object name="obj">
+		<inherit name="Livingcitymergemoduleconfig_0f129890Parameters"/>
+	</object>
+</file>

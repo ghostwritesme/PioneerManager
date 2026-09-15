@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Chaseheatparams">
+	<object name="lib">
+		<object name="libobj">
+			<inherit name="ChaseheatparamsParameters"/>
+		</object>
+	</object>
+</file>

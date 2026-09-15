@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Robotclosettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="DynamicCLO">
+		<field name="singleclocreationsettingsApproachCLO" type="BinHex"/>
+	</object>
+</class>

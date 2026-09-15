@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Trafficreaction_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fDefaultThreatDecreaseRate" type="Float"/>
+	<field name="fTrafficAnxiousThreatLevel" type="Float"/>
+	<field name="fTrafficDuckChaserProximityDist" type="Float"/>
+	<field name="fTrafficPanicThreatLevel" type="Float"/>
+	<field name="fThreatBasedBehaviorsMinTime" type="Float"/>
+	<object name="BehaviorsSettings">
+		<object name="ImpactSettings">
+			<field name="fMinVelForImpact" type="Float"/>
+			<field name="fReactChance" type="Float"/>
+			<field name="text_BarkId" type="String"/>
+			<field name="BarkId" type="BinHex"/>
+			<field name="fMinImpactReactionTIme" type="Float"/>
+			<field name="fMaxImpactReactionTIme" type="Float"/>
+			<field name="selBarkPriority" type="Enum"/>
+		</object>
+		<object name="GunShotSettings">
+			<field name="fCloseRangeDistance" type="Float"/>
+			<field name="vec2ShooterMinDotToDuck" type="Vector2"/>
+			<field name="vec2DuckDotDistances" type="Vector2"/>
+		</object>
+		<object name="EmergencyBrakeSettings">
+			<field name="vec2AngleFromSpeed" type="Vector2"/>
+			<field name="bAngleFromSpeed" type="Boolean"/>
+		</object>
+		<object name="FleeSettings">
+			<field name="fMinTimeBeforeZeroSpeedReaction" type="Float"/>
+			<field name="fExitReactionChanceOnStop" type="Float"/>
+		</object>
+		<object name="DriveAwaySettings">
+			<field name="fMinTimeBeforeZeroSpeedReaction" type="Float"/>
+			<field name="fExitReactionChanceOnStop" type="Float"/>
+		</object>
+		<object name="FakeCrashSettings">
+			<field name="fReactChance" type="Float"/>
+			<field name="fReactInsideChance" type="Float"/>
+			<field name="vec2StartMovingTime" type="Vector2"/>
+			<field name="fMandatoryPoolTime" type="Float"/>
+			<field name="fExitThreatInstantAdd" type="Float"/>
+			<field name="fAgentsToLanesLeaveSceneRatio" type="Float"/>
+			<field name="fReactionTimeout" type="Float"/>
+			<field name="vec2CollisionReactionAngleDistances" type="Vector2"/>
+			<field name="vec2CollisionReactionAngles" type="Vector2"/>
+			<field name="fGatherDistanceCff" type="Float"/>
+			<field name="fUnitRadius" type="Float"/>
+			<field name="fGatherDistanceAdd" type="Float"/>
+			<field name="fGatherMinDistanceFromVehicle" type="Float"/>
+			<field name="fMinAttractDistance" type="Float"/>
+			<field name="fMaxAttractDistance" type="Float"/>
+			<field name="fAttractDelaySpread" type="Float"/>
+			<field name="fMinAttractToGatherDistance" type="Float"/>
+			<field name="fAttractTimeout" type="Float"/>
+			<field name="fAttractorsDelay" type="Float"/>
+			<field name="fPostStimDelay" type="Float"/>
+			<field name="nPostStimMinCars" type="Int32"/>
+		</object>
+		<object name="DriverDeadSettings">
+			<field name="fBrakeChance" type="Float"/>
+			<field name="vec2BrakeMinMax" type="Vector2"/>
+			<field name="vec2SteeringMinMax" type="Vector2"/>
+			<field name="fHandBrakeChance" type="Float"/>
+			<field name="fHornChance" type="Float"/>
+			<field name="fGoDeadcarDamage" type="Float"/>
+		</object>
+		<object name="ThreatZoneSettings">
+			<field name="vec2ThreatZoneBrakeDistances" type="Vector2"/>
+			<field name="vec2ThreatZoneExitChance" type="Vector"/>
+		</object>
+		<object name="OutsideReactionSettings">
+			<field name="fStimRadius" type="Float"/>
+		</object>
+	</object>
+</class>

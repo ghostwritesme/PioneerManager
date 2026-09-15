@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="MissionvariablesParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selValueType" type="Enum"/>
+	<object name="Float">
+		<field name="fFloat" type="Float"/>
+	</object>
+	<object name="Boolean">
+		<field name="bBoolean" type="Boolean"/>
+	</object>
+	<object name="Integer">
+		<field name="nInteger" type="Int32"/>
+	</object>
+	<object name="OasisID">
+		<object name="locstridOasisID">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="SoundID">
+		<field name="text_sndSoundID" type="String"/>
+		<field name="sndSoundID" type="BinHex"/>
+	</object>
+	<object name="String">
+		<field name="String" type="String"/>
+	</object>
+</class>

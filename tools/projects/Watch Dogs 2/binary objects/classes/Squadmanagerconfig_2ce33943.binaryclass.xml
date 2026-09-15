@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Squadmanagerconfig_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Squads">
+		<object name="Squad">
+			<field name="text_sType" type="String"/>
+			<field name="sType" type="BinHex"/>
+			<field name="tmplDescription" type="String"/>
+		</object>
+	</object>
+</class>

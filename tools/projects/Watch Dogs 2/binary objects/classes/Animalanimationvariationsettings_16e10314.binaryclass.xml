@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Animalanimationvariationsettings_16e10314Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Default">
+		<field name="fCooldownMin" type="Float"/>
+		<field name="fCooldownMax" type="Float"/>
+		<field name="bIsRandomized" type="Boolean"/>
+	</object>
+	<object name="Dog">
+		<field name="fCooldownMin" type="Float"/>
+		<field name="fCooldownMax" type="Float"/>
+		<field name="bIsRandomized" type="Boolean"/>
+	</object>
+	<object name="SmallDog">
+		<field name="fCooldownMin" type="Float"/>
+		<field name="fCooldownMax" type="Float"/>
+		<field name="bIsRandomized" type="Boolean"/>
+	</object>
+	<object name="SeaLion">
+		<field name="fCooldownMin" type="Float"/>
+		<field name="fCooldownMax" type="Float"/>
+		<field name="bIsRandomized" type="Boolean"/>
+	</object>
+	<object name="Pigeon">
+		<field name="fCooldownMin" type="Float"/>
+		<field name="fCooldownMax" type="Float"/>
+		<field name="bIsRandomized" type="Boolean"/>
+	</object>
+	<object name="Parrot">
+		<field name="fCooldownMin" type="Float"/>
+		<field name="fCooldownMax" type="Float"/>
+		<field name="bIsRandomized" type="Boolean"/>
+	</object>
+	<object name="Seagull">
+		<field name="fCooldownMin" type="Float"/>
+		<field name="fCooldownMax" type="Float"/>
+		<field name="bIsRandomized" type="Boolean"/>
+	</object>
+	<object name="Eagle">
+		<field name="fCooldownMin" type="Float"/>
+		<field name="fCooldownMax" type="Float"/>
+		<field name="bIsRandomized" type="Boolean"/>
+	</object>
+</class>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Reverbsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMaxProcessingRange" type="Float"/>
+	<field name="iMaxSimultaneousReverbs" type="Int32"/>
+	<field name="iMaxEmittersProcessedPerFrame" type="Int32"/>
+</class>

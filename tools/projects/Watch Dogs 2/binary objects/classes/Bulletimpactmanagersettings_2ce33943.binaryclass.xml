@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Bulletimpactmanagersettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="iMaxImpactSoundsPerMaterial" type="Int32"/>
+	<field name="fMaxImpactSoundDistance" type="Float"/>
+</class>

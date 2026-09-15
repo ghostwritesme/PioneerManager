@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Reinforcementcallmanagersettings_0f9cab2dParameters">
+	<inherit name="SharedParameters"/>
+	<field name="reinforcementcallsettingsDefaultCallSettings" type="BinHex"/>
+	<object name="Sounds">
+		<field name="text_sndCallStartSound" type="String"/>
+		<field name="sndCallStartSound" type="BinHex"/>
+		<field name="text_sndCallFailSound" type="String"/>
+		<field name="sndCallFailSound" type="BinHex"/>
+		<field name="text_sndAlarmCallStartSound" type="String"/>
+		<field name="sndAlarmCallStartSound" type="BinHex"/>
+		<field name="text_sndAlarmCallFailSound" type="String"/>
+		<field name="sndAlarmCallFailSound" type="BinHex"/>
+	</object>
+</class>

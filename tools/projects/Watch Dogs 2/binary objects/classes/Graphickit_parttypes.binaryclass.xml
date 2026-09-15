@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Graphickit_parttypesParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bPoseDefinitionVisible" type="Boolean"/>
+	<field name="fWeight" type="Float"/>
+	<object name="TagCategorySelectionBlackboardDescriptor">
+		<object name="TagCategorySelectionDescriptors">
+			<object name="TagCategorySelectionDescriptor">
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+				<field name="bMultiSelect" type="Boolean"/>
+			</object>
+		</object>
+	</object>
+</class>

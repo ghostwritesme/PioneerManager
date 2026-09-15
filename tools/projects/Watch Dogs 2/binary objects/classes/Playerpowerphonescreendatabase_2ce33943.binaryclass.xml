@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Playerpowerphonescreendatabase_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="phonescreenmatDefaultPowerScreenMaterial" type="BinHex"/>
+	<field name="text_sSlotToUseOnRemovingOverridingMaterial" type="String"/>
+	<field name="sSlotToUseOnRemovingOverridingMaterial" type="BinHex"/>
+	<object name="Relations">
+		<object name="Data">
+			<field name="text_pwrPowerName" type="String"/>
+			<field name="pwrPowerName" type="BinHex"/>
+			<field name="phonescreenmatMaterial" type="BinHex"/>
+		</object>
+	</object>
+</class>

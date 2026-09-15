@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ObjectiveConditionsParameters">
+    <object name="ObjectiveConditions">
+	  <object name="ObjectiveCondition">
+        <field name="text_objectiveconditionType" type="String"/>
+        <field name="objectiveconditionType" type="BinHex"/>
+        <object name="ObjectiveConditionParameters">
+            <field name="entEntity" type="BinHex"/>
+            <field name="CloId" type="BinHex"/>
+            <field name="entMapIconEntity" type="BinHex"/>
+            <field name="bUseStoryIcon" type="Boolean"/>
+            <field name="NbTriggerForCompletion" type="Enum"/>
+            <field name="bShowObjectiveMarkerOnDataIn" type="Boolean"/>
+            <field name="bIsPlayerChaseTarget" type="Boolean"/>
+            <field name="bEscapeAnyChaseType" type="Boolean"/>
+            <field name="selChaseTypeToEscape" type="Enum"/>
+            <field name="Radius" type="Float"/>
+            <field name="entMissionAreaEntity" type="BinHex"/>
+            <field name="bIncludeRCForPlayerPosition" type="Boolean"/>
+            <field name="NbEntitiesToInteract" type="Enum"/>
+            <field name="selInteractionMode" type="Enum"/>
+            <field name="bEnableEntityForInteraction" type="Boolean"/>
+            <field name="selHackableCategory" type="Enum"/>
+            <field name="selEntityTypeMode" type="Enum"/>
+            <field name="selAffiliation" type="Enum"/>
+            <field name="selAgentType" type="Enum"/>
+            <field name="bCheckClosedState" type="Boolean"/>
+		    <field name="selConditionsOperator" type="Enum"/>
+		    <field name="districtAreaOfInterest" type="BinHex"/>
+		    <field name="bConsiderArrest" type="Boolean"/>
+		    <field name="BreakableFragLayerToComplete" type="Boolean"/>
+		    <field name="Time" type="Float"/>
+		    <field name="bIsUsingObjectiveHUD" type="Boolean"/>
+		    <field name="CompleteRadius" type="Float"/>
+		    <field name="bShowAreaOnMiniMap" type="Boolean"/>
+		    <field name="bShowNotificationWhenLeaving" type="Boolean"/>
+		    <field name="NotificationRadius" type="Float"/>
+		    <field name="selCurrency" type="Enum"/>
+		    <field name="uAmount" type="Enum"/>
+		    <field name="uHackSecondsToWait" type="Enum"/>
+		    <field name="progressiontagProgressionTag" type="BinHex"/>
+            <object name="locstridObjectiveLocId">
+                <field name="LocalizationId" type="Int64"/>
+            </object>
+            <object name="locstridObjectiveMarkerLocId">
+                <field name="LocalizationId" type="Int64"/>
+            </object>
+            <object name="locstridNotificationText">
+                <field name="LocalizationId" type="Int64"/>
+            </object>
+		    <inherit name="ObjectiveConditionsParameters"/>
+        </object>
+      </object>
+    </object>
+</class>

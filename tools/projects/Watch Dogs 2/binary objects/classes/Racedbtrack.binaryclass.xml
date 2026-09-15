@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RacedbtrackParameters">
+	<inherit name="SharedParameters"/>
+	<field name="sLayerName" type="BinHex"/>
+	<field name="entPlayerStartPoint" type="BinHex"/>
+	<field name="entPlayerTeleportPoint" type="BinHex"/>
+	<field name="entFinishCheckpoint" type="BinHex"/>
+	<field name="entRaceTrackIndicator" type="BinHex"/>
+	<field name="entRaceMissionArea" type="BinHex"/>
+	<object name="RacersStartPoints">
+		<object name="RacerStartPoint">
+			<field name="entRacerStartPoint" type="BinHex"/>
+		</object>
+	</object>
+	<object name="RacersStartPointsOnline">
+		<object name="RacerStartPoint">
+			<field name="entRacerStartPoint" type="BinHex"/>
+		</object>
+	</object>
+	<object name="LapCheckpointsList">
+		<object name="LapCheckpoint">
+			<field name="entLapCheckpoint" type="BinHex"/>
+		</object>
+	</object>
+	<object name="ObstacleAreas">
+		<object name="ObstacleArea">
+			<field name="entObstacleArea" type="BinHex"/>
+		</object>
+	</object>
+	<object name="RaceProperties">
+		<field name="text_selType" type="String"/>
+		<field name="selType" type="Enum"/>
+		<object name="Object">
+			<inherit name="SharedParameters"/>
+			<field name="fNpcWindForceMultiplier" type="Float"/>
+			<field name="entRacePathLeft" type="BinHex"/>
+			<field name="entRacePathRight" type="BinHex"/>
+			<field name="fTrackSpeedMultiplier" type="Float"/>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Closystemsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="cloupsetUpdateSettings" type="BinHex"/>
+</class>

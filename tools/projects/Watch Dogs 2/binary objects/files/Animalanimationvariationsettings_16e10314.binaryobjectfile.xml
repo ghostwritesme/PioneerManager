@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Animalanimationvariationsettings_16e10314">
+	<object name="obj">
+		<inherit name="Animalanimationvariationsettings_16e10314Parameters"/>
+	</object>
+</file>

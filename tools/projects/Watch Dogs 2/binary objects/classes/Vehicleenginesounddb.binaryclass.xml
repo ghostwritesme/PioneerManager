@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehicleenginesounddbParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Engine">
+		<field name="text_sndEngineThrottleLoop" type="String"/>
+		<field name="sndEngineThrottleLoop" type="BinHex"/>
+		<field name="text_sndEngineIgnition" type="String"/>
+		<field name="sndEngineIgnition" type="BinHex"/>
+		<field name="text_sndEngineIgnitionFromHack" type="String"/>
+		<field name="sndEngineIgnitionFromHack" type="BinHex"/>
+		<field name="text_sndTurnOffEngine" type="String"/>
+		<field name="sndTurnOffEngine" type="BinHex"/>
+		<field name="text_sndEngineReverseStart" type="String"/>
+		<field name="sndEngineReverseStart" type="BinHex"/>
+		<field name="text_sndEngineReverseStop" type="String"/>
+		<field name="sndEngineReverseStop" type="BinHex"/>
+		<field name="fThrottleRtcpLag" type="Float"/>
+		<object name="curveThrottleStartup">
+			<field name="hidNumKnots" type="BinHex"/>
+			<object name="Knots"/>
+		</object>
+	</object>
+	<object name="EngineNpc">
+		<field name="text_sndAiEngineThrottleLoop" type="String"/>
+		<field name="sndAiEngineThrottleLoop" type="BinHex"/>
+		<field name="text_sndNpcEngineThrottleLoop" type="String"/>
+		<field name="sndNpcEngineThrottleLoop" type="BinHex"/>
+		<field name="text_sndEngineIgnitionNPC" type="String"/>
+		<field name="sndEngineIgnitionNPC" type="BinHex"/>
+	</object>
+	<object name="RPM">
+		<field name="fLagRPMdecreasing" type="Float"/>
+		<field name="fLagRPMincreasing" type="Float"/>
+		<field name="vec2RpCffmStartupRange" type="Vector2"/>
+		<object name="curveRpmStartup">
+			<field name="hidNumKnots" type="BinHex"/>
+			<object name="Knots"/>
+		</object>
+	</object>
+	<object name="Common">
+		<field name="vectorEngineOffset" type="Vector3"/>
+	</object>
+</class>

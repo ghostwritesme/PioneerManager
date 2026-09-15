@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="WaveconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMinInitialDelay" type="Float"/>
+	<field name="fMaxInitialDelay" type="Float"/>
+	<field name="uiMinSpawnNPC" type="Int64"/>
+	<field name="uiMaxSpawnNPC" type="Int64"/>
+	<field name="uiMinSpawnVehicles" type="Int64"/>
+	<field name="uiMaxSpawnVehicles" type="Int64"/>
+	<field name="sCustomBark" type="BinHex"/>
+	<field name="uiNumAliveToStartNextWave" type="Int64"/>
+	<field name="bUseSpawningPools" type="Boolean"/>
+	<object name="OverrideSpawningPoolConfig">
+		<object name="UnifiedPoolConfigs">
+			<object name="Config">
+				<field name="selSpawningPoolType" type="Enum"/>
+				<field name="uiPoolSize" type="Int64"/>
+				<field name="bSpawnWhenOnFoot" type="Boolean"/>
+				<field name="bSpawnWhenInVehicle" type="Boolean"/>
+				<field name="bSpawnOnlyWhenInCustomReinforcementZone" type="Boolean"/>
+			</object>
+		</object>
+	</object>
+	<object name="OverrideUnitPreset">
+		<object name="unitpresetOverrideUnitPreset">
+			<field name="unitpresetOverrideUnitPreset" type="BinHex"/>
+		</object>
+	</object>
+</class>

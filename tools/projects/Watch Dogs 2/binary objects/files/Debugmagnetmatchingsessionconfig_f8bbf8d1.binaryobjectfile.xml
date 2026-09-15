@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Debugmagnetmatchingsessionconfig_f8bbf8d1">
+	<object name="obj">
+		<inherit name="Debugmagnetmatchingsessionconfig_f8bbf8d1Parameters"/>
+	</object>
+</file>

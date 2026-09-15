@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Taxiactivitymanagerdescriptor_fc092c88">
+	<object name="obj">
+		<inherit name="Taxiactivitymanagerdescriptor_fc092c88Parameters"/>
+	</object>
+</file>

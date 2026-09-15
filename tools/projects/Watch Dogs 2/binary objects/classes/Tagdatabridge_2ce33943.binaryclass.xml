@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Tagdatabridge_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Gender">
+		<field name="tagcategoryGenderTagCategory" type="BinHex"/>
+		<object name="tagcategoryselectionMaleTag">
+			<field name="text_UITagCategorySelectionClassID" type="String"/>
+			<field name="UITagCategorySelectionClassID" type="BinHex"/>
+			<field name="tagcategoryUITagCategory" type="BinHex"/>
+			<field name="tagTag" type="BinHex"/>
+		</object>
+		<object name="tagcategoryselectionFemaleTag">
+			<field name="text_UITagCategorySelectionClassID" type="String"/>
+			<field name="UITagCategorySelectionClassID" type="BinHex"/>
+			<field name="tagcategoryUITagCategory" type="BinHex"/>
+			<field name="tagTag" type="BinHex"/>
+		</object>
+	</object>
+	<object name="PawnIdentity">
+		<field name="tagcategoryVisualStereotypeTagCategory" type="BinHex"/>
+		<field name="tagcategoryEthnicityTagCategory" type="BinHex"/>
+		<object name="TagCategorySelectionBlackboardDescriptor">
+			<object name="TagCategorySelectionDescriptors">
+				<object name="TagCategorySelectionDescriptor">
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="bMultiSelect" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="AvatarCustomization">
+		<field name="tagcategoryPartsPairingTagCategory" type="BinHex"/>
+	</object>
+	<object name="Cloth">
+		<field name="tagcategoryTagCategory" type="BinHex"/>
+		<field name="tagcategoryHideMaskTagCategory" type="BinHex"/>
+		<field name="tagcategoryStoreClothingStyleTagCategory" type="BinHex"/>
+		<field name="tagcategoryUIClothingStyleTagCategory" type="BinHex"/>
+		<object name="tagcategoryselectionHighHeels">
+			<field name="text_UITagCategorySelectionClassID" type="String"/>
+			<field name="UITagCategorySelectionClassID" type="BinHex"/>
+			<field name="tagcategoryUITagCategory" type="BinHex"/>
+			<field name="tagTag" type="BinHex"/>
+		</object>
+		<object name="tagcategoryselectionMaskUpTag">
+			<field name="text_UITagCategorySelectionClassID" type="String"/>
+			<field name="UITagCategorySelectionClassID" type="BinHex"/>
+			<field name="tagcategoryUITagCategory" type="BinHex"/>
+			<field name="tagTag" type="BinHex"/>
+		</object>
+		<object name="tagcategoryselectionMaskDownTag">
+			<field name="text_UITagCategorySelectionClassID" type="String"/>
+			<field name="UITagCategorySelectionClassID" type="BinHex"/>
+			<field name="tagcategoryUITagCategory" type="BinHex"/>
+			<field name="tagTag" type="BinHex"/>
+		</object>
+	</object>
+	<object name="ProceduralShadow">
+		<field name="tagcategoryProceduralShadowTagCategory" type="BinHex"/>
+	</object>
+	<object name="VisualStereotype">
+		<field name="tagcategoryVisualStereotypeTagCategory" type="BinHex"/>
+	</object>
+	<object name="Flavor">
+		<field name="tagcategoryFlavorTagCategory" type="BinHex"/>
+	</object>
+</class>

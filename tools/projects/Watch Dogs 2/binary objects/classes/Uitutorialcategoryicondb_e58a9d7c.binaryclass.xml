@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uitutorialcategoryicondb_e58a9d7cParameters">
+	<inherit name="SharedParameters"/>
+	<object name="TutorialCategoriesIconData">
+		<object name="TutorialCategoryIconData">
+			<field name="itemcategoryTutorialCategoryDbObject" type="BinHex"/>
+			<field name="strCategoryIconMovieClipName" type="String"/>
+			<field name="texturedbobjectCategoryHeaderImage" type="BinHex"/>
+		</object>
+	</object>
+</class>

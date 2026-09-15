@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UitagremapbuttonsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="uitagimagesettingDefault" type="BinHex"/>
+	<field name="uitagimagesettingLeftyStick" type="BinHex"/>
+	<field name="uitagimagesettingLeftyShoulder" type="BinHex"/>
+	<field name="uitagimagesettingLefty" type="BinHex"/>
+</class>

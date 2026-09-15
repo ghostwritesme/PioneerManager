@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="TagcategoriesParameters">
+	<inherit name="SharedParameters"/>
+	<field name="Description" type="BinHex"/>
+	<field name="clrColor" type="VectorColor"/>
+	<object name="Tags">
+		<object name="Tag">
+			<field name="tagTag" type="BinHex"/>
+		</object>
+	</object>
+</class>

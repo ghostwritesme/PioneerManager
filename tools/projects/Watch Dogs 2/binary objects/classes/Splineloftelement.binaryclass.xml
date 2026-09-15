@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="SplineloftelementParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bLegacy" type="Boolean"/>
+	<field name="fileLoftShape" type="String"/>
+	<field name="matCornerMaterial" type="String"/>
+	<field name="matOverrideMaterial" type="String"/>
+	<field name="selType" type="Enum"/>
+	<field name="bHasPhysics" type="Boolean"/>
+	<field name="bUseAlternateCollisionForIK" type="Boolean"/>
+	<field name="selMedianType" type="Enum"/>
+	<field name="bIsDecal" type="Boolean"/>
+	<field name="bIsProjectedOnRoad" type="Boolean"/>
+	<field name="bIsProjectedOnSidewalk" type="Boolean"/>
+	<field name="bIsCutByCrossWalk" type="Boolean"/>
+	<field name="bIsCutByCorner" type="Boolean"/>
+	<field name="logmatLogicMaterial" type="BinHex"/>
+	<field name="bDriveable" type="Boolean"/>
+	<field name="bFillet" type="Boolean"/>
+	<field name="fLengthOn" type="Float"/>
+	<field name="fLengthOff" type="Float"/>
+	<field name="bResetTexCoordCycleStart" type="Boolean"/>
+	<field name="selStartReference" type="Enum"/>
+	<field name="bCapStart" type="Boolean"/>
+	<field name="bCapEnd" type="Boolean"/>
+	<field name="bCanModifyTerrain" type="Boolean"/>
+	<field name="bKillTerrainPixels" type="Boolean"/>
+	<field name="fModifyTerrainOffset" type="Float"/>
+	<field name="bPushHiddenTerrainVertices" type="Boolean"/>
+	<field name="bExportToGameData" type="Boolean"/>
+	<field name="bCastsShadows" type="Boolean"/>
+	<field name="bIsOccludingRain" type="Boolean"/>
+	<field name="bIsCovered" type="Boolean"/>
+	<field name="bIsWorldZOrientedMapping" type="Boolean"/>
+	<field name="bIsMorphable" type="Boolean"/>
+	<field name="iSubdivLODBias" type="Int32"/>
+	<field name="roadProfileSubdivErrorTolerance" type="BinHex"/>
+	<object name="curveRoadProfile">
+		<inherit name="KnotsParameters"/>
+	</object>
+</class>

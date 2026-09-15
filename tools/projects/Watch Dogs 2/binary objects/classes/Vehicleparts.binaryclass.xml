@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehiclepartsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bBulletHitAffectVehicleTotalDamage" type="Boolean"/>
+	<field name="bBreakFromDeform" type="Boolean"/>
+	<field name="bCanHang" type="Boolean"/>
+	<field name="bCanDetach" type="Boolean"/>
+	<field name="bCanDestroy" type="Boolean"/>
+	<field name="bIsChangingSoundOcclusion" type="Boolean"/>
+	<field name="bPartIsDamagable" type="Boolean"/>
+	<field name="selGameplayType" type="Enum"/>
+	<field name="vehiclepartsdamageDamageParams" type="BinHex"/>
+	<field name="logmatDefaultEffectMaterial" type="BinHex"/>
+	<field name="text_sRotatingReferencePart" type="String"/>
+	<field name="sRotatingReferencePart" type="BinHex"/>
+	<object name="DestroyParams">
+        <field name="text_sndDestroySound" type="String"/>
+        <field name="sndDestroySound" type="BinHex"/>
+        <field name="text_psDestroyParticle" type="String"/>
+        <field name="psDestroyParticle" type="BinHex"/>
+	</object>
+	<object name="HangParams">
+        <field name="text_sndHangSound" type="String"/>
+        <field name="sndHangSound" type="BinHex"/>
+        <field name="text_psHangParticle" type="String"/>
+        <field name="psHangParticle" type="BinHex"/>
+        <field name="fHealthPercentageThreshold" type="Float"/>
+        <field name="bHangParticleUseVelocity" type="Boolean"/>
+        <field name="text_sHangParticleBoneName" type="String"/>
+        <field name="sHangParticleBoneName" type="BinHex"/>
+        <field name="text_sndHangingVelocitySound" type="String"/>
+        <field name="sndHangingVelocitySound" type="BinHex"/>
+        <field name="fHangingVelocitySoundThreshold" type="Float"/>
+        <field name="text_sndHangingVelocitySignChangeSound" type="String"/>
+        <field name="sndHangingVelocitySignChangeSound" type="BinHex"/>
+        <field name="fHangingVelocitySoundCooldown" type="Float"/>
+        <field name="fConstraintFrictionFactor" type="Float"/>
+        <field name="fConstraintBreachImpulseFactor" type="Float"/>
+        <field name="bCanCreateMirroredConstraint" type="Boolean"/>
+        <field name="bBreakAssociatedLight" type="Boolean"/>
+        <object name="MotorParams">
+            <field name="bUseConstraintMotorWhileHanging" type="Boolean"/>
+            <object name="EnabledMotorParams">
+                <field name="fMotorTargetAngleAlpha" type="Float"/>
+                <field name="fMotorDamping" type="Float"/>
+                <field name="fMotorForce" type="Float"/>
+                <field name="fMotorStrength" type="Float"/>
+            </object>
+        </object>
+    </object>
+	<object name="DetachParams">
+		<field name="sndDetachSound" type="BinHex"/>
+		<field name="text_psDetachParticle" type="String"/>
+		<field name="psDetachParticle" type="BinHex"/>
+		<field name="bDetachParticleUseVelocity" type="Boolean"/>
+		<field name="text_sDetachParticleBoneName" type="String"/>
+		<field name="sDetachParticleBoneName" type="BinHex"/>
+		<field name="fFloatingScale" type="Float"/>
+		<field name="fWaterFriction" type="Float"/>
+		<field name="fPushAwaySpeedOnDetach" type="Float"/>
+	</object>
+	<object name="TextureStateChanges">
+		<object name="TextureStateChange">
+			<field name="text_psParticle" type="String"/>
+			<field name="psParticle" type="BinHex"/>
+			<field name="text_sndSound" type="String"/>
+			<field name="sndSound" type="BinHex"/>
+			<field name="fHealthPercentageThreshold" type="Float"/>
+			<field name="bParticleUseVelocity" type="Boolean"/>
+			<field name="text_sParticleBoneName" type="String"/>
+			<field name="sParticleBoneName" type="BinHex"/>
+			<field name="bBreakAssociatedLight" type="Boolean"/>
+		</object>
+	</object>
+	<object name="TextureStateSwitchParams">
+		<field name="nTextureStateIndexForRemovingCollision" type="Int32"/>
+	</object>
+	<object name="DamageParams">
+		<field name="fCollisionExtraRadius" type="Float"/>
+		<field name="bAlwaysBreakFromDebrisCollision" type="Boolean"/>
+		<field name="fMaximumHealth" type="Float"/>
+		<field name="fCollisionDamageScale" type="Float"/>
+		<field name="fBulletDamageScale" type="Float"/>
+		<field name="fExplosionDamageScale" type="Float"/>
+		<field name="fRandomDamageScaleAmplitude" type="Float"/>
+	</object>
+	<object name="PhysicsParams">
+		<field name="fMass" type="Float"/>
+		<field name="fInertiaScale" type="Float"/>
+		<field name="vectorCenterOfMassOffset" type="Vector3"/>
+	</object>
+    <object name="PartTypeSpecificParams">
+        <field name="bUseImpulseOnVehicleContact" type="Boolean"/>
+        <field name="vectorImpulseOnVehicleContact" type="Vector"/>
+        <field name="bActivateOnContact" type="Boolean"/>
+        <field name="bGenerateCollisionStim" type="Boolean"/>
+        <field name="bSendCollisionEvent" type="Boolean"/>
+        <field name="bUseDamageModifierOnVehicleContact" type="Boolean"/>
+        <field name="fDamageModifierOnVehicleContact" type="Float"/>
+        <field name="bUseAutoExplodeOnVehicleContact" type="Boolean"/>
+        <field name="fAutoExplodeOnVehicleContactDelay" type="Float"/>
+        <field name="fMotorMinimumSpeed" type="Float"/>
+        <field name="fMotorMediumSpeed" type="Float"/>
+        <field name="fMotorMaximumSpeed" type="Float"/>
+        <field name="fMotorStrengthAtMinSpeed" type="Float"/>
+        <field name="fMotorStrengthAtMediumSpeed" type="Float"/>
+        <field name="fMotorStrengthAtMaxSpeed" type="Float"/>
+        <field name="bUseForceClose" type="Boolean"/>
+		<field name="selConstraintType" type="Enum"/>
+        <field name="selMotorType" type="Enum"/>
+        <field name="fFrictionScale" type="Float"/>
+        <field name="bUseExtendableShape" type="Boolean"/>
+        <field name="bExtendableShapeUseParentForShape" type="Boolean"/>
+        <field name="vectorExtraRotation" type="Vector"/>
+        <field name="bUseExternalBind" type="Boolean"/>
+        <field name="bVisualPhysicsDriven" type="Boolean"/>
+        <field name="text_psTyreDetachParticle" type="String"/>
+        <field name="psTyreDetachParticle" type="BinHex"/>
+        <field name="text_sndTyreDetachSound" type="String"/>
+        <field name="sndTyreDetachSound" type="BinHex"/>
+        <field name="bUseImpulseOnlyWhenExtending" type="Boolean"/>
+        <field name="fImpulseScaleVsHuman" type="Float"/>
+        <field name="bAlwaysPhysicsDrivenWhileHanging" type="Boolean"/>
+        <field name="bForceOnRail" type="Boolean"/>
+        <field name="fMaximumRailDisplacement" type="Float"/>
+        <object name="VelocityEnforcerVsNonPlayerVehicles">
+          <field name="bUseVelocityEnforcerOnVehicleCollider" type="Boolean"/>
+          <field name="fVelocityEnforcerTime" type="Float"/>
+          <field name="vectorVelocityEnforcerDesiredVelocity" type="Vector"/>
+        </object>
+        <object name="ConstraintParams">
+          <field name="bNoFeedbackForce" type="Boolean"/>
+          <field name="vectorDirection" type="Vector"/>
+          <field name="fMaximumFrictionForce" type="Float"/>
+          <field name="fMinimumLinearLimit" type="Float"/>
+          <field name="fMaximumLinearLimit" type="Float"/>
+          <field name="bIsReferenceForMovableParts" type="Boolean"/>
+          <field name="fSecondaryActivationRatio" type="Float"/>
+          <field name="bUseMoveRestrictions" type="Boolean"/>
+          <field name="fMaximumMoveDisplacement" type="Float"/>
+          <field name="fInitialDistance" type="Float"/>
+        </object>
+        <object name="MotorParams">
+          <field name="fSpeed" type="Float"/>
+          <field name="fMaximumForce" type="Float"/>
+          <field name="fStiffness" type="Float"/>
+          <field name="fSpeedFadeInTime" type="Float"/>
+          <field name="fDamping" type="Float"/>
+        </object>
+        <object name="ExternalBind">
+          <field name="fBreakThreshold" type="Float"/>
+          <field name="fMinimumLengthFactor" type="Float"/>
+          <field name="fStrengthFactor" type="Float"/>
+          <field name="vectorAnchorLocalPosition" type="Vector"/>
+          <field name="fBindedFrictionScale" type="Float"/>
+          <object name="Conditions">
+            <field name="fMinAabbDim" type="Float"/>
+            <field name="fMaxAabbDim" type="Float"/>
+            <field name="fMinimumMass" type="Float"/>
+            <field name="fMaximumMass" type="Float"/>
+            <field name="fMaximumRelativeXYPosition" type="Float"/>
+            <field name="fMaximumRelativeZPosition" type="Float"/>
+          </object>
+        </object>
+        <object name="ExtraConstraint">
+          <field name="selConstraintType" type="Enum"/>
+        </object>
+        <object name="ExtraMotor">
+          <field name="selMotorType" type="Enum"/>
+        </object>
+		<object name="DisplacementParams">
+          <field name="fTranslationLength" type="Float"/>
+          <field name="fRotationStartMotionRatio" type="Float"/>
+          <field name="fMaximumRotation" type="Float"/>
+          <field name="fMaximumVerticalDisplacement" type="Float"/>
+          <field name="fTranslationSpeed" type="Float"/>
+          <field name="fVerticalPositionOffset" type="Float"/>
+          <field name="bIsContactBarrier" type="Boolean"/>
+          <field name="bUseLowerImpactDetectionVsVehicle" type="Boolean"/>
+          <object name="DisplacementStages">
+            <object name="Stage">
+              <field name="fStartTime" type="Float"/>
+              <field name="fDuration" type="Float"/>
+              <field name="vectorRotation" type="Vector"/>
+              <field name="vectorTranslation" type="Vector"/>
+            </object>
+          </object>
+        </object>
+    </object>
+	<object name="VehicleSelfExplosion">
+		<field name="fNoStateChangeChance" type="Float"/>
+		<field name="fNoHangingChance" type="Float"/>
+		<field name="fMinImpulse" type="Float"/>
+		<field name="fMaxImpulse" type="Float"/>
+		<field name="bDetachOnEngineBurn" type="Boolean"/>
+	</object>
+	<object name="WheelParams">
+		<field name="bDoubleWheels" type="Boolean" />
+	</object>
+</class>

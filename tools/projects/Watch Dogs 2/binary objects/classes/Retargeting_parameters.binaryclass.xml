@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Retargeting_parametersParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_fileFromSkeletonUrl" type="String"/>
+	<field name="fileFromSkeletonUrl" type="BinHex"/>
+	<field name="text_fileToSkeletonUrl" type="String"/>
+	<field name="fileToSkeletonUrl" type="BinHex"/>
+	<field name="PelvisScalingFactor" type="BinHex"/>
+	<field name="boneoffsetBoneOffsets" type="BinHex"/>
+</class>

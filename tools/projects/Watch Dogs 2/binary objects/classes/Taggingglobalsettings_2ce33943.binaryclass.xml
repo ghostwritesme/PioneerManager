@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Taggingglobalsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMaxDistance" type="Float"/>
+	<field name="fReticleTaggingDuration" type="Float"/>
+	<object name="TagSounds">
+		<field name="text_sndOnGenericTagAddedSound" type="String"/>
+		<field name="sndOnGenericTagAddedSound" type="BinHex"/>
+		<field name="text_sndOnGenericTagAddedSoundNethack" type="String"/>
+		<field name="sndOnGenericTagAddedSoundNethack" type="BinHex"/>
+		<field name="text_sndOnEnemyTagAddedSound" type="String"/>
+		<field name="sndOnEnemyTagAddedSound" type="BinHex"/>
+		<field name="text_sndOnEnemyTagAddedSoundNethack" type="String"/>
+		<field name="sndOnEnemyTagAddedSoundNethack" type="BinHex"/>
+		<field name="text_sndOnPoliceTagAddedSound" type="String"/>
+		<field name="sndOnPoliceTagAddedSound" type="BinHex"/>
+		<field name="text_sndOnPoliceTagAddedSoundNethack" type="String"/>
+		<field name="sndOnPoliceTagAddedSoundNethack" type="BinHex"/>
+	</object>
+	<object name="TagEntityTypes">
+		<object name="NpcEnemy">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="ObjectiveTarget">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="MultiPlayer_PlayerEnemy">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="MultiPlayer_PlayerNeutral">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="MultiPlayer_PlayerAlly">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="Heavy">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="SecuritySystemLinked">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="SecuritySystemUnlinked">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="AffiliatedCivilian">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="StateDefault">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="StateConflict">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="StateSearch">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="StateAlertSoft">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="StateAlertHard">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="StateWarnArrest">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="StateSmellTracking">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="StateStunned_LongDuration">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="StateAlertEnforcer">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="StateConflictEnforcer">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="StateSearchEnforcer">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="StateStunned_MediumDuration">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="StateStunned_ShortDuration">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="StateAlertEliteGrenadier">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="StateConflictEliteGrenadier">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="StateSearchEliteGrenadier">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="StateAlertJammer">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="StateConflictJammer">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+		<object name="StateSearchJammer">
+			<field name="selTagColor" type="Enum"/>
+			<field name="sndOnEntityTaggedSound" type="BinHex"/>
+			<field name="fTagRange" type="Float"/>
+		</object>
+	</object>
+	<object name="AutoTagSpecialEffects">
+		<field name="text_sndSound" type="String"/>
+		<field name="sndSound" type="BinHex"/>
+		<field name="text_psParticleSystem" type="String"/>
+		<field name="psParticleSystem" type="BinHex"/>
+		<field name="vectorParticleSystemRelativeLocation" type="Vector3"/>
+	</object>
+</class>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="HackerspacesettingsdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="entDoorInteractionEntity" type="BinHex"/>
+	<field name="entSpawnPointEntity" type="BinHex"/>
+	<field name="text_objlayHackerSpaceLayer" type="String"/>
+	<field name="objlayHackerSpaceLayer" type="BinHex"/>
+	<field name="availabilityrulegroupCanEnterCondition" type="BinHex"/>
+	<field name="availabilityrulegroupLocalPlayerFirstTimeUnlockedCondition" type="BinHex"/>
+	<field name="entWluLoaderEntity" type="BinHex"/>
+	<object name="ExteriorAreaEntities">
+		<object name="EntityArea">
+			<field name="entEntityArea" type="BinHex"/>
+		</object>
+	</object>
+	<object name="InteriorAreaEntities">
+		<object name="EntityArea">
+			<field name="entEntityArea" type="BinHex"/>
+		</object>
+	</object>
+</class>

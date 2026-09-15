@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Timeofdaymanagerconfig_93381f77Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fDawnSyncSecToGameSecRatio" type="Float"/>
+	<field name="fDuskSyncSecToGameSecRatio" type="Float"/>
+	<field name="fDaySyncSecToGameSecRatio" type="Float"/>
+	<field name="fNightSyncSecToGameSecRatio" type="Float"/>
+</class>

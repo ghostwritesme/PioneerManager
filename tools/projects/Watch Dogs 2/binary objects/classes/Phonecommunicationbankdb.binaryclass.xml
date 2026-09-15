@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PhonecommunicationbankdbParameters">
+	<inherit name="SharedParameters"/>
+	<object name="PhoneCommunicationBank">
+		<object name="phonecommunicationsettings">
+			<field name="phonecommunicationsettings" type="BinHex"/>
+		</object>
+	</object>
+</class>

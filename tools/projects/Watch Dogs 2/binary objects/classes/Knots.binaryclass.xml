@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="KnotsParameters">
+	<field name="hidNumKnots" type="Enum"/>
+    <object name="Knots">
+      <object name="Knot">
+	    <field name="Position" type="Float"/>
+		<field name="Color" type="BinHex"/>
+        <field name="Value" type="Vector"/>
+        <field name="Info" type="Vector"/>
+        <field name="Type" type="Enum"/>
+		<object name="Gradient">
+			<object name="Knots">
+				<object name="Knot">
+					<field name="Position" type="Float" />
+					<field name="Color" type="BinHex" />
+				</object>
+			</object>
+		</object>
+      </object>
+    </object>
+</class>

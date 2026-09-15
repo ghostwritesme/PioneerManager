@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="TrafficbehaviorstateParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selBehaviorType" type="Enum"/>
+	<object name="Behavior">
+		<field name="vec2SteeringMinMax" type="Vector2"/>
+		<field name="vec2BrakeCffMinMax" type="Vector2"/>
+		<field name="vec2CollisionSteeringDistances" type="Vector2"/>
+		<field name="vec2CollisionSteeringScale" type="Vector2"/>
+		<field name="fCollisionSteerScalePowr" type="Float"/>
+		<field name="vec2CollisionSteeringSpeeds" type="Vector2"/>
+		<field name="vec2HandBrakeDelay" type="Vector2"/>
+		<field name="fHonkingChance" type="Float"/>
+		<field name="vec2HonkingLength" type="Vector2"/>
+		<field name="fHonkingDistance" type="Float"/>
+		<field name="fMinCarSteerSpeed" type="Float"/>
+		<field name="vec2StopSpeeds" type="Vector2"/>
+		<field name="vec2StopDistancesNorma" type="Vector2"/>
+		<field name="fTiresFrictionDelay" type="Float"/>
+		<field name="fTiresFrictionDownscale" type="Float"/>
+		<field name="fMinSpeedDiff" type="Float"/>
+		<field name="fMinSpeedForCollision" type="Float"/>
+		<field name="fCollisionChance" type="Float"/>
+		<field name="fCollisionTimeoue" type="Float"/>
+		<field name="fCollisionCosMax" type="Float"/>
+		<field name="fDotToSteer" type="Float"/>
+		<field name="fStopDistance" type="Float"/>
+		<field name="fMinSpeedDiffTolerance" type="Float"/>
+		<field name="fLastSegmentProjDistance" type="Float"/>
+		<field name="fMinProjDistance" type="Float"/>
+		<field name="vec2MinProjDistLaneOverride" type="Vector2"/>
+		<field name="vec2MinProjDistSpeeds" type="Vector2"/>
+		<field name="fVehicleDismissDistance" type="Float"/>
+		<field name="vec2TurnDistancesMinMax" type="Vector2"/>
+		<field name="vec2TurnStrengthsMinMax" type="Vector2"/>
+		<field name="bEnableBraking" type="Boolean"/>
+		<field name="vec2TurnCffPow" type="Vector2"/>
+		<field name="bHasInitialBrake" type="Boolean"/>
+		<field name="vec2SteeringDownSpeeds" type="Vector2"/>
+		<field name="bAllowOvertake" type="Boolean"/>
+		<field name="fOverridePauseTime" type="Float"/>
+		<field name="fBrakingMinDistance" type="Float"/>
+		<field name="fBrakingMaxDistance" type="Float"/>
+		<field name="fBrakingDistanceMinSpeed" type="Float"/>
+		<field name="fBrakingDistanceMaxSpeed" type="Float"/>
+		<field name="fMinSideDistanceToBlock" type="Float"/>
+		<object name="curveSteerStrength">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<field name="vec2CollisionDistances" type="Vector2"/>
+		<field name="fSpeedDiffMax" type="Float"/>
+		<field name="vec2BrakeCffsAtspeed" type="Vector2"/>
+		<field name="fBrakeCff" type="Float"/>
+		<field name="bShouldAvoid" type="Boolean"/>
+		<field name="fSteerCff" type="Float"/>
+		<field name="fHonkChance" type="Float"/>
+		<field name="vec2HonkLength" type="Vector2"/>
+		<field name="fHonkMinDistance" type="Float"/>
+		<field name="fHonkMinSpeed" type="Float"/>
+		<field name="fMaxHeightDifference" type="Float"/>
+		<field name="vec2SideDistanceSpeedScale" type="Vector2"/>
+		<field name="fApproachTimeToStartReaction" type="Float"/>
+		<field name="fMinDistanceTostartReaction" type="Float"/>
+		<field name="fMaxDistanceToStopReaction" type="Float"/>
+		<field name="fOffsetVarioationMax" type="Float"/>
+		<field name="vec2OffsetVariationPeriodMinMax" type="Vector2"/>
+		<field name="vec2SpeedCffMinMax" type="Vector2"/>
+		<field name="fRandAcceleration" type="Float"/>
+		<object name="UnblockSettings">
+			<field name="vec2InitialReverseTime" type="Vector2"/>
+			<field name="fUnblockResetDistance" type="Float"/>
+			<field name="fReverseTurn" type="Float"/>
+			<object name="NormalModeSettings">
+				<field name="vec2SwitchAfterTimeStopped" type="Vector2"/>
+				<field name="vec2SwitchAfterDistanceTravelled" type="Vector2"/>
+				<field name="vec2SwitchAfterTimeInState" type="Vector2"/>
+			</object>
+			<object name="ReverseModeSettings">
+				<field name="vec2SwitchAfterTimeStopped" type="Vector2"/>
+				<field name="vec2SwitchAfterDistanceTravelled" type="Vector2"/>
+				<field name="vec2SwitchAfterTimeInState" type="Vector2"/>
+			</object>
+		</object>
+		<object name="curveBaseAccelerationCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveAdditiveDecelCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveMaxSpeedFromSteeringCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveSteeringStrengthForAngle">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<field name="vec2SteeringSpeedLimits" type="Vector2"/>
+		<field name="vec2SteeringSpeedCffs" type="Vector2"/>
+	</object>
+</class>

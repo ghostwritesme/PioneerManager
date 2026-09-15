@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RacedbconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="racetrackRaceTrackConfig" type="BinHex"/>
+	<field name="raceoptionsRaceOptions" type="BinHex"/>
+</class>

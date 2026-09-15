@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Texteffectsettings_3ced43f5Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_sndTextEffectSoundStart" type="String"/>
+	<field name="sndTextEffectSoundStart" type="BinHex"/>
+	<field name="text_sndTextEffectSoundStop" type="String"/>
+	<field name="sndTextEffectSoundStop" type="BinHex"/>
+	<object name="DefaultDuration">
+		<field name="fDefaultOverallDuration" type="Float"/>
+		<field name="fDefaultAnimationInDuration" type="Float"/>
+		<field name="fDefaultAnimationIdleDuration" type="Float"/>
+		<field name="fDefaultAnimationWaitDuration" type="Float"/>
+		<field name="fDefaultAnimationOutDuration" type="Float"/>
+	</object>
+	<object name="ScrambleOptions">
+		<field name="sScrambleGlitchCharacters" type="BinHex"/>
+		<field name="iScramblePauseTimeInFrames" type="Int32"/>
+	</object>
+	<object name="StretchOptions">
+		<field name="iStretchPauseTimeInFrames" type="Int32"/>
+	</object>
+</class>

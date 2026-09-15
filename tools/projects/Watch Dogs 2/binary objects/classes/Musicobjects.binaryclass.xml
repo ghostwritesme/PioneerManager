@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="MusicobjectsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selMusicType" type="Enum"/>
+	<field name="bStartOnLoad" type="Boolean"/>
+	<field name="playlistsPlaylist" type="BinHex"/>
+	<field name="fFadeTime" type="Float"/>
+	<field name="fSongSneakRadius" type="Float"/>
+	<field name="bUseActivationRadius" type="Boolean"/>
+	<field name="fActivationRadius" type="Float"/>
+	<field name="bUseRadioForPlaylist" type="Boolean"/>
+	<object name="PossibleStations">
+		<object name="RadioStationDBSettings">
+			<field name="radiolibrary" type="BinHex"/>
+		</object>
+	</object>
+</class>

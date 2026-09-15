@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Continuousstimconfigdb_58daaf68Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="StimConfigs">
+		<object name="StimConfig">
+			<field name="stimsStimToSend" type="BinHex"/>
+			<field name="fEmissionInterval" type="Float"/>
+			<object name="TagRestriction">
+				<object name="Needed">
+					<object name="TagsOR">
+						<object name="TagsAND">
+							<object name="tagcategoryselectionTag">
+								<field name="text_UITagCategorySelectionClassID" type="String"/>
+								<field name="UITagCategorySelectionClassID" type="BinHex"/>
+								<field name="tagcategoryUITagCategory" type="BinHex"/>
+								<field name="tagcategoryTagCategory" type="BinHex"/>
+								<field name="tagTag" type="BinHex"/>
+							</object>
+						</object>
+					</object>
+				</object>
+				<object name="TagsExcluded"/>
+			</object>
+		</object>
+	</object>
+</class>

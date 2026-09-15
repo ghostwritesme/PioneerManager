@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Livingcitymergemoduleconfig_0f129890Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="SendPosEveryNthFrame" type="BinHex"/>
+	<field name="fDeleteLivingCityDistance" type="Float"/>
+	<field name="fPreventSeamlessMergeAfterDistance" type="Float"/>
+</class>

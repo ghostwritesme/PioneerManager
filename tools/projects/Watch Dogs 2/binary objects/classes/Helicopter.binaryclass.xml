@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="HelicopterParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMass" type="Float"/>
+	<object name="VerticalMove">
+		<field name="fMaxUpSpeed" type="Float"/>
+		<field name="fMaxDownSpeed" type="Float"/>
+		<field name="fUpAccel" type="Float"/>
+		<field name="fDownAccel" type="Float"/>
+		<field name="fHoverAccel" type="Float"/>
+	</object>
+	<object name="ForwardMove">
+		<field name="fMaxForwardSpeed" type="Float"/>
+		<field name="fMaxReverseSpeed" type="Float"/>
+		<field name="fForwardAccel" type="Float"/>
+		<field name="fReverseAccel" type="Float"/>
+	</object>
+	<object name="RotationMove">
+		<field name="angMaxRotationRate" type="Float"/>
+		<field name="angRotationAccel" type="Float"/>
+		<field name="fMaxSideSpeed" type="Float"/>
+		<field name="fSideAccel" type="Float"/>
+		<field name="fTurnSideAccel" type="Float"/>
+	</object>
+	<object name="Pitch">
+		<field name="angMaxForwardPitchAngle" type="Float"/>
+		<field name="angMaxReversePitchAngle" type="Float"/>
+		<field name="angPitchAccel" type="Float"/>
+	</object>
+	<object name="Roll">
+		<field name="angMaxRollAngle" type="Float"/>
+		<field name="angRollAccel" type="Float"/>
+		<field name="fMinRollSpeedRatio" type="Float"/>
+	</object>
+	<object name="Curving">
+		<object name="curveSafeCorneringCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveFastCorneringCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+</class>

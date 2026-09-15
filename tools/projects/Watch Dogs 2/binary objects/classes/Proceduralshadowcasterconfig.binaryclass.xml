@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ProceduralshadowcasterconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="ProceduralShadowParams">
+		<field name="fRadius" type="Float"/>
+		<field name="fFadeDistance" type="Float"/>
+		<field name="angFadeStartAngle" type="Float"/>
+		<field name="fShadowIntensity" type="Float"/>
+		<field name="fFadeRaiseAmount" type="Float"/>
+		<field name="fCinematicFadeRaiseAmount" type="Float"/>
+	</object>
+	<object name="tagcategoryselectionGraphicKitTagSelection">
+		<field name="text_UITagCategorySelectionClassID" type="String"/>
+		<field name="UITagCategorySelectionClassID" type="BinHex"/>
+		<field name="tagcategoryUITagCategory" type="BinHex"/>
+		<field name="tagTag" type="BinHex"/>
+	</object>
+	<object name="BoneAnchor">
+		<field name="text_selBoneName" type="String"/>
+		<field name="selBoneName" type="Enum"/>
+		<field name="vectorTranslation" type="Vector3"/>
+		<field name="angvecRotation" type="Vector3"/>
+	</object>
+</class>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CargovehiclegameplaybrickParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsDeliveryObjective" type="Boolean"/>
+	<field name="bIsCargoVehicleLocked" type="Boolean"/>
+	<field name="bIsDataDownloadLocked" type="Boolean"/>
+	<field name="fVehicleLifeCoefficient" type="Float"/>
+	<field name="fTimeBeforeFelonyTrigger" type="Float"/>
+	<field name="fAttractStimRadius" type="Float"/>
+	<object name="FleeSettings">
+		<field name="bCanTriggerFlee" type="Boolean"/>
+		<field name="fEscapeRadius" type="Float"/>
+		<field name="fTriggerAIFleeRadius" type="Float"/>
+		<field name="fTimeBeforeNewFleeAttempt" type="Float"/>
+		<field name="fArenaRadius" type="Float"/>
+	</object>
+	<object name="Barks">
+		<field name="text_BarkIdOnAIFleeBarkId" type="String"/>
+		<field name="BarkIdOnAIFleeBarkId" type="BinHex"/>
+		<field name="bBarkIdOnAIFleeBark2D" type="Boolean"/>
+		<field name="text_BarkIdOnCargoStolenBarkId" type="String"/>
+		<field name="BarkIdOnCargoStolenBarkId" type="BinHex"/>
+		<field name="bBarkIdOnCargoStolenBark2D" type="Boolean"/>
+		<field name="text_BarkIdOnCargoDestroyedBarkId" type="String"/>
+		<field name="BarkIdOnCargoDestroyedBarkId" type="BinHex"/>
+		<field name="bBarkIdOnCargoDestroyedBark2D" type="Boolean"/>
+	</object>
+	<object name="FelonyConfigs">
+		<field name="chaselevelparametersEasyChaseParams" type="BinHex"/>
+		<field name="chaselevelparametersMediumChaseParams" type="BinHex"/>
+		<field name="chaselevelparametersHardChaseParams" type="BinHex"/>
+		<field name="chaselevelparametersInsaneChaseParams" type="BinHex"/>
+	</object>
+</class>

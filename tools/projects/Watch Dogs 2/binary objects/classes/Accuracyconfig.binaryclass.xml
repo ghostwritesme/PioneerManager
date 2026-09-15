@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="AccuracyconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMeterSize" type="Float"/>
+	<field name="fEnteringCarFactor" type="Float"/>
+	<field name="fAtCoverDecreaseSpeed" type="Float"/>
+	<field name="fActiveShooterLifetime" type="Float"/>
+	<field name="fVerticalHiddenAngle" type="Float"/>
+	<field name="fHorizontalHiddenAngle" type="Float"/>
+	<object name="curveDistanceFactor">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveAngleFactor">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveNbOfShooterFactor">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveMovementSpeedFactor">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveRelativeVehicleSpeedFactor">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="NotMovingFactor">
+		<field name="fMinDistanceToLKP" type="Float"/>
+		<field name="fMinimumValue" type="Float"/>
+		<field name="fMaximumValue" type="Float"/>
+		<field name="fAtCoverIncreaseSpeed" type="Float"/>
+		<field name="fStandingIncreaseSpeed" type="Float"/>
+		<field name="fDecreaseWhenShot" type="Float"/>
+	</object>
+	<object name="Shield">
+		<field name="fSize" type="Float"/>
+		<field name="fRechargeSpeed" type="Float"/>
+		<field name="fActivationThreshold" type="Float"/>
+		<field name="fRechargeThreshold" type="Float"/>
+		<field name="fPointBlankDistance" type="Float"/>
+	</object>
+	<object name="ShootingTickets">
+		<field name="iAmountOfShootingTickets" type="Int32"/>
+		<field name="vec2ShootingSequenceLength" type="Vector2"/>
+		<field name="vec2ShootingSequenceDelayLength" type="Vector2"/>
+	</object>
+</class>

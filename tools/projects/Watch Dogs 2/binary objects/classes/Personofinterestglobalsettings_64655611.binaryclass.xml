@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Personofinterestglobalsettings_64655611Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_sndPersonOfInterestFoundSoundId" type="String"/>
+	<field name="sndPersonOfInterestFoundSoundId" type="BinHex"/>
+</class>

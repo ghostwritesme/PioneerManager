@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Civilianactionsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="PanicBarkSettings">
+		<field name="fMinCoolDown" type="Float"/>
+		<field name="fMaxCoolDown" type="Float"/>
+		<field name="fMinDistToPlayer" type="Float"/>
+		<field name="fMaxDistToPlayer" type="Float"/>
+		<object name="Barks">
+			<object name="Bark">
+				<field name="text_sBark" type="String"/>
+				<field name="sBark" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="WallaSettings">
+		<object name="Idle">
+			<field name="text_sndSoundDay" type="String"/>
+			<field name="sndSoundDay" type="BinHex"/>
+			<field name="text_sndStopDay" type="String"/>
+			<field name="sndStopDay" type="BinHex"/>
+			<field name="text_sndSoundNight" type="String"/>
+			<field name="sndSoundNight" type="BinHex"/>
+			<field name="text_sndStopNight" type="String"/>
+			<field name="sndStopNight" type="BinHex"/>
+			<field name="iPeopleMin" type="Int32"/>
+			<field name="iPeopleMax" type="Int32"/>
+			<field name="fRadius" type="Float"/>
+			<object name="sndvarCrowdRTPC">
+				<field name="SoundId" type="BinHex"/>
+				<field name="SoundGuid" type="String"/>
+			</object>
+		</object>
+		<object name="Panic">
+			<field name="text_sndCrowdPanic" type="String"/>
+			<field name="sndCrowdPanic" type="BinHex"/>
+			<field name="text_sndCrowdPanicStop" type="String"/>
+			<field name="sndCrowdPanicStop" type="BinHex"/>
+			<field name="fCrownPanicDuration" type="Float"/>
+			<field name="iPeopleMin" type="Int32"/>
+			<field name="iPeopleMax" type="Int32"/>
+			<field name="fRadius" type="Float"/>
+			<object name="sndvarCrowdPanicRTPC">
+				<field name="SoundId" type="BinHex"/>
+				<field name="SoundGuid" type="String"/>
+			</object>
+		</object>
+		<object name="SoundObject">
+			<field name="fSoundObjectLag" type="Float"/>
+			<field name="fMinCivDistLag" type="Float"/>
+			<object name="sndvarMinCivDistRtpc">
+				<field name="SoundId" type="BinHex"/>
+				<field name="SoundGuid" type="String"/>
+			</object>
+			<object name="sndvarAvgCivDistRtpc">
+				<field name="SoundId" type="BinHex"/>
+				<field name="SoundGuid" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

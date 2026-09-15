@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UimenudbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_uimenutypeidMenu" type="String"/>
+	<field name="uimenutypeidMenu" type="BinHex"/>
+	<object name="MenuProperties">
+		<field name="selLoadingTileId" type="Enum"/>
+		<field name="fMinLoadingFeedbackTime" type="Float"/>
+		<field name="uimenutileControlReminderTileId" type="BinHex"/>
+		<field name="uimenutilePCControlReminderTileId" type="BinHex"/>
+		<field name="bExtendHeaderAndFooter" type="Boolean"/>
+		<object name="SoundEffects">
+			<field name="uisoundOpenMenuPageSound" type="BinHex"/>
+			<field name="uisoundCloseMenuPageSound" type="BinHex"/>
+		</object>
+		<field name="selHeaderTileId" type="Enum"/>
+		<field name="uisoundOpenSmartphoneSound" type="BinHex"/>
+		<field name="uisoundCloseSmartphoneSound" type="BinHex"/>
+		<field name="bPauseGameOnActivate" type="Boolean"/>
+		<field name="selBackgroundTileId" type="Enum"/>
+		<field name="selProgressBarTileId" type="Enum"/>
+		<field name="uimenupageMainMenuHomepage" type="BinHex"/>
+		<field name="uimenupagePauseMenuHomepage" type="BinHex"/>
+		<field name="uibinklistBinkList" type="BinHex"/>
+		<field name="uisoundPlayMainMenuSound" type="BinHex"/>
+		<field name="uisoundStopMainMenuSound" type="BinHex"/>
+		<field name="uisoundPlayPauseMenuSound" type="BinHex"/>
+		<field name="uisoundStopPauseMenuSound" type="BinHex"/>
+		<field name="selBreadcrumbTileId" type="Enum"/>
+		<field name="selNotificationTileId" type="Enum"/>
+		<field name="fNotificationDisplayTime" type="Float"/>
+		<field name="uInitialPageIndex" type="Int64"/>
+		<field name="uimenutilePageIndexTile" type="BinHex"/>
+		<field name="uimenutilePageIndexTilePC" type="BinHex"/>
+		<object name="locstridNotificationMessage">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridAlternateNotificationMessage">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="PersistentLayerUIResources">
+		<object name="PersistentFeuFile">
+			<field name="filePersistentFeuFiles" type="String"/>
+		</object>
+	</object>
+	<object name="Tiles">
+		<object name="Tile">
+			<field name="uimenutileTile" type="BinHex"/>
+		</object>
+	</object>
+</class>

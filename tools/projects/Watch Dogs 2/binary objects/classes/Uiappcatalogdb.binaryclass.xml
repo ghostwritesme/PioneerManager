@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UiappcatalogdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selDefaultAppState" type="Enum"/>
+	<field name="uimenutileSmartphoneTile" type="BinHex"/>
+	<field name="fPrice" type="Float"/>
+	<field name="selSmartphoneApp" type="Enum"/>
+	<field name="uiOrderInAppStore" type="Int64"/>
+	<object name="locstridDescription">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridDevelopper">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="DetailPages">
+		<object name="DetailPage">
+			<field name="selOrientation" type="Enum"/>
+			<field name="texturedbobjectImage" type="BinHex"/>
+			<field name="bIsVideo" type="Boolean"/>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+</class>

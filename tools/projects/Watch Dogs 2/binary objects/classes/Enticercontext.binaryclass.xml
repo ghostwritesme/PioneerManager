@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="EnticercontextParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Time">
+		<object name="TimeOfDay">
+			<field name="selTimeOfDay" type="Enum"/>
+		</object>
+	</object>
+	<object name="Rain">
+		<object name="RainIntensity">
+			<field name="selRainIntensity" type="Enum"/>
+		</object>
+	</object>
+</class>

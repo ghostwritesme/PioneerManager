@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RacedboptionsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="itemsRaceItem" type="BinHex"/>
+	<field name="missionlistRaceMission" type="BinHex"/>
+	<field name="missionlistRaceMissionCoop" type="BinHex"/>
+	<field name="missionlistRaceMissionOnline" type="BinHex"/>
+	<field name="missionlistRaceMissionGroup" type="BinHex"/>
+	<field name="selRaceStyle" type="Enum"/>
+	<field name="uiLapsCount" type="Int64"/>
+	<object name="Racers">
+		<object name="Racer">
+			<field name="racerconfigRacer" type="BinHex"/>
+		</object>
+	</object>
+	<object name="RaceHudOptions">
+		<field name="bShowRaceHud" type="Boolean"/>
+		<field name="bShowRaceStartSequence" type="Boolean"/>
+		<field name="bShowBlackScreenDuringSetup" type="Boolean"/>
+		<field name="bShowGatesInCinematic" type="Boolean"/>
+		<field name="selRaceMapContext" type="Enum"/>
+	</object>
+	<object name="WrongWayWarning">
+		<field name="bEnableWrongWayWarning" type="Boolean"/>
+		<field name="fTimeUntilWrongWayMessageIsShown" type="Float"/>
+		<field name="fDisplayDurationForWrongWayMessage" type="Float"/>
+		<object name="locstridWrongWayMessageBody">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="OffTrackReset">
+		<field name="bEnableOffTrackReset" type="Boolean"/>
+		<field name="bAllowPlayerToResetManually" type="Boolean"/>
+		<field name="bValidateMissionAreaIn2D" type="Boolean"/>
+		<field name="fTimeUntilOffTrackMessageIsShown" type="Float"/>
+		<field name="fTimeUntilAutoResetIsDone" type="Float"/>
+		<field name="fManualResetCooldownTime" type="Float"/>
+		<object name="locstridOffTrackMessageTitle">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridOffTrackMessageBody">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridResetVehicleMessage">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="StuckWarning">
+		<field name="bEnableStuckWarning" type="Boolean"/>
+		<field name="fStuckWarningTime" type="Float"/>
+		<field name="fMinVehicleSpeedToShowResetHintText" type="Float"/>
+	</object>
+	<object name="GetBackToVehicleWarning">
+		<field name="bEnableGetBackToVehicleWarning" type="Boolean"/>
+		<field name="fDisplayDurationForGetBackToVehicleMessage" type="Float"/>
+		<object name="locstridGetBackToVehicleMessageTitle">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridGetBackToVehicleMessageBody">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="RaceMenuPagesOptions">
+		<field name="bAllowRaceRestartAtEndOfRace" type="Boolean"/>
+		<field name="bShowRaceCentralAtEndOfRace" type="Boolean"/>
+		<field name="bTeleportPlayerBackToSpawnPoint" type="Boolean"/>
+	</object>
+	<object name="RacerVehicleOptions">
+		<field name="bSpawnVehicleForPlayer" type="Boolean"/>
+		<field name="text_archPlayerVehicle" type="String"/>
+		<field name="archPlayerVehicle" type="BinHex"/>
+		<field name="text_archPlayerVehicleMapIcon" type="String"/>
+		<field name="archPlayerVehicleMapIcon" type="BinHex"/>
+		<field name="bIsPlayerVehicleDrone" type="Boolean"/>
+		<field name="bAllowPlayerToExitVehicle" type="BinHex"/>
+		<field name="bAllowPlayerToChangeVehicle" type="BinHex"/>
+		<field name="bStopVehicleOnRaceEnd" type="BinHex"/>
+	</object>
+	<object name="PlayerOptions">
+		<field name="bEnableHacking" type="Boolean"/>
+		<field name="bEnableNetHacking" type="Boolean"/>
+		<field name="bEnableWeaponWheel" type="Boolean"/>
+		<field name="bHidePlayerIconOnMinimap" type="Boolean"/>
+		<field name="bEnableInteractions" type="Boolean"/>
+		<object name="locstridPlayerName">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="GlobalOptions">
+		<field name="bEnableFelony" type="Boolean"/>
+		<field name="bEnableTraffic" type="Boolean"/>
+		<field name="fImpostorMinDrawDistance" type="Float"/>
+	</object>
+	<object name="ImpostorsSettings">
+		<field name="bEnableImpostorsSettingsOverride" type="Boolean"/>
+		<field name="fImpostorMinDrawDistance" type="Float"/>
+	</object>
+	<object name="TimeOfDay">
+		<field name="bOverrideTimeOfDay" type="Boolean"/>
+		<field name="uiHour" type="Int64"/>
+		<field name="uiMinute" type="Int64"/>
+		<field name="fTimeScale" type="Float"/>
+	</object>
+	<object name="Weather">
+		<field name="bOverrideWeather" type="Boolean"/>
+		<field name="envweatherpresetWeatherPreset" type="BinHex"/>
+		<field name="fFadeIn" type="Float"/>
+		<field name="fFadeOut" type="Float"/>
+	</object>
+	<object name="MissionMusic">
+		<field name="bEnableMusic" type="Boolean"/>
+		<field name="playlistsMusicPlayList" type="BinHex"/>
+		<field name="bShuffle" type="Boolean"/>
+	</object>
+	<object name="PerksToRemove">
+		<field name="perkdesclistPerksToRemove" type="BinHex"/>
+	</object>
+	<object name="CheckpointIndicators">
+		<object name="GateAssets">
+			<object name="GateAsset">
+				<inherit name="SharedParameters"/>
+				<field name="text_archCheckpointGate" type="String"/>
+				<field name="archCheckpointGate" type="BinHex"/>
+				<field name="text_archNextCheckpointGate" type="String"/>
+				<field name="archNextCheckpointGate" type="BinHex"/>
+				<field name="text_archStartCheckpointGate" type="String"/>
+				<field name="archStartCheckpointGate" type="BinHex"/>
+				<field name="text_archNextFinishCheckpointGate" type="String"/>
+				<field name="archNextFinishCheckpointGate" type="BinHex"/>
+				<field name="text_archFinishCheckpointGate" type="String"/>
+				<field name="archFinishCheckpointGate" type="BinHex"/>
+				<field name="text_archCheckpointMapIcon" type="String"/>
+				<field name="archCheckpointMapIcon" type="BinHex"/>
+				<object name="StartBuoys">
+					<inherit name="SharedParameters"/>
+					<field name="archBuoyLeft" type="BinHex"/>
+					<field name="archBuoyRight" type="BinHex"/>
+				</object>
+				<object name="CheckpointBuoys">
+					<inherit name="SharedParameters"/>
+					<field name="text_archBuoyLeft" type="String"/>
+					<field name="archBuoyLeft" type="BinHex"/>
+					<field name="text_archBuoyRight" type="String"/>
+					<field name="archBuoyRight" type="BinHex"/>
+				</object>
+				<object name="FinishBuoys">
+					<inherit name="SharedParameters"/>
+					<field name="text_archBuoyLeft" type="String"/>
+					<field name="archBuoyLeft" type="BinHex"/>
+					<field name="text_archBuoyRight" type="String"/>
+					<field name="archBuoyRight" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="Debris">
+		<object name="NonRemovableDebris">
+			<object name="Archetype">
+				<field name="text_archArchetype" type="String"/>
+				<field name="archArchetype" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="Tutorials">
+		<field name="text_actiontrackeridTutorialActionTrackerId" type="String"/>
+		<field name="actiontrackeridTutorialActionTrackerId" type="BinHex"/>
+	</object>
+	<object name="RaceProperties">
+		<field name="bUseAiForRacers" type="Boolean"/>
+		<field name="bCanCrossCheckpointBothWays" type="Boolean"/>
+		<field name="fGateSizeExtension" type="Float"/>
+	</object>
+	<object name="RaceStartIntro">
+		<field name="fIntroAnimationDuration" type="Float"/>
+	</object>
+	<object name="SoundEffects">
+		<field name="text_sndRaceCountdownSound" type="String"/>
+		<field name="sndRaceCountdownSound" type="BinHex"/>
+		<field name="text_sndRaceStartSound" type="String"/>
+		<field name="sndRaceStartSound" type="BinHex"/>
+		<field name="text_sndRaceFinishSound" type="String"/>
+		<field name="sndRaceFinishSound" type="BinHex"/>
+		<field name="text_sndCheckpointCrossedSound" type="String"/>
+		<field name="sndCheckpointCrossedSound" type="BinHex"/>
+	</object>
+	<object name="PhoneCommunications">
+		<field name="phonecommunicationsettingsOnFirstWinEver" type="BinHex"/>
+		<field name="phonecommunicationsettingsOnFirstWin" type="BinHex"/>
+		<field name="phonecommunicationsettingsOnRaceWon" type="BinHex"/>
+		<field name="phonecommunicationsettingsOnRaceLost" type="BinHex"/>
+		<field name="phonecommunicationsettingsOnAllRacesWon" type="BinHex"/>
+	</object>
+	<object name="AchievementRewards">
+		<field name="itemlistsOnFirstWinEver" type="BinHex"/>
+		<field name="itemlistsOnAllRacesWon" type="BinHex"/>
+	</object>
+	<object name="Multiplayer">
+		<object name="VehicleArchetypes">
+			<object name="Archetype">
+				<field name="text_archArchetype" type="String"/>
+				<field name="archArchetype" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

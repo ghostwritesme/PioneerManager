@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BoatreinforcementconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="uiMaxSpawnedBoats" type="Int64"/>
+	<field name="uiMaxSpawnedBoatNPC" type="Int64"/>
+	<field name="uiMaxSpawnedBoatsInUntargetedSearch" type="Int64"/>
+	<field name="uiMaxSpawnedBoatNPCInUntargetedSearch" type="Int64"/>
+	<object name="Spawn">
+		<field name="fRnMindistance" type="Float"/>
+		<field name="fRnIdealDistance" type="Float"/>
+		<field name="fOpenWaterMinDistance" type="Float"/>
+		<field name="fOpenWaterIdealDistance" type="Float"/>
+	</object>
+	<object name="Unspawning">
+		<field name="fMinDistFromPlayers" type="Float"/>
+		<field name="fUsefullRange" type="Float"/>
+		<field name="fUsefullRangeWhenEmpty" type="Float"/>
+	</object>
+</class>

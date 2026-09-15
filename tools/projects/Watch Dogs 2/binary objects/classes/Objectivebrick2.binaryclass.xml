@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Objectivebrick2Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="selConditionMode" type="Enum"/>
+    <field name="bShouldSucceedObjectiveOnCompletion" type="Boolean"/>
+    <field name="bIsPermanentOnStart" type="Boolean"/>
+    <object name="locstridSinglePlayerObjectiveLocId">
+        <field name="LocalizationId" type="Int64"/>
+        <inherit name="ObjectiveConditionsParameters"/>
+    </object>
+    <object name="locstridCoopLeaderObjectiveLocId">
+        <field name="LocalizationId" type="Int64"/>
+        <inherit name="ObjectiveConditionsParameters"/>
+    </object>
+    <object name="locstridCoopFollowerObjectiveLocId">
+        <field name="LocalizationId" type="Int64"/>
+        <inherit name="ObjectiveConditionsParameters"/>
+    </object>
+    <object name="CompleteConditionGroup">
+        <field name="selConditionsOperator" type="Enum"/>
+        <inherit name="ObjectiveConditionsParameters"/>
+    </object>
+    <object name="OptionalConditionGroup">
+        <field name="selConditionsOperator" type="Enum"/>
+        <inherit name="ObjectiveConditionsParameters"/>
+    </object>
+    <object name="FailConditionGroup">
+        <field name="selConditionsOperator" type="Enum"/>
+        <inherit name="ObjectiveConditionsParameters"/>
+    </object>
+</class>

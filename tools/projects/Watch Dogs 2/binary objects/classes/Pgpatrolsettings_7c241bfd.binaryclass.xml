@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Pgpatrolsettings_7c241bfdParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMinAngleBetweenPatrolSegments" type="Float"/>
+	<field name="fMaxAngleBetweenPatrolSegmentsRequiringStop" type="Float"/>
+	<field name="fProportionOfPatrol" type="Float"/>
+	<field name="uMinPatrolPoints" type="Int64"/>
+	<field name="uMaxPatrolPoints" type="Int64"/>
+	<field name="fMinDistanceBetweenPatrolPoints" type="Float"/>
+	<field name="fMaxDistanceBetweenPatrolPoints" type="Float"/>
+	<field name="singleclocreationsettingsAnimationCreationSettings" type="BinHex"/>
+	<field name="cloanimalcreationsettingsAnimalAnimationCreationSettings" type="BinHex"/>
+	<field name="fMinStopDuration" type="Float"/>
+	<field name="fMaxStopDuration" type="Float"/>
+</class>

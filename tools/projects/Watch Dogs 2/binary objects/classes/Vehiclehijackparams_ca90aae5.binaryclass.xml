@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Vehiclehijackparams_ca90aae5Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fHijackMaximumSpeed" type="Float"/>
+	<field name="fHijackZoneWidth" type="Float"/>
+	<field name="fHijackZoneMinHalfLength" type="Float"/>
+	<field name="fHijackZoneMaxHalfLength" type="Float"/>
+	<field name="fHijackZoneMaxOffset" type="Float"/>
+</class>

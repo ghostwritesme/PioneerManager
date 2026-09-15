@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CiviliandistributionParameters">
+	<inherit name="SharedParameters"/>
+	<object name="ContextualTagDistributions">
+		<object name="ContextualTagDistribution">
+			<field name="entcontContext" type="BinHex"/>
+			<object name="TagDistributions">
+				<object name="TagDistribution">
+					<field name="selTagCategory" type="Enum"/>
+					<field name="DesiredPercentage" type="BinHex"/>
+					<object name="tagcategoryselectionTag">
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagTag" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

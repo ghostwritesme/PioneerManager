@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Aisoundconfig_615db019Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Sounds">
+		<field name="text_sndCombat" type="String"/>
+		<field name="sndCombat" type="BinHex"/>
+		<field name="sndIntuitionStart" type="BinHex"/>
+		<field name="sndIntuitionStop" type="BinHex"/>
+		<field name="text_sndDetectionStart" type="String"/>
+		<field name="sndDetectionStart" type="BinHex"/>
+		<field name="sndDetectionStop" type="BinHex"/>
+	</object>
+	<object name="SoundStates">
+		<field name="text_sndOtherState" type="String"/>
+		<field name="sndOtherState" type="BinHex"/>
+		<field name="text_sndAlertSoftState" type="String"/>
+		<field name="sndAlertSoftState" type="BinHex"/>
+		<field name="text_sndAlertHardState" type="String"/>
+		<field name="sndAlertHardState" type="BinHex"/>
+		<field name="text_sndWarnState" type="String"/>
+		<field name="sndWarnState" type="BinHex"/>
+		<field name="text_sndArrestState" type="String"/>
+		<field name="sndArrestState" type="BinHex"/>
+		<field name="text_sndCombatState" type="String"/>
+		<field name="sndCombatState" type="BinHex"/>
+		<field name="text_sndSearchState" type="String"/>
+		<field name="sndSearchState" type="BinHex"/>
+		<field name="text_sndAwareState" type="String"/>
+		<field name="sndAwareState" type="BinHex"/>
+	</object>
+	<object name="ForbiddenZones">
+		<field name="text_sndPlayerEnterForbiddenZone" type="String"/>
+		<field name="sndPlayerEnterForbiddenZone" type="BinHex"/>
+		<field name="text_sndPlayerExitForbiddenZone" type="String"/>
+		<field name="sndPlayerExitForbiddenZone" type="BinHex"/>
+	</object>
+</class>

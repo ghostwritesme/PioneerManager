@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ContactappmpgamemodeParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsDisplayedInLeaderboard" type="BinHex"/>
+	<field name="nDisplayOrderInApp" type="Int32"/>
+	<field name="selLaunchGameModeType" type="Enum"/>
+	<field name="availabilityrulegroupAvailabilityRule" type="BinHex"/>
+	<object name="locstridModeRealNameLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridModeNameLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridModeDescriptionLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridModeDescriptionFourPlayerLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridModeLeaderboardeRequierementLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridRewardsLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridButtonLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridGameModeActivityTypeLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+</class>

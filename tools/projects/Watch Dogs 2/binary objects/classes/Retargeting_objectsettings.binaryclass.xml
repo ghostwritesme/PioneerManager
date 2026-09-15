@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Retargeting_objectsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_fileHolderSkeletonUrl" type="String"/>
+	<field name="fileHolderSkeletonUrl" type="BinHex"/>
+	<field name="SubObjectScale" type="BinHex"/>
+	<field name="AttachmentPartScale" type="BinHex"/>
+	<field name="IKPartScale" type="BinHex"/>
+</class>

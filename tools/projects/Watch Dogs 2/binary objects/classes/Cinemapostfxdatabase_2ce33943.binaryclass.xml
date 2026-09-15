@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Cinemapostfxdatabase_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="PostFxList">
+		<object name="PostFx">
+			<field name="text_sName" type="String"/>
+			<field name="sName" type="BinHex"/>
+			<field name="bLoopMainSequence" type="Boolean"/>
+			<field name="text_fileMainSequencePath" type="String"/>
+			<field name="fileMainSequencePath" type="BinHex"/>
+			<field name="text_fileFadeInSequencePath" type="String"/>
+			<field name="fileFadeInSequencePath" type="BinHex"/>
+			<field name="text_fileFadeOutSequencePath" type="String"/>
+			<field name="fileFadeOutSequencePath" type="BinHex"/>
+		</object>
+	</object>
+</class>

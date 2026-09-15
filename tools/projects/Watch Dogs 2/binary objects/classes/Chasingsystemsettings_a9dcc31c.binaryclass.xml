@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Chasingsystemsettings_a9dcc31cParameters">
+	<inherit name="SharedParameters"/>
+	<field name="gpctxspecGameplayContext" type="BinHex"/>
+	<field name="fChaseRadius" type="Float"/>
+	<field name="fMaxTargetSpeedForShootingWhileDrivingKPH" type="Float"/>
+	<field name="vehiclebhvsetupAmbientWanderSetup" type="BinHex"/>
+	<object name="ChaseTypeConfig">
+		<object name="chasetypeconfigChaseTypeConfig">
+			<field name="chasetypeconfigChaseTypeConfig" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Sound">
+		<field name="text_sndNotifyHeatLevelUpSound" type="String"/>
+		<field name="sndNotifyHeatLevelUpSound" type="BinHex"/>
+		<field name="text_sndNotifyHeatLevelDownSound" type="String"/>
+		<field name="sndNotifyHeatLevelDownSound" type="BinHex"/>
+		<field name="sndNotifyChaseEscapeSound" type="BinHex"/>
+		<field name="sndDefaultChaseStartedSound" type="BinHex"/>
+		<field name="sndDefaultChaseStoppedSound" type="BinHex"/>
+		<field name="sndDefaultSearchStartedSound" type="BinHex"/>
+		<field name="sndDefaultSearchStoppedSound" type="BinHex"/>
+		<object name="Player">
+			<field name="text_sndPlayerChaseStartedSound" type="String"/>
+			<field name="sndPlayerChaseStartedSound" type="BinHex"/>
+			<field name="text_sndPlayerChaseStoppedSound" type="String"/>
+			<field name="sndPlayerChaseStoppedSound" type="BinHex"/>
+			<field name="text_sndPoliceInRangeSound" type="String"/>
+			<field name="sndPoliceInRangeSound" type="BinHex"/>
+			<field name="sndPoliceOutOfRangeSound" type="BinHex"/>
+			<field name="fPoliceInRangeSqrDistance" type="BinHex"/>
+			<field name="fPoliceOutOfRangeSqrDistance" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Timers">
+		<field name="fDelayXPRewardAttribution" type="Float"/>
+	</object>
+	<object name="Search">
+		<field name="fAlleyOnFootRatio" type="Float"/>
+	</object>
+	<object name="Fallback">
+		<field name="fFallbackVehicleRadius" type="Float"/>
+		<field name="fFallbackNPCRadius" type="Float"/>
+		<field name="drvstyleFallbackDrivingStyle" type="BinHex"/>
+	</object>
+	<object name="Efficiency">
+		<field name="efficiencymodsEfficiencyModifiers" type="BinHex"/>
+	</object>
+	<object name="Handicaps">
+		<field name="fEfficiencyHandicapMinHighSpeedDuration" type="Float"/>
+		<field name="uiReactionHandicapMinCornerCount" type="Int64"/>
+		<field name="fReactionHandicapMaxTimeThroughCorners" type="Float"/>
+		<field name="fReactionHandicapActivationMinSpeedKmh" type="Float"/>
+		<field name="fReactionHandicapActivationMinYawSpeed" type="Float"/>
+	</object>
+	<object name="Maneuvers">
+		<field name="maneuvervalcfgManeuverValidationConfig" type="BinHex"/>
+	</object>
+	<object name="GaugeModifier">
+		<field name="fTargetChangeLocomotion" type="Float"/>
+		<field name="fSpottedByFlashlight" type="Float"/>
+		<object name="FelonyCopLowHeatLevel">
+			<field name="MaxHeatLevelToApplyLowHeatLevelModifier" type="BinHex"/>
+			<field name="fGaugeTimeToReachTopLowHeatLevelModifer" type="Float"/>
+		</object>
+	</object>
+	<object name="AICapabilities">
+		<object name="SkipLKPInvestigation">
+			<field name="fPlayerToLKPDistance" type="Float"/>
+			<field name="fMaxInvestigationTime" type="Float"/>
+		</object>
+	</object>
+	<object name="Detection">
+		<field name="f6ThsenseModifier" type="BinHex"/>
+	</object>
+	<object name="Takedown">
+		<field name="sHeatToAddOnTakedown" type="BinHex"/>
+		<field name="sHeatToAddOnChopperTakedown" type="BinHex"/>
+	</object>
+	<object name="SquadConfigs">
+		<field name="npcoverrideconfigPoliceSquadConfig" type="BinHex"/>
+		<field name="npcoverrideconfigMobSquadConfig" type="BinHex"/>
+	</object>
+</class>

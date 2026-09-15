@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="TrafficnavconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="uiRegularModePriority" type="Int64"/>
+	<field name="uiCrashModePriority" type="Int64"/>
+	<field name="uiFleeModePriority" type="Int64"/>
+	<field name="uiDriveAwayModePriority" type="Int64"/>
+	<field name="bAvoidTightTurns" type="Boolean"/>
+	<field name="fMaxDeceleration" type="Float"/>
+	<object name="TrafficBehaviors">
+		<object name="TrafficBehavior">
+			<field name="bIsEnabled" type="Boolean"/>
+			<field name="nCategory" type="Int32"/>
+			<field name="fWeight" type="Float"/>
+			<field name="trafficbstateBehavior" type="BinHex"/>
+		</object>
+	</object>
+	<object name="CrashBehaviors">
+		<object name="CrashBehavior">
+			<field name="bIsEnabled" type="Boolean"/>
+			<field name="nCategory" type="Int32"/>
+			<field name="fWeight" type="Float"/>
+			<field name="trafficbstateBehavior" type="BinHex"/>
+		</object>
+	</object>
+	<object name="FleeBehaviors">
+		<object name="FleeBehavior">
+			<field name="bIsEnabled" type="Boolean"/>
+			<field name="nCategory" type="Int32"/>
+			<field name="fWeight" type="Float"/>
+			<field name="trafficbstateBehavior" type="BinHex"/>
+		</object>
+	</object>
+	<object name="DriveAwayBehaviors">
+		<object name="DriveAwayBehavior">
+			<field name="bIsEnabled" type="Boolean"/>
+			<field name="nCategory" type="Int32"/>
+			<field name="fWeight" type="Float"/>
+			<field name="trafficbstateBehavior" type="BinHex"/>
+		</object>
+	</object>
+</class>

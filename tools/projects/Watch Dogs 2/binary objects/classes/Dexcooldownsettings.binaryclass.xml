@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DexcooldownsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMin" type="Float"/>
+	<field name="fMax" type="Float"/>
+	<field name="fSpecificCooldownIfEventNotSeenMin" type="BinHex"/>
+	<field name="fSpecificCooldownIfEventNotSeenMax" type="BinHex"/>
+	<field name="fSpecificCooldownFactorIfNotSeen" type="Float"/>
+</class>

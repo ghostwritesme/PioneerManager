@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CriminalrecordarchetypeParameters">
+	<inherit name="SharedParameters"/>
+	<object name="CriminalRecordGenerator">
+		<field name="fWeight" type="Float"/>
+		<object name="CriminalRecordType">
+			<object name="CriminalRecordType">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="CriminalRecordGenerator">
+			<field name="fWeight" type="Float"/>
+			<object name="CriminalRecordType">
+				<object name="CriminalRecordType">
+					<field name="LocalizationId" type="Int64"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

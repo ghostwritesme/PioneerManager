@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Vrpuzzlessettings_18893437Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="profilingpathpresetPathOffPreset" type="BinHex"/>
+	<field name="profilingpathpresetPathOnPreset" type="BinHex"/>
+	<field name="profilingpathpresetPathOnAlarmPreset" type="BinHex"/>
+	<field name="profilingpathpresetPathLennyOffPreset" type="BinHex"/>
+	<field name="profilingpathpresetPathLennyOnPreset" type="BinHex"/>
+	<field name="profilingpathpresetPathLennyOnAlarmPreset" type="BinHex"/>
+	<field name="colorNodePoweredColor" type="Vector3"/>
+	<field name="colorNodeNotPoweredColor" type="Vector3"/>
+	<field name="colorAlarmColorNodeReset" type="Vector3"/>
+	<field name="colorAlarmColorFullReset" type="Vector3"/>
+	<field name="colorAlarmColorShutDownWithInvestigation" type="Vector3"/>
+	<field name="selInvestigationStimType" type="Enum"/>
+	<field name="fInvestigationStimRadius" type="Float"/>
+	<field name="vectorAlarmNodesTimeMarkerOffset" type="Vector3"/>
+	<field name="fAlarmModeTime" type="Float"/>
+	<field name="fClosePuzzleDistance" type="Float"/>
+	<field name="fForceClosePuzzleDistance" type="Float"/>
+	<field name="fInactivePuzzleDistance" type="Float"/>
+	<field name="fOutOfRangeDuration" type="Float"/>
+	<field name="text_sndPoweredSound" type="String"/>
+	<field name="sndPoweredSound" type="BinHex"/>
+	<field name="text_sndUnpoweredSound" type="String"/>
+	<field name="sndUnpoweredSound" type="BinHex"/>
+	<field name="text_sndRotateSound" type="String"/>
+	<field name="sndRotateSound" type="BinHex"/>
+	<field name="text_sndPuzzleCompletedSound" type="String"/>
+	<field name="sndPuzzleCompletedSound" type="BinHex"/>
+	<field name="text_sndAlarmTriggeredSound" type="String"/>
+	<field name="sndAlarmTriggeredSound" type="BinHex"/>
+	<field name="sndAlarmWithSearchTriggeredSound" type="BinHex"/>
+	<field name="text_sndAlarmPoweredSound" type="String"/>
+	<field name="sndAlarmPoweredSound" type="BinHex"/>
+	<field name="sndAlarmUnpoweredSound" type="BinHex"/>
+	<field name="sndUnlockedSound" type="BinHex"/>
+	<field name="text_sndOnPuzzleResetSound" type="String"/>
+	<field name="sndOnPuzzleResetSound" type="BinHex"/>
+	<field name="text_sndOnNodeResetSound" type="String"/>
+	<field name="sndOnNodeResetSound" type="BinHex"/>
+	<field name="text_sndPuzzleActivatedSound" type="String"/>
+	<field name="sndPuzzleActivatedSound" type="BinHex"/>
+	<object name="locstridAlarmColorNodeReset">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridAlarmColorFullReset">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridAlarmColorShutDownWithInvestigation">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+</class>

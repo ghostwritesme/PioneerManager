@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UimarkersettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_uimarkerdescriptorDescriptorType" type="String"/>
+	<field name="uimarkerdescriptorDescriptorType" type="BinHex"/>
+	<object name="UIMarkerDescriptor">
+		<field name="fScaleFactor" type="Float"/>
+		<field name="fMaxDistanceToHide" type="Float"/>
+		<field name="fMinDistanceToHide" type="Float"/>
+		<object name="locstridIllegalInteractionText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="fObjectiveHideDistance" type="Float"/>
+		<field name="uisoundDisplaySound" type="BinHex"/>
+		<field name="uisoundHoldInteractionSound" type="BinHex"/>
+		<field name="fNearScale" type="Float"/>
+		<field name="fFarScale" type="Float"/>
+		<field name="fNearScaleDistance" type="Float"/>
+		<field name="fFarScaleDistance" type="Float"/>
+		<object name="locstridDistanceText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="uisoundAutoTakeDownSound" type="BinHex"/>
+	</object>
+</class>

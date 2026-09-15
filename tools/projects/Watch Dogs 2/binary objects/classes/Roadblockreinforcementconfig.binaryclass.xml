@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RoadblockreinforcementconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bRoadBlocksAllowed" type="Boolean"/>
+	<field name="fMinRoadBlockDist" type="Float"/>
+	<field name="fMaxRoadBlockDist" type="Float"/>
+	<field name="fRoadBlockInitialDelay" type="Float"/>
+    <field name="fRoadBlockInterval" type="Float"/>
+    <field name="uiMinRoadBlockVehicles" type="UInt32"/>
+    <field name="uiMaxRoadBlockVehicles" type="UInt32"/>
+    <field name="uiMaxRoadBlockNPCs" type="UInt32"/>
+    <field name="uiMaxRoadBlockSpikeStrips" type="UInt32"/>
+    <field name="unitconfigBlockerVehicle" type="BinHex"/>
+    <field name="unitconfigBlockerNPC" type="BinHex"/>
+    <object name="FormationOnLanes">
+      <field name="bSymmetric" type="Boolean"/>
+      <field name="bStartFromMiddleLanes" type="Boolean"/>
+      <field name="uiSpacingBetweenRoadblockVehicles" type="UInt32"/>
+    </object>
+    <object name="RegularLayout">
+      <field name="fSpikeOffsetX" type="Float"/>
+      <field name="fSpikeOffsetXMedian" type="Float"/>
+      <field name="fSpikeOffsetY" type="Float"/>
+      <field name="fSpikeOffsetZ" type="Float"/>
+      <field name="fCarAngleMin" type="Float"/>
+      <field name="fCarAngleMax" type="Float"/>
+      <field name="fCarOffsetX" type="Float"/>
+      <field name="fNpcOffsetX" type="Float"/>
+      <field name="fNpcOffsetY" type="Float"/>
+    </object>
+    <object name="FreewayLayout">
+      <field name="fSpikeOffsetX" type="Float"/>
+      <field name="fSpikeOffsetXMedian" type="Float"/>
+      <field name="fSpikeOffsetY" type="Float"/>
+      <field name="fCarAngleMin" type="Float"/>
+      <field name="fCarAngleMax" type="Float"/>
+      <field name="fCarFreewayOffsetX" type="Float"/>
+      <field name="fNpcOffsetX" type="Float"/>
+      <field name="fNpcOffsetY" type="Float"/>
+    </object>
+</class>

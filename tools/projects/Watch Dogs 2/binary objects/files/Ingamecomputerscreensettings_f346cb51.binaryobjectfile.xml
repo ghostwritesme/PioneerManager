@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Ingamecomputerscreensettings_f346cb51">
+	<object name="obj">
+		<inherit name="Ingamecomputerscreensettings_f346cb51Parameters"/>
+	</object>
+</file>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="AnimalproximityparametersParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIgnoreWhenLaying" type="Boolean"/>
+	<field name="bIgnoreWhenSitting" type="Boolean"/>
+	<field name="bIgnoreWhenStanding" type="Boolean"/>
+	<field name="fProximityThresholdClose" type="Float"/>
+	<field name="fProximityThresholdRunning" type="Float"/>
+</class>

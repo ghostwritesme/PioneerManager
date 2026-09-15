@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ParticlesSystemsParameters">
+	<field name="text_psParticlesSystemId" type="String"/>
+	<field name="psParticlesSystemId" type="BinHex"/>
+	<field name="text_psParticlesSystemIdNoHood" type="String"/>
+	<field name="psParticlesSystemIdNoHood" type="BinHex"/>
+	<field name="text_sBoneName" type="String"/>
+	<field name="sBoneName" type="BinHex"/>
+	<field name="vectorBoneRotationOffset" type="Vector3"/>
+	<field name="sndSound" type="BinHex"/>
+	<field name="bScaleAlpha" type="Boolean"/>
+	<field name="bScaleLifeTime" type="Boolean"/>
+	<field name="bScaleSpeedRatio" type="Boolean"/>
+	<field name="bScaleEmitRate" type="Boolean"/>
+	<field name="fMinPlayTime" type="Float"/>
+	<field name="selScalingValueToUse" type="Enum"/>
+    <field name="fMinSpeed" type="Float"/>
+    <field name="vec2MinSpeedTimeRange" type="Vector"/>
+    <field name="vec2MaxSpeedTimeRange" type="Vector"/>
+    <field name="vec2MinSpeedDurationRange" type="Vector"/>
+    <field name="vec2MaxSpeedDurationRange" type="Vector"/>
+    <field name="bOnlyOnDryAsphalt" type="Boolean"/>
+	<object name="AlphaScaling">
+	    <field name="fAlphaMinValue" type="Float"/>
+	    <field name="fAlphaMaxValue" type="Float"/>
+	    <field name="fMinSpeedValue" type="Float"/>
+	    <field name="fMaxSpeedValue" type="Float"/>
+	</object>
+	<object name="LifeTimeScaling">
+	    <field name="flifeTimeMinValue" type="Float"/>
+	    <field name="flifeTimeMaxValue" type="Float"/>
+	    <field name="fLifeTimeMinSpeedValue" type="Float"/>
+	    <field name="fLifeTimeMaxSpeedValue" type="Float"/>
+	</object>
+	<object name="EmitRateScaling">
+	    <field name="fEmitRateMinValue" type="Float"/>
+	    <field name="fEmitRateMaxValue" type="Float"/>
+	    <field name="fEmitRateSpeedMinValue" type="Float"/>
+	    <field name="fEmitRateSpeedMaxValue" type="Float"/>
+	</object>
+	<object name="SpeedRatioScaling">
+	    <field name="fSpeedRatioMinValue" type="Float"/>
+	    <field name="fSpeedRatioMaxValue" type="Float"/>
+	    <field name="fSpeedRatioSpeedMinValue" type="Float"/>
+	    <field name="fSpeedRatioSpeedMaxValue" type="Float"/>
+	</object>
+	<object name="ConditionList">
+	    <object name="Condition">
+	        <field name="selVariable" type="Enum"/>
+	        <field name="selComparison" type="Enum"/>
+	        <field name="bBoolValue" type="Boolean"/>
+	        <field name="fValue" type="Float"/>
+	    </object>
+	</object>
+</class>

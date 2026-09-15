@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DriveandshootbrickParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fleebehaviordescriptorFleeDescriptor" type="BinHex"/>
+	<field name="fShootDuration" type="Float"/>
+	<field name="humanconfigShooterHumanConfig" type="BinHex"/>
+	<field name="chaselevelparametersFelonyChaseLevelParameters" type="BinHex"/>
+	<field name="text_psBodyBulletImpactParticleId" type="String"/>
+	<field name="psBodyBulletImpactParticleId" type="BinHex"/>
+</class>

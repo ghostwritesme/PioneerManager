@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Graphickit_partsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="graphickitparttypeGraphicKitPartType" type="BinHex"/>
+	<field name="text_fileGeometry" type="String"/>
+	<field name="fileGeometry" type="BinHex"/>
+	<object name="VisualModelOverrideList">
+		<object name="VisualModelOverride">
+			<field name="text_fileVisualModelOverride" type="String"/>
+			<field name="fileVisualModelOverride" type="BinHex"/>
+		</object>
+	</object>
+	<object name="tagcategoryselectionblackboardTagCategorySelectionBlackboard">
+		<object name="TagCategorySelectionArray">
+			<object name="TagCategorySelection">
+				<field name="text_hid_DTCTH_ClassName" type="String"/>
+				<field name="hid_DTCTH_ClassName" type="BinHex"/>
+				<field name="text_UITagCategorySelectionClassID" type="String"/>
+				<field name="UITagCategorySelectionClassID" type="BinHex"/>
+				<field name="tagcategoryUITagCategory" type="BinHex"/>
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+				<object name="Tags">
+					<object name="Tag">
+						<field name="tagTag" type="BinHex"/>
+					</object>
+				</object>
+				<field name="tagTag" type="BinHex"/>
+			</object>
+		</object>
+		<object name="TagDescriptorUI">
+			<field name="text_hid_DTCTH_ClassName" type="String"/>
+			<field name="hid_DTCTH_ClassName" type="BinHex"/>
+			<object name="TagCategorySelectionDescriptors">
+				<object name="TagCategorySelectionDescriptor">
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="bMultiSelect" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="BoneAnchor">
+		<field name="text_selBoneName" type="String"/>
+		<field name="selBoneName" type="Enum"/>
+		<field name="vectorTranslation" type="Vector3"/>
+		<field name="angvecRotation" type="Vector3"/>
+		<field name="vectorNonUniformScale" type="Vector3"/>
+	</object>
+	<object name="PoseDefinitionFiles">
+		<object name="filePoseDefinition">
+			<field name="text_filePoseDefinition" type="String"/>
+			<field name="filePoseDefinition" type="BinHex"/>
+		</object>
+	</object>
+</class>

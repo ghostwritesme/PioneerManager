@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehiclepreloadedarchetypesParameters">
+	<inherit name="SharedParameters"/>
+	<object name="ArchetypesToPreload">
+		<object name="Archetype">
+			<field name="text_archArchetype" type="String"/>
+			<field name="archArchetype" type="BinHex"/>
+		</object>
+	</object>
+</class>

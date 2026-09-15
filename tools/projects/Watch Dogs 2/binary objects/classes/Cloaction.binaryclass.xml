@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CloactionParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsPartOfAScenarioOnSpawn" type="Boolean"/>
+	<field name="selShowcaseValue" type="Enum"/>
+	<field name="bCanBeTalker" type="Boolean"/>
+	<field name="bPlaySoundInAnim" type="Boolean"/>
+	<object name="ActionDescription">
+		<field name="selStanceOnStart" type="Enum"/>
+		<field name="selLocation" type="Enum"/>
+		<field name="selActivity" type="Enum"/>
+		<field name="selOrientation" type="Enum"/>
+		<field name="bInteractWithVehicle" type="Boolean"/>
+		<field name="bIsSensitiveContentJapan" type="Boolean"/>
+		<field name="selOverrideFeetIk" type="Enum"/>
+	</object>
+	<object name="CityLifeActionSettings">
+		<field name="text_fileMoveStateId" type="String"/>
+		<field name="fileMoveStateId" type="BinHex"/>
+		<field name="bHasEntryAnim" type="Boolean"/>
+		<field name="text_fileEntryMoveStateId" type="String"/>
+		<field name="fileEntryMoveStateId" type="BinHex"/>
+		<field name="bHasExitAnim" type="Boolean"/>
+		<field name="text_fileExitMoveStateId" type="String"/>
+		<field name="fileExitMoveStateId" type="BinHex"/>
+		<field name="bLoopSpawnAnim" type="Boolean"/>
+		<field name="bLoopAttractAnim" type="Boolean"/>
+		<field name="bStopLoopOnPlayerProximity" type="Boolean"/>
+		<field name="fStopLoopRadius" type="Float"/>
+		<field name="bProximityBehavior" type="Boolean"/>
+		<field name="selBhvPriority" type="Enum"/>
+		<object name="ProximitySettings">
+		    <inherit name="CloactionSharedParameters"/>
+		</object>
+		<inherit name="CloactionTriggerBehaviorsParameters"/>
+		<inherit name="CloactionSharedParameters"/>
+	</object>
+	<object name="CLOBhvSettings">
+		<object name="Spawning">
+			<field name="bCanSpawn" type="Boolean"/>
+			<object name="SpawnSettings">
+				<field name="selGender" type="Enum"/>
+				<field name="text_tmplDialogActor" type="String"/>
+				<field name="peopleinfoPeopleSpawnInfo" type="BinHex"/>
+				<field name="tmplDialogActor" type="BinHex"/>
+				<field name="dialactorlistDialogActorsList" type="BinHex"/>
+				<field name="npcidentityIdentity" type="BinHex"/>
+				<object name="TagSpec">
+					<object name="IncludeTags">
+						<object name="Tag">
+							<object name="tagcategoryselectionTag">
+								<field name="text_UITagCategorySelectionClassID" type="String"/>
+								<field name="UITagCategorySelectionClassID" type="BinHex"/>
+								<field name="tagcategoryUITagCategory" type="BinHex"/>
+								<field name="tagcategoryTagCategory" type="BinHex"/>
+								<field name="tagTag" type="BinHex"/>
+							</object>
+						</object>
+					</object>
+					<object name="ExcludeTags">
+						<object name="Tag">
+							<object name="tagcategoryselectionTag">
+								<field name="text_UITagCategorySelectionClassID" type="String"/>
+								<field name="UITagCategorySelectionClassID" type="BinHex"/>
+								<field name="tagcategoryUITagCategory" type="BinHex"/>
+								<field name="tagcategoryTagCategory" type="BinHex"/>
+								<field name="tagTag" type="BinHex"/>
+							</object>
+						</object>
+					</object>
+					<object name="TagConstraintsAny"/>
+				</object>
+			</object>
+		</object>
+		<object name="GoBackToCLO">
+			<field name="bCanGoBackToCLO" type="Boolean"/>
+		</object>
+		<object name="Attraction">
+			<field name="bCanAttract" type="Boolean"/>
+			<object name="AttractSettings">
+				<field name="fMinDistanceToUse" type="Float"/>
+				<field name="bTriggerLookAt" type="Boolean"/>
+				<field name="fLookAtAlt" type="Float"/>
+				<object name="Anchor">
+					<field name="fAnchorRotationOffset" type="Float"/>
+					<field name="vectorAnchorTranslation" type="Vector3"/>
+				</object>
+				<object name="PMSRestrictionSettings">
+					<object name="Needed">
+						<object name="PMSValueOR">
+							<object name="PMSValuesAND">
+								<object name="PMSValueAND">
+									<field name="text_pmsPMSName" type="String"/>
+									<field name="pmsPMSName" type="BinHex"/>
+									<field name="selEnumValue" type="Enum"/>
+									<field name="bBoolValue" type="Boolean"/>
+								</object>
+							</object>
+						</object>
+					</object>
+					<object name="Excluded">
+						<object name="PMSValue">
+							<field name="text_pmsPMSName" type="String"/>
+							<field name="pmsPMSName" type="BinHex"/>
+							<field name="selEnumValue" type="Enum"/>
+							<field name="bBoolValue" type="Boolean"/>
+						</object>
+					</object>
+				</object>
+				<object name="TagRestrictionSettings">
+					<object name="Needed">
+						<object name="PMSValueOR">
+							<object name="PMSValuesAND">
+								<object name="PMSValueAND">
+									<field name="text_pmsPMSName" type="String"/>
+									<field name="pmsPMSName" type="BinHex"/>
+									<field name="selEnumValue" type="Enum"/>
+									<field name="bBoolValue" type="Boolean"/>
+								</object>
+							</object>
+						</object>
+						<object name="TagsOR">
+                            <object name="TagsAND">
+                                <object name="tagcategoryselectionTag">
+                                    <field name="text_UITagCategorySelectionClassID" type="String"/>
+                                    <field name="UITagCategorySelectionClassID" type="BinHex"/>
+                                    <field name="tagcategoryUITagCategory" type="BinHex"/>
+                                    <field name="tagcategoryTagCategory" type="BinHex"/>
+                                    <field name="tagTag" type="BinHex"/>
+                                </object>
+                            </object>
+                        </object>
+					</object>
+					<object name="TagsExcluded">
+						<object name="tagcategoryselectionTag">
+							<field name="text_UITagCategorySelectionClassID" type="String"/>
+							<field name="UITagCategorySelectionClassID" type="BinHex"/>
+							<field name="tagcategoryUITagCategory" type="BinHex"/>
+							<field name="tagcategoryTagCategory" type="BinHex"/>
+							<field name="tagTag" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="DynamicEventSettings">
+		<field name="bSupportEvents" type="Boolean"/>
+		<object name="ForbiddenDynamicEventList">
+			<object name="dexeventEvent">
+				<field name="dexeventEvent" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="AtlasProperties">
+		<field name="bExportToAtlas" type="BinHex"/>
+		<field name="atlastypeElementType" type="String"/>
+	</object>
+	<object name="GoBackToCLOSettings">
+		<field name="cloactlistBackUpActionList" type="BinHex"/>
+		<field name="cloactBackUpAction" type="BinHex"/>
+	</object>
+	<object name="Debug">
+		<object name="VerticalDebug">
+			<field name="bUseDebug" type="BinHex"/>
+			<field name="fLineXOffset" type="BinHex"/>
+			<field name="fLineYOffset" type="BinHex"/>
+			<field name="bSwitchDir" type="BinHex"/>
+		</object>
+		<object name="HorizontalDebug">
+			<field name="bUseDebug" type="BinHex"/>
+			<field name="fLineXOffset" type="BinHex"/>
+			<field name="fLineYOffset" type="BinHex"/>
+			<field name="bSwitchDir" type="BinHex"/>
+		</object>
+	</object>
+</class>

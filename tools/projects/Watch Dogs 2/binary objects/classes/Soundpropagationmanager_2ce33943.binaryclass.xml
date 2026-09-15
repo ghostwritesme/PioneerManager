@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Soundpropagationmanager_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fFadeInDuration" type="Float"/>
+	<field name="fFadeOutDuration" type="Float"/>
+	<field name="fDebugDisplayUpdateRate" type="Float"/>
+	<field name="fRaycastHitMinDistance" type="Float"/>
+	<field name="fOcclusionPerMeterOfThickness" type="Float"/>
+	<field name="fOcclusionPerMeterOfPathDifference" type="Float"/>
+	<field name="fIndoorOutdoorAdditionalOcclusion" type="Float"/>
+	<field name="fVirtualPositionSegmentMinimumLength" type="Float"/>
+	<field name="fVirtualPositionSegmentMaximumLength" type="Float"/>
+	<field name="fHoleSamplingInterval" type="Float"/>
+	<object name="OcclusionLimiter">
+		<field name="MinRange" type="Float"/>
+		<field name="MaxRange" type="Float"/>
+		<object name="MaxEmittersPerFrame">
+			<field name="Normal" type="Enum"/>
+			<field name="HighEnd" type="Enum"/>
+		</object>
+	</object>
+</class>

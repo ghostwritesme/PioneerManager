@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DgoviruscontainerParameters">
+	<inherit name="SharedParameters"/>
+	<field name="virusbrickdescriptorVirusDescriptor" type="BinHex"/>
+	<field name="dataunitbrickdescriptorDataUnitDescriptor" type="BinHex"/>
+	<field name="downloadbrickdescriptorDownloadDescriptor" type="BinHex"/>
+	<field name="downloadbrickdescriptorDownloadDescriptorPartyMode" type="BinHex"/>
+	<field name="reinforcementbrickReinforcementDescriptor" type="BinHex"/>
+	<field name="reinforcementbrickReinforcementDescriptorPartyMode" type="BinHex"/>
+</class>

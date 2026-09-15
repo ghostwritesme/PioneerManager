@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="WeatherpresetParameters">
+	<inherit name="SharedParameters"/>
+	<field name="envweatherpresetCinematicOverride" type="BinHex"/>
+	<object name="AutoExposure">
+		<field name="fExposureMin" type="Float"/>
+		<field name="fExposureMax" type="Float"/>
+		<field name="fDownwardAdaptationTimeScale" type="Float"/>
+		<field name="fUpwardAdaptationTimeScale" type="Float"/>
+		<field name="fAdaptationSpeedFactor" type="Float"/>
+		<field name="fMesurementHotSpot" type="Float"/>
+		<field name="bEnableExposureOverride" type="Boolean"/>
+		<field name="fExposureOverride" type="Float"/>
+		<field name="uiColorGradingMoodIndex" type="Int64"/>
+		<object name="curveExposureRetarget">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="FogSettings">
+		<field name="fTendrilUScrolling" type="Float"/>
+		<field name="fTendrilVScrolling" type="Float"/>
+		<field name="fTendrilHeight" type="Float"/>
+		<field name="fTendrilFadeOutStart" type="Float"/>
+		<field name="fTendrilFadeOutEnd" type="Float"/>
+		<field name="fTendrilMask01UScrolling" type="Float"/>
+		<field name="fTendrilMask01VScrolling" type="Float"/>
+		<field name="fTurbulenceUScrolling" type="Float"/>
+		<field name="fTurbulenceVScrolling" type="Float"/>
+		<field name="fTurbulenceHeight" type="Float"/>
+		<field name="fTurbulenceFadeOutStart" type="Float"/>
+		<field name="fTurbulenceFadeOutEnd" type="Float"/>
+		<field name="fTurbulenceMask01UScrolling" type="Float"/>
+		<field name="fTurbulenceMask01VScrolling" type="Float"/>
+		<field name="fFog3DNoiseStartFadeOut" type="Float"/>
+		<field name="fFog3DNoiseEndFadeOut" type="Float"/>
+		<field name="fFog3DNoiseUScrolling" type="Float"/>
+		<field name="fFog3DNoiseVScrolling" type="Float"/>
+		<field name="fFog3DNoiseWScrolling" type="Float"/>
+		<field name="clrAlbedo" type="VectorColor"/>
+		<field name="fVolumetricFogClouds" type="Float"/>
+		<field name="fLocalLightIntensity" type="Float"/>
+		<field name="fVolumetricFogGIIntensity" type="Float"/>
+		<field name="fFogRegionIntensity" type="Float"/>
+		<field name="fGIFadeOutDistance" type="Float"/>
+		<field name="fGIMaxDistance" type="Float"/>
+		<field name="fTopFogFadeOutDistance" type="Float"/>
+		<field name="fTopFogMaxDistance" type="Float"/>
+		<field name="fSunVisibilityTestRadius" type="Float"/>
+		<field name="fSunVisibilityBlendRate" type="Float"/>
+		<object name="curveFVDensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveFVDensityAttenuationRange">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveFVSunExtinction">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveFVScattering">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveFVFlowInFactor">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveScattering">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveExtinction">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curvePhase">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveBaseFogIntensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveLayeredFogIntensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveFogHeightIntensityBoost">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveFogOpacityIntensityBoost">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveTendrilIntensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveTendrilMask01Intensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveTurbulenceIntensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveTurbulenceMask01Intensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveFog3DBlendFactor">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveFogFadeInStartDistance">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveFogFadeInEndDistance">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveOutOfRangeFogHeightMax">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveOutOfRangeFogHeightMin">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveOutOfRangeFogHeightDensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveBottomDensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveBottomHeightFalloff">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveBottomHeightBase">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveTopDensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveTopHeightFalloff">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveTopHeightBase">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveReflectionFogDensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveReflectionFogHeight">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="GodRaySettings">
+		<field name="bEnabled" type="Boolean"/>
+		<field name="uiNumPasses" type="Int64"/>
+		<field name="fZoomFactor" type="Float"/>
+		<object name="gradColorTint">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveAtenuationMultiplier">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveAttenuationStartAngle">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveAttenuationEndAngle">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveCloudMaskIntensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="LightingSettings">
+		<field name="fStaticReflectionGIDayInfluence" type="Float"/>
+		<field name="fStaticReflectionGINightInfluence" type="Float"/>
+		<field name="fProbeMinAmbientLimitsMultiplier" type="Float"/>
+		<field name="fSunLensFlareVisibility" type="Float"/>
+		<field name="fIrradianceEnvironmentDesaturation" type="Float"/>
+		<field name="fGITempDemoHackSkyDesaturation" type="Float"/>
+		<field name="fGITempDemoHackSkyMultiplier" type="Float"/>
+		<object name="curveStaticReflectionIntensityDay">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveStaticReflectionIntensityNight">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveDynamicReflectionGIInfluence">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveGlobalLightsIntensity0">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveGlobalLightsIntensity1">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveGlobalLightsIntensity2">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveGlobalLightsIntensity3">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveVertexAOIntensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="LightningSettings">
+		<field name="fPeriodRange" type="Float"/>
+		<field name="fCalmPeriod" type="Float"/>
+		<field name="fExtraDelayDuringCalm" type="Float"/>
+		<field name="fMinDuration" type="Float"/>
+		<field name="fMaxDuration" type="Float"/>
+		<field name="fMinIntensity" type="Float"/>
+		<field name="fMaxIntensity" type="Float"/>
+		<field name="fIntensityNoiseRatio" type="Float"/>
+		<field name="clrLightColor" type="VectorColor"/>
+		<field name="fLightHDRIntensity" type="Float"/>
+		<field name="fIntensityToDelayScale" type="Float"/>
+		<field name="fBigSoundThreshold" type="Float"/>
+		<field name="fMinSoundDelay" type="Float"/>
+		<field name="text_sndLightingStrikeSound" type="String"/>
+		<field name="sndLightingStrikeSound" type="BinHex"/>
+		<field name="text_sndThunderSound" type="String"/>
+		<field name="sndThunderSound" type="BinHex"/>
+		<object name="curveSkyHDRIntensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="SkySettings">
+		<field name="fRainIntensity" type="Float"/>
+		<field name="bForceWetness" type="Boolean"/>
+		<field name="fWetnessAmount" type="Float"/>
+		<field name="fPuddleAmount" type="Float"/>
+		<field name="fMaximumWetnessAmount" type="Float"/>
+		<field name="fMaximumPuddleAmount" type="Float"/>
+		<field name="selWeatherForecastRainAmount" type="Enum"/>
+		<field name="selWeatherForecastCloudAmount" type="Enum"/>
+		<field name="selWeatherForecastFogAmount" type="Enum"/>
+		<field name="envcloudsequenceCloudSequence" type="BinHex"/>
+		<field name="matCloudsMaterial" type="BinHex"/>
+	</object>
+	<object name="CloudsSettings">
+		<object name="curveSunExtinction">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveCloudIntensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="CloudLayers">
+			<object name="Layer">
+				<field name="cloudlayerCloudLayer" type="BinHex"/>
+				<field name="fContribution" type="Float"/>
+				<object name="curveIntensityCurve">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="WindSettings">
+		<field name="fWindSpeedInKmPerHour" type="Float"/>
+		<field name="fWindSpeedNoiseDeltaInKmPerHour" type="Float"/>
+		<field name="fWindNoiseTextureSpeedInKmPerHour" type="Float"/>
+		<object name="NoiseTextureChannel">
+			<field name="selValue" type="Enum"/>
+		</object>
+	</object>
+</class>

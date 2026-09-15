@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Soundregionconfig_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="hidNumberOfLayers" type="BinHex"/>
+	<field name="ExteriorAmbiancePolyphony" type="BinHex"/>
+	<field name="iEffectRange" type="Int32"/>
+	<object name="MaxRegionsPerLayer">
+		<object name="MaxRegions">
+			<field name="MaxRegions" type="BinHex"/>
+		</object>
+	</object>
+	<object name="sndswtpRegionSwitchType">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="String"/>
+	</object>
+	<object name="sndvarMicroPitchSoundVar">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="String"/>
+	</object>
+	<object name="sndvarMicroHeightSoundVar">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="String"/>
+	</object>
+	<object name="sndvarRelativeMicroHeightRtpc">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="String"/>
+	</object>
+	<object name="sndvarTimeOfDay">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="String"/>
+	</object>
+	<object name="Wind">
+		<field name="fAltitudeMinForWindPad" type="Float"/>
+		<field name="fAltitudeMaxForWindPad" type="Float"/>
+		<field name="fAltitudeWindPadMaxValue" type="Float"/>
+		<object name="sndvarWindRTPC">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarRainRTPC">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarWetnessRTPC">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarWindSpeedRTPC">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarWindDirectionRTPC">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="Gust">
+			<field name="fWindGustThreshold" type="Float"/>
+			<field name="fWindGustInterval" type="Float"/>
+			<field name="fWindGustDuration" type="Float"/>
+		</object>
+	</object>
+	<object name="RandomFx">
+		<field name="fBoxSize" type="Float"/>
+		<field name="fBoxHeight" type="Float"/>
+	</object>
+	<object name="TimeCurve"/>
+	<object name="LayerSoundRegions">
+		<object name="LayerSoundRegion">
+			<field name="disName" type="String"/>
+			<field name="selLayerType" type="Enum"/>
+			<field name="soundregionsSoundRegions" type="BinHex"/>
+		</object>
+	</object>
+</class>

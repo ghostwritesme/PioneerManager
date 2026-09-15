@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RewarditemlistsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="CommonRewards">
+		<object name="Reward">
+			<field name="fProbability" type="Float"/>
+			<field name="bUseItemList" type="Boolean"/>
+			<field name="itemsItem" type="BinHex"/>
+		</object>
+	</object>
+	<object name="RareRewards">
+		<object name="Reward">
+			<field name="fProbability" type="Float"/>
+			<field name="bUseItemList" type="Boolean"/>
+			<field name="itemsItem" type="BinHex"/>
+		</object>
+	</object>
+</class>

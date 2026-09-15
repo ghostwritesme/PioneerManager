@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DistrictsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selPriority" type="Enum"/>
+	<field name="bShouldDisplayOnMap" type="Boolean"/>
+	<field name="selDisplayNameBehavior" type="Enum"/>
+	<field name="entDistrictNameMapIconEntity" type="BinHex"/>
+	<field name="selPoliceAffiliation" type="Enum"/>
+	<object name="locstridDistrictName">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="LivingCityComposition">
+		<object name="VehicleCompositions">
+			<object name="VehicleComposition">
+				<field name="entcontContext" type="BinHex"/>
+				<field name="vehiclecompositionVehicles" type="BinHex"/>
+			</object>
+		</object>
+		<object name="HumanBanks">
+			<object name="HumansBank">
+				<field name="entcontContext" type="BinHex"/>
+				<field name="civbankHumansBank" type="BinHex"/>
+				<object name="SpecializedIdentityComposition">
+					<object name="SpecializedIdentity">
+						<field name="npcidentityIdentity" type="BinHex"/>
+						<field name="fProbability" type="Float"/>
+						<field name="iMaximumConcurrentlySpawnedPerDistrict" type="Int32"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="Environment">
+		<field name="text_fileDayReflectionTexture" type="String"/>
+		<field name="fileDayReflectionTexture" type="BinHex"/>
+		<field name="text_fileNightReflectionTexture" type="String"/>
+		<field name="fileNightReflectionTexture" type="BinHex"/>
+	</object>
+	<object name="HDRColorGrading">
+		<field name="bUseTimeOfDayForColorGradingHDR" type="Boolean"/>
+		<field name="fInnerSpatialRadius" type="Float"/>
+		<field name="fOuterSpatialRadius" type="Float"/>
+		<object name="curveTimeOfDayProgression">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="HDRColorGradingLUTTextures">
+			<object name="HDRColorGradingTexture">
+				<field name="fileHDRColorGradingTexture" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

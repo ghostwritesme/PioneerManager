@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Missionglobalsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="DLCGuestModeMenuPageID" type="BinHex"/>
+	<object name="locstridUserDiedMessage">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridUserArrestedMessage">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="DLCContentMenuPageID"/>
+	<object name="DLCAvailabilityRules">
+		<object name="DLCAvailabilityRule">
+			<field name="availabilityrulegroupDLCGuestModeUnlockCondition" type="BinHex"/>
+		</object>
+	</object>
+</class>

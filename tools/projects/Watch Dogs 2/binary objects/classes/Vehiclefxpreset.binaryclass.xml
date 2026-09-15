@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehiclefxpresetParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Bollard">
+		<field name="text_psBollardTakedownFx" type="String"/>
+		<field name="psBollardTakedownFx" type="BinHex"/>
+		<field name="sBollardTakedownBoneName" type="BinHex"/>
+	</object>
+	<object name="EngineDamage">
+		<field name="fEmitSpeedMax" type="Float"/>
+		<field name="fMaxEmitCoefficient" type="Float"/>
+		<field name="fMaxLifetimeCoefficient" type="Float"/>
+		<field name="fCurvePow" type="Float"/>
+		<field name="text_sDestroyedStateBoneName" type="String"/>
+		<field name="sDestroyedStateBoneName" type="BinHex"/>
+		<object name="DamageStates">
+			<object name="DamageState">
+				<field name="fReliabilityLevel" type="Float"/>
+				<field name="fEngineScaleLevel" type="Float"/>
+				<field name="text_sndDamageSound" type="String"/>
+				<field name="sndDamageSound" type="BinHex"/>
+				<field name="fEngineShakeScale" type="Float"/>
+				<field name="fPartsCollsionDamageScale" type="Float"/>
+				<object name="StateParticlesSystems">
+					<object name="StateParticlesSystem">
+						<inherit name="ParticlesSystemsParameters"/>
+					</object>
+				</object>
+				<object name="ConditionnalParticlesSystems">
+		            <inherit name="ParticlesSystemsParameters"/>
+		            <object name="ConditionnalParticlesSystems">
+		        		<inherit name="ParticlesSystemsParameters"/>
+		        	</object>
+		        </object>
+				<object name="StateTimedParticlesSystems">
+					<object name="StateTimedParticlesSystem">
+						<inherit name="ParticlesSystemsParameters"/>
+					</object>
+                </object>
+			</object>
+		</object>
+		<object name="DestroyedStates">
+			<object name="DestroyedState">
+				<field name="fWeight" type="Float"/>
+				<field name="text_psVehicleDestroyedFx" type="String"/>
+				<field name="psVehicleDestroyedFx" type="BinHex"/>
+				<field name="text_sndVehicleDestroyedSound" type="String"/>
+				<field name="sndVehicleDestroyedSound" type="BinHex"/>
+				<field name="fChainExplosionMaxTimeDelay" type="Float"/>
+				<field name="fBurningTime" type="Float"/>
+				<field name="fBurnStartTime" type="Float"/>
+				<field name="fExceedingDamageRange" type="Float"/>
+				<field name="fExceedingDmgFactor" type="Float"/>
+				<field name="fBurningChance" type="Float"/>
+				<field name="fBurningFadeOutTime" type="Float"/>
+				<field name="text_psEngineFireFx" type="String"/>
+				<field name="psEngineFireFx" type="BinHex"/>
+				<field name="text_psEngineFireNoHoodFx" type="String"/>
+				<field name="psEngineFireNoHoodFx" type="BinHex"/>
+				<field name="text_sndEngineFireSound" type="String"/>
+				<field name="sndEngineFireSound" type="BinHex"/>
+				<field name="text_sndEngineFireNoHoodSound" type="String"/>
+				<field name="sndEngineFireNoHoodSound" type="BinHex"/>
+				<field name="bCanExplode" type="Boolean"/>
+				<field name="fExplosionTotalTime" type="Float"/>
+				<field name="fExplodeMinTime" type="Float"/>
+				<field name="fExplodeMaxTime" type="Float"/>
+				<field name="fExplosionTotalTIme" type="Float"/>
+				<field name="fPreExplodeMinTime" type="Float"/>
+				<field name="fPreExplodeMaxTime" type="Float"/>
+				<field name="fPreExplodeTotalTime" type="Float"/>
+				<field name="text_psExplosionFx" type="String"/>
+				<field name="psExplosionFx" type="BinHex"/>
+				<field name="text_psExplosionNoHoodFx" type="String"/>
+				<field name="psExplosionNoHoodFx" type="BinHex"/>
+				<field name="text_sndExplosionSound" type="String"/>
+				<field name="sndExplosionSound" type="BinHex"/>
+				<field name="text_sndExplosionNoHoodSound" type="String"/>
+				<field name="sndExplosionNoHoodSound" type="BinHex"/>
+				<field name="text_psDestroyByExplosionFx" type="String"/>
+				<field name="psDestroyByExplosionFx" type="BinHex"/>
+				<field name="text_psDestroyByExplosionNoHoodFx" type="String"/>
+				<field name="psDestroyByExplosionNoHoodFx" type="BinHex"/>
+				<field name="sndDestroyByExplosionSound" type="BinHex"/>
+				<field name="sndDestroyByExplosionNoHoodSound" type="BinHex"/>
+				<field name="text_psPreExplosionFx" type="String"/>
+				<field name="psPreExplosionFx" type="BinHex"/>
+				<field name="text_sndPreExplosionSound" type="String"/>
+				<field name="sndPreExplosionSound" type="BinHex"/>
+				<object name="FireStims">
+				  <object name="GeneratedStims">
+				    <object name="Stim">
+				      <field name="stims" type="BinHex"/>
+				      <field name="bIsPersistent" type="Boolean"/>
+				      <field name="fPersistenceDuration" type="Float"/>
+				      <field name="fPersistenceInterval" type="Float"/>
+				      <field name="vectorLocalTranslationOffset" type="Vector"/>
+				      <field name="vectorLimitsExtraRotations" type="Vector"/>
+				      <field name="bAllowPersistanceOverride" type="Boolean"/>
+				    </object>
+				  </object>
+				</object>
+				<object name="PartsToDestroy">
+				  <object name="PartToDestroy">
+				    <field name="nPartIndex" type="UInt32"/>
+				    <field name="fImpulse" type="Float"/>
+				    <field name="fChance" type="Float"/>
+				  </object>
+				</object>
+				<object name="ReactionStims">
+					<object name="FireStims">
+						<object name="GeneratedStims">
+							<object name="Stim">
+								<field name="stims" type="BinHex"/>
+								<field name="bIsPersistent" type="Boolean"/>
+								<field name="fPersistenceDuration" type="Float"/>
+								<field name="fPersistenceInterval" type="Float"/>
+								<field name="vectorLocalTranslationOffset" type="Vector3"/>
+								<field name="vectorLimitsExtraRotations" type="Vector3"/>
+								<field name="bAllowPersistanceOverride" type="Boolean"/>
+							</object>
+						</object>
+					</object>
+					<object name="ExplosionStims">
+						<object name="GeneratedStims">
+							<object name="Stim">
+								<field name="stims" type="BinHex"/>
+								<field name="bIsPersistent" type="Boolean"/>
+								<field name="fPersistenceDuration" type="Float"/>
+								<field name="fPersistenceInterval" type="Float"/>
+								<field name="vectorLocalTranslationOffset" type="Vector3"/>
+								<field name="vectorLimitsExtraRotations" type="Vector3"/>
+								<field name="bAllowPersistanceOverride" type="Boolean"/>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="Exhaust">
+		<field name="text_psFxExhaust" type="String"/>
+		<field name="psFxExhaust" type="BinHex"/>
+		<field name="text_psFxGearshiftExhaust" type="String"/>
+		<field name="psFxGearshiftExhaust" type="BinHex"/>
+		<field name="text_psFxNitroExhaust" type="String"/>
+		<field name="psFxNitroExhaust" type="BinHex"/>
+		<field name="fFxNitroFadeOutTime" type="Float"/>
+		<field name="text_sndNitroOptionnalSound" type="String"/>
+		<field name="sndNitroOptionnalSound" type="BinHex"/>
+		<field name="text_sndNitroStopOptionnalSound" type="String"/>
+		<field name="sndNitroStopOptionnalSound" type="BinHex"/>
+		<object name="ExhaustSizeControl">
+			<field name="fRPMMin" type="Float"/>
+			<field name="fRPMMax" type="Float"/>
+			<field name="fCffPow" type="Float"/>
+			<field name="vec2ScaleMinMax" type="Vector2"/>
+		</object>
+		<object name="ExhaustAlphaControl">
+			<field name="fRPMMin" type="Float"/>
+			<field name="fRPMMax" type="Float"/>
+			<field name="fCffPow" type="Float"/>
+			<field name="vec2ScaleMinMax" type="Vector2"/>
+		</object>
+		<object name="ExhaustLifetimeControl">
+			<field name="fRPMMin" type="Float"/>
+			<field name="fRPMMax" type="Float"/>
+			<field name="fCffPow" type="Float"/>
+			<field name="vec2ScaleMinMax" type="Vector2"/>
+		</object>
+	</object>
+	<object name="Landing">
+		<object name="LandingParticlesSystem">
+			<field name="psParticlesSystemId" type="BinHex"/>
+			<field name="text_sBoneName" type="String"/>
+			<field name="sBoneName" type="BinHex"/>
+		</object>
+	</object>
+	<object name="MaterialRange">
+		<object name="RollMaterialsRange">
+			<field name="fActivationThreshold" type="Float"/>
+			<field name="fImpactMagnitudeRangeMin" type="Float"/>
+			<field name="fImpactMagnitudeRangeMax" type="Float"/>
+			<object name="ImpactMaterials">
+				<object name="ImpactMaterial">
+					<field name="matimpImpactMaterial" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="HitMaterialsRange">
+			<field name="fActivationThreshold" type="Float"/>
+			<field name="fImpactMagnitudeRangeMin" type="Float"/>
+			<field name="fImpactMagnitudeRangeMax" type="Float"/>
+			<object name="ImpactMaterials">
+				<object name="ImpactMaterial">
+					<field name="matimpImpactMaterial" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="GlanceMaterialsRange">
+			<field name="fActivationThreshold" type="Float"/>
+			<field name="fImpactMagnitudeRangeMin" type="Float"/>
+			<field name="fImpactMagnitudeRangeMax" type="Float"/>
+			<object name="ImpactMaterials">
+				<object name="ImpactMaterial">
+					<field name="matimpImpactMaterial" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="OtherMaterialsRange">
+			<field name="fActivationThreshold" type="Float"/>
+			<field name="fImpactMagnitudeRangeMin" type="Float"/>
+			<field name="fImpactMagnitudeRangeMax" type="Float"/>
+			<object name="ImpactMaterials">
+				<object name="ImpactMaterial">
+					<field name="matimpImpactMaterial" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="Tyre">
+		<field name="text_psFxDeflateTyre" type="String"/>
+		<field name="psFxDeflateTyre" type="BinHex"/>
+	</object>
+	<object name="LockedBrake">
+		<field name="text_psFxLockedBrake" type="String"/>
+		<field name="psFxLockedBrake" type="BinHex"/>
+	</object>
+	<object name="AirBag">
+		<field name="text_psFxAirBag" type="String"/>
+		<field name="psFxAirBag" type="BinHex"/>
+	</object>
+	<object name="WaterSplash">
+		<field name="vectorFxWaterSplashOffset" type="Vector3"/>
+		<field name="text_psFxWaterSplash" type="String"/>
+		<field name="psFxWaterSplash" type="BinHex"/>
+		<field name="text_sndWheelInWater" type="String"/>
+		<field name="sndWheelInWater" type="BinHex"/>
+		<field name="fWheelsEnterWaterFadeoutTime" type="Float"/>
+	</object>
+	<object name="Wheel">
+		<object name="WheelParticlesFxParams">
+			<field name="vtwpVehicleType" type="BinHex"/>
+			<field name="bOverridesOperationRange" type="Boolean"/>
+			<object name="OperationRange">
+				<field name="fMinTyreTemperature" type="Float"/>
+				<field name="fMaxTyreTemperature" type="Float"/>
+				<field name="fMinTyreSpeed" type="Float"/>
+				<field name="fMaxTyreSpeed" type="Float"/>
+				<field name="fMinVehicleSpeed" type="Float"/>
+				<field name="fMaxVehicleSpeed" type="Float"/>
+			</object>
+		</object>
+	</object>
+	<object name="RumbleSettings">
+		<field name="fDynamicObjColVelocityMinRangeValue" type="Float"/>
+		<field name="fPawnColVelocityMinRangeValue" type="Float"/>
+		<field name="fStaticColVelocityMinRangeValue" type="Float"/>
+		<field name="fVehicleColVelocityMinRangeValue" type="Float"/>
+		<field name="fDynamicObjColVelocityMaxRangeValue" type="Float"/>
+		<field name="fPawnColVelocityMaxRangeValue" type="Float"/>
+		<field name="fStaticColVelocityMaxRangeValue" type="Float"/>
+		<field name="fVehicleColVelocityMaxRangeValue" type="Float"/>
+	</object>
+	<object name="ConditionnalFx">
+		<object name="ConditionnalParticlesSystems">
+		    <inherit name="ParticlesSystemsParameters"/>
+		    <object name="ConditionnalParticlesSystems">
+				<inherit name="ParticlesSystemsParameters"/>
+			</object>
+		</object>
+	</object>
+	<object name="DirtEffect">
+		<field name="fMovingInWaterDirtFactor" type="Float"/>
+		<field name="fMovingInWaterDirtMinSpeed" type="Float"/>
+	</object>
+</class>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Reinforcementsystemsettings_769906d0">
+	<object name="obj">
+		<inherit name="Reinforcementsystemsettings_769906d0Parameters"/>
+	</object>
+</file>

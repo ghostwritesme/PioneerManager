@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DecalParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_matMaterial" type="String"/>
+	<field name="matMaterial" type="BinHex"/>
+	<field name="iTextureVariationCount" type="Int32"/>
+	<field name="angRotation" type="Float"/>
+	<field name="angRotationVariance" type="Float"/>
+	<field name="bUniformSize" type="Boolean"/>
+	<field name="fSizeX" type="Float"/>
+	<field name="fSizeXVariance" type="Float"/>
+	<field name="fSizeY" type="Float"/>
+	<field name="fSizeYVariance" type="Float"/>
+	<field name="fGrazingSizeFraction" type="Float"/>
+	<field name="fAlpha" type="Float"/>
+	<field name="fAlphaVariance" type="Float"/>
+</class>

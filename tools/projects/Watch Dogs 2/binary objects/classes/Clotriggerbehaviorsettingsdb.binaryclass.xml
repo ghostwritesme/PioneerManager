@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ClotriggerbehaviorsettingsdbParameters">
+	<inherit name="SharedParameters"/>
+	<object name="TriggerBehaviors">
+		<field name="Name" type="String"/>
+		<field name="text_fileActionMoveStateId" type="String"/>
+		<field name="fileActionMoveStateId" type="BinHex"/>
+		<field name="text_fileCycleMoveStateId" type="String"/>
+		<field name="fileCycleMoveStateId" type="BinHex"/>
+		<field name="selOnAnimEnd" type="Enum"/>
+		<field name="bUseAsAnchorForGoto" type="Boolean"/>
+		<field name="bOverrideQuitSettings" type="Boolean"/>
+		<object name="TriggerSettings">
+			<field name="selTriggerType" type="Enum"/>
+			<field name="bComputeAnchorFromDynamicCLOAnchor" type="Boolean"/>
+			<field name="text_sTriggerTypeExtraInfo" type="String"/>
+			<field name="sTriggerTypeExtraInfo" type="BinHex"/>
+			<field name="bTriggerOrientTowards" type="Boolean"/>
+			<field name="bTriggerOrientReturn" type="Boolean"/>
+			<field name="bTriggerDestroyProps" type="Boolean"/>
+		</object>
+		<object name="QuitSettings">
+			<field name="bSpecifyQuitState" type="Boolean"/>
+			<field name="bSpecifyQuitMindSet" type="Boolean"/>
+			<field name="selWalkType" type="Enum"/>
+			<object name="QuitPMS">
+				<object name="PMSValues"/>
+			</object>
+		</object>
+		<object name="TriggerBehaviors">
+			<field name="Name" type="String"/>
+			<field name="text_fileActionMoveStateId" type="String"/>
+			<field name="fileActionMoveStateId" type="BinHex"/>
+			<field name="text_fileCycleMoveStateId" type="String"/>
+			<field name="fileCycleMoveStateId" type="BinHex"/>
+			<field name="selOnAnimEnd" type="Enum"/>
+			<field name="bUseAsAnchorForGoto" type="Boolean"/>
+			<field name="bOverrideQuitSettings" type="Boolean"/>
+			<object name="TriggerSettings">
+				<field name="selTriggerType" type="Enum"/>
+				<field name="bComputeAnchorFromDynamicCLOAnchor" type="Boolean"/>
+				<field name="text_sTriggerTypeExtraInfo" type="String"/>
+				<field name="sTriggerTypeExtraInfo" type="BinHex"/>
+				<field name="bTriggerOrientTowards" type="Boolean"/>
+				<field name="bTriggerOrientReturn" type="Boolean"/>
+				<field name="bTriggerDestroyProps" type="Boolean"/>
+				<field name="bTriggerLookAt" type="Boolean"/>
+				<object name="LookAtSettings">
+					<field name="selLookAtType" type="Enum"/>
+					<field name="selPriority" type="Enum"/>
+					<field name="bUseTimer" type="Boolean"/>
+					<field name="fLookAtDurationMin" type="Float"/>
+					<field name="fLookAtDurationMax" type="Float"/>
+					<field name="bUseMaxAngles" type="Boolean"/>
+					<object name="Angles">
+						<field name="fMaxDown" type="Float"/>
+						<field name="fMaxUp" type="Float"/>
+						<field name="fMaxLeft" type="Float"/>
+						<field name="fMaxRight" type="Float"/>
+					</object>
+					<object name="LookAtMoveState">
+						<field name="fileMovePath" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+			<object name="QuitSettings">
+				<field name="bSpecifyQuitState" type="Boolean"/>
+				<field name="bSpecifyQuitMindSet" type="Boolean"/>
+				<field name="selWalkType" type="Enum"/>
+				<object name="QuitPMS">
+					<object name="PMSValues"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

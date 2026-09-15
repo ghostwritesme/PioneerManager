@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CinematicmodedbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="colorremapset" type="BinHex"/>
+	<field name="cameralensconfigLensConfig" type="BinHex"/>
+	<field name="camerasensorconfigSensorConfig" type="BinHex"/>
+</class>

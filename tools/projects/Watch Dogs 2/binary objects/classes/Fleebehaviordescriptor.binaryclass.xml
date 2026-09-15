@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="FleebehaviordescriptorParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fleeaicharacterconfigAICharacterConfig" type="BinHex"/>
+	<field name="fleeaivehicleconfigAIVehicleConfig" type="BinHex"/>
+	<field name="fleecompletiondescriptorCompletionDescriptor" type="BinHex"/>
+</class>

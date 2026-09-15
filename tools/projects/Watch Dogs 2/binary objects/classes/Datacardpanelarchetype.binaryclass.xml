@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DatacardpanelarchetypeParameters">
+	<inherit name="SharedParameters"/>
+	<object name="DataCardPanelGenerator">
+		<field name="fWeight" type="Float"/>
+		<field name="datacardtypeDataCardType" type="BinHex"/>
+		<object name="DataCardPanelGenerator">
+			<field name="fWeight" type="Float"/>
+			<field name="text_datacardtypeDataCardType" type="String"/>
+			<field name="datacardtypeDataCardType" type="BinHex"/>
+		</object>
+	</object>
+</class>

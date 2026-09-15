@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="SquadbhvparamsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="chasebehaviourparamsBehaviour" type="BinHex"/>
+	<field name="chaseboatparamsBoats" type="BinHex"/>
+	<field name="chasechopperparamsChopper" type="BinHex"/>
+	<field name="chasesearchparamsTargetedSearch" type="BinHex"/>
+	<field name="chasesearchparamsUntargetedSearch" type="BinHex"/>
+</class>

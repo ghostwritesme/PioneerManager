@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ItemcategoryParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bEnable" type="Boolean"/>
+	<field name="sFrameLabel" type="String"/>
+	<field name="bIsAShopCategory" type="Boolean"/>
+	<field name="selShopCategoryType" type="BinHex"/>
+	<field name="uCategoryPriority" type="Int64"/>
+	<object name="locstridItemCategoryNameId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridItemCategoryDescriptionId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+</class>

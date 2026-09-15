@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Cameravehiclepreset_f1319c5cParameters">
+	<inherit name="SharedParameters"/>
+	<object name="CameraVehicleList">
+		<object name="CameraVehicle">
+			<field name="selVehicleCameraContext" type="Enum"/>
+			<field name="bIsBumperMode" type="Boolean"/>
+			<field name="bIsInsideMode" type="Boolean"/>
+			<field name="bIsFarMode" type="Boolean"/>
+		</object>
+	</object>
+</class>

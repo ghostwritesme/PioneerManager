@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="LookatsettingParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selLookAt" type="Enum"/>
+	<object name="LookAtMoveState">
+		<field name="text_fileMovePath" type="String"/>
+		<field name="fileMovePath" type="BinHex"/>
+	</object>
+</class>

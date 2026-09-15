@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="AnimalcombatparametersParameters">
+	<inherit name="SharedParameters"/>
+	<object name="AttackValues">
+		<field name="fTakeDownWinRate" type="Float"/>
+		<field name="fHumanTakeDownMinDistance" type="Float"/>
+		<field name="fHumanTakeDownMaxDistance" type="Float"/>
+		<field name="fDogTakeDownMinDistance" type="Float"/>
+		<field name="fDogTakeDownMaxDistance" type="Float"/>
+		<field name="selMeleeIntensity" type="Enum"/>
+		<field name="fPlayerMeleeMinDistance" type="Float"/>
+		<field name="fPlayerMeleeMaxDistance" type="Float"/>
+		<field name="text_sPlayerMeleeRumbleId" type="String"/>
+		<field name="sPlayerMeleeRumbleId" type="BinHex"/>
+		<field name="fPlayerMeleeRumbleIntensity" type="Float"/>
+	</object>
+	<object name="SmellTrackingParameters">
+		<inherit name="SharedParameters"/>
+		<field name="fSmellIntruderRadius" type="Float"/>
+		<field name="fSmellIntruderLostRadius" type="Float"/>
+		<field name="fSmellIntruderMaxHeight" type="Float"/>
+		<field name="fMeanderForwardMaxDistance" type="Float"/>
+		<field name="fMeanderForwardMinDistance" type="Float"/>
+		<field name="fMeanderSideMaxDistance" type="Float"/>
+		<field name="fMeanderSideMinDistance" type="Float"/>
+		<field name="fBarkingTime" type="Float"/>
+		<field name="fTargetLostReturnTime" type="Float"/>
+		<field name="fAggressiveTrackingActivationTime" type="Float"/>
+		<field name="fAggressiveTrackingActivationDistance" type="Float"/>
+	</object>
+</class>

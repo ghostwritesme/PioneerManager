@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="MaterialsetParameters">
+	<inherit name="SharedParameters"/>
+	<field name="iRandomSeedBias" type="Int32"/>
+	<object name="Slots">
+		<object name="Slot">
+			<field name="text_SlotName" type="String"/>
+			<field name="SlotName" type="BinHex"/>
+			<object name="Materials">
+				<object name="Material">
+					<field name="matMaterial" type="String"/>
+					<field name="unChances" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

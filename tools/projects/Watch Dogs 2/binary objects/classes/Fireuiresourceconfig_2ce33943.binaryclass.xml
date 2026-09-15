@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Fireuiresourceconfig_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Languages">
+		<object name="Language">
+			<field name="text_sLanguage" type="String"/>
+			<field name="sLanguage" type="BinHex"/>
+			<object name="Resources">
+				<object name="Resource">
+					<field name="text_Resource" type="String"/>
+					<field name="Resource" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

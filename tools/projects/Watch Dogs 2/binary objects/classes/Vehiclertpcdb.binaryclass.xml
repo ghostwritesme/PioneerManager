@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehiclertpcdbParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Collision">
+		<object name="sndvarCollisionSpeedRtpc">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="BinHex"/>
+		</object>
+		<object name="sndvarScratchSoundRTPC">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Engine">
+		<object name="sndvarAcceleratorSoundRTPCVariable">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="BinHex"/>
+		</object>
+		<object name="sndvarEngineThrottleLoopThrottleVar">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarEngineThrottleLoopRPMVar">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarGearNumberRtpc">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarLaggedRPMSoundRtpc">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarRPMSoundRtpc">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarSpeedSoundRtpc">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndvarVelocityRtpc">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+	</object>
+	<object name="HornAndSiren">
+		<object name="sndvarHornSoundRtpc">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="BinHex"/>
+		</object>
+	</object>
+	<object name="JumpOrInAir">
+		<object name="sndvarJumpTimeVar">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Misc">
+		<object name="sndvarOcclusionVar">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+	</object>
+	<object name="Suspension">
+		<object name="sndvarSuspensionTensionSoundRTPC">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Wheels">
+		<object name="sndvarWheelSlipSoundRtpc">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+	</object>
+</class>

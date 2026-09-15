@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CollisiondamagecomponentparameterParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMinDeformSpeed" type="Float"/>
+	<field name="fMaxDeformSpeed" type="Float"/>
+	<field name="fMinDeformLandSpeed" type="Float"/>
+	<field name="fMaxDeformLandSpeed" type="Float"/>
+	<field name="fMaxLandAngleVelocity" type="Float"/>
+	<field name="fMinScratchSpeed" type="Float"/>
+	<field name="fMaxScratchSpeed" type="Float"/>
+</class>

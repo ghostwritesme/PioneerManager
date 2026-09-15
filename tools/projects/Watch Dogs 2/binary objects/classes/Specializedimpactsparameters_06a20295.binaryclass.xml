@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Specializedimpactsparameters_06a20295Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="CharacterBulletImpact">
+		<field name="ImpactHealthy" type="BinHex"/>
+		<field name="text_ImpactDiedNormal" type="String"/>
+		<field name="ImpactDiedNormal" type="BinHex"/>
+		<field name="text_ImpactDiedHeadshot" type="String"/>
+		<field name="ImpactDiedHeadshot" type="BinHex"/>
+		<field name="text_ImpactAlreadyDead" type="String"/>
+		<field name="ImpactAlreadyDead" type="BinHex"/>
+	</object>
+</class>

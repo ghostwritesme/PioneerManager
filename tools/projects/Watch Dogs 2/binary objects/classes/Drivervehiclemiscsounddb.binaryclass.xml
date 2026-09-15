@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DrivervehiclemiscsounddbParameters">
+	<inherit name="SharedParameters"/>
+	<object name="TakeDown">
+		<field name="sndTakedownByBollard" type="BinHex"/>
+		<field name="sndTakedownByTrafficLight" type="BinHex"/>
+		<field name="sndTakedownBySteamPipe" type="BinHex"/>
+	</object>
+	<object name="JumpAndLanding">
+		<field name="fMinSpeedInKmhForJumpLaunchSound" type="Float"/>
+		<field name="fMinAirTimeForLongLandSound" type="Float"/>
+		<field name="text_sndJumpLaunch" type="String"/>
+		<field name="sndJumpLaunch" type="BinHex"/>
+		<field name="text_sndLandGood" type="String"/>
+		<field name="sndLandGood" type="BinHex"/>
+		<field name="text_sndLandBad" type="String"/>
+		<field name="sndLandBad" type="BinHex"/>
+		<field name="text_sndLandSmall" type="String"/>
+		<field name="sndLandSmall" type="BinHex"/>
+	</object>
+	<object name="LaunchHelper">
+		<field name="sndLaunchHelperStart" type="BinHex"/>
+		<field name="sndLaunchHelperStop" type="BinHex"/>
+	</object>
+	<object name="Exhaust">
+		<field name="text_sndBackFireExhaustFireSound" type="String"/>
+		<field name="sndBackFireExhaustFireSound" type="BinHex"/>
+	</object>
+	<object name="Misc">
+		<field name="text_sndRemoteUnlock" type="String"/>
+		<field name="sndRemoteUnlock" type="BinHex"/>
+		<field name="text_sndAlarmSound" type="String"/>
+		<field name="sndAlarmSound" type="BinHex"/>
+		<field name="text_sndAirbagSound" type="String"/>
+		<field name="sndAirbagSound" type="BinHex"/>
+		<field name="text_sndLockWheelSound" type="String"/>
+		<field name="sndLockWheelSound" type="BinHex"/>
+		<field name="text_sndEngineOverheatSound" type="String"/>
+		<field name="sndEngineOverheatSound" type="BinHex"/>
+		<field name="text_sndEngineOverheatStopSound" type="String"/>
+		<field name="sndEngineOverheatStopSound" type="BinHex"/>
+		<field name="text_sndLockBrakesSound" type="String"/>
+		<field name="sndLockBrakesSound" type="BinHex"/>
+		<field name="text_sndLockBrakesStopSound" type="String"/>
+		<field name="sndLockBrakesStopSound" type="BinHex"/>
+		<field name="text_sndReverseOverheatSound" type="String"/>
+		<field name="sndReverseOverheatSound" type="BinHex"/>
+		<field name="text_sndReverseOverheatStopSound" type="String"/>
+		<field name="sndReverseOverheatStopSound" type="BinHex"/>
+	</object>
+</class>

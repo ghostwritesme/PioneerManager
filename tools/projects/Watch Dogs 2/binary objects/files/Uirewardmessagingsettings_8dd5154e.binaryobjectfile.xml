@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Uirewardmessagingsettings_8dd5154e">
+	<object name="obj">
+		<inherit name="Uirewardmessagingsettings_8dd5154eParameters"/>
+	</object>
+</file>

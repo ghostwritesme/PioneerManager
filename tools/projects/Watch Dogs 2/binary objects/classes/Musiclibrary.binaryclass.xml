@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="MusiclibraryParameters">
+	<inherit name="SharedParameters"/>
+	<field name="musicgenresGenre" type="BinHex"/>
+	<field name="selType" type="Enum"/>
+	<field name="radiolibraryExclusiveToRadioStation" type="BinHex"/>
+	<field name="texturedbobjectAlbumArtTexture" type="BinHex"/>
+	<field name="availabilityrulegroupRadioPlayCondition" type="BinHex"/>
+	<field name="bShouldResourceAlwaysBeLoaded" type="BinHex"/>
+	<field name="fileCharacterPortrait" type="BinHex"/>
+	<field name="text_sndSong" type="String"/>
+	<field name="sndSong" type="BinHex"/>
+	<object name="locstridSongName">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridArtistName">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridAlbumName">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="RadioVoices">
+		<object name="Voice">
+			<field name="text_sndSong" type="String"/>
+			<field name="sndSong" type="BinHex"/>
+		</object>
+	</object>
+</class>

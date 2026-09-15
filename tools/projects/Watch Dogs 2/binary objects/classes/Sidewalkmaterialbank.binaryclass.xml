@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="SidewalkmaterialbankParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_matSidewalkMaterial" type="String"/>
+	<field name="matSidewalkMaterial" type="BinHex"/>
+	<field name="text_matSidewalkCornerMaterial" type="String"/>
+	<field name="matSidewalkCornerMaterial" type="BinHex"/>
+	<field name="logmatSidewalkLogicMaterial" type="BinHex"/>
+	<field name="text_matCurbMaterial" type="String"/>
+	<field name="matCurbMaterial" type="BinHex"/>
+	<field name="text_matCurbNoParkingMaterial" type="String"/>
+	<field name="matCurbNoParkingMaterial" type="BinHex"/>
+	<field name="logmatCurbLogicMaterial" type="BinHex"/>
+</class>

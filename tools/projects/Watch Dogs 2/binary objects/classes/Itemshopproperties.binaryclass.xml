@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ItemshoppropertiesParameters">
+	<inherit name="SharedParameters"/>
+	<field name="itemsItem" type="BinHex"/>
+	<field name="uiItemPrice" type="Int32"/>
+	<field name="itemcategoryItemCategory" type="BinHex"/>
+	<field name="accessidAccessIdToLockItemInShop" type="BinHex"/>
+	<field name="bPromotionalItem" type="Boolean"/>
+</class>

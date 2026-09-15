@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ScoutxtargetdbconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selDetectionTargetType" type="Enum"/>
+	<field name="entcontAvailabilityContext" type="BinHex"/>
+	<field name="fileDefaultImage" type="String"/>
+	<field name="fAvailabilityRadius" type="Float"/>
+	<field name="fCircularZoneRadius" type="Float"/>
+	<field name="fMinVisibilityPercentage" type="Float"/>
+	<field name="vectorMapIconPosition" type="Vector3"/>
+	<object name="locstridTargetName">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridTargetDefaultDescription">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridTargetNotAvailableDescription">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridTargetNotAppropriateTimeDescription">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridTargetNotAppropriateWeatherDescription">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+</class>

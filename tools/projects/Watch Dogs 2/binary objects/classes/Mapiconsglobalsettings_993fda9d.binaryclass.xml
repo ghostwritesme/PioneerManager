@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Mapiconsglobalsettings_993fda9dParameters">
+	<inherit name="SharedParameters"/>
+	<field name="mapicondescMainHubDBEntry" type="BinHex"/>
+	<field name="mapicondescSubHubDBEntry" type="BinHex"/>
+	<field name="mapicondescDestinationDBEntry" type="BinHex"/>
+	<field name="mapicondescEmptyDestinationDBEntry" type="BinHex"/>
+	<field name="fMinimapMeshZScale" type="Float"/>
+	<object name="RevealClampMode">
+		<field name="selEGpsClamp" type="Enum"/>
+		<field name="fClampCloseDistance" type="Float"/>
+		<field name="bClampOnWorldMap" type="Boolean"/>
+		<field name="colorClampArrowColor" type="Vector3"/>
+		<field name="bFadeInClamp" type="Boolean"/>
+		<field name="bShrinkInClamp" type="Boolean"/>
+		<field name="bClampOnMainMap" type="Boolean"/>
+		<field name="colorClampOnMainMapColor" type="Vector3"/>
+	</object>
+	<object name="curveColorOverTime">
+		<inherit name="KnotsParameters"/>
+	</object>
+</class>

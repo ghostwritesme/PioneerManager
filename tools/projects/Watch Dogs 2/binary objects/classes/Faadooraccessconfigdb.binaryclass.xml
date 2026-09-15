@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="FaadooraccessconfigdbParameters">
+	<inherit name="SharedParameters"/>
+	<object name="DoorAccessConfig">
+		<object name="Door">
+			<field name="FireWallBox" type="BinHex"/>
+			<object name="LockedEntityList">
+				<object name="LockedEntity">
+					<field name="entAccessDoor" type="BinHex"/>
+					<field name="entProfilingPath" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

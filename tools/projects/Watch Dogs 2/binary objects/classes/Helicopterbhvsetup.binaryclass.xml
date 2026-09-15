@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="HelicopterbhvsetupParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selBhv" type="Enum"/>
+	<field name="bShooterEnabled" type="Boolean"/>
+	<field name="fHeight" type="Float"/>
+	<field name="selFlankMode" type="Enum"/>
+	<field name="fFlankDistanceOverride" type="Float"/>
+	<field name="selLeadTailMode" type="Enum"/>
+	<field name="fLeadTailDistanceOverride" type="Float"/>
+	<object name="Detection">
+		<field name="bUseGaugeDetection" type="Boolean"/>
+		<field name="bOverrideDetectionGauge" type="Boolean"/>
+		<field name="fOverrideDetectionGaugeRaiseTime" type="Float"/>
+		<field name="fOverrideDetectionGaugeFallTime" type="Float"/>
+	</object>
+	<object name="ScriptedSearch">
+		<field name="bOverrideSpeeds" type="Boolean"/>
+		<field name="fSpeedToPath" type="Float"/>
+		<field name="fSpeedAlongPath" type="Float"/>
+		<field name="fSpeedWhileSpottingPlayer" type="Float"/>
+		<field name="bForceSpotlightOnPlayer" type="Boolean"/>
+	</object>
+</class>

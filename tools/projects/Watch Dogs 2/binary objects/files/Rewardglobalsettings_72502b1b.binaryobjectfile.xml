@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Rewardglobalsettings_72502b1b">
+	<object name="obj">
+		<inherit name="Rewardglobalsettings_72502b1bParameters"/>
+	</object>
+</file>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="TaxiridefeedbackdataParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bOverrideScoreWithTaxiRating" type="Boolean"/>
+	<field name="iSuccessTaxiRating" type="Int32"/>
+	<object name="SuccessLines">
+		<object name="SuccessLine">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="FailLines">
+		<object name="FailLine">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+</class>

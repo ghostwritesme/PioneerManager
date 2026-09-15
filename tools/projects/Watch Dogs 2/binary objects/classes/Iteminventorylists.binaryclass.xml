@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="IteminventorylistsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Items">
+		<object name="Item">
+			<field name="itemsItem" type="BinHex"/>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CoverselectionparametersParameters">
+	<inherit name="SharedParameters"/>
+	<object name="WeightedParams">
+		<field name="vec2Cover2Agent" type="Vector2"/>
+		<field name="vec2Cover2Enemy" type="Vector2"/>
+		<field name="vec2Cover2Friend" type="Vector2"/>
+		<field name="vec2Cover2Ally" type="Vector2"/>
+		<field name="vec2Cover2NeigboringCoverDist" type="Vector2"/>
+		<field name="fCoverAngleWeight" type="Float"/>
+		<field name="fCover2AgentWeight" type="Float"/>
+		<field name="fCover2EnemyWeight" type="Float"/>
+		<field name="fCover2FriendsWeight" type="Float"/>
+		<field name="fCover2AllyWeight" type="Float"/>
+	</object>
+	<object name="CutoffParams">
+		<field name="fCoverAngleCutoff" type="Float"/>
+		<field name="fCover2FriendsCutoff" type="Float"/>
+		<field name="vec2Cover2AgentCutoff" type="Vector2"/>
+		<field name="vec2Cover2EnemyCutoff" type="Vector2"/>
+		<field name="vec2Cover2AllyCutoff" type="Vector2"/>
+	</object>
+</class>

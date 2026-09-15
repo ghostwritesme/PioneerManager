@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Versusshowndownglobalsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fRespawnTimerDuration" type="BinHex"/>
+	<field name="fDistFromPickUpToUseContestingRespawnRules" type="BinHex"/>
+	<field name="fMinDistToBeDetected" type="BinHex"/>
+	<field name="fMaxDistToBeDetected" type="BinHex"/>
+	<field name="fPlayerVisibilityDuration" type="BinHex"/>
+	<field name="missionlistLobbyMission" type="BinHex"/>
+	<field name="fLobbyMinDuration" type="BinHex"/>
+	<field name="fLobbyDurationToStartMissionWhenFull" type="BinHex"/>
+	<field name="fLobbyMatchFoundDuration" type="BinHex"/>
+	<field name="itemlistsWinnerTeamRewardList" type="BinHex"/>
+	<field name="itemlistsLoserTeamRewardList" type="BinHex"/>
+	<field name="fFreeroamShowdownPropositionDuration" type="BinHex"/>
+	<field name="fLeaveForCoopPropositionDuration" type="BinHex"/>
+	<field name="bShouldDisableFelony" type="BinHex"/>
+	<field name="bShouldCapHeatLevel" type="BinHex"/>
+	<field name="selMaxReachableHeatLevel" type="BinHex"/>
+	<field name="fMissionEndMaxDuration" type="BinHex"/>
+	<field name="text_archRestrictionZoneArchetype" type="String"/>
+	<field name="archRestrictionZoneArchetype" type="BinHex"/>
+	<object name="ActiveMissionList">
+		<object name="Mission">
+			<field name="missionlistActiveMission" type="BinHex"/>
+		</object>
+	</object>
+	<object name="locstridMatchmakingTitle">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridMatchmakingInput">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridMatchmakingPlayerAlone">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridMatchmakingTwoPlayersMissing">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridMatchmakingOnePlayersMissing">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridMatchmakingLobbyFull">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridMatchmakingPlayerFound">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridMissionSuccessWhenOppositeTeamLeft">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridFreeroamShowdownPropositionTitle">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridFreeroamShowdownPropositionDescription">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridFreeroamShowdownPropositionInput">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridLeaveForCoopPropositionTitle">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridLeaveForCoopPropositionDescription">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+</class>

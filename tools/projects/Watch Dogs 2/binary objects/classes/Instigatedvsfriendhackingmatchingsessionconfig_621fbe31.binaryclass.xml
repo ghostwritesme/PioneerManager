@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Instigatedvsfriendhackingmatchingsessionconfig_621fbe31Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="PawnConfig">
+		<inherit name="SharedParameters"/>
+		<field name="fWeight" type="Float"/>
+		<field name="fScoreOffset" type="Float"/>
+		<field name="fDistanceMin" type="Float"/>
+		<field name="fDistanceIdealMin" type="Float"/>
+		<field name="fDistanceIdealMax" type="Float"/>
+		<field name="fDistanceMax" type="Float"/>
+		<field name="fDistanceWeight" type="Float"/>
+		<field name="fClosingSpeedMin" type="Float"/>
+		<field name="fClosingSpeedMax" type="Float"/>
+		<field name="fDistanceModulationFactor" type="Float"/>
+	</object>
+</class>

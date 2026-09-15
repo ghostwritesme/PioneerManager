@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Eventpropositionsettings_8e988d35Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="DedSecEvent">
+		<field name="fDisplayTime" type="Float"/>
+	</object>
+	<object name="DedSecEventHackTheHacker">
+		<field name="fDisplayTime" type="Float"/>
+	</object>
+	<object name="DedSecEventTheHunt">
+		<field name="fDisplayTime" type="Float"/>
+	</object>
+	<object name="DedSecEventThePersecution">
+		<field name="fDisplayTime" type="Float"/>
+	</object>
+	<object name="DedSecEventTheConvoy">
+		<field name="fDisplayTime" type="Float"/>
+	</object>
+	<object name="DedSecEventTheVirus">
+		<field name="fDisplayTime" type="Float"/>
+	</object>
+	<object name="DedSecEventLootTruck">
+		<field name="fDisplayTime" type="Float"/>
+	</object>
+	<object name="DedSecEventRobotBoss">
+		<field name="fDisplayTime" type="Float"/>
+	</object>
+	<object name="CoopFeedback">
+		<field name="fDisplayTime" type="Float"/>
+	</object>
+	<object name="BountyHunterMission">
+		<field name="fDisplayTime" type="Float"/>
+	</object>
+	<object name="HackingMission">
+		<field name="fDisplayTime" type="Float"/>
+	</object>
+	<object name="MostWantedBountyHunter">
+		<field name="fDisplayTime" type="Float"/>
+	</object>
+	<object name="HaxxorOperationMission">
+		<field name="fDisplayTime" type="Float"/>
+	</object>
+	<object name="CoopProposal">
+		<field name="fDisplayTime" type="Float"/>
+	</object>
+	<object name="NotoriousHackingTarget">
+		<field name="fDisplayTime" type="Float"/>
+	</object>
+	<object name="CoopMission">
+		<field name="fDisplayTime" type="Float"/>
+	</object>
+	<object name="CoopLeaveProposal">
+		<field name="fDisplayTime" type="Float"/>
+	</object>
+	<object name="CoopLeaveProposalWaitForReply">
+		<field name="fDisplayTime" type="Float"/>
+	</object>
+	<object name="4PlayersParty">
+		<field name="fDisplayTime" type="Float"/>
+	</object>
+</class>

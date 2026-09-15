@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UielementsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fileUIResourceFile" type="String"/>
+	<field name="text_uihudmodeelementclassidElementClass" type="String"/>
+	<field name="uihudmodeelementclassidElementClass" type="BinHex"/>
+	<field name="text_uihudmodelogicclassidLogicClass" type="String"/>
+	<field name="uihudmodelogicclassidLogicClass" type="BinHex"/>
+	<field name="sMainContainerName" type="String"/>
+	<field name="selCanvasSelection" type="Enum"/>
+	<field name="selInterfaceLayerType" type="Enum"/>
+	<field name="selLoadingStrategy" type="Enum"/>
+	<field name="selMovieSetupType" type="Enum"/>
+	<object name="FixedSized">
+	    <field name="fCanvasWidth" type="Float"/>
+	    <field name="fCanvasHeight" type="Float"/>
+	</object>
+	<object name="MainContainerDpsName">
+		<field name="sContainerDpsName" type="String"/>
+	</object>
+	<object name="UIElementDescriptor">
+		<field name="uiQtyLines" type="Int64"/>
+		<field name="fIntroDuration" type="Float"/>
+		<field name="fDeathDuration" type="Float"/>
+		<field name="uiMinAdditionalPadding" type="Int64"/>
+		<field name="uiMaxAdditionalPadding" type="Int64"/>
+		<field name="uisoundMessageDisplaySFX" type="BinHex"/>
+		<field name="fMessageSpacing" type="Float"/>
+		<field name="uMaxItemPerSlot" type="Int64"/>
+		<field hash="AFDE43AC" type="Float"/>
+		<field hash="FDE98CA4" type="Enum"/>
+		<field hash="D8CB01E2" type="Vector"/>
+		<object name="locstridPrimaryButtonReminder">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridSecondaryButtonReminder">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridInfiniteIcon">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridSwitchIconInSlotLeft">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridSwitchIconInSlotRight">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridPrimaryButtonDescription">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridSecondaryButtonDescription">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="PCWheelPositionCorrection">
+			<field name="fShiftPositionX" type="Float"/>
+			<field name="fShiftPositionY" type="Float"/>
+		</object>
+		<object name="TagsOfTheControlBindings">
+			<object name="locstridTagEquipWeapon1">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridTagEquipWeapon2">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridTagEquipWeapon3">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridTagEquipTool1">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridTagEquipTool2">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridTagEquipTool3">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridTagEquipTool4">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridTagEquipTool5">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridTagEmotion1">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridTagEmotion2">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridTagEmotion3">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridTagEmotion4">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridTagEmotion5">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridTagEmotion6">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridTagEmotion7">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridTagEmotion8">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<field name="selWarningNeutral" type="Enum"/>
+		<field name="selWarningForbidden" type="Enum"/>
+		<field name="selWarningOnline" type="Enum"/>
+		<field name="fMaximizedDisplayDuration" type="Float"/>
+		<object name="LanguageSettingCzech">
+			<field name="fDistanceFieldProfile" type="BinHex"/>
+			<field name="iFontSize" type="BinHex"/>
+			<field name="bBackgroundEnabled" type="BinHex"/>
+			<field name="selLanguageMode" type="BinHex"/>
+		</object>
+		<object name="LanguageSettingDanish">
+			<field name="fDistanceFieldProfile" type="BinHex"/>
+			<field name="iFontSize" type="BinHex"/>
+			<field name="bBackgroundEnabled" type="BinHex"/>
+			<field name="selLanguageMode" type="BinHex"/>
+		</object>
+		<object name="LanguageSettingDutch">
+			<field name="fDistanceFieldProfile" type="BinHex"/>
+			<field name="iFontSize" type="BinHex"/>
+			<field name="bBackgroundEnabled" type="BinHex"/>
+			<field name="selLanguageMode" type="BinHex"/>
+		</object>
+		<object name="LanguageSettingEnglish">
+			<field name="fDistanceFieldProfile" type="BinHex"/>
+			<field name="iFontSize" type="BinHex"/>
+			<field name="bBackgroundEnabled" type="BinHex"/>
+			<field name="selLanguageMode" type="BinHex"/>
+		</object>
+		<object name="LanguageSettingFinnish">
+			<field name="fDistanceFieldProfile" type="BinHex"/>
+			<field name="iFontSize" type="BinHex"/>
+			<field name="bBackgroundEnabled" type="BinHex"/>
+			<field name="selLanguageMode" type="BinHex"/>
+		</object>
+		<object name="LanguageSettingFrench">
+			<field name="fDistanceFieldProfile" type="BinHex"/>
+			<field name="iFontSize" type="BinHex"/>
+			<field name="bBackgroundEnabled" type="BinHex"/>
+			<field name="selLanguageMode" type="BinHex"/>
+		</object>
+		<object name="LanguageSettingGerman">
+			<field name="fDistanceFieldProfile" type="BinHex"/>
+			<field name="iFontSize" type="BinHex"/>
+			<field name="bBackgroundEnabled" type="BinHex"/>
+			<field name="selLanguageMode" type="BinHex"/>
+		</object>
+		<object name="LanguageSettingHungarian">
+			<field name="fDistanceFieldProfile" type="BinHex"/>
+			<field name="iFontSize" type="BinHex"/>
+			<field name="bBackgroundEnabled" type="BinHex"/>
+			<field name="selLanguageMode" type="BinHex"/>
+		</object>
+		<object name="LanguageSettingItalian">
+			<field name="fDistanceFieldProfile" type="BinHex"/>
+			<field name="iFontSize" type="BinHex"/>
+			<field name="bBackgroundEnabled" type="BinHex"/>
+			<field name="selLanguageMode" type="BinHex"/>
+		</object>
+		<object name="LanguageSettingJapanese">
+			<field name="fDistanceFieldProfile" type="BinHex"/>
+			<field name="iFontSize" type="BinHex"/>
+			<field name="bBackgroundEnabled" type="BinHex"/>
+			<field name="selLanguageMode" type="BinHex"/>
+		</object>
+		<object name="LanguageSettingKorean">
+			<field name="fDistanceFieldProfile" type="BinHex"/>
+			<field name="iFontSize" type="BinHex"/>
+			<field name="bBackgroundEnabled" type="BinHex"/>
+			<field name="selLanguageMode" type="BinHex"/>
+		</object>
+		<object name="LanguageSettingNorwegian">
+			<field name="fDistanceFieldProfile" type="BinHex"/>
+			<field name="iFontSize" type="BinHex"/>
+			<field name="bBackgroundEnabled" type="BinHex"/>
+			<field name="selLanguageMode" type="BinHex"/>
+		</object>
+		<object name="LanguageSettingPolish">
+			<field name="fDistanceFieldProfile" type="BinHex"/>
+			<field name="iFontSize" type="BinHex"/>
+			<field name="bBackgroundEnabled" type="BinHex"/>
+			<field name="selLanguageMode" type="BinHex"/>
+		</object>
+		<object name="LanguageSettingPortugueseBrazil">
+			<field name="fDistanceFieldProfile" type="BinHex"/>
+			<field name="iFontSize" type="BinHex"/>
+			<field name="bBackgroundEnabled" type="BinHex"/>
+			<field name="selLanguageMode" type="BinHex"/>
+		</object>
+		<object name="LanguageSettingPortuguesePortugal">
+			<field name="fDistanceFieldProfile" type="BinHex"/>
+			<field name="iFontSize" type="BinHex"/>
+			<field name="bBackgroundEnabled" type="BinHex"/>
+			<field name="selLanguageMode" type="BinHex"/>
+		</object>
+		<object name="LanguageSettingRussian">
+			<field name="fDistanceFieldProfile" type="BinHex"/>
+			<field name="iFontSize" type="BinHex"/>
+			<field name="bBackgroundEnabled" type="BinHex"/>
+			<field name="selLanguageMode" type="BinHex"/>
+		</object>
+		<object name="LanguageSettingSpanish">
+			<field name="fDistanceFieldProfile" type="BinHex"/>
+			<field name="iFontSize" type="BinHex"/>
+			<field name="bBackgroundEnabled" type="BinHex"/>
+			<field name="selLanguageMode" type="BinHex"/>
+		</object>
+		<object name="LanguageSettingSwedish">
+			<field name="fDistanceFieldProfile" type="BinHex"/>
+			<field name="iFontSize" type="BinHex"/>
+			<field name="bBackgroundEnabled" type="BinHex"/>
+			<field name="selLanguageMode" type="BinHex"/>
+		</object>
+		<object name="LanguageSettingTraditionalChinese">
+			<field name="fDistanceFieldProfile" type="BinHex"/>
+			<field name="iFontSize" type="BinHex"/>
+			<field name="bBackgroundEnabled" type="BinHex"/>
+			<field name="selLanguageMode" type="BinHex"/>
+		</object>
+		<object name="LanguageSettingSimplifiedChinese">
+			<field name="fDistanceFieldProfile" type="BinHex"/>
+			<field name="iFontSize" type="BinHex"/>
+			<field name="bBackgroundEnabled" type="BinHex"/>
+			<field name="selLanguageMode" type="BinHex"/>
+		</object>
+		<object name="LanguageSettingFakeLongEnglish">
+			<field name="fDistanceFieldProfile" type="BinHex"/>
+			<field name="iFontSize" type="BinHex"/>
+			<field name="bBackgroundEnabled" type="BinHex"/>
+			<field name="selLanguageMode" type="BinHex"/>
+		</object>
+		<object name="LanguageSettingSpanishMexico">
+			<field name="fDistanceFieldProfile" type="BinHex"/>
+			<field name="iFontSize" type="BinHex"/>
+			<field name="bBackgroundEnabled" type="BinHex"/>
+			<field name="selLanguageMode" type="BinHex"/>
+		</object>
+		<object name="LanguageSettingArabic">
+			<field name="fDistanceFieldProfile" type="BinHex"/>
+			<field name="iFontSize" type="BinHex"/>
+			<field name="bBackgroundEnabled" type="BinHex"/>
+			<field name="selLanguageMode" type="BinHex"/>
+		</object>
+		<object name="locstridInstallationComplete">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridInstallationFailed">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridInstallationInProgressPartial">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridInstallationInProgressGlobal">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="fTextPadding" type="Vector"/>
+		<field name="fHeatProgressStartAngle" type="Float"/>
+		<field name="fHeatProgressStopAngle" type="Float"/>
+		<object name="locstridOverHeat">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridNewMessageText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="FullscreenContexts">
+			<object name="FullscreenContext">
+				<field name="text_uihudcontexttypeidFullscreenContext" type="String"/>
+				<field name="uihudcontexttypeidFullscreenContext" type="BinHex"/>
+			</object>
+		</object>
+		<object name="MinimapHideContexts">
+			<object name="MinimapHideContext">
+				<field name="text_uihudcontexttypeidMinimapHideContext" type="String"/>
+				<field name="uihudcontexttypeidMinimapHideContext" type="BinHex"/>
+			</object>
+		</object>
+		<field name="fHeatCoolDownStartAngle" type="Float"/>
+		<field name="fHeatCoolDownStopAngle" type="Float"/>
+		<field name="fRadialDiameter" type="Float"/>
+		<field name="uisoundRaceCountdownSound" type="BinHex"/>
+		<object name="locstridGoText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="texturedbobjectAppLogo" type="BinHex"/>
+		<object name="locstridNothingPlaying">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridNextSongText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridPrevSongText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridSongOnOffText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="uiappScoutXApp" type="BinHex"/>
+		<field name="uisoundTargetCompletedSound" type="BinHex"/>
+		<field name="fPlaySoundDelay" type="Float"/>
+		<object name="locstridTargetCompletedText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridTargetUpdatedText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridTargetValidText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridTargetInvalidText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridTargetNotAvailableText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="vector2RemainingPhotosPos" type="Vector2"/>
+		<field name="fNotificationDisplayDuration" type="Float"/>
+		<field name="fUpdateBeforeCompleteDuration" type="Float"/>
+		<field name="fDefaultDisplayDuration" type="Float"/>
+		<field name="fIntroDisplayDuration" type="Float"/>
+		<field name="uisoundMissionFailedMessageSound" type="BinHex"/>
+		<field name="uisoundMissionSuccessMessageSound" type="BinHex"/>
+		<field name="uisoundObjectiveUpdateMessageSound" type="BinHex"/>
+		<field name="uisoundNotificationMessageSound" type="BinHex"/>
+		<field name="uisoundObjectiveUpdateFailedMessageSound" type="BinHex"/>
+		<field name="uisoundObjectiveTickerSoundSound" type="BinHex"/>
+		<field name="fSpaceBetweenChannel" type="Float"/>
+		<field name="iNotificationMaxLine" type="Int32"/>
+		<field name="selFailedObjectiveColor" type="Enum"/>
+		<field name="selObjectiveColor" type="Enum"/>
+		<field name="selOnlineColor" type="Enum"/>
+		<object name="PermanentActivationContexts">
+			<object name="PermanentActivationContext">
+				<field name="text_uihudcontexttypeidPermanentActivationContext" type="String"/>
+				<field name="uihudcontexttypeidPermanentActivationContext" type="BinHex"/>
+			</object>
+		</object>
+		<object name="locstridMissionCompleted">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridMissionCompletedBounty">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridMissionCompletedOnlineHacking">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridMmissionCompletedLootTruckLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridMissionCompletedDedSecEvent">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridMissionFailedBounty">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridMissionFailedOnlineHacking">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridMissionCancelledBounty">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridMissionCancelledOnlineHacking">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridMissionCancelledDedSecEvent">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridMissionFailed">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridMissionCancelled">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridObjectiveCompleted">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridObjectiveCompletedWithPlayerName">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridObjectiveFailed">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridNewObjective">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridUntrackedTitle">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="TaxiHudValues">
+			<field name="sAvoidDamageFrameLabel" type="String"/>
+			<field name="sSpeedRangeFrameLabel" type="String"/>
+			<field name="sProgressBarHudTypeFrameLabel" type="String"/>
+			<field name="sAirTimeHudTypeFrameLabel" type="String"/>
+			<field name="sRatingOnlyHudTypeFrameLabel" type="String"/>
+		</object>
+		<object name="RaceHudValues">
+			<object name="locstridRaceLapText">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridRacePositionText">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridRaceCheckpointText">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridRaceTimeTextForTimeTrial">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridRaceTimeTextForCircuit">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridRaceTimeNotAvailableText">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridStreetRaceLapTimeText">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridStreetRaceChallengeTimeText">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="DedSecEvent">
+			<field name="uisoundDisplaySound" type="BinHex"/>
+			<field name="texturedbobjectEventIcon" type="BinHex"/>
+			<object name="locstridTitleLocId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="DedSecEventHackTheHacker">
+			<field name="uisoundDisplaySound" type="BinHex"/>
+			<field name="texturedbobjectEventIcon" type="BinHex"/>
+			<object name="locstridTitleLocId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="DedSecEventTheHunt">
+			<field name="uisoundDisplaySound" type="BinHex"/>
+			<field name="texturedbobjectEventIcon" type="BinHex"/>
+			<object name="locstridTitleLocId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="DedSecEventThePersecution">
+			<field name="uisoundDisplaySound" type="BinHex"/>
+			<field name="texturedbobjectEventIcon" type="BinHex"/>
+			<object name="locstridTitleLocId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="DedSecEventTheConvoy">
+			<field name="uisoundDisplaySound" type="BinHex"/>
+			<field name="texturedbobjectEventIcon" type="BinHex"/>
+			<object name="locstridTitleLocId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="DedSecEventTheVirus">
+			<field name="uisoundDisplaySound" type="BinHex"/>
+			<field name="texturedbobjectEventIcon" type="BinHex"/>
+			<object name="locstridTitleLocId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="DedSecEventLootTruck">
+			<field name="uisoundDisplaySound" type="BinHex"/>
+			<field name="texturedbobjectEventIcon" type="BinHex"/>
+			<object name="locstridTitleLocId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="DedSecEventRobotBoss">
+			<field name="uisoundDisplaySound" type="BinHex"/>
+			<field name="texturedbobjectEventIcon" type="BinHex"/>
+			<object name="locstridTitleLocId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="CoopFeedback">
+			<field name="uisoundDisplaySound" type="BinHex"/>
+			<field name="texturedbobjectEventIcon" type="BinHex"/>
+			<object name="locstridTitleLocId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="BountyHunterMission">
+			<field name="uisoundDisplaySound" type="BinHex"/>
+			<field name="texturedbobjectEventIcon" type="BinHex"/>
+			<object name="locstridTitleLocId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="HackingMission">
+			<field name="uisoundDisplaySound" type="BinHex"/>
+			<field name="texturedbobjectEventIcon" type="BinHex"/>
+			<object name="locstridTitleLocId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="ShowdownMission">
+			<field name="uisoundDisplaySound" type="BinHex"/>
+			<field name="texturedbobjectEventIcon" type="BinHex"/>
+			<object name="locstridTitleLocId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="MostWantedBountyHunter">
+			<field name="uisoundDisplaySound" type="BinHex"/>
+			<field name="texturedbobjectEventIcon" type="BinHex"/>
+			<object name="locstridTitleLocId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="HaxxorOperationMission">
+			<field name="uisoundDisplaySound" type="BinHex"/>
+			<field name="texturedbobjectEventIcon" type="BinHex"/>
+			<object name="locstridTitleLocId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="CoopProposal">
+			<field name="uisoundDisplaySound" type="BinHex"/>
+			<field name="texturedbobjectEventIcon" type="BinHex"/>
+			<object name="locstridTitleLocId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="NotoriousHackingTarget">
+			<field name="uisoundDisplaySound" type="BinHex"/>
+			<field name="texturedbobjectEventIcon" type="BinHex"/>
+			<object name="locstridTitleLocId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="CoopMission">
+			<field name="uisoundDisplaySound" type="BinHex"/>
+			<field name="texturedbobjectEventIcon" type="BinHex"/>
+			<object name="locstridTitleLocId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="CoopLeaveProposal">
+			<field name="uisoundDisplaySound" type="BinHex"/>
+			<field name="texturedbobjectEventIcon" type="BinHex"/>
+			<object name="locstridTitleLocId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="CoopLeaveProposalWaitForReply">
+			<field name="uisoundDisplaySound" type="BinHex"/>
+			<field name="texturedbobjectEventIcon" type="BinHex"/>
+			<object name="locstridTitleLocId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="OnlineRace">
+			<field name="uisoundDisplaySound" type="BinHex"/>
+			<field name="texturedbobjectEventIcon" type="BinHex"/>
+			<object name="locstridTitleLocId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="Pooling"/>
+		<field name="fDisplayDurationTime" type="Float"/>
+		<object name="locstridProjectileFlagTag">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridReloadText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridEmptyAmmoText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridRCCarReminder">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridFlyingDroneReminder">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="fileUIResourceFile" type="String"/>
+		<field name="sMainContainerName" type="String"/>
+		<field name="sContainerDpsName" type="String"/>
+		<field name="fBotnetBarAnimSpeed" type="Float"/>
+		<field name="fBotnetBarAnimDelay" type="Float"/>
+		<field name="fBotnetLowBotnetThreshold" type="Float"/>
+		<object name="locstridQuickHackLodID">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridRightHackLodID">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridLeftHackLodID">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridDownHackLodID">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridUpHackLodID">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridHoldFeedbackLodID">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="fTimeInSecondsBeforeDisplay" type="Float"/>
+		<object name="locstridCalculatingRoute">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridFailedCalculatingRoute">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="uisoundSoundIntro" type="BinHex"/>
+		<field name="uisoundSoundXPSmallGain" type="BinHex"/>
+		<field name="uisoundSoundXPHighGainStart" type="BinHex"/>
+		<field name="uisoundSoundXPHighGainStop" type="BinHex"/>
+		<field name="uisoundSoundXPBarLevelUp" type="BinHex"/>
+		<field name="sTagForRewardCount" type="BinHex"/>
+		<field name="videosIntroVideo" type="BinHex"/>
+		<field name="texturedbobjectSkillpointsIcon" type="BinHex"/>
+		<field name="texturedbobjectBotnetIcon" type="BinHex"/>
+		<field name="texturedbobjectDefaultOtherRewardsIcon" type="BinHex"/>
+		<field name="iLeaderboardWinStreakRequiredToDisplay" type="BinHex"/>
+		<object name="locstridFollowers">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridFollowersCount">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridFollowersLevel">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridWorldStoryPresentation">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridSkillpoints">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridSkillpointsCount">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridBotnet">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridBotnetCount">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridOtherRewardsHeaderMissionRewards">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridOtherRewardsHeaderPickedItem">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridLeaderboardPresentationText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridLeaderboardScoreAdded">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridLeaderboardWinStreak">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridLeaderboardWinStreakBroken">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridLeaderboardDivisionUnlockTime">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="uisoundOnFelonyIncrease" type="BinHex"/>
+		<field name="uisoundOnFelonyDecrease" type="BinHex"/>
+		<object name="locstridFelonnyEscapeText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridVanishedText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="fTimerEndingThreshold" type="BinHex"/>
+		<field name="uisoundVersusShowDownCountdownSound" type="BinHex"/>
+		<object name="locstridTeamName">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridOpponentTeamName">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridProtect">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridHack">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridLosing">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridWinning">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridMatchOver">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="fDisplayDuration" type="Float"/>
+		<field name="fTagTextPadding" type="Vector"/>
+		<object name="locstridWalletText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="fDisplayShortDuration" type="Float"/>
+		<field name="fBodyVerticalPadding" type="Vector"/>
+		<field name="uiSpacingOfControlElements" type="Int64"/>
+		<object name="uiDefaultColorSettings">
+			<field name="selTextColorType" type="Enum"/>
+			<field name="selBackgroundColorType" type="Enum"/>
+		</object>
+		<object name="contextualColorSettings">
+			<object name="ContextualColorSettings">
+				<field name="text_uihudcontexttypeidHudContext" type="String"/>
+				<field name="uihudcontexttypeidHudContext" type="BinHex"/>
+				<object name="ColorSettings">
+					<field name="selTextColorType" type="Enum"/>
+					<field name="selBackgroundColorType" type="Enum"/>
+				</object>
+			</object>
+		</object>
+		<field name="fMinimumPauseDuration" type="Float"/>
+		<field name="fMaximumPauseDuration" type="Float"/>
+		<object name="CatsAnimations">
+			<object name="CatAnimation">
+				<object name="CatAnimation">
+					<field name="sAnimationName" type="String"/>
+					<field name="fAnimationDuration" type="Float"/>
+					<field name="fMinimumPositionY" type="Float"/>
+					<field name="fMaximumPositionY" type="Float"/>
+					<field name="fMinimumPositionX" type="Float"/>
+					<field name="fMaximumPositionX" type="Float"/>
+					<field name="uisoundCatsAnimationSound" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="FourPlayersParty">
+		    <field name="uisoundDisplaySound" type="BinHex"/>
+		    <field name="texturedbobjectEventIcon" type="BinHex"/>
+		    <object name="locstridTitleLocId">
+		        <field name="LocalizationId" type="Int64"/>
+		    </object>
+		</object>
+	</object>
+</class>

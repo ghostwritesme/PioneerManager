@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="TaxiactivityclientlistParameters">
+	<inherit name="SharedParameters"/>
+	<object name="TaxiClients">
+		<object name="taxiclientTaxiClient">
+			<field name="taxiclientTaxiClient" type="BinHex"/>
+		</object>
+	</object>
+</class>

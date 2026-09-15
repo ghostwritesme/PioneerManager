@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehicleaerodynamicsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fDragCdaFront" type="Float"/>
+	<field name="fDragCdaSide" type="Float"/>
+	<field name="fDragCdaUp" type="Float"/>
+	<field name="fLiftCdaFront" type="Float"/>
+	<field name="fLiftCdaSide" type="Float"/>
+	<field name="fAerodynamicsDistribution" type="Float"/>
+</class>

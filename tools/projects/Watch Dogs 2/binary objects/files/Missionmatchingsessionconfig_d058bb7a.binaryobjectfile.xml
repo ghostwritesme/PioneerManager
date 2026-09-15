@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Missionmatchingsessionconfig_d058bb7a">
+	<object name="obj">
+		<inherit name="Missionmatchingsessionconfig_d058bb7aParameters"/>
+	</object>
+</file>

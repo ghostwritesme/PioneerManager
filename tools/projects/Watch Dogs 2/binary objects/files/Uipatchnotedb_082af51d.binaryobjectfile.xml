@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Uipatchnotedb_082af51d">
+	<object name="obj">
+		<inherit name="Uipatchnotedb_082af51dParameters"/>
+	</object>
+</file>

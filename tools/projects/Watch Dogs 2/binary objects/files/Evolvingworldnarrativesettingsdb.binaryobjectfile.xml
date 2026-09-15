@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Evolvingworldnarrativesettingsdb">
+	<object name="lib">
+		<object name="libobj">
+			<inherit name="EvolvingworldnarrativesettingsdbParameters"/>
+		</object>
+	</object>
+</file>

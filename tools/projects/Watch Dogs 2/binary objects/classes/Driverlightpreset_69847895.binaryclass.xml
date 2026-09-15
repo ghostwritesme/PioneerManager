@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Driverlightpreset_69847895Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="DefaultLampList">
+		<object name="DefaultLamp">
+			<field name="driverlightpresetLightPreset" type="BinHex"/>
+			<object name="LightSlotList">
+				<object name="LightSlot">
+					<field name="LightSlot" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

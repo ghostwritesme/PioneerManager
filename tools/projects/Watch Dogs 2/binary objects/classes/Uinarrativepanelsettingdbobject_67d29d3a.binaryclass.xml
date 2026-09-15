@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uinarrativepanelsettingdbobject_67d29d3aParameters">
+	<inherit name="SharedParameters"/>
+	<object name="NarrativeTeamSpeak">
+		<field name="text_sndCardShowSFX" type="String"/>
+		<field name="sndCardShowSFX" type="BinHex"/>
+		<field name="text_sndCardHideSFX" type="String"/>
+		<field name="sndCardHideSFX" type="BinHex"/>
+	</object>
+	<object name="NarrativePhoneCall">
+		<field name="sndCardShowSFX" type="BinHex"/>
+		<field name="sndCardHideSFX" type="BinHex"/>
+	</object>
+</class>

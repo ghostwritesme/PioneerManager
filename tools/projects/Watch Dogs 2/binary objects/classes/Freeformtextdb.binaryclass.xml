@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="FreeformtextdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="sLinkageName" type="String"/>
+	<field name="fDelayBeforeDisplay" type="Float"/>
+	<field name="fDisplayTime" type="Float"/>
+	<field name="fXPositionRatio" type="Float"/>
+	<field name="fYPositionRatio" type="Float"/>
+	<object name="locstridTextToDisplay">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+</class>

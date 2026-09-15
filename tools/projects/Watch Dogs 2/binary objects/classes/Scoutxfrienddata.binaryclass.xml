@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ScoutxfrienddataParameters">
+	<inherit name="SharedParameters"/>
+	<field name="sFriendImgLinkageName" type="String"/>
+    <object name="locstridFriendName">
+      <field name="LocalizationId" type="Int64"/>
+    </object>
+    <object name="MissionCriteria">
+      <object name="MissionCriteriaGroup">
+        <object name="MissionCriteria">
+          <field name="text_criteriaMissionCriteriaType" type="String"/>
+          <field name="criteriaMissionCriteriaType" type="BinHex"/>
+          <object name="CriteriaParameters">
+            <field name="missionlistMissionID" type="BinHex"/>
+          </object>
+        </object>
+      </object>
+    </object>
+    <object name="FriendCommentsList">
+      <object name="FriendComment">
+        <field name="LocalizationId" type="Int64"/>
+      </object>
+    </object>
+    <object name="FriendPicturesList">
+      <object name="FriendPicture">
+        <field name="fileImage" type="String"/>
+        <field name="uiLikesCount" type="UInt32"/>
+        <object name="locstridTargetName">
+          <field name="LocalizationId" type="Int64"/>
+        </object>
+        <object name="locstridTargetDescription">
+          <field name="LocalizationId" type="Int64"/>
+        </object>
+      </object>
+    </object>
+</class>

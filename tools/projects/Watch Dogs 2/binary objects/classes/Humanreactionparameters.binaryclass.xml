@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="HumanreactionparametersParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selReactionType" type="Enum"/>
+	<field name="selAnimationIntentionType" type="Enum"/>
+	<field name="selReactionDescription" type="Enum"/>
+    <object name="LookAtParams">
+      <object name="LookAtSettings">
+        <field name="selLookAtType" type="Enum"/>
+        <field name="selPriority" type="Enum"/>
+        <field name="bUseMaxAngles" type="Boolean"/>
+        <field name="bUseTimer" type="Boolean"/>
+        <field name="fLookAtDurationMin" type="Float"/>
+        <field name="fLookAtDurationMax" type="Float"/>
+        <object name="LookAtMoveState">
+          <field name="text_fileMovePath" type="String"/>
+          <field name="fileMovePath" type="BinHex"/>
+        </object>
+        <object name="Angles">
+          <field name="fMaxDown" type="Float"/>
+          <field name="fMaxUp" type="Float"/>
+          <field name="fMaxLeft" type="Float"/>
+          <field name="fMaxRight" type="Float"/>
+        </object>
+      </object>
+    </object>
+	<object name="AnimationParams">
+		<field name="text_fileAnimationPath" type="String"/>
+		<field name="fileAnimationPath" type="BinHex"/>
+		<field name="selAnimationLayerType" type="Enum"/>
+		<object name="StateMachine">
+			<field name="bPlayAnimEntry" type="Boolean"/>
+			<field name="bPlayAnimLoop" type="Boolean"/>
+			<field name="bPlayAnimExit" type="Boolean"/>
+			<field name="bPlayAnimSitEntry" type="Boolean"/>
+			<field name="bPlayAnimSitLoop" type="Boolean"/>
+			<field name="bPlayAnimSitExit" type="Boolean"/>
+			<field name="bUpdateThreatAnglePMSOnLoop" type="Boolean"/>
+			<field name="bUpdateThreatAnglePMSOnExit" type="Boolean"/>
+			<field name="bUpdateRealSpeedPMSOnStart" type="Boolean"/>
+			<field name="bUpdateRealSpeedPMSOnLoop" type="Boolean"/>
+			<field name="bUpdateDodgePMS" type="Boolean"/>
+		</object>
+	</object>
+	<object name="BarkParams">
+		<field name="bTriggerBarkOnMarkup" type="Boolean"/>
+	</object>
+	<object name="OtherParams">
+		<field name="stimsStimToSend" type="BinHex"/>
+		<field name="fStimDelay" type="Float"/>
+		<field name="bSetDBNOAfterEnd" type="BinHex"/>
+	</object>
+	<object name="AcknowledgmentParams">
+		<field name="bIsAcknowledgment" type="Boolean"/>
+	</object>
+	<object name="DefaultDelayParams">
+		<field name="fAsynchroReactionDelayMin" type="Float"/>
+		<field name="fAsynchroReactionDelayMax" type="Float"/>
+		<field name="bAllowAsynchronousAcknowledgment" type="Boolean"/>
+		<field name="bMustRetriggerIfFailed" type="Boolean"/>
+		<field name="fRetriggerMaxDuration" type="Float"/>
+	</object>
+	<object name="CombatAIDelayParams">
+		<field name="fAsynchroReactionDelayMin" type="Float"/>
+		<field name="fAsynchroReactionDelayMax" type="Float"/>
+		<field name="bAllowAsynchronousAcknowledgment" type="Boolean"/>
+		<field name="bMustRetriggerIfFailed" type="Boolean"/>
+	</object>
+</class>

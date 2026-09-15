@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CiviliancompositionParameters">
+	<inherit name="SharedParameters"/>
+	<field name="civbankCiviliansBank" type="BinHex"/>
+	<field name="civcompParentComposition" type="BinHex"/>
+	<object name="CivilianDistributions">
+		<object name="CivilianDistribution">
+			<field name="civdistCivilianDistribution" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Settings">
+		<field name="bOverrideCLODensity" type="Boolean"/>
+		<field name="uiCLODensity" type="Int64"/>
+		<object name="ContextualSettings"/>
+	</object>
+</class>

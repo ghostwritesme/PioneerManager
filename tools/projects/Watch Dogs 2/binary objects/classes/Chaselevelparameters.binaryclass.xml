@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ChaselevelparametersParameters">
+	<inherit name="SharedParameters"/>
+	<field name="sLevelName" type="String"/>
+	<field name="reinforcementconfigReinforcement" type="BinHex"/>
+	<field name="squadbhvparamsSquadBhvParams" type="BinHex"/>
+	<field name="chaseheatparamsHeat" type="BinHex"/>
+</class>

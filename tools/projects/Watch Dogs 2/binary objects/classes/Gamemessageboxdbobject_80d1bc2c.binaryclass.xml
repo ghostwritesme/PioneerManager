@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Gamemessageboxdbobject_80d1bc2cParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_sndConfirmNegativeSound" type="String"/>
+	<field name="sndConfirmNegativeSound" type="BinHex"/>
+	<field name="text_sndConfirmPositiveSound" type="String"/>
+	<field name="sndConfirmPositiveSound" type="BinHex"/>
+	<field name="sndDisplaySound" type="BinHex"/>
+</class>

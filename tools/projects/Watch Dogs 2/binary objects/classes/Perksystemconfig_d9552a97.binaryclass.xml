@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Perksystemconfig_d9552a97Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="AffectedByIllegalApSounds">
+		<field name="sndAffectedByJamComSound" type="BinHex"/>
+		<field name="sndAffectedByJamComStopSound" type="BinHex"/>
+	</object>
+	<object name="VehicleExpert">
+		<field name="fVehicleDiscountFactor" type="Float"/>
+	</object>
+</class>

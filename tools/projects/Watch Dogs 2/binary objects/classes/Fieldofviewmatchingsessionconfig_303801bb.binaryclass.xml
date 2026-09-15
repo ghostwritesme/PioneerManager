@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Fieldofviewmatchingsessionconfig_303801bbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fWeight" type="Float"/>
+	<field name="fScoreOffset" type="Float"/>
+	<field name="selFieldOfViewCheckType" type="Enum"/>
+	<field name="fIncompatibleAngle" type="Float"/>
+	<field name="fSpeedMinToConsiderIncompatibleAngle" type="Float"/>
+	<field name="fMergeAverageDuration" type="Float"/>
+	<field name="bUseScore" type="Boolean"/>
+</class>

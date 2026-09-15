@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="HumanconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="peopleinfoPeopleSpawnInfo" type="BinHex"/>
+	<object name="PGTConfig">
+		<field name="bPGTCompliant" type="Boolean"/>
+		<field name="selRangeType" type="Enum"/>
+		<field name="uiDifficultyValue" type="Int64"/>
+		<field name="bCanPatrol" type="Boolean"/>
+	</object>
+	<object name="Properties">
+		<field name="bIsBuddyAI" type="Boolean"/>
+		<field name="buddyaisettingsBuddyAISettings" type="BinHex"/>
+		<field name="bIsPlayerAlly" type="Boolean"/>
+		<field name="bCanBeKilledByPlayer" type="Boolean"/>
+		<field name="selMindSet" type="Enum"/>
+		<field name="bForceRespawnAfterCheckpoint" type="Boolean"/>
+		<field name="stimtableStimEffectTable" type="BinHex"/>
+		<field name="navigationconfigNavigationConfig" type="BinHex"/>
+		<field name="fleebehaviordescriptorFleeConfig" type="BinHex"/>
+		<field name="rewardconfigRewardConfig" type="BinHex"/>
+		<field name="personalityPersonalityConfig" type="BinHex"/>
+		<field name="hackablenpcgameplayconfigHackableGameplayConfig" type="BinHex"/>
+		<field name="accuracyconfigAccuracyConfig" type="BinHex"/>
+		<field name="hackingprofileHackingProfile" type="BinHex"/>
+		<field name="detectionlevelsettingsDetectionLevelSettings" type="BinHex"/>
+		<object name="AIAgentConfig">
+			<field name="selSubcategory" type="Enum"/>
+			<object name="TagInfo">
+				<field name="selTagIndicatorCategory" type="Enum"/>
+				<field name="selTagIndicatorDefense" type="Enum"/>
+				<field name="selTagIndicatorBehavior" type="Enum"/>
+			</object>
+		</object>
+		<object name="Inventory">
+			<field name="itemlistWeaponSelectorList" type="BinHex"/>
+			<field name="bSpawnWithEquippable" type="Boolean"/>
+			<field name="selInitWeaponType" type="Enum"/>
+			<object name="InventoryLoadoutItemLists">
+				<field name="itemlistNormal" type="BinHex"/>
+			</object>
+		</object>
+		<object name="FOVSettings">
+			<field name="fovsettingsSettings" type="BinHex"/>
+		</object>
+		<object name="FOVSettingsCombat">
+			<field name="fovsettingsSettings" type="BinHex"/>
+		</object>
+		<object name="FOVSettingsSniper">
+			<field name="fovsettingsSettings" type="BinHex"/>
+		</object>
+		<object name="FOVSettingsSniperCombat">
+			<field name="fovsettingsSettings" type="BinHex"/>
+		</object>
+		<object name="HealthConfig">
+			<field name="fHealth" type="Float"/>
+			<field name="TaserHitsToDieWithoutPerk" type="BinHex"/>
+			<field name="TaserHitsToDieWithPerk" type="BinHex"/>
+			<field name="locdmgconfigDamageLocationConfig" type="BinHex"/>
+		</object>
+	</object>
+	<object name="DialogSettings">
+		<field name="text_tmplDialogActor" type="String"/>
+		<field name="tmplDialogActor" type="BinHex"/>
+		<field name="dialactorlistDialogActorList" type="BinHex"/>
+	</object>
+</class>

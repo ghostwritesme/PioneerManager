@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Discoverymanagersettingsdb_8d3de9a4Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="discoverysettingsActivationDiscoverySettings" type="BinHex"/>
+	<field name="discoverysettingsLocateObjectiveDiscoverySettings" type="BinHex"/>
+	<field name="discoverysettingsTalkersDiscoverySettings" type="BinHex"/>
+</class>

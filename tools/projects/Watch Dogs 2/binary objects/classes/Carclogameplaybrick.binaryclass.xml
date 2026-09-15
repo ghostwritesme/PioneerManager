@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CarclogameplaybrickParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fleebehaviordescriptorFleeDescriptor" type="BinHex"/>
+	<field name="singleclocreationsettingsAttractorCreationSettings" type="BinHex"/>
+	<field name="fAlarmTriggerPercentage" type="Float"/>
+	<field name="bShouldEnterCarAfterAnim" type="Boolean"/>
+	<field name="bShouldFleeAfterAnim" type="Boolean"/>
+	<field name="bForceBreakWindow" type="Boolean"/>
+	<field name="selCivilianCycleBreaker" type="Enum"/>
+	<field name="matimpHitImpactFx" type="BinHex"/>
+	<field name="bOverrideProfilerSettings" type="Boolean"/>
+	<object name="ProfilerSettings">
+		<field name="profilerinfofilterProfileFilter" type="BinHex"/>
+		<field name="fileProfilerThumbnailOverride" type="BinHex"/>
+		<field name="vectorProfilerSquareTargetOffset" type="Vector3"/>
+		<field name="vectorProfilerLineTargetOffset" type="Vector3"/>
+		<field name="bIsProfilerSticky" type="Boolean"/>
+		<field name="selProfileColorTypeOverride" type="Enum"/>
+		<object name="locsectionidProfile">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="IconLocations"/>
+		<object name="TargetingBoneNames"/>
+	</object>
+</class>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PossysdbelementParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_possysdescriptorDescriptorType" type="String"/>
+	<field name="possysdescriptorDescriptorType" type="BinHex"/>
+	<object name="PosSysDescriptor">
+		<field name="vectorPositionOffset" type="Vector3"/>
+		<field name="bDisplayInWorld" type="Boolean"/>
+		<field name="bDisplayInMiniMap" type="Boolean"/>
+		<field name="bDisplayInWorldMap" type="Boolean"/>
+		<field name="fRadius" type="Float"/>
+		<field name="selZoneType" type="Enum"/>
+		<field name="selActivityTyp" type="Enum"/>
+		<field name="text_selMissionType" type="String"/>
+		<field name="selMissionType" type="Enum"/>
+		<field name="selObjectiveType" type="Enum"/>
+		<field name="bAlwaysVisibleOnScreen" type="Boolean"/>
+		<object name="locstridDefaultObjectiveText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="mapicondescMapIconDescription" type="BinHex"/>
+		<object name="locstridAreaOfInterestText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="fMarkerVisibleAtDistance" type="Float"/>
+		<field name="fMarkerVisibleAtDistanceTracked" type="Float"/>
+		<field name="fOutlineVisibleAtDistance" type="Float"/>
+		<field name="fMissionNameVisibleAtDistance" type="Float"/>
+		<field name="text_sFakeMissionID" type="String"/>
+		<field name="sFakeMissionID" type="BinHex"/>
+		<field name="fInWorldVisibleDistanceThreshold" type="BinHex"/>
+		<object name="locstridWorldMapIconLabel">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridWorldMapInteractionLabel">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridWorldMapDescriptionLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridDefaultMissionText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="selPosSysLayer" type="Enum"/>
+		<field name="bCanBind" type="Boolean"/>
+		<object name="locstridDefaultDescriptionText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridWorldMapPartyModeDescriptionLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+</class>

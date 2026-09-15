@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DialogactorlistParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bExportForInstallPackage" type="Boolean"/>
+	<object name="DialogActors">
+		<object name="tmplDialogActor">
+			<field name="text_tmplDialogActor" type="String"/>
+			<field name="tmplDialogActor" type="BinHex"/>
+		</object>
+	</object>
+</class>

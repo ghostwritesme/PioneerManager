@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ScriptedsniperbhvparamsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fScanDelay" type="BinHex"/>
+	<field name="fAimDelay" type="BinHex"/>
+	<field name="fLOSDelay" type="BinHex"/>
+	<field name="fPlayerFrontalConeAngle" type="BinHex"/>
+	<field name="fPlayerFrontalConeMinDistance" type="BinHex"/>
+	<field name="fPlayerFrontalConeMaxDistance" type="BinHex"/>
+	<field name="fMaxBreakableDistanceFromAI" type="BinHex"/>
+	<field name="fHorizontalAngle" type="Float"/>
+	<field name="fVerticalAngle" type="Float"/>
+	<field name="fVerticalAngleOffset" type="Float"/>
+	<field name="fScanPeriod" type="BinHex"/>
+	<field name="bCanTargetPlayers" type="BinHex"/>
+	<field name="bCanTargetPlayerRCs" type="BinHex"/>
+	<field name="fCanTargetPlayerRCsCooldown" type="BinHex"/>
+	<field name="bCanTargetAI" type="BinHex"/>
+	<field name="bCanTargetVehicles" type="BinHex"/>
+	<field name="bCanTargetBreakables" type="BinHex"/>
+	<field name="bForceOneShotKills" type="BinHex"/>
+</class>

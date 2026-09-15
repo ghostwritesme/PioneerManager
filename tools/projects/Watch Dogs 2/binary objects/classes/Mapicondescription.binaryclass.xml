@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="MapicondescriptionParameters">
+	<inherit name="SharedParameters"/>
+	<field name="disPrimaryIconTextureString" type="String"/>
+	<field name="bDisplayAtInit" type="Boolean"/>
+	<field name="bPlayRevealOnlyOnce" type="Boolean"/>
+	<field name="bIsAvailable" type="Boolean"/>
+	<field name="vec2Position2DOffset" type="Vector2"/>
+	<field name="bIsAvailableDuringTowerUnlock" type="Boolean"/>
+	<field name="bIsAvailableDuringHubUnlock" type="Boolean"/>
+	<field name="bUseDefaultRevealAnimation" type="Boolean"/>
+	<field name="selOrientedMode" type="Enum"/>
+	<field name="selBodyPart" type="Enum"/>
+	<field name="selLayer" type="Enum"/>
+	<field name="selFilter" type="Enum"/>
+	<field name="iZoomFilterVisibility" type="Int32"/>
+	<field name="selDrawDisplayMode" type="Enum"/>
+	<field name="selDrawDisplayOption" type="Enum"/>
+	<field name="bDisplayOnGrid" type="Boolean"/>
+	<field name="bIsInUnderground" type="Boolean"/>
+	<field name="bUseUndergroundFeedback" type="Boolean"/>
+	<field name="fUndergroundScaleModifier" type="Float"/>
+	<field name="fUndergroundAlphaModifier" type="Float"/>
+	<field name="bCanBeInOverZone" type="Boolean"/>
+	<field name="bIsStatic" type="Boolean"/>
+	<field name="selFastTravelDisplayOption" type="Enum"/>
+	<field name="availabilityrulegroupAvailabilityRuleGroup" type="BinHex"/>
+	<field name="itemsSurvivalGuideLink" type="BinHex"/>
+	<field name="bIsFilteredNear" type="Boolean"/>
+	<field name="bIsFilteredMid" type="Boolean"/>
+	<field name="bIsFilteredFar" type="Boolean"/>
+	<field name="selFilterCategory" type="Enum"/>
+	<object name="PrimaryIcon">
+		<field name="sIconLinkageName" type="String"/>
+		<field name="colorIconColor" type="Vector3"/>
+		<field name="fIconAlpha" type="Float"/>
+		<object name="IconTexture">
+			<field name="text_fileIconTexture" type="String"/>
+			<field name="fileIconTexture" type="BinHex"/>
+		</object>
+		<object name="IntroAnimationData">
+			<object name="TextureAnimation">
+				<field name="bIsUsed" type="Boolean"/>
+				<field name="bIsLooping" type="Boolean"/>
+				<field name="selDispensorType" type="Enum"/>
+				<field name="fIconSwapDelay" type="Float"/>
+				<object name="IconTexturesList">
+					<object name="IconTexture">
+						<field name="text_fileIconTexture" type="String"/>
+						<field name="fileIconTexture" type="BinHex"/>
+						<object name="IconTexture">
+							<field name="text_fileIconTexture" type="String"/>
+							<field name="fileIconTexture" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="ColorAnimation">
+				<field name="bIsUsed" type="Boolean"/>
+				<field name="bIsLooping" type="Boolean"/>
+				<field name="bIsOneWay" type="Boolean"/>
+				<field name="colorStartColor" type="BinHex"/>
+				<field name="fStartAlpha" type="Float"/>
+				<field name="colorEndColor" type="BinHex"/>
+				<field name="fEndAlpha" type="Float"/>
+				<field name="fColorAnimDelay" type="Float"/>
+				<field name="fColorAnimDelayBetweenLoop" type="Float"/>
+				<field name="bIsDelayedBothWays" type="Boolean"/>
+				<field name="fColorDuration" type="Float"/>
+			</object>
+			<object name="ScaleAnimation">
+				<field name="bIsUsed" type="Boolean"/>
+				<field name="bIsLooping" type="Boolean"/>
+				<field name="bIsOneWay" type="Boolean"/>
+				<field name="vec2StartScale" type="Vector2"/>
+				<field name="vec2EndScale" type="Vector2"/>
+				<field name="fScaleAnimDelay" type="Float"/>
+				<field name="fScaleAnimDelayBetweenLoop" type="Float"/>
+				<field name="bIsDelayedBothWays" type="Boolean"/>
+				<field name="fScaleAnimDuration" type="Float"/>
+			</object>
+		</object>
+		<object name="RunningAnimationData">
+			<object name="TextureAnimation">
+				<field name="bIsUsed" type="Boolean"/>
+				<field name="bIsLooping" type="Boolean"/>
+				<field name="selDispensorType" type="Enum"/>
+				<field name="fIconSwapDelay" type="Float"/>
+				<object name="IconTexturesList">
+					<object name="IconTexture">
+						<field name="text_fileIconTexture" type="String"/>
+						<field name="fileIconTexture" type="BinHex"/>
+						<object name="IconTexture">
+							<field name="text_fileIconTexture" type="String"/>
+							<field name="fileIconTexture" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="ColorAnimation">
+				<field name="bIsUsed" type="Boolean"/>
+				<field name="bIsLooping" type="Boolean"/>
+				<field name="bIsOneWay" type="Boolean"/>
+				<field name="colorStartColor" type="BinHex"/>
+				<field name="fStartAlpha" type="Float"/>
+				<field name="colorEndColor" type="BinHex"/>
+				<field name="fEndAlpha" type="Float"/>
+				<field name="fColorAnimDelay" type="Float"/>
+				<field name="fColorAnimDelayBetweenLoop" type="Float"/>
+				<field name="bIsDelayedBothWays" type="Boolean"/>
+				<field name="fColorDuration" type="Float"/>
+			</object>
+			<object name="ScaleAnimation">
+				<field name="bIsUsed" type="Boolean"/>
+				<field name="bIsLooping" type="Boolean"/>
+				<field name="bIsOneWay" type="Boolean"/>
+				<field name="vec2StartScale" type="Vector2"/>
+				<field name="vec2EndScale" type="Vector2"/>
+				<field name="fScaleAnimDelay" type="Float"/>
+				<field name="fScaleAnimDelayBetweenLoop" type="Float"/>
+				<field name="bIsDelayedBothWays" type="Boolean"/>
+				<field name="fScaleAnimDuration" type="Float"/>
+			</object>
+		</object>
+		<object name="OutroAnimationData">
+			<object name="TextureAnimation">
+				<field name="bIsUsed" type="Boolean"/>
+				<field name="bIsLooping" type="Boolean"/>
+				<field name="selDispensorType" type="Enum"/>
+				<field name="fIconSwapDelay" type="Float"/>
+				<object name="IconTexturesList">
+					<object name="IconTexture">
+						<field name="text_fileIconTexture" type="String"/>
+						<field name="fileIconTexture" type="BinHex"/>
+						<object name="IconTexture">
+							<field name="text_fileIconTexture" type="String"/>
+							<field name="fileIconTexture" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="ColorAnimation">
+				<field name="bIsUsed" type="Boolean"/>
+				<field name="bIsLooping" type="Boolean"/>
+				<field name="bIsOneWay" type="Boolean"/>
+				<field name="colorStartColor" type="BinHex"/>
+				<field name="fStartAlpha" type="Float"/>
+				<field name="colorEndColor" type="BinHex"/>
+				<field name="fEndAlpha" type="Float"/>
+				<field name="fColorAnimDelay" type="Float"/>
+				<field name="fColorAnimDelayBetweenLoop" type="Float"/>
+				<field name="bIsDelayedBothWays" type="Boolean"/>
+				<field name="fColorDuration" type="Float"/>
+			</object>
+			<object name="ScaleAnimation">
+				<field name="bIsUsed" type="Boolean"/>
+				<field name="bIsLooping" type="Boolean"/>
+				<field name="bIsOneWay" type="Boolean"/>
+				<field name="vec2StartScale" type="Vector2"/>
+				<field name="vec2EndScale" type="Vector2"/>
+				<field name="fScaleAnimDelay" type="Float"/>
+				<field name="fScaleAnimDelayBetweenLoop" type="Float"/>
+				<field name="bIsDelayedBothWays" type="Boolean"/>
+				<field name="fScaleAnimDuration" type="Float"/>
+			</object>
+		</object>
+	</object>
+	<object name="BackgroundIcon">
+		<field name="sIconLinkageName" type="String"/>
+		<field name="colorIconColor" type="Vector3"/>
+		<field name="fIconAlpha" type="Float"/>
+		<object name="IconTexture">
+			<field name="text_fileIconTexture" type="String"/>
+			<field name="fileIconTexture" type="BinHex"/>
+		</object>
+		<object name="IntroAnimationData">
+			<object name="TextureAnimation">
+				<field name="bIsUsed" type="Boolean"/>
+				<field name="bIsLooping" type="Boolean"/>
+				<field name="selDispensorType" type="Enum"/>
+				<field name="fIconSwapDelay" type="Float"/>
+				<object name="IconTexturesList">
+					<object name="IconTexture">
+						<field name="text_fileIconTexture" type="String"/>
+						<field name="fileIconTexture" type="BinHex"/>
+						<object name="IconTexture">
+							<field name="text_fileIconTexture" type="String"/>
+							<field name="fileIconTexture" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="ColorAnimation">
+				<field name="bIsUsed" type="Boolean"/>
+				<field name="bIsLooping" type="Boolean"/>
+				<field name="bIsOneWay" type="Boolean"/>
+				<field name="colorStartColor" type="BinHex"/>
+				<field name="fStartAlpha" type="Float"/>
+				<field name="colorEndColor" type="BinHex"/>
+				<field name="fEndAlpha" type="Float"/>
+				<field name="fColorAnimDelay" type="Float"/>
+				<field name="fColorAnimDelayBetweenLoop" type="Float"/>
+				<field name="bIsDelayedBothWays" type="Boolean"/>
+				<field name="fColorDuration" type="Float"/>
+			</object>
+			<object name="ScaleAnimation">
+				<field name="bIsUsed" type="Boolean"/>
+				<field name="bIsLooping" type="Boolean"/>
+				<field name="bIsOneWay" type="Boolean"/>
+				<field name="vec2StartScale" type="Vector2"/>
+				<field name="vec2EndScale" type="Vector2"/>
+				<field name="fScaleAnimDelay" type="Float"/>
+				<field name="fScaleAnimDelayBetweenLoop" type="Float"/>
+				<field name="bIsDelayedBothWays" type="Boolean"/>
+				<field name="fScaleAnimDuration" type="Float"/>
+			</object>
+		</object>
+		<object name="RunningAnimationData">
+			<object name="TextureAnimation">
+				<field name="bIsUsed" type="Boolean"/>
+				<field name="bIsLooping" type="Boolean"/>
+				<field name="selDispensorType" type="Enum"/>
+				<field name="fIconSwapDelay" type="Float"/>
+				<object name="IconTexturesList">
+					<object name="IconTexture">
+						<field name="text_fileIconTexture" type="String"/>
+						<field name="fileIconTexture" type="BinHex"/>
+						<object name="IconTexture">
+							<field name="text_fileIconTexture" type="String"/>
+							<field name="fileIconTexture" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="ColorAnimation">
+				<field name="bIsUsed" type="Boolean"/>
+				<field name="bIsLooping" type="Boolean"/>
+				<field name="bIsOneWay" type="Boolean"/>
+				<field name="colorStartColor" type="BinHex"/>
+				<field name="fStartAlpha" type="Float"/>
+				<field name="colorEndColor" type="BinHex"/>
+				<field name="fEndAlpha" type="Float"/>
+				<field name="fColorAnimDelay" type="Float"/>
+				<field name="fColorAnimDelayBetweenLoop" type="Float"/>
+				<field name="bIsDelayedBothWays" type="Boolean"/>
+				<field name="fColorDuration" type="Float"/>
+			</object>
+			<object name="ScaleAnimation">
+				<field name="bIsUsed" type="Boolean"/>
+				<field name="bIsLooping" type="Boolean"/>
+				<field name="bIsOneWay" type="Boolean"/>
+				<field name="vec2StartScale" type="Vector2"/>
+				<field name="vec2EndScale" type="Vector2"/>
+				<field name="fScaleAnimDelay" type="Float"/>
+				<field name="fScaleAnimDelayBetweenLoop" type="Float"/>
+				<field name="bIsDelayedBothWays" type="Boolean"/>
+				<field name="fScaleAnimDuration" type="Float"/>
+			</object>
+		</object>
+		<object name="OutroAnimationData">
+			<object name="TextureAnimation">
+				<field name="bIsUsed" type="Boolean"/>
+				<field name="bIsLooping" type="Boolean"/>
+				<field name="selDispensorType" type="Enum"/>
+				<field name="fIconSwapDelay" type="Float"/>
+				<object name="IconTexturesList">
+					<object name="IconTexture">
+						<field name="text_fileIconTexture" type="String"/>
+						<field name="fileIconTexture" type="BinHex"/>
+						<object name="IconTexture">
+							<field name="text_fileIconTexture" type="String"/>
+							<field name="fileIconTexture" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="ColorAnimation">
+				<field name="bIsUsed" type="Boolean"/>
+				<field name="bIsLooping" type="Boolean"/>
+				<field name="bIsOneWay" type="Boolean"/>
+				<field name="colorStartColor" type="BinHex"/>
+				<field name="fStartAlpha" type="Float"/>
+				<field name="colorEndColor" type="BinHex"/>
+				<field name="fEndAlpha" type="Float"/>
+				<field name="fColorAnimDelay" type="Float"/>
+				<field name="fColorAnimDelayBetweenLoop" type="Float"/>
+				<field name="bIsDelayedBothWays" type="Boolean"/>
+				<field name="fColorDuration" type="Float"/>
+			</object>
+			<object name="ScaleAnimation">
+				<field name="bIsUsed" type="Boolean"/>
+				<field name="bIsLooping" type="Boolean"/>
+				<field name="bIsOneWay" type="Boolean"/>
+				<field name="vec2StartScale" type="Vector2"/>
+				<field name="vec2EndScale" type="Vector2"/>
+				<field name="fScaleAnimDelay" type="Float"/>
+				<field name="fScaleAnimDelayBetweenLoop" type="Float"/>
+				<field name="bIsDelayedBothWays" type="Boolean"/>
+				<field name="fScaleAnimDuration" type="Float"/>
+			</object>
+		</object>
+	</object>
+	<object name="locstridWorldMapTag">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridWorldMapTypeTag">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="Animations">
+		<field name="text_sDefaultAnimationId" type="String"/>
+		<field name="sDefaultAnimationId" type="BinHex"/>
+		<field name="bStartAnimationOnInit" type="Boolean"/>
+		<object name="TextureAnimations">
+			<object name="TextureAnim">
+				<field name="text_sAnimId" type="String"/>
+				<field name="sAnimId" type="BinHex"/>
+				<field name="bIsLooping" type="Boolean"/>
+				<field name="selDispensorType" type="Enum"/>
+				<field name="fIconSwapDelay" type="Float"/>
+				<field name="bUsePrimaryIcon" type="Boolean"/>
+				<object name="IconTexturesList">
+					<object name="IconTexture">
+						<field name="text_fileIconTexture" type="String"/>
+						<field name="fileIconTexture" type="BinHex"/>
+						<object name="IconTexture">
+							<field name="text_fileIconTexture" type="String"/>
+							<field name="fileIconTexture" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="ShapeAnimations">
+			<object name="ShapeAnim">
+				<field name="text_sAnimId" type="String"/>
+				<field name="sAnimId" type="BinHex"/>
+				<field name="bIsLooping" type="Boolean"/>
+				<field name="bIsOneWay" type="Boolean"/>
+				<object name="Color">
+					<field name="colorStartColor" type="BinHex"/>
+					<field name="fStartAlpha" type="Float"/>
+					<field name="colorEndColor" type="BinHex"/>
+					<field name="fEndAlpha" type="Float"/>
+					<field name="fColorAnimDelay" type="Float"/>
+					<field name="fColorDuration" type="Float"/>
+				</object>
+				<object name="Scale">
+					<field name="vec2StartScale" type="Vector2"/>
+					<field name="vec2EndScale" type="Vector2"/>
+					<field name="fScaleAnimDelay" type="Float"/>
+					<field name="fScaleAnimDuration" type="Float"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="IconModifiers">
+		<field name="fScaleFactor" type="Float"/>
+		<field name="fGpsScaleFactor" type="Float"/>
+		<field name="uiFocusPriority" type="Int64"/>
+		<field name="bUseEntityRotation" type="Boolean"/>
+		<field name="fAddCustomRotation" type="Float"/>
+		<field name="bIsBlended" type="Boolean"/>
+		<field name="fMaxDistanceFromPlayer" type="Float"/>
+		<field name="fMaxDistanceFromCamera" type="Float"/>
+		<field name="colorIconColorTracked" type="Vector3"/>
+		<field name="fIconAlphaTracked" type="Float"/>
+		<field name="bScaleToMapSize" type="Boolean"/>
+		<field name="bUseUpOrDownSubIcon" type="Boolean"/>
+		<field name="bUseUpOrDownAlpha" type="Boolean"/>
+		<field name="bUseAboveBelowDistanceOverride" type="Boolean"/>
+		<field name="fMinHeightDiffForAboveBelowFeedback" type="Float"/>
+		<object name="ClampMode">
+			<field name="selEGpsClamp" type="Enum"/>
+			<field name="fClampCloseDistance" type="Float"/>
+			<field name="bClampOnWorldMap" type="Boolean"/>
+			<field name="colorClampArrowColor" type="Vector3"/>
+			<field name="bFadeInClamp" type="Boolean"/>
+			<field name="bShrinkInClamp" type="Boolean"/>
+			<field name="bClampOnMainMap" type="Boolean"/>
+			<field name="colorClampOnMainMapColor" type="Vector3"/>
+		</object>
+	</object>
+	<object name="MarkerPopup">
+		<field name="selRewardIcon" type="Enum"/>
+		<object name="locstridRewardText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="FilteredIconTexture">
+		<field name="text_fileIconTexture" type="String"/>
+		<field name="fileIconTexture" type="BinHex"/>
+	</object>
+</class>

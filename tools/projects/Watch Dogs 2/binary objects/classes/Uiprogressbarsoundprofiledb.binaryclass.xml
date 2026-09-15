@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UiprogressbarsoundprofiledbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="uisoundStart" type="BinHex"/>
+	<field name="uisoundStop" type="BinHex"/>
+	<field name="uisoundComplete" type="BinHex"/>
+	<object name="sndvarProgressionRTPC">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="String"/>
+	</object>
+</class>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="MeetingdataownerspawnconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="DefaultDataOwnerSpawnSettings">
+		<field name="text_archDataOwnerVehicleArchetype" type="String"/>
+		<field name="archDataOwnerVehicleArchetype" type="BinHex"/>
+		<field name="vehicleentityconfigDataOwnerVehicleEntityConfig" type="BinHex"/>
+		<field name="humanconfigDataOwnerHumanConfig" type="BinHex"/>
+	</object>
+	<object name="Groups">
+		<object name="Group">
+			<field name="selAffiliation" type="Enum"/>
+			<object name="DataOwnerSpawnSettings">
+				<field name="text_archDataOwnerVehicleArchetype" type="String"/>
+				<field name="archDataOwnerVehicleArchetype" type="BinHex"/>
+				<field name="vehicleentityconfigDataOwnerVehicleEntityConfig" type="BinHex"/>
+				<field name="humanconfigDataOwnerHumanConfig" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

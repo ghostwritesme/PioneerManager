@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Dialogmanagersettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="dialactorlistMaleDialogActor" type="BinHex"/>
+	<field name="dialactorlistFemaleDialogActor" type="BinHex"/>
+	<field name="dialactorlistAllFemaleDialogActor" type="BinHex"/>
+	<field name="dialactorlistInstallPackageDialogActor" type="BinHex"/>
+	<field name="nConcurrentDialogsMax" type="Int32"/>
+	<field name="text_sndLawEnforcerStartSquelch" type="String"/>
+	<field name="sndLawEnforcerStartSquelch" type="BinHex"/>
+	<field name="text_sndLawEnforcerStopSquelch" type="String"/>
+	<field name="sndLawEnforcerStopSquelch" type="BinHex"/>
+	<field name="text_sndFactionStartSquelch" type="String"/>
+	<field name="sndFactionStartSquelch" type="BinHex"/>
+	<field name="text_sndFactionStopSquelch" type="String"/>
+	<field name="sndFactionStopSquelch" type="BinHex"/>
+	<field name="text_tmplPlayerDialogActor" type="String"/>
+	<field name="tmplPlayerDialogActor" type="BinHex"/>
+	<object name="sndvarRadioBarkRTPC">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="String"/>
+	</object>
+</class>

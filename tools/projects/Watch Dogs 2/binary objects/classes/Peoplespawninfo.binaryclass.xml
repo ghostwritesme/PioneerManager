@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PeoplespawninfoParameters">
+	<inherit name="SharedParameters"/>
+    <object name="HumanIdentity">
+      <field name="selGender" type="Enum"/>
+      <field name="selAffiliation" type="Enum"/>
+    </object>
+    <object name="GraphicKit">
+      <inherit name="SharedParameters"/>
+      <field name="graphickitmodelModel" type="BinHex"/>
+	  <field name="graphickitcollectionCollection" type="BinHex"/>
+	  <object name="Tags">
+        <object name="IncludeTags">
+          <object name="Tag">
+            <object name="tagcategoryselectionTag">
+              <field name="text_UITagCategorySelectionClassID" type="String"/>
+              <field name="UITagCategorySelectionClassID" type="BinHex"/>
+              <field name="tagcategoryUITagCategory" type="BinHex"/>
+              <field name="tagcategoryTagCategory" type="BinHex"/>
+              <field name="tagTag" type="BinHex"/>
+            </object>
+          </object>
+        </object>
+        <object name="ExcludeTags">
+            <object name="Tag">
+              <object name="tagcategoryselectionTag">
+                  <field name="text_UITagCategorySelectionClassID" type="String"/>
+                  <field name="UITagCategorySelectionClassID" type="BinHex"/>
+                  <field name="tagcategoryUITagCategory" type="BinHex"/>
+                  <field name="tagcategoryTagCategory" type="BinHex"/>
+                  <field name="tagTag" type="BinHex"/>
+              </object>
+            </object>
+        </object>
+        <object name="TagConstraintsAny">
+            <object name="ConstraintAny">
+                <object name="Tags">
+                   <object name="tagcategoryselectionTag">
+                        <field name="text_UITagCategorySelectionClassID" type="String"/>
+                        <field name="UITagCategorySelectionClassID" type="BinHex"/>
+                        <field name="tagcategoryUITagCategory" type="BinHex"/>
+                        <field name="tagcategoryTagCategory" type="BinHex"/>
+                        <field name="tagTag" type="BinHex"/>
+                    </object>
+			    </object>
+            </object>
+		</object>
+      </object>
+      <object name="ValidModels">
+        <object name="graphickitmodelModel">
+          <field name="graphickitmodelModel" type="BinHex"/>
+        </object>
+      </object>
+    </object>
+    <object name="ProfilerSettings">
+      <field name="profilerinfofilterProfileFilter" type="BinHex"/>
+      <field name="text_fileProfilerThumbnailOverride" type="String"/>
+      <field name="fileProfilerThumbnailOverride" type="BinHex"/>
+      <field name="vectorProfilerSquareTargetOffset" type="Vector"/>
+      <field name="vectorProfilerLineTargetOffset" type="Vector"/>
+      <field name="bIsProfilerSticky" type="Boolean"/>
+      <field name="selProfileColorTypeOverride" type="Enum"/>
+      <object name="locsectionidProfile">
+        <field name="LocalizationId" type="Int64"/>
+      </object>
+      <object name="IconLocations">
+          <object name="Locations">
+              <field name="vectorRelativeLocation" type="Vector"/>
+          </object>
+      </object>
+      <object name="TargetingBoneNames" />
+    </object>
+    <object name="tagcategoryselectionblackboardTagsBlackboard">
+      <object name="TagCategorySelectionArray">
+	    <object name="TagCategorySelection">
+          <field name="text_hid_DTCTH_ClassName" type="String"/>
+          <field name="hid_DTCTH_ClassName" type="BinHex"/>
+          <field name="text_UITagCategorySelectionClassID" type="String"/>
+          <field name="UITagCategorySelectionClassID" type="BinHex"/>
+          <field name="tagcategoryUITagCategory" type="BinHex"/>
+          <field name="tagcategoryTagCategory" type="BinHex"/>
+          <field name="tagTag" type="BinHex"/>
+        </object>
+	  </object>
+      <object name="TagDescriptorUI">
+        <field name="text_hid_DTCTH_ClassName" type="String"/>
+        <field name="hid_DTCTH_ClassName" type="BinHex"/>
+        <object name="TagCategorySelectionDescriptors">
+          <object name="TagCategorySelectionDescriptor">
+            <field name="tagcategoryTagCategory" type="BinHex"/>
+            <field name="bMultiSelect" type="BinHex"/>
+          </object>
+        </object>
+      </object>
+    </object>
+</class>

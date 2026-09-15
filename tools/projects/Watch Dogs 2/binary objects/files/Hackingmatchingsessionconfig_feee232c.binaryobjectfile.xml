@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Hackingmatchingsessionconfig_feee232c">
+	<object name="obj">
+		<inherit name="Hackingmatchingsessionconfig_feee232cParameters"/>
+	</object>
+</file>

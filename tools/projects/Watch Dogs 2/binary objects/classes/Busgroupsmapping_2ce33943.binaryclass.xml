@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Busgroupsmapping_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_MusicGroupName" type="String"/>
+	<field name="MusicGroupName" type="BinHex"/>
+	<field name="text_LicencedMusicGroupName" type="String"/>
+	<field name="LicencedMusicGroupName" type="BinHex"/>
+	<field name="text_SfxGroupName" type="String"/>
+	<field name="SfxGroupName" type="BinHex"/>
+	<field name="text_VoiceGroupName" type="String"/>
+	<field name="VoiceGroupName" type="BinHex"/>
+</class>

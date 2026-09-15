@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="IngamemapminimapinfosParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_ingameMapID" type="String"/>
+	<field name="ingameMapID" type="BinHex"/>
+	<field name="text_fileIngameMapPathID" type="String"/>
+	<field name="fileIngameMapPathID" type="BinHex"/>
+	<field name="bLoadOnStart" type="Boolean"/>
+	<field name="selMapContext" type="Enum"/>
+</class>

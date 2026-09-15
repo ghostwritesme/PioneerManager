@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ChasechopperparamsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsChopperShooterCombatAllowed" type="Boolean"/>
+	<field name="bAllowCloseCombatFallback" type="BinHex"/>
+	<object name="Overshoot">
+		<field name="fPlayerRange" type="Float"/>
+		<field name="fCooldownTime" type="Float"/>
+		<field name="fOvershootTime" type="Float"/>
+	</object>
+	<object name="Overtake">
+		<field name="fPlayerRange" type="Float"/>
+		<field name="fCooldownTime" type="Float"/>
+		<field name="fInterceptionPointWaitTime" type="Float"/>
+		<field name="fMinTimeAhead" type="Float"/>
+		<field name="fMaxTimeAhead" type="Float"/>
+		<field name="fUpdateTimeout" type="Float"/>
+		<field name="fEarlyRecoverTime" type="Float"/>
+	</object>
+</class>

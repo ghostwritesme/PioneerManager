@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Clodefaultkitfiltersettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="Version" type="BinHex"/>
+	<object name="TagCategoriesThatRemovesNonCloOrWalkerTag">
+		<object name="tagcategoryTagCat">
+			<field name="tagcategoryTagCat" type="BinHex"/>
+		</object>
+	</object>
+	<object name="MandatoryExcludeTags"/>
+	<object name="DefaultExcludeTags">
+		<object name="Tag">
+			<object name="tagcategoryselectionTag">
+				<field name="text_UITagCategorySelectionClassID" type="String"/>
+				<field name="UITagCategorySelectionClassID" type="BinHex"/>
+				<field name="tagcategoryUITagCategory" type="BinHex"/>
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+				<field name="tagTag" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="SitExcludeTags">
+		<object name="Tag">
+			<object name="tagcategoryselectionTag">
+				<field name="text_UITagCategorySelectionClassID" type="String"/>
+				<field name="UITagCategorySelectionClassID" type="BinHex"/>
+				<field name="tagcategoryUITagCategory" type="BinHex"/>
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+				<field name="tagTag" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="DriversExcludeTags">
+		<object name="Tag">
+			<object name="tagcategoryselectionTag">
+				<field name="text_UITagCategorySelectionClassID" type="String"/>
+				<field name="UITagCategorySelectionClassID" type="BinHex"/>
+				<field name="tagcategoryUITagCategory" type="BinHex"/>
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+				<field name="tagTag" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="PedestrianExcludeTags">
+		<object name="Tag">
+			<object name="tagcategoryselectionTag">
+				<field name="text_UITagCategorySelectionClassID" type="String"/>
+				<field name="UITagCategorySelectionClassID" type="BinHex"/>
+				<field name="tagcategoryUITagCategory" type="BinHex"/>
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+				<field name="tagTag" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="PedestrianWithAnimalExcludeTags">
+		<object name="Tag">
+			<object name="tagcategoryselectionTag">
+				<field name="text_UITagCategorySelectionClassID" type="String"/>
+				<field name="UITagCategorySelectionClassID" type="BinHex"/>
+				<field name="tagcategoryUITagCategory" type="BinHex"/>
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+				<field name="tagTag" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="AdirondakChair">
+		<object name="ExcludeTags"/>
+	</object>
+	<object name="Booth">
+		<object name="ExcludeTags"/>
+	</object>
+	<object name="Couch">
+		<object name="ExcludeTags"/>
+	</object>
+	<object name="Couch_Back">
+		<object name="ExcludeTags"/>
+	</object>
+	<object name="Couch_Arm">
+		<object name="ExcludeTags"/>
+	</object>
+	<object name="Crate_28cm">
+		<object name="ExcludeTags"/>
+	</object>
+	<object name="Edge_1m">
+		<object name="ExcludeTags"/>
+	</object>
+	<object name="Lean">
+		<object name="ExcludeTags"/>
+	</object>
+	<object name="Picnic_Table">
+		<object name="ExcludeTags"/>
+	</object>
+	<object name="Sit_Ground">
+		<object name="ExcludeTags"/>
+	</object>
+	<object name="Sleep_Bench">
+		<object name="ExcludeTags"/>
+	</object>
+	<object name="Sleep_Ground">
+		<object name="ExcludeTags"/>
+	</object>
+	<object name="Stairs">
+		<object name="ExcludeTags"/>
+	</object>
+	<object name="Stool">
+		<object name="ExcludeTags"/>
+	</object>
+	<object name="Table">
+		<object name="ExcludeTags"/>
+	</object>
+	<object name="CLOActionLocation">
+		<object name="AdirondackChair">
+			<object name="ExcludeTags">
+				<object name="Tag">
+					<object name="tagcategoryselectionTag">
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<field name="tagTag" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="Bench">
+			<object name="ExcludeTags">
+				<object name="Tag">
+					<object name="tagcategoryselectionTag">
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<field name="tagTag" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="Booth">
+			<object name="ExcludeTags">
+				<object name="Tag">
+					<object name="tagcategoryselectionTag">
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<field name="tagTag" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="Couch">
+			<object name="ExcludeTags">
+				<object name="Tag">
+					<object name="tagcategoryselectionTag">
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<field name="tagTag" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="Couch_Arm">
+			<object name="ExcludeTags">
+				<object name="Tag">
+					<object name="tagcategoryselectionTag">
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<field name="tagTag" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="Couch_Back">
+			<object name="ExcludeTags">
+				<object name="Tag">
+					<object name="tagcategoryselectionTag">
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<field name="tagTag" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="Crate_28CM">
+			<object name="ExcludeTags">
+				<object name="Tag">
+					<object name="tagcategoryselectionTag">
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<field name="tagTag" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="Dock">
+			<object name="ExcludeTags">
+				<object name="Tag">
+					<object name="tagcategoryselectionTag">
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<field name="tagTag" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="EdgeCliff">
+			<object name="ExcludeTags">
+				<object name="Tag">
+					<object name="tagcategoryselectionTag">
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<field name="tagTag" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="Edge_1M">
+			<object name="ExcludeTags">
+				<object name="Tag">
+					<object name="tagcategoryselectionTag">
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<field name="tagTag" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="Ground">
+			<object name="ExcludeTags">
+				<object name="Tag">
+					<object name="tagcategoryselectionTag">
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<field name="tagTag" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="LongModerChair">
+			<object name="ExcludeTags">
+				<object name="Tag">
+					<object name="tagcategoryselectionTag">
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<field name="tagTag" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="PicnicTable">
+			<object name="ExcludeTags"/>
+		</object>
+		<object name="Stairs">
+			<object name="ExcludeTags">
+				<object name="Tag">
+					<object name="tagcategoryselectionTag">
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<field name="tagTag" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="Stool">
+			<object name="ExcludeTags">
+				<object name="Tag">
+					<object name="tagcategoryselectionTag">
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<field name="tagTag" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="Table">
+			<object name="ExcludeTags">
+				<object name="Tag">
+					<object name="tagcategoryselectionTag">
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<field name="tagTag" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="Vehicle_BackLeft">
+			<object name="ExcludeTags"/>
+		</object>
+		<object name="Vehicle_BackRight">
+			<object name="ExcludeTags"/>
+		</object>
+		<object name="Vehicle_FrontLeft">
+			<object name="ExcludeTags"/>
+		</object>
+		<object name="Vehicle_FrontRight">
+			<object name="ExcludeTags"/>
+		</object>
+	</object>
+	<object name="CLOActionActivity">
+		<object name="Doing_Dip">
+			<object name="ExcludeTags"/>
+		</object>
+		<object name="Lean">
+			<object name="ExcludeTags">
+				<object name="Tag">
+					<object name="tagcategoryselectionTag">
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<field name="tagcategoryTagCategory" type="BinHex"/>
+						<field name="tagTag" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="PlayingGuitare">
+			<object name="ExcludeTags"/>
+		</object>
+		<object name="Playing_Accordeon">
+			<object name="ExcludeTags"/>
+		</object>
+		<object name="Playing_Banjo">
+			<object name="ExcludeTags"/>
+		</object>
+		<object name="Playing_Erhu">
+			<object name="ExcludeTags"/>
+		</object>
+		<object name="Playing_Flute">
+			<object name="ExcludeTags"/>
+		</object>
+		<object name="Playing_Harmonica">
+			<object name="ExcludeTags"/>
+		</object>
+		<object name="Sleep">
+			<object name="ExcludeTags"/>
+		</object>
+		<object name="Yoga_Chair">
+			<object name="ExcludeTags"/>
+		</object>
+		<object name="Yoga_DownDog">
+			<object name="ExcludeTags"/>
+		</object>
+		<object name="Yoga_Lunge">
+			<object name="ExcludeTags"/>
+		</object>
+		<object name="Yoga_Table">
+			<object name="ExcludeTags"/>
+		</object>
+		<object name="Yoga_UpDog">
+			<object name="ExcludeTags"/>
+		</object>
+		<object name="Yoga_Warrior">
+			<object name="ExcludeTags"/>
+		</object>
+	</object>
+</class>

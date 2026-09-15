@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Carondemandcontainersettingsdb_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fCarDemandCooldown" type="Float"/>
+	<field name="OnReceivedBarkId" type="BinHex"/>
+	<field name="fOnReceivedBarkDelay" type="Float"/>
+	<field name="OnPurchasedBarkId" type="BinHex"/>
+	<field name="fOnPurchasedBarkDelay" type="Float"/>
+	<field name="OnDeliveredBarkId" type="BinHex"/>
+	<field name="fOnDeliveredBarkDelay" type="Float"/>
+	<field name="fMinDistToOtherPlayer" type="Float"/>
+	<field name="vec3CarMarkerOffset" type="Vector3"/>
+	<field name="vec2EnticerSearchMinMaxDist" type="Vector2"/>
+	<field name="mapicondescCarOnDemandIcon" type="BinHex"/>
+	<field name="selBarksPriority" type="Enum"/>
+</class>

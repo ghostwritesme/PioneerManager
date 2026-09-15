@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RobotpersonalitymoduleparametersParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fGreetCooldown" type="Float"/>
+	<field name="fBanterCooldown" type="Float"/>
+	<field name="fRebootInDuration" type="Float"/>
+	<field name="fRebootOutDuration" type="Float"/>
+	<field name="fFleeDuration" type="Float"/>
+	<field name="fInsultReactRadius" type="Float"/>
+	<object name="Disable">
+		<field name="fDisableDuration" type="Float"/>
+		<field name="fDisableSlumpSpeed" type="Float"/>
+		<field name="fDisableSlumpAmount" type="Float"/>
+		<field name="fDisableRecoverTime" type="Float"/>
+	</object>
+	<object name="LoveBullPersonality">
+		<field name="fLoveBullDuration" type="Float"/>
+		<field name="fChargeImpactDamage" type="Float"/>
+		<field name="fChargeImpactForce" type="Float"/>
+		<field name="fChargeMinRange" type="Float"/>
+		<field name="fChargeMaxRange" type="Float"/>
+		<field name="fChargeSpeed" type="Float"/>
+		<field name="fChargeApproachSpeed" type="Float"/>
+		<field name="fChargeAcceleration" type="Float"/>
+		<field name="fChargeDeceleration" type="Float"/>
+		<field name="fChargeSlowdownDistance" type="Float"/>
+		<field name="fChargeEffectRadius" type="Float"/>
+		<field name="fChargeEffectOffset" type="Float"/>
+	</object>
+	<object name="AttractorPersonality">
+		<field name="fAttractorDuration" type="Float"/>
+		<field name="fAttractorRadius" type="Float"/>
+	</object>
+	<object name="RepulsorPersonality">
+		<field name="fRepulsorDuration" type="Float"/>
+		<field name="fRepulsorStimRadius" type="Float"/>
+		<field name="fRepulsorThreatenRadius" type="Float"/>
+		<field name="fRepulsorThreatenCooldown" type="Float"/>
+		<field name="fRepulsorThreatenTurn" type="Float"/>
+	</object>
+	<object name="DistractorPersonality">
+		<field name="fDistractorDuration" type="Float"/>
+		<field name="fDistractorRadius" type="Float"/>
+	</object>
+</class>

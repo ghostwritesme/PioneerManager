@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Music_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Loading">
+		<field name="text_sndLoadingMusicStart" type="String"/>
+		<field name="sndLoadingMusicStart" type="BinHex"/>
+		<field name="text_sndLoadingMusicStop" type="String"/>
+		<field name="sndLoadingMusicStop" type="BinHex"/>
+	</object>
+</class>

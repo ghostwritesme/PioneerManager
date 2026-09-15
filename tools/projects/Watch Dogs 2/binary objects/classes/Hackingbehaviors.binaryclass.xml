@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="HackingbehaviorsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="HackingBehavior">
+		<field name="text_selType" type="String"/>
+		<field name="selType" type="Enum"/>
+		<object name="Object">
+			<object name="BehaviorCategorys">
+				<object name="Category">
+					<object name="BehaviorCategory">
+						<field name="selButtonMapping" type="Enum"/>
+						<field name="selCategory" type="Enum"/>
+					</object>
+				</object>
+			</object>
+			<object name="Sounds">
+				<field name="text_sndHackingDisplayCategorySelectedSoundId" type="String"/>
+				<field name="sndHackingDisplayCategorySelectedSoundId" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

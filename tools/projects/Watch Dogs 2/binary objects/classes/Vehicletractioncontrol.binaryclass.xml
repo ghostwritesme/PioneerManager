@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehicletractioncontrolParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selTractionControlType" type="Enum"/>
+	<field name="fMaximumVelocityRatio" type="Float"/>
+	<field name="fMinimumVelocityRatio" type="Float"/>
+	<field name="fMinimumVelocity" type="Float"/>
+</class>

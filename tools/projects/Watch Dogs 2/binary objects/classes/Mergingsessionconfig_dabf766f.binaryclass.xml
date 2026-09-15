@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Mergingsessionconfig_dabf766fParameters">
+	<inherit name="SharedParameters"/>
+	<object name="DefaultMergeLogicStrategiesConfig">
+		<inherit name="SharedParameters"/>
+		<object name="CandidateMergeLogicConfig">
+			<inherit name="SharedParameters"/>
+			<field name="fSeamlessStrategyTime" type="Float"/>
+			<field name="fLowImpactStrategyTime" type="Float"/>
+			<field name="fHighImpactStrategyTime" type="Float"/>
+		</object>
+		<object name="ParticipantMergeLogicConfig">
+			<inherit name="SharedParameters"/>
+			<field name="fSeamlessStrategyTime" type="Float"/>
+			<field name="fLowImpactStrategyTime" type="Float"/>
+			<field name="fHighImpactStrategyTime" type="Float"/>
+		</object>
+	</object>
+</class>

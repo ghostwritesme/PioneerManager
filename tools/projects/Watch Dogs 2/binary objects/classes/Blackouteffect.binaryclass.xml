@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BlackouteffectParameters">
+	<inherit name="SharedParameters"/>
+	<object name="ParticleEmitterParams">
+		<object name="ParticleEmitterParam">
+			<field name="text_psParticleEmitter" type="String"/>
+			<field name="psParticleEmitter" type="BinHex"/>
+		</object>
+	</object>
+</class>

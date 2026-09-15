@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ConfettisystemParameters">
+	<inherit name="SharedParameters"/>
+	<field name="uiMaxInstances" type="UInt32"/>
+	<field name="fMaxEmissionDistance" type="Float"/>
+	<object name="Emitters">
+		<object name="Emitter">
+			<field name="confettiemitterEmitter" type="BinHex"/>
+			<field name="vectorTranslation" type="Vector"/>
+			<field name="angvecRotation" type="Vector"/>
+			<object name="Childs">
+				<object name="Child">
+				  	<field name="confettiemitterEmitter" type="BinHex"/>
+				  	<object name="Childs" />
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="WeathersequenceParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fProbabilityWeight" type="Float"/>
+	<field name="uiNumSequencesBeforeRepeat" type="Int64"/>
+	<field name="bPingPong" type="Boolean"/>
+	<field name="bIsValid" type="Boolean"/>
+	<object name="WeatherSteps">
+		<object name="Step">
+			<field name="envweatherpresetPreset" type="BinHex"/>
+			<field name="bEnabled" type="Boolean"/>
+			<object name="DurationMin">
+				<field name="uiHours" type="Int64"/>
+				<field name="uiMinutes" type="Int64"/>
+				<field name="uiSeconds" type="Int64"/>
+			</object>
+			<object name="DurationMax">
+				<field name="uiHours" type="Int64"/>
+				<field name="uiMinutes" type="Int64"/>
+				<field name="uiSeconds" type="Int64"/>
+			</object>
+		</object>
+	</object>
+</class>

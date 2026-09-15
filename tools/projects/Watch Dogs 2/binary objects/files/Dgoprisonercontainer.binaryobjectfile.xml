@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Dgoprisonercontainer">
+	<object name="lib">
+		<object name="libobj">
+			<inherit name="DgoprisonercontainerParameters"/>
+		</object>
+	</object>
+</file>

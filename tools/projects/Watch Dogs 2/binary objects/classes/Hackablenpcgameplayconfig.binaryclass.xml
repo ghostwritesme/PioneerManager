@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="HackablenpcgameplayconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Categories">
+		<object name="Attract">
+			<object name="PossibleProfiles">
+				<object name="hackablenpcprofilesetupHackableNPCProfileSetup">
+					<field name="hackablenpcprofilesetupHackableNPCProfileSetup" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="DisruptCom">
+			<object name="PossibleProfiles">
+				<object name="hackablenpcprofilesetupHackableNPCProfileSetup">
+					<field name="hackablenpcprofilesetupHackableNPCProfileSetup" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="Distract">
+			<object name="PossibleProfiles">
+				<object name="hackablenpcprofilesetupHackableNPCProfileSetup">
+					<field name="hackablenpcprofilesetupHackableNPCProfileSetup" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="Explosive">
+			<object name="PossibleProfiles">
+				<object name="hackablenpcprofilesetupHackableNPCProfileSetup">
+					<field name="hackablenpcprofilesetupHackableNPCProfileSetup" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="PhoneOverheat">
+			<object name="PossibleProfiles">
+				<object name="hackablenpcprofilesetupHackableNPCProfileSetup">
+					<field name="hackablenpcprofilesetupHackableNPCProfileSetup" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="PoliceSearch">
+			<object name="PossibleProfiles">
+				<object name="hackablenpcprofilesetupHackableNPCProfileSetup">
+					<field name="hackablenpcprofilesetupHackableNPCProfileSetup" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="CallHitman">
+			<object name="PossibleProfiles">
+				<object name="hackablenpcprofilesetupHackableNPCProfileSetup">
+					<field name="hackablenpcprofilesetupHackableNPCProfileSetup" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="StealMoney">
+			<object name="PossibleProfiles">
+				<object name="hackablenpcprofilesetupHackableNPCProfileSetup">
+					<field name="hackablenpcprofilesetupHackableNPCProfileSetup" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="GiveMoney">
+			<object name="PossibleProfiles">
+				<object name="hackablenpcprofilesetupHackableNPCProfileSetup">
+					<field name="hackablenpcprofilesetupHackableNPCProfileSetup" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

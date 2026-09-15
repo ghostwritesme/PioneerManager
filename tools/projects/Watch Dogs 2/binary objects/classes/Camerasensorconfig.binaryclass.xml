@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CamerasensorconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bUseColorCorrection" type="Boolean"/>
+	<field name="clrLift" type="VectorColor"/>
+	<field name="clrGamma" type="VectorColor"/>
+	<field name="clrGain" type="VectorColor"/>
+	<field name="clrOffset" type="VectorColor"/>
+	<field name="fBrightness" type="Float"/>
+	<field name="fSaturation" type="Float"/>
+	<field name="fContrast" type="Float"/>
+	<field name="fTemperature" type="Float"/>
+	<field name="fTint" type="Float"/>
+	<field name="bUseLuminanceWeights" type="Boolean"/>
+	<field name="text_fileSensorLuminanceWeights" type="String"/>
+	<field name="fileSensorLuminanceWeights" type="BinHex"/>
+	<field name="bUseFilmGrain" type="Boolean"/>
+	<field name="fFilmGrainIntensity" type="Float"/>
+	<field name="fFilmGrainVignetingRelation" type="Float"/>
+	<field name="bUseMPEGEncodingArtefacts" type="Boolean"/>
+	<field name="fTimeScale" type="Float"/>
+	<field name="fSquareProbability" type="Float"/>
+	<field name="fLineProbability" type="Float"/>
+	<field name="uSmallBlockSize" type="Int64"/>
+	<field name="uBlocksCountPerLargeBlock" type="Int64"/>
+	<field name="fArtefactBlockShift" type="Float"/>
+	<field name="fRedProbability" type="Float"/>
+	<field name="GreenProbability" type="BinHex"/>
+	<field name="fBlueProbability" type="Float"/>
+	<field name="fBlockyFactor" type="Float"/>
+	<field name="fOverlapFactor" type="Float"/>
+</class>

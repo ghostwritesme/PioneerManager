@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CloactionTriggerBehaviorsParameters">
+	<object name="TriggerBehaviors">
+		<inherit name="CloactionSharedParameters"/>
+		<inherit name="CloactionTriggerBehaviorsParameters"/>
+	</object>
+</class>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CloudsequenceParameters">
+	<inherit name="SharedParameters"/>
+	<field name="vectorSunPositionBias" type="Vector3"/>
+	<field name="fCrossFadeStart" type="Float"/>
+	<field name="fCrossFadeEnd" type="Float"/>
+	<object name="TimeOfDaySteps">
+		<object name="Step">
+			<object name="Time">
+				<field name="uiHours" type="Int64"/>
+				<field name="uiMinutes" type="Int64"/>
+				<field name="uiSeconds" type="Int64"/>
+			</object>
+			<object name="PlaneShape">
+				<field name="bEnabled" type="Boolean"/>
+				<field name="fSubsurfacePower" type="Float"/>
+				<field name="fVerticalScale" type="Float"/>
+				<field name="fVerticalOffset" type="Float"/>
+				<object name="LowerLayer">
+					<field name="text_fileAlbedo" type="String"/>
+					<field name="fileAlbedo" type="BinHex"/>
+					<field name="fileNormal" type="BinHex"/>
+					<field name="vector2Tiling" type="Vector2"/>
+					<field name="fSpeed" type="Float"/>
+					<field name="fIntensity" type="Float"/>
+				</object>
+				<object name="UpperLayer">
+					<field name="text_fileAlbedo" type="String"/>
+					<field name="fileAlbedo" type="BinHex"/>
+					<field name="fileNormal" type="BinHex"/>
+					<field name="vector2Tiling" type="Vector2"/>
+					<field name="fSpeed" type="Float"/>
+					<field name="fIntensity" type="Float"/>
+				</object>
+			</object>
+			<object name="RingShape">
+				<field name="bEnabled" type="Boolean"/>
+				<field name="fSubsurfacePower" type="Float"/>
+				<field name="fVerticalScale" type="Float"/>
+				<field name="fVerticalOffset" type="Float"/>
+				<object name="LowerLayer">
+					<field name="text_fileAlbedo" type="String"/>
+					<field name="fileAlbedo" type="BinHex"/>
+					<field name="fileNormal" type="BinHex"/>
+					<field name="vector2Tiling" type="Vector2"/>
+					<field name="fSpeed" type="Float"/>
+					<field name="fIntensity" type="Float"/>
+				</object>
+				<object name="UpperLayer">
+					<field name="text_fileAlbedo" type="String"/>
+					<field name="fileAlbedo" type="BinHex"/>
+					<field name="fileNormal" type="BinHex"/>
+					<field name="vector2Tiling" type="Vector2"/>
+					<field name="fSpeed" type="Float"/>
+					<field name="fIntensity" type="Float"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="curvePlaneShapeIntensity">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveRingShapeIntensity">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="gradSubsurfaceLowerLayerColor">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="gradSubsurfaceUpperLayerColor">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="gradAmbientColor">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="gradSubsurfaceBorderColor">
+		<inherit name="KnotsParameters"/>
+	</object>
+</class>

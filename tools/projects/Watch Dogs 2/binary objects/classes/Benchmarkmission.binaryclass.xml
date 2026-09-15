@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BenchmarkmissionParameters">
+	<inherit name="SharedParameters"/>
+	<field name="missionlistMission" type="BinHex"/>
+	<field name="sConsoleName" type="String"/>
+</class>

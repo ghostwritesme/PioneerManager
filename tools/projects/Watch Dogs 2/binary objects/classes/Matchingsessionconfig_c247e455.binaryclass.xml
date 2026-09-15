@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Matchingsessionconfig_c247e455Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMatchingLogicRefreshTime" type="Float"/>
+	<field name="fGoodMatchScore" type="Float"/>
+	<field name="fMediumMatchScore" type="Float"/>
+	<field name="fDoPullRequestViabilityChecksAfterTime" type="Float"/>
+	<field name="fDoSeamlessViabilityChecksAfterTime" type="Float"/>
+	<field name="fInitialMatchingDelayTime" type="Float"/>
+	<field name="fStatReportingTimeInterval" type="Float"/>
+	<field name="fStatReportingTimeInterval_InitialDelay" type="Float"/>
+	<field name="selScoreSortBy" type="Enum"/>
+</class>

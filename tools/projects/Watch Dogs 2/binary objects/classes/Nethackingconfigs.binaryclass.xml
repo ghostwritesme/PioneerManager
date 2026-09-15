@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="NethackingconfigsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_matHighlightMaterial" type="String"/>
+	<field name="matHighlightMaterial" type="BinHex"/>
+	<field name="selFocusOutlineColor" type="Enum"/>
+	<field name="fFocusOutlineIntensity" type="Float"/>
+	<field name="bTransparency" type="Boolean"/>
+	<field name="bDepthPass" type="Boolean"/>
+	<object name="ParticleEffects">
+		<object name="ParticleEffect">
+			<field name="text_psParticleEffect" type="String"/>
+			<field name="psParticleEffect" type="BinHex"/>
+			<field name="fRange" type="Float"/>
+		</object>
+	</object>
+</class>

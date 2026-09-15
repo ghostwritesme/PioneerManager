@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Narrativeinteldbsettings_4302584d">
+	<object name="obj">
+		<inherit name="Narrativeinteldbsettings_4302584dParameters"/>
+	</object>
+</file>

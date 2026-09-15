@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehicleentityconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="vehicleinfoVehicleSpawnInfo" type="BinHex"/>
+	<field name="selAffiliation" type="Enum"/>
+	<object name="PGTConfig">
+		<field name="bPGTCompliant" type="Boolean"/>
+		<field name="uiDifficultyValue" type="Int64"/>
+		<field name="bCanPatrol" type="Boolean"/>
+	</object>
+	<object name="Properties">
+		<field name="bIsBuddyAI" type="Boolean"/>
+		<field name="bIsPlayerAlly" type="Boolean"/>
+		<field name="selMindSet" type="Enum"/>
+		<field name="bForceRespawnAfterCheckpoint" type="Boolean"/>
+		<field name="stimtableStimEffectTable" type="BinHex"/>
+	</object>
+</class>

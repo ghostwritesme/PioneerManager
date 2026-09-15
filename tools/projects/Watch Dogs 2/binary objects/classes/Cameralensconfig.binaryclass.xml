@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CameralensconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fBloomIntensity" type="Float"/>
+	<field name="fBloomBloomLuminanceOffsetStart" type="Float"/>
+	<field name="fBloomLuminanceOffsetEnd" type="Float"/>
+	<field name="text_fileDirtTexture" type="String"/>
+	<field name="fileDirtTexture" type="BinHex"/>
+	<field name="fDirtIntensity" type="Float"/>
+	<field name="fDirtGamma" type="Float"/>
+	<field name="fVignettingAmount" type="Float"/>
+	<field name="fVignettingMidpoint" type="Float"/>
+	<field name="fVignettingAnisotropy" type="Float"/>
+	<field name="fVignettingFeather" type="Float"/>
+	<field name="bEnableDistortion" type="Boolean"/>
+	<field name="fKCylindrical" type="Float"/>
+	<field name="fKCubic" type="Float"/>
+	<field name="bEnableChromaticAberation" type="Boolean"/>
+	<field name="fStrength" type="Float"/>
+</class>

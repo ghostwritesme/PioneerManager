@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="LoottruckgameplaybrickParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fUnspawnDistance" type="Float"/>
+	<field name="failTimerMaxDuration" type="BinHex"/>
+	<field name="failTimerMaxDistanceWhenDurationAtZero" type="BinHex"/>
+	<field name="itemlistsProgressionReward" type="BinHex"/>
+	<field name="uiNumberOfSucceededEventToUnlockProgressionReward" type="Int64"/>
+	<field name="fDistFromEventToSwicthMode" type="Float"/>
+	<field name="fDistToDeactivateEvent" type="Float"/>
+	<field name="possyselementEventMarker" type="BinHex"/>
+	<field name="possyselementObjectiveMarker" type="BinHex"/>
+	<field name="possyselementObjectiveMarkerTeammate" type="BinHex"/>
+	<field name="possyselementObjectiveMarkerOpponent" type="BinHex"/>
+	<field name="texturedbobjectMissionModuleTextureIcon" type="BinHex"/>
+	<field name="discoverysettingsDiscoverySettings" type="BinHex"/>
+	<field name="fSearchAreaRadius" type="Float"/>
+	<field name="fMinRadiusRatioFromEventPos" type="Float"/>
+	<field name="fMaxRadiusRatioFromEventPos" type="Float"/>
+	<field name="selHowToReactToEvent" type="Enum"/>
+	<field name="fEventPropositionDisplayduration" type="Float"/>
+	<field name="bUseDistanceForEngagement" type="BinHex"/>
+	<field name="fEngagementDistFromEvent" type="Float"/>
+	<field name="fDisengagementDistFromEvent" type="Float"/>
+	<field name="selHackingConnectionColor" type="Enum"/>
+	<field name="fCheckHackableToArmFrequency" type="Float"/>
+	<field name="uiMaxElementToArm" type="Int64"/>
+	<field name="fMaxDistWithHacker" type="Float"/>
+	<field name="fMaxDistBetweenPlayerAndHackableToArm" type="Float"/>
+	<field name="fMaxDistBetweenPlayerAndHackableToDisarm" type="Float"/>
+	<field name="fMaxDistBetweenPlayerAndHackableToEnable" type="Float"/>
+	<field name="fMaxDistBetweenPlayerAndHackableToEnableForLight" type="Float"/>
+	<field name="fMinDistBetweenHackerAndHackableToEnable" type="Float"/>
+	<field name="fMinDistBetweenHackerAndDangerousHackable" type="Float"/>
+	<field name="fDelayToEnableHackable" type="Float"/>
+	<field name="bEnableWhenHackableBehindHacker" type="Boolean"/>
+	<field name="fMinDistBetweenPlayerAndHackableWhenWantToArm" type="Float"/>
+	<field name="vehiclebhvsetupVehicleGoToBhvSetup" type="BinHex"/>
+	<field name="vehiclebhvsetupVehicleWanderBhvSetup" type="BinHex"/>
+	<field name="vehiclebhvsetupVehicleFleeBhvSetup" type="BinHex"/>
+	<field name="vehiclebhvsetupVehicleGoAwayBhvSetup" type="BinHex"/>
+	<field name="vehiclebhvsetupVehicleStopBhvSetup" type="BinHex"/>
+	<field name="fPlayerReachRadius" type="Float"/>
+	<field name="fMinDistToGoToSecondPlayer" type="Float"/>
+	<field name="phonecommunicationsettingsPhoneCommunicationSettings" type="BinHex"/>
+	<field name="fTriggerTeamSpeakRadius" type="Float"/>
+	<field name="fMinDistFromEntityToFleeTo" type="Float"/>
+	<field name="bSendTrackingEvent" type="Boolean"/>
+	<field name="fGoToPlayerDuration" type="BinHex"/>
+	<field name="fRoamingDuration" type="BinHex"/>
+	<field name="fPostSucceedDelay" type="BinHex"/>
+	<field name="hackingprofileHackingProfileBeforeBreach" type="BinHex"/>
+	<field name="hackingprofileHackingProfileAfterBreach" type="BinHex"/>
+	<field name="vehicleinfoAfterEventTruckSpawnInfo" type="BinHex"/>
+	<field name="fDisengagementWarningTime" type="BinHex"/>
+	<field name="fPackageDroppedWarningTime" type="BinHex"/>
+	<field name="fPackageDroppedPreWarningTime" type="BinHex"/>
+	<field name="fPackageDroppedWarningMinDistance" type="BinHex"/>
+	<field name="fMaxDistanceForTargetLineOfSight" type="BinHex"/>
+	<field name="fLOSEngagementDuration" type="BinHex"/>
+	<field name="fRewardTimeInterval" type="BinHex"/>
+	<field name="iRewardPctForWinningTeam" type="BinHex"/>
+	<field name="iPossessionPctNeededForRewardPct" type="BinHex"/>
+	<field name="fRespawnNearMinDistanceFromTarget" type="BinHex"/>
+	<field name="fRespawnNearMaxDistanceFromTarget" type="BinHex"/>
+	<field name="fRespawnFarMinDistanceFromTarget" type="BinHex"/>
+	<field name="fRespawnFarMaxDistanceFromTarget" type="BinHex"/>
+	<field name="fSpectatorCamDistanceForLongTransition" type="BinHex"/>
+	<field name="fSpectatorCamLongTransitionDuration" type="BinHex"/>
+	<field name="fSpectatorCamShortTransitionDuration" type="BinHex"/>
+	<field name="fBlackScreenDurationBeforeLoadingScreen" type="BinHex"/>
+	<field name="fPVPRespawnTime_2Players_FFA" type="BinHex"/>
+	<field name="fPVPRespawnTime_3Players_FFA" type="BinHex"/>
+	<field name="fPVPRespawnTime_3Players_1vs2" type="BinHex"/>
+	<field name="fPVPRespawnTime_3Players_2vs1" type="BinHex"/>
+	<field name="fPVPRespawnTime_4Players_FFA" type="BinHex"/>
+	<field name="fPVPRespawnTime_4Players_2vs2" type="BinHex"/>
+	<field name="fPVPRespawnTime_4Players_2vs1vs1" type="BinHex"/>
+	<field name="fPVPRespawnTime_4Players_1vs1vs2" type="BinHex"/>
+	<field name="fOnPackageOwnerLOSHysteresis" type="BinHex"/>
+	<field name="fSpottedWarningDuration" type="BinHex"/>
+	<field name="fPVPConflictTimerDuration" type="BinHex"/>
+	<field name="fSearchPhaseDuration_2Players_FFA" type="BinHex"/>
+	<field name="fSearchPhaseDuration_3Players_FFA" type="BinHex"/>
+	<field name="fSearchPhaseDuration_4Players_FFA" type="BinHex"/>
+	<field name="fSearchPhaseDuration_4Players_1vs1vs2" type="BinHex"/>
+	<field name="fSearchPhaseDuration_3Players_1vs2" type="BinHex"/>
+	<field name="fSearchPhaseDuration_3Players_2vs1" type="BinHex"/>
+	<field name="fSearchPhaseDuration_4Players_2vs1vs1" type="BinHex"/>
+	<field name="fSearchPhaseDuration_4Players_2vs2" type="BinHex"/>
+	<field name="text_PlayerBindBoneId" type="String"/>
+	<field name="PlayerBindBoneId" type="BinHex"/>
+	<field name="text_LootTruckBindBoneId" type="String"/>
+	<field name="LootTruckBindBoneId" type="BinHex"/>
+	<field name="fBreachAwareTimeMin" type="BinHex"/>
+	<field name="fBreachAwareTimeMax" type="BinHex"/>
+	<field name="fBreachReactionTime" type="BinHex"/>
+	<field name="fBreachGotoTime" type="BinHex"/>
+	<field name="fBreachFleeTime" type="BinHex"/>
+	<field name="fBeforeThreatTime" type="BinHex"/>
+	<field name="fDecryptFelonyStepPercentage" type="BinHex"/>
+	<field name="OnAttackedFelonyLevel" type="BinHex"/>
+	<field name="DecryptFelonyLevel" type="BinHex"/>
+	<field name="humanconfigLootTruckVehicleDriverHumanConfig" type="BinHex"/>
+	<field name="humanconfigLootTruckVehiclePassengerHumanConfig" type="BinHex"/>
+	<field name="fInFelonyEngagementDistanceToOtherPlayer" type="BinHex"/>
+	<field name="chaselevelparametersCustomChaseParamsLevel1" type="BinHex"/>
+	<field name="chaselevelparametersCustomChaseParamsLevel2" type="BinHex"/>
+	<field name="chaselevelparametersCustomChaseParamsLevel3" type="BinHex"/>
+	<field name="chaselevelparametersCustomChaseParamsLevel4" type="BinHex"/>
+	<field name="chaselevelparametersCustomChaseParamsLevel5" type="BinHex"/>
+	<field name="vec3TruckMarkerOffset" type="BinHex"/>
+	<field name="vec3PackageMarkerOffset" type="BinHex"/>
+	<field name="text_sBreachStartCallID" type="String"/>
+	<field name="sBreachStartCallID" type="BinHex"/>
+	<field name="text_sBreachRequestBackupCallID" type="String"/>
+	<field name="sBreachRequestBackupCallID" type="BinHex"/>
+	<field name="text_sBreachBackupAnswerCallID" type="String"/>
+	<field name="sBreachBackupAnswerCallID" type="BinHex"/>
+	<field name="text_sBreachCompletedCallID" type="String"/>
+	<field name="sBreachCompletedCallID" type="BinHex"/>
+	<field name="text_sDecryptCallID" type="String"/>
+	<field name="sDecryptCallID" type="BinHex"/>
+	<field name="text_sDecryptMoreFelonyCallID" type="String"/>
+	<field name="sDecryptMoreFelonyCallID" type="BinHex"/>
+	<field name="text_sGuardsOutCallID" type="String"/>
+	<field name="sGuardsOutCallID" type="BinHex"/>
+	<field name="text_sPackageStolenCallID" type="String"/>
+	<field name="sPackageStolenCallID" type="BinHex"/>
+	<field name="text_sPackageDroppedCallID" type="String"/>
+	<field name="sPackageDroppedCallID" type="BinHex"/>
+	<field name="text_sndPickupLootSound" type="String"/>
+	<field name="sndPickupLootSound" type="BinHex"/>
+	<field name="phonecommunicationbankSuccessEndingPhoneCommunicationBank" type="BinHex"/>
+	<field name="phonecommunicationbankFailureEndingPhoneCommunicationBank" type="BinHex"/>
+	<object name="locstridTutorialUseNetHackMessageLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridTutorialUseNetHackMessageWhenInCarLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridWarningMessageWhenQuitSearchAreaLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridWarningMessageHeaderWhenQuitSearchAreaLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEventPropositionTitleLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEventPropositionDescriptionLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEventPropositionInputActionLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEventPropositionInputActionLocIdPCSpecific">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEventFailedAIEscapedLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEventAbortedByAnotherPlayerLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="IAHackingLineSettings">
+		<field name="fileLineTexture" type="BinHex"/>
+		<field name="fWorldOffset" type="Float"/>
+		<field name="fTimedLineDuration" type="Float"/>
+		<object name="curveLineWidthOverDist">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="locstridWarningHeaderLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridWarningMessageLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridSpecialBountyWarningHeaderLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridSpecialBountyWarningMessageLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridDisengagementWarningLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridPackageDroppedWarningLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridLogPackageDroppedLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridLogPackagePickedUpLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridBreachTruckObjectiveLocID">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridRetrievePackageObjectiveLocID">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridDroppedRetrievePackageObjectiveLocID">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridDecryptPackageObjectiveLocID">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEscapePoliceObjectiveLocID">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEscapePVPObjectiveLocID">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridProtectCarrierObjectiveLocID">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEventCompletedLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEventFailedTooFarLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEventFailedPlayerDeathLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEventFailedOtherPlayerDeathLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEventFailedPackageLostLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEventFailedTruckUnavailableLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridEventFailedPackageDroppedSelfDestructLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+</class>

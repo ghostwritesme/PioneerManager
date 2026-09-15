@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="FleecompletiondescriptorParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Destination">
+		<field name="fDestinationRadius" type="Float"/>
+	</object>
+	<object name="FleeFromPlayers">
+		<field name="bfleeFromPlayers" type="BinHex"/>
+	</object>
+	<object name="ConditionResults">
+		<field name="KillResult" type="BinHex"/>
+		<field name="ShootResult" type="BinHex"/>
+		<field name="CatchResult" type="BinHex"/>
+	</object>
+	<object name="Threats">
+		<field name="fThreatDistanceWarningDuration" type="Float"/>
+		<field name="fWarningDistanceFromThreats" type="Float"/>
+		<field name="fMinDistanceFromThreats" type="Float"/>
+	</object>
+	<object name="LineOfSight">
+		<field name="fLineOfSightWarningDuration" type="Float"/>
+		<field name="fLineOfSightFailingDuration" type="Float"/>
+	</object>
+</class>

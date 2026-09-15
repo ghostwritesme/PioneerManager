@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Taxiactivitymanagerdescriptor_fc092c88Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fActivityNotificationRange" type="Float"/>
+	<field name="fActivityNotificationTimer" type="Float"/>
+	<field name="uiappAppDriverSF" type="BinHex"/>
+	<object name="Configs">
+		<object name="EasyConfigs">
+			<object name="trcompcfgCfg">
+				<field name="trcompcfgCfg" type="BinHex"/>
+			</object>
+		</object>
+		<object name="MediumConfigs">
+			<object name="trcompcfgCfg">
+				<field name="trcompcfgCfg" type="BinHex"/>
+			</object>
+		</object>
+		<object name="HardConfigs">
+			<object name="trcompcfgCfg">
+				<field name="trcompcfgCfg" type="BinHex"/>
+			</object>
+		</object>
+		<object name="CustomConfigs">
+			<object name="trcompcfgCfg">
+				<field name="trcompcfgCfg" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="DriverSfAppAvailability">
+		<object name="MissionCriteria">
+			<object name="MissionCriteriaGroup">
+				<object name="MissionCriteria">
+					<field name="text_criteriaMissionCriteriaType" type="String"/>
+					<field name="criteriaMissionCriteriaType" type="BinHex"/>
+					<object name="CriteriaParameters">
+						<field name="progressiontagProgressionTag" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="SystemicTexts">
+		<object name="RandomTextsToTags">
+			<object name="RandomTextsToTag">
+				<object name="Tags">
+					<object name="Tag">
+						<field name="text_selTag" type="BinHex"/>
+						<field name="selTag" type="Enum"/>
+					</object>
+				</object>
+				<object name="Titles">
+					<object name="Title">
+						<object name="locstridTitle">
+							<field name="LocalizationId" type="Int64"/>
+						</object>
+					</object>
+				</object>
+				<object name="Descriptions">
+					<object name="Description">
+						<object name="locstridDescription">
+							<field name="LocalizationId" type="Int64"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="GlobalSettings">
+		<field name="bAllowSameStartlocation" type="Boolean"/>
+		<field name="bUseBlackSceenTranzition" type="Boolean"/>
+		<field name="uiNumberOfAvailableActivities" type="Int64"/>
+		<field name="uiMinNumberOfSystemicActivities" type="Int64"/>
+		<field name="uiMaxNumberOfSystemicActivities" type="Int64"/>
+		<field name="fOutOfRangeDistance" type="Float"/>
+		<field name="fMinDistanceToWaitForClient" type="Float"/>
+		<field name="fMinDistanceToClientEnter" type="Float"/>
+		<field name="fSpeedToConsiderStationary" type="Float"/>
+		<field name="fMinDistanceToDestinationCheck" type="Float"/>
+		<field name="fDistanceToHailTheCab" type="Float"/>
+		<field name="fDistanceToConsiderTooFar" type="Float"/>
+		<field name="fSecondsToConsiderIdle" type="Float"/>
+		<field name="fSecondsToGetBackInTheCar" type="Float"/>
+		<field name="fSecondsToDisplayWarnings" type="Float"/>
+		<field name="fDistanceToDisplayVehicleWarnings" type="Float"/>
+		<field name="fHandBrakeFactor" type="Float"/>
+		<field name="selForcedBrakeType" type="Enum"/>
+		<field name="archDestinationArchetype" type="BinHex"/>
+		<field name="missionlistCustomMission" type="BinHex"/>
+	</object>
+	<object name="CameraAnimations">
+		<field name="fCameraBlendInTime" type="Float"/>
+		<field name="fCameraBlendOutTime" type="Float"/>
+		<field name="fWaitSecondsBeforeTeleportAnimatedIn" type="Float"/>
+		<field name="fWaitSecondsBeforeTeleportAnimatedOut" type="Float"/>
+		<field name="text_fileAnimatedGetInCamera" type="String"/>
+		<field name="fileAnimatedGetInCamera" type="BinHex"/>
+		<field name="text_fileAnimatedGetOutCamera" type="String"/>
+		<field name="fileAnimatedGetOutCamera" type="BinHex"/>
+		<field name="text_filePlayerGetInCarAnimationPathId" type="String"/>
+		<field name="filePlayerGetInCarAnimationPathId" type="BinHex"/>
+		<field name="text_filePlayerGetOutOfCarAnimationPathId" type="String"/>
+		<field name="filePlayerGetOutOfCarAnimationPathId" type="BinHex"/>
+		<object name="TaxiVehicleAnimations">
+			<object name="TaxiVehicleAnimation">
+				<field name="text_archVehicleName" type="String"/>
+				<field name="archVehicleName" type="BinHex"/>
+				<field name="text_fileAnimatedGetInCamera" type="String"/>
+				<field name="fileAnimatedGetInCamera" type="BinHex"/>
+				<field name="text_fileAnimatedGetOutCamera" type="String"/>
+				<field name="fileAnimatedGetOutCamera" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="AnimationSettings">
+		<field name="singleclocreationsettingsSpawnSettings" type="BinHex"/>
+		<field name="text_sTriggerBhvHailParam" type="String"/>
+		<field name="sTriggerBhvHailParam" type="BinHex"/>
+	</object>
+	<object name="SoundEffects">
+		<field name="text_sndReachedCheckpointSoundEffect" type="String"/>
+		<field name="sndReachedCheckpointSoundEffect" type="BinHex"/>
+		<field name="text_sndFareStartSoundEffect" type="String"/>
+		<field name="sndFareStartSoundEffect" type="BinHex"/>
+		<field name="text_sndFareEndSoundEffect" type="String"/>
+		<field name="sndFareEndSoundEffect" type="BinHex"/>
+		<field name="text_sndGainedStarSoundEffect" type="String"/>
+		<field name="sndGainedStarSoundEffect" type="BinHex"/>
+		<field name="text_sndLostStarSoundEffect" type="String"/>
+		<field name="sndLostStarSoundEffect" type="BinHex"/>
+	</object>
+	<object name="LocationTags">
+		<object name="Tag">
+			<field name="Tag" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Progression">
+		<field name="itemlistsThreeSystemicsRewards" type="BinHex"/>
+		<field name="itemlistsCustomFinishedRewards" type="BinHex"/>
+		<field name="fMinRating" type="Float"/>
+		<field name="fMaxRating" type="Float"/>
+		<object name="Reward1">
+			<field name="nRequiredStars" type="Int32"/>
+			<field name="sRewardIconName" type="BinHex"/>
+			<object name="locstridRewardName">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridRewardDesc">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="Reward2">
+			<field name="nRequiredStars" type="Int32"/>
+			<field name="sRewardIconName" type="BinHex"/>
+			<object name="locstridRewardName">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridRewardDesc">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="Reward3">
+			<field name="nRequiredStars" type="Int32"/>
+			<field name="sRewardIconName" type="BinHex"/>
+			<object name="locstridRewardName">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridRewardDesc">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="Reward4">
+			<field name="nRequiredStars" type="Int32"/>
+			<field name="sRewardIconName" type="BinHex"/>
+			<object name="locstridRewardName">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridRewardDesc">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="RatingRewards">
+			<object name="TaxiReward">
+				<object name="SystemicRewards">
+					<object name="Items">
+						<field name="itemsItem" type="BinHex"/>
+					</object>
+				</object>
+				<object name="CustomRewards">
+					<object name="Items">
+						<field name="itemsItem" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="RankRewards">
+			<object name="TaxiReward">
+				<object name="Rewards">
+					<object name="Items">
+						<field name="itemsItem" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="ThreeSystemicsFinishedRewards">
+			<object name="Item">
+				<field name="itemsItem" type="BinHex"/>
+			</object>
+		</object>
+		<object name="AllCustomFinishedRewards">
+			<object name="Item">
+				<field name="itemsItem" type="BinHex"/>
+			</object>
+		</object>
+		<object name="curveEasyMissionsWeight">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveMediumMissionsWeight">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveHardMissionsWeight">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveCustomMissionsWeight">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="UI">
+		<field name="mapicondescObjectiveMarker" type="BinHex"/>
+		<field name="text_archIconInteractionYArchetype" type="String"/>
+		<field name="archIconInteractionYArchetype" type="BinHex"/>
+		<field name="fShowMarkerDistance" type="Float"/>
+		<field name="fHideMarkerDistance" type="Float"/>
+		<field name="fShowNotificationDistanceOnFoot" type="BinHex"/>
+		<field name="fShowNotificationDistance" type="Float"/>
+		<field name="fHideNotificationDistance" type="Float"/>
+	</object>
+</class>

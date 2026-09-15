@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CloudlayerParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bEnable" type="Boolean"/>
+	<field name="iRenderingOrder" type="Int32"/>
+	<field name="uiRandomSeed" type="Int64"/>
+	<field name="fOrientation" type="Float"/>
+	<field name="fPositionScale" type="Float"/>
+	<field name="fTileScale" type="Float"/>
+	<field name="bEnableAlphaBlend" type="Boolean"/>
+	<field name="fEarthRadius" type="Float"/>
+	<field name="fLayerHeight" type="Float"/>
+	<field name="bCylindricProjectionEnabled" type="Boolean"/>
+	<field name="fCylindricProjectionOffset" type="Float"/>
+	<field name="fCylindricDistributionRandomFactor" type="Float"/>
+	<field name="fCylindricSkewYAxis" type="Float"/>
+	<field name="fFadeInOutSlope" type="Float"/>
+	<field name="fVelocity" type="Float"/>
+	<field name="uiTileCount" type="Int64"/>
+	<field name="fTileXSizeMin" type="Float"/>
+	<field name="fTileXSizeMax" type="Float"/>
+	<field name="fTileYSizeMin" type="Float"/>
+	<field name="fTileYSizeMax" type="Float"/>
+	<field name="fDepth" type="Float"/>
+	<field name="fPhase" type="Float"/>
+	<field name="fPhaseIntensity" type="Float"/>
+	<field name="fPhaseAmbient" type="Float"/>
+	<field name="fPhaseAmbientIntensity" type="Float"/>
+	<field name="fAmbientIntensity" type="Float"/>
+	<field name="fSelfShadowCoef" type="Float"/>
+	<field name="fScatteringForLowAlpha" type="Float"/>
+	<field name="fScatteringForHighAlpha" type="Float"/>
+	<field name="fExtinctionForLowAlpha" type="Float"/>
+	<field name="fExtinctionForHighAlpha" type="Float"/>
+	<object name="Materials">
+		<object name="Material">
+			<field name="text_matMaterial" type="String"/>
+			<field name="matMaterial" type="BinHex"/>
+		</object>
+	</object>
+</class>

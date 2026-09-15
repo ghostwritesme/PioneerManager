@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="FovsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fLateralBase" type="Float"/>
+	<field name="fLateralMidRatio" type="Float"/>
+	<field name="fLateralMax" type="Float"/>
+	<field name="fHeightBase" type="Float"/>
+	<field name="fHeightMidRatio" type="Float"/>
+	<field name="fMinDistToUseBodyDir" type="Float"/>
+	<field name="fMaxDistToUseMobileElementDir" type="Float"/>
+	<object name="curveMaxDepthByTimeOfDayCurve">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveMaxHeightByTimeOfDayCurve">
+		<inherit name="KnotsParameters"/>
+	</object>
+</class>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="FireuiblobdataParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_fileBlobResource" type="String"/>
+	<field name="fileBlobResource" type="BinHex"/>
+	<field name="text_fileTextureResource" type="String"/>
+	<field name="fileTextureResource" type="BinHex"/>
+</class>

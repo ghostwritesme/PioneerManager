@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ConversationinteractionsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="GeneralSettings">
+		<field name="bCanReceiveEvolvingWorldNarrativeContent" type="Boolean"/>
+		<field name="vectorAutoNavPositionOffset" type="Vector3"/>
+		<field name="fAutoNavYawOffset" type="Float"/>
+		<field name="selAvailabilityType" type="Enum"/>
+		<field name="fInteractionAvailabilityDistance" type="Float"/>
+		<field name="fInteractionVisibilityDistance" type="Float"/>
+		<field name="vectorAvailabilityIconOffset" type="Vector3"/>
+		<field name="vectorVisibilityIconOffset" type="Vector3"/>
+		<field name="fLookAtPlayerDistance" type="Float"/>
+		<field name="bForceTalkerCollision" type="Boolean"/>
+		<object name="locstridInteractionText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="LookAtSettings">
+			<field name="selLookAtType" type="Enum"/>
+			<field name="selPriority" type="Enum"/>
+			<field name="bUseTimer" type="Boolean"/>
+			<field name="fLookAtDurationMin" type="Float"/>
+			<field name="fLookAtDurationMax" type="Float"/>
+			<field name="bUseMaxAngles" type="Boolean"/>
+			<object name="Angles">
+				<field name="fMaxDown" type="Float"/>
+				<field name="fMaxUp" type="Float"/>
+				<field name="fMaxLeft" type="Float"/>
+				<field name="fMaxRight" type="Float"/>
+			</object>
+			<object name="LookAtMoveState">
+				<field name="fileMovePath" type="BinHex"/>
+			</object>
+		</object>
+		<object name="PlayerAnimation">
+			<field name="text_fileAnimationPath" type="String"/>
+			<field name="fileAnimationPath" type="BinHex"/>
+			<field name="sAnchorName" type="BinHex"/>
+			<field name="bUseForceDisplacement" type="Boolean"/>
+			<field name="vectorAnchorLocalPositionOffset" type="Vector3"/>
+			<field name="vectorAnchorLocalOrientationOffset" type="Vector3"/>
+			<field name="bKillLayerAnimations" type="Boolean"/>
+			<field name="fileAnimatedCamera" type="BinHex"/>
+			<object name="AnchorPartNames"/>
+		</object>
+		<object name="EntityAnimation">
+			<field name="text_fileAnimationPath" type="String"/>
+			<field name="fileAnimationPath" type="BinHex"/>
+			<field name="sAnchorName" type="BinHex"/>
+			<field name="bUseForceDisplacement" type="Boolean"/>
+			<field name="vectorAnchorLocalPositionOffset" type="Vector3"/>
+			<field name="vectorAnchorLocalOrientationOffset" type="Vector3"/>
+			<field name="bKillLayerAnimations" type="Boolean"/>
+			<field name="fileAnimatedCamera" type="BinHex"/>
+			<object name="AnchorPartNames"/>
+		</object>
+	</object>
+	<object name="Conversations">
+		<object name="MissionConversationGroup">
+			<object name="MissionConversation">
+				<field name="bMissionActivator" type="Boolean"/>
+				<field name="bMissionActivatorHidden" type="Boolean"/>
+				<field name="conversationsettingConversation" type="BinHex"/>
+				<field name="availabilityrulegroupAvailabilityRuleGroup" type="BinHex"/>
+				<field name="conversationcameraConversationCameraSetting" type="BinHex"/>
+				<field name="bSkippable" type="Boolean"/>
+				<field name="bRepeatable" type="Boolean"/>
+				<field name="missionlistMission" type="BinHex"/>
+				<field name="entMissionIconEntity" type="BinHex"/>
+				<field name="vectorMissionIconPositionOffset" type="Vector3"/>
+			</object>
+		</object>
+		<object name="MissionFillerConversationGroup">
+			<object name="MissionFillerConversation">
+				<field name="conversationsettingConversation" type="BinHex"/>
+				<field name="availabilityrulegroupAvailabilityRuleGroup" type="BinHex"/>
+				<field name="conversationcameraConversationCameraSetting" type="BinHex"/>
+				<field name="bSkippable" type="Boolean"/>
+				<field name="bRepeatable" type="Boolean"/>
+			</object>
+		</object>
+		<object name="SpecificConversationGroup">
+			<object name="SpecificConversation">
+				<field name="conversationsettingConversation" type="BinHex"/>
+				<field name="availabilityrulegroupAvailabilityRuleGroup" type="BinHex"/>
+				<field name="conversationcameraConversationCameraSetting" type="BinHex"/>
+				<field name="bSkippable" type="Boolean"/>
+				<field name="bRepeatable" type="Boolean"/>
+			</object>
+		</object>
+		<object name="FillerConversationGroup">
+			<object name="FillerConversation">
+				<field name="conversationsettingConversation" type="BinHex"/>
+				<field name="availabilityrulegroupAvailabilityRuleGroup" type="BinHex"/>
+				<field name="conversationcameraConversationCameraSetting" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="AtlasProperties">
+		<field name="bExportToAtlas" type="BinHex"/>
+		<field name="atlastypeElementType" type="String"/>
+	</object>
+</class>

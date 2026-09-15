@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Inputcontrollerinventorysettings_25688f59Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="InputSettings">
+		<field name="uAngleTeshold" type="Int64"/>
+	</object>
+	<object name="Slots">
+		<object name="Slot0">
+			<field name="dStartAngle" type="BinHex"/>
+			<field name="dEndAngle" type="BinHex"/>
+		</object>
+		<object name="Slot1">
+			<field name="dStartAngle" type="BinHex"/>
+			<field name="dEndAngle" type="BinHex"/>
+		</object>
+		<object name="Slot2">
+			<field name="dStartAngle" type="BinHex"/>
+			<field name="dEndAngle" type="BinHex"/>
+		</object>
+		<object name="Slot3">
+			<field name="dStartAngle" type="BinHex"/>
+			<field name="dEndAngle" type="BinHex"/>
+		</object>
+		<object name="Slot4">
+			<field name="dStartAngle" type="BinHex"/>
+			<field name="dEndAngle" type="BinHex"/>
+		</object>
+		<object name="Slot5">
+			<field name="dStartAngle" type="BinHex"/>
+			<field name="dEndAngle" type="BinHex"/>
+		</object>
+		<object name="Slot6">
+			<field name="dStartAngle" type="BinHex"/>
+			<field name="dEndAngle" type="BinHex"/>
+		</object>
+		<object name="Slot7">
+			<field name="dStartAngle" type="BinHex"/>
+			<field name="dEndAngle" type="BinHex"/>
+		</object>
+	</object>
+</class>

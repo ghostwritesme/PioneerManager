@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="TaxiactivityclientParameters">
+	<inherit name="SharedParameters"/>
+	<field name="humanconfigHumanConfig" type="BinHex"/>
+	<field name="fileClientPicture" type="String"/>
+	<field name="singleclocreationsettingsCustomDestinationAction" type="BinHex"/>
+	<field name="fGoToTargetSpeed" type="Float"/>
+	<field name="bDoSmokeAnim" type="Boolean"/>
+</class>

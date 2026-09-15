@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="MaterialoverrideParameters">
+	<inherit name="SharedParameters"/>
+	<field name="matsetMaterialSet" type="BinHex"/>
+	<object name="Entries">
+		<field name="text_SlotName" type="String"/>
+		<field name="SlotName" type="BinHex"/>
+		<field name="selMaterial" type="Enum"/>
+		<object name="Entries">
+			<field name="text_SlotName" type="String"/>
+			<field name="SlotName" type="BinHex"/>
+			<field name="text_selMaterial" type="String"/>
+			<field name="selMaterial" type="Enum"/>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="SoundocclusionholeParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fOcclusionValueOpened" type="Float"/>
+	<field name="fOcclusionValueClosed" type="Float"/>
+	<field name="iPortalPointsCount" type="Int32"/>
+	<field name="fRadius" type="Float"/>
+	<object name="AmbianceSplitter">
+		<field name="fOutsideRadius" type="Float"/>
+		<field name="fInsideRadius" type="Float"/>
+	</object>
+</class>

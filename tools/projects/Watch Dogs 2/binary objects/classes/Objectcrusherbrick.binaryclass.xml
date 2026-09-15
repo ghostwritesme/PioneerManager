@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ObjectcrusherbrickParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bOverrideProfilerSettings" type="Boolean"/>
+	<object name="CrusherParameters">
+		<field name="fCrusherDamage" type="Float"/>
+		<field name="fleebehaviordescriptorFleeBhvDescriptor" type="BinHex"/>
+		<field name="selCrusherCycleBreakerWhenPicked" type="Enum"/>
+	</object>
+	<object name="EventParameters">
+		<field name="fEventDuration" type="Float"/>
+		<field name="fAlarmTriggerPercentage" type="Float"/>
+		<field name="matimpCrushImpact" type="BinHex"/>
+	</object>
+	<object name="ProfilerSettings">
+		<field name="profilerinfofilterProfileFilter" type="BinHex"/>
+		<field name="fileProfilerThumbnailOverride" type="BinHex"/>
+		<field name="vectorProfilerSquareTargetOffset" type="Vector3"/>
+		<field name="vectorProfilerLineTargetOffset" type="Vector3"/>
+		<field name="bIsProfilerSticky" type="Boolean"/>
+		<field name="selProfileColorTypeOverride" type="Enum"/>
+		<object name="locsectionidProfile">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="IconLocations"/>
+		<object name="TargetingBoneNames"/>
+	</object>
+</class>

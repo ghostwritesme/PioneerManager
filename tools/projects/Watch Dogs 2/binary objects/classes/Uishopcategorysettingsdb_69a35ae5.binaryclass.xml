@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uishopcategorysettingsdb_69a35ae5Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="ShopCategorySettings">
+		<object name="ShopCategorySetting">
+			<field name="selShopCategoryType" type="BinHex"/>
+			<field name="itemsUnequipClothItem" type="BinHex"/>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehiclegoingstraighttweakParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fAngVelReduceAccHigh" type="Float"/>
+	<field name="fAngVelReduceAccLow" type="Float"/>
+	<field name="fBodySlipLow" type="Float"/>
+	<field name="fBodySlipHigh" type="Float"/>
+	<field name="fInputFadeZone" type="Float"/>
+	<field name="bUseRearLateralSlip" type="Boolean"/>
+</class>

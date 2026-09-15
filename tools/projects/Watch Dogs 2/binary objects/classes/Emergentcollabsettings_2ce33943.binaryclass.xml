@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Emergentcollabsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fDisconnectionDistance" type="Float"/>
+	<field name="fNeutralEncounterDisconnectionDistance" type="Float"/>
+	<field name="fSeamlessActivityPropositionDuration" type="Float"/>
+	<field name="fGameModeDistanceDisconnectionDelayOnStar" type="Float"/>
+	<field name="fPlayerVisibilityDistance" type="Float"/>
+	<field name="fPlayerVisibilityInCarDistance" type="Float"/>
+	<field name="fPlayerInvisibilityDistance" type="Float"/>
+	<field name="fDamageWarningDuration" type="Float"/>
+	<field name="fDamageKickOutStateResetDuration" type="Float"/>
+	<field name="fCoopProposalDurationWhenEnteringPartnerVehicle" type="BinHex"/>
+</class>

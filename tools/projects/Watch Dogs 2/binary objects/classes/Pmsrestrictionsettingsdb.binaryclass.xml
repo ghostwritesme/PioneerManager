@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PmsrestrictionsettingsdbParameters">
+	<inherit name="SharedParameters"/>
+	<object name="PmsRestriction">
+		<object name="Needed">
+			<object name="PMSValueOR">
+				<object name="PMSValuesAND">
+					<object name="PMSValueAND">
+						<field name="text_pmsPMSName" type="String"/>
+						<field name="pmsPMSName" type="BinHex"/>
+						<field name="selEnumValue" type="Enum"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="Excluded">
+			<object name="PMSValue">
+				<field name="text_pmsPMSName" type="String"/>
+				<field name="pmsPMSName" type="BinHex"/>
+				<field name="bBoolValue" type="Boolean"/>
+			</object>
+		</object>
+	</object>
+</class>

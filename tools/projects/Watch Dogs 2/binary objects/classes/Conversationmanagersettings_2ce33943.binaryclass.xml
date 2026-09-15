@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Conversationmanagersettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_fileConvTableFile" type="String"/>
+	<field name="fileConvTableFile" type="BinHex"/>
+	<field name="conversationcameraDefaultConversationCameraSetting" type="BinHex"/>
+	<object name="EpisodeRanges">
+		<object name="Ranges">
+			<field name="EpisodeName" type="BinHex"/>
+			<field name="nStartChapter" type="Int32"/>
+			<field name="nStartSubChapter" type="Int32"/>
+			<field name="nEndChapter" type="Int32"/>
+			<field name="nEndSubChapter" type="Int32"/>
+		</object>
+	</object>
+	<object name="TestConversation">
+		<field name="conversationsettingTestConversation" type="BinHex"/>
+		<field name="text_archMasterArchetype" type="String"/>
+		<field name="archMasterArchetype" type="BinHex"/>
+		<field name="text_archSlaveArchetype" type="String"/>
+		<field name="archSlaveArchetype" type="BinHex"/>
+		<field name="text_tmplMasterDialogActor" type="String"/>
+		<field name="tmplMasterDialogActor" type="BinHex"/>
+		<field name="text_tmplSlaveDialogActor" type="String"/>
+		<field name="tmplSlaveDialogActor" type="BinHex"/>
+	</object>
+</class>

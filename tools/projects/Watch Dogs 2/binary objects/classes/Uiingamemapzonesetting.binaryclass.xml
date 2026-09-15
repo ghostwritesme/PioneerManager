@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UiingamemapzonesettingParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bUseFill" type="Boolean"/>
+	<field name="colorFillColor" type="VectorColor"/>
+	<field name="FillColorAlpha" type="Float"/>
+	<field name="bUseInnerFill" type="Boolean"/>
+	<field name="colorInnerColor" type="VectorColor"/>
+	<field name="InnerColorAlpha" type="Float"/>
+	<field name="fInnerRadiusRatio" type="Float"/>
+	<field name="bUseBorder" type="Boolean"/>
+	<field name="colorBorderColor" type="VectorColor"/>
+	<field name="BorderColorAlpha" type="Float"/>
+	<field name="bUseFx" type="Boolean"/>
+	<field name="colorFxColor" type="VectorColor"/>
+	<field name="FxColorAlpha" type="Float"/>
+	<field name="colorFxBorderColor" type="VectorColor"/>
+	<field name="FxBorderColorAlpha" type="Float"/>
+	<field name="colorFxCenterColor" type="VectorColor"/>
+	<field name="FxCenterColorAlpha" type="Float"/>
+	<field name="fScaleAnimationTime" type="Float"/>
+	<field name="fScaleAnimationDelay" type="Float"/>
+	<field name="fPosAnimationTime" type="Float"/>
+	<field name="fPosAnimationDelay" type="Float"/>
+	<field name="bIsDrawAreaOutsideShape" type="Boolean"/>
+	<field name="fMaxDistanceFromPlayer" type="Float"/>
+	<field name="bIsFilteredNear" type="Boolean"/>
+	<field name="bIsFilteredMid" type="Boolean"/>
+	<field name="bIsFilteredFar" type="Boolean"/>
+	<field name="bIsInnerColorSerialized" type="Boolean"/>
+	<object name="FillIconAnimationTexture">
+		<field name="bIsUsed" type="Boolean"/>
+		<field name="bIsLooping" type="Boolean"/>
+		<field name="selDispensorType" type="Enum"/>
+		<field name="fIconSwapDelay" type="Float"/>
+		<object name="IconTexturesList">
+			<object name="IconTexture">
+				<field name="text_fileIconTexture" type="String"/>
+				<field name="fileIconTexture" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="FillIconAnimationColor">
+		<field name="bIsUsed" type="Boolean"/>
+		<field name="bIsLooping" type="Boolean"/>
+		<field name="bIsOneWay" type="Boolean"/>
+		<field name="colorStartColor" type="VectorColor"/>
+		<field name="fStartAlpha" type="Float"/>
+		<field name="colorEndColor" type="VectorColor"/>
+		<field name="fEndAlpha" type="Float"/>
+		<field name="fColorAnimDelay" type="Float"/>
+		<field name="fColorAnimDelayBetweenLoop" type="Float"/>
+		<field name="bIsDelayedBothWays" type="Boolean"/>
+		<field name="fColorDuration" type="Float"/>
+	</object>
+	<object name="BorderIconAnimationColor">
+		<field name="bIsUsed" type="Boolean"/>
+		<field name="bIsLooping" type="Boolean"/>
+		<field name="bIsOneWay" type="Boolean"/>
+		<field name="colorStartColor" type="VectorColor"/>
+		<field name="fStartAlpha" type="Float"/>
+		<field name="colorEndColor" type="VectorColor"/>
+		<field name="fEndAlpha" type="Float"/>
+		<field name="fColorAnimDelay" type="Float"/>
+		<field name="fColorAnimDelayBetweenLoop" type="Float"/>
+		<field name="bIsDelayedBothWays" type="Boolean"/>
+		<field name="fColorDuration" type="Float"/>
+	</object>
+</class>

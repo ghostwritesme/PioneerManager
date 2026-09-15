@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Fieldofviewmatchingsessionconfig_303801bb">
+	<object name="obj">
+		<inherit name="Fieldofviewmatchingsessionconfig_303801bbParameters"/>
+	</object>
+</file>

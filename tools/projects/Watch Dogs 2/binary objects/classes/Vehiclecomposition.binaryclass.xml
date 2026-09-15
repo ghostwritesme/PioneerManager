@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehiclecompositionParameters">
+	<inherit name="SharedParameters"/>
+	<object name="VehicleBanks">
+		<object name="VehicleBankEntry">
+			<field name="vehiclesbankVehicleBank" type="BinHex"/>
+			<field name="uiTrafficRepresentation" type="Int64"/>
+		</object>
+	</object>
+</class>

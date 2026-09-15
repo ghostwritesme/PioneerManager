@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DynamiclightprefabParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selType" type="Enum"/>
+	<field name="selLuminousUnit" type="Enum"/>
+	<field name="fLuminousValue" type="Float"/>
+	<field name="bHasSpecular" type="Boolean"/>
+	<field name="lightcolorsettingLightColorSetting" type="BinHex"/>
+	<field name="selColorMode" type="Enum"/>
+	<field name="clrColor" type="VectorColor"/>
+	<field name="fColorTemperature" type="Float"/>
+	<field name="fTint" type="Float"/>
+	<field name="fSourceAreaRadius" type="Float"/>
+	<field name="fAngle" type="Float"/>
+	<field name="fLightCutOffRadius" type="Float"/>
+	<field name="bLightSmoothCutOff" type="Boolean"/>
+	<field name="uiIESProfile" type="Int64"/>
+	<field name="fTurnOffLength" type="Float"/>
+	<field name="fTurnOffFallOffRatio" type="Float"/>
+	<field name="bEnableDistantLight" type="Boolean"/>
+	<field name="bEnabledInEditor" type="Boolean"/>
+	<field name="bDisabledInCinematics" type="Boolean"/>
+	<field name="bNeedsElectricPower" type="Boolean"/>
+	<field name="bHasElectricBackup" type="Boolean"/>
+	<field name="bAffectedByTimeOfDay" type="Boolean"/>
+	<field name="bCastShadow" type="Boolean"/>
+	<field name="selPriority" type="Enum"/>
+	<field name="uiShadowGroup" type="Int64"/>
+	<field name="iShadowFadeFactorCurveIndex" type="Int32"/>
+	<field name="fCastShadowMaxDistance" type="Float"/>
+	<field name="fShadowFadeOutRatio" type="Float"/>
+	<field name="fShadowDepthBiasScale" type="Float"/>
+	<field name="fShadowSlopeScaledDepthBiasScale" type="Float"/>
+	<field name="bRadiusAffectsShadowBias" type="Boolean"/>
+	<field name="angShadowInnerAngle" type="Float"/>
+	<field name="angShadowOuterAngle" type="Float"/>
+	<field name="fFlickeringFrequency" type="Float"/>
+	<field name="fFlickeringAmplitude" type="Float"/>
+	<field name="fFlickeringNoise" type="Float"/>
+	<field name="bIsReflector" type="Boolean"/>
+	<field name="bReflectorUseSun" type="Boolean"/>
+	<field name="bReflectorUseMoon" type="Boolean"/>
+	<field name="bReflectorUseDistanceFalloff" type="Boolean"/>
+	<field name="selReflectorTimeCurve" type="Enum"/>
+	<field name="fShadowVerticalFadeRange" type="Float"/>
+	<field name="bOrientedOmniShadow" type="Boolean"/>
+	<field name="uiLightIntensityCurveIndex" type="UInt32"/>
+	<field name="fLength" type="Float"/>
+	<object name="Affects">
+		<field name="bGeometry" type="Boolean"/>
+		<field name="bParticles" type="Boolean"/>
+		<field name="fParticlesLightIntensityMultiplier" type="Float"/>
+		<field name="bParticlesShadow" type="Boolean"/>
+		<field name="bParticlesProjectedTexture" type="Boolean"/>
+		<field name="bWater" type="Boolean"/>
+		<field name="bVolumetricFog" type="Boolean"/>
+		<field name="bGlobalIllumination" type="Boolean"/>
+		<field name="bNethackingDeviceArea" type="Boolean"/>
+		<field name="bBakedDirectLighting" type="Boolean"/>
+	</object>
+	<object name="ClipPlanes">
+		<object name="ClipPlane">
+			<field name="angYaw" type="Float"/>
+			<field name="angPitch" type="Float"/>
+			<field name="fDistance" type="Float"/>
+			<field name="fFadeDistance" type="Float"/>
+			<field name="bShowInEditorIfSelected" type="Boolean"/>
+			<field name="bIgnoreForGI" type="Boolean"/>
+		</object>
+	</object>
+	<object name="GIGeneration">
+		<field name="bOverrideSpotAngle" type="Boolean"/>
+		<field name="fRadiusMultiplier" type="Float"/>
+		<field name="fFadeOutDistMultiplier" type="Float"/>
+		<field name="fIntensityMultiplierStops" type="Float"/>
+	</object>
+	<object name="curveReflectorIntensityOffset">
+		<inherit name="KnotsParameters"/>
+	</object>
+</class>

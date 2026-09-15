@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CameracontextParameters">
+	<inherit name="SharedParameters"/>
+	<field name="iVelocityRef" type="Int32"/>
+	<field name="fVelocityLag" type="Float"/>
+	<field name="fCollisionVisibleRadius" type="Float"/>
+	<field name="fCollisionRadius" type="Float"/>
+	<field name="fCollisionLagDecompress" type="Float"/>
+	<field name="vectorIdealMin" type="Vector3"/>
+	<field name="vectorIdealMid" type="Vector3"/>
+	<field name="vectorIdealMax" type="Vector3"/>
+	<field name="vec2IdealSpeedRange" type="Vector2"/>
+	<field name="vectorIdealSpeedCoef" type="Vector3"/>
+	<field name="fReticleDisplay" type="Float"/>
+	<field name="vec2ReticleLocation" type="Vector2"/>
+	<object name="FOV">
+		<field name="vectorFov" type="Vector3"/>
+		<field name="vectorFovSpeedRange" type="Vector3"/>
+		<field name="fFovInterpSpeed" type="Float"/>
+		<field name="vec2FovSpeedShiftMin" type="Vector2"/>
+		<field name="vec2FovSpeedShiftMed" type="Vector2"/>
+		<field name="vec2FovSpeedShiftMax" type="Vector2"/>
+		<field name="vectorFovSpeedShiftRange" type="Vector3"/>
+		<field name="vectorFovSpeedBlurFactor" type="Vector3"/>
+		<field name="vec2FovAccelRange" type="Vector2"/>
+		<field name="vec2FovAccelCffs" type="Vector2"/>
+		<field name="vec2FovAccelPows" type="Vector2"/>
+		<field name="vec2FovAccelShift" type="Vector2"/>
+		<field name="vec2FovAccelLag" type="Vector2"/>
+		<field name="vec2FovPitchDownAngles" type="Vector2"/>
+		<field name="vec2FovPitchUpAngles" type="Vector2"/>
+		<field name="vectorFovPitchCoeff" type="Vector3"/>
+		<field name="fFovMaxVertical" type="Float"/>
+		<field name="fFovMaxHorizontal" type="Float"/>
+	</object>
+	<object name="Input">
+		<field name="bUseRefRelativeInput" type="Boolean"/>
+		<field name="fInputYawSpeed" type="Float"/>
+		<field name="fInputPitchSpeed" type="Float"/>
+		<field name="fInputYawExtraSpeed" type="Float"/>
+		<field name="fInputYawExtraSpeedAngleThreshold" type="Float"/>
+		<field name="fInputDampUp" type="Float"/>
+		<field name="fInputDampDown" type="Float"/>
+	</object>
+	<object name="Rotation">
+		<field name="selRotationReference" type="Enum"/>
+		<field name="fRotationReferenceYawOffset" type="Float"/>
+		<field name="fRotationReferencePitchOffset" type="Float"/>
+		<field name="fRotationLag" type="Float"/>
+		<field name="fRotationYawMin" type="Float"/>
+		<field name="fRotationYawMax" type="Float"/>
+		<field name="fRotationRollMin" type="Float"/>
+		<field name="fRotationRollMax" type="Float"/>
+		<field name="fRotationPitchMin" type="Float"/>
+		<field name="fRotationPitchMid" type="Float"/>
+		<field name="fRotationPitchMax" type="Float"/>
+		<field name="fRotationPitchCushion" type="Float"/>
+		<field name="fRotationYawCushion" type="Float"/>
+		<field name="bConstraintAngleLocally" type="Boolean"/>
+	</object>
+	<object name="Alignment">
+		<field name="selAlignmentReference" type="Enum"/>
+		<field name="fAlignmentLag" type="Float"/>
+	</object>
+	<object name="Follow">
+		<field name="fFollowPYEnterTime" type="Float"/>
+		<field name="bFollowPitch" type="Boolean"/>
+		<field name="bFollowYaw" type="Boolean"/>
+		<field name="selFollowPYReference" type="Enum"/>
+		<field name="vec2FollowPYRefOffset" type="Vector2"/>
+		<field name="fFollowPYLag" type="Float"/>
+		<field name="vec2FollowPYLagSpeedRange" type="Vector2"/>
+		<field name="vec2FollowPYLagSpeedCoef" type="Vector2"/>
+		<field name="vec2FollowPYEnterTimeSpeedRange" type="Vector2"/>
+		<field name="vec2FollowPYEnterTimeSpeedCoef" type="Vector2"/>
+		<field name="fFollowYawDeadAngle" type="Float"/>
+		<field name="fFollowYawCushion" type="Float"/>
+		<field name="fFollowPYSpeedThreshold" type="Float"/>
+		<field name="fFollowPYSpeedMaximum" type="Float"/>
+		<field name="fFollowMinSpeedAfterInput" type="Float"/>
+		<field name="bAlignYawOnMovingObject" type="Boolean"/>
+		<field name="bFollowPitchUnderObject" type="Boolean"/>
+		<field name="fPitchAngleUnderObject" type="Float"/>
+		<field name="fFollowREnterTime" type="Float"/>
+		<field name="selFollowRReference" type="Enum"/>
+		<field name="fFollowRRefOffset" type="Float"/>
+		<field name="fFollowRLag" type="Float"/>
+		<field name="fFollowRCoeff" type="Float"/>
+		<field name="vectorFollowLagMin" type="Vector3"/>
+		<field name="vectorFollowLagMax" type="Vector3"/>
+		<field name="vec2FollowLagSpeedCoef" type="Vector2"/>
+		<field name="fFollowYawLagRangeAngle" type="Float"/>
+		<field name="vec2FollowYawLagRangeCurve" type="Vector2"/>
+		<field name="fFollowDelayPY" type="Float"/>
+		<field name="fFollowDelayR" type="Float"/>
+	</object>
+	<object name="Pivot">
+		<field name="selPivotXYReference" type="Enum"/>
+		<field name="selPivotZReference" type="Enum"/>
+		<field name="vec2PivotLag" type="Vector2"/>
+		<field name="vectorPivotOffset" type="Vector3"/>
+		<field name="selPivotReference" type="Enum"/>
+		<field name="selSecureReference" type="Enum"/>
+		<field name="selSecureXYZReference" type="Enum"/>
+		<field name="vectorSecureOffset" type="Vector3"/>
+		<field name="bSecureUseReference" type="Boolean"/>
+		<field name="bSecureFollowReference" type="Boolean"/>
+		<field name="vec2SecureYZLeftOffset" type="Vector2"/>
+		<field name="vec2SecureYZRightOffset" type="Vector2"/>
+		<field name="vec2SecureYZFrontOffset" type="Vector2"/>
+		<field name="vec2SecureYZBackOffset" type="Vector2"/>
+		<field name="fSecureOffsetsTension" type="Float"/>
+		<field name="vectorFulcrumOffset" type="Vector3"/>
+		<field name="vectorFulcrumProbe" type="Vector3"/>
+		<field name="selFulcrumAxis" type="Enum"/>
+		<field name="fFulcrumDisplacement" type="Float"/>
+		<field name="fFulcrumRadius" type="Float"/>
+	</object>
+	<object name="Ideal">
+		<field name="vectorOffsetMinLeft" type="Vector3"/>
+		<field name="vectorOffsetMidLeft" type="Vector3"/>
+		<field name="vectorOffsetMaxLeft" type="Vector3"/>
+		<field name="vectorOffsetMinRight" type="Vector3"/>
+		<field name="vectorOffsetMidRight" type="Vector3"/>
+		<field name="vectorOffsetMaxRight" type="Vector3"/>
+		<field name="vectorOffsetMinFront" type="Vector3"/>
+		<field name="vectorOffsetMidFront" type="Vector3"/>
+		<field name="vectorOffsetMaxFront" type="Vector3"/>
+		<field name="vectorOffsetMinBack" type="Vector3"/>
+		<field name="vectorOffsetMidBack" type="Vector3"/>
+		<field name="vectorOffsetMaxBack" type="Vector3"/>
+	</object>
+	<object name="Slope">
+		<field name="selSlopeRef" type="Enum"/>
+		<field name="vec2IdealSlopeDownAngles" type="Vector2"/>
+		<field name="vec2IdealSlopeUpAngles" type="Vector2"/>
+		<field name="vectorIdealSlopeZOffset" type="Vector3"/>
+	</object>
+	<object name="PoV">
+		<field name="vec2TargetMidOffset" type="Vector2"/>
+		<field name="vec2TargetPitchAngles" type="Vector2"/>
+		<field name="fTargetMinPitchAngleMidZOffset" type="Float"/>
+	</object>
+	<object name="Lens">
+		<field name="bLensDOFEnabled" type="Boolean"/>
+		<field name="fLensFocusLag" type="Float"/>
+		<field name="fLensFocusLagNear" type="Float"/>
+		<field name="fLensFocusLagFar" type="Float"/>
+		<field name="fFocalLength" type="Float"/>
+		<field name="fFStop" type="Float"/>
+		<field name="vec2FocusRange" type="Vector2"/>
+		<field name="bFocusLockOverride" type="Boolean"/>
+		<field name="bNearDOFEnabled" type="Boolean"/>
+		<field name="bFarDOFEnabled" type="Boolean"/>
+		<field name="vec2FocusCast" type="Vector2"/>
+		<field name="fCastPitchOffset" type="Float"/>
+		<field name="fBokehContrast" type="Float"/>
+		<field name="cameralensconfigLensConfig" type="BinHex"/>
+	</object>
+	<object name="Sensor">
+		<field name="camerasensorconfigSensorConfig" type="BinHex"/>
+	</object>
+</class>

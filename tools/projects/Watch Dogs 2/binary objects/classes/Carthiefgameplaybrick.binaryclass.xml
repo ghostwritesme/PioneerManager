@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CarthiefgameplaybrickParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMinDistanceToFindVehicle" type="Float"/>
+	<field name="fMaxDistanceToFindVehicle" type="Float"/>
+	<field name="vehiclebhvsetupVehicleFleeSetup" type="BinHex"/>
+	<field name="vehiclebhvsetupVehicleGoToSetup" type="BinHex"/>
+	<field name="fLockPickTimerbeforeBeingSee" type="Float"/>
+	<field name="fLockPickTimerAfterBeingSee" type="Float"/>
+	<field name="bShouldBreakWindow" type="Boolean"/>
+	<field name="fAlarmTriggerPercentage" type="Float"/>
+	<field name="fGoToTargetSpeed" type="Float"/>
+	<field name="fsearchAngle" type="BinHex"/>
+	<field name="selThiefCycleBreaker" type="Enum"/>
+	<field name="bOverrideProfilerSettings" type="Boolean"/>
+	<object name="ThiefDescriptor">
+		<field name="bAllowInInterior" type="Boolean"/>
+		<field name="bAllowDead" type="Boolean"/>
+		<field name="bAllowAlreadyProfiledNpc" type="Boolean"/>
+		<field name="bAllowPlayer" type="Boolean"/>
+		<field name="bIgnoreLogicDataModule" type="Boolean"/>
+		<field name="selGenderRestriction" type="Enum"/>
+		<field name="fMaxCandidateSpeed" type="Float"/>
+		<object name="TagSpec">
+			<object name="IncludeTags"/>
+			<object name="ExcludeTags"/>
+			<object name="TagConstraintsAny"/>
+		</object>
+		<object name="TagSpecDbs">
+			<object name="TagSpecDbs">
+				<field name="graphickittagspecTagSpec" type="BinHex"/>
+			</object>
+		</object>
+		<object name="SocialClassRestrictions"/>
+		<object name="NPCStateRestrictions"/>
+		<object name="PmsRestriction">
+			<object name="Needed"/>
+			<object name="Excluded"/>
+		</object>
+		<object name="PmsRestrictionDbs">
+			<object name="pmsrestrictionsettingsPmsRestrictionDb">
+				<field name="pmsrestrictionsettingsPmsRestrictionDb" type="BinHex"/>
+			</object>
+		</object>
+		<object name="DialogActorRestrictions">
+			<object name="dialactorlistDialogActor">
+				<field name="dialactorlistDialogActor" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="VehicleDescriptor">
+		<field name="bAllowInInterior" type="Boolean"/>
+		<field name="bExcluseToplessCar" type="Boolean"/>
+		<field name="bAllowDamagedVehicle" type="Boolean"/>
+		<object name="TagSpec">
+			<object name="IncludeTags"/>
+			<object name="ExcludeTags"/>
+			<object name="TagConstraintsAny"/>
+		</object>
+		<object name="TagSpecDbs">
+			<object name="TagSpecDbs">
+				<field name="graphickittagspecTagSpec" type="BinHex"/>
+			</object>
+		</object>
+		<object name="VehicleTypesAllowed">
+			<object name="Flags">
+				<field name="bAgile" type="Boolean"/>
+				<field name="bBike" type="Boolean"/>
+				<field name="bBoat" type="Boolean"/>
+				<field name="bHeavy" type="Boolean"/>
+				<field name="bHelicopter" type="Boolean"/>
+				<field name="bMuscle" type="Boolean"/>
+				<field name="bOffroad" type="Boolean"/>
+				<field name="bSpeed" type="Boolean"/>
+				<field name="bTraffic" type="Boolean"/>
+				<field name="bCar" type="Boolean"/>
+				<field name="bVan" type="Boolean"/>
+				<field name="bTruck" type="Boolean"/>
+				<field name="bBus" type="Boolean"/>
+				<field name="bPolice" type="Boolean"/>
+				<field name="bFire" type="Boolean"/>
+				<field name="bAmbulance" type="Boolean"/>
+				<field name="bTaxi" type="Boolean"/>
+				<field name="bNews" type="Boolean"/>
+				<field name="bLimo" type="Boolean"/>
+				<field name="bServiceVehicle" type="Boolean"/>
+				<field name="bRail" type="Boolean"/>
+				<field name="bToyCar" type="Boolean"/>
+				<field name="bScissorLift" type="Boolean"/>
+				<field name="bFlyingDrone" type="Boolean"/>
+				<field name="bArmoredCar" type="Boolean"/>
+				<field name="bKart" type="BinHex"/>
+				<field name="bATV" type="BinHex"/>
+			</object>
+		</object>
+		<object name="VehicleTypesBanned">
+			<object name="Flags">
+				<field name="bAgile" type="Boolean"/>
+				<field name="bBike" type="Boolean"/>
+				<field name="bBoat" type="Boolean"/>
+				<field name="bHeavy" type="Boolean"/>
+				<field name="bHelicopter" type="Boolean"/>
+				<field name="bMuscle" type="Boolean"/>
+				<field name="bOffroad" type="Boolean"/>
+				<field name="bSpeed" type="Boolean"/>
+				<field name="bTraffic" type="Boolean"/>
+				<field name="bCar" type="Boolean"/>
+				<field name="bVan" type="Boolean"/>
+				<field name="bTruck" type="Boolean"/>
+				<field name="bBus" type="Boolean"/>
+				<field name="bPolice" type="Boolean"/>
+				<field name="bFire" type="Boolean"/>
+				<field name="bAmbulance" type="Boolean"/>
+				<field name="bTaxi" type="Boolean"/>
+				<field name="bNews" type="Boolean"/>
+				<field name="bLimo" type="Boolean"/>
+				<field name="bServiceVehicle" type="Boolean"/>
+				<field name="bRail" type="Boolean"/>
+				<field name="bToyCar" type="Boolean"/>
+				<field name="bScissorLift" type="Boolean"/>
+				<field name="bFlyingDrone" type="Boolean"/>
+				<field name="bArmoredCar" type="Boolean"/>
+				<field name="bKart" type="BinHex"/>
+				<field name="bATV" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="ProfilerSettings">
+		<field name="profilerinfofilterProfileFilter" type="BinHex"/>
+		<field name="fileProfilerThumbnailOverride" type="BinHex"/>
+		<field name="vectorProfilerSquareTargetOffset" type="Vector3"/>
+		<field name="vectorProfilerLineTargetOffset" type="Vector3"/>
+		<field name="bIsProfilerSticky" type="Boolean"/>
+		<field name="selProfileColorTypeOverride" type="Enum"/>
+		<object name="locsectionidProfile">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="IconLocations"/>
+		<object name="TargetingBoneNames"/>
+	</object>
+</class>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ConvoybarksconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="BarkDescriptorsChangesPath">
+		<object name="BarkDescriptor">
+			<field name="text_BarkId" type="String"/>
+			<field name="BarkId" type="BinHex"/>
+			<field name="selBarkMemberType" type="Enum"/>
+			<field name="fBarkDelay" type="Float"/>
+		</object>
+	</object>
+	<object name="BarkDescriptorsPathBlocked">
+		<object name="BarkDescriptor">
+			<field name="text_BarkId" type="String"/>
+			<field name="BarkId" type="BinHex"/>
+			<field name="selBarkMemberType" type="Enum"/>
+			<field name="fBarkDelay" type="Float"/>
+		</object>
+	</object>
+	<object name="BarkDescriptorsDestinationReached">
+		<object name="BarkDescriptor">
+			<field name="text_BarkId" type="String"/>
+			<field name="BarkId" type="BinHex"/>
+			<field name="selBarkMemberType" type="Enum"/>
+			<field name="fBarkDelay" type="Float"/>
+		</object>
+	</object>
+	<object name="BarkDescriptorsConvoyStart">
+		<object name="BarkDescriptor">
+			<field name="text_BarkId" type="String"/>
+			<field name="BarkId" type="BinHex"/>
+			<field name="selBarkMemberType" type="Enum"/>
+			<field name="fBarkDelay" type="Float"/>
+		</object>
+	</object>
+	<object name="BarkDescriptorsConvoyInterrupted">
+		<object name="BarkDescriptor">
+			<field name="text_BarkId" type="String"/>
+			<field name="BarkId" type="BinHex"/>
+			<field name="selBarkMemberType" type="Enum"/>
+			<field name="fBarkDelay" type="Float"/>
+		</object>
+	</object>
+	<object name="BarkDescriptorsConvoyStop">
+		<object name="BarkDescriptor">
+			<field name="text_BarkId" type="String"/>
+			<field name="BarkId" type="BinHex"/>
+			<field name="selBarkMemberType" type="Enum"/>
+			<field name="fBarkDelay" type="Float"/>
+		</object>
+	</object>
+</class>

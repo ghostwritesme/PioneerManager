@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Soundsystemcontrollerconfig_aff6dcd8">
+	<object name="obj">
+		<inherit name="Soundsystemcontrollerconfig_aff6dcd8Parameters"/>
+	</object>
+</file>

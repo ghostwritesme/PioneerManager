@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="NewnesstoappmappingdbParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Map">
+		<object name="Correspondence">
+			<inherit name="SharedParameters"/>
+			<field name="selNewnessType" type="Enum"/>
+			<field name="uimenupageAppPage" type="BinHex"/>
+		</object>
+	</object>
+</class>

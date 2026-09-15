@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Counterhackerconfig_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_sndTrollingSoundWarning" type="String"/>
+	<field name="sndTrollingSoundWarning" type="BinHex"/>
+	<field name="text_sndTrollingSoundWhileUsingJumper" type="String"/>
+	<field name="sndTrollingSoundWhileUsingJumper" type="BinHex"/>
+	<field name="text_sndTrollingSoundWhileUsingDrone" type="String"/>
+	<field name="sndTrollingSoundWhileUsingDrone" type="BinHex"/>
+	<field name="text_sndTrollingSoundWhileUsingLifts" type="String"/>
+	<field name="sndTrollingSoundWhileUsingLifts" type="BinHex"/>
+	<field name="sndTrollingSoundWhileUsingSecurityCamera" type="BinHex"/>
+	<field name="text_sndTrollingSoundWhenProfiling" type="String"/>
+	<field name="sndTrollingSoundWhenProfiling" type="BinHex"/>
+	<field name="fTrollingWarningTime" type="Float"/>
+	<field name="availabilityrulegroupCatUiEnableAvailabilityRule" type="BinHex"/>
+	<field name="fCatUiEnableDelaySeconds" type="Float"/>
+	<object name="RobotCard">
+		<inherit name="SharedParameters"/>
+		<field name="text_fileThumbnail" type="String"/>
+		<field name="fileThumbnail" type="BinHex"/>
+		<object name="locsectionidName">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locsectionidOccupation">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locsectionidNoveltyFact">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locsectionidIncome">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="TrollingCardEntries">
+		<object name="Entry">
+			<inherit name="SharedParameters"/>
+			<field name="text_fileThumbnail" type="String"/>
+			<field name="fileThumbnail" type="BinHex"/>
+			<object name="locsectionidName">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locsectionidOccupation">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locsectionidNoveltyFact">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locsectionidIncome">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+</class>

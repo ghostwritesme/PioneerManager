@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Neutralencountermatchingsessionconfig_1f3e19f9">
+	<object name="obj">
+		<inherit name="Neutralencountermatchingsessionconfig_1f3e19f9Parameters"/>
+	</object>
+</file>

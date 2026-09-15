@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="FaaconfigsParameters">
+	<inherit name="SharedParameters"/>
+    <field name="entArenaEntity" type="BinHex"/>
+    <field name="entReachEntity" type="BinHex"/>
+    <field name="fOptionalTimerDurationOverride" type="Float"/>
+    <field name="nMainDGOIndex" type="Enum"/>
+    <field name="bIsVersusMission" type="Boolean"/>
+    <field name="bIsEliteMission" type="Boolean"/>
+    <field name="bIsAvailableForInsane" type="Boolean"/>
+    <field name="checkleavetheareabrickOverrideCheckLeaveTheAreaDescriptor" type="BinHex"/>
+    <object name="Respawn">
+        <field name="bCanRespawnNearDeathSpot" type="BinHex"/>
+    </object>
+    <object name="InstanciatedCircuitBox">
+        <object name="faadoorsettingsDoorAccess">
+            <field name="faadoorsettingsDoorAccess" type="BinHex"/>
+        </object>
+    </object>
+    <object name="DGOConfigs">
+        <object name="DGOConfig">
+            <field name="entMainSpawnerEntity" type="BinHex"/>
+            <field name="selFamily" type="Enum"/>
+            <field name="LayerName" type="BinHex"/>
+            <field name="faadoorsettingsDoorAccess" type="BinHex"/>
+            <field name="text_Variation" type="String"/>
+            <field name="Variation" type="BinHex"/>
+            <object name="AvailableFreeRoamingZones">
+			    <object name="ZoneId">
+			        <field name="entZoneId" type="BinHex"/>
+			    </object>
+			</object>
+            <object name="DoorAccessConfig">
+			    <object name="Door">
+                    <field name="FireWallBox" type="BinHex"/>
+				    <object name="LockedEntityList">
+                        <object name="LockedEntity">
+                            <field name="entAccessDoor" type="BinHex"/>
+                            <field name="entProfilingPath" type="BinHex"/>
+                        </object>
+                    </object>
+				</object>
+			</object>
+            <object name="AllowedDifficulties">
+                <object name="selDifficulty">
+                    <field name="selDifficulty" type="Enum" />
+                </object>
+			</object>
+        </object>
+    </object>
+    <object name="PossibleAiAgentAffiliations">
+        <object name="selAiAgentAffiliation">
+            <field name="selAiAgentAffiliation" type="Enum"/>
+        </object>
+    </object>
+    <object name="PhoneCommunications">
+        <field name="phonecommbrickIntroPhoneCall" type="BinHex"/>
+        <field name="phonecommbrickOutroPhoneCall" type="BinHex"/>
+    </object>
+</class>

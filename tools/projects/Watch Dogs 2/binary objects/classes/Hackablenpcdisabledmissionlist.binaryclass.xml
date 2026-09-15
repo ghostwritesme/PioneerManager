@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="HackablenpcdisabledmissionlistParameters">
+	<inherit name="SharedParameters"/>
+	<object name="HackableNPCDisabledMissionList">
+		<object name="MissionList">
+			<field name="missionlistMission" type="BinHex"/>
+		</object>
+	</object>
+</class>

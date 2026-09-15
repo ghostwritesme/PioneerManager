@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="SoundocclusionzoneParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fAmbianceOcclusionValue" type="Float"/>
+	<field name="bIsIndoor" type="Boolean"/>
+	<object name="sndauxbusAuxiliaryBus">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="String"/>
+	</object>
+	<object name="sndswvlRegionSwitchValue">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="String"/>
+	</object>
+	<object name="Ambiance">
+		<field name="sndregRegionId" type="BinHex"/>
+	</object>
+	<object name="EnterSounds">
+		<object name="Sound">
+			<field name="text_sndSoundId" type="String"/>
+			<field name="sndSoundId" type="BinHex"/>
+		</object>
+	</object>
+	<object name="ExitSounds">
+		<object name="Sound">
+			<field name="text_sndSoundId" type="String"/>
+			<field name="sndSoundId" type="BinHex"/>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PhonecommunicationsettingsdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fStartDelay" type="Float"/>
+	<object name="PhoneCommunicationSettingsData">
+		<field name="text_selType" type="String"/>
+		<field name="selType" type="Enum"/>
+		<object name="Object">
+			<field name="bBypassNarrativeQueue" type="Boolean"/>
+			<field name="fUIStartUpDelay" type="Float"/>
+			<field name="bPlayCommunicationIntro" type="Boolean"/>
+			<field name="conversationsettingConversation" type="BinHex"/>
+			<field name="bUseEarBudsActivate" type="Boolean"/>
+			<field name="text_sndVoicemail" type="String"/>
+			<field name="sndVoicemail" type="BinHex"/>
+			<field name="selCommunicationInstigator" type="Enum"/>
+			<field name="selActorPortraitID" type="Enum"/>
+			<object name="locstridContactId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridSMSContent">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridEmailContent">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="SoundIDList"/>
+			<field name="uDedSecMemberCount" type="Int64"/>
+			<object name="locstridChannelHeader">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="TeamSpeak"/>
+		</object>
+	</object>
+</class>

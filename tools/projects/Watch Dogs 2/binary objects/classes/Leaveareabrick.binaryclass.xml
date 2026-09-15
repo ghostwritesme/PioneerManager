@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="LeaveareabrickParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fTimeBetweenWarnings" type="Float"/>
+	<object name="locstridEscapePursuersWarningLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridTeamateStillInWarningLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridTeamateIsOutWarningLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridPlayersNeedToLeaveWarningLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+</class>

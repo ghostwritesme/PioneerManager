@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Iteminventorycategoryitemlists_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Categories">
+		<field name="itemlistOneHanded" type="BinHex"/>
+		<field name="itemlistAssault" type="BinHex"/>
+		<field name="itemlistShotgun" type="BinHex"/>
+		<field name="itemlistSpecial" type="BinHex"/>
+		<field name="itemlistObjectInWheel" type="BinHex"/>
+		<field name="itemlistBullet" type="BinHex"/>
+		<field name="itemlistRCItems" type="BinHex"/>
+		<field name="itemlistEmotes" type="BinHex"/>
+		<field name="itemlistMassHack" type="BinHex"/>
+		<field name="itemlistMassHackNPC" type="BinHex"/>
+		<field name="itemlistMassHackVehicle" type="BinHex"/>
+		<field name="itemlistMassHackIngredient" type="BinHex"/>
+		<field name="itemlistTaser" type="BinHex"/>
+		<field name="itemlistCraftingIngredients" type="BinHex"/>
+	</object>
+</class>

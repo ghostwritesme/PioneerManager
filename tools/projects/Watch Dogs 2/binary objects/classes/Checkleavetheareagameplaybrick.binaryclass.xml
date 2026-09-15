@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CheckleavetheareagameplaybrickParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bActivateAreaShape" type="Boolean"/>
+	<field name="bIsCircleShape" type="Boolean"/>
+	<field name="bCheckPlayers" type="Boolean"/>
+	<field name="fOutOfAreaRadius" type="Float"/>
+	<field name="fLeaveAreaObjectiveRadius" type="Float"/>
+	<field name="selCheckAllEntities" type="Enum"/>
+	<field name="fTimerduration" type="Float"/>
+	<object name="locstridLeavingMissionWarningLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridFailMissionAbandonnedSPLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridFailMissionAbandonnedMPLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+</class>

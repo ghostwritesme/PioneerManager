@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UibinkitemlistdbParameters">
+	<inherit name="SharedParameters"/>
+	<object name="UIBinkItemList">
+		<object name="BinkItem">
+			<object name="BinkItem">
+				<field name="videosVideoPath" type="BinHex"/>
+				<field name="uisoundBinkVideoSound" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

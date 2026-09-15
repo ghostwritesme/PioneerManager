@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Graphickit_tagcollectionParameters">
+	<inherit name="SharedParameters"/>
+	<object name="TagSet">
+		<object name="Tag">
+			<object name="tagcategoryselectionTag">
+				<field name="text_UITagCategorySelectionClassID" type="String"/>
+				<field name="UITagCategorySelectionClassID" type="BinHex"/>
+				<field name="tagcategoryUITagCategory" type="BinHex"/>
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+				<field name="tagTag" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

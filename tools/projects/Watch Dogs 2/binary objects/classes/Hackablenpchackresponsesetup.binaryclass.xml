@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="HackablenpchackresponsesetupParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_reactionBark" type="String"/>
+	<field name="reactionBark" type="BinHex"/>
+	<field name="text_phoneCallBark" type="String"/>
+	<field name="phoneCallBark" type="BinHex"/>
+	<field name="text_patrolResponseBark" type="String"/>
+	<field name="patrolResponseBark" type="BinHex"/>
+	<object name="locsectionidNoveltyFactType">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridHackText">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+</class>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="MusicplaylistsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Playlist">
+		<object name="Song">
+			<field name="musiclibrarySong" type="BinHex"/>
+		</object>
+	</object>
+</class>

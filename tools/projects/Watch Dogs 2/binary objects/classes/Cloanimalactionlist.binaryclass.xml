@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CloanimalactionlistParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsPartOfAScenarioOnSpawn" type="Boolean"/>
+	<object name="Bank">
+		<object name="Entry">
+			<field name="cloanimalactAction" type="BinHex"/>
+			<field name="uiCoefficient" type="Int64"/>
+		</object>
+	</object>
+</class>

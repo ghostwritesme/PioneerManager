@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Dynamicnavmeshsetting_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="DynamicNavmesh">
+		<object name="Config">
+			<inherit name="SharedParameters"/>
+			<field name="selNavmeshType" type="Enum"/>
+			<field name="text_fileObjectFile" type="String"/>
+			<field name="fileObjectFile" type="BinHex"/>
+			<field name="sSectorFileName" type="String"/>
+			<field name="uiMaxNodes" type="Int64"/>
+		</object>
+	</object>
+</class>

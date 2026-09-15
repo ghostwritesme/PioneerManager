@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Missionacts_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="MissionActs">
+		<object name="MissionAct">
+			<field name="missionlistMission" type="BinHex"/>
+			<field name="nAct" type="Int32"/>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PgtaientitygroupParameters">
+	<inherit name="SharedParameters"/>
+	<object name="HumanConfigs">
+		<object name="humanconfigHumanConfig">
+			<field name="humanconfigHumanConfig" type="BinHex"/>
+		</object>
+	</object>
+	<object name="RobotConfigs">
+		<object name="robotconfigRobotConfig">
+			<field name="robotconfigRobotConfig" type="BinHex"/>
+		</object>
+	</object>
+	<object name="AnimalConfigs">
+		<object name="animalconfigAnimalConfig">
+			<field name="animalconfigAnimalConfig" type="BinHex"/>
+		</object>
+	</object>
+</class>

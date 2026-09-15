@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Missionprefetcherconfig_c7d6e948Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="MissionPrefetcherConfig">
+		<object name="PrefetchList">
+			<field name="missionlistMission" type="BinHex"/>
+			<field name="missionobjlayActivationMissionLayer" type="BinHex"/>
+			<field name="missionobjlayMainMissionLayer" type="BinHex"/>
+		</object>
+	</object>
+</class>

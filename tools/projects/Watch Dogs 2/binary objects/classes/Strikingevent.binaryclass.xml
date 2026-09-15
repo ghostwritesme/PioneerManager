@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="StrikingeventParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_selClassName" type="String"/>
+	<field name="selClassName" type="Enum"/>
+	<object name="Properties">
+		<field name="iMaxSeenOccurence" type="Int32"/>
+		<field name="fCourtesyDelay" type="Float"/>
+		<field name="bWip" type="Boolean"/>
+		<field name="fDelayAfterPause" type="Float"/>
+		<field name="bTriggerInVehicle" type="Boolean"/>
+		<field name="sTrackingName" type="String"/>
+		<field name="sndActionStart" type="BinHex"/>
+		<field name="bIsAHoldUp" type="Boolean"/>
+		<field name="fHoldUpInteruptionStimDelay" type="Float"/>
+		<field name="fHoldUpDelay" type="Float"/>
+		<field name="uiShopVisitRequestedBetweenHoldUp" type="Int64"/>
+		<field name="text_archSmoke" type="String"/>
+		<field name="archSmoke" type="BinHex"/>
+		<field name="text_sndSoundStart" type="String"/>
+		<field name="sndSoundStart" type="BinHex"/>
+		<field name="text_sndSoundStop" type="String"/>
+		<field name="sndSoundStop" type="BinHex"/>
+		<field name="sndMixStart" type="BinHex"/>
+		<field name="sndMixStop" type="BinHex"/>
+		<field name="bDebug" type="Boolean"/>
+		<field name="fCheckDelay" type="Float"/>
+		<field name="fMinDistanceToPlayer" type="Float"/>
+		<field name="fMaxDistanceToPlayer" type="Float"/>
+		<field name="fMinimumSpeed" type="Float"/>
+		<field name="fMinDistanceBetweenCars" type="Float"/>
+		<field name="fMaxDistanceBetweenCars" type="Float"/>
+		<field name="selOwnCarStolenReactionType" type="Enum"/>
+		<field name="selOtherCarStolenReactionType" type="Enum"/>
+		<field name="fDotAngleBetweenCars" type="Float"/>
+		<object name="FobiddenDisctrictsList">
+			<object name="districtFobiddenDisctrictsList">
+				<field name="districtFobiddenDisctrictsList" type="BinHex"/>
+			</object>
+		</object>
+		<object name="TimeOfAvaibility">
+			<object name="Start">
+				<field name="uiHours" type="Int64"/>
+				<field name="uiMinutes" type="Int64"/>
+				<field name="uiSeconds" type="Int64"/>
+			</object>
+			<object name="End">
+				<field name="uiHours" type="Int64"/>
+				<field name="uiMinutes" type="Int64"/>
+				<field name="uiSeconds" type="Int64"/>
+			</object>
+		</object>
+		<object name="CoolDown">
+			<field name="fSpawnedCooldownMin" type="Float"/>
+			<field name="fSpawnedCooldownMax" type="Float"/>
+			<field name="fTriggeredCooldownMin" type="Float"/>
+			<field name="fTriggeredCooldownMax" type="Float"/>
+			<field name="fSeenCooldownMin" type="Float"/>
+			<field name="fSeenCooldownMax" type="Float"/>
+			<field name="fGameStartCooldownMin" type="Float"/>
+			<field name="fGameStartCooldownMax" type="Float"/>
+		</object>
+		<object name="Mix">
+			<field name="sndStart" type="BinHex"/>
+			<field name="sndStop" type="BinHex"/>
+		</object>
+		<object name="curveDamageMultiplier">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+</class>

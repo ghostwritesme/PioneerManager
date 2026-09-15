@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Ingamecomputerscreensettings_f346cb51Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="iCriminalRecordPage" type="Int32"/>
+	<field name="iAvatarSelectionPage" type="Int32"/>
+	<field name="iAvatarSelectionPageStep" type="Int32"/>
+	<field name="iMalwareInstallationPage" type="Int32"/>
+	<field name="iMalwareInstallationPageStep" type="Int32"/>
+	<field name="iQtyAvatarChoices" type="Int32"/>
+	<field name="uisoundProfileNavigationSound" type="BinHex"/>
+	<field name="uisoundProfileSelectionSound" type="BinHex"/>
+	<field name="uisoundMalwareInstallationSound" type="BinHex"/>
+	<object name="Pages">
+		<object name="PageInfo">
+			<object name="PageSteps">
+				<object name="PageStepInfo">
+					<field name="sStepInFrameLabel" type="String"/>
+					<field name="sStepOutFrameLabel" type="String"/>
+					<field name="fIntroDuration" type="Float"/>
+					<field name="fOutroDuration" type="Float"/>
+					<field name="uisoundStepInSound" type="BinHex"/>
+					<field name="bIsStepInSoundBlocking" type="Boolean"/>
+					<field name="uisoundStepOutSound" type="BinHex"/>
+					<field name="bIsStepOutSoundBlocking" type="Boolean"/>
+					<field name="bWaitForInput" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="AvatarInfos">
+		<object name="AvatarInfo">
+			<object name="locstridAvatarDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+	<object name="StaticTextFields">
+		<object name="TextFieldInfo">
+			<field name="sDPSName" type="String"/>
+			<field name="bHasTags" type="Boolean"/>
+			<field name="bHideOnPC" type="Boolean"/>
+			<object name="locstridOasisText">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+	<object name="locstridStanceControlText">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+</class>

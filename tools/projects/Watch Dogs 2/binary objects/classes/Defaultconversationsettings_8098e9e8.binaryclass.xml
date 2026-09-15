@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Defaultconversationsettings_8098e9e8Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="lookatsettingGenericLookAt" type="BinHex"/>
+	<object name="PlayerDialogActors">
+		<field name="text_tmplMainPlayer" type="String"/>
+		<field name="tmplMainPlayer" type="BinHex"/>
+		<field name="text_tmplOtherPlayer" type="String"/>
+		<field name="tmplOtherPlayer" type="BinHex"/>
+	</object>
+	<object name="GenericAnimations">
+		<object name="LayeredMoveWhenSpeaking">
+			<field name="text_fileMovePath" type="String"/>
+			<field name="fileMovePath" type="BinHex"/>
+		</object>
+		<object name="LayeredMoveWhenWaiting">
+			<field name="text_fileMovePath" type="String"/>
+			<field name="fileMovePath" type="BinHex"/>
+		</object>
+	</object>
+	<object name="AnimationsPerActors">
+		<object name="Actor">
+			<field name="text_tmplDialogActor" type="String"/>
+			<field name="tmplDialogActor" type="BinHex"/>
+			<object name="Animations">
+				<object name="LayeredMoveWhenSpeaking">
+					<field name="text_fileMovePath" type="String"/>
+					<field name="fileMovePath" type="BinHex"/>
+				</object>
+				<object name="LayeredMoveWhenWaiting">
+					<field name="text_fileMovePath" type="String"/>
+					<field name="fileMovePath" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

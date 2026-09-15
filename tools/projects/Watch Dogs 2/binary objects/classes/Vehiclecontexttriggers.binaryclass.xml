@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehiclecontexttriggersParameters">
+	<inherit name="SharedParameters"/>
+	<object name="CameraContextReverse">
+		<field name="fMinSpeedToUpdateValues" type="Float"/>
+		<field name="fReverseAngleBackToFronMult" type="Float"/>
+		<object name="curveReverseAngleValue">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="CameraContextJump">
+		<field name="fAirTimeToTrigger" type="Float"/>
+	</object>
+</class>

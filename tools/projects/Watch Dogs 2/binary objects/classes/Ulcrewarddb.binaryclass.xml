@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UlcrewarddbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="ulccodeULCDbObject" type="BinHex"/>
+	<object name="ULCRewardItems">
+		<field name="itemsULCRewardItem" type="BinHex"/>
+		<object name="ULCRewardItems">
+			<field name="itemsULCRewardItem" type="BinHex"/>
+		</object>
+	</object>
+</class>

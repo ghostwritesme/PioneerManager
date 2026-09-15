@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Graphickit_spawners">
+	<object name="lib">
+		<object name="libobj">
+			<inherit name="Graphickit_spawnersParameters"/>
+		</object>
+	</object>
+</file>

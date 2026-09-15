@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehiclewheelsounddbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="sndPassby" type="BinHex"/>
+	<object name="Sliding">
+		<field name="text_sndWheelSlideSound_1" type="String"/>
+		<field name="sndWheelSlideSound_1" type="BinHex"/>
+		<field name="text_sndWheelSlideSound_2" type="String"/>
+		<field name="sndWheelSlideSound_2" type="BinHex"/>
+		<field name="text_sndWheelSlideSound_3" type="String"/>
+		<field name="sndWheelSlideSound_3" type="BinHex"/>
+		<field name="text_sndWheelSlideSound_4" type="String"/>
+		<field name="sndWheelSlideSound_4" type="BinHex"/>
+		<field name="text_sndWheelSlideStopSound_1" type="String"/>
+		<field name="sndWheelSlideStopSound_1" type="BinHex"/>
+		<field name="text_sndWheelSlideStopSound_2" type="String"/>
+		<field name="sndWheelSlideStopSound_2" type="BinHex"/>
+		<field name="text_sndWheelSlideStopSound_3" type="String"/>
+		<field name="sndWheelSlideStopSound_3" type="BinHex"/>
+		<field name="text_sndWheelSlideStopSound_4" type="String"/>
+		<field name="sndWheelSlideStopSound_4" type="BinHex"/>
+		<field name="text_sndWheelRimSlideSound_1" type="String"/>
+		<field name="sndWheelRimSlideSound_1" type="BinHex"/>
+		<field name="text_sndWheelRimSlideSound_2" type="String"/>
+		<field name="sndWheelRimSlideSound_2" type="BinHex"/>
+		<field name="text_sndWheelRimSlideSound_3" type="String"/>
+		<field name="sndWheelRimSlideSound_3" type="BinHex"/>
+		<field name="text_sndWheelRimSlideSound_4" type="String"/>
+		<field name="sndWheelRimSlideSound_4" type="BinHex"/>
+		<field name="text_sndWheelRimSlideStopSound_1" type="String"/>
+		<field name="sndWheelRimSlideStopSound_1" type="BinHex"/>
+		<field name="text_sndWheelRimSlideStopSound_2" type="String"/>
+		<field name="sndWheelRimSlideStopSound_2" type="BinHex"/>
+		<field name="text_sndWheelRimSlideStopSound_3" type="String"/>
+		<field name="sndWheelRimSlideStopSound_3" type="BinHex"/>
+		<field name="text_sndWheelRimSlideStopSound_4" type="String"/>
+		<field name="sndWheelRimSlideStopSound_4" type="BinHex"/>
+		<field name="text_sndWheelSlideNpcStart" type="String"/>
+		<field name="sndWheelSlideNpcStart" type="BinHex"/>
+		<field name="text_sndWheelSlideNpcStop" type="String"/>
+		<field name="sndWheelSlideNpcStop" type="BinHex"/>
+		<field name="fSlipMin" type="Float"/>
+		<field name="fSlipMax" type="Float"/>
+		<field name="fTrafficSlipMin" type="Float"/>
+		<field name="fTrafficSlipMax" type="Float"/>
+	</object>
+	<object name="Tire">
+		<field name="text_sndDeflateTyre_1" type="String"/>
+		<field name="sndDeflateTyre_1" type="BinHex"/>
+		<field name="text_sndDeflateTyre_2" type="String"/>
+		<field name="sndDeflateTyre_2" type="BinHex"/>
+		<field name="text_sndDeflateTyre_3" type="String"/>
+		<field name="sndDeflateTyre_3" type="BinHex"/>
+		<field name="text_sndDeflateTyre_4" type="String"/>
+		<field name="sndDeflateTyre_4" type="BinHex"/>
+		<field name="sndAdrenalineDeflateTyre_1" type="BinHex"/>
+		<field name="sndAdrenalineDeflateTyre_2" type="BinHex"/>
+		<field name="sndAdrenalineDeflateTyre_3" type="BinHex"/>
+		<field name="sndAdrenalineDeflateTyre_4" type="BinHex"/>
+		<field name="text_sndNpcTiresLoop" type="String"/>
+		<field name="sndNpcTiresLoop" type="BinHex"/>
+	</object>
+	<object name="Roll">
+		<field name="text_sndWheelRoll_1" type="String"/>
+		<field name="sndWheelRoll_1" type="BinHex"/>
+		<field name="text_sndWheelRoll_2" type="String"/>
+		<field name="sndWheelRoll_2" type="BinHex"/>
+		<field name="text_sndWheelRoll_3" type="String"/>
+		<field name="sndWheelRoll_3" type="BinHex"/>
+		<field name="text_sndWheelRoll_4" type="String"/>
+		<field name="sndWheelRoll_4" type="BinHex"/>
+	</object>
+	<object name="Rim">
+		<field name="text_sndRimSound_1" type="String"/>
+		<field name="sndRimSound_1" type="BinHex"/>
+		<field name="text_sndRimSound_2" type="String"/>
+		<field name="sndRimSound_2" type="BinHex"/>
+		<field name="text_sndRimSound_3" type="String"/>
+		<field name="sndRimSound_3" type="BinHex"/>
+		<field name="text_sndRimSound_4" type="String"/>
+		<field name="sndRimSound_4" type="BinHex"/>
+	</object>
+	<object name="VegetationSound">
+		<field name="sndShortVegetationSoundId" type="BinHex"/>
+		<field name="sndMediumVegetationSoundId" type="BinHex"/>
+		<field name="sndLongVegetationSoundId" type="BinHex"/>
+		<field name="fFadeOutDuration" type="Float"/>
+	</object>
+	<object name="Suspension">
+		<field name="text_sndSuspensionSoundHeavy" type="String"/>
+		<field name="sndSuspensionSoundHeavy" type="BinHex"/>
+		<field name="text_sndSuspensionSoundMedium" type="String"/>
+		<field name="sndSuspensionSoundMedium" type="BinHex"/>
+		<field name="text_sndSuspensionSoundSmall" type="String"/>
+		<field name="sndSuspensionSoundSmall" type="BinHex"/>
+		<field name="fSuspensionSmallSpeed" type="Float"/>
+		<field name="fSuspensionMediumSpeed" type="Float"/>
+		<field name="fSuspensionHeavySpeed" type="Float"/>
+		<object name="TensionSound">
+			<field name="sndSuspensionTensionSoundStart" type="BinHex"/>
+			<field name="sndSuspensionTensionSoundEnd" type="BinHex"/>
+		</object>
+	</object>
+</class>

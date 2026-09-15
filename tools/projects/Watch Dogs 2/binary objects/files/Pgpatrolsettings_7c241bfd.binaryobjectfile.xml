@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Pgpatrolsettings_7c241bfd">
+	<object name="obj">
+		<inherit name="Pgpatrolsettings_7c241bfdParameters"/>
+	</object>
+</file>

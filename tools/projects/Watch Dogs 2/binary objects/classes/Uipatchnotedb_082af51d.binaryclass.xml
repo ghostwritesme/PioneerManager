@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uipatchnotedb_082af51dParameters">
+	<inherit name="SharedParameters"/>
+	<object name="UIPatchNoteListWindows">
+		<object name="PatchNoteItem">
+			<field name="UniqueId" type="BinHex"/>
+			<field name="texturedbobjectTexture" type="BinHex"/>
+			<field name="sURL" type="BinHex"/>
+			<field name="bDisplayIfNotShownYet" type="BinHex"/>
+			<object name="locstridTitle">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridSubtitle">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+	<object name="UIPatchNoteListOrbis">
+		<object name="PatchNoteItem">
+			<field name="UniqueId" type="BinHex"/>
+			<field name="texturedbobjectTexture" type="BinHex"/>
+			<field name="sURL" type="BinHex"/>
+			<field name="bDisplayIfNotShownYet" type="BinHex"/>
+			<object name="locstridTitle">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridSubtitle">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+	<object name="UIPatchNoteListDurango">
+		<object name="PatchNoteItem">
+			<field name="UniqueId" type="BinHex"/>
+			<field name="texturedbobjectTexture" type="BinHex"/>
+			<field name="sURL" type="BinHex"/>
+			<field name="bDisplayIfNotShownYet" type="BinHex"/>
+			<object name="locstridTitle">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridSubtitle">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+</class>

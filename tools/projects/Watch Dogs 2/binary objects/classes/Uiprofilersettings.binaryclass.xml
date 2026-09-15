@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UiprofilersettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_uiprofilerpanelclassidPanelClassType" type="String"/>
+	<field name="uiprofilerpanelclassidPanelClassType" type="BinHex"/>
+	<object name="ProfilerPanelDescriptor">
+		<field name="iStackingPriority" type="Int32"/>
+	</object>
+</class>

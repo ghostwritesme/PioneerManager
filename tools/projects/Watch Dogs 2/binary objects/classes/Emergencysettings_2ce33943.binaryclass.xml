@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Emergencysettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Parameters">
+		<object name="Parameter">
+			<field name="selUnitType" type="Enum"/>
+			<field name="singleclocreationsettingsCloSettings" type="BinHex"/>
+			<field name="iPercentageOfFunnyCloActivation" type="Int32"/>
+			<field name="vehiclebhvsetupVehicleGoToSetup" type="BinHex"/>
+			<field name="fleebehaviordescriptorFleeBhvDescriptor" type="BinHex"/>
+			<field name="iPercentageActivationAmbulance" type="Int32"/>
+			<object name="SpawningParameters">
+				<field name="availabilityrulegroupEventAvailabilityRule" type="BinHex"/>
+				<field name="fDistMaxFromRoad" type="Float"/>
+				<field name="fRoadTrafficMinWidth" type="Float"/>
+				<field name="fDelayBeforeSpawningEmergency" type="Float"/>
+			</object>
+			<object name="UnitConfigList">
+				<object name="unitconfigUnitConfig">
+			  		<field name="unitconfigUnitConfig" type="BinHex"/>
+				</object>
+			</object>
+			<object name="CivilianCallSettings">
+				<field name="fDistanceMaxCallerFromDeadBody" type="Float"/>
+				<field name="fMinCallDuration" type="Float"/>
+				<field name="fMaxCallDuration" type="Float"/>
+				<field name="text_sndSfxCivilianCallHacked" type="String"/>
+				<field name="sndSfxCivilianCallHacked" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

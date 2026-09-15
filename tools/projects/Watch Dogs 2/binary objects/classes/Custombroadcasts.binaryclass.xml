@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CustombroadcastsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="BroadcastData">
+		<field name="fileBink" type="String"/>
+		<field name="fSubtitleDisplayTime" type="Float"/>
+		<field name="bIsBinkStreamed" type="Boolean"/>
+		<field name="bIsBinkInGameOnly" type="Boolean"/>
+		<field name="bNoSignalBlockedDuringBroadcast" type="Boolean"/>
+		<field name="bSendSpecialBroadcastStim" type="Boolean"/>
+		<field name="selSpecialBroadcastType" type="Enum"/>
+		<object name="Sounds">
+			<object name="Sound">
+				<field name="text_sndSoundId" type="String"/>
+				<field name="sndSoundId" type="BinHex"/>
+			</object>
+		</object>
+		<object name="locstridDefaultLocalizationID">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+</class>

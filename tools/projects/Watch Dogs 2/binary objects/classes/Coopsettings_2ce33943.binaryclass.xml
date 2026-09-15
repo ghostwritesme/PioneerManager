@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Coopsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fNearbyOperationMaxDistance" type="Float"/>
+	<field name="fNearbyOperationDelay" type="Float"/>
+	<field name="fSearchingPartnerUIDuration" type="Float"/>
+	<field name="fMergeTeleportFirstPassMinDistance" type="Float"/>
+	<field name="fMergeTeleportFirstPassMaxDistance" type="Float"/>
+	<field name="fMergeTeleportSecondPassMinDistance" type="Float"/>
+	<field name="fMergeTeleportSecondPassMaxDistance" type="Float"/>
+	<field name="uiFollowersThreshold1" type="UInt32"/>
+	<field name="uiFollowersThreshold2" type="UInt32"/>
+	<field name="uiFollowersThreshold3" type="UInt32"/>
+	<field name="uiFollowersThreshold4" type="UInt32"/>
+	<field name="uiFollowersThreshold5" type="UInt32"/>
+	<field name="uiNumberOfMissions1" type="UInt32"/>
+	<field name="uiNumberOfMissions2" type="UInt32"/>
+	<field name="uiNumberOfMissions3" type="UInt32"/>
+	<field name="uiNumberOfMissions4" type="UInt32"/>
+	<field name="uiNumberOfMissions5" type="UInt32"/>
+	<field name="fMinimumNbOfMissionByStory" type="Enum"/>
+	<object name="FAAStories">
+		<object name="Story">
+			<field name="text_StartMissionID" type="String"/>
+			<field name="StartMissionID" type="BinHex"/>
+			<object name="Thresholds">
+				<object name="Threshold">
+					<field name="nFollowers" type="BinHex"/>
+					<field name="nMissionCount" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="CoopMergeStrategies">
+		<inherit name="SharedParameters"/>
+		<object name="CandidateMergeLogicConfig">
+			<inherit name="SharedParameters"/>
+			<field name="fSeamlessStrategyTime" type="Float"/>
+			<field name="fLowImpactStrategyTime" type="Float"/>
+			<field name="fHighImpactStrategyTime" type="Float"/>
+		</object>
+		<object name="ParticipantMergeLogicConfig">
+			<inherit name="SharedParameters"/>
+			<field name="fSeamlessStrategyTime" type="Float"/>
+			<field name="fLowImpactStrategyTime" type="Float"/>
+			<field name="fHighImpactStrategyTime" type="Float"/>
+		</object>
+	</object>
+</class>

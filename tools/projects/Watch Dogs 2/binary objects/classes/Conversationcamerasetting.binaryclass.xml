@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ConversationcamerasettingParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selCameraMode" type="Enum"/>
+	<field name="cameracontextPivotCameraContext" type="BinHex"/>
+	<field name="camerablendlistdbPivotCameraBlendInParameters" type="BinHex"/>
+	<field name="camerablendlistdbPivotCameraBlendOutParameters" type="BinHex"/>
+	<field name="cameracontextFixedCameraContext" type="BinHex"/>
+	<field name="vectorFixedCameraPositionOffset" type="Vector"/>
+	<field name="vectorFixedCameraOrientationOffset" type="Vector"/>
+	<field name="camerablendlistdbFixedCameraBlendInParameters" type="BinHex"/>
+	<field name="camerablendlistdbFixedCameraBlendOutParameters" type="BinHex"/>
+	<field name="text_fileAnimatedCamera" type="String"/>
+	<field name="fileAnimatedCamera" type="BinHex"/>
+</class>

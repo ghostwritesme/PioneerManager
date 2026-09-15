@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="MissionlistParameters">
+	<inherit name="SharedParameters"/>
+  	<object name="MissionDescriptor">
+      <field name="MissionDescriptorVersion" type="Enum"/>
+      <field name="selMissionType" type="Enum"/>
+      <field name="selMissionGameplayType" type="Enum"/>
+      <field name="sWorldName" type="String"/>
+      <field name="hidMissionNameDebug" type="String"/>
+      <field name="selBrickSetup" type="Enum"/>
+      <field name="brickflowBrickFlowConfig" type="BinHex"/>
+      <field name="fileMissionDominoScript" type="String"/>
+      <field name="possyselementPosSysMissionRevealed" type="BinHex"/>
+      <field name="phonecommunicationsettingsNarrativeIntelCompletePhoneCommunication" type="BinHex"/>
+      <field name="faaconfigFaaConfig" type="BinHex"/>
+      <field name="bIsExclusiveDynamicEvent" type="Boolean" />
+      <object name="TypePropertiesCategory">
+        <field name="text_typeMissionPropertiesType" type="String"/>
+        <field name="typeMissionPropertiesType" type="BinHex"/>
+        <object name="Values">
+		  <field name="faaconfigFAAConfig" type="BinHex"/>
+          <field name="brickflowBrickFlowConfig" type="BinHex"/>
+          <field name="selGameMode" type="Enum"/>
+          <field name="fMinMissionDuration" type="Float"/>
+          <field name="fDurationToBeReadyToStopWhenFull" type="Float"/>
+          <field name="uiPlayerCountToBeFull" type="UInt32"/>
+          <field name="text_archDecryptionArchetype" type="String"/>
+          <field name="archDecryptionArchetype" type="BinHex"/>
+          <field name="selMissionConfig" type="Enum"/>
+          <field name="selComponentConfig" type="Enum"/>
+          <object name="AttackerTeamSettings">
+            <field name="entStartPoint" type="BinHex"/>
+            <object name="RespawnPoint">
+			  <object name="RespawnPoint">
+                <field name="entRespawnPoint" type="BinHex"/>
+              </object>
+			</object>
+            <object name="PickupRespawnSettings">
+			  <object name="RespawnSettings">
+                <field name="entDGOSpawner" type="BinHex"/>
+                <object name="RespawnPoint">
+                  <object name="RespawnPoint">
+                    <field name="entRespawnPoint" type="BinHex"/>
+                  </object>
+                </object>
+              </object>
+			</object>
+          </object>
+          <object name="DefenderTeamSettings">
+            <field name="entStartPoint" type="BinHex"/>
+            <object name="RespawnPoint">
+			  <object name="RespawnPoint">
+                <field name="entRespawnPoint" type="BinHex"/>
+              </object>
+			</object>
+            <object name="PickupRespawnSettings">
+			  <object name="RespawnSettings">
+                <field name="entDGOSpawner" type="BinHex"/>
+                <object name="RespawnPoint">
+                  <object name="RespawnPoint">
+                    <field name="entRespawnPoint" type="BinHex"/>
+                  </object>
+                </object>
+              </object>
+			</object>
+          </object>
+          <object name="PickUpEntity" />
+		</object>
+      </object>
+	  <object name="locstridWorldStoryNameTracking">
+        <field name="LocalizationId" type="Int64"/>
+      </object>
+	  <object name="NarrativeIntels">
+        <object name="NarrativeIntel">
+          <field name="availabilityrulegroupAvailabilityRuleGroup" type="BinHex"/>
+          <field name="fileProtoDominoScriptDoNotShip" type="String"/>
+          <field name="fileDominoScript" type="String"/>
+          <object name="NarrativeIntelData">
+            <field name="text_selType" type="String"/>
+            <field name="selType" type="BinHex"/>
+            <object name="Object">
+			  <field name="itemsNarrativeIntel" type="BinHex"/>
+			  <field name="itemsNarrativeReward" type="BinHex"/>
+			  <object name="RequiredTags" />
+			</object>
+          </object>
+          <object name="DiscoveryBarks" />
+        </object>
+      </object>
+      <object name="OptionalProperties">
+        <field name="nMinimumPlayerRequired" type="Enum"/>
+        <field name="nMaximumPlayerRequired" type="Enum"/>
+        <field name="bHasActivationPhase" type="Boolean"/>
+        <field name="selMainLayerLoading" type="Enum"/>
+        <field name="bHasDeactivationPhase" type="Boolean"/>
+        <field name="bIsMissionRestartDisabled" type="Boolean"/>
+        <field name="bIsMissionQuitDisabled" type="Boolean"/>
+        <field name="itemlistsRewardList" type="BinHex"/>
+        <field name="itemlistsRewardForCheat" type="BinHex"/>
+        <field name="texturedbobjectMissionModuleTextureIcon" type="BinHex"/>
+        <field name="texturedbobjectDedsecAppTextureIcon" type="BinHex"/>
+        <field name="selWorldStory" type="Enum"/>
+        <field name="MainLayerName" type="String"/>
+        <field name="fActivationDelay" type="Float"/>
+        <field name="ActivationLayerName" type="String"/>
+        <field name="fileDominoActivationScript" type="String"/>
+        <field name="selTransitionType" type="Enum"/>
+        <field name="entMissionActivationIcon" type="BinHex"/>
+		<field name="fileDominoDeactivationScript" type="String"/>
+		<field name="LmaLayerName" type="String"/>
+		<field name="binktransitionsBinkTransitionConfig" type="BinHex"/>
+		<field name="missionlistDedsecMissionToTrackID" type="BinHex"/>
+		<field name="bIsMissionReplayDisabled" type="Boolean" />
+		<object name="MissionActivationPoints">
+          <object name="MissionActivationPoints">
+            <field name="entMissionActivationIcon" type="BinHex"/>
+            <object name="MissionActivationEntity">
+              <field name="bEntityIsCLO" type="Boolean"/>
+              <field name="entEntity" type="BinHex"/>
+              <field name="EntityCLO" type="BinHex"/>
+            </object>
+          </object>
+        </object>
+        <object name="FreeroamingObjectiveIcons">
+		  <object name="EntityIcon">
+            <field name="entEntityIcon" type="BinHex"/>
+          </object>
+		</object>
+        <object name="locstridMissionName">
+          <field name="LocalizationId" type="Int64"/>
+        </object>
+        <object name="locstridMissionBrief">
+          <field name="LocalizationId" type="Int64"/>
+        </object>
+        <object name="locstridDifficulty">
+          <field name="LocalizationId" type="Int64"/>
+        </object>
+		<object name="WorldStoryDescription">
+          <field name="phonecommunicationsettingsNextMissionActivationPhoneCommunication" type="BinHex"/>
+          <field name="bIsMissionNewnessNotificationDisabled" type="Boolean"/>
+          <field name="possyselementWorldStoryObjectiveIcon" type="BinHex"/>
+          <field name="bIsTeaserNewnessNotificationDisabled" type="Boolean"/>
+          <field name="bIsWorldStoryNewnessNotificationDisabled" type="Boolean"/>
+          <field name="sWorldStoryImageName" type="String"/>
+          <field name="fileAnimationResourceLargePath" type="String"/>
+          <field name="fileAnimationResourceSmallPath" type="String"/>
+          <field name="missionlistTeaserEndMissionLink" type="BinHex"/>
+          <field name="phonecommunicationsettingsWorldStoryActivationPhoneCall" type="BinHex"/>
+          <field name="selWorldStoryType" type="Enum"/>
+          <field name="bIsTrackable" type="Boolean"/>
+          <field name="missionlistFirstMissionOfWorldStory" type="BinHex"/>
+          <field name="bIsExclusiveDLC" type="Boolean" />
+          <field name="bIsHiddenFromDedsecAppWhenCompleted" type="Boolean" />
+          <object name="locstridWorldStoryName">
+            <field name="LocalizationId" type="Int64"/>
+          </object>
+        </object>
+        <object name="MissionActivationEntity">
+          <field name="bEntityIsCLO" type="Boolean"/>
+          <field name="entEntity" type="BinHex"/>
+          <field name="EntityCLO" type="BinHex"/>
+        </object>
+        <object name="locstridMissionActivationObjective">
+          <field name="LocalizationId" type="Int64"/>
+        </object>
+      </object>
+      <object name="Checkpoints">
+        <object name="Checkpoint">
+          <field name="bDefaultCheckpoint" type="Boolean"/>
+          <field name="sCheckpointName" type="String"/>
+          <field name="entStartSpawnPointId" type="BinHex"/>
+          <field name="bIsWithinInstallPackagePartial" type="Boolean"/>
+          <field name="bWaitHighResResources" type="Boolean"/>
+          <field name="bIsInDynamicWlu" type="Boolean"/>
+          <field name="text_objlayWluName" type="String"/>
+          <field name="objlayWluName" type="BinHex"/>
+        </object>
+      </object>
+      <object name="MissionCriteria">
+        <object name="MissionCriteriaGroup">
+		  <object name="MissionCriteria">
+            <field name="text_criteriaMissionCriteriaType" type="String"/>
+            <field name="criteriaMissionCriteriaType" type="BinHex"/>
+            <object name="CriteriaParameters">
+              <field name="missionlistMissionID" type="BinHex"/>
+              <field name="progressiontagProgressionTag" type="BinHex"/>
+              <field name="selProgressionCurrency" type="Enum"/>
+              <field name="fFactor1000CurrencyTarget" type="Float"/>
+              <field name="ulccodeContentId" type="BinHex"/>
+              <field name="selUnlockByDLC" type="Enum"/>
+			  <object name="Time">
+                <object name="TimeOfDay">
+                  <field name="selTimeOfDay" type="Enum"/>
+                </object>
+              </object>
+            </object>
+          </object>
+		</object>
+      </object>
+      <object name="OtherProperties">
+        <field name="bAutoStart" type="Boolean" />
+        <field name="bIsPartOfGameProgressionTracking" type="Boolean"/>
+        <field name="text_trackingcontextTrackingContext" type="String"/>
+        <field name="trackingcontextTrackingContext" type="BinHex"/>
+        <field name="iAiUnitBudget" type="Int32"/>
+        <field name="bShouldCleanDynamicEntitesOnMissionStart" type="Boolean"/>
+        <field name="bShouldForceUnloadOnStop" type="Boolean"/>
+        <field name="bIsDedsecEventAndShouldNotBlockFurtherMM" type="Boolean"/>
+      </object>
+    </object>
+</class>

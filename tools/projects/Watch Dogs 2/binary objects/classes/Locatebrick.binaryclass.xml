@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="LocatebrickParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsLocatedOnStart" type="Boolean"/>
+	<field name="fRadius" type="Float"/>
+	<field name="fMaxDistanceToLocalizeOnSight" type="Float"/>
+	<field name="possyselementMarker" type="BinHex"/>
+	<field name="vecMarkerOffset" type="Vector3"/>
+	<field name="bDeactivateMarkerOnDeath" type="Boolean"/>
+	<field name="locatebrickdescriptorLocateDefault" type="BinHex"/>
+	<object name="locstridOverrideText">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridLocateObjectiveText">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridAttackerLocateObjectiveText">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridDefenderLocateObjectiveText">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+</class>

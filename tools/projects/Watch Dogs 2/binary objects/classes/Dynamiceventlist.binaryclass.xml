@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DynamiceventlistParameters">
+	<inherit name="SharedParameters"/>
+    <object name="Events" />
+    <object name="Groups">
+      <object name="Group">
+        <inherit name="DynamiceventdirectorsettingsGroupParameters"/>
+      </object>
+    </object>
+</class>

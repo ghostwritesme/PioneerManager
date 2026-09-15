@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="FleeaicharacterconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="VehicleSearchCriterias">
+		<field name="bSearchOnStart" type="Boolean"/>
+		<field name="fSearchInFrontDistance" type="Float"/>
+		<field name="fSearchMinimumThreathDistance" type="Float"/>
+		<field name="fSearchRetryTime" type="Float"/>
+	</object>
+	<object name="Dodge">
+		<field name="bEmitDodge" type="Boolean"/>
+		<field name="vec2DodgeBox" type="Vector2"/>
+		<field name="vec2AvoidBox" type="Vector2"/>
+	</object>
+	<object name="Cooldown">
+		<field name="bEnableCooldown" type="Boolean"/>
+		<object name="Anxious">
+			<field name="fDelayOnStart" type="Float"/>
+			<field name="fDistanceToThreat" type="Float"/>
+			<field name="fFaceThreatTime" type="Float"/>
+			<field name="fDistanceToEscalate" type="Float"/>
+		</object>
+		<object name="Panic">
+			<field name="fDelayOnStart" type="Float"/>
+			<field name="fDistanceToThreat" type="Float"/>
+			<field name="fFaceThreatTime" type="Float"/>
+			<field name="fDistanceToEscalate" type="Float"/>
+		</object>
+	</object>
+	<object name="Rubberbanding">
+		<object name="curveSpeedOverDistance">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="StopAndFire">
+			<field name="bEnabled" type="Boolean"/>
+			<field name="fDelayOnStart" type="Float"/>
+			<field name="fDelayForNextAction" type="Float"/>
+			<field name="vec2DelayToTrigger" type="Vector2"/>
+			<object name="curveProbabilityOverDistance">
+				<inherit name="KnotsParameters"/>
+			</object>
+		</object>
+		<object name="BlindFire">
+			<field name="bEnabled" type="Boolean"/>
+			<field name="fDelayOnStart" type="Float"/>
+			<field name="fDelayForNextAction" type="Float"/>
+			<field name="vec2DelayToTrigger" type="Vector2"/>
+			<object name="curveProbabilityOverDistance">
+				<inherit name="KnotsParameters"/>
+			</object>
+		</object>
+		<object name="Stumble">
+			<field name="bEnabled" type="Boolean"/>
+			<field name="fDelayOnStart" type="Float"/>
+            <field name="fDelayForNextAction" type="Float"/>
+            <field name="vec2DelayToTrigger" type="Vector"/>
+            <object name="curveProbabilityOverDistance">
+                <inherit name="KnotsParameters"/>
+            </object>
+		</object>
+	</object>
+	<object name="NavigationRequests">
+		<field name="selGoToVehicleInteractiveMode" type="Enum"/>
+		<field name="selFleeInteractiveMode" type="Enum"/>
+		<field name="selFollowInteractiveMode" type="Enum"/>
+		<field name="selWanderInteractiveMode" type="Enum"/>
+		<field name="bWanderAnimDriven" type="Boolean"/>
+	</object>
+</class>

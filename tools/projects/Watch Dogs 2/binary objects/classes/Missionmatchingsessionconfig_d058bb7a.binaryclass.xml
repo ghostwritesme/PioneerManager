@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Missionmatchingsessionconfig_d058bb7aParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fWeight" type="Float"/>
+	<field name="fScoreOffset" type="Float"/>
+	<field name="fOwnerDisanceMax" type="Float"/>
+	<field name="fPlayerDistanceMin" type="Float"/>
+	<field name="fPlayerDistanceIdealMin" type="Float"/>
+	<field name="fPlayerDistanceIdealMax" type="Float"/>
+	<field name="fPlayerDistanceMax" type="Float"/>
+</class>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ChaseheatparamsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bAllowHeatToChangeLevel" type="Boolean"/>
+	<field name="bShouldOverrideMinHeat" type="Boolean"/>
+	<field name="bAutomaticHeatIncrease" type="Boolean"/>
+	<field name="bWaterHeatIncrease" type="Boolean"/>
+	<field name="bOffRoadHeatIncrease" type="Boolean"/>
+	<field name="fAutoHeatAddDelay" type="Float"/>
+	<field name="fAutoHeatAddInterval" type="Float"/>
+	<field name="iAutoHeatAddAmount" type="Int32"/>
+	<field name="iAutoHeatAddTarget" type="Int32"/>
+	<field name="fOffRoadHeatAddDelay" type="Float"/>
+	<field name="fOffRoadHeatAddInterval" type="Float"/>
+	<field name="iOffRoadHeatAddAmount" type="Int32"/>
+	<field name="iOffRoadHeatAddTarget" type="Int32"/>
+	<field name="iMinHeatOverride" type="Int32"/>
+</class>

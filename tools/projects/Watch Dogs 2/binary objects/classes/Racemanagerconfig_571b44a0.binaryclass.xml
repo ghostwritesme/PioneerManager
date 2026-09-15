@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Racemanagerconfig_571b44a0Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="entPlayerClubSpawnPoint" type="BinHex"/>
+	<field name="missionlistMissionThatUnlocksRaces" type="BinHex"/>
+	<object name="PlayerVehicle">
+		<field name="archDefaultPlayerVehicle" type="BinHex"/>
+		<field name="archShadowVehicle" type="BinHex"/>
+	</object>
+	<object name="Perks">
+		<field name="perkdesclistMultiplayerPerksToRemove" type="BinHex"/>
+		<field name="perkdesclistMultiplayerPerksToAdd" type="BinHex"/>
+	</object>
+	<object name="MenuPages">
+		<field name="uimenupageRaceEndMenuPage" type="BinHex"/>
+		<field name="uimenupageRaceCentralMenuPage" type="BinHex"/>
+		<field name="uimenupageRaceDetailsMenuPagePC" type="BinHex"/>
+		<field name="uimenupageTournamentCompleteMenuPage" type="BinHex"/>
+	</object>
+	<object name="Shop">
+		<object name="VehicleItems"/>
+	</object>
+	<object name="Practice">
+		<field name="itemsOnlineRaceTileDescription" type="BinHex"/>
+		<object name="Races"/>
+		<object name="RaceItems" />
+	</object>
+	<object name="Tournament">
+		<object name="RaceItems" />
+		<object name="Racers" />
+	</object>
+	<object name="Story">
+		<object name="RaceItems" />
+	</object>
+</class>

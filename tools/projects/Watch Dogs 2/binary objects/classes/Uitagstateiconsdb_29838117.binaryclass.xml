@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uitagstateiconsdb_29838117Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="texturedbobjectStateAlertSoft" type="BinHex"/>
+	<field name="texturedbobjectStateConflict" type="BinHex"/>
+	<field name="texturedbobjectStateDefault" type="BinHex"/>
+	<field name="texturedbobjectStateSearch" type="BinHex"/>
+	<field name="texturedbobjectStateWarnArrest" type="BinHex"/>
+	<field name="texturedbobjectStateAlertHard" type="BinHex"/>
+	<field name="texturedbobjectStateSmellTracking" type="BinHex"/>
+	<field name="texturedbobjectStateStunned_LongDuration" type="BinHex"/>
+	<field name="texturedbobjectStateAlertEnforcer" type="BinHex"/>
+	<field name="texturedbobjectStateConflictEnforcer" type="BinHex"/>
+	<field name="texturedbobjectStateSearchEnforcer" type="BinHex"/>
+	<field name="texturedbobjectStateStunned_MediumDuration" type="BinHex"/>
+	<field name="texturedbobjectStateStunned_ShortDuration" type="BinHex"/>
+	<field name="texturedbobjectStateAlertEliteGrenadier" type="BinHex"/>
+	<field name="texturedbobjectStateConflictEliteGrenadier" type="BinHex"/>
+	<field name="texturedbobjectStateSearchEliteGrenadier" type="BinHex"/>
+	<field name="texturedbobjectStateAlertJammer" type="BinHex"/>
+	<field name="texturedbobjectStateConflictJammer" type="BinHex"/>
+	<field name="texturedbobjectStateSearchJammer" type="BinHex"/>
+</class>

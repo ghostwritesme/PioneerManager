@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Breakablepartparamsdefault_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="Root" type="BinHex"/>
+	<field name="Frag" type="BinHex"/>
+</class>

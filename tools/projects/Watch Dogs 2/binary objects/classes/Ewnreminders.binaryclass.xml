@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="EwnremindersParameters">
+	<inherit name="SharedParameters"/>
+	<field name="availabilityrulegroupAvailabilityRuleGroup" type="BinHex"/>
+	<field name="phonecommunicationsettings" type="BinHex"/>
+</class>

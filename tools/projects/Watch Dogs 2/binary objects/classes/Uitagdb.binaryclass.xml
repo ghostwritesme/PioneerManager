@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UitagdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="sTagName" type="String"/>
+	<object name="TagDescriptor">
+		<field name="text_uitagdescriptoridTagType" type="String"/>
+		<field name="uitagdescriptoridTagType" type="BinHex"/>
+		<object name="Properties">
+			<field name="uitagimagesettingImage" type="BinHex"/>
+			<field name="uitagcolorsettingColor" type="BinHex"/>
+			<field name="bDefaultPadButton" type="Boolean"/>
+			<field name="bRemappedPadButton" type="Boolean"/>
+			<field name="bInvertedAcceptPadButton" type="Boolean"/>
+			<field name="bRemotePlayDefaultPadButton" type="Boolean"/>
+			<field name="bRemotePlayRemappedPadButton" type="Boolean"/>
+			<object name="DefaultPadButton">
+				<field name="uitagimagesettingButtonImage" type="BinHex"/>
+			</object>
+			<object name="RemappedPadButton">
+				<field name="uitagremapbuttonsettingButton" type="BinHex"/>
+			</object>
+			<object name="InvertedAcceptPadButton">
+				<field name="uitagimagesettingButtonImage" type="BinHex"/>
+			</object>
+			<object name="PC">
+				<field name="uitagimagesettingMouseIcon" type="BinHex"/>
+				<field name="virtualkeyFallbackVirtualKey" type="BinHex"/>
+				<object name="VirtualKeys">
+					<object name="virtualkeyVirtualKey">
+						<field name="virtualkeyVirtualKey" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

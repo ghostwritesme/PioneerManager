@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Notificationmanagersettings_dc0deb9d">
+	<object name="obj">
+		<inherit name="Notificationmanagersettings_dc0deb9dParameters"/>
+	</object>
+</file>

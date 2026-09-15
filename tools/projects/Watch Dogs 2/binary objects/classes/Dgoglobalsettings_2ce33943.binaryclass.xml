@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Dgoglobalsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_archDefaultZone" type="String"/>
+	<field name="archDefaultZone" type="BinHex"/>
+	<object name="OverrideContainer">
+		<object name="RoleSettings">
+			<object name="RoleSetting">
+				<field name="text_RoleID" type="String"/>
+				<field name="RoleID" type="BinHex"/>
+				<object name="Default">
+					<field name="profilersettingsProfilerSettings" type="BinHex"/>
+					<field name="rewardconfigRewardConfigOverride" type="BinHex"/>
+				</object>
+				<object name="AffiliationSettings">
+					<object name="AffiliationSetting">
+						<field name="selAffiliation" type="Enum"/>
+						<object name="Settings">
+							<field name="profilersettingsProfilerSettings" type="BinHex"/>
+							<field name="rewardconfigRewardConfigOverride" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

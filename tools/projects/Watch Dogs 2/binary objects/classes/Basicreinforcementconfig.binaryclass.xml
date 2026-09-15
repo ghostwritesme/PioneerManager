@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BasicreinforcementconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bUseSystemicAgentManagement" type="Boolean"/>
+	<field name="bUseInfiniteRespawning" type="Boolean"/>
+	<field name="uiInitialWaveSize" type="Int64"/>
+	<field name="uiRespawnWaveSize" type="Int64"/>
+	<field name="fTakedownRespawnDelay" type="Float"/>
+	<field name="bMaximizeVehicleSpawning" type="Boolean"/>
+	<field name="fOverrideUselessUnspawnRadius" type="Float"/>
+	<field name="uiMaxNumNPCSpawns" type="UInt32"/>
+	<object name="curveMaxSpawnedUnits">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveMaxSpawnedOnFootUnits">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveMaxSpawnedUnitsInUntargetedSearch">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveMaxSpawnedOnFootUnitsInUntargetedSearch">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveRespawnDelayCurve">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="PlayerZone">
+		<field name="fTimeToReachPlayerZoneOnSpawn" type="Float"/>
+		<field name="fPlayerZoneInMeter" type="Float"/>
+	</object>
+	<object name="RuralSpawning">
+		<field name="fRuralExtendDist" type="Float"/>
+		<field name="fRuralUnrollRadius" type="Float"/>
+		<field name="fRuralOnFootDist" type="Float"/>
+	</object>
+	<object name="SpawningPoolConfig">
+		<object name="UnifiedPoolConfigs">
+			<object name="Config">
+				<field name="selSpawningPoolType" type="Enum"/>
+				<field name="uiPoolSize" type="Int64"/>
+				<field name="bSpawnWhenOnFoot" type="Boolean"/>
+				<field name="bSpawnWhenInVehicle" type="Boolean"/>
+				<field name="bSpawnOnlyWhenInCustomReinforcementZone" type="Boolean"/>
+			</object>
+		</object>
+	</object>
+	<object name="SpawnRules">
+		<field name="uiNbrUnitInInnerCircle" type="Int64"/>
+		<field name="uiNbrUnitInMiddleCircle" type="Int64"/>
+		<field name="uiNbrUnitInOuterCircle" type="Int64"/>
+	</object>
+</class>

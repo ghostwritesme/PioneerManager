@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="FaketrafficsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="districtDistrict" type="BinHex"/>
+	<object name="VehicleList">
+		<object name="VehicleSettings">
+			<field name="fOccurrence" type="Float"/>
+			<field name="fLightHeight" type="Float"/>
+			<field name="fLightOffset" type="Float"/>
+			<field name="fLightSpacing" type="Float"/>
+			<field name="lighteffectprefabHeadlight" type="BinHex"/>
+			<field name="lighteffectprefabTaillight" type="BinHex"/>
+		</object>
+	</object>
+</class>

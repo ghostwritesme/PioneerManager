@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Rewardglobalsettings_72502b1bParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_sndNarrativeItemAudioFile" type="String"/>
+	<field name="sndNarrativeItemAudioFile" type="BinHex"/>
+	<field name="text_sndNarrativeItemChat" type="String"/>
+	<field name="sndNarrativeItemChat" type="BinHex"/>
+	<field name="text_sndNarrativeItemEmail" type="String"/>
+	<field name="sndNarrativeItemEmail" type="BinHex"/>
+	<field name="text_sndNarrativeItemVideoFile" type="String"/>
+	<field name="sndNarrativeItemVideoFile" type="BinHex"/>
+	<field name="text_sndNarrativeItemVoice" type="String"/>
+	<field name="sndNarrativeItemVoice" type="BinHex"/>
+	<field name="text_sndNKeyDataAcquireSound" type="String"/>
+	<field name="sndNKeyDataAcquireSound" type="BinHex"/>
+	<field name="text_sndMollowersComponentAcquireSound" type="String"/>
+	<field name="sndMollowersComponentAcquireSound" type="BinHex"/>
+	<object name="AcquireRewardTypeSFX">
+		<field name="text_itemdescriptorItemDescriptor" type="String"/>
+		<field name="itemdescriptorItemDescriptor" type="BinHex"/>
+		<field name="text_sndAcquireRewardSFX" type="String"/>
+		<field name="sndAcquireRewardSFX" type="BinHex"/>
+		<object name="AcquireRewardTypeSFX">
+			<field name="text_itemdescriptorItemDescriptor" type="String"/>
+			<field name="itemdescriptorItemDescriptor" type="BinHex"/>
+			<field name="text_sndAcquireRewardSFX" type="String"/>
+			<field name="sndAcquireRewardSFX" type="BinHex"/>
+		</object>
+	</object>
+</class>

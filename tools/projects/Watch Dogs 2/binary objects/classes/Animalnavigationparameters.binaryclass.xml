@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="AnimalnavigationparametersParameters">
+	<inherit name="SharedParameters"/>
+	<object name="StopDistanceThresholds">
+		<field name="fWalkStopDistanceThreshold" type="Float"/>
+		<field name="fJogStopDistanceThreshold" type="Float"/>
+		<field name="fRunStopDistanceThreshold" type="Float"/>
+		<field name="fSearchStopDistanceThreshold" type="Float"/>
+		<field name="fPlayStopDistanceThreshold" type="Float"/>
+	</object>
+	<object name="MovementSpeeds">
+		<field name="fMinimumSpeed" type="Float"/>
+		<field name="fWalkSpeed" type="Float"/>
+		<field name="fTrotSpeed" type="Float"/>
+		<field name="fJogSpeed" type="Float"/>
+		<field name="fRunSpeed" type="Float"/>
+	</object>
+	<object name="FacingStiffness">
+		<field name="fWalkStiffness" type="Float"/>
+		<field name="fJogStiffness" type="Float"/>
+		<field name="fRunStiffness" type="Float"/>
+	</object>
+	<object name="TurnBeforeStartDistanceThresholds">
+		<field name="fWalkTurnBeforeStartDistanceThreshold" type="Float"/>
+		<field name="fJogTurnBeforeStartDistanceThreshold" type="Float"/>
+		<field name="fRunTurnBeforeStartDistanceThreshold" type="Float"/>
+		<field name="fSearchTurnBeforeStartDistanceThreshold" type="Float"/>
+	</object>
+	<object name="Walker">
+		<field name="fWalkerMinSpeed" type="Float"/>
+		<field name="fWalkerMaxSpeed" type="Float"/>
+	</object>
+</class>

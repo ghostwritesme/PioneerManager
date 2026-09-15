@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BrickflowconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsUsingData" type="Boolean"/>
+	<field name="bIsContainer" type="Boolean"/>
+	<field name="text_selFlowClassName" type="String"/>
+	<field name="selFlowClassName" type="Enum"/>
+	<field name="text_fileFlowResource" type="String"/>
+	<field name="fileFlowResource" type="BinHex"/>
+	<field name="text_fileContainerResource" type="String"/>
+	<field name="fileContainerResource" type="BinHex"/>
+</class>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DownloadgameplaybrickParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsKingOfTheHillMode" type="BinHex"/>
+	<object name="DownloadGameplayDescriptor">
+		<field name="fBaseDownLoadDuration" type="Float"/>
+		<field name="bIsManagingObjectiveMarker" type="Boolean"/>
+		<field name="bUseCustomIconObjectiveTypes" type="BinHex"/>
+		<field name="selIconObjectiveTypeTeammate" type="BinHex"/>
+		<field name="selIconObjectiveTypeOpponent" type="BinHex"/>
+		<field name="bSendAttractStim" type="Boolean"/>
+		<field name="fAttractStimRadius" type="Float"/>
+		<field name="bShouldTestPlayersDistance" type="Boolean"/>
+		<field name="bDisplayDownloadZone" type="Boolean"/>
+		<field name="selDownloadZoneType" type="Enum"/>
+		<field name="fDownloadRadiusNormal" type="Float"/>
+		<field name="fDownloadRadiusSmall" type="Float"/>
+		<field name="fDownloadRadiusWhenInVehicle" type="Float"/>
+		<field name="fUiLimitRadius" type="Float"/>
+		<field name="fOutOfRadiusPercentage" type="Float"/>
+		<field name="fAllPlayersInRangeCoef" type="Float"/>
+		<field name="bIsPlayerRCsCanAlsoProgressDownload" type="Boolean"/>
+		<field name="bMustBeTeammateToTargetOwnerToDownload" type="BinHex"/>
+		<field name="fDownloadCylinderZOffsetTop" type="Float"/>
+		<field name="fDownloadCylinderZOffsetBottom" type="Float"/>
+		<field name="fRatio1ProgressRatio" type="Float"/>
+		<field name="fRatio2ProgressRatio" type="Float"/>
+		<field name="bNotifyProgressReached" type="Boolean"/>
+		<field name="fNotifyRatio" type="Float"/>
+		<field name="bIsProgressBarInverted" type="Boolean"/>
+		<field name="bUseConnectionLink" type="Boolean"/>
+		<field name="bIsCoopGameplay" type="Boolean"/>
+		<field name="fDownloadResetDuration" type="Float"/>
+		<field name="fDownloadBlockedDuration" type="Float"/>
+		<field name="fDownloadBlockedStartRatio" type="Float"/>
+		<field name="bStopBrickOnDownloadCompletion" type="BinHex"/>
+		<field name="fEraseStoppedDisplayDelay" type="BinHex"/>
+		<field name="bUseEraseCircularZoneType" type="BinHex"/>
+		<field name="fWarningDuration" type="Float"/>
+		<field name="text_sndStartPauseLoopSound" type="String"/>
+		<field name="sndStartPauseLoopSound" type="BinHex"/>
+		<field name="text_sndStopPauseLoopSound" type="String"/>
+		<field name="sndStopPauseLoopSound" type="BinHex"/>
+		<field name="text_sndResetPauseLoopSound" type="String"/>
+		<field name="sndResetPauseLoopSound" type="BinHex"/>
+		<object name="locstridDownloadDisplayString">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridDownloadBoostedDisplayString">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridPausedDisplayString">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridPauseNoTargetOwnerLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridDownloadResetWarningString">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridDownloadBlockedString">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridDownloadPausedTeamOutOfRangeString">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridDownloadBlockedByRivalTeamString">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridEraseStoppedString">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+</class>

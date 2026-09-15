@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Onlinehackingsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fHackerTutorialDelay" type="Float"/>
+	<field name="mapicondescVictimObjectiveIcon" type="BinHex"/>
+	<field name="fDistanceForDontHarmWarning" type="Float"/>
+	<field name="fHackerEngagementRadius" type="Float"/>
+	<field name="fHackHintDistance" type="Float"/>
+	<field name="fEventPropositionDuration" type="Float"/>
+	<field name="fLineOfSightEngagementDistance" type="Float"/>
+	<field name="fLineOfSightEngagementDuration" type="Float"/>
+	<field name="fNoDistanceDisengagementDuration" type="Float"/>
+	<field name="fDistanceToShowDownloadZoneFeedback" type="Float"/>
+	<field name="bInstallZoneOnVictim" type="Boolean"/>
+	<field name="fInstallDownloadDuration" type="Float"/>
+	<field name="fDownloadDurationOneVictim" type="Float"/>
+	<field name="fDownloadDurationTwoVictims" type="Float"/>
+	<field name="fDownloadDurationThreeVictims" type="Float"/>
+	<field name="fDownloadDurationTwoVictimsTwoHackers" type="Float"/>
+	<field name="fDownloadOutOfRangeOrInWaterDurationFirstTime" type="Float"/>
+	<field name="fDownloadOutOfRangeOrInWaterDurationSecondTime" type="Float"/>
+	<field name="fDownloadOutOfRangeOrInWaterDurationThirdTime" type="Float"/>
+	<field name="fDownloadOutOfRangeOrInWaterDurationFourthTime" type="Float"/>
+	<field name="fTeleportPropositionDistance" type="Float"/>
+	<field name="fTeleportPropositionDuration" type="Float"/>
+	<field name="fTeleportPropositionDelay" type="Float"/>
+	<field name="mapicondescSearchZoneIcon" type="BinHex"/>
+	<field name="fKickOutWarningDuration" type="Float"/>
+	<field name="fOnlineHackingMaxDistanceLockTargeting" type="Float"/>
+	<field name="fDelayBetweenRCProfiledWarning" type="Float"/>
+	<field name="fVehicleRammingFactor" type="Float"/>
+	<field name="fVictimProfilerDelayBeforeFleeStart" type="Float"/>
+	<field name="fStickToHackerProfilerDuration" type="Float"/>
+	<field name="fRevealingHackerProfilingDuratio" type="Float"/>
+	<field name="fOnlineHackingProfilingDelay" type="Float"/>
+	<field name="fOnlineHackingProfilingFOVXModifier" type="Float"/>
+	<field name="fFleeWithoutLOSDuration" type="Float"/>
+	<field name="fFleeLosingLOSHysteresis" type="Float"/>
+	<field name="fFleeMaxDistanceForLineOfSightCheck" type="Float"/>
+	<field name="fFleeDelayBeforeLOSWarning" type="Float"/>
+	<field name="fFleeLOSWarningDuration" type="Float"/>
+	<field name="fEvadeSuccessDistance" type="Float"/>
+	<field name="mapicondescChaseDiskIcon" type="BinHex"/>
+	<field name="fEscapeModeTwoVictimsTwoHackers" type="Enum"/>
+	<field name="fKillCameraDuration" type="Float"/>
+	<field name="fDownloadCompleteCameraDuration" type="Float"/>
+	<field name="fHackerKilledResolutionWarningDuration" type="Float"/>
+	<field name="fHackerKilledDelayBetweenWarningAndResolution" type="Float"/>
+	<field name="itemsHackerFound" type="BinHex"/>
+	<field name="itemsHackerKilled" type="BinHex"/>
+	<field name="itemsVictimEventComplete" type="BinHex"/>
+	<field name="itemsVictimEventCompleteCash" type="BinHex"/>
+	<field name="itemsEnemyAbandonnedReward" type="BinHex"/>
+	<field name="itemsHackInitiate" type="BinHex"/>
+	<field name="itemsEscaped" type="BinHex"/>
+	<field name="itemsDownloadCompleted" type="BinHex"/>
+	<field name="itemsPartialDownloadReward" type="BinHex"/>
+	<field name="itemsHackerEventComplete" type="BinHex"/>
+	<field name="itemsHackerEventCompleteCash" type="BinHex"/>
+	<field name="itemsTwoVictimsReward" type="BinHex"/>
+	<field name="fTwoVictimsRewardAdditionnalFactor" type="Float"/>
+	<field name="uiWinsCountForWinningStreak" type="Int64"/>
+	<field name="itemsWinningStreakReward" type="BinHex"/>
+	<field name="itemsNotoriousReward" type="BinHex"/>
+	<field name="itemsCombinedNotoriousAndWinStreakReward" type="BinHex"/>
+	<field name="text_sndBackdoorHackSweep" type="String"/>
+	<field name="sndBackdoorHackSweep" type="BinHex"/>
+	<field name="text_sndHackerIdentify" type="String"/>
+	<field name="sndHackerIdentify" type="BinHex"/>
+	<field name="text_sndSuccessSound" type="String"/>
+	<field name="sndSuccessSound" type="BinHex"/>
+	<field name="phonecommunicationsettingsHackerIntroPhoneCallHoratioAlive" type="BinHex"/>
+	<field name="phonecommunicationsettingsHackerIntroPhoneCallHoratioDead" type="BinHex"/>
+	<field name="iMaxHackerIntroPhoneCallCount" type="Int32"/>
+	<field name="text_sndIntrusionDetectedSound" type="String"/>
+	<field name="sndIntrusionDetectedSound" type="BinHex"/>
+	<field name="text_sndHackingTargetFound" type="String"/>
+	<field name="sndHackingTargetFound" type="BinHex"/>
+	<field name="fBarkDelayOnHackerFound" type="Float"/>
+	<field name="fBarkDelayOnIntruderDetected" type="Float"/>
+	<field name="phonecommunicationsettingsVictimIntroPhoneCallHoratioAlive" type="BinHex"/>
+	<field name="phonecommunicationsettingsVictimIntroPhoneCallHoratioDead" type="BinHex"/>
+	<field name="iMaxVictimIntroPhoneCallCount" type="Int32"/>
+	<field name="text_sndMissionObjectiveFailure" type="String"/>
+	<field name="sndMissionObjectiveFailure" type="BinHex"/>
+	<field name="text_sndSearchAreaNarrowing" type="String"/>
+	<field name="sndSearchAreaNarrowing" type="BinHex"/>
+	<field name="iRageQuitPenalty" type="Int32"/>
+	<field name="fDistanceToEnableGPS" type="Float"/>
+	<field name="fDistanceToDisableGPS" type="Float"/>
+	<field name="fDistanceFromZoneToDisableGPS" type="Float"/>
+	<field name="fDownloadDuration" type="Float"/>
+	<field name="fDownloadOutOfRangeDuration" type="Float"/>
+	<field name="fDownloadInWaterWarningDuration" type="Float"/>
+	<field name="iDownloadStepCount" type="Int32"/>
+	<field name="itemsTwoVictimsRewardAdditionnalFactor" type="Float"/>
+	<object name="DownloadZoneStepOne">
+		<object name="Solo">
+			<field name="fDownloadZoneRadius" type="Float"/>
+			<field name="fTotalDurationRation" type="Float"/>
+		</object>
+		<object name="Coop">
+			<field name="fDownloadZoneRadius" type="Float"/>
+			<field name="fTotalDurationRation" type="Float"/>
+		</object>
+		<object name="ThreeVictims">
+			<field name="fDownloadZoneRadius" type="Float"/>
+			<field name="fTotalDurationRation" type="Float"/>
+		</object>
+		<object name="TwoVictimsTwoHackers">
+			<field name="fDownloadZoneRadius" type="Float"/>
+			<field name="fTotalDurationRation" type="Float"/>
+		</object>
+	</object>
+	<object name="DownloadZoneStepTwo">
+		<object name="Solo">
+			<field name="fDownloadZoneRadius" type="Float"/>
+			<field name="fTotalDurationRation" type="Float"/>
+		</object>
+		<object name="Coop">
+			<field name="fDownloadZoneRadius" type="Float"/>
+			<field name="fTotalDurationRation" type="Float"/>
+		</object>
+		<object name="ThreeVictims">
+			<field name="fDownloadZoneRadius" type="Float"/>
+			<field name="fTotalDurationRation" type="Float"/>
+		</object>
+		<object name="TwoVictimsTwoHackers">
+			<field name="fDownloadZoneRadius" type="Float"/>
+			<field name="fTotalDurationRation" type="Float"/>
+		</object>
+	</object>
+	<object name="DownloadZoneStepThree">
+		<object name="Solo">
+			<field name="fDownloadZoneRadius" type="Float"/>
+			<field name="fTotalDurationRation" type="Float"/>
+		</object>
+		<object name="Coop">
+			<field name="fDownloadZoneRadius" type="Float"/>
+			<field name="fTotalDurationRation" type="Float"/>
+		</object>
+		<object name="ThreeVictims">
+			<field name="fDownloadZoneRadius" type="Float"/>
+			<field name="fTotalDurationRation" type="Float"/>
+		</object>
+		<object name="TwoVictimsTwoHackers">
+			<field name="fDownloadZoneRadius" type="Float"/>
+			<field name="fTotalDurationRation" type="Float"/>
+		</object>
+	</object>
+	<object name="DownloadZoneStepFour">
+		<object name="Solo">
+			<field name="fDownloadZoneRadius" type="Float"/>
+			<field name="fTotalDurationRation" type="Float"/>
+		</object>
+		<object name="Coop">
+			<field name="fDownloadZoneRadius" type="Float"/>
+			<field name="fTotalDurationRation" type="Float"/>
+		</object>
+		<object name="ThreeVictims">
+			<field name="fDownloadZoneRadius" type="Float"/>
+			<field name="fTotalDurationRation" type="Float"/>
+		</object>
+		<object name="TwoVictimsTwoHackers">
+			<field name="fDownloadZoneRadius" type="Float"/>
+			<field name="fTotalDurationRation" type="Float"/>
+		</object>
+	</object>
+	<object name="VictimProfileLineSettings">
+		<field name="text_fileLineTexture" type="String"/>
+		<field name="fileLineTexture" type="BinHex"/>
+		<field name="fWorldOffset" type="Float"/>
+		<field name="fTimedLineDuration" type="Float"/>
+		<object name="curveLineWidthOverDist">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="ResolutionsList">
+		<object name="Resolution">
+			<field name="selEndReason" type="Enum"/>
+			<field name="text_sHackerBark" type="String"/>
+			<field name="sHackerBark" type="BinHex"/>
+			<field name="sVictimBark" type="BinHex"/>
+			<field name="sVictimBarkInCoop" type="BinHex"/>
+			<object name="locstridHackerResolution">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridVictimResolution">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+	<object name="HackingCompleteRewards">
+		<object name="HackingCompleteReward">
+			<field name="uiWinCount" type="Int64"/>
+			<field name="itemlistsReward" type="BinHex"/>
+		</object>
+	</object>
+</class>

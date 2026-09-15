@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Photocameraconfig_40469731Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_sPostFx" type="String"/>
+	<field name="sPostFx" type="BinHex"/>
+	<field name="fSwitchSidesFovBlendTime" type="Float"/>
+	<field name="uiappAppScoutX" type="BinHex"/>
+	<field name="text_archFocusPointArchetype" type="String"/>
+	<field name="archFocusPointArchetype" type="BinHex"/>
+	<field name="fSearchDistanceToFocalLengthRatio" type="Float"/>
+	<field name="fMinEntitySearchRadius" type="Float"/>
+	<field name="fMaxEntitySearchRadius" type="Float"/>
+	<field name="fMaxTargetsDistancesDifference" type="Float"/>
+	<field name="fMaxTargetsDistancesRatio" type="Float"/>
+	<field name="fFaceDetectionOrientationLimit" type="Float"/>
+	<field name="fFaceDetectionLimit" type="Float"/>
+	<field name="fFaceTrackingLimit" type="Float"/>
+	<field name="bIsDetectingMaskedFaces" type="Boolean"/>
+	<field name="fMaskedFaceVerticalOffset" type="Float"/>
+	<field name="fUntrackTime" type="Float"/>
+	<field name="fFocusDistanceAdjustment" type="Float"/>
+	<field name="fBlurLimit" type="Float"/>
+	<field name="fRetinaScaleFactor" type="BinHex"/>
+	<field name="fRetinaViewFoVScaler" type="BinHex"/>
+	<field name="fRetinaAlignementAngle" type="BinHex"/>
+	<field name="bRetinaUseRightEye" type="BinHex"/>
+	<object name="SoundEffects">
+		<field name="sndCameraIn" type="BinHex"/>
+		<field name="sndCameraOut" type="BinHex"/>
+		<field name="text_sndCameraZoomStartSoundEffect" type="String"/>
+		<field name="sndCameraZoomStartSoundEffect" type="BinHex"/>
+		<field name="text_sndCameraZoomEndSoundEffect" type="String"/>
+		<field name="sndCameraZoomEndSoundEffect" type="BinHex"/>
+		<field name="text_sndCameraEmoteSoundEffect" type="String"/>
+		<field name="sndCameraEmoteSoundEffect" type="BinHex"/>
+		<field name="text_sndCameraFocusSoundEffect" type="String"/>
+		<field name="sndCameraFocusSoundEffect" type="BinHex"/>
+		<field name="text_sndCameraResetSoundEffect" type="String"/>
+		<field name="sndCameraResetSoundEffect" type="BinHex"/>
+		<field name="text_sndCameraShutterSoundEffect" type="String"/>
+		<field name="sndCameraShutterSoundEffect" type="BinHex"/>
+		<field name="text_sndCameraNavigationSoundEffect" type="String"/>
+		<field name="sndCameraNavigationSoundEffect" type="BinHex"/>
+		<field name="text_sndCameraSwitchModeSoundEffect" type="String"/>
+		<field name="sndCameraSwitchModeSoundEffect" type="BinHex"/>
+		<field name="text_sndCameraGoToAppSoundEffect" type="String"/>
+		<field name="sndCameraGoToAppSoundEffect" type="BinHex"/>
+		<field name="text_sndCameraExitSoundEffect" type="String"/>
+		<field name="sndCameraExitSoundEffect" type="BinHex"/>
+	</object>
+	<object name="SelfieConfigs">
+		<field name="nNumInitialEmoteAnimations" type="Int32"/>
+		<field name="nNumEmoteAnimations" type="Int32"/>
+		<field name="fEmoteDuration" type="Float"/>
+	</object>
+	<object name="locstridExitMenuControl">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridSelectMenuControl">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="InitialFilters">
+		<object name="InitialFilter">
+			<field name="selPhotoCameraFilter" type="Enum"/>
+			<field name="pcfilterdescFilterDescriptor" type="BinHex"/>
+		</object>
+	</object>
+	<object name="BrightnessFilterParams">
+		<field name="iNumberOfSteps" type="Int32"/>
+		<field name="fMinExposure" type="Float"/>
+		<field name="fMaxExposure" type="Float"/>
+		<field name="fDefaultExposure" type="Float"/>
+		<field name="sUiIconLabel" type="String"/>
+		<object name="locstridMenuEntry">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="EffectsFilterParams">
+		<field name="sUiIconLabel" type="String"/>
+		<object name="locstridNoneSelectionId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="EffectFilters">
+			<object name="pcfilterdescEffect">
+				<field name="pcfilterdescEffect" type="BinHex"/>
+			</object>
+		</object>
+		<object name="locstridMenuEntry">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="ModesParams">
+		<field name="sUiIconLabel" type="String"/>
+		<object name="locstridMenuEntry">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="Modes">
+			<field name="sUiIconLabel" type="String"/>
+			<field name="fFStop" type="Float"/>
+			<field name="fMaxFov" type="Float"/>
+			<field name="fMinFov" type="Float"/>
+			<field name="fMaxFocusDistance" type="Float"/>
+			<field name="fDefaultSelfieFocusDistance" type="Float"/>
+			<field name="fDefaultFov" type="Float"/>
+			<field name="fDefaultSelfieFov" type="Float"/>
+			<field name="fResetDelay" type="Float"/>
+			<field name="fFStopReset" type="Float"/>
+			<field name="fFocusPrecision" type="Float"/>
+			<field name="bUseFaceDetection" type="Boolean"/>
+			<field name="fAutoFocusDelay" type="Float"/>
+			<field name="bUseFovFStopPoints" type="Boolean"/>
+			<object name="locstridMenuEntry">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="FovFStopPoints"/>
+			<object name="Modes">
+				<field name="sUiIconLabel" type="String"/>
+				<field name="fFStop" type="Float"/>
+				<field name="fMaxFov" type="Float"/>
+				<field name="fMinFov" type="Float"/>
+				<field name="fMaxFocusDistance" type="Float"/>
+				<field name="fDefaultSelfieFocusDistance" type="Float"/>
+				<field name="fDefaultFov" type="Float"/>
+				<field name="fDefaultSelfieFov" type="Float"/>
+				<field name="fResetDelay" type="Float"/>
+				<field name="fFStopReset" type="Float"/>
+				<field name="fFocusPrecision" type="Float"/>
+				<field name="bUseFaceDetection" type="Boolean"/>
+				<field name="fAutoFocusDelay" type="Float"/>
+				<field name="bUseFovFStopPoints" type="Boolean"/>
+				<object name="locstridMenuEntry">
+					<field name="LocalizationId" type="Int64"/>
+				</object>
+				<object name="FovFStopPoints">
+					<object name="FovFStopPoint">
+						<field name="fFOV" type="Float"/>
+						<field name="fFStop" type="Float"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

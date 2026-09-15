@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Ewnservicesettingsdb_0d4473e8Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="CooldownGeneral" type="BinHex"/>
+	<field name="CooldownPhoneHacks" type="BinHex"/>
+	<field name="CooldownRadio" type="BinHex"/>
+	<field name="CooldownTv" type="BinHex"/>
+	<field name="CooldownCivilianConversation" type="BinHex"/>
+	<field name="fAftermathAvailableDelay" type="Float"/>
+</class>

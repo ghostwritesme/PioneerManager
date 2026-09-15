@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PlayerprogressionnodeParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Level">
+		<field name="uiNodeLevel" type="Int64"/>
+	</object>
+	<object name="Descriptor">
+		<field name="text_progressionbasicdescriptoridProgressionDescriptorId" type="String"/>
+		<field name="progressionbasicdescriptoridProgressionDescriptorId" type="BinHex"/>
+		<object name="ProgressionDescriptor">
+			<field name="nodetierNodeTier" type="BinHex"/>
+			<field name="perkdescsinglePerkSingle" type="BinHex"/>
+			<object name="AvailabilityRule">
+				<field name="availabilityrulegroupDisplayRule" type="BinHex"/>
+				<field name="availabilityrulegroupAcquisitionRule" type="BinHex"/>
+				<object name="locstridAcquisitionLockReason">
+					<field name="LocalizationId" type="Int64"/>
+				</object>
+			</object>
+			<object name="NodeIngredients">
+				<object name="Ingredients">
+					<object name="Ingredient">
+						<field name="itemsItem" type="BinHex"/>
+						<field name="iAmountNeeded" type="Int32"/>
+					</object>
+				</object>
+			</object>
+			<object name="NodeDisplay">
+				<field name="texturedbobjectNodeUIIcon" type="BinHex"/>
+				<field name="texturedbobjectNodeUILargeIcon" type="BinHex"/>
+				<field name="videosNodeVideo" type="BinHex"/>
+				<field name="videosNodeVideoPC" type="BinHex"/>
+			</object>
+			<object name="NodePlaystyles">
+				<object name="selPlaystyle">
+					<field name="selPlaystyle" type="Enum"/>
+				</object>
+			</object>
+			<object name="locstridName">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridLongDescription">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+	<object name="RequirementNodes">
+		<object name="ExtraRequirementNodes"/>
+		<object name="locstridLockReason">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="ChildNodes">
+		<object name="ChildNodes">
+			<object name="playerprogressionnodeChildNode">
+				<field name="playerprogressionnodeChildNode" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="Width">
+		<field name="uiNodeWidth" type="Int64"/>
+	</object>
+</class>

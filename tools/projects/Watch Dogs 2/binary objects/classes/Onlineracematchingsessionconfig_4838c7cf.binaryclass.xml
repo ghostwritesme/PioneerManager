@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Onlineracematchingsessionconfig_4838c7cfParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fWeight" type="Float"/>
+	<field name="fScoreOffset" type="Float"/>
+	<object name="MergingLogicStrategiesConfig">
+		<inherit name="SharedParameters"/>
+		<object name="CandidateMergeLogicConfig">
+			<inherit name="SharedParameters"/>
+			<field name="fSeamlessStrategyTime" type="Float"/>
+			<field name="fLowImpactStrategyTime" type="Float"/>
+			<field name="fHighImpactStrategyTime" type="Float"/>
+		</object>
+		<object name="ParticipantMergeLogicConfig">
+			<inherit name="SharedParameters"/>
+			<field name="fSeamlessStrategyTime" type="Float"/>
+			<field name="fLowImpactStrategyTime" type="Float"/>
+			<field name="fHighImpactStrategyTime" type="Float"/>
+		</object>
+	</object>
+	<object name="AvailabilityConfig">
+		<inherit name="SharedParameters"/>
+		<field name="fWeight" type="Float"/>
+		<field name="fScoreOffset" type="Float"/>
+		<field name="selOnlineActivityType" type="Enum"/>
+		<field name="selAttractedToType" type="Enum"/>
+		<field name="selLocomotionType" type="Enum"/>
+		<field name="selAttractedToLocomotionType" type="Enum"/>
+	</object>
+	<object name="PawnConfig">
+		<inherit name="SharedParameters"/>
+		<field name="fWeight" type="Float"/>
+		<field name="fScoreOffset" type="Float"/>
+		<field name="fDistanceMin" type="Float"/>
+		<field name="fDistanceIdealMin" type="Float"/>
+		<field name="fDistanceIdealMax" type="Float"/>
+		<field name="fDistanceMax" type="Float"/>
+		<field name="fDistanceWeight" type="Float"/>
+		<field name="fClosingSpeedMin" type="Float"/>
+		<field name="fClosingSpeedMax" type="Float"/>
+		<field name="fDistanceModulationFactor" type="Float"/>
+	</object>
+	<object name="QosConfig">
+		<inherit name="SharedParameters"/>
+		<field name="fWeight" type="Float"/>
+		<field name="fScoreOffset" type="Float"/>
+		<field name="nIdealRTT" type="Int32"/>
+		<field name="nBadRTT" type="Int32"/>
+		<field name="nIncompatibleRTT" type="Int32"/>
+	</object>
+	<object name="GameSessionInfoConfig">
+		<inherit name="SharedParameters"/>
+		<field name="fWeight" type="Float"/>
+		<field name="fScoreOffset" type="Float"/>
+		<field name="sDesiredClientCount" type="BinHex"/>
+		<field name="selCoopPreference" type="BinHex"/>
+		<field name="selCoopRestriction" type="BinHex"/>
+	</object>
+</class>

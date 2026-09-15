@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="StimsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selMode" type="Enum"/>
+	<field name="text_stimItemType" type="String"/>
+	<field name="stimItemType" type="BinHex"/>
+	<field name="text_stimreactItemType" type="String"/>
+	<field name="stimreactItemType" type="BinHex"/>
+	<object name="StimDefinition">
+		<field name="text_hidEventName" type="String"/>
+		<field name="hidEventName" type="BinHex"/>
+		<field name="hidTargetEntityId" type="BinHex"/>
+		<field name="text_sDetail" type="String"/>
+		<field name="sDetail" type="BinHex"/>
+		<field name="selType" type="Enum"/>
+		<field name="bShowCone" type="Boolean"/>
+		<field name="selReactionType" type="Enum"/>
+		<field name="selIntensity" type="Enum"/>
+		<field name="fConeAngle" type="Float"/>
+		<field name="vectorLimitsExtraRotations" type="Vector3"/>
+		<field name="bUseOcclusion" type="Boolean"/>
+		<field name="fDamage" type="Float"/>
+		<field name="curvelibDamageFalloff" type="BinHex"/>
+		<field name="fPhysImpulse" type="Float"/>
+		<field name="fPhysImpulseFalloffFactor" type="Float"/>
+		<field name="fShockWaveSpeed" type="Float"/>
+		<field name="fWindStartRadius" type="Float"/>
+		<field name="fWindEndRadius" type="Float"/>
+		<field name="fWindStartItensity" type="Float"/>
+		<field name="fWindEndIntensity" type="Float"/>
+		<field name="fWindTime" type="Float"/>
+		<object name="RadiusSettings">
+			<field name="fRadius" type="Float"/>
+		</object>
+		<object name="AltitudeSliceSettings">
+			<field name="fMaxAlt" type="Float"/>
+			<field name="fMinAlt" type="Float"/>
+		</object>
+		<object name="LevelSettings">
+			<field name="fLevel" type="Float"/>
+			<field name="bFalloff" type="Boolean"/>
+			<field name="fFalloffMinLevel" type="Float"/>
+		</object>
+		<object name="EntityRestrictions">
+			<field name="bRestrictToEntities" type="Boolean"/>
+			<field name="bRestrictToPlayers" type="Boolean"/>
+			<field name="bRestrictToNpcs" type="Boolean"/>
+			<field name="bRestrictToCivilians" type="Boolean"/>
+			<field name="bRestrictToVehicles" type="Boolean"/>
+			<field name="bRestrictToCiviliansDriver" type="Boolean"/>
+			<field name="bRestrictToAnimal" type="Boolean"/>
+			<field name="bRestrictToSimpleAnimal" type="Boolean"/>
+			<field name="bRestrictToRobot" type="Boolean"/>
+		</object>
+		<object name="Persistence">
+			<field name="bIsPersistent" type="Boolean"/>
+			<field name="fPersistenceInterval" type="Float"/>
+		</object>
+		<object name="VisibilityCheckSettings">
+			<field name="bPerceiveIfSee" type="Boolean"/>
+			<field name="bPerceiveIfCouldSee" type="Boolean"/>
+			<field name="bPerceiveIfHear" type="Boolean"/>
+		</object>
+		<object name="ReactionZoneSettings">
+			<field name="fComfortZoneMinRadius" type="Float"/>
+			<field name="fComfortZoneMaxRadius" type="Float"/>
+			<field name="bIsOriented" type="Boolean"/>
+			<field name="fFavoredAngle" type="Float"/>
+		</object>
+		<object name="ProjectileRadius">
+			<object name="Grenade">
+				<field name="fInHand" type="Float"/>
+				<field name="fInEnvironement" type="Float"/>
+				<field name="fHearLanding" type="Float"/>
+			</object>
+			<object name="Sticky">
+				<field name="fInHand" type="Float"/>
+				<field name="fInEnvironement" type="Float"/>
+				<field name="fHearLanding" type="Float"/>
+			</object>
+		</object>
+		<object name="PersonAttackedVisibilitySettings">
+			<object name="NormalVisibilitySettings">
+				<field name="bPerceiveIfSee" type="Boolean"/>
+				<field name="bPerceiveIfCouldSee" type="Boolean"/>
+				<field name="bPerceiveIfHear" type="Boolean"/>
+			</object>
+			<object name="StealthVisibilitySettings">
+				<field name="bPerceiveIfSee" type="Boolean"/>
+				<field name="bPerceiveIfCouldSee" type="Boolean"/>
+				<field name="bPerceiveIfHear" type="Boolean"/>
+			</object>
+		</object>
+		<object name="ExtraStimRadius">
+			<field name="fNormalWeaponRadius" type="Float"/>
+			<field name="fSilenceWeaponRadius" type="Float"/>
+			<field name="fStunWeaponRadius" type="Float"/>
+			<field name="fARWeaponRadius" type="Float"/>
+			<field name="fTaserWeaponRadius" type="Float"/>
+			<field name="fHearRadius" type="Float"/>
+			<field name="fSeeRadius" type="Float"/>
+			<field name="fReactionRadius" type="Float"/>
+		</object>
+		<object name="IntuitionVisibilitySettings">
+			<field name="bPerceiveIfSee" type="Boolean"/>
+			<field name="bPerceiveIfCouldSee" type="Boolean"/>
+			<field name="bPerceiveIfHear" type="Boolean"/>
+		</object>
+	</object>
+</class>

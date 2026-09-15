@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PgtingredientfamiliesParameters">
+	<inherit name="SharedParameters"/>
+	<field name="nDefaultMin" type="Int32"/>
+	<field name="nDefaultMax" type="Int32"/>
+	<field name="cloupsetAffiliationUpdateSettings" type="BinHex"/>
+	<object name="ContentPerAffiliation">
+		<field name="selAffiliation" type="Enum"/>
+		<object name="Archetypes">
+			<object name="Archetype">
+				<field name="text_archArchetype" type="String"/>
+				<field name="archArchetype" type="BinHex"/>
+			</object>
+		</object>
+		<object name="VehicleSpawnInfos">
+			<object name="VehicleSpawnInfo">
+					<field name="vehicleinfoVehicleSpawnInfo" type="BinHex"/>
+				</object>
+		</object>
+		<object name="ContentPerAffiliation">
+			<field name="selAffiliation" type="Enum"/>
+			<object name="Archetypes">
+				<object name="Archetype">
+					<field name="text_archArchetype" type="String"/>
+					<field name="archArchetype" type="BinHex"/>
+				</object>
+			</object>
+			<object name="VehicleSpawnInfos">
+				<object name="VehicleSpawnInfo">
+					<field name="vehicleinfoVehicleSpawnInfo" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

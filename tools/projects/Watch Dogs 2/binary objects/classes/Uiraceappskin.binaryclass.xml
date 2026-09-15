@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UiraceappskinParameters">
+	<inherit name="SharedParameters"/>
+	<field name="sFrameLabel" type="String"/>
+	<field name="fileBackgroundImage" type="String"/>
+	<object name="TextColor">
+		<field name="colorAddColor" type="Vector3"/>
+		<field name="colorMultiplyColor" type="Vector3"/>
+	</object>
+	<object name="AlternateTextColor">
+		<field name="colorAddColor" type="Vector3"/>
+		<field name="colorMultiplyColor" type="Vector3"/>
+	</object>
+	<object name="OpponentColor">
+		<field name="colorAddColor" type="Vector3"/>
+		<field name="colorMultiplyColor" type="Vector3"/>
+	</object>
+	<object name="HighlightColor">
+		<field name="colorAddColor" type="Vector3"/>
+		<field name="colorMultiplyColor" type="Vector3"/>
+	</object>
+	<object name="DefaultRaceColor">
+		<field name="colorAddColor" type="Vector3"/>
+		<field name="colorMultiplyColor" type="Vector3"/>
+	</object>
+	<object name="OnlineRaceColor">
+		<field name="colorAddColor" type="Vector3"/>
+		<field name="colorMultiplyColor" type="Vector3"/>
+	</object>
+</class>

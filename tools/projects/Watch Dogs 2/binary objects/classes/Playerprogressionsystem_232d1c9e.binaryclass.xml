@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Playerprogressionsystem_232d1c9eParameters">
+	<inherit name="SharedParameters"/>
+	<object name="SinglePlayer">
+		<field name="Money" type="BinHex"/>
+		<field name="Followers" type="BinHex"/>
+		<field name="TaxiStars" type="BinHex"/>
+		<field name="Prescription" type="BinHex"/>
+		<field name="itemsFollowersComponentItemDB" type="BinHex"/>
+		<field name="itemsBotnetItemDB" type="BinHex"/>
+		<field name="sPerkRewardIconName" type="String"/>
+		<object name="XPSettings">
+			<object name="XPSettings">
+				<object name="Level">
+					<field name="nLevelXP" type="Int32"/>
+					<field name="nFollowersComponentsGiveOnReach" type="Int32"/>
+					<field name="nBotNetsToGiveOnReach" type="Int32"/>
+				</object>
+				<object name="XPSettings">
+					<object name="Level">
+						<field name="nLevelXP" type="Int32"/>
+						<field name="nFollowersComponentsGiveOnReach" type="Int32"/>
+						<field name="nBotNetsToGiveOnReach" type="Int32"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="DefaultNodes">
+			<field name="playerprogressionnodePerksSingleDefaultProgressionNode" type="BinHex"/>
+		</object>
+		<object name="Felony">
+			<field name="chasestageconfigCopStage" type="BinHex"/>
+			<field name="chasestageconfigAFIStage" type="BinHex"/>
+			<field name="chasestageconfigMobStage" type="BinHex"/>
+		</object>
+	</object>
+	<object name="MultiPlayer">
+		<object name="PopUpFeedbackSounds">
+			<field name="text_sndPerkUnlockedSound" type="String"/>
+			<field name="sndPerkUnlockedSound" type="BinHex"/>
+			<field name="text_sndWeaponUnlockedSound" type="String"/>
+			<field name="sndWeaponUnlockedSound" type="BinHex"/>
+			<field name="sndProgressionCookedSound" type="BinHex"/>
+		</object>
+		<object name="PopUpFeedbackDurations">
+			<field name="fCurrencyPopUpDuration" type="Float"/>
+			<field name="fCollectibleMessageDuration" type="Float"/>
+		</object>
+	</object>
+</class>

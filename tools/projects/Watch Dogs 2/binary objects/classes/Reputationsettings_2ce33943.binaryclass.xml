@@ -1,0 +1,1759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Reputationsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="HeatDecayDelay" type="BinHex"/>
+	<field name="HeatDecay" type="BinHex"/>
+	<field name="MaxHeat" type="BinHex"/>
+	<object name="HeatLevelSettings">
+		<object name="HeatLevel1">
+			<field name="HeatLevel1End" type="BinHex"/>
+			<field name="fHeatIncreaseModifier" type="Float"/>
+		</object>
+		<object name="HeatLevel2">
+			<field name="HeatLevel2End" type="BinHex"/>
+			<field name="fHeatIncreaseModifier" type="Float"/>
+		</object>
+		<object name="HeatLevel3">
+			<field name="HeatLevel3End" type="BinHex"/>
+			<field name="fHeatIncreaseModifier" type="Float"/>
+		</object>
+		<object name="HeatLevel4">
+			<field name="HeatLevel4End" type="BinHex"/>
+			<field name="fHeatIncreaseModifier" type="Float"/>
+		</object>
+		<object name="HeatLevel5">
+			<field name="HeatLevel5End" type="BinHex"/>
+			<field name="fHeatIncreaseModifier" type="Float"/>
+		</object>
+	</object>
+	<object name="Incidents">
+		<object name="AimedByARGun">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="AimedByGun">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="AimingWithGun">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="AlertNearbyGuards">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="AlertNearbyGuards_CivilianCallout">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="AlertNearbyGuards_CivilianPanic">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="AlertNearbyGuards_Download">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="AlertNearbyGuards_UnholsteredGun">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="AlertNearbyGuards_LootTruck">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="AnimalCuteness">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="ARGunShot">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="Arrest">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="Arrest_ForcedOutcomeCombat">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="Arrest_ForcedOutcomeFlee">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="Arrest_OnGoing">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="BlackoutStart_Day">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="BlackoutStop_Day">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="BlackoutStart_Night">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="BlackoutStop_Night">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="BulletImpact">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="BulletMiss">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="CarBreak">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="CarCrash">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="CarCrashBig">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="CarCrashBigPersistant">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="CarCrashPileup">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="CarHackedAlarm">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="CarHonk">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="CarLight">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="CarOnOpenBridge">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="CarSiren">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="CarTakedownBollard">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="CarTheft">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="CarTyreDeflate">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="Carjacking">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="Cheer">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="CivilianAnxiety">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="CivilianHitByACarButNotDead_ReputationOnly">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="CivilianPanic">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="CollisionStumble">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="CommunicationDisrupt">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="CommunicationDisrupted">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="CopNonLethalShot">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="CopNonLethalTakedown">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="CrimeOnGoing">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="CuriousBhv">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="DeadBody">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="DedSecBroadcast">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="DenunciatorAttacked">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="DestroyedRCToy">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="DrivingVehicleHacked">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="ElectricSpark">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="EmergencyAlarmActive">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="EmergencyAlarmNoise">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="EmergencyAlarmStart">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="EmergencyAlarmStop">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="EmergentHoldupInterruption">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="EnticedInterruption">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="EscalationAttract">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="Fire">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="FleeFromShop">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="FleeingFromTarget">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="Flirt">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="FlyingDroneProximity">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="FoundDeadBody">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="FoundWoundedBody">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="GenericHard">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="GenericSoft">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="Greet">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="GrenadeInEnvironment">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="GrenadeInHand">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="GuardSearching">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="GunShot">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="GunShotAtPolice">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="GunShotInPanic">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="HackedEntityMalfunction">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="HackedEntityMoving">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="HackedSquadVehicleMalfunction">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="VehicleHacked">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="HearBreakable">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="HearGrenadeLanding">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="HearStickyProjectileLanding">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="HitByGrenade">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="HitByProjectile">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="HitByRCCrane">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="HitByRCForkLift">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="HitByRCScissorLift">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="HitByRCToyCar">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="HitByVehicle">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="HoldUpShopkeeper">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="HumanNoiseDisgusting">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="HumanNoiseLoud">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="IncomingClimber">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="IncomingRCCrane">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="IncomingRCForkLift">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="IncomingRCScissorLift">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="IncomingRCToyCar">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="IncomingRunner">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="IncomingThreat">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="Insult">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="Intuition">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="KeypadDestroyed">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="KilledCivilian">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="KilledCivilianByCar">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="KilledMobster">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="KilledPolice">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="LargeBump">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="LargeCloseObjectBroken">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="LargeExplosion">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="Laugh">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="LayoutBeingHacked">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="Look">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="LostTarget">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="Lure">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="MakeFunOf">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="MeleeBePushed">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="MoodInitiatorProximityAngry">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="MyCarJackingFinished">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="MyCarJackingFinishedRunAway">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="MyCloseObjectBigBroken">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="MyCloseObjectBroken">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="NPCHacked">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="NPCHackedAttract">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="NPCHackedExposed">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="NPCHackedTraitor">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="NewTarget">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="ObjectCollisionNoise">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="OffRoadDriving">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="OnBeingHacked">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="OnCLOInterrupted">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="OnLeaderQuitAnxiety">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="OnLeaderQuitCuriosity">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="OnLeaderQuitPanic">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="OutrageousAction">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="PacifiedCalmDown">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="Pacify">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="PeopleDie">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="PeopleDown">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="PersonAttacked">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="PersonAttackedMiss">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="PersonCrushed">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="PersonHit">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="PersonPushed">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="PersonWarned">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="PetAttacked">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="PetBusy">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="PetDisturbed">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="PhoneOverheat">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="Photobomb">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="PlayerIEDExplosion">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="PlayerPlayingARGame">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="PlayerProximity">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="PlayerStaysInWarningZone">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="PoliceVehicleHighHeat">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="Projectile">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="Protect">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="PublicDisturbance">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="PuddleSplash">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="RCMalfunction">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="RCMoveOutOfContext">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="RainStart">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="RainStop">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="RemoteControlAttract">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="RobotAttract">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="RobotFakeAlarm">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="RobotRepulse">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="RunningPeopleProximity">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="SECarAccident">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="SeeDeadBody">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="SeeGrenade">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="SeeIntruderIllegal">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="SeeIntruderSuspicious">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="SeePlayerInWarningZone">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="SeePlayerInWarningZoneInCar">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="SeeRCToyCar">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="SeeStickyProjectile">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="SeeSuspectActivity">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="SeeTarget">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="SeeWoundedBody">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="SeekAttention">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="SeekAttentionEmote">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="SeekAttentionMusic">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="Sexy">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="ShopTheft">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="ShutDownMediaBroadcast">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="Silly">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="SmallBump">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="SmallCloseObjectBroken">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="SmallExplosion">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="SpecialBroadcast">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="SteamPipe">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="SteamPipeExplosion">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="SuperSexy">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="SurpriseFunny">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="SurprisedByTarget">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="SwitchTarget">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="TakeInterest">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="TakePicture">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="TakePictureObstruction">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="Threaten">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="ThreatProximity">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="TraitorThreatenExposed">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="TrafficBlocked">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="TrafficUnblocked">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="UncommonAction">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="UnholsteredGun">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="VehicleEntered">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="VehicleDisabledBroken">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="VehicleDisabledHacked">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="VehicleStunt">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="VehicleStuntSexy">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="VehicleUnderwater">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="ViolenceFear">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="WakeUp">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="WaterPipe">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+		<object name="WoundedBody">
+			<field name="bAffectsHeat" type="Boolean"/>
+			<field name="iHeatIncrease" type="Int32"/>
+			<field name="iHeatIncreaseCriminal" type="Int32"/>
+			<field name="iHeatIncreaseCap" type="Int32"/>
+			<field name="fHeatIncreaseInterval" type="Float"/>
+			<field name="fHeatCoolDown" type="Float"/>
+		</object>
+	</object>
+</class>

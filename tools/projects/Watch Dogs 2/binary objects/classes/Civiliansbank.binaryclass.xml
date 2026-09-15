@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CiviliansbankParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Bank">
+		<object name="Entry">
+			<field name="peopleinfoSpawnInfo" type="BinHex"/>
+			<field name="selBudgetCategory" type="Enum"/>
+			<field name="uiCoefficient" type="Int64"/>
+			<object name="ValidModels">
+				<object name="disgraphickitmodelModel">
+					<field name="disgraphickitmodelModel" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="AllModels">
+		<object name="Model">
+			<field name="graphickitmodelModel" type="BinHex"/>
+			<field name="peopleinfoSpawnInfo" type="BinHex"/>
+		</object>
+	</object>
+</class>

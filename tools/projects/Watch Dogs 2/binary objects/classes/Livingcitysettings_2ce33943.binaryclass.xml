@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Livingcitysettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="districtDefaultDistrict" type="BinHex"/>
+	<field name="navigationconfigAffiliatedCivilianNavigationConfig" type="BinHex"/>
+	<field name="fleebehaviordescriptorFleeBhvDescriptor" type="BinHex"/>
+	<field name="fleebehaviordescriptorFleeBhvDescriptorNoVehicle" type="BinHex"/>
+	<field name="vehiclebhvsetupDefaultVehicleBehavior" type="BinHex"/>
+	<field name="buddyaisettingsDefaultBuddyAISettings" type="BinHex"/>
+	<field name="gameplayconvosettingsDefaultGameplayConversationSettings" type="BinHex"/>
+	<field name="gameplayconvosettingsDefaultTalkerConversationSettings" type="BinHex"/>
+	<object name="HumanConfig">
+		<field name="humanconfigBuddyAIOneHandedWeapon" type="BinHex"/>
+		<field name="humanconfigBuddyAINoWeapon" type="BinHex"/>
+		<field name="humanconfigBuddyAITwoHandedWeapon" type="BinHex"/>
+		<field name="humanconfigDefault" type="BinHex"/>
+		<field name="humanconfigGrunt" type="BinHex"/>
+		<field name="humanconfigGruntTwoHandedWeapon" type="BinHex"/>
+		<field name="humanconfigGruntGrenade" type="BinHex"/>
+		<field name="humanconfigHeavy" type="BinHex"/>
+		<field name="humanconfigGrenadier" type="BinHex"/>
+		<field name="humanconfigPolice" type="BinHex"/>
+		<field name="humanconfigSniper" type="BinHex"/>
+		<field name="humanconfigJammer" type="BinHex"/>
+		<field name="humanconfigFemaleGrunt" type="BinHex"/>
+		<field name="humanconfigFemaleGruntTwoHandedWeapon" type="BinHex"/>
+		<field name="humanconfigFemaleSniper" type="BinHex"/>
+	</object>
+	<object name="EntityMapIconConfig">
+		<field name="mapicondescEntityIcon" type="BinHex"/>
+	</object>
+	<object name="CopEntityMapIconConfig">
+		<field name="mapicondescEntityIcon" type="BinHex"/>
+	</object>
+	<object name="MobsterEntityMapIconConfig">
+		<field name="mapicondescEntityIcon" type="BinHex"/>
+	</object>
+	<object name="CivilianEntityMapIconConfig">
+		<field name="mapicondescEntityIcon" type="BinHex"/>
+	</object>
+	<object name="BuddyAIEntityMapIconConfig">
+		<field name="mapicondescEntityIcon" type="BinHex"/>
+	</object>
+	<object name="VehicleEntityMapIconConfig">
+		<field name="mapicondescEntityIcon" type="BinHex"/>
+	</object>
+	<object name="DynamicCLO">
+		<field name="groupclocreationsettingsGroup" type="BinHex"/>
+		<field name="singleclocreationsettingsSingleHumanSpawn" type="BinHex"/>
+		<field name="singleclocreationsettingsSingleHumanAttract" type="BinHex"/>
+		<field name="animalclocreationsettingsSingleAnimalSpawn" type="BinHex"/>
+		<field name="clovehiclecreationsettingsSingleVehicleSpawn" type="BinHex"/>
+		<field name="cloobjectcreationsettingsSingleObjectSpawn" type="BinHex"/>
+		<field name="clorobotcreationsettingsSingleRobotSpawn" type="BinHex"/>
+		<field name="singleclocreationsettingslistList" type="BinHex"/>
+		<field name="clotriggerbhvsettingsTriggerBehavior" type="BinHex"/>
+	</object>
+	<object name="AnimalConfig">
+		<field name="animalconfigDogDefault" type="BinHex"/>
+		<field name="animalconfigSmallDogDefault" type="BinHex"/>
+		<field name="animalconfigPoliceDogDefault" type="BinHex"/>
+		<field name="animalconfigGangDogDefault" type="BinHex"/>
+		<field name="animalconfigSeaLionDefault" type="BinHex"/>
+		<field name="animalconfigPigeonDefault" type="BinHex"/>
+		<field name="animalconfigParrotDefault" type="BinHex"/>
+		<field name="animalconfigSeagullDefault" type="BinHex"/>
+		<field name="animalconfigEagleDefault" type="BinHex"/>
+		<field name="animalconfigSeaLionGroupDefault" type="BinHex"/>
+		<field name="animalconfigSeaLionGroupScoutXDefault" type="BinHex"/>
+		<field name="animalconfigRatDefault" type="BinHex"/>
+		<object name="DogBank">
+			<object name="Bank">
+				<object name="Entry">
+					<field name="text_archAnimalArchetype" type="String"/>
+					<field name="archAnimalArchetype" type="BinHex"/>
+					<field name="uiCoefficient" type="Int64"/>
+				</object>
+			</object>
+		</object>
+		<object name="SmallDogBank">
+			<object name="Bank">
+				<object name="Entry">
+					<field name="text_archAnimalArchetype" type="String"/>
+					<field name="archAnimalArchetype" type="BinHex"/>
+					<field name="uiCoefficient" type="Int64"/>
+				</object>
+			</object>
+		</object>
+		<object name="SeaLionBank">
+			<object name="Bank">
+				<object name="Entry">
+					<field name="text_archAnimalArchetype" type="String"/>
+					<field name="archAnimalArchetype" type="BinHex"/>
+					<field name="uiCoefficient" type="Int64"/>
+				</object>
+			</object>
+		</object>
+		<object name="PigeonBank">
+			<object name="Bank">
+				<object name="Entry">
+					<field name="text_archAnimalArchetype" type="String"/>
+					<field name="archAnimalArchetype" type="BinHex"/>
+					<field name="uiCoefficient" type="Int64"/>
+				</object>
+			</object>
+		</object>
+		<object name="ParrotBank">
+			<object name="Bank">
+				<object name="Entry">
+					<field name="text_archAnimalArchetype" type="String"/>
+					<field name="archAnimalArchetype" type="BinHex"/>
+					<field name="uiCoefficient" type="Int64"/>
+				</object>
+			</object>
+		</object>
+		<object name="SeagullBank">
+			<object name="Bank">
+				<object name="Entry">
+					<field name="text_archAnimalArchetype" type="String"/>
+					<field name="archAnimalArchetype" type="BinHex"/>
+					<field name="uiCoefficient" type="Int64"/>
+				</object>
+			</object>
+		</object>
+		<object name="EagleBank">
+			<object name="Bank">
+				<object name="Entry">
+					<field name="text_archAnimalArchetype" type="String"/>
+					<field name="archAnimalArchetype" type="BinHex"/>
+					<field name="uiCoefficient" type="Int64"/>
+				</object>
+			</object>
+		</object>
+		<object name="SeaLionGroupBank">
+			<object name="Bank">
+				<object name="Entry">
+					<field name="text_archAnimalArchetype" type="String"/>
+					<field name="archAnimalArchetype" type="BinHex"/>
+					<field name="uiCoefficient" type="Int64"/>
+				</object>
+			</object>
+		</object>
+		<object name="SeaLionGroupScoutXBank">
+			<object name="Bank">
+				<object name="Entry">
+					<field name="text_archAnimalArchetype" type="String"/>
+					<field name="archAnimalArchetype" type="BinHex"/>
+					<field name="uiCoefficient" type="Int64"/>
+				</object>
+			</object>
+		</object>
+		<object name="RatBank">
+			<object name="Bank">
+				<object name="Entry">
+					<field name="text_archAnimalArchetype" type="String"/>
+					<field name="archAnimalArchetype" type="BinHex"/>
+					<field name="uiCoefficient" type="Int64"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="RobotConfig">
+		<field name="text_archRobotWatcherArchetype" type="String"/>
+		<field name="archRobotWatcherArchetype" type="BinHex"/>
+		<field name="text_archRobotGreeterArchetype" type="String"/>
+		<field name="archRobotGreeterArchetype" type="BinHex"/>
+		<field name="text_archRobotGreeterArchetypeGalilei" type="String"/>
+		<field name="archRobotGreeterArchetypeGalilei" type="BinHex"/>
+		<field name="text_archRobotGreeterArchetypeNudle" type="String"/>
+		<field name="archRobotGreeterArchetypeNudle" type="BinHex"/>
+		<field name="text_archRobotGreeterArchetypeTidis" type="String"/>
+		<field name="archRobotGreeterArchetypeTidis" type="BinHex"/>
+		<field name="text_archRobotCounterHackerArchetype" type="String"/>
+		<field name="archRobotCounterHackerArchetype" type="BinHex"/>
+		<field name="text_archRobotCombatArchetype" type="String"/>
+		<field name="archRobotCombatArchetype" type="BinHex"/>
+		<field name="robotconfigDefault" type="BinHex"/>
+	</object>
+	<object name="VehicleConfig">
+		<field name="text_archVehicleArcrtype" type="String"/>
+		<field name="archVehicleArcrtype" type="BinHex"/>
+		<field name="vehicleentityconfigDefault" type="BinHex"/>
+	</object>
+	<object name="OneGunInventoryConfig">
+		<field name="itemlistWeaponSelectorList" type="BinHex"/>
+		<field name="bSpawnWithEquippable" type="Boolean"/>
+		<field name="selInitWeaponType" type="Enum"/>
+		<object name="InventoryLoadoutItemLists">
+			<field name="itemlistNormal" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Spawning">
+		<field name="EnticerRatio" type="BinHex"/>
+		<field name="EnticerShowcaseRatio" type="BinHex"/>
+		<field name="EnticerRareShowcaseRefreshTime" type="BinHex"/>
+		<field name="EnticerRareShowcaseCellProbability" type="BinHex"/>
+		<field name="EnticerRareShowcaseCellSize" type="BinHex"/>
+		<field name="EnticerRareShowcaseMaxCount" type="BinHex"/>
+		<field name="fPedestrianWithDogSiteCreationPercentage" type="Float"/>
+		<field name="uiPedestrianLayerWeight" type="Int64"/>
+		<field name="uiPedestrianWithDogLayerWeight" type="Int64"/>
+		<field name="graphickitmodelMaleFallbackModel" type="BinHex"/>
+		<field name="graphickitmodelFemaleFallbackModel" type="BinHex"/>
+		<object name="UniqueNpcGraphicKitTag">
+			<object name="tagcategoryselectionTag">
+				<field name="text_UITagCategorySelectionClassID" type="String"/>
+				<field name="UITagCategorySelectionClassID" type="BinHex"/>
+				<field name="tagcategoryUITagCategory" type="BinHex"/>
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+				<field name="tagTag" type="BinHex"/>
+			</object>
+		</object>
+		<object name="GraphicKitModelCensusTagCategories">
+			<object name="TagCategories">
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+			</object>
+		</object>
+		<object name="GraphicKitModelSelectionTagCategories">
+			<object name="TagCategories">
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+			</object>
+		</object>
+		<object name="GraphicKitModelSelectionExcludeTags">
+			<object name="Tags">
+				<object name="tagcategoryselectionTag">
+					<field name="text_UITagCategorySelectionClassID" type="String"/>
+					<field name="UITagCategorySelectionClassID" type="BinHex"/>
+					<field name="tagcategoryUITagCategory" type="BinHex"/>
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="tagTag" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="Affiliations">
+			<object name="AffiliationSpawnInfos">
+				<object name="AffiliationInfos">
+					<field name="selAffiliation" type="Enum"/>
+					<field name="peopleinfoSpawnInfo" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="EmergencyDispatch">
+		<field name="itemlistsRewardList" type="BinHex"/>
+		<field name="EmergencyRescueStartDelayMin" type="BinHex"/>
+		<field name="EmergencyRescueStartDelayMax" type="BinHex"/>
+		<field name="EmergencyRescueAwardCooldownMin" type="BinHex"/>
+		<field name="EmergencyRescueAwardCooldownMax" type="BinHex"/>
+	</object>
+</class>

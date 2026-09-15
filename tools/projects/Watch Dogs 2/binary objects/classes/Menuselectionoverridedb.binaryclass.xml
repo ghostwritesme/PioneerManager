@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="MenuselectionoverridedbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_MenuName" type="String"/>
+	<field name="MenuName" type="BinHex"/>
+</class>

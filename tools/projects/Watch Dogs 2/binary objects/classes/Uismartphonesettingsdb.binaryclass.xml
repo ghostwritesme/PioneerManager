@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UismartphonesettingsdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="texturedbobjectPhoneBackground" type="BinHex"/>
+	<object name="AppStateOverrides">
+		<object name="AppStateOverride">
+			<field name="selAppState" type="Enum"/>
+			<field name="uiappSmartphoneApp" type="BinHex"/>
+		</object>
+	</object>
+</class>

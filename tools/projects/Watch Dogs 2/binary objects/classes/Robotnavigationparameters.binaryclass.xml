@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RobotnavigationparametersParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fNormalSpeed" type="Float"/>
+	<field name="fAlertedSpeed" type="Float"/>
+	<field name="fFleeSpeed" type="Float"/>
+	<field name="fSlopeModifier" type="Float"/>
+	<field name="fPatrolTurnModifier" type="Float"/>
+	<field name="fMaxTurnRateStopped" type="Float"/>
+	<field name="fMinTurnRateStopped" type="Float"/>
+	<field name="fAngleForMinTurnRateStopped" type="Float"/>
+	<field name="fAngleForMaxTurnRateStopped" type="Float"/>
+	<field name="fMaxTurnRateMoving" type="Float"/>
+	<field name="fMinTurnRateMoving" type="Float"/>
+	<field name="fSpeedForMinTurnRateMoving" type="Float"/>
+	<field name="fSpeedForMaxTurnRateMoving" type="Float"/>
+	<field name="fMinYawDiffToAllowMovement" type="Float"/>
+	<field name="fStopDistance" type="Float"/>
+	<field name="fSlowdownDistance" type="Float"/>
+	<field name="fSlowdownMinSpeed" type="Float"/>
+	<field name="fStopMinSpeed" type="Float"/>
+	<field name="fOnTargetStopLength" type="Float"/>
+	<field name="fAcceleration" type="Float"/>
+	<field name="fDeceleration" type="Float"/>
+	<field name="fTurnOnSpotEnterAngleThreshold" type="Float"/>
+	<field name="fTurnOnSpotExitAngleThreshold" type="Float"/>
+</class>

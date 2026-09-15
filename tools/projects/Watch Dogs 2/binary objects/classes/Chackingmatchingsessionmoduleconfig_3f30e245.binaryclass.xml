@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Chackingmatchingsessionmoduleconfig_3f30e245Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fWeight" type="Float"/>
+	<field name="fScoreOffset" type="Float"/>
+	<field name="UnexperiencedVictimMatchCounter" type="BinHex"/>
+	<field name="ExperiencedHackerMatchCounter" type="BinHex"/>
+</class>

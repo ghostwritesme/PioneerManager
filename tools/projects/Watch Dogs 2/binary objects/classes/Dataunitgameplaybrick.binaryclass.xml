@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DataunitgameplaybrickParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bCanBeDestroyed" type="Boolean"/>
+	<field name="bIsInteractiveObjectLocked" type="Boolean"/>
+	<field name="bIsDownloadObjectLocked" type="Boolean"/>
+	<field name="bDoesInteractionTriggerDownload" type="Boolean"/>
+	<field name="BarkIdOnPlayerStartsTheDlBarkId" type="BinHex"/>
+	<object name="AutoEraseMode">
+		<field name="bActivateAutoEraseMode" type="BinHex"/>
+		<field name="bCanAutoEraseStartOnStart" type="BinHex"/>
+		<field name="fAutoEraseActivationRadius" type="BinHex"/>
+		<field name="fAutoEraseStopHackRadius" type="BinHex"/>
+	</object>
+	<object name="VersusShowdown">
+		<field name="bCanAttackerInteractWithUnit" type="BinHex"/>
+		<field name="bCanDefenderInteractWithUnit" type="BinHex"/>
+		<field name="bDisplayWarningOnObjectiveErase" type="BinHex"/>
+		<field name="fWarningDisplayDuration" type="Float"/>
+		<field name="bIsKingOfTheHillMode" type="BinHex"/>
+		<field name="EraseAndProtectObjectiveName" type="BinHex"/>
+		<field name="text_sndObjectiveSuccessSound" type="String"/>
+		<field name="sndObjectiveSuccessSound" type="BinHex"/>
+		<field name="text_sndObjectiveFailSound" type="String"/>
+		<field name="sndObjectiveFailSound" type="BinHex"/>
+		<object name="locstridWarningObjectiveErasedAttacker">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridWarningObjectiveErasedDefender">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridWarningHeaderObjectiveErasedAttacker">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridWarningHeaderObjectiveErasedDefender">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="DataEraser">
+		<field name="bActivateDataEraser" type="Boolean"/>
+		<field name="iEraserProbability" type="Int32"/>
+		<field name="fTimeBetweenAttemptsToStartEraser" type="Float"/>
+		<field name="fWarningDisplayDuration" type="Float"/>
+		<field name="fEraseDuration" type="Float"/>
+		<field name="fPercentageEraseAlmostComplete" type="Float"/>
+		<field name="fDistancePlayerFromUnit" type="Float"/>
+		<field name="fDistanceMaxToSelectEraser" type="Float"/>
+		<object name="locstridWarningEraserStarting">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridWarningEraseAlmostComplete">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+</class>

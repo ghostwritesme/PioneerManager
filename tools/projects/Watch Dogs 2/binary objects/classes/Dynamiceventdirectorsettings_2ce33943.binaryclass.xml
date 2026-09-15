@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Dynamiceventdirectorsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fCooldownFactorIfNotSeen" type="Float"/>
+	<field name="fCooldownTimeScale" type="Float"/>
+	<field name="fCooldownTimeScaleWithoutPotentialEvent" type="Float"/>
+	<field name="bDisableCooldowns" type="Boolean"/>
+	<field name="bDisableOnlineActivityCooldowns" type="Boolean"/>
+	<field name="vehicleinfoPreventSpawnVehiculeSpawnInfo" type="BinHex"/>
+	<object name="BaseGroup">
+		<inherit name="DynamiceventdirectorsettingsGroupParameters"/>
+	</object>
+</class>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Trafficconfig_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fHonkReactionAngle" type="Float"/>
+	<object name="VehicleEject">
+		<field name="fMinCollisionSpeedForEject" type="Float"/>
+		<field name="fEjectionProbability" type="Float"/>
+	</object>
+	<object name="DodgeBoxes">
+		<field name="fDodgeBoxBaseScale" type="Float"/>
+		<field name="fDodgeBoxBaseBikeScale" type="Float"/>
+		<field name="fDodgeBoxCopsBaseScale" type="Float"/>
+		<field name="fDodgeDangerTimeToEdge" type="Float"/>
+		<field name="fDodgeSidewalkIn" type="Float"/>
+	</object>
+	<object name="TrafficLights">
+		<field name="fMaxWaitForOtherDirections" type="Float"/>
+		<field name="fGreenLightDuration" type="Float"/>
+		<field name="fYellowLightDuration" type="Float"/>
+	</object>
+	<object name="WaterTrafficSpeed">
+		<field name="fWaterSpeedLimitSlow" type="Float"/>
+		<field name="fWaterSpeedLimitNormal" type="Float"/>
+		<field name="fWaterSpeedLimitFast" type="Float"/>
+		<field name="fWaterSpeedLimitForceCrash" type="Float"/>
+	</object>
+	<object name="TrafficSpeed">
+		<field name="fSpeedLimitSlow" type="Float"/>
+		<field name="fSpeedLimitNormal" type="Float"/>
+		<field name="fSpeedLimitFast" type="Float"/>
+		<field name="fSpeedLimitForceCrash" type="Float"/>
+		<field name="iMaximumStoppedVehiclesOnLane" type="Int32"/>
+		<field name="fStopWaitingTime" type="Float"/>
+		<field name="fStopTimeout" type="Float"/>
+		<field name="fMinDistToMainRoadTraffic" type="Float"/>
+		<object name="curveBrake">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="RailVehicleGlobal">
+		<field name="iMaxCivilInRailVehicle" type="Int32"/>
+		<field name="iMinCivilInRailVehicle" type="Int32"/>
+	</object>
+	<object name="Spawning">
+		<field name="vec2TrafficLightBlinkingHalfPeriodMinMax" type="Vector2"/>
+		<field name="districtDefaultDistrict" type="BinHex"/>
+		<field name="fMinDistanceToCrossroad" type="Float"/>
+		<field name="fTrafficCarsInitialOffsetCff" type="Float"/>
+		<field name="fTrafficBoatsInitialOffsetCff" type="Float"/>
+		<object name="DefaultCivilianDensity">
+			<inherit name="SharedParameters"/>
+			<field name="bLegacy" type="Boolean"/>
+			<field name="bZeroDensity" type="Boolean"/>
+			<field name="fDistanceMin" type="Float"/>
+			<field name="fDistanceMax" type="Float"/>
+			<field name="AnimalSpawnPercentage" type="BinHex"/>
+		</object>
+		<object name="DefaultParkedCarsDensity">
+			<inherit name="SharedParameters"/>
+			<field name="bLegacy" type="Boolean"/>
+			<field name="bZeroDensity" type="Boolean"/>
+			<field name="fDistanceMin" type="Float"/>
+			<field name="fDistanceMax" type="Float"/>
+			<field name="hidMigrated" type="BinHex"/>
+		</object>
+	</object>
+	<object name="DefaultGameplayContext">
+		<field name="gpctxspecNormal" type="BinHex"/>
+		<field name="gpctxspecHighEnd" type="BinHex"/>
+	</object>
+</class>

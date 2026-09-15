@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PerkssingleplayerParameters">
+	<inherit name="SharedParameters"/>
+	<field name="perkidentifierPerkIdentifier" type="BinHex"/>
+	<field name="selControlSchemeContextType" type="Enum"/>
+	<field name="fileTexture3D" type="BinHex"/>
+	<field name="itemsRelatedItem" type="BinHex"/>
+	<field name="availabilityrulegroupPerkLockAvailRule" type="BinHex"/>
+	<object name="locstridPerkName">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridShortDescription">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridLongDescription">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridLongDescriptionPCSpecific">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="PerksEffects">
+		<object name="Effect">
+			<object name="ApplyStatusEffectSpecific">
+				<field name="text_statuseffectEffectType" type="String"/>
+				<field name="statuseffectEffectType" type="BinHex"/>
+				<field name="fModifierRatio" type="Float"/>
+				<field name="bReplicateStatusEffect" type="Boolean"/>
+			</object>
+		</object>
+	</object>
+</class>

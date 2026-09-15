@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ProplistParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Props">
+		<field name="propProp" type="BinHex"/>
+		<object name="Props">
+			<field name="propProp" type="BinHex"/>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UimarkerbuttonslayoutdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMarkerOffsetX" type="Vector"/>
+	<field name="fMarkerOffsetY" type="Vector"/>
+	<field name="bIconNameArray" type="Boolean"/>
+	<field name="texturedbobjectIcon" type="BinHex"/>
+	<object name="IconNames">
+        <object name="sIconName">
+            <field name="text_sIconName" type="String"/>
+            <field name="sIconName" type="BinHex"/>
+        </object>
+    </object>
+</class>

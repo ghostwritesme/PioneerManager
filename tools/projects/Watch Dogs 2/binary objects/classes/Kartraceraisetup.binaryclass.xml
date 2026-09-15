@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="KartraceraisetupParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fSpeedMultiplier" type="Float"/>
+	<field name="fMaxLateralG" type="Float"/>
+	<object name="Rubberband">
+		<field name="fRubberbandSpeedMin" type="Float"/>
+		<field name="fRubberbandSpeedAverage" type="Float"/>
+		<field name="fRubberbandSpeedMax" type="Float"/>
+		<field name="fRubberbandMinDistanceAhead" type="Float"/>
+		<field name="fRubberbandMaxDistanceAhead" type="Float"/>
+		<field name="fRubberbandMinDistanceBehind" type="Float"/>
+		<field name="fRubberbandMaxDistanceBehind" type="Float"/>
+	</object>
+</class>

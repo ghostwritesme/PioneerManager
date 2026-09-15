@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Logicmaterials_a4487db5Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="logmatGrassSurfaceID" type="BinHex"/>
+	<field name="logmatFleshSurfaceID" type="BinHex"/>
+	<field name="logmatDefaultSurfaceID" type="BinHex"/>
+	<object name="sndswtpMaterialSoundSwitchType">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="String"/>
+	</object>
+</class>

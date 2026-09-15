@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RacerdbconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="humanconfigHumanConfig" type="BinHex"/>
+	<field name="text_archVehicleArchetype" type="String"/>
+	<field name="archVehicleArchetype" type="BinHex"/>
+	<object name="locstridName">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="VehicleBehaviorProperties">
+		<field name="text_selType" type="String"/>
+		<field name="selType" type="Enum"/>
+		<object name="Object">
+			<field name="floatingvehiclebhvsetupBehaviorSetup" type="BinHex"/>
+			<field name="sailboatpathfindsetupPathfindSetup" type="BinHex"/>
+			<field name="vehiclebhvsetupBehaviorSetup" type="BinHex"/>
+			<field name="kartraceraisetupAiSetup" type="BinHex"/>
+		</object>
+	</object>
+</class>

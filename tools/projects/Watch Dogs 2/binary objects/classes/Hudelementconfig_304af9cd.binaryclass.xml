@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Hudelementconfig_304af9cdParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Colors">
+		<field name="colorPositiveColor" type="Vector4"/>
+		<field name="colorNegativeColor" type="Vector4"/>
+		<field name="colorNeutralColor" type="Vector4"/>
+		<field name="colorAwarnessColor" type="Vector4"/>
+		<field name="colorOnlineColor" type="Vector4"/>
+	</object>
+	<object name="DynamicContent">
+		<field name="text_sndOnDisplay" type="String"/>
+		<field name="sndOnDisplay" type="BinHex"/>
+		<field name="text_sndOnInput" type="String"/>
+		<field name="sndOnInput" type="BinHex"/>
+		<field name="text_fileDynamicContentThumbnail" type="String"/>
+		<field name="fileDynamicContentThumbnail" type="BinHex"/>
+	</object>
+	<object name="Wheel">
+		<field name="text_sndOpeningSound" type="String"/>
+		<field name="sndOpeningSound" type="BinHex"/>
+		<field name="text_sndIndexChangeSound" type="String"/>
+		<field name="sndIndexChangeSound" type="BinHex"/>
+		<field name="text_sndIndexChangeEmpty" type="String"/>
+		<field name="sndIndexChangeEmpty" type="BinHex"/>
+	</object>
+	<object name="Weapon">
+		<field name="text_sndProjectileThrowFail" type="String"/>
+		<field name="sndProjectileThrowFail" type="BinHex"/>
+		<field name="text_sndDrivingStartAimingSound" type="String"/>
+		<field name="sndDrivingStartAimingSound" type="BinHex"/>
+		<field name="text_sndDrivingStopAimingSound" type="String"/>
+		<field name="sndDrivingStopAimingSound" type="BinHex"/>
+	</object>
+	<object name="WarningMessage">
+		<field name="sndKillStreakMessageSound" type="BinHex"/>
+		<field name="text_sndRestrictedAreaWarningMessageSound" type="String"/>
+		<field name="sndRestrictedAreaWarningMessageSound" type="BinHex"/>
+		<field name="text_sndForbiddenAreaWarningMessageSound" type="String"/>
+		<field name="sndForbiddenAreaWarningMessageSound" type="BinHex"/>
+		<field name="sndCOOPWarningMessageSound" type="BinHex"/>
+	</object>
+	<object name="ObjectiveIndicators">
+		<field name="vectorClampEllipsePercent" type="BinHex"/>
+	</object>
+	<object name="Worldmap">
+		<field name="fZoneLimitOver" type="Float"/>
+		<field name="fZoneLimitOut" type="Float"/>
+		<field name="fIconSnapDuration" type="Float"/>
+		<field name="fValidInputValue" type="Float"/>
+		<field name="fSurvivalGuideTooltipDelay" type="Float"/>
+		<field name="text_sndFastTravelTeleportSound" type="String"/>
+		<field name="sndFastTravelTeleportSound" type="BinHex"/>
+		<field name="text_sndMapPlaceWaypointSound" type="String"/>
+		<field name="sndMapPlaceWaypointSound" type="BinHex"/>
+		<field name="text_sndMapRemoveWaypointSound" type="String"/>
+		<field name="sndMapRemoveWaypointSound" type="BinHex"/>
+		<field name="text_sndMapLegendOpenSound" type="String"/>
+		<field name="sndMapLegendOpenSound" type="BinHex"/>
+		<field name="text_sndMapLegendCloseSound" type="String"/>
+		<field name="sndMapLegendCloseSound" type="BinHex"/>
+		<field name="sndMapLegendChangeTabSound" type="BinHex"/>
+		<field name="text_sndMapSurvivalPopupOpenSound" type="String"/>
+		<field name="sndMapSurvivalPopupOpenSound" type="BinHex"/>
+		<field name="text_sndMapSurvivalPopupCloseSound" type="String"/>
+		<field name="sndMapSurvivalPopupCloseSound" type="BinHex"/>
+	</object>
+	<object name="DistricChange">
+		<field name="text_sndDistrictChangeConnected" type="String"/>
+		<field name="sndDistrictChangeConnected" type="BinHex"/>
+		<field name="text_sndDistrictChangeDisconnected" type="String"/>
+		<field name="sndDistrictChangeDisconnected" type="BinHex"/>
+	</object>
+	<object name="PDA">
+		<field name="text_sndPDAInSound" type="String"/>
+		<field name="sndPDAInSound" type="BinHex"/>
+		<field name="text_sndPDAOutSound" type="String"/>
+		<field name="sndPDAOutSound" type="BinHex"/>
+		<field name="text_sndPDAMoveCursorSound" type="String"/>
+		<field name="sndPDAMoveCursorSound" type="BinHex"/>
+		<field name="text_sndPDASelectAppSound" type="String"/>
+		<field name="sndPDASelectAppSound" type="BinHex"/>
+		<object name="locstridPDASelect">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridPDABack">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridPDAOk">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridPDACancel">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridPDAQuit">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridPDANavigation">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="SongSneak">
+		<field name="text_sndSongSneakSuccess" type="String"/>
+		<field name="sndSongSneakSuccess" type="BinHex"/>
+	</object>
+	<object name="Shop">
+		<field name="textureSellAll" type="String"/>
+		<field name="textureRefillAmmo" type="String"/>
+		<field name="textureWardrobe" type="String"/>
+		<field name="textureWeaponLocker" type="String"/>
+		<field name="text_sndWardrobeOpen" type="String"/>
+		<field name="sndWardrobeOpen" type="BinHex"/>
+		<field name="text_sndWardrobeClose" type="String"/>
+		<field name="sndWardrobeClose" type="BinHex"/>
+		<field name="text_sndEquipClothing" type="String"/>
+		<field name="sndEquipClothing" type="BinHex"/>
+		<field name="text_sndShopInSound" type="String"/>
+		<field name="sndShopInSound" type="BinHex"/>
+		<field name="text_sndShopOutSound" type="String"/>
+		<field name="sndShopOutSound" type="BinHex"/>
+		<field name="text_sndShopPurchaseSound" type="String"/>
+		<field name="sndShopPurchaseSound" type="BinHex"/>
+		<field name="text_sndShopDescribeSound" type="String"/>
+		<field name="sndShopDescribeSound" type="BinHex"/>
+		<field name="text_sndShopCancelSound" type="String"/>
+		<field name="sndShopCancelSound" type="BinHex"/>
+		<field name="text_sndShopHoldupSound" type="String"/>
+		<field name="sndShopHoldupSound" type="BinHex"/>
+		<object name="locstridShopBuy">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridShopEquip">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridShopEquipClothingStyle">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridShopEquipClothingPart">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridShopUnEquipClothingPart">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridShopEquipBodyPart">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridShopThreaten">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridShopSellAll">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridShopSellAllTitle">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridShopSellAllDescription">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridShopRefillAmmo">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridShopRefillAmmoTitle">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridShopRefillAmmoDescription">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridWardrobe">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridWardrobeTitle">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridWardrobeDescription">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridWeaponLocker">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridWeaponLockerTitle">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridWeaponLockerDescription">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridShopCustomizeParts">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="DrivingJobs">
+		<field name="text_sndTimeRunningOutSound" type="String"/>
+		<field name="sndTimeRunningOutSound" type="BinHex"/>
+	</object>
+	<object name="CityHotspot">
+		<field name="text_sndCheckedInSound" type="String"/>
+		<field name="sndCheckedInSound" type="BinHex"/>
+		<field name="text_sndCollectedGiftSound" type="String"/>
+		<field name="sndCollectedGiftSound" type="BinHex"/>
+		<field name="text_sndLeftGiftSound" type="String"/>
+		<field name="sndLeftGiftSound" type="BinHex"/>
+		<field name="text_sndEarnedMayorSound" type="String"/>
+		<field name="sndEarnedMayorSound" type="BinHex"/>
+		<field name="text_sndEarnedBadgeSound" type="String"/>
+		<field name="sndEarnedBadgeSound" type="BinHex"/>
+		<field name="text_sndIncrementGiftValueSound" type="String"/>
+		<field name="sndIncrementGiftValueSound" type="BinHex"/>
+		<field name="text_sndDecrementGiftValueSound" type="String"/>
+		<field name="sndDecrementGiftValueSound" type="BinHex"/>
+	</object>
+	<object name="Multiplayer">
+		<field name="text_sndProposalDisplaySound" type="String"/>
+		<field name="sndProposalDisplaySound" type="BinHex"/>
+		<field name="text_sndContractVoteRoundStartingWarningSound" type="String"/>
+		<field name="sndContractVoteRoundStartingWarningSound" type="BinHex"/>
+		<field name="text_sndMatchMakingCancelSound" type="String"/>
+		<field name="sndMatchMakingCancelSound" type="BinHex"/>
+		<field name="text_sndAcceptPotentialTargetSound" type="String"/>
+		<field name="sndAcceptPotentialTargetSound" type="BinHex"/>
+		<field name="text_sndRejectPotentialTargetSound" type="String"/>
+		<field name="sndRejectPotentialTargetSound" type="BinHex"/>
+		<field name="text_sndVoteForNextMissionSelectionSound" type="String"/>
+		<field name="sndVoteForNextMissionSelectionSound" type="BinHex"/>
+		<field name="text_sndAcceptCountdownSound" type="String"/>
+		<field name="sndAcceptCountdownSound" type="BinHex"/>
+	</object>
+	<object name="Timer">
+		<field name="fTimerHudElementPulsingThreshold" type="Float"/>
+		<field name="text_sndTimerHudElementWarningSound" type="String"/>
+		<field name="sndTimerHudElementWarningSound" type="BinHex"/>
+		<field name="text_sndTimerHudElementUpdateSound" type="String"/>
+		<field name="sndTimerHudElementUpdateSound" type="BinHex"/>
+		<field name="text_sndTimerHudElementShowSound" type="String"/>
+		<field name="sndTimerHudElementShowSound" type="BinHex"/>
+	</object>
+	<object name="FelonyChannel">
+		<field name="sndFelonyChannelMessageSound" type="BinHex"/>
+	</object>
+	<object name="InvasionOfPrivacy">
+		<field name="fEnterIOPCameraWarningDuration" type="Float"/>
+		<field name="fKickoutFromCameraWarningTimeThreshold" type="Float"/>
+		<object name="locstridKickoutFromCameraWarning">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="Tags">
+		<field name="fTagScale" type="Float"/>
+	</object>
+	<object name="PauseMenu">
+		<field name="text_sndPauseMenuOpenSound" type="String"/>
+		<field name="sndPauseMenuOpenSound" type="BinHex"/>
+		<field name="text_sndPauseMenuCloseSound" type="String"/>
+		<field name="sndPauseMenuCloseSound" type="BinHex"/>
+	</object>
+</class>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PileupgameplaybrickParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Acceleration">
+		<field name="fAccelerationTime" type="Float"/>
+	</object>
+	<object name="Steering">
+		<object name="curveSteeringCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="CannonRoll">
+		<field name="bUseRollTimer" type="Boolean"/>
+		<field name="fRollTime" type="Float"/>
+		<field name="fImpulseDirZ" type="Float"/>
+		<field name="fImpulseForce" type="Float"/>
+		<field name="fUseAngularImpulse" type="Boolean"/>
+		<field name="fAngularImpulseRatio" type="Float"/>
+	</object>
+</class>

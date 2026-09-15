@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Radiobroadcastsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="uiCooldownEnterCarMin" type="Int64"/>
+	<field name="uiCooldownEnterCarMax" type="Int64"/>
+	<field name="uiCooldownIntervalMin" type="Int64"/>
+	<field name="uiCooldownIntervalMax" type="Int64"/>
+	<field name="uiBroadcastActWeight" type="Int64"/>
+	<object name="ActRadioBlogs">
+		<object name="RadioBlog">
+			<field name="uiStartPlayingInAct" type="Int64"/>
+			<object name="Variations"/>
+		</object>
+	</object>
+</class>

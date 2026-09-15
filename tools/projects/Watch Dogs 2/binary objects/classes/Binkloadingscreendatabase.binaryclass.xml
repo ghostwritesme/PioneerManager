@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="BinkloadingscreendatabaseParameters">
+	<inherit name="SharedParameters"/>
+	<object name="LoadingScreenSequenceList">
+		<object name="VideoProperties">
+			<field name="videosBinkVideo" type="BinHex"/>
+			<field name="text_sndSoundTrack" type="String"/>
+			<field name="sndSoundTrack" type="BinHex"/>
+		</object>
+		<object name="GeneralProperties">
+			<field name="bEnableSubtitles" type="Boolean"/>
+			<field name="bIsLoadingScreenVideoLooping" type="Boolean"/>
+			<field name="bKillVideoWhenWorldIsLoaded" type="Boolean"/>
+			<object name="SoundSettings">
+				<field name="selLoopingVideoSoundType" type="Enum"/>
+				<field name="text_sndIntroMusic" type="String"/>
+				<field name="sndIntroMusic" type="BinHex"/>
+				<field name="text_sndOutroMusic" type="String"/>
+				<field name="sndOutroMusic" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

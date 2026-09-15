@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ReinforcementconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsContinuous" type="Boolean"/>
+	<field name="basicreinforcementconfigBasicConfig" type="BinHex"/>
+	<field name="boatreinforcementconfigBoatConfig" type="BinHex"/>
+	<field name="chopperreinforcementconfigChopperConfig" type="BinHex"/>
+	<field name="roadblockreinforcementconfigRoadBlockConfig" type="BinHex"/>
+	<field name="swatreinforcementconfigSWATConfig" type="BinHex"/>
+	<field name="wavereinforcementconfigWaveConfig" type="BinHex"/>
+	<field name="uiMaxNumK9Units" type="Int64"/>
+	<field name="bOverrideSpawnSettings" type="Boolean"/>
+	<field name="bUseRaycastInSpawnSystem" type="Boolean"/>
+	<field name="fInnerCircleStartRadius" type="Float"/>
+	<field name="fInnerCircleRadius" type="Float"/>
+	<field name="fMiddleCircleRadius" type="Float"/>
+	<field name="fOuterCircleRadius" type="Float"/>
+	<field name="fNormalOnFootCircleStartRadius" type="Float"/>
+	<field name="fNormalOnFootCircleRadius" type="Float"/>
+	<field name="fOutOfUsefullRange" type="Float"/>
+	<field name="fOutOfUsefullRangeEmptyCarOnFootAgent" type="Float"/>
+	<field name="bOnlyUnspawnIfNotInFOV" type="Boolean"/>
+	<field name="bOnlyDistanceCheckThreats" type="Boolean"/>
+	<field name="bOverridePresetStrategy" type="Boolean"/>
+	<field name="selUnitPresetStrategy" type="Enum"/>
+	<field name="bAllowAutomaticZoneLocking" type="Boolean"/>
+	<object name="curveHeatCurve">
+		<inherit name="KnotsParameters"/>
+	</object>
+</class>

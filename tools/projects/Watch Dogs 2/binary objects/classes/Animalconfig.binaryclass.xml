@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="AnimalconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="PGTConfig">
+        <field name="bPGTCompliant" type="Boolean"/>
+        <field name="uiDifficultyValue" type="UInt32"/>
+        <field name="bCanPatrol" type="Boolean"/>
+    </object>
+	<object name="Properties">
+        <field name="hackingprofileHackingProfile" type="BinHex"/>
+        <field name="bIsBuddyAI" type="Boolean"/>
+        <field name="bIsPlayerAlly" type="Boolean"/>
+        <field name="selMindSet" type="Enum"/>
+        <field name="bForceRespawnAfterCheckpoint" type="Boolean"/>
+        <field name="stimtableStimEffectTable" type="BinHex"/>
+        <field name="navigationconfigNavigationConfig" type="BinHex"/>
+        <field name="fleebehaviordescriptorFleeConfig" type="BinHex"/>
+        <field name="rewardconfigRewardConfig" type="BinHex"/>
+        <field name="selAgentSpecies" type="Enum"/>
+        <field name="fHealth" type="Float"/>
+        <field name="locdmgconfigDamageLocationConfig" type="BinHex"/>
+        <field name="animalnavigationparametersNavigationParameters" type="BinHex"/>
+        <field name="animalfleeparametersFleeParameters" type="BinHex"/>
+        <field name="animalproximityparametersProximityParameters" type="BinHex"/>
+        <field name="animalanimationparametersAnimationParameters" type="BinHex"/>
+        <field name="selAffiliation" type="Enum"/>
+        <field name="detectionlevelsettingsDetectionLevelSettings" type="BinHex"/>
+        <field name="animalcombatparametersCombatParameters" type="BinHex"/>
+        <field name="bSmellPerceptionEnabled" type="Boolean"/>
+        <field name="bTaggingEnabled" type="Boolean"/>
+        <field name="fHackableSpawnPercentage" type="Float"/>
+        <object name="FOVSettings">
+            <field name="fovsettingsSettings" type="BinHex"/>
+        </object>
+        <object name="FOVSettingsCombat">
+            <field name="fovsettingsSettings" type="BinHex"/>
+        </object>
+        <object name="sndswtpDogSoundSwitchType">
+            <field name="SoundId" type="BinHex"/>
+            <field name="SoundGuid" type="String"/>
+        </object>
+        <object name="sndswvlDogSoundSwitchValue">
+            <field name="SoundId" type="BinHex"/>
+            <field name="SoundGuid" type="String"/>
+        </object>
+        <object name="GraphicKit">
+            <inherit name="SharedParameters"/>
+            <field name="graphickitmodelModel" type="BinHex"/>
+            <field name="graphickitcollectionCollection" type="BinHex"/>
+            <object name="Tags">
+                <object name="IncludeTags">
+                    <object name="Tag">
+                        <object name="tagcategoryselectionTag">
+                            <field name="text_UITagCategorySelectionClassID" type="String"/>
+                            <field name="UITagCategorySelectionClassID" type="BinHex"/>
+                            <field name="tagcategoryUITagCategory" type="BinHex"/>
+                            <field name="tagcategoryTagCategory" type="BinHex"/>
+                            <field name="tagTag" type="BinHex"/>
+                        </object>
+                    </object>
+                </object>
+                <object name="ExcludeTags">
+                    <object name="Tag">
+                        <object name="tagcategoryselectionTag">
+                            <field name="text_UITagCategorySelectionClassID" type="String"/>
+                            <field name="UITagCategorySelectionClassID" type="BinHex"/>
+                            <field name="tagcategoryUITagCategory" type="BinHex"/>
+                            <field name="tagcategoryTagCategory" type="BinHex"/>
+                            <field name="tagTag" type="BinHex"/>
+                        </object>
+                    </object>
+                </object>
+                <object name="TagConstraintsAny" />
+            </object>
+            <object name="ValidModels">
+                <object name="graphickitmodelModel">
+                    <field name="graphickitmodelModel" type="BinHex"/>
+                </object>
+            </object>
+        </object>
+    </object>
+</class>

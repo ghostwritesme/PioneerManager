@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RadiostationdbsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="minConsecutiveAds" type="BinHex"/>
+	<field name="maxConsecutiveAds" type="BinHex"/>
+	<field name="minConsecutiveSongs" type="BinHex"/>
+	<field name="maxConsecutiveSongs" type="BinHex"/>
+	<field name="texturedbobjectStationArtTexture" type="BinHex"/>
+	<field name="bCanPlayJokers" type="Boolean"/>
+	<object name="locstridRadioStationName">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridAdditionalInfo">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="StationPlaylists">
+		<object name="SongPlaylist">
+			<object name="Song">
+				<field name="musiclibrarySong" type="BinHex"/>
+			</object>
+		</object>
+		<object name="HostPlaylist">
+			<object name="Song">
+				<field name="musiclibrarySong" type="BinHex"/>
+			</object>
+		</object>
+		<object name="AdPlaylist">
+			<object name="Song">
+				<field name="musiclibrarySong" type="BinHex"/>
+			</object>
+		</object>
+		<object name="BumperPlaylist">
+			<object name="Song">
+				<field name="musiclibrarySong" type="BinHex"/>
+			</object>
+		</object>
+		<object name="SpecialRequestPlaylist">
+			<object name="Song">
+				<field name="musiclibrarySong" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Phonecommunicationsoundmanagersettingsdb_c0fea9a4Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="ActorArchetypes">
+		<object name="Actor">
+			<field name="text_archArchetype" type="String"/>
+			<field name="archArchetype" type="BinHex"/>
+			<field name="text_tmplDialogActor" type="String"/>
+			<field name="tmplDialogActor" type="BinHex"/>
+			<field name="selActorPortraitID" type="Enum"/>
+			<object name="locstridActorName">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Faketrafficsettings_8a6876b3Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fFadeInDistance" type="Float"/>
+	<field name="fFadeOutDistance" type="Float"/>
+	<field name="fFadeInLength" type="Float"/>
+	<field name="fFadeOutLength" type="Float"/>
+	<field name="fFadeFovReference" type="Float"/>
+	<field name="fFadeFovDistance" type="Float"/>
+	<field name="fDistanceScale" type="Float"/>
+	<field name="fDensityScale" type="Float"/>
+	<field name="fLightsIntensity" type="Float"/>
+	<field name="text_fileLightTexture" type="String"/>
+	<field name="fileLightTexture" type="BinHex"/>
+	<object name="CurrentGen">
+		<field name="fFadeInDistance" type="Float"/>
+		<field name="fFadeOutDistance" type="Float"/>
+		<field name="fFadeInLength" type="Float"/>
+		<field name="fFadeOutLength" type="Float"/>
+		<field name="fFadeFovReference" type="Float"/>
+		<field name="fFadeFovDistance" type="Float"/>
+		<field name="fDistanceScale" type="Float"/>
+		<field name="fLightsIntensity" type="Float"/>
+	</object>
+</class>

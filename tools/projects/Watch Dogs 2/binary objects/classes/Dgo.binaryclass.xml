@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DgoParameters">
+	<inherit name="SharedParameters"/>
+	<object name="dynamicobjectiveppfDynamicObjective">
+		<object name="DescriptionsList">
+			<object name="Description">
+				<field name="text_DescriptionType" type="String"/>
+				<field name="DescriptionType" type="BinHex"/>
+				<field name="vectorRelativeOffset" type="Vector3"/>
+				<field name="angvecRelativeAngle" type="Vector3"/>
+				<field name="EntityId" type="BinHex"/>
+				<field name="text_archArchetype" type="String"/>
+				<field name="archArchetype" type="BinHex"/>
+				<object name="Setup">
+					<field name="selAffiliation" type="Enum"/>
+					<field name="fHeight" type="Float"/>
+					<field name="ingamemapservicesettingsentryMap" type="BinHex"/>
+					<object name="ShapePoints">
+						<object name="Points">
+							<field name="vectorPoint" type="Vector3"/>
+						</object>
+					</object>
+					<object name="Zones">
+						<object name="Zone">
+							<field name="text_aiagentzoneTypeClassID" type="String"/>
+							<field name="aiagentzoneTypeClassID" type="BinHex"/>
+							<object name="Properties">
+								<field name="selActivationCondition" type="Enum"/>
+								<field name="fNearbyWarningDistance" type="Float"/>
+								<field name="bIsAFreeRoamZone" type="Boolean"/>
+								<field name="bDisplayOnMiniMapWhenEmpty" type="Boolean"/>
+								<field name="fCoolDown" type="Float"/>
+								<field name="reinforcementconfigFreeRoamReinforcementConfig" type="BinHex"/>
+								<field name="ingamemapservicesettingsentryMap" type="BinHex"/>
+								<field name="bRestrictTraffic" type="Boolean"/>
+								<field name="bRestrictPedestrians" type="Boolean"/>
+								<field name="bRestrictParking" type="Boolean"/>
+								<field name="bRestrictWater" type="Boolean"/>
+								<field name="bApplyRestrictionsToEnticers" type="Boolean"/>
+								<field name="bApplyRestrictionsToRoadNetwork" type="Boolean"/>
+								<field name="bRestrictionsConverted" type="Boolean"/>
+								<field name="bUnspawnRestrictedOnLoad" type="Boolean"/>
+								<field name="fHeight" type="Float"/>
+								<field name="bExtendToIntersections" type="Boolean"/>
+								<field name="civdensityCiviliansDensityOverride" type="BinHex"/>
+								<field name="parkeddensityParkedCarsDensityOverride" type="BinHex"/>
+								<field name="fPatternScaleOverride" type="Float"/>
+								<field name="bIsDynamic" type="Boolean"/>
+								<object name="SpawningRestrictions">
+									<field name="bHumanOnFoot" type="Boolean"/>
+									<field name="bHumanPassenger" type="Boolean"/>
+									<field name="bAnimal" type="Boolean"/>
+									<field name="bRobot" type="Boolean"/>
+									<field name="bRoadVehicle" type="Boolean"/>
+									<field name="bRail" type="Boolean"/>
+									<field name="bBoat" type="Boolean"/>
+									<field name="bParkedCar" type="Boolean"/>
+									<field name="bParkedBoat" type="Boolean"/>
+									<field name="bWorldAI" type="Boolean"/>
+									<field name="bReinforcementAI" type="Boolean"/>
+									<field name="bMissionAI" type="Boolean"/>
+									<field name="bCityObject" type="Boolean"/>
+									<field name="bMissionObject" type="Boolean"/>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+				<field name="Type" type="BinHex"/>
+				<field name="Direction" type="BinHex"/>
+				<object name="PatrolPoints">
+					<object name="Points">
+						<field name="vectorPoint" type="Vector3"/>
+						<field name="vecPos" type="Vector3"/>
+						<field name="selOrientationType" type="Enum"/>
+						<field name="entOrientation" type="BinHex"/>
+						<field name="fStopDelay" type="Float"/>
+						<field name="fStopRatio" type="Float"/>
+						<field name="sDominoEventName" type="BinHex"/>
+						<field name="bSendDominoEventPatrolPointReached" type="Boolean"/>
+						<field name="selPatrolLookAt" type="Enum"/>
+						<field name="selInteractiveMode" type="Enum"/>
+						<field name="selIdleAction" type="Enum"/>
+						<field name="bOrientIdleAction" type="Boolean"/>
+						<field name="CLOId" type="BinHex"/>
+					</object>
+				</object>
+				<field name="EnticerId" type="BinHex"/>
+				<object name="GroupCreationSettings">
+					<field name="bIsMonitored" type="Boolean"/>
+					<field name="cloupsetUpdateSettings" type="BinHex"/>
+					<field name="bUseParentPosAsAnchor" type="Boolean"/>
+					<field name="bIsALeader" type="Boolean"/>
+					<field name="conversationsettingConversationSettings" type="BinHex"/>
+					<object name="ActivationSettings">
+						<field name="entcontContext" type="BinHex"/>
+						<field name="bIgnoreRestrictionZone" type="Boolean"/>
+					</object>
+					<object name="AttractorSettings">
+						<field name="selAttractorType" type="Enum"/>
+						<object name="StimSettings">
+							<field name="bSendStim" type="Boolean"/>
+							<field name="fStimRadius" type="Float"/>
+							<field name="vectorStimOffset" type="Vector3"/>
+							<field name="fStimFrequency" type="Float"/>
+							<field name="bUseOnlyOnce" type="Boolean"/>
+							<field name="fTimeBeforeResendStimAfterUse" type="Float"/>
+							<object name="AltitudeRestrictions">
+										<field name="bUseMaxAltRestriction" type="Boolean"/>
+									</object>
+							<object name="ConeRestrictions"/>
+						</object>
+						<object name="GotoSettings">
+							<field name="bDoActionOnSpot" type="Boolean"/>
+							<field name="bApplyAnchor" type="Boolean"/>
+							<field name="bUseSepcificSpeed" type="Boolean"/>
+							<field name="fSpecificSpeed" type="Float"/>
+						</object>
+						<object name="UserSettings">
+							<field name="selColorInEditor" type="Enum"/>
+							<field name="bIsMaster" type="Boolean"/>
+							<object name="Shape">
+										<field name="fHeight" type="Float"/>
+										<field name="entBoundingShape" type="BinHex"/>
+										<object name="ShapePoints">
+											<object name="Points">
+												<field name="vectorPoint" type="Vector3"/>
+											</object>
+										</object>
+									</object>
+							<object name="RoleContainer">
+										<object name="RoleSettings">
+											<object name="RoleSetting">
+												<field name="text_RoleName" type="String"/>
+												<field name="RoleName" type="BinHex"/>
+												<field name="CloId" type="BinHex"/>
+												<object name="AffiliationSettings">
+													<object name="Config">
+														<field name="text_selType" type="String"/>
+														<field name="selType" type="Enum"/>
+														<object name="Object">
+															<field name="selAffiliation" type="Enum"/>
+															<field name="vehicleinfoVehicleSpawnInfo" type="BinHex"/>
+															<field name="humanconfigHumanConfig" type="BinHex"/>
+														</object>
+													</object>
+												</object>
+												<field name="entEntityId" type="BinHex"/>
+												<object name="Difficulty">
+													<object name="selDifficulty">
+												<field name="selDifficulty" type="Enum"/>
+											</object>
+												</object>
+											</object>
+										</object>
+									</object>
+							<object name="MasterData">
+										<field name="brickflowVariationDB" type="BinHex"/>
+									</object>
+							<field name="bCivilian" type="Boolean"/>
+							<field name="bAI" type="BinHex"/>
+							<field name="fDisableAttractorOnEntityDuration" type="Float"/>
+							<field name="bRestrictOnBehaviorStates" type="Boolean"/>
+							<field name="selAffiliation" type="Enum"/>
+						</object>
+					</object>
+					<object name="PatrolSettings">
+						<field name="bIsFromCreationSettings" type="Boolean"/>
+						<field name="selPatrolType" type="Enum"/>
+					</object>
+					<object name="ProximityBhvSettings">
+						<field name="fProximityBhvDistanceMin" type="Float"/>
+						<field name="fProximityBhvDistanceMax" type="Float"/>
+						<field name="ProximityBhvOffset" type="BinHex"/>
+						<field name="bAllowInterruptionOnProximity" type="Boolean"/>
+						<field name="bTriggerOnTimer" type="Boolean"/>
+						<field name="fTriggerOnTimerDelay" type="Float"/>
+						<field name="bTriggerOnProfile" type="Boolean"/>
+						<field name="fTriggerOnProfileDelay" type="Float"/>
+						<field name="bUseParentSettings" type="Boolean"/>
+						<field name="bAllowInNetSurfing" type="Boolean"/>
+					</object>
+					<object name="ActionLoopSettings">
+						<field name="fTimerPeriod" type="Float"/>
+					</object>
+					<object name="Childs"/>
+					<object name="Vehicles"/>
+					<object name="Objects"/>
+					<object name="Robots"/>
+					<object name="Contexts">
+						<object name="Context">
+							<field name="Context" type="BinHex"/>
+						</object>
+					</object>
+					<object name="SpawningMandatory">
+						<field name="Normal" type="Float"/>
+						<field name="HighEnd" type="Float"/>
+					</object>
+				</object>
+				<object name="EnticerDescriptionsList">
+					<object name="EnticerDescription">
+						<field name="vectorRelativeOffset" type="Vector3"/>
+						<field name="angvecRelativeAngle" type="Vector3"/>
+						<field name="EnticerId" type="BinHex"/>
+						<field name="PatrolEntity" type="BinHex"/>
+						<object name="CreationSettings">
+							<field name="bIsMonitored" type="Boolean"/>
+							<field name="cloupsetUpdateSettings" type="BinHex"/>
+							<field name="bUseParentPosAsAnchor" type="Boolean"/>
+							<field name="bIsALeader" type="Boolean"/>
+							<field name="robotconfigRobotConfig" type="BinHex"/>
+							<field name="text_archArchetype" type="String"/>
+							<field name="archArchetype" type="BinHex"/>
+							<field name="vehicleinfoVehicleSpawnInfo" type="BinHex"/>
+							<field name="vehiclesbankVehiclesBank" type="BinHex"/>
+							<field name="humanconfigHumanConfig" type="BinHex"/>
+							<object name="ActivationSettings">
+								<field name="entcontContext" type="BinHex"/>
+								<field name="bIgnoreRestrictionZone" type="Boolean"/>
+							</object>
+							<object name="AttractorSettings">
+								<field name="selAttractorType" type="Enum"/>
+								<object name="StimSettings">
+									<field name="bSendStim" type="Boolean"/>
+									<field name="fStimRadius" type="Float"/>
+									<field name="vectorStimOffset" type="Vector3"/>
+									<field name="fStimFrequency" type="Float"/>
+									<field name="bUseOnlyOnce" type="Boolean"/>
+									<field name="fTimeBeforeResendStimAfterUse" type="Float"/>
+									<object name="AltitudeRestrictions">
+										<field name="bUseMaxAltRestriction" type="Boolean"/>
+									</object>
+									<object name="ConeRestrictions"/>
+								</object>
+								<object name="GotoSettings">
+									<field name="bDoActionOnSpot" type="Boolean"/>
+									<field name="bApplyAnchor" type="Boolean"/>
+									<field name="bUseSepcificSpeed" type="Boolean"/>
+									<field name="fSpecificSpeed" type="Float"/>
+								</object>
+								<object name="UserSettings">
+									<field name="selColorInEditor" type="Enum"/>
+									<field name="bIsMaster" type="Boolean"/>
+									<object name="Shape">
+										<field name="fHeight" type="Float"/>
+										<field name="entBoundingShape" type="BinHex"/>
+										<object name="ShapePoints">
+											<object name="Points">
+												<field name="vectorPoint" type="Vector3"/>
+											</object>
+										</object>
+									</object>
+									<object name="RoleContainer">
+										<object name="RoleSettings">
+											<object name="RoleSetting">
+												<field name="text_RoleName" type="String"/>
+												<field name="RoleName" type="BinHex"/>
+												<field name="CloId" type="BinHex"/>
+												<object name="AffiliationSettings">
+													<object name="Config">
+														<field name="text_selType" type="String"/>
+														<field name="selType" type="Enum"/>
+														<object name="Object">
+															<field name="selAffiliation" type="Enum"/>
+															<field name="vehicleinfoVehicleSpawnInfo" type="BinHex"/>
+															<field name="humanconfigHumanConfig" type="BinHex"/>
+														</object>
+													</object>
+												</object>
+												<field name="entEntityId" type="BinHex"/>
+												<object name="Difficulty">
+													<object name="selDifficulty">
+												<field name="selDifficulty" type="Enum"/>
+											</object>
+												</object>
+											</object>
+										</object>
+									</object>
+									<object name="MasterData">
+										<field name="brickflowVariationDB" type="BinHex"/>
+									</object>
+									<field name="bCivilian" type="Boolean"/>
+									<field name="bAI" type="BinHex"/>
+									<field name="fDisableAttractorOnEntityDuration" type="Float"/>
+									<field name="bRestrictOnBehaviorStates" type="Boolean"/>
+									<field name="selAffiliation" type="Enum"/>
+								</object>
+							</object>
+							<object name="PatrolSettings">
+								<field name="bIsFromCreationSettings" type="Boolean"/>
+								<field name="selPatrolType" type="Enum"/>
+							</object>
+							<object name="ProximityBhvSettings">
+								<field name="fProximityBhvDistanceMin" type="Float"/>
+								<field name="fProximityBhvDistanceMax" type="Float"/>
+								<field name="ProximityBhvOffset" type="BinHex"/>
+								<field name="bAllowInterruptionOnProximity" type="Boolean"/>
+								<field name="bTriggerOnTimer" type="Boolean"/>
+								<field name="fTriggerOnTimerDelay" type="Float"/>
+								<field name="bTriggerOnProfile" type="Boolean"/>
+								<field name="fTriggerOnProfileDelay" type="Float"/>
+								<field name="bUseParentSettings" type="Boolean"/>
+								<field name="bAllowInNetSurfing" type="Boolean"/>
+							</object>
+							<object name="ActionLoopSettings">
+								<field name="fTimerPeriod" type="Float"/>
+							</object>
+							<object name="ActionSettings">
+								<field name="cloactlistActionList" type="BinHex"/>
+								<field name="cloactAction" type="BinHex"/>
+							</object>
+							<object name="SpawningSettings">
+								<field name="bSpawningMandatory" type="Boolean"/>
+								<field name="bCanSpawn" type="Boolean"/>
+								<field name="bIsScoutXTarget" type="Boolean"/>
+								<field name="ScoutXTargetNameLocId" type="BinHex"/>
+								<field name="peopleinfoPeopleSpawnInfoOverride" type="BinHex"/>
+								<field name="tmplDialogActor" type="BinHex"/>
+								<field name="selActivity" type="Enum"/>
+								<field name="npcpersonalityPersonalityOverride" type="BinHex"/>
+								<field name="selSpecialDemoCharacter" type="Enum"/>
+								<field name="rewardconfigRewardConfig" type="BinHex"/>
+								<field name="hackingprofileHackingProfile" type="BinHex"/>
+								<field name="bUseFilteredCollections" type="Boolean"/>
+								<field name="conversationinteractionConversationInteractionSettings" type="BinHex"/>
+								<field name="bSpawnBuddyDeconnected" type="Boolean"/>
+								<field name="bAssignToDefaultSquad" type="BinHex"/>
+							</object>
+						</object>
+					</object>
+				</object>
+				<object name="EnticerObjectDescriptionsList"/>
+				<object name="EnticerVehicleDescriptionsList">
+					<object name="EnticerVehicleDescription">
+						<field name="vectorRelativeOffset" type="Vector3"/>
+						<field name="angvecRelativeAngle" type="Vector3"/>
+						<field name="EnticerId" type="BinHex"/>
+						<object name="CreationSettings">
+							<field name="bIsMonitored" type="Boolean"/>
+							<field name="cloupsetUpdateSettings" type="BinHex"/>
+							<field name="bUseParentPosAsAnchor" type="Boolean"/>
+							<field name="bIsALeader" type="Boolean"/>
+							<field name="robotconfigRobotConfig" type="BinHex"/>
+							<field name="text_archArchetype" type="String"/>
+							<field name="archArchetype" type="BinHex"/>
+							<field name="humanconfigHumanConfig" type="BinHex"/>
+							<field name="vehicleinfoVehicleSpawnInfo" type="BinHex"/>
+							<field name="vehiclesbankVehiclesBank" type="BinHex"/>
+							<object name="ActivationSettings">
+								<field name="entcontContext" type="BinHex"/>
+								<field name="bIgnoreRestrictionZone" type="Boolean"/>
+							</object>
+							<object name="AttractorSettings">
+								<field name="selAttractorType" type="Enum"/>
+								<object name="StimSettings">
+									<field name="bSendStim" type="Boolean"/>
+									<field name="fStimRadius" type="Float"/>
+									<field name="vectorStimOffset" type="Vector3"/>
+									<field name="fStimFrequency" type="Float"/>
+									<field name="bUseOnlyOnce" type="Boolean"/>
+									<field name="fTimeBeforeResendStimAfterUse" type="Float"/>
+									<object name="AltitudeRestrictions">
+										<field name="bUseMaxAltRestriction" type="Boolean"/>
+									</object>
+									<object name="ConeRestrictions"/>
+								</object>
+								<object name="GotoSettings">
+									<field name="bDoActionOnSpot" type="Boolean"/>
+									<field name="bApplyAnchor" type="Boolean"/>
+									<field name="bUseSepcificSpeed" type="Boolean"/>
+									<field name="fSpecificSpeed" type="Float"/>
+								</object>
+								<object name="UserSettings">
+									<field name="selColorInEditor" type="Enum"/>
+									<field name="bIsMaster" type="Boolean"/>
+									<object name="Shape">
+										<field name="fHeight" type="Float"/>
+										<field name="entBoundingShape" type="BinHex"/>
+										<object name="ShapePoints">
+											<object name="Points">
+												<field name="vectorPoint" type="Vector3"/>
+											</object>
+										</object>
+									</object>
+									<object name="RoleContainer">
+										<object name="RoleSettings">
+											<object name="RoleSetting">
+												<field hash="482CA2F4" type="BinHex"/>
+												<field name="RoleName" type="BinHex"/>
+												<field name="entEntityId" type="BinHex"/>
+												<field name="CloId" type="BinHex"/>
+												<object name="AffiliationSettings">
+													<object name="Config">
+														<field name="text_selType" type="String"/>
+														<field name="selType" type="Enum"/>
+														<object name="Object">
+															<field name="selAffiliation" type="Enum"/>
+															<field name="humanconfigHumanConfig" type="BinHex"/>
+														</object>
+													</object>
+												</object>
+												<object name="Difficulty">
+													<object name="selDifficulty">
+												<field name="selDifficulty" type="Enum"/>
+											</object>
+												</object>
+											</object>
+										</object>
+									</object>
+									<object name="MasterData">
+										<field name="brickflowVariationDB" type="BinHex"/>
+									</object>
+									<field name="bCivilian" type="Boolean"/>
+									<field name="bAI" type="BinHex"/>
+									<field name="fDisableAttractorOnEntityDuration" type="Float"/>
+									<field name="bRestrictOnBehaviorStates" type="Boolean"/>
+									<field name="selAffiliation" type="Enum"/>
+								</object>
+							</object>
+							<object name="PatrolSettings">
+								<field name="bIsFromCreationSettings" type="Boolean"/>
+								<field name="selPatrolType" type="Enum"/>
+							</object>
+							<object name="ProximityBhvSettings">
+								<field name="fProximityBhvDistanceMin" type="Float"/>
+								<field name="fProximityBhvDistanceMax" type="Float"/>
+								<field name="ProximityBhvOffset" type="BinHex"/>
+								<field name="bAllowInterruptionOnProximity" type="Boolean"/>
+								<field name="bTriggerOnTimer" type="Boolean"/>
+								<field name="fTriggerOnTimerDelay" type="Float"/>
+								<field name="bTriggerOnProfile" type="Boolean"/>
+								<field name="fTriggerOnProfileDelay" type="Float"/>
+								<field name="bUseParentSettings" type="Boolean"/>
+								<field name="bAllowInNetSurfing" type="Boolean"/>
+							</object>
+							<object name="ActionLoopSettings">
+								<field name="fTimerPeriod" type="Float"/>
+							</object>
+							<object name="ActionSettings">
+								<field name="cloactlistActionList" type="BinHex"/>
+								<field name="cloactAction" type="BinHex"/>
+							</object>
+							<object name="SpawningSettings">
+								<field name="bSpawningMandatory" type="Boolean"/>
+								<field name="bCanSpawn" type="Boolean"/>
+								<field name="bIsScoutXTarget" type="Boolean"/>
+								<field name="ScoutXTargetNameLocId" type="BinHex"/>
+								<field name="peopleinfoPeopleSpawnInfoOverride" type="BinHex"/>
+								<field name="tmplDialogActor" type="BinHex"/>
+								<field name="selActivity" type="Enum"/>
+								<field name="npcpersonalityPersonalityOverride" type="BinHex"/>
+								<field name="selSpecialDemoCharacter" type="Enum"/>
+								<field name="rewardconfigRewardConfig" type="BinHex"/>
+								<field name="hackingprofileHackingProfile" type="BinHex"/>
+								<field name="bUseFilteredCollections" type="Boolean"/>
+								<field name="conversationinteractionConversationInteractionSettings" type="BinHex"/>
+								<field name="bSpawnBuddyDeconnected" type="Boolean"/>
+								<field name="bAssignToDefaultSquad" type="BinHex"/>
+							</object>
+						</object>
+					</object>
+				</object>
+				<field name="PatrolEntity" type="BinHex"/>
+				<object name="CreationSettings">
+					<field name="bIsMonitored" type="Boolean"/>
+					<field name="cloupsetUpdateSettings" type="BinHex"/>
+					<field name="bUseParentPosAsAnchor" type="Boolean"/>
+					<field name="bIsALeader" type="Boolean"/>
+					<field name="robotconfigRobotConfig" type="BinHex"/>
+					<field name="vehicleinfoVehicleSpawnInfo" type="BinHex"/>
+					<field name="vehiclesbankVehiclesBank" type="BinHex"/>
+					<field name="humanconfigHumanConfig" type="BinHex"/>
+					<field name="text_archArchetype" type="String"/>
+					<field name="archArchetype" type="BinHex"/>
+					<object name="ActivationSettings">
+						<field name="entcontContext" type="BinHex"/>
+						<field name="bIgnoreRestrictionZone" type="Boolean"/>
+					</object>
+					<object name="AttractorSettings">
+						<field name="selAttractorType" type="Enum"/>
+						<object name="StimSettings">
+							<field name="bSendStim" type="Boolean"/>
+							<field name="fStimRadius" type="Float"/>
+							<field name="vectorStimOffset" type="Vector3"/>
+							<field name="fStimFrequency" type="Float"/>
+							<field name="bUseOnlyOnce" type="Boolean"/>
+							<field name="fTimeBeforeResendStimAfterUse" type="Float"/>
+							<object name="AltitudeRestrictions">
+								<field name="bUseMaxAltRestriction" type="Boolean"/>
+							</object>
+							<object name="ConeRestrictions"/>
+						</object>
+						<object name="GotoSettings">
+							<field name="bDoActionOnSpot" type="Boolean"/>
+							<field name="bApplyAnchor" type="Boolean"/>
+							<field name="bUseSepcificSpeed" type="Boolean"/>
+							<field name="fSpecificSpeed" type="Float"/>
+						</object>
+						<object name="UserSettings">
+							<field name="selColorInEditor" type="Enum"/>
+							<field name="bIsMaster" type="Boolean"/>
+							<object name="Shape">
+								<field name="fHeight" type="Float"/>
+								<field name="entBoundingShape" type="BinHex"/>
+								<object name="ShapePoints">
+									<object name="Points">
+										<field name="vectorPoint" type="Vector3"/>
+									</object>
+								</object>
+							</object>
+							<object name="RoleContainer">
+								<object name="RoleSettings">
+									<object name="RoleSetting">
+										<field name="text_RoleName" type="String"/>
+										<field name="RoleName" type="BinHex"/>
+										<field name="entEntityId" type="BinHex"/>
+										<field name="CloId" type="BinHex"/>
+										<object name="AffiliationSettings">
+											<object name="Config">
+												<field name="text_selType" type="String"/>
+												<field name="selType" type="Enum"/>
+												<object name="Object">
+													<field name="selAffiliation" type="Enum"/>
+													<field name="humanconfigHumanConfig" type="BinHex"/>
+													<field name="vehicleinfoVehicleSpawnInfo" type="BinHex"/>
+												</object>
+											</object>
+										</object>
+										<object name="Difficulty">
+											<object name="selDifficulty">
+												<field name="selDifficulty" type="Enum"/>
+											</object>
+										</object>
+									</object>
+								</object>
+							</object>
+							<object name="MasterData">
+								<field name="brickflowVariationDB" type="BinHex"/>
+							</object>
+							<field name="bCivilian" type="Boolean"/>
+							<field name="bAI" type="BinHex"/>
+							<field name="fDisableAttractorOnEntityDuration" type="Float"/>
+							<field name="bRestrictOnBehaviorStates" type="Boolean"/>
+							<field name="selAffiliation" type="Enum"/>
+						</object>
+					</object>
+					<object name="PatrolSettings">
+						<field name="bIsFromCreationSettings" type="Boolean"/>
+						<field name="selPatrolType" type="Enum"/>
+						<field name="entParentPatrolId" type="BinHex"/>
+						<field name="bQuitPatrol" type="Boolean"/>
+					</object>
+					<object name="ProximityBhvSettings">
+						<field name="fProximityBhvDistanceMin" type="Float"/>
+						<field name="fProximityBhvDistanceMax" type="Float"/>
+						<field name="ProximityBhvOffset" type="BinHex"/>
+						<field name="bAllowInterruptionOnProximity" type="Boolean"/>
+						<field name="bTriggerOnTimer" type="Boolean"/>
+						<field name="fTriggerOnTimerDelay" type="Float"/>
+						<field name="bTriggerOnProfile" type="Boolean"/>
+						<field name="fTriggerOnProfileDelay" type="Float"/>
+						<field name="bUseParentSettings" type="Boolean"/>
+						<field name="bAllowInNetSurfing" type="Boolean"/>
+					</object>
+					<object name="ActionLoopSettings">
+						<field name="fTimerPeriod" type="Float"/>
+					</object>
+					<object name="ActionSettings">
+						<field name="cloactlistActionList" type="BinHex"/>
+						<field name="cloactAction" type="BinHex"/>
+					</object>
+					<object name="SpawningSettings">
+						<field name="bSpawningMandatory" type="Boolean"/>
+						<field name="bCanSpawn" type="Boolean"/>
+						<field name="bIsScoutXTarget" type="Boolean"/>
+						<field name="ScoutXTargetNameLocId" type="BinHex"/>
+						<field name="peopleinfoPeopleSpawnInfoOverride" type="BinHex"/>
+						<field name="tmplDialogActor" type="BinHex"/>
+						<field name="selActivity" type="Enum"/>
+						<field name="npcpersonalityPersonalityOverride" type="BinHex"/>
+						<field name="selSpecialDemoCharacter" type="Enum"/>
+						<field name="rewardconfigRewardConfig" type="BinHex"/>
+						<field name="hackingprofileHackingProfile" type="BinHex"/>
+						<field name="bUseFilteredCollections" type="Boolean"/>
+						<field name="conversationinteractionConversationInteractionSettings" type="BinHex"/>
+						<field name="bSpawnBuddyDeconnected" type="Boolean"/>
+						<field name="bAssignToDefaultSquad" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="UserSettings">
+			<field name="bCivilian" type="Boolean"/>
+			<field name="bAI" type="BinHex"/>
+			<field name="fDisableAttractorOnEntityDuration" type="Float"/>
+			<field name="bRestrictOnBehaviorStates" type="Boolean"/>
+			<field name="selAffiliation" type="Enum"/>
+			<field name="selColorInEditor" type="Enum"/>
+			<field name="bIsMaster" type="Boolean"/>
+			<object name="Shape">
+				<field name="fHeight" type="Float"/>
+				<field name="entBoundingShape" type="BinHex"/>
+				<object name="ShapePoints">
+					<object name="Points">
+						<field name="vectorPoint" type="Vector3"/>
+					</object>
+				</object>
+			</object>
+			<object name="RoleContainer">
+				<object name="RoleSettings">
+					<object name="RoleSetting">
+						<field name="text_RoleName" type="String"/>
+						<field name="RoleName" type="BinHex"/>
+						<field name="entEntityId" type="BinHex"/>
+						<field name="CloId" type="BinHex"/>
+						<object name="AffiliationSettings">
+							<object name="Config">
+								<field name="text_selType" type="String"/>
+								<field name="selType" type="Enum"/>
+								<object name="Object">
+									<field name="selAffiliation" type="Enum"/>
+									<field name="vehicleinfoVehicleSpawnInfo" type="BinHex"/>
+									<field name="humanconfigHumanConfig" type="BinHex"/>
+								</object>
+							</object>
+						</object>
+						<object name="Difficulty">
+							<object name="selDifficulty">
+								<field name="selDifficulty" type="Enum"/>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="MasterData">
+				<field name="brickflowVariationDB" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

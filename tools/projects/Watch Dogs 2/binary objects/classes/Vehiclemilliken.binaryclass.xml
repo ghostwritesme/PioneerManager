@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehiclemillikenParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fLateralStiffness" type="Float"/>
+	<field name="fLongitudinalStiffness" type="Float"/>
+	<field name="fB" type="BinHex"/>
+	<field name="fC" type="BinHex"/>
+	<field name="fD" type="BinHex"/>
+	<field name="fE" type="BinHex"/>
+	<field name="fLongitudinalFriction" type="Float"/>
+	<field name="fLateralFriction" type="Float"/>
+	<field name="bUseTyreStiffnessLoadDependency" type="Boolean"/>
+	<field name="fFrictionLoadDependencyFactor" type="Float"/>
+	<field name="fStiffnessLoadDependencyFactor" type="Float"/>
+	<field name="fCamberStiffness" type="Float"/>
+	<field name="fMaximumLongSlipForLateralForce" type="Float"/>
+	<field name="bBypassLongSlipCappingWithHandbrake" type="Boolean"/>
+	<object name="curveFrictionScaleVsLoadLongitudinal">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveFrictionScaleVsLoadLateral">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveStiffnessScaleVsLoadLongitudinalNormalized">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveStiffnessScaleVsLoadLateralNormalized">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="DynamicLongSlipCapping">
+		<field name="bUseDynamicMaxLongSlipForLateralForce" type="Boolean"/>
+		<field name="fMinimumSlipAngle" type="Float"/>
+		<field name="fMaximumSlipAngle" type="Float"/>
+		<field name="fMinimumSpeed" type="Float"/>
+		<field name="fMaximumSpeed" type="Float"/>
+	</object>
+</class>

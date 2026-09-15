@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uiprofilercardsettings_bf533bafParameters">
+	<inherit name="SharedParameters"/>
+	<object name="ActivityCardChat">
+		<field name="sndCardShowSFX" type="BinHex"/>
+		<field name="sndCardHideSFX" type="BinHex"/>
+		<field name="fSkipTextCoordX" type="Vector"/>
+		<field name="fSkipTextCoordY" type="Vector"/>
+		<field name="uisoundDisplayLineSFX" type="BinHex"/>
+		<object name="locstridSkipText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridSkipTextSpecificPC">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="ActivityCardVoice">
+		<field name="sndCardShowSFX" type="BinHex"/>
+		<field name="sndCardHideSFX" type="BinHex"/>
+		<field name="fSkipTextCoordX" type="Vector"/>
+		<field name="fSkipTextCoordY" type="Vector"/>
+		<object name="locstridSkipText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridSkipTextSpecificPC">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="ActivityCardEmail">
+		<field name="sndCardShowSFX" type="BinHex"/>
+		<field name="sndCardHideSFX" type="BinHex"/>
+		<field name="fSkipTextCoordX" type="Vector"/>
+		<field name="fSkipTextCoordY" type="Vector"/>
+		<object name="locstridSkipText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridSkipTextSpecificPC">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="ActivityCardAudio">
+		<field name="sndCardShowSFX" type="BinHex"/>
+		<field name="sndCardHideSFX" type="BinHex"/>
+		<field name="fSkipTextCoordX" type="Vector"/>
+		<field name="fSkipTextCoordY" type="Vector"/>
+		<object name="locstridSkipText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridSkipTextSpecificPC">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="ActivityCardVideo">
+		<field name="sndCardShowSFX" type="BinHex"/>
+		<field name="sndCardHideSFX" type="BinHex"/>
+		<field name="fSkipTextCoordX" type="Vector"/>
+		<field name="fSkipTextCoordY" type="Vector"/>
+		<object name="locstridSkipText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridSkipTextSpecificPC">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="RewardChat">
+		<field name="sRewardIconFrameLabel" type="String"/>
+		<object name="locstridRewardName">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="RewardVoice">
+		<field name="sRewardIconFrameLabel" type="String"/>
+		<object name="locstridRewardName">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="RewardEmail">
+		<field name="sRewardIconFrameLabel" type="String"/>
+		<object name="locstridRewardName">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="RewardAudio">
+		<field name="sRewardIconFrameLabel" type="String"/>
+		<object name="locstridRewardName">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="RewardVideo">
+		<field name="sRewardIconFrameLabel" type="String"/>
+		<object name="locstridRewardName">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+</class>

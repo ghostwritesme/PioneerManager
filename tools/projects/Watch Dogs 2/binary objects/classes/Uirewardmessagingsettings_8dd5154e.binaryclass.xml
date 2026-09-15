@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uirewardmessagingsettings_8dd5154eParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fFollowersProgressionDisplayDuration" type="Float"/>
+	<field name="fFollowersBonusProgressionDisplayDuration" type="Float"/>
+	<object name="RewardDefault">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="bHasFiniteMaxCount" type="Boolean"/>
+		<field name="uMaxSimultaneousDisplayCount" type="Int64"/>
+	</object>
+	<object name="NewWorldStory">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="bHasFiniteMaxCount" type="Boolean"/>
+		<field name="uMaxSimultaneousDisplayCount" type="Int64"/>
+	</object>
+	<object name="RewardNormal">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="bHasFiniteMaxCount" type="Boolean"/>
+		<field name="uMaxSimultaneousDisplayCount" type="Int64"/>
+	</object>
+	<object name="RewardBig">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="bHasFiniteMaxCount" type="Boolean"/>
+		<field name="uMaxSimultaneousDisplayCount" type="Int64"/>
+	</object>
+	<object name="RewardBotnet">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="bHasFiniteMaxCount" type="Boolean"/>
+	</object>
+	<object name="RewardSkillpoints">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="bHasFiniteMaxCount" type="Boolean"/>
+	</object>
+	<object name="RewardFollowers">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="bHasFiniteMaxCount" type="Boolean"/>
+	</object>
+	<object name="RewardFollowersBonus">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="bHasFiniteMaxCount" type="Boolean"/>
+		<field name="uMaxSimultaneousDisplayCount" type="Int64"/>
+	</object>
+	<object name="RewardLeaderboardRank">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="bHasFiniteMaxCount" type="Boolean"/>
+	</object>
+	<object name="IntroAnimation">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="bHasFiniteMaxCount" type="Boolean"/>
+	</object>
+</class>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="LightcolorsettingParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selColorMode" type="Enum"/>
+	<field name="clrColor" type="VectorColor"/>
+	<field name="fColorTemperature" type="Float"/>
+	<field name="fTint" type="Float"/>
+</class>

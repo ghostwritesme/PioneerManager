@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uileaderboardsettings_5c0c9907Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="DivisionRecruit">
+		<field name="uMaxSubdivisions" type="BinHex"/>
+		<object name="locstridDivisionName">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="DivisionBronze">
+		<field name="uMaxSubdivisions" type="BinHex"/>
+		<object name="locstridDivisionName">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="DivisionSilver">
+		<field name="uMaxSubdivisions" type="BinHex"/>
+		<object name="locstridDivisionName">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="DivisionGold">
+		<field name="uMaxSubdivisions" type="BinHex"/>
+		<object name="locstridDivisionName">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="DivisionDiamond">
+		<field name="uMaxSubdivisions" type="BinHex"/>
+		<object name="locstridDivisionName">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="DivisionMaster">
+		<field name="uMaxSubdivisions" type="BinHex"/>
+		<object name="locstridDivisionName">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="SubdivisionNames">
+		<object name="SubdivisionName">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="locstridRankName">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridTimeLeftText">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+</class>

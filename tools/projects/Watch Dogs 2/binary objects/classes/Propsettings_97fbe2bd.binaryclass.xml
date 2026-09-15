@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Propsettings_97fbe2bdParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fPropSpawnChance" type="Float"/>
+	<object name="PropGroups">
+		<object name="Group">
+			<field name="Group" type="String"/>
+		</object>
+	</object>
+</class>

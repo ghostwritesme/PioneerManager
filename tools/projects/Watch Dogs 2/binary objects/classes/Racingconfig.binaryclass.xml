@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="RacingconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="entPlayerClubSpawnPoint" type="BinHex"/>
+	<field name="missionlistMissionThatUnlocksRaces" type="BinHex"/>
+	<object name="PlayerVehicle">
+		<field name="text_archDefaultPlayerVehicle" type="String"/>
+		<field name="archDefaultPlayerVehicle" type="BinHex"/>
+		<field name="text_archShadowVehicle" type="String"/>
+		<field name="archShadowVehicle" type="BinHex"/>
+	</object>
+	<object name="Perks">
+		<field name="perkdesclistMultiplayerPerksToRemove" type="BinHex"/>
+		<field name="perkdesclistMultiplayerPerksToAdd" type="BinHex"/>
+	</object>
+	<object name="MenuPages">
+		<field name="uimenupageRaceEndMenuPage" type="BinHex"/>
+		<field name="uimenupageRaceCentralMenuPage" type="BinHex"/>
+		<field name="uimenupageRaceDetailsMenuPagePC" type="BinHex"/>
+		<field name="uimenupageTournamentCompleteMenuPage" type="BinHex"/>
+	</object>
+	<object name="Shop">
+		<object name="VehicleItems">
+			<object name="Vehicle">
+				<field name="itemsVehicle" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="OnlineDronePosSys">
+		<field name="possyselementCoopDronePosSys" type="BinHex"/>
+		<field name="possyselementMultiplayerDronePosSys" type="BinHex"/>
+	</object>
+	<object name="MotocrossRaceSpecifics">
+		<field name="fOffTrackDistance" type="Float"/>
+	</object>
+    <object name="FreeRoam">
+		<field name="entYachtSpawnLocationTag" type="BinHex"/>
+		<object name="locstridGoToYachtTip">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+    </object>
+    <object name="YachtRaceSpecifics">
+		<field name="sailboatpathfindsetupPlayerPathfindSetup" type="BinHex"/>
+		<field name="uiTriggerRacePathHintBatteryCost" type="UInt32"/>
+		<field name="fTriggerRacePathHintHintTextTime" type="Float"/>
+		<object name="locstridTriggerRacePathHintText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+    </object>
+	<object name="Practice">
+		<field name="itemsOnlineRaceTileDescription" type="BinHex"/>
+		<object name="Races">
+			<object name="Race">
+				<field name="raceconfigRace" type="BinHex"/>
+			</object>
+		</object>
+		<object name="RaceItems">
+			<object name="Race">
+				<field name="itemsRace" type="BinHex"/>
+			</object>
+		</object>
+		<object name="Racers">
+			<object name="Racer">
+				<field name="racerconfigRacer" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="Tournament">
+		<field name="itemsOnlineRaceTileDescription" type="BinHex"/>
+		<object name="Races">
+			<object name="Race">
+				<field name="raceconfigRace" type="BinHex"/>
+			</object>
+		</object>
+		<object name="RaceItems">
+			<object name="Race">
+				<field name="itemsRace" type="BinHex"/>
+			</object>
+		</object>
+		<object name="Racers">
+			<object name="Racer">
+				<field name="racerconfigRacer" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="Story">
+		<field name="itemsOnlineRaceTileDescription" type="BinHex"/>
+		<object name="Races">
+			<object name="Race">
+				<field name="raceconfigRace" type="BinHex"/>
+			</object>
+		</object>
+		<object name="RaceItems">
+			<object name="Race">
+				<field name="itemsRace" type="BinHex"/>
+			</object>
+		</object>
+		<object name="Racers">
+			<object name="Racer">
+				<field name="racerconfigRacer" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

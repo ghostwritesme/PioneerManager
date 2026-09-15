@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CloactionSharedParameters">
+	<field name="Name" type="String"/>
+	<field name="text_fileActionMoveStateId" type="String"/>
+	<field name="fileActionMoveStateId" type="BinHex"/>
+	<field name="text_fileCycleMoveStateId" type="String"/>
+	<field name="fileCycleMoveStateId" type="BinHex"/>
+	<field name="selOnAnimEnd" type="Enum"/>
+	<field name="bUseAsAnchorForGoto" type="Boolean"/>
+	<field name="bOverrideQuitSettings" type="Boolean"/>
+	<field name="fProximityRadius" type="Float"/>
+	<object name="TriggerSettings">
+		<field name="selTriggerType" type="Enum"/>
+		<field name="bComputeAnchorFromDynamicCLOAnchor" type="Boolean"/>
+		<field name="fTriggerDelay" type="Float"/>
+		<field name="text_sTriggerTypeExtraInfo" type="String"/>
+		<field name="sTriggerTypeExtraInfo" type="BinHex"/>
+		<field name="bTriggerOrientTowards" type="Boolean"/>
+		<field name="bTriggerOrientReturn" type="Boolean"/>
+		<field name="bTriggerDestroyProps" type="Boolean"/>
+		<field name="fTriggerRadius" type="Float"/>
+		<field name="selRaycastTypeCheck" type="Enum"/>
+		<field name="bTriggerLookAt" type="Boolean"/>
+		<field name="fCoolDown" type="Float"/>
+		<field name="fCooldownPerEntity" type="Float"/>
+		<object name="ConeRestrictions">
+            <object name="ConeRestrictions">
+                <field name="fAngle" type="Float"/>
+                <field name="fMinDist" type="Float"/>
+                <field name="fAngleFromDir" type="Float"/>
+            </object>
+		</object>
+		<object name="LookAtSettings">
+			<field name="selLookAtType" type="Enum"/>
+			<field name="selPriority" type="Enum"/>
+			<field name="bUseTimer" type="Boolean"/>
+			<field name="bUseMaxAngles" type="Boolean"/>
+			<object name="LookAtMoveState">
+				<field name="text_fileMovePath" type="String"/>
+				<field name="fileMovePath" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="QuitSettings">
+		<field name="bSpecifyQuitState" type="Boolean"/>
+		<field name="bSpecifyQuitMindSet" type="Boolean"/>
+		<field name="selQuitMindSet" type="Enum"/>
+		<field name="selState" type="Enum"/>
+		<field name="fleebehaviordescriptorFleeBhvDescriptor" type="BinHex"/>
+		<field name="selWalkType" type="Enum"/>
+		<object name="QuitPMS">
+			<object name="PMSValues">
+				<object name="PMSValue">
+				    <field name="pmsPMSName" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

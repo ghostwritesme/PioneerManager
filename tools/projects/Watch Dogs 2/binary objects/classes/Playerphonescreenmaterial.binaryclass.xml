@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PlayerphonescreenmaterialParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_matPhoneScreenMaterial" type="String"/>
+	<field name="matPhoneScreenMaterial" type="BinHex"/>
+	<field name="text_sMaterialSlot" type="String"/>
+	<field name="sMaterialSlot" type="BinHex"/>
+</class>

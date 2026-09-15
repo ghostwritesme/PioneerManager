@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="TaxirideconfigsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="conversationsettingConversationIn" type="BinHex"/>
+	<field name="conversationsettingConversationOut" type="BinHex"/>
+	<field name="conversationsettingConversationOutFail" type="BinHex"/>
+	<field name="gameplayconvosettingsConversationRuleConfig" type="BinHex"/>
+	<field name="gameplayconvosettingsBarksRuleConfig" type="BinHex"/>
+	<field name="BarkPickUpClient" type="BinHex"/>
+	<field name="BarkResult5Stars" type="BinHex"/>
+	<field name="BarkResult4Stars" type="BinHex"/>
+	<field name="BarkResult3Stars" type="BinHex"/>
+	<field name="BarkResult2Stars" type="BinHex"/>
+	<field name="BarkResult1Stars" type="BinHex"/>
+	<object name="LocalisationIds">
+		<object name="locstridWrongVehicleWarning">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridAcquireVehicleMainObjective">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridGetClientsMainObjective">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridDrivingWithClientsMainObjective">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridEscapeFelonyMainObjective">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridFailPlayerGetBackInCarWarningLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="VehicleSettings">
+		<field name="selVehicleReliabilityMax" type="Enum"/>
+		<object name="VehicleTypeRestrictions">
+			<object name="selVehicleType">
+				<field name="selVehicleType" type="Enum"/>
+			</object>
+		</object>
+		<object name="VehicleArchetypeIgnored">
+			<object name="Archetype">
+				<field name="text_archArchetype" type="String"/>
+				<field name="archArchetype" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="VisualCustomization">
+		<field name="bShowGPSPathToClient" type="Boolean"/>
+		<field name="bShowGPSPathToDestination" type="Boolean"/>
+	</object>
+	<object name="ClientGeneration">
+		<field name="taxiclientlistClientList" type="BinHex"/>
+	</object>
+	<object name="StartLocationGeneration">
+		<field name="bUseRoadNetworkForGeneration" type="Boolean"/>
+		<field name="fMinStartLocationRange" type="Float"/>
+		<field name="fMaxStartLocationRange" type="Float"/>
+		<object name="StartLocationTags">
+			<object name="Tag">
+				<field name="selTag" type="Enum"/>
+				<object name="locstridLocationName">
+					<field name="LocalizationId" type="Int64"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="EndLocationGeneration">
+		<field name="iNumberOfPossibleEnds" type="Int32"/>
+		<field name="bUseRoadNetworkForGeneration" type="Boolean"/>
+		<field name="fMinDestinationDistance" type="Float"/>
+		<field name="fMaxDestinationDistance" type="Float"/>
+		<object name="EndLocationTags">
+			<object name="Tag">
+				<field name="selTag" type="Enum"/>
+				<object name="locstridLocationName">
+					<field name="LocalizationId" type="Int64"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="Strategies">
+		<field name="trscfgStrategiesConfig" type="BinHex"/>
+	</object>
+	<object name="Felony">
+		<field name="bIsStartingWithFelony" type="Boolean"/>
+		<field name="bMustEscapeStartedFelony" type="Boolean"/>
+		<field name="bMustEscapeAllFelony" type="Boolean"/>
+	</object>
+</class>

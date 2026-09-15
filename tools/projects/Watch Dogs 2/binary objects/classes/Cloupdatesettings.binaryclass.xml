@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="CloupdatesettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selActivationType" type="Enum"/>
+	<field name="selActivationZoneType" type="Enum"/>
+	<field name="bIsManagedByPgt" type="Boolean"/>
+	<field name="bIsManagedByPgtIngredient" type="Boolean"/>
+	<field name="bIsManagedByPgtAffiliationIngredient" type="Boolean"/>
+	<field name="bIsActiveByDefault" type="Boolean"/>
+</class>

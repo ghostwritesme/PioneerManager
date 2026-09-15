@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ItemlistsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsNotable" type="Boolean"/>
+	<object name="Items">
+		<object name="Item">
+			<field name="bUseCandidateRewards" type="Boolean"/>
+			<field name="bSpawnItem" type="Boolean"/>
+			<field name="bIsPersistent" type="Boolean"/>
+			<field name="rewarditemlistsItemFromCandidateList" type="BinHex"/>
+			<field name="itemsItemDBObject" type="BinHex"/>
+		</object>
+	</object>
+</class>

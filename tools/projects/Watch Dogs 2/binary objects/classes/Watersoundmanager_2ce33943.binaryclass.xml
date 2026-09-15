@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Watersoundmanager_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="matimpObjectSplash" type="BinHex"/>
+	<object name="WaterDeepnessSwitch">
+		<object name="sndswtpWaterDeepSoundSwitchType">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="BinHex"/>
+		</object>
+		<object name="sndswvlSoundSwitchSolidGround">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="BinHex"/>
+		</object>
+		<object name="sndswvlSoundSwitchMud">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="BinHex"/>
+		</object>
+		<object name="sndswvlSoundSwitchWaterLow">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="BinHex"/>
+		</object>
+		<object name="sndswvlSoundSwitchWaterDeep">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="BinHex"/>
+		</object>
+	</object>
+	<object name="PerspectiveSwitch">
+		<object name="sndswtpPerspectiveSoundSwitchType">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="BinHex"/>
+		</object>
+		<object name="sndswvlSoundSwitchOutOfWater">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="BinHex"/>
+		</object>
+		<object name="sndswvlSoundSwitchUnderwater">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="BinHex"/>
+		</object>
+	</object>
+	<object name="ObjectSizeSwitch">
+		<object name="sndswtpObjectSizeSoundSwitchType">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswvlSoundSwitchLargeObject">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswvlSoundSwitchMediumObject">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswvlSoundSwitchSmallObject">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswvlSoundSwitchExtraSmallObject">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+	</object>
+	<object name="ObjectSpeedSwitch">
+		<object name="sndswtpObjectSpeedSoundSwitchType">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswvlSoundSwitchVeryFastObject">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswvlSoundSwitchFastObject">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+		<object name="sndswvlSoundSwitchSlowObject">
+			<field name="SoundId" type="BinHex"/>
+			<field name="SoundGuid" type="String"/>
+		</object>
+	</object>
+	<object name="WaterDeepnessLimit">
+		<field name="fMudLimit" type="Float"/>
+		<field name="fLowWaterLimit" type="Float"/>
+	</object>
+	<object name="ObjectSizeLimit">
+		<field name="fExtraSmallObjectLimit" type="Float"/>
+		<field name="fSmallObjectLimitt" type="Float"/>
+		<field name="fMediumObjectLimit" type="Float"/>
+	</object>
+	<object name="ObjectSpeedLimit">
+		<field name="fSlowObjectLimitt" type="Float"/>
+		<field name="fFastObjectLimit" type="Float"/>
+	</object>
+	<object name="WaterMaterialID">
+		<field name="iMudMaterialID" type="Int32"/>
+		<field name="iLowWaterMaterialID" type="Int32"/>
+		<field name="iDeepWaterMaterialID" type="Int32"/>
+	</object>
+</class>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Uinotificationsettings_a69c8a60">
+	<object name="obj">
+		<inherit name="Uinotificationsettings_a69c8a60Parameters"/>
+	</object>
+</file>

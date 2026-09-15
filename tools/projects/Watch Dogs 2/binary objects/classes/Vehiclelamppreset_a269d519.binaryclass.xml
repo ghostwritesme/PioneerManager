@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Vehiclelamppreset_a269d519Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="DefaultLampList">
+		<object name="DefaultLamp">
+			<field name="vehiclelamppresetLampPreset" type="BinHex"/>
+			<object name="LightSlotList">
+				<object name="LightSlot">
+					<field name="LightSlot" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="OpenCloseHour">
+		<field name="fLowBeamOpeningTime" type="Float"/>
+		<field name="fLowBeamClosingTime" type="Float"/>
+		<field name="fPositionLightsOpeningTime" type="Float"/>
+		<field name="fPositionLightsClosingTime" type="Float"/>
+	</object>
+</class>

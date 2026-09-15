@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Npcvehiclesoundmanager_a6360cdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bEnabled" type="Boolean"/>
+	<field name="fPlayerHighSpeed" type="Float"/>
+	<field name="fSoundBlendDurationIn" type="Float"/>
+	<field name="fBlendDurationHighSpeedIn" type="Float"/>
+	<field name="fSoundBlendDurationOut" type="Float"/>
+	<field name="fBlendDurationHighSpeedOut" type="Float"/>
+	<field name="fPriorityCenterOffset" type="Float"/>
+	<field name="nMaxHornSounds" type="Int32"/>
+	<field name="vec2RadioVehicleDistances" type="Vector2"/>
+	<field name="sndPlayerGotInCar" type="BinHex"/>
+	<field name="sndPlayerLeftCar" type="BinHex"/>
+	<field name="vec2SwitchDelayMinMax" type="Vector2"/>
+	<object name="MaxVehiclesToPlay">
+		<field name="Normal" type="Enum"/>
+		<field name="HighEnd" type="Enum"/>
+	</object>
+	<object name="sndvarVehicleSpeedLocalSoundRtpcVariable">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="String"/>
+	</object>
+</class>

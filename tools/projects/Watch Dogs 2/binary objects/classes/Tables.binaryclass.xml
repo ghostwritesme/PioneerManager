@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="TablesParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Bang"/>
+	<object name="Snap"/>
+	<object name="Pierce">
+		<object name="Curve">
+			<field name="curvelibCurve" type="BinHex"/>
+			<field name="text_Counter" type="String"/>
+			<field name="Counter" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Crush">
+		<object name="Curve">
+			<field name="curvelibCurve" type="BinHex"/>
+			<field name="text_Counter" type="String"/>
+			<field name="Counter" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Cut">
+		<object name="Curve">
+			<field name="curvelibCurve" type="BinHex"/>
+			<field name="text_Counter" type="String"/>
+			<field name="Counter" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Health">
+		<object name="Curve">
+			<field name="curvelibCurve" type="BinHex"/>
+			<field name="text_Counter" type="String"/>
+			<field name="Counter" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Burn">
+		<object name="Curve">
+			<field name="curvelibCurve" type="BinHex"/>
+			<field name="text_Counter" type="String"/>
+			<field name="Counter" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Water"/>
+	<object name="Panic"/>
+	<object name="Fear"/>
+	<object name="Morale"/>
+	<object name="Dirt">
+		<object name="Curve">
+			<field name="curvelibCurve" type="BinHex"/>
+			<field name="text_Counter" type="String"/>
+			<field name="Counter" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Reliability"/>
+	<object name="Interest"/>
+	<object name="Reaction"/>
+	<object name="InstantKill"/>
+	<object name="ExplosionFakeReaction"/>
+	<object name="LookAtHD"/>
+	<object name="Stun">
+		<object name="Curve">
+			<field name="curvelibCurve" type="BinHex"/>
+			<field name="text_Counter" type="String"/>
+			<field name="Counter" type="BinHex"/>
+		</object>
+	</object>
+	<object name="TransferRemaining">
+		<object name="Curve">
+			<field name="curvelibCurve" type="BinHex"/>
+			<field name="text_Counter" type="String"/>
+			<field name="Counter" type="BinHex"/>
+		</object>
+	</object>
+</class>

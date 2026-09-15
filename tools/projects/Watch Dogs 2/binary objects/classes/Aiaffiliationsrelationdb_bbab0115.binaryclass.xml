@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Aiaffiliationsrelationdb_bbab0115Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="m_affiliationsRelationSettings">
+		<object name="AffiliationsRelationSettings">
+			<field name="selAffiliationA" type="Enum"/>
+			<field name="selAffiliationB" type="Enum"/>
+			<field name="selRelation" type="Enum"/>
+		</object>
+	</object>
+</class>

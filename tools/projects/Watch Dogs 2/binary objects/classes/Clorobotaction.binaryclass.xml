@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ClorobotactionParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bIsPartOfAScenarioOnSpawn" type="Boolean"/>
+	<field name="selShowcaseValue" type="Enum"/>
+	<object name="ActionDescription">
+		<field name="selStanceOnStart" type="Enum"/>
+		<field name="selLocation" type="Enum"/>
+		<field name="selActivity" type="Enum"/>
+		<field name="selOrientation" type="Enum"/>
+		<field name="bInteractWithVehicle" type="Boolean"/>
+		<field name="bIsSensitiveContentJapan" type="Boolean"/>
+		<field name="selOverrideFeetIk" type="Enum"/>
+	</object>
+	<object name="CityLifeActionSettings">
+		<field name="text_fileMoveStateId" type="String"/>
+		<field name="fileMoveStateId" type="BinHex"/>
+		<field name="bHasEntryAnim" type="Boolean"/>
+		<field name="bHasExitAnim" type="Boolean"/>
+		<field name="bLoopSpawnAnim" type="Boolean"/>
+		<field name="bLoopAttractAnim" type="Boolean"/>
+		<field name="bStopLoopOnPlayerProximity" type="Boolean"/>
+		<field name="bProximityBehavior" type="Boolean"/>
+		<field name="selBhvPriority" type="Enum"/>
+		<object name="TriggerBehaviors"/>
+		<object name="QuitSettings">
+			<field name="bSpecifyQuitState" type="Boolean"/>
+			<field name="bSpecifyQuitMindSet" type="Boolean"/>
+			<field name="selWalkType" type="Enum"/>
+			<object name="QuitPMS">
+				<object name="PMSValues"/>
+			</object>
+		</object>
+	</object>
+	<object name="CLOBhvSettings">
+		<object name="Spawning">
+			<field name="bCanSpawn" type="Boolean"/>
+			<object name="SpawnSettings">
+				<field name="selGender" type="Enum"/>
+				<field name="peopleinfoPeopleSpawnInfo" type="BinHex"/>
+				<field name="tmplDialogActor" type="BinHex"/>
+				<field name="dialactorlistDialogActorsList" type="BinHex"/>
+				<field name="npcidentityIdentity" type="BinHex"/>
+			</object>
+		</object>
+		<object name="GoBackToCLO">
+			<field name="bCanGoBackToCLO" type="Boolean"/>
+		</object>
+		<object name="Attraction">
+			<field name="bCanAttract" type="Boolean"/>
+			<object name="AttractSettings">
+				<field name="fMinDistanceToUse" type="Float"/>
+				<field name="bTriggerLookAt" type="Boolean"/>
+				<object name="Anchor">
+					<field name="fAnchorRotationOffset" type="Float"/>
+					<field name="vectorAnchorTranslation" type="Vector3"/>
+				</object>
+				<object name="PMSRestrictionSettings">
+					<object name="Needed"/>
+					<object name="Excluded"/>
+				</object>
+				<object name="TagRestrictionSettings">
+					<object name="Needed"/>
+					<object name="TagsExcluded"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="DynamicEventSettings">
+		<field name="bSupportEvents" type="Boolean"/>
+		<object name="ForbiddenDynamicEventList"/>
+	</object>
+	<object name="AtlasProperties">
+		<field name="bExportToAtlas" type="BinHex"/>
+		<field name="atlastypeElementType" type="BinHex"/>
+	</object>
+</class>

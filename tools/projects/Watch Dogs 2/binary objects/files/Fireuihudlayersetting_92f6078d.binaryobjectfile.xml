@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Fireuihudlayersetting_92f6078d">
+	<object name="obj">
+		<inherit name="Fireuihudlayersetting_92f6078dParameters"/>
+	</object>
+</file>

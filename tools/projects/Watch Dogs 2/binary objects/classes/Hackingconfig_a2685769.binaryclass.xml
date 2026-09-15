@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Hackingconfig_a2685769Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="accessidCarUnlockAccessId" type="BinHex"/>
+	<field name="fAutoTakedownArmingRange" type="Float"/>
+	<field name="fAutoTakedownTriggerRange" type="Float"/>
+	<field name="colorDetectorLineColor" type="Vector4"/>
+	<field name="fDetectorLineOpacity" type="Float"/>
+	<field name="fDetectorLineThickness" type="Float"/>
+	<field name="fDetectorLineThicknessNethack" type="Float"/>
+	<field name="colorDetectorLineFriendlyColor" type="Vector4"/>
+	<field name="text_fileDetectorLineTexture" type="String"/>
+	<field name="fileDetectorLineTexture" type="BinHex"/>
+	<field name="fDetectorMaskTextureScale" type="Float"/>
+	<field name="sDetectorConeMaterialSlotName" type="BinHex"/>
+	<field name="matDetectorConeHostileMaterial" type="BinHex"/>
+	<field name="matDetectorConeFriendlyMaterial" type="BinHex"/>
+	<field name="text_sndActiveSoundStartInfrared" type="String"/>
+	<field name="sndActiveSoundStartInfrared" type="BinHex"/>
+	<field name="text_sndActiveSoundEndInfrared" type="String"/>
+	<field name="sndActiveSoundEndInfrared" type="BinHex"/>
+	<field name="text_sndActiveSoundStart" type="String"/>
+	<field name="sndActiveSoundStart" type="BinHex"/>
+	<field name="text_sndActiveSoundEnd" type="String"/>
+	<field name="sndActiveSoundEnd" type="BinHex"/>
+	<field name="text_sndToggledOffStart" type="String"/>
+	<field name="sndToggledOffStart" type="BinHex"/>
+	<field name="text_sndToggledOffEnd" type="String"/>
+	<field name="sndToggledOffEnd" type="BinHex"/>
+	<field name="text_sndTriggered" type="String"/>
+	<field name="sndTriggered" type="BinHex"/>
+	<field name="text_psMotionDetectorParticles" type="String"/>
+	<field name="psMotionDetectorParticles" type="BinHex"/>
+	<field name="text_sndHackingStartSound" type="String"/>
+	<field name="sndHackingStartSound" type="BinHex"/>
+	<field name="text_sndHackingSuccessSound" type="String"/>
+	<field name="sndHackingSuccessSound" type="BinHex"/>
+	<field name="text_sndHackingFailureSound" type="String"/>
+	<field name="sndHackingFailureSound" type="BinHex"/>
+	<field name="text_sndArmingProximitySound" type="String"/>
+	<field name="sndArmingProximitySound" type="BinHex"/>
+	<field name="text_sndArmingVehicleSound" type="String"/>
+	<field name="sndArmingVehicleSound" type="BinHex"/>
+	<field name="sndVehicleArmingTriggeredSound" type="BinHex"/>
+	<field name="uiVehicleTakedownBatteryCost" type="Int64"/>
+	<field name="text_sndLockBoxUnlockingSound" type="String"/>
+	<field name="sndLockBoxUnlockingSound" type="BinHex"/>
+	<field name="sndAccessCodeUnlockingSound" type="BinHex"/>
+	<field name="text_sndLockedFocusSound" type="String"/>
+	<field name="sndLockedFocusSound" type="BinHex"/>
+	<field name="sndAccessCodeRewardFocusSound" type="BinHex"/>
+	<field name="text_archIntersectionArchetype" type="String"/>
+	<field name="archIntersectionArchetype" type="BinHex"/>
+	<field name="fNetHackTransitionInDuration" type="Float"/>
+	<field name="fNetHackTransitionOutDuration" type="Float"/>
+	<field name="text_sNetHackStartRumbleId" type="String"/>
+	<field name="sNetHackStartRumbleId" type="BinHex"/>
+	<field name="fNetHackStartRumbleIntensity" type="Float"/>
+	<field name="text_sNetHackStopRumbleId" type="String"/>
+	<field name="sNetHackStopRumbleId" type="BinHex"/>
+	<field name="fNetHackStopRumbleIntensity" type="Float"/>
+	<field name="text_sndNetHackWaveSound" type="String"/>
+	<field name="sndNetHackWaveSound" type="BinHex"/>
+	<field name="fNetHackWaveInterval" type="Float"/>
+	<field name="text_sndNetHackRandomConnectionSound" type="String"/>
+	<field name="sndNetHackRandomConnectionSound" type="BinHex"/>
+	<field name="bNetHackDoFlyingDronePulse" type="Boolean"/>
+	<field name="fNetHackWavePulseDuration" type="Float"/>
+	<field name="fNetHackWavePulseRadius" type="Float"/>
+	<field name="fNetHackWavePulseOpacityPower" type="Float"/>
+	<field name="fNetHackWavePulseMaxOpacity" type="Float"/>
+	<field name="colorNetHackWavePulseColor" type="Vector3"/>
+	<field name="fProximityTriggerEnemyVisibilityDistanceOnFoot" type="Float"/>
+	<field name="fProximityTriggerEnemyVisibilityDistanceInVehicle" type="Float"/>
+	<field name="text_sndJammerSignalActivatedSound" type="String"/>
+	<field name="sndJammerSignalActivatedSound" type="BinHex"/>
+	<field name="text_sndJammerSignalDeactivatedSound" type="String"/>
+	<field name="sndJammerSignalDeactivatedSound" type="BinHex"/>
+	<field name="text_sndJammerSignalEnterRadiusSound" type="String"/>
+	<field name="sndJammerSignalEnterRadiusSound" type="BinHex"/>
+	<field name="text_sndJammerSignalExitRadiusSound" type="String"/>
+	<field name="sndJammerSignalExitRadiusSound" type="BinHex"/>
+	<field name="fileUnlockedAccessCodeNetworkTextureName" type="String"/>
+	<field name="fileUnlockedLockboxNetworkTextureName" type="String"/>
+	<object name="DetectorMaskTextures">
+		<object name="fileTexture">
+			<field name="text_fileTexture" type="String"/>
+			<field name="fileTexture" type="BinHex"/>
+		</object>
+	</object>
+	<object name="sndvarHackingCompletionRtpc">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="String"/>
+	</object>
+	<object name="locstridLockedByAccessIdWarningMessage">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridLockedByLockboxWarningMessage">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridLockedByVrPuzzleWarningMessage">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridUnlockedAccessCodeNetworkMessage">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridUnlockedLockboxNetworkMessage">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridUnlockedAccessCodeIcon">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridUnlockedLockboxIcon">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="TrafficLightsHackingConfig">
+		<field name="accessidRequiredId" type="BinHex"/>
+		<field name="uiBatteryConsumptionCost" type="Int64"/>
+		<field name="fMinVehicleCountForTakedown" type="Float"/>
+		<field name="text_sndActivationSound" type="String"/>
+		<field name="sndActivationSound" type="BinHex"/>
+		<object name="locstridHackingText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="TakedownConfig">
+			<field name="selTakedownType" type="Enum"/>
+			<field name="fActivationDelay" type="Float"/>
+			<field name="fInnerTakedownRangeTime" type="Float"/>
+			<field name="fWideTakedownRangeTime" type="Float"/>
+			<field name="fOutsideTakedownRangeTime" type="Float"/>
+			<field name="fTakedownAngle" type="Float"/>
+			<field name="fTakedownRadius" type="Float"/>
+			<field name="fDamageRadius" type="Float"/>
+			<field name="fTakedownSpeedThreshold" type="Float"/>
+			<field name="fTakedownDamageMultiplier" type="Float"/>
+			<field name="uiMaxTakedownTargets" type="Int64"/>
+		</object>
+	</object>
+	<object name="VisualStereotypes">
+		<object name="tagVisualStereotype">
+			<field name="tagVisualStereotype" type="BinHex"/>
+		</object>
+	</object>
+	<object name="ProximityTriggerBallDisplaySettings">
+		<field name="fBallOpacity" type="Float"/>
+		<field name="fArmedOscillationAmplitude" type="Float"/>
+		<field name="fOscillationSpeed" type="Float"/>
+	</object>
+	<object name="ProximityTriggerDisplaySettings">
+		<field name="iCount" type="Int32"/>
+		<field name="text_fileFlipbookTexture" type="String"/>
+		<field name="fileFlipbookTexture" type="BinHex"/>
+		<field name="iTextureFlipbookCountX" type="Int32"/>
+		<field name="iTextureFlipbookCountY" type="Int32"/>
+		<field name="fTextureRepeat" type="Float"/>
+		<field name="fTextureIndexSpeed" type="Float"/>
+		<field name="fTextureUVSpeed" type="Float"/>
+		<field name="fWitdh" type="Float"/>
+		<field name="fAlpha" type="Float"/>
+		<field name="colorColor" type="Vector3"/>
+		<field name="fScrollSpeed" type="Float"/>
+	</object>
+	<object name="ProximityTriggerFastDisplaySettings">
+		<field name="iCount" type="Int32"/>
+		<field name="text_fileFlipbookTexture" type="String"/>
+		<field name="fileFlipbookTexture" type="BinHex"/>
+		<field name="iTextureFlipbookCountX" type="Int32"/>
+		<field name="iTextureFlipbookCountY" type="Int32"/>
+		<field name="fTextureRepeat" type="Float"/>
+		<field name="fTextureIndexSpeed" type="Float"/>
+		<field name="fTextureUVSpeed" type="Float"/>
+		<field name="fWitdh" type="Float"/>
+		<field name="fAlpha" type="Float"/>
+		<field name="colorColor" type="Vector3"/>
+		<field name="fScrollSpeed" type="Float"/>
+	</object>
+	<object name="sndvarJammerSignalEnterRadiusRtpc">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="String"/>
+	</object>
+</class>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Rewardglobalsettings_17b6002aParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fLootingTime" type="Float"/>
+	<object name="locstridLootingRewardContext">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+</class>

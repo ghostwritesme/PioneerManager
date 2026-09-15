@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Spawnpointconfig_0b703e84Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_archDefaultSpawnPointType" type="String"/>
+	<field name="archDefaultSpawnPointType" type="BinHex"/>
+</class>

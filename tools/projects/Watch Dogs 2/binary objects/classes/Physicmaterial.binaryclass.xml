@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PhysicmaterialParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fRigidFriction" type="Float"/>
+	<field name="fRigidRestitution" type="Float"/>
+	<field name="selDriveContactMaterial" type="Enum"/>
+</class>

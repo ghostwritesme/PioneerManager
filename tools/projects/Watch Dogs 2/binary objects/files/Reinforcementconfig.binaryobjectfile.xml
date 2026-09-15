@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Reinforcementconfig">
+	<object name="lib">
+		<object name="libobj">
+			<inherit name="ReinforcementconfigParameters"/>
+		</object>
+	</object>
+</file>

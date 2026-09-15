@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Playervisionsettings_5249a643Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fAIDetectionDuration" type="Float"/>
+	<field name="fPlayerDetectionDuration" type="Float"/>
+	<field name="fMinScreenDrawPercent" type="Float"/>
+	<field name="fCharacterVisibilityPercent" type="Float"/>
+	<field name="fProximityInCarDetectPlayerDistance" type="Float"/>
+	<field name="fProximityInCarDetectAIDistance" type="Float"/>
+	<field name="fProximityOnFootDetectPlayerDistance" type="Float"/>
+	<field name="fProximityOnFootDetectAIDistance" type="Float"/>
+	<field name="fFireBulletDetectPlayerDistance" type="Float"/>
+	<field name="fFireBulletDetectAIDistance" type="Float"/>
+</class>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Citylifeoptimizationsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="iCLOWakeUpCountPerFrame">
+		<field name="Normal" type="Int32"/>
+		<field name="HighEnd" type="Int32"/>
+	</object>
+	<object name="iMinAwakeCloseCLOUpdateCountPerFrame">
+		<field name="Normal" type="Int32"/>
+		<field name="HighEnd" type="Int32"/>
+	</object>
+	<object name="iMinAwakeFarCLOUpdateCountPerFrame">
+		<field name="Normal" type="Int32"/>
+		<field name="HighEnd" type="Int32"/>
+	</object>
+</class>

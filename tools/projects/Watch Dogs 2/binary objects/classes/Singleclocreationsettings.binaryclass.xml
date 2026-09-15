@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="SingleclocreationsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="singleclocreationsettingsvarCLOSettings">
+		<field name="bIsMonitored" type="Boolean"/>
+		<field name="cloupsetUpdateSettings" type="BinHex"/>
+		<field name="bUseParentPosAsAnchor" type="Boolean"/>
+		<field name="bIsALeader" type="Boolean"/>
+		<field name="humanconfigHumanConfig" type="BinHex"/>
+		<object name="ActivationSettings">
+			<field name="entcontContext" type="BinHex"/>
+			<field name="bIgnoreRestrictionZone" type="Boolean"/>
+		</object>
+		<object name="AttractorSettings">
+			<field name="selAttractorType" type="Enum"/>
+			<object name="StimSettings">
+				<field name="bSendStim" type="Boolean"/>
+				<field name="fStimRadius" type="Float"/>
+				<field name="vectorStimOffset" type="Vector3"/>
+				<field name="fStimFrequency" type="Float"/>
+				<field name="bUseOnlyOnce" type="Boolean"/>
+				<field name="fTimeBeforeResendStimAfterUse" type="Float"/>
+				<object name="AltitudeRestrictions">
+					<field name="bUseMaxAltRestriction" type="Boolean"/>
+				</object>
+				<object name="ConeRestrictions"/>
+			</object>
+			<object name="GotoSettings">
+				<field name="bDoActionOnSpot" type="Boolean"/>
+				<field name="bApplyAnchor" type="Boolean"/>
+				<field name="bUseSepcificSpeed" type="Boolean"/>
+				<field name="fSpecificSpeed" type="Float"/>
+			</object>
+			<object name="UserSettings">
+				<field name="bCivilian" type="Boolean"/>
+				<field name="bAI" type="BinHex"/>
+				<field name="fDisableAttractorOnEntityDuration" type="Float"/>
+				<field name="bRestrictOnBehaviorStates" type="Boolean"/>
+				<field name="selAffiliation" type="Enum"/>
+			</object>
+		</object>
+		<object name="PatrolSettings">
+			<field name="bIsFromCreationSettings" type="Boolean"/>
+			<field name="selPatrolType" type="Enum"/>
+			<field name="entParentPatrolId" type="BinHex"/>
+			<field name="bQuitPatrol" type="Boolean"/>
+		</object>
+		<object name="ProximityBhvSettings">
+			<field name="fProximityBhvDistanceMin" type="Float"/>
+			<field name="fProximityBhvDistanceMax" type="Float"/>
+			<field name="ProximityBhvOffset" type="BinHex"/>
+			<field name="bAllowInterruptionOnProximity" type="Boolean"/>
+			<field name="bTriggerOnTimer" type="Boolean"/>
+			<field name="fTriggerOnTimerDelay" type="Float"/>
+			<field name="bTriggerOnProfile" type="Boolean"/>
+			<field name="fTriggerOnProfileDelay" type="Float"/>
+			<field name="bUseParentSettings" type="Boolean"/>
+			<field name="bAllowInNetSurfing" type="Boolean"/>
+		</object>
+		<object name="ActionLoopSettings">
+			<field name="fTimerPeriod" type="Float"/>
+		</object>
+		<object name="ActionSettings">
+			<field name="cloactlistActionList" type="BinHex"/>
+			<field name="cloactAction" type="BinHex"/>
+		</object>
+		<object name="SpawningSettings">
+			<field name="bSpawningMandatory" type="Boolean"/>
+			<field name="bCanSpawn" type="Boolean"/>
+			<field name="bIsScoutXTarget" type="Boolean"/>
+			<field name="ScoutXTargetNameLocId" type="BinHex"/>
+			<field name="peopleinfoPeopleSpawnInfoOverride" type="BinHex"/>
+			<field name="tmplDialogActor" type="BinHex"/>
+			<field name="selActivity" type="Enum"/>
+			<field name="npcpersonalityPersonalityOverride" type="BinHex"/>
+			<field name="selSpecialDemoCharacter" type="Enum"/>
+			<field name="rewardconfigRewardConfig" type="BinHex"/>
+			<field name="hackingprofileHackingProfile" type="BinHex"/>
+			<field name="bUseFilteredCollections" type="Boolean"/>
+			<field name="conversationinteractionConversationInteractionSettings" type="BinHex"/>
+			<field name="bSpawnBuddyDeconnected" type="Boolean"/>
+			<field name="bAssignToDefaultSquad" type="BinHex"/>
+		</object>
+	</object>
+</class>

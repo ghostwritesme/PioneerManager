@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Sniperaiconfig_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fCloseCombatDistance" type="Float"/>
+	<field name="fFarRangeCombatDistance" type="Float"/>
+	<object name="ShootingLag">
+		<field name="snipershootinglagsettingsSniperInChopperTargetOnFoot" type="BinHex"/>
+		<field name="snipershootinglagsettingsSniperInChopperTargetInVehicle" type="BinHex"/>
+		<field name="snipershootinglagsettingsSniperOnFootTargetOnFoot" type="BinHex"/>
+		<field name="snipershootinglagsettingsSniperOnFootTargetInVehicle" type="BinHex"/>
+	</object>
+</class>

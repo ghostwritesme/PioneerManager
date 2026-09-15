@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PoseblendshapessetParameters">
+	<inherit name="SharedParameters"/>
+	<object name="BlendShapesSet">
+		<object name="BlendShapes">
+			<field name="text_BlendShapeName" type="String"/>
+			<field name="BlendShapeName" type="BinHex"/>
+			<object name="BoneIntensityInput">
+				<field name="sBoneName" type="String"/>
+				<field name="selIntensityInputMode" type="Enum"/>
+			</object>
+		</object>
+	</object>
+</class>

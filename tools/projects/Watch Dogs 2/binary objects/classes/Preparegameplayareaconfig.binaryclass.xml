@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PreparegameplayareaconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="MeetingLocationConfig">
+		<field name="fMinRange" type="Float"/>
+		<field name="entMeetingEntity" type="BinHex"/>
+		<field name="MeetingCloId" type="BinHex"/>
+	</object>
+	<object name="PrepareSpawningParties">
+		<object name="PrepareSpawningParty">
+			<field name="iMinSpawnBuget" type="Int32"/>
+			<field name="iMaxSpawnBuget" type="Int32"/>
+			<field name="selBudgetStrategy" type="Enum"/>
+			<object name="HumanConfigs">
+				<object name="humanconfigHumanConfig">
+					<field name="humanconfigHumanConfig" type="BinHex"/>
+				</object>
+			</object>
+			<object name="BugetConstranList">
+				<object name="BugetConstran">
+					<field name="iMinNpc" type="Int32"/>
+					<field name="iMaxNpc" type="Int32"/>
+					<field name="selRangeType" type="Enum"/>
+				</object>
+			</object>
+			<object name="SquadZoneConfig">
+				<object name="SquadConfig">
+					<field name="text_sSquadName" type="BinHex"/>
+					<field name="sSquadName" type="BinHex"/>
+					<field name="text_sSquadGroup" type="String"/>
+					<field name="sSquadGroup" type="BinHex"/>
+					<field name="selSquadMainStrategy" type="Enum"/>
+					<field name="npcoverrideconfigSquadOverrideConfig" type="BinHex"/>
+					<object name="SpawnPoints">
+						<object name="SpawnPoint">
+							<field name="bShowDebug" type="Boolean"/>
+							<field name="entSpawnPointId" type="BinHex"/>
+							<field name="fDelayAction" type="Float"/>
+							<field name="bNeutralizeVehicle" type="Boolean"/>
+							<field name="entVehicleLocationId" type="BinHex"/>
+							<field name="entVehicleDestinationId" type="BinHex"/>
+							<field name="text_archVehicleConfig" type="String"/>
+							<field name="archVehicleConfig" type="BinHex"/>
+							<field name="vehiclebhvsetupVehicleBhvConfig" type="BinHex"/>
+							<field name="bIsVip" type="Boolean"/>
+							<field name="humanconfigHumanConfig" type="BinHex"/>
+							<object name="NavigationConfigList">
+								<object name="NavigationConfig">
+									<field name="entNavigationEnt" type="BinHex"/>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object name="NpcSpawnPoints"/>
+		</object>
+	</object>
+	<object name="PrepareProfiledObjectConfigs">
+		<object name="PrepareProfiledObjectConfig">
+			<field name="entEntityId" type="BinHex"/>
+			<object name="locstridProfileLocId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+</class>

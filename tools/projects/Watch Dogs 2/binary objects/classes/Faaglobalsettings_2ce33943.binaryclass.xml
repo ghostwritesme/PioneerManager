@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Faaglobalsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="checkleavetheareabrickCheckLeaveAreaBrickDescriptor" type="BinHex"/>
+	<field name="objectivebrickLeaveAreaObjectiveDescriptor" type="BinHex"/>
+	<field name="leaveareabrickLeaveAreaBrickDescriptor" type="BinHex"/>
+	<field name="nHistoryMaxSize" type="Int32"/>
+	<field name="missionlistStoryAStartMission" type="BinHex"/>
+	<field name="missionlistStoryBStartMission" type="BinHex"/>
+	<field name="missionlistStoryCStartMission" type="BinHex"/>
+	<field name="missionlistStoryEStartMission" type="BinHex"/>
+	<field name="text_archRevivalInteractionArchetypeResource" type="String"/>
+	<field name="archRevivalInteractionArchetypeResource" type="BinHex"/>
+	<field name="fRevivalDuration" type="BinHex"/>
+	<field name="fRespawnAtStartPointMaxDistance" type="BinHex"/>
+	<field name="missionlistSpecialNarrativeEliteMission" type="BinHex"/>
+	<field name="reinforcementconfigFreeRoamReinforcementConfig" type="BinHex"/>
+	<object name="OptionalObjectives">
+		<field name="fRadius" type="Float"/>
+		<field name="fTimeWindow" type="Float"/>
+	</object>
+	<object name="DifficultySettings">
+		<field name="selMaxDifficulty" type="Enum"/>
+		<object name="Default">
+			<field name="selDGODifficulty" type="Enum"/>
+			<field name="pgtaispawningconfigPGTDifficulty" type="BinHex"/>
+			<field name="itemlistsRewardList" type="BinHex"/>
+			<field name="itemlistsOptionnalObjectiveRewardList" type="BinHex"/>
+			<field name="availabilityrulegroupDifficultyUnlockCondition" type="BinHex"/>
+		</object>
+		<object name="Difficulties">
+			<object name="Difficulty">
+				<field name="selFAADifficulty" type="Enum"/>
+				<object name="Content">
+					<field name="selDGODifficulty" type="Enum"/>
+					<field name="pgtaispawningconfigPGTDifficulty" type="BinHex"/>
+					<field name="itemlistsRewardList" type="BinHex"/>
+					<field name="itemlistsOptionnalObjectiveRewardList" type="BinHex"/>
+					<field name="availabilityrulegroupDifficultyUnlockCondition" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+		<object name="FAAConfigDifficulties">
+			<object name="Difficulty">
+				<object name="FaaConfigs">
+					<object name="faaconfigConfig">
+						<field name="faaconfigConfig" type="BinHex"/>
+					</object>
+				</object>
+				<object name="Difficulties">
+					<object name="Difficulty">
+						<field name="selFAADifficulty" type="Enum"/>
+						<object name="Content">
+							<field name="selDGODifficulty" type="Enum"/>
+							<field name="pgtaispawningconfigPGTDifficulty" type="BinHex"/>
+							<field name="itemlistsRewardList" type="BinHex"/>
+							<field name="itemlistsOptionnalObjectiveRewardList" type="BinHex"/>
+							<field name="availabilityrulegroupDifficultyUnlockCondition" type="BinHex"/>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="DifficultyIconSettings">
+			<field name="possyselementPosSysEasyDBElement" type="BinHex"/>
+			<field name="possyselementPosSysMediumDBElement" type="BinHex"/>
+			<field name="possyselementPosSysHardDBElement" type="BinHex"/>
+			<field name="possyselementPosSysInsaneDBElement" type="BinHex"/>
+			<field name="possyselementPosSysEliteDBElement" type="BinHex"/>
+		</object>
+	</object>
+	<object name="ProgressionSettings">
+		<object name="Steps">
+			<object name="Step">
+				<field name="nMissionsSucceeded" type="Int32"/>
+				<object name="Difficulties">
+					<object name="Difficulty">
+						<field name="selDifficulty" type="Enum"/>
+						<field name="fProbability" type="Float"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="RewardProgressionSettings">
+		<object name="Steps">
+			<object name="Step">
+				<field name="nMissionsSucceeded" type="Int32"/>
+				<field name="itemlistsRewardList" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="RespawnDurationPerDeathCount">
+		<object name="RespawnDuration">
+			<field name="Level" type="BinHex"/>
+		</object>
+	</object>
+	<object name="DefaultAffiliations">
+		<object name="selAffiliation">
+			<field name="selAffiliation" type="Enum"/>
+		</object>
+	</object>
+	<object name="DedSecAppSettings">
+		<object name="FamilySettings">
+			<object name="FamilySetting">
+				<field name="selFamily" type="Enum"/>
+				<object name="VariationSettings">
+					<object name="VariationSetting">
+						<field name="text_Variation" type="String"/>
+						<field name="Variation" type="BinHex"/>
+						<object name="AffiliationSettings">
+							<object name="AffiliationSetting">
+								<field name="selAffiliation" type="Enum"/>
+								<object name="Settings">
+									<object name="locstridName">
+										<field name="LocalizationId" type="Int64"/>
+									</object>
+									<object name="locstridBriefing">
+										<field name="LocalizationId" type="Int64"/>
+									</object>
+									<object name="locstridActivationObjective">
+										<field name="LocalizationId" type="Int64"/>
+									</object>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="locstridEasy">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridMedium">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridHard">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridInsane">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridElite">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+	</object>
+	<object name="locstridTeamateDeadWarningLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="EliteMissionTeamspeak">
+		<field name="phonecommbrickIntroTeamSpeak" type="BinHex"/>
+		<object name="RandomTeamSpeak">
+			<object name="phonecommbrickPhoneCall">
+				<field name="phonecommbrickPhoneCall" type="BinHex"/>
+			</object>
+		</object>
+		<object name="ChapteredTeamSpeak">
+			<object name="TeamSpeak">
+				<field name="phonecommbrickChapteredTeamSpeak" type="BinHex"/>
+				<field name="nChapterMissionCount" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

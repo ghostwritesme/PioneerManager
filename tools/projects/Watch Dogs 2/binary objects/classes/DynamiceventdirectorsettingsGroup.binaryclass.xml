@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DynamiceventdirectorsettingsGroupParameters">
+	<field name="sFriendlyName" type="String"/>
+	<field name="bDisable" type="Boolean"/>
+	<field name="nNumberOfEventsBetweenTwoOccurences" type="Int32"/>
+	<field name="dexcooldownCooldown" type="BinHex"/>
+	<field name="dexcooldownInitialCooldown" type="BinHex"/>
+	<field name="fSpecificCooldownFactorIfNotSeen" type="Float"/>
+	<field name="sGroupName" type="String"/>
+	<field name="iMaxNumberOfEventsRunningSimultanously" type="Int32"/>
+	<field name="bUpdateChildrenTimeoutWhenDisabled" type="Boolean"/>
+	<field name="bHasCooldown" type="Boolean"/>
+	<field hash="D238E84B" type="Boolean"/>
+	<field hash="608E4AB7" type="Boolean"/>
+	<field name="dexeventEvent" type="BinHex"/>
+	<field hash="FAFC9220" type="String"/>
+	<object name="Cooldown">
+		<field name="fMin" type="Float"/>
+		<field name="fMax" type="Float"/>
+	</object>
+	<object hash="6FEAFBC4">
+		<field name="fMin" type="Float"/>
+		<field name="fMax" type="Float"/>
+	</object>
+	<object name="DistrictsAvailabilitySettings">
+		<field name="selListMode" type="Enum"/>
+		<object name="DistrictsList">
+			<object name="districtDistrict">
+				<field name="districtDistrict" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="TimeOfDaySettings">
+		<field name="selMode" type="Enum"/>
+		<object name="StartTime">
+			<field name="uiHours" type="Int64"/>
+			<field name="uiMinutes" type="Int64"/>
+			<field name="uiSeconds" type="Int64"/>
+		</object>
+		<object name="EndTime">
+			<field name="uiHours" type="Int64"/>
+			<field name="uiMinutes" type="Int64"/>
+			<field name="uiSeconds" type="Int64"/>
+		</object>
+	</object>
+	<object name="FelonySettings">
+		<field name="MinimumFelonyLevel" type="BinHex"/>
+		<field name="MaximumFelonyLevel" type="BinHex"/>
+	</object>
+	<object name="OnlineSettings">
+		<field name="selOnlineActivityType" type="Enum"/>
+	</object>
+	<object name="VehicleSettings">
+		<field name="selVehicleSettings" type="Enum"/>
+	</object>
+	<object name="AvailabilityRuleSettings">
+		<field name="availabilityrulegroupAvailabilityRule" type="BinHex"/>
+	</object>
+	<object name="Events">
+      <object name="Event">
+        <inherit name="DynamiceventdirectorsettingsGroupParameters"/>
+      </object>
+    </object>
+	<object name="Groups">
+		<object name="Group">
+			<inherit name="DynamiceventdirectorsettingsGroupParameters"/>
+		</object>
+	</object>
+	<object name="EventsLists">
+		<object name="dynamiceventlistEventList">
+			<field name="dynamiceventlistEventList" type="BinHex"/>
+		</object>
+	</object>
+</class>

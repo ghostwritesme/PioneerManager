@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="EvolvingworldnarrativesettingsdbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selSubject" type="Enum"/>
+	<field name="availabilityrulegroupAvailabilityRuleGroup" type="BinHex"/>
+	<object name="InterceptedPhoneCalls">
+		<object name="Phonecalls">
+			<field name="text_sndSoundId" type="String"/>
+			<field name="sndSoundId" type="BinHex"/>
+		</object>
+	</object>
+	<object name="InterceptedChats">
+		<object name="Chats">
+			<object name="locstridInterceptedChat">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+	<object name="RadioVoices">
+		<object name="Radio">
+			<field name="musiclibraryRadioBroadcast" type="BinHex"/>
+		</object>
+	</object>
+	<object name="TVBroadcasts">
+		<object name="TV">
+			<field name="videosTVBroadcast" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Conversations">
+		<field name="conversationsettingConversation" type="BinHex"/>
+		<object name="Conversations">
+			<field name="conversationsettingConversation" type="BinHex"/>
+		</object>
+	</object>
+	<object name="ConversationInteractions">
+		<field name="conversationinteraction" type="BinHex"/>
+		<object name="ConversationInteractions">
+		    <field name="conversationinteraction" type="BinHex"/>
+		</object>
+	</object>
+</class>

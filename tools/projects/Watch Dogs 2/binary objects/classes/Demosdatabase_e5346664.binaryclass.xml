@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Demosdatabase_e5346664Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Demos">
+		<object name="Demo">
+			<field name="text_DemoName" type="String"/>
+			<field name="DemoName" type="BinHex"/>
+			<field name="bActiveByDefault" type="Boolean"/>
+			<field name="bActiveByDefaultPC" type="Boolean"/>
+			<field name="bUseOnlineActivitiesAvailabilityRule" type="Boolean"/>
+			<field name="selDemoMode" type="Enum"/>
+			<field name="missionlistMissionToAutoStart" type="BinHex"/>
+			<field name="itemlistStartingInventoryItemList" type="BinHex"/>
+			<field name="perkdesclistPerkListDbObject" type="BinHex"/>
+			<field name="menuselectionoverrideMenuSelectionOverride" type="BinHex"/>
+		</object>
+	</object>
+</class>

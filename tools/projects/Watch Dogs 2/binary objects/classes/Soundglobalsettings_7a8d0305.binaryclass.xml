@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Soundglobalsettings_7a8d0305Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="sndvarLastGunShotOrExplosionTimeRTPC">
+		<field name="SoundId" type="BinHex"/>
+		<field name="SoundGuid" type="String"/>
+	</object>
+</class>

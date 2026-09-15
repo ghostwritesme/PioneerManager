@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="MeetingbrickParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fTimeBeforeDataOwnerSpawn" type="Float"/>
+	<field name="meetingdataownerspawnconfigDataOwnerSpawnConfig" type="BinHex"/>
+	<field name="singleclocreationsettingsFallbackAttractorCreationSettings" type="BinHex"/>
+	<field name="text_BarkIdUseFallbackAttractorBarkId" type="String"/>
+	<field name="BarkIdUseFallbackAttractorBarkId" type="BinHex"/>
+	<field name="bIsFallbackAttractorBark2D" type="Boolean"/>
+	<field name="fVehicleHealthPercentageToStartFastDrive" type="Float"/>
+	<field name="vehiclebhvsetupVehicleGoToBhvSetup" type="BinHex"/>
+	<field name="vehiclebhvsetupVehicleFastDriveGoToBhvSetup" type="BinHex"/>
+	<field name="DataOwnerRoleID" type="String"/>
+	<field name="text_archDataOwnerItemArchetype" type="String"/>
+	<field name="archDataOwnerItemArchetype" type="BinHex"/>
+	<field name="text_archMeetingAttendeeItemArchetype" type="String"/>
+	<field name="archMeetingAttendeeItemArchetype" type="BinHex"/>
+	<field name="bForbidFlee" type="Boolean"/>
+	<field name="bIsMeetingAttendeeMissionObjective" type="BinHex"/>
+	<field name="bIsDataOwnerMissionObjective" type="BinHex"/>
+	<field name="text_sDataOwnerSquadName" type="String"/>
+	<field name="sDataOwnerSquadName" type="BinHex"/>
+	<object name="FleeTriggersDescription">
+		<object name="TriggersDescription">
+			<field name="uiDistance" type="Int64"/>
+			<field name="uiPercentage" type="Int64"/>
+		</object>
+	</object>
+</class>

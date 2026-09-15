@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ReinforcementcallsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="uiSimultaneousCallers" type="Int64"/>
+	<field name="fCallIconPersistenceDuration" type="Float"/>
+	<field name="fCallDuration" type="Float"/>
+	<field name="fInitialDelay" type="Float"/>
+	<field name="fCallSuccessCooldown" type="Float"/>
+	<field name="fCallJammedCooldown" type="Float"/>
+	<field name="fCallJammedIndividualCooldown" type="Float"/>
+	<field name="fCallerKilledCooldown" type="Float"/>
+	<field name="fCallFailTime" type="Float"/>
+</class>

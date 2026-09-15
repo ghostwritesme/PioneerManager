@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Eventstimsmanager_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="fDelayedStimsTimeBudget">
+		<field name="Normal" type="Float"/>
+		<field name="HighEnd" type="Float"/>
+	</object>
+	<object name="ShouldAggregateStims">
+		<field name="Normal" type="Boolean"/>
+		<field name="HighEnd" type="Boolean"/>
+	</object>
+	<object name="fAggregationRadius">
+		<field name="Normal" type="Float"/>
+		<field name="HighEnd" type="Float"/>
+	</object>
+	<object name="fMaxStimLifeTime">
+		<field name="Normal" type="Float"/>
+		<field name="HighEnd" type="Float"/>
+	</object>
+	<object name="fMergingVolumePercentage">
+		<field name="Normal" type="Float"/>
+		<field name="HighEnd" type="Float"/>
+	</object>
+</class>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="SailboatpathfindsetupParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMaxGateAngle" type="Float"/>
+	<field name="fGatesBuoysRadius" type="Float"/>
+	<field name="fRubberbandMinDistanceAhead" type="Float"/>
+	<field name="fRubberbandMaxDistanceAhead" type="Float"/>
+	<field name="fRubberbandMinDistanceBehind" type="Float"/>
+	<field name="fRubberbandMaxDistanceBehind" type="Float"/>
+	<field name="fRubberbandDefaultWindMultiplier" type="Float"/>
+	<field name="fRubberbandMinWindMultiplier" type="Float"/>
+	<field name="fRubberbandMaxWindMultiplier" type="Float"/>
+	<field name="fRubberbandWindMultiplierStiffness" type="Float"/>
+	<object name="curveWindCurve">
+		<inherit name="KnotsParameters"/>
+	</object>
+</class>

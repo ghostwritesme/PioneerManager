@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PhonecommunicationbrickParameters">
+	<inherit name="SharedParameters"/>
+	<field name="phonecommunicationsettingsPhoneCommunicationSettings" type="BinHex"/>
+	<field name="phonecommunicationbankPhoneCommunicationBank" type="BinHex"/>
+</class>

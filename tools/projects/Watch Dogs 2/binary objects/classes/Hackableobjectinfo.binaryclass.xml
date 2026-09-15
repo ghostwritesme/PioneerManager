@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="HackableobjectinfoParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_sBark" type="String"/>
+	<field name="sBark" type="BinHex"/>
+	<field name="fBarkDelay" type="Float"/>
+</class>

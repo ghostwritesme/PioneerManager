@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="PropParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_archArchetype" type="String"/>
+	<field name="archArchetype" type="BinHex"/>
+	<field name="selPropSlot" type="Enum"/>
+	<field name="selDefaultActivityType" type="Enum"/>
+	<field name="bUseIncludeTags" type="Boolean"/>
+	<field name="bUseExcludeTags" type="Boolean"/>
+	<field name="fLinkedPropSpawnChance" type="Float"/>
+	<field name="bRestrictByDistrict" type="Boolean"/>
+	<object name="curveSpawnProbability">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="PropGroup">
+		<field name="selGroup" type="Enum"/>
+	</object>
+	<object name="ExcludeTags">
+        <object name="Tag">
+            <object name="tagcategoryselectionTag">
+                <field name="text_UITagCategorySelectionClassID" type="String"/>
+                <field name="UITagCategorySelectionClassID" type="BinHex"/>
+                <field name="tagcategoryUITagCategory" type="BinHex"/>
+                <field name="tagcategoryTagCategory" type="BinHex"/>
+                <field name="tagTag" type="BinHex"/>
+            </object>
+        </object>
+    </object>
+	<object name="IncludeTags">
+        <object name="Tag">
+            <object name="tagcategoryselectionTag">
+                <field name="text_UITagCategorySelectionClassID" type="String"/>
+                <field name="UITagCategorySelectionClassID" type="BinHex"/>
+                <field name="tagcategoryUITagCategory" type="BinHex"/>
+                <field name="tagcategoryTagCategory" type="BinHex"/>
+                <field name="tagTag" type="BinHex"/>
+            </object>
+        </object>
+    </object>
+	<object name="Weather">
+		<field name="MinRainIntensity" type="Float"/>
+		<field name="MaxRainIntensity" type="Float"/>
+	</object>
+	<object name="LinkedProps">
+		<object name="propPropDBKey">
+			<field name="propPropDBKey" type="BinHex"/>
+		</object>
+	</object>
+    <object name="DistrictOverrides" />
+</class>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Postfxdatabase_4fc4627f">
+	<object name="obj">
+		<inherit name="Postfxdatabase_4fc4627fParameters"/>
+	</object>
+</file>

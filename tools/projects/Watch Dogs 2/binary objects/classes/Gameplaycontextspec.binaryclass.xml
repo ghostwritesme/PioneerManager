@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="GameplaycontextspecParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_gctxGameplayContextType" type="String"/>
+	<field name="gctxGameplayContextType" type="BinHex"/>
+	<object name="GameplayContext">
+		<field name="iPriority" type="Int32"/>
+		<field name="fCiviliansDensity" type="Float"/>
+		<field name="fTrafficDensity" type="Float"/>
+		<field name="fParkedCarsDensity" type="Float"/>
+		<object name="GameElements">
+			<field name="bOpenShops" type="Boolean"/>
+			<field name="bEnableActivities" type="Boolean"/>
+			<field name="bActiveEventManager" type="Boolean"/>
+			<field name="selEnableFelony" type="Enum"/>
+			<field name="bEnableMissionDirector" type="Boolean"/>
+			<field name="bAllowFastTravel" type="Boolean"/>
+			<field name="bEnableHideOut" type="Boolean"/>
+			<field name="bEnableStats" type="Boolean"/>
+			<field name="bEnableReputation" type="Boolean"/>
+			<field name="bEnableHotSpots" type="Boolean"/>
+			<field name="bMapCtxDetectorStealth" type="Boolean"/>
+		</object>
+		<object name="HUD">
+			<field name="bShowMinimap" type="Boolean"/>
+			<field name="bShowBattery" type="Boolean"/>
+			<field name="bShowSecondaryItem" type="Boolean"/>
+		</object>
+		<object name="GPS">
+			<field name="bNoneType" type="Boolean"/>
+			<field name="bStoryMission" type="Boolean"/>
+			<field name="bOptionalMission" type="Boolean"/>
+			<field name="bApplication" type="Boolean"/>
+			<field name="bHideOut" type="Boolean"/>
+			<field name="bLocation" type="Boolean"/>
+			<field name="bMinigames" type="Boolean"/>
+			<field name="bContact" type="Boolean"/>
+			<field name="bPlayer" type="Boolean"/>
+			<field name="bAI" type="BinHex"/>
+			<field name="bATM" type="Boolean"/>
+			<field name="bCompass" type="Boolean"/>
+			<field name="bMediaSystem" type="Boolean"/>
+			<field name="bHQ" type="BinHex"/>
+			<field name="bHub" type="Boolean"/>
+			<field name="bStartRace" type="Boolean"/>
+			<field name="bDrivingJob" type="Boolean"/>
+		</object>
+		<object name="curveCiviliansDensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveTrafficDensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveParkedCarsDensity">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveDaytimeCiviliansCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveDaytimeVehiclesCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveDaytimeParkedCarsCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+		<object name="curveCivilinsRainCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+</class>

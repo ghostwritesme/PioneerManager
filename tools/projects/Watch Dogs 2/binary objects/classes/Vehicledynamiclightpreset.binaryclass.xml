@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehicledynamiclightpresetParameters">
+	<inherit name="SharedParameters"/>
+	<field name="vectorDynamicLightPosOffset" type="Vector3"/>
+	<field name="DynamicLightAngleOffset" type="BinHex"/>
+	<field name="bForceOrientationUpdate" type="Boolean"/>
+	<field name="bIsFakeGI" type="Boolean"/>
+	<field name="dynamiclightprefabPrefabDynamicLight" type="BinHex"/>
+	<field name="fFakeGIBlendInTime" type="Float"/>
+	<field name="fFakeGIBlendOutTime" type="Float"/>
+	<object name="LightSlotList">
+		<object name="LightSlot">
+			<field name="LightSlot" type="BinHex"/>
+		</object>
+	</object>
+	<object name="HeadLightSettings">
+		<field name="text_fileLeftHeadlightTexture" type="String"/>
+		<field name="fileLeftHeadlightTexture" type="BinHex"/>
+		<field name="text_fileRightHeadlightTexture" type="String"/>
+		<field name="fileRightHeadlightTexture" type="BinHex"/>
+		<field name="iLeftLightSlot" type="Int32"/>
+		<field name="iRightLightSlot" type="Int32"/>
+	</object>
+</class>

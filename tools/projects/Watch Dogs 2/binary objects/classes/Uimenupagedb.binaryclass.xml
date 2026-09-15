@@ -1,0 +1,1182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UimenupagedbParameters">
+	<inherit name="SharedParameters"/>
+	<field name="uimenuMenuOwner" type="BinHex"/>
+	<field name="uimenupageParentMenuPage" type="BinHex"/>
+	<field name="text_uimenupagetypeidMenuPage" type="String"/>
+	<field name="uimenupagetypeidMenuPage" type="BinHex"/>
+	<field name="uimenutileGridContainer" type="BinHex"/>
+	<field name="uimenutileGridFillerTile" type="BinHex"/>
+	<field name="uimenutileScrollBarTileTemplate" type="BinHex"/>
+	<field name="bShowLoadingFeedback" type="Boolean"/>
+	<field name="colorLoadingBackgroundColor" type="VectorColor"/>
+	<field name="fLoadingBackgroundAlpha" type="Float"/>
+	<field name="bExtendLoadingTileBackround" type="Boolean"/>
+	<object name="DependentFeuFiles">
+		<object name="DependentFeuFile">
+			<field name="fileDependentFeuFiles" type="String"/>
+		</object>
+	</object>
+	<object name="PageProperties">
+		<field name="selVersusShowdownTileId" type="BinHex"/>
+		<field name="fProgressDuration" type="Float"/>
+		<field name="selUbisoftClubBackgroundTileId" type="Enum"/>
+		<field name="selUbisoftClubOpenTileId" type="Enum"/>
+		<field name="selAppType" type="Enum"/>
+		<object name="locstridSelectLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="uimenutileTutorialTileTemplate" type="BinHex"/>
+		<field name="selDescriptionTileId" type="Enum"/>
+		<field name="uimenutileCategoryTileTemplate" type="BinHex"/>
+		<field name="uimenutileGridItemActivityTileTemplate" type="BinHex"/>
+		<field name="uimenutileGridItemActivityDisabledTileTemplate" type="BinHex"/>
+		<field name="uimenutileGridItemActivityFillerTileTemplate" type="BinHex"/>
+		<field name="uimenutileGridItemNoActivityTileTemplate" type="BinHex"/>
+		<field name="uimenutileGridItemRewardTileTemplate" type="BinHex"/>
+		<field name="uimenutileGridItemUpArrowTileTemplate" type="BinHex"/>
+		<field name="uimenutileGridItemDownArrowTileTemplate" type="BinHex"/>
+		<field name="uimenutileGridItemProgressTileTemplate" type="BinHex"/>
+		<field name="uimenutileGridItemActivityItemGridTileTemplate" type="BinHex"/>
+		<field name="uimenutileGridItemRewardItemGridTileTemplate" type="BinHex"/>
+		<field name="uimenutileTaxiAppHeaderTileId" type="BinHex"/>
+		<field name="uimenutileTaxiAppHeaderPCTileId" type="BinHex"/>
+		<field name="selTaxiAppBackgroundTileId" type="Enum"/>
+		<field name="selTaxiAppPageGridTileId" type="Enum"/>
+		<field name="selTaxiHeaderTileId" type="Enum"/>
+		<field name="selTaxiActivityFeedbackTileId" type="Enum"/>
+		<field name="selTaxiProgressTileId" type="Enum"/>
+		<field name="selTaxiNextRewardNotificationTileId" type="Enum"/>
+		<field name="selSongSneakAppTileId" type="Enum"/>
+		<field name="MaxSongSearchDuration" type="BinHex"/>
+		<field name="MinSongSearchDuration" type="BinHex"/>
+		<field name="selWeatherAppTileId" type="Enum"/>
+		<field name="selNewsWidgetTileId" type="Enum"/>
+		<field name="texturedbobjectBackgroundImage" type="BinHex"/>
+		<field name="selCashTileId" type="Enum"/>
+		<field name="uisoundCantBuySound" type="BinHex"/>
+		<field name="uisoundOpenSound" type="BinHex"/>
+		<field name="uimenutileScoutXItemViewTileTemplate" type="BinHex"/>
+		<field name="uimenutileScoutXItemDetailsTileTemplate" type="BinHex"/>
+		<field name="uimenutileScoutXCommentTileTemplate" type="BinHex"/>
+		<field name="uimenutileScoutXRewardTileTemplate" type="BinHex"/>
+		<field name="uimenutileScoutXRewardSubGridTileTemplate" type="BinHex"/>
+		<field name="uimenutileScoutXCategoryTilePC" type="BinHex"/>
+		<field name="uimenutileScoutXCategoryTile" type="BinHex"/>
+		<field name="selScoutXBackgroundTileId" type="Enum"/>
+		<field name="selScoutXLogoTileId" type="Enum"/>
+		<field name="selScoutXItemDetailsTileId" type="Enum"/>
+		<field name="selScoutXProgressTileId" type="Enum"/>
+		<field name="selScoutXUpArrowTileId" type="Enum"/>
+		<field name="selScoutXDownArrowTileId" type="Enum"/>
+		<field name="selScoutXItemStateTileId" type="Enum"/>
+		<object name="locstridScoutTextLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridScoutAgainTextLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridUnscoutTextLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridCameraTextLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="selRaceType" type="Enum"/>
+		<field name="uiraceappskinMenuSkin" type="BinHex"/>
+		<object name="TileIds">
+			<field name="selDetailsTileId" type="Enum"/>
+			<field name="selBackgroundTileId" type="Enum"/>
+			<field name="selHeaderTileId" type="Enum"/>
+			<field name="selTabsTileId" type="Enum"/>
+			<field name="selRaceDescriptionTileId" type="Enum"/>
+			<field name="selVehicleDescriptionTileId" type="Enum"/>
+			<field name="selStatsTileId" type="Enum"/>
+			<field name="selNotificationTileId" type="Enum"/>
+		</object>
+		<object name="GridTileTemplates">
+			<field name="uimenutileRaceTileTemplate" type="BinHex"/>
+			<field name="uimenutileVehicleTileTemplate" type="BinHex"/>
+		</object>
+		<object name="Texts">
+			<object name="locstridContinueToRace">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridStartRace">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridStartOnlineRace">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridHoldToStartRace">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridHoldToTravelAndStartRace">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridHoldToReplayRace">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridHoldToTravelAndReplayRace">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridQuit">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridClose">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridScrollLeft">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridScrollRight">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridSpawnForFreeRoam">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridBuyYacht">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridChangeTabLeft">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridChangeTabRight">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridReturn">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridSelectYachtPC">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridBuyYachtPC">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridSpawnFreeRoamPC">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridSelectRacePC">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridStartRacePC">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridTravelAndStartRacePC">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridReplayRacePC">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridTravelAndReplayRacePC">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridShopTabLabel">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridSingleRaceTabLabel">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridTournamentTabLabel">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridStoryTabLabel">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridAppUnavailable">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridConfirmStopMatchmakingTitle">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridConfirmStopMatchmakingMessage">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridConfirmStopMatchmakingAccept">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="Sounds">
+			<field name="uisoundRaceChangeUiSound" type="BinHex"/>
+			<field name="uisoundRaceStartHoldBeginUiSound" type="BinHex"/>
+			<field name="uisoundRaceStartHoldEndUiSound" type="BinHex"/>
+		</object>
+		<object name="TextsPCSpecific">
+			<object name="locstridPressToStartRace">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridPressToTravelAndStartRace">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridPressToReplayRace">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridPressToTravelAndReplayRace">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="TabsConfig">
+			<field name="bShowShopTab" type="Boolean"/>
+			<field name="bShowTournamentTab" type="Boolean"/>
+			<field name="bShowSingleRaceTab" type="Boolean"/>
+			<field name="bShowStoryTab" type="Boolean"/>
+		</object>
+		<object name="SoundEffects">
+			<field name="uisoundNextPageSound" type="BinHex"/>
+			<field name="uisoundPreviousPageSound" type="BinHex"/>
+			<field name="uisoundNavigationSound" type="BinHex"/>
+			<field name="uisoundSelectSound" type="BinHex"/>
+			<field name="uisoundDeselectSound" type="BinHex"/>
+			<field name="uisoundHoldStartSnd" type="BinHex"/>
+			<field name="uisoundHoldStopSnd" type="BinHex"/>
+			<field name="uisoundPurchaseSnd" type="BinHex"/>
+			<field name="uisoundStartRaceSnd" type="BinHex"/>
+			<field name="uisoundSelectSnd" type="BinHex"/>
+			<field name="uisoundDeselectSnd" type="BinHex"/>
+		</object>
+		<field name="uimenutileGridItemGenreTileTemplate" type="BinHex"/>
+		<field name="uimenutileGridItemMusicTileTemplate" type="BinHex"/>
+		<field name="uimenutileGridItemRadioTileTemplate" type="BinHex"/>
+		<field name="selMediaPlayerBackgroundTileId" type="Enum"/>
+		<field name="selMediaPlayerControlBarTileId" type="Enum"/>
+		<field name="selMediaPlayerPlaybackTileId" type="Enum"/>
+		<field name="selMediaPlayerRepeatTileId" type="Enum"/>
+		<field name="selMediaPlayerShuffleTileId" type="Enum"/>
+		<field name="selMediaPlayerThumbnailTileId" type="Enum"/>
+		<field name="selMediaPlayerSubGridTileId" type="Enum"/>
+		<field name="uimenutileMediaPlayerPageSelector" type="BinHex"/>
+		<field name="uimenutilePCMediaPlayerPageSelector" type="BinHex"/>
+		<field name="selPressStartTileId" type="Enum"/>
+		<field name="uisoundOnPressStart" type="BinHex"/>
+		<field name="uisoundOnEnterStartScreenSound" type="BinHex"/>
+		<field name="uisoundOnEnterStartScreenStopSound" type="BinHex"/>
+		<field name="videosVideoPath" type="BinHex"/>
+		<field name="uisoundBinkVideoSound" type="BinHex"/>
+		<field name="selDescriptionPanelTileId" type="Enum"/>
+		<field name="selIsEnabledTileId" type="Enum"/>
+		<field name="selIsFeatureCoverSelectionEnabled" type="Enum"/>
+		<field name="selIsFeatureHackAtGazeEnabled" type="Enum"/>
+		<field name="selIsFeatureExtendedViewEnabled" type="Enum"/>
+		<field name="selExtendedViewMaxAngle" type="Enum"/>
+		<field name="selExtendedViewSensitivity" type="Enum"/>
+		<field name="selIsFeatureAimAtGazeEnabled" type="Enum"/>
+		<field name="selIsFeatureFireAtGazeEnabled" type="Enum"/>
+		<field name="selIsFeatureDynamicLightEnabled" type="BinHex"/>
+		<field name="selIsFeatureCleanUIEnabled" type="BinHex"/>
+		<field name="selLookSensitivityTileId" type="Enum"/>
+		<field name="selMouseAccelerationTileId" type="Enum"/>
+		<field name="selAccelerationValueTileId" type="Enum"/>
+		<field name="selInvertXAxisTileId" type="Enum"/>
+		<field name="selInvertYAxisTileId" type="Enum"/>
+		<field name="selDrivingCameraSensitivityTileId" type="Enum"/>
+		<field name="selDrivingSmoothingTileId" type="Enum"/>
+		<field name="selEnableAutoCenteringWhileDrivingTileId" type="BinHex"/>
+		<field name="selAutocenterDrivingCameraTileId" type="Enum"/>
+		<field name="selEnableAutoCenteringWhileSprintingTileId" type="BinHex"/>
+		<field name="selHackingAimAssistTileId" type="Enum"/>
+		<field name="selSprintModeTileId" type="Enum"/>
+		<field name="selWalkModeTileId" type="Enum"/>
+		<field name="selAimModeTileId" type="Enum"/>
+		<field name="selInventoryGridModeTileId" type="Enum"/>
+		<field name="selMustDrawSelectedWeaponTileId" type="Enum"/>
+		<field name="selEmotionGridModeTileId" type="Enum"/>
+		<field name="selTrafficSpeedGridModeTileId" type="Enum"/>
+		<field name="selKeyboardLayout" type="Enum"/>
+		<field name="selTabSwitcherTileId" type="Enum"/>
+		<field name="selPerformanceBarTileId" type="Enum"/>
+		<field name="text_fileColorPreviewTexture" type="String"/>
+		<field name="fileColorPreviewTexture" type="BinHex"/>
+		<field name="uiColorPreviewPositionX" type="Int64"/>
+		<field name="uiColorPreviewPositionY" type="Int64"/>
+		<field name="uiColorPreviewWidth" type="Int64"/>
+		<field name="uiColorPreviewHeight" type="Int64"/>
+		<field name="selTobiiEyeTrackerSettingTileId" type="Enum"/>
+		<field name="selDifficultySettingsTileId" type="Enum"/>
+		<field name="uimenutileGameSaveSlotsTileTemplate" type="BinHex"/>
+		<field name="u32NumGameSaveSlots" type="BinHex"/>
+		<field name="uimenutileShopItemTileTemplate" type="BinHex"/>
+		<field name="uimenutileBodyPartDetailsTileId" type="BinHex"/>
+		<field name="selShopPanelTileId" type="Enum"/>
+		<field name="selDescriptionPanelSmartphoneWallpaperTileId" type="BinHex"/>
+		<field name="selWallpaperSettingTileId" type="BinHex"/>
+		<field name="selDescriptionPanelOnlineEthnicityTileId" type="Enum"/>
+		<field name="selOnlineInvasionSettingTileId" type="Enum"/>
+		<field name="selFriendInvasionSettingTileId" type="Enum"/>
+		<field name="selOnlineHackingSettingTileId" type="Enum"/>
+		<field name="selVoiceChatVolumeSettingTileId" type="Enum"/>
+		<field name="selOnlineEthnicitySettingTileId" type="Enum"/>
+		<field name="selFriendsAutoJoinSettingTileId" type="Enum"/>
+		<field name="selVoiceChatSettingTileId" type="Enum"/>
+		<field name="selObjectiveIndicatorVisibilityTileId" type="Enum"/>
+		<field name="selMissionObjectivesFeedbackVisibilityTileId" type="Enum"/>
+		<field name="selTipsVisibilityTileId" type="Enum"/>
+		<field name="selMinimapVisibilityTileId" type="Enum"/>
+		<field name="selSmartphoneNotificationVisibilityTileId" type="Enum"/>
+		<field name="selProfilerVisibilityTileId" type="Enum"/>
+		<field name="selProfilerTargetLineVisibilityTileId" type="Enum"/>
+		<field name="selEventPropositionVisibilityTileId" type="Enum"/>
+		<field name="selEquipmentToolsVisibilityTileId" type="Enum"/>
+		<field name="selHackingOptionsVisibilityTileId" type="Enum"/>
+		<field name="selRewardVisibilityTileId" type="Enum"/>
+		<field name="selUpdateLogVisibilityTileId" type="Enum"/>
+		<field name="selDistrictVisibilityTileId" type="Enum"/>
+		<field name="selRadialDetectionVisibilityTileId" type="Enum"/>
+		<field name="selReticleVisibilityTileId" type="Enum"/>
+		<field name="selDedSecCommunicationChannelVisibilityTileId" type="Enum"/>
+		<field name="selControlRemindersVisibilityTileId" type="Enum"/>
+		<field name="selWarningMessagesVisibilityTileId" type="Enum"/>
+		<field name="selTooltipsSettingTileId" type="Enum"/>
+		<field name="selDifficultySettingTileId" type="Enum"/>
+		<field name="selBrightnessSettingTileId" type="Enum"/>
+		<field name="selSafeFrameSettingTileId" type="BinHex"/>
+		<field name="selInvertXSettingTileId" type="Enum"/>
+		<field name="selInvertYSettingTileId" type="Enum"/>
+		<field name="selLookSensativitySettingTileId" type="Enum"/>
+		<field name="selVibrationSettingTileId" type="Enum"/>
+		<field name="selAimAssistSettingTileId" type="Enum"/>
+		<field name="selGamepadSettingTileId" type="Enum"/>
+		<field name="selButtonMappingOnFootSettingTileId" type="Enum"/>
+		<field name="selButtonMappingVehicleSettingTileId" type="Enum"/>
+		<field name="selOnFootControlSchemeDisplayTileId" type="Enum"/>
+		<field name="selVehicleControlSchemeDisplayTileId" type="Enum"/>
+		<field name="selNoControllerControllSchemeDisplayTileId" type="Enum"/>
+		<field name="selAudioLanguageSelectionTileId" type="Enum"/>
+		<field name="selTextLanguageSelectionSettingTileId" type="Enum"/>
+		<field name="selSubtitlesSettingTileId" type="Enum"/>
+		<field name="selAutoplayMusicInCarSettingTileId" type="Enum"/>
+		<field name="selMusicTileId" type="Enum"/>
+		<field name="selSFXVolumeSettingTileId" type="Enum"/>
+		<field name="selMusicVolumeSettingTileId" type="BinHex"/>
+		<field name="selLoadGameTileId" type="Enum"/>
+		<field name="selBuyGameTileId" type="BinHex"/>
+		<field name="selResumeTileId" type="Enum"/>
+		<field name="selQuitMissionTileId" type="Enum"/>
+		<field name="selRestartMissionTileId" type="Enum"/>
+		<field name="selReloadAutosaveTileId" type="Enum"/>
+		<field name="selQuitOnlineSessionTileId" type="Enum"/>
+		<field name="selNewGameTileId" type="Enum"/>
+		<field name="selContinueTileId" type="Enum"/>
+		<field name="selUbisoftClubTileId" type="Enum"/>
+		<field name="selQuitMainMenuTileId" type="Enum"/>
+		<field name="selQuitToDesktopTileId" type="Enum"/>
+		<field name="selNewsfeedPanelTileId" type="Enum"/>
+		<field name="selUbisoftClubPanelTileId" type="Enum"/>
+		<field name="selPCNewsfeedPanelTileId" type="Enum"/>
+		<field name="selButtonMappingSettingTileId" type="Enum"/>
+		<field name="selLeavePartyTileId" type="Enum"/>
+		<object name="locstridMenuPageName">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="SettingsTiles">
+			<field name="uimenutileVideoAdapterSettingTile" type="BinHex"/>
+			<field name="uimenutileWindowModeSettingTile" type="BinHex"/>
+			<field name="uimenutileDisplaySettingTile" type="BinHex"/>
+			<field name="uimenutileFullscreenResolutionSettingTile" type="BinHex"/>
+			<field name="uimenutileRefreshRateSettingTile" type="BinHex"/>
+			<field name="uimenutileVSyncSettingTile" type="BinHex"/>
+			<field name="uimenutileFPSLimit" type="BinHex"/>
+			<field name="uimenutileFieldOfViewSettingTile" type="BinHex"/>
+			<field name="uimenutilePixelDensitySettingTile" type="BinHex"/>
+			<field name="uimenutileMenuPositionTileData" type="BinHex"/>
+			<field name="uimenutileMultiMonitorTileData" type="BinHex"/>
+			<field name="uimenutileGraphicsQualitySettingTile" type="BinHex"/>
+			<field name="uimenutileGeometrySettingTile" type="BinHex"/>
+			<field name="uimenutileExtraDetailsSettingTile" type="BinHex"/>
+			<field name="uimenutileTerrainSettingTile" type="BinHex"/>
+			<field name="uimenutileVegetationSettingTile" type="BinHex"/>
+			<field name="uimenutileTexturesResolutionSettingTile" type="BinHex"/>
+			<field name="uimenutileTexturesFilteringSettingTile" type="BinHex"/>
+			<field name="uimenutileShadowsSettingTile" type="BinHex"/>
+			<field name="uimenutileHeadlightShadowsSettingTile" type="BinHex"/>
+			<field name="uimenutileWaterSettingTile" type="BinHex"/>
+			<field name="uimenutileReflectionsSettingTile" type="BinHex"/>
+			<field name="uimenutileScreenspaceReflectionsSettingTile" type="BinHex"/>
+			<field name="uimenutileEnvironmentalParticlesSettingTile" type="BinHex"/>
+			<field name="uimenutileFogSettingTile" type="BinHex"/>
+			<field name="uimenutileDepthOfFieldSettingTile" type="BinHex"/>
+			<field name="uimenutileMotionBlurSettingTile" type="BinHex"/>
+			<field name="uimenutileBloomSettingTile" type="BinHex"/>
+			<field name="uimenutileAmbientOcclusionSettingTile" type="BinHex"/>
+			<field name="uimenutileTemporalFilteringSettingTile" type="BinHex"/>
+			<field name="uimenutileMultiSampleAntiAliasingSettingTile" type="BinHex"/>
+			<field name="uimenutilePostProcessAntiAliasingSettingTile" type="BinHex"/>
+			<field name="uimenutileBrightnessSettingTile" type="BinHex"/>
+			<field name="uimenutileSharpnessSettingTile" type="BinHex"/>
+		</object>
+		<object name="locstridTextAuto">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridTextNA">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="OnFootLayoutControls">
+			<object name="ControlTile">
+				<field name="uimenutileControlTile" type="BinHex"/>
+			</object>
+		</object>
+		<object name="OnDrivingLayoutControls">
+			<object name="ControlTile">
+				<field name="uimenutileControlTile" type="BinHex"/>
+			</object>
+		</object>
+		<object name="OnRCJumperLayoutControls">
+			<object name="ControlTile">
+				<field name="uimenutileControlTile" type="BinHex"/>
+			</object>
+		</object>
+		<object name="OnRCDroneLayoutControls">
+			<object name="ControlTile">
+				<field name="uimenutileControlTile" type="BinHex"/>
+			</object>
+		</object>
+		<object name="ContextualControls">
+			<object name="locstridAccessOnlineStore">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridRedeemCode">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="EngineLanguageLocalizationLinks">
+			<object name="locstridCzech">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridDanish">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridDutch">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridEnglish">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridFinnish">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridFrench">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridGerman">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridHungarian">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridItalian">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridJapanese">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridKorean">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridNorwegian">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridPolish">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridPortugueseBrazil">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridPortuguesePortugal">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridRussian">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridSimplifiedChinese">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridSpanish">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridSpanishMexico">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridSwedish">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridTraditionalChinese">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridArabic">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<field name="selEpilepsyLoadingTileId" type="Enum"/>
+		<field name="fDelayBeforeStart" type="Float"/>
+		<field name="fScrollingSpeed" type="Float"/>
+		<field name="fUpperScreenLimitRatio" type="Float"/>
+		<field name="fLowerScreenLimitRatio" type="Float"/>
+		<field name="fCenterPointScreenRatio" type="Float"/>
+		<field name="fTimeBetweenItemCreation" type="Float"/>
+		<field name="bIsSkippable" type="Boolean"/>
+		<field name="bShowEndPopup" type="BinHex"/>
+		<field name="uisoundCreditsMusic" type="BinHex"/>
+		<field name="uisoundCloseCreditsMusic" type="BinHex"/>
+		<field name="uimenutileGameModeTileTemplateLeft" type="BinHex"/>
+		<field name="uimenutileGameModeTileTemplateRight" type="BinHex"/>
+		<field name="uimenutileGameModeTileWorldStats" type="BinHex"/>
+		<field name="uimenutileGameModeTileFriendsStats" type="BinHex"/>
+		<field name="uimenutileGameModeTileHistoryStatsTemplate" type="BinHex"/>
+		<field name="uimenutileGameModeTileNoHistory" type="BinHex"/>
+		<field name="uimenutileGameModeTileInfos" type="BinHex"/>
+		<field name="uimenutileMainPageGridTileTemplate" type="BinHex"/>
+		<field name="uimenutileSubPageGridTileTemplate" type="BinHex"/>
+		<field name="uimenutileNodeTileTemplate" type="BinHex"/>
+		<field name="fileBackgroundVideo" type="String"/>
+		<field name="selTreeCenterInfoTileId" type="Enum"/>
+		<field name="selTreeItemDetailsTileId" type="Enum"/>
+		<field name="selTreeItemVideoTileId" type="Enum"/>
+		<field name="selTreeItemUnlockTileId" type="Enum"/>
+		<field name="selTreeFollowersTileId" type="Enum"/>
+		<field name="fTreeItemUnlockTime" type="Float"/>
+		<field name="fTreeItemUnlockedAnimTime" type="Float"/>
+		<field name="uNumberOfRows" type="Int64"/>
+		<field name="uNumberOfColumns" type="Int64"/>
+		<field name="selGalleryAppCounterTileId" type="Enum"/>
+		<field name="selImageFullTile" type="Enum"/>
+		<field name="selBackgroundTile" type="Enum"/>
+		<field name="selDeleteProgress" type="Enum"/>
+		<field name="uimenutileGalleryAppCategoryTileId" type="BinHex"/>
+		<field name="uimenutilePCGalleryAppCategoryTileId" type="BinHex"/>
+		<field name="uimenutileArrowLeftTileId" type="BinHex"/>
+		<field name="uimenutilePCArrowLeftTileId" type="BinHex"/>
+		<field name="uimenutileArrowRightTileId" type="BinHex"/>
+		<field name="uimenutilePCArrowRightTileId" type="BinHex"/>
+		<field name="uimenutileArrowUpTileId" type="BinHex"/>
+		<field name="uimenutilePCArrowUpTileId" type="BinHex"/>
+		<field name="uimenutileArrowDownTileId" type="BinHex"/>
+		<field name="uimenutilePCArrowDownTileId" type="BinHex"/>
+		<field name="uimenutileImagesTileTemplate" type="BinHex"/>
+		<field name="uisoundNavigateSound" type="BinHex"/>
+		<field name="uisoundOpenFromImageView" type="BinHex"/>
+		<field name="uisoundGotToCameraSound" type="BinHex"/>
+		<field name="uisoundDeleteSound" type="BinHex"/>
+		<field name="uisoundDeletionStartSound" type="BinHex"/>
+		<field name="uimenutileSelectionButtonTileTemplate" type="BinHex"/>
+		<field name="selFourPlayerStartSelectionScreenTileId" type="BinHex"/>
+		<object name="locstridCloseLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="uimenutileOptionTileTemplate" type="BinHex"/>
+		<field name="selInfoTileId" type="Enum"/>
+		<object name="locstridInfoStringID">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="MenuEntries">
+			<object name="MenuSettings">
+				<field name="sLinkageName" type="String"/>
+				<field name="cinematicmodeCinematicMode" type="BinHex"/>
+				<object name="locstridOptionName">
+					<field name="LocalizationId" type="Int64"/>
+				</object>
+			</object>
+		</object>
+		<object name="locstridApplyStringID">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridResetStringID">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="videosBackgroundVideo" type="BinHex"/>
+		<object name="locstridBackText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="SkippableProperties">
+			<field name="fTimeBeforeSkipIsAllowed" type="Float"/>
+		</object>
+		<object name="EndPopupProperties">
+			<object name="locstridPopupTitle">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridPopupText">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="CreditsTileTemplates">
+			<field name="uimenutileCreditNameTile" type="BinHex"/>
+			<field name="uimenutileCreditTitleTile" type="BinHex"/>
+			<field name="uimenutileCreditJobTitleTile" type="BinHex"/>
+			<field name="uimenutileCreditImageTile" type="BinHex"/>
+			<field name="uimenutileCreditSubTitleTile" type="BinHex"/>
+			<field name="uimenutileCreditEmptyTile" type="BinHex"/>
+		</object>
+		<field name="selPreviousMissionTileId" type="Enum"/>
+		<field name="selNextMissionTileId" type="Enum"/>
+		<field name="selFollowersTileId" type="Enum"/>
+		<field name="uimenutileWorldStoryTileTemplate" type="BinHex"/>
+		<field name="uimenutileWorldStoryCoopTileTemplate" type="BinHex"/>
+		<field name="selLogoTileId" type="Enum"/>
+		<field name="selWorldStoryNameTileId" type="Enum"/>
+		<field name="selMissionInfoTileId" type="Enum"/>
+		<field name="selTrackMissionButtonTileId" type="Enum"/>
+		<field name="selBackgroundTileId" type="Enum"/>
+		<field name="selInfoPanelTileId" type="Enum"/>
+		<field name="selFollowersBarTileId" type="Enum"/>
+		<field name="selWalletTileId" type="Enum"/>
+		<field name="selDedSecAppTileId" type="Enum"/>
+		<field name="selScoutXAppTileId" type="Enum"/>
+		<field name="selResearchTreeAppTileId" type="Enum"/>
+		<field name="selCarOnDemandAppTileId" type="Enum"/>
+		<field name="selMediaPlayerAppTileId" type="Enum"/>
+		<field name="selLeaderboardAppTileId" type="BinHex"/>
+		<field name="uimenutilePageIndexTile" type="BinHex"/>
+		<field name="uimenutilePageIndexTilePC" type="BinHex"/>
+		<field name="uimenupagePreviousPage" type="BinHex"/>
+		<field name="uimenupageNextPage" type="BinHex"/>
+		<field name="selFilterOperationsTileId" type="Enum"/>
+		<field name="selFilterShopsTileId" type="Enum"/>
+		<field name="selFilterOnlineTileId" type="Enum"/>
+		<field name="selFilterLocationsTileId" type="Enum"/>
+		<field name="selFilterCollectiblesTileId" type="Enum"/>
+		<field name="selFilterAllTileId" type="Enum"/>
+		<field name="selFilterSeparatorTileId" type="Enum"/>
+		<field name="selMissionTrackBtnTileId" type="Enum"/>
+		<field name="selContactListBackgroundTileId" type="Enum"/>
+		<field name="selContactListActivityProfileTileId" type="Enum"/>
+		<field name="selTutorialDescriptionTileId" type="Enum"/>
+		<field name="selTutorialHeaderTileId" type="Enum"/>
+		<field name="selTutorialPictorialContentTileId" type="Enum"/>
+		<field name="selTutorialBackgroundTileId" type="Enum"/>
+		<field name="selRaceDescriptionTileId" type="Enum"/>
+		<field name="selClickableArrowsTileId" type="BinHex"/>
+		<object name="RaceSelector">
+			<field name="selRaceTilesBackgroundTileId" type="BinHex"/>
+			<field name="uimenutileRaceSelectorTileTemplate" type="BinHex"/>
+			<field name="uimenutileRaceTilesScrollTileTemplate" type="BinHex"/>
+		</object>
+		<field name="selVoteInfoTileId" type="BinHex"/>
+		<field name="uimenutileRaceTileTemplate" type="BinHex"/>
+		<object name="locstridVoteRace">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridReturn">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridVoteForNextRaceTitle">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="selRaceEndStatsTileId" type="Enum"/>
+		<field name="selTimeTrialResultsTileId" type="Enum"/>
+		<object name="locstridContinue">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridRestart">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridQuit">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridDisconnectAndQuit">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridQuitOnlineRacePopupTitle">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridQuitOnlineRacePopupMessage">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridQuitOnlineRacePopupAccept">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridConfirmStopMatchmakingTitle">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridConfirmStopMatchmakingMessage">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="selTimeTrialDescriptionTileId" type="Enum"/>
+		<field name="selTaxiDescriptionTileId" type="Enum"/>
+		<field name="selActivitiesFollowersTileId" type="Enum"/>
+		<field name="uisoundFiltersNavigationSound" type="BinHex"/>
+		<field name="uisoundFiltersToggleSound" type="BinHex"/>
+		<field name="uisoundFiltersOpenSound" type="BinHex"/>
+		<field name="uisoundFiltersCloseSound" type="BinHex"/>
+		<field name="uisoundBackgroundSound" type="BinHex"/>
+		<field name="uimenutileMissionTileTemplate" type="BinHex"/>
+		<field name="uisoundOnCloseUiSound" type="BinHex"/>
+		<field name="uisoundOnTabChangeUiSound" type="BinHex"/>
+		<field name="uisoundUnavailableTrackingSound" type="BinHex"/>
+		<field name="fHoldToReplayMissionTime" type="Float"/>
+		<field name="uMaxMissionDataTileToDisplay" type="Int64"/>
+		<field name="uisoundReplayHoldStartSound" type="BinHex"/>
+		<field name="uisoundReplayHoldStopSound" type="BinHex"/>
+		<field name="uisoundReplayHoldSuccessSound" type="BinHex"/>
+		<object name="locstridViewOnMap">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridQuitMission">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridReplayMission">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="uimenutileContactListTileTemplate" type="BinHex"/>
+		<field name="uimenutileContactListActivityTileTemplate" type="BinHex"/>
+		<field name="selLoadingTileId" type="Enum"/>
+		<field name="selErrorTileId" type="Enum"/>
+		<field name="selEndOfSeasonTileId" type="Enum"/>
+		<field name="fEndOfSeasonIntroDuration" type="Float"/>
+		<field name="uimenutileLeaderBoardAppTabsTileId" type="BinHex"/>
+		<field name="uimenutileLeaderBoardAppTabsPCTileId" type="BinHex"/>
+		<field name="uimenutileContactListButtonTileTemplate" type="BinHex"/>
+		<field name="selProfileTileId" type="Enum"/>
+		<field name="selActivityProfileTileId" type="Enum"/>
+		<field name="selHeaderTileId" type="Enum"/>
+		<field name="selPictorialContentTileId" type="Enum"/>
+		<field name="uisoundPauseInSound" type="BinHex"/>
+		<field name="uisoundPauseOutSound" type="BinHex"/>
+		<field name="selRewardsTileId" type="Enum"/>
+		<field name="selContactFollowersTileId" type="Enum"/>
+		<field name="selPageSwitcherTileId" type="Enum"/>
+		<field name="selActivityBannerTileId" type="Enum"/>
+		<object name="locstridInviteOtherFriendsLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridHeaderTitleLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridHeaderInfoTitleLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridOpenInfoLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridOpenGamerCardXbox">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridOpenGamerCardPs4">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridOpenTutorialLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridContinueLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridErrorLoadingContactsLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridMuteButtonLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridXboxOneProfileButtonLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridPcProfileButtonLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridPs4ProfileButtonLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridUnmuteButtonLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridJoinSessionButtonLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridInviteToSessionButtonLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridInviteToPartyButtonLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridInvadeFriendButtonLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridFourPlayerPublic">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridFourPlayerPrivate">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="uimenutileGridContainerFourPlayerBounty" type="BinHex"/>
+		<object name="locstridTriggerBounty">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridTriggerBountyOnMe">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridLaunchButton">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridLaunchButtonLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="selCarOnDemandFooterTileId" type="Enum"/>
+		<field name="selCarOnDemandCategoryTileId" type="Enum"/>
+		<field name="selCarOnDemandHeaderTileId" type="Enum"/>
+		<field name="fHoldToOrderTime" type="Float"/>
+		<field name="fSuccessTime" type="Float"/>
+		<field name="uimenutileAppStoreAppTileTemplate" type="BinHex"/>
+		<field name="selAppDetailsHeaderTileId" type="Enum"/>
+		<field name="selAppHeaderTileId" type="Enum"/>
+		<field name="fAppUnlockTime" type="Float"/>
+		<field name="uisoundHoldStartSound" type="BinHex"/>
+		<field name="uisoundHoldStopSound" type="BinHex"/>
+		<field name="uisoundHoldSuccessSound" type="BinHex"/>
+		<object name="locstridTopSpeedLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridAccelerationLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridHandlingLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridDurabilityLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridOrderLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridDetailsLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="uisoundPurchaseSound" type="BinHex"/>
+		<field name="uimenutileRCDetailsTileId" type="BinHex"/>
+		<field name="uPageIndex" type="Int64"/>
+		<field name="uisoundNextHomepageSound" type="BinHex"/>
+		<field name="uisoundPreviousHomepageSound" type="BinHex"/>
+		<object name="locstridBackControlTextOverrideLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridQuitOnlineActivityLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="uimenutilePageWidgetTileId" type="BinHex"/>
+		<field name="uimenutilePCPageWidgetTileId" type="BinHex"/>
+		<field name="uimenutileDecalDetailsTileId" type="BinHex"/>
+		<field name="selSellAllValuablesTileId" type="Enum"/>
+		<field name="uimenutilePawnShopItemTileTemplate" type="BinHex"/>
+		<field name="uimenutileRefillAmmoTile" type="BinHex"/>
+		<field name="fHoldToSellTime" type="Float"/>
+		<field name="uisoundSellSound" type="BinHex"/>
+		<field name="uimenupagePaintJobsPage" type="BinHex"/>
+		<field name="uimenutilePageDetailsTile" type="BinHex"/>
+		<field name="uimenutilePageDetailsTilePC" type="BinHex"/>
+		<field name="uisoundNextPageSound" type="BinHex"/>
+		<field name="uisoundPreviousPageSound" type="BinHex"/>
+		<field name="uisoundAddFavoriteSound" type="BinHex"/>
+		<field name="uisoundRemoveFavoriteSound" type="BinHex"/>
+		<field name="uisoundTogglePlaySound" type="BinHex"/>
+		<field name="uisoundTogglePauseStopSound" type="BinHex"/>
+		<field name="texturedbobjectAppLogo" type="BinHex"/>
+		<field name="fMaxPlayTimeForPreviousBtn" type="Float"/>
+		<object name="locstridAddToPlaylistText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridRemoveFromPlaylistText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridPlayText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridPauseText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridTuneInText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridStopText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridAllGenresText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridNothingPlaying">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="uisoundEnterPageSound" type="BinHex"/>
+		<field name="uisoundExitPageSound" type="BinHex"/>
+		<field name="uisoundFocusRootSound" type="BinHex"/>
+		<field name="uisoundUnfocusRootSound" type="BinHex"/>
+		<field name="uisoundNodeNavigationSound" type="BinHex"/>
+		<field name="uisoundUnlockSound" type="BinHex"/>
+		<field name="uisoundNoInteractionSound" type="BinHex"/>
+		<field name="uisoundUnlockNodeProgressSound" type="BinHex"/>
+		<field name="uisoundUnlockNodeAbordSound" type="BinHex"/>
+		<object name="locstridNavigate">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridSelect">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridAlternateControl">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridInventoryEmptySlot">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridPurchase">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridToyCarDescription">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridDroneDescription">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridUnselect">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridHideDetails">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="LeftPageGroup">
+			<field name="uimenupageLeftPage" type="BinHex"/>
+			<field name="selLeftPageShopCategoryType" type="Enum"/>
+		</object>
+		<object name="RightPageGroup">
+			<field name="uimenupageRightPage" type="BinHex"/>
+			<field name="selRightPageShopCategoryType" type="Enum"/>
+		</object>
+		<object name="locstridSell">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridEquipKit">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="Pages">
+			<field name="uimenupageVehicleSelectPage" type="BinHex"/>
+			<field name="uimenupagePaintJobPage" type="BinHex"/>
+		</object>
+		<object name="Tiles">
+			<field name="uimenutileWeaponShopItemTileTemplate" type="BinHex"/>
+			<field name="uimenutileDecalShopItemTileTemplate" type="BinHex"/>
+			<field name="selHeaderSlotTileId" type="Enum"/>
+			<field name="selBasicDetailsTileId" type="Enum"/>
+			<field name="selStatsTileId" type="Enum"/>
+			<object name="Tile">
+				<field name="uimenutileTile" type="BinHex"/>
+			</object>
+			<field name="uimenutileVehicleItemTileTemplate" type="BinHex"/>
+			<field name="selVehicleStatsTileId" type="Enum"/>
+			<field name="selVehicleDetailsTileId" type="Enum"/>
+			<field name="selVehicleClassTitleTileId" type="Enum"/>
+			<field name="uimenutileStickerTileTemplate" type="BinHex"/>
+			<field name="uimenutileColorTileTemplate" type="BinHex"/>
+			<field name="uimenutileDecalCategoryTileTemplate" type="BinHex"/>
+			<field name="uimenutileEmptyDecalItemTileTemplate" type="BinHex"/>
+			<field name="selHeaderTileId" type="Enum"/>
+			<field name="uimenutileCarDealershipDecalDetailsTileId" type="BinHex"/>
+			<field name="uimenutileVehicleClassItemTileTemplate" type="BinHex"/>
+		</object>
+		<object name="LocIds">
+			<object name="locstridTopSpeedLocId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridAccelerationLocId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridHandlingLocId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+			<object name="locstridDurabilityLocId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<object name="locstridBack">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridUnlock">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridClose">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridDefaultTreeCenterText">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="NavigationTreePrimitives">
+			<field name="colorOwnedColor" type="Vector4"/>
+			<field name="colorMinimizedColor" type="Vector4"/>
+			<field name="colorAvailableColor" type="Vector4"/>
+			<field name="colorUnavailableColor" type="Vector4"/>
+			<field name="colorOpenedColor" type="Vector4"/>
+			<field name="fNodeInitialRadius" type="Float"/>
+			<field name="fNodeThickNess" type="Float"/>
+			<field name="fNodeBorderSize" type="Float"/>
+			<field name="fNodeAngleBorder" type="Float"/>
+			<field name="fConnectionLineThickness" type="Float"/>
+			<field name="fLineStartAdjustRoot" type="Float"/>
+			<field name="fLineStartAdjustNode" type="Float"/>
+			<field name="fBranchWidthScale" type="Float"/>
+			<field name="fBranchLengthAdjust" type="Float"/>
+			<field name="fTransitionSpeed" type="Float"/>
+			<field name="fArcThicknessRoot" type="Float"/>
+			<field name="fArcThicknessNode" type="Float"/>
+			<object name="NodeOpeningPosition">
+				<field name="fOpeningXRatio" type="Float"/>
+				<field name="fOpeningYRatio" type="Float"/>
+			</object>
+			<object name="NodeBrowsingPosition">
+				<field name="fBrowsingXRatio" type="Float"/>
+				<field name="fBrowsingYRatio" type="Float"/>
+			</object>
+		</object>
+		<field name="uimenutileCarOnDemandPageSwitcherTileId" type="BinHex"/>
+		<field name="uimenutileCarOnDemandPageSwitcherPCTileId" type="BinHex"/>
+		<field name="uimenutileCarOnDemandVehicleItemTileTemplate" type="BinHex"/>
+		<field name="selCarOnDemandVehicleStatsTileId" type="Enum"/>
+		<field name="selCarOnDemandVehicleDetailsTileId" type="Enum"/>
+		<field name="selCarOnDemandPageTitleTileId" type="Enum"/>
+		<field name="uimenutileVehicleClassArrowTileTemplate" type="BinHex"/>
+		<field name="uimenutileVehicleClassEmptyTileTemplate" type="BinHex"/>
+		<field name="itemcategoryHeavyItemCategory" type="BinHex"/>
+		<field name="itemcategoryMuscleItemCategory" type="BinHex"/>
+		<field name="itemcategoryOffroadItemCategory" type="BinHex"/>
+		<field name="itemcategorySportsItemCategory" type="BinHex"/>
+		<field name="itemcategoryPerformanceItemCategory" type="BinHex"/>
+		<field name="itemcategoryMotorcycleItemCategory" type="BinHex"/>
+		<field name="itemcategoryStandardItemCategory" type="BinHex"/>
+		<object name="locstridRecentOrdersLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="DefaultPaintJobSettings">
+			<field name="itemcategoryDefaultPaintJobCategory" type="BinHex"/>
+			<field name="colorDefaultPaintJobTileColor" type="Vector3"/>
+			<field name="texturedbobjectDefaultPaintJobTileImage" type="BinHex"/>
+			<field name="texturedbobjectDefaultPaintJobHeaderImage" type="BinHex"/>
+			<object name="locstridDefaultPaintJobNameLocId">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+		<field name="selCarOnDemandLocationDetailsTileId" type="Enum"/>
+		<field name="uimenutileStickerTileTemplate" type="BinHex"/>
+		<field name="uimenutileColorTileTemplate" type="BinHex"/>
+		<field name="uimenutileDecalCategoryTileTemplate" type="BinHex"/>
+		<field name="uimenutileEmptyDecalItemTileTemplate" type="BinHex"/>
+		<field name="uisoundEquipPaintJobSound" type="BinHex"/>
+		<object name="locstridEquipLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridGeneralPaintJobLocationLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="uisoundExitDetailsPageSound" type="BinHex"/>
+		<object name="locstridPurchaseLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="uisoundTimeChangeSound" type="BinHex"/>
+		<field name="uisoundNavigationSound" type="BinHex"/>
+		<field name="uisoundSelectSound" type="BinHex"/>
+		<field name="uisoundSelectHoldSound" type="BinHex"/>
+		<field name="fMissionSelectionTime" type="Float"/>
+		<object name="locstridMissionsTextLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridHistoryTextLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridRewardsTextLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="uisoundUnselectSound" type="BinHex"/>
+		<field name="uisoundBackSound" type="BinHex"/>
+		<field name="uisoundStarGain" type="BinHex"/>
+		<field name="uisoundRankFillLoop" type="BinHex"/>
+		<field name="uisoundRankFillStop" type="BinHex"/>
+		<field name="uisoundRankFillReached" type="BinHex"/>
+		<object name="locstridAcceptActionLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridBackActionLocId">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="selPageHeaderTileId" type="Enum"/>
+		<field name="uimenutileTaserSlotTileTemplate" type="BinHex"/>
+		<field name="uimenutileWeaponSlotTileTemplate" type="BinHex"/>
+		<field name="uimenutileToyCarSlotTileTemplate" type="BinHex"/>
+		<field name="uimenutileDroneSlotTileTemplate" type="BinHex"/>
+		<field name="fRCUnlockTime" type="Float"/>
+		<field name="uimenutilePromotionalTileTemplate" type="BinHex"/>
+		<field name="nPromoTilesCount" type="Int32"/>
+		<field name="fItemUnlockTime" type="Float"/>
+		<object name="locstridMenuSectionName">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<field name="uisoundHideHudSound" type="BinHex"/>
+		<field name="uisoundShowHudSound" type="BinHex"/>
+		<field name="fDeletionLoadingTime" type="Float"/>
+		<field name="fDeletionCheckMarkTime" type="Float"/>
+		<field name="uisoundCloseSound" type="BinHex"/>
+		<field name="selAlarmClockTileId" type="Enum"/>
+		<object name="locstridSetAlarm">
+			<field name="LocalizationId" type="Int64"/>
+		</object>
+		<object name="locstridRecruit">
+			<field name="LocalizationId" type="Int64"/>
+        </object>
+        <object name="locstridBronze">
+			<field name="LocalizationId" type="Int64"/>
+        </object>
+        <object name="locstridSilver">
+			<field name="LocalizationId" type="Int64"/>
+        </object>
+        <object name="locstridGold">
+			<field name="LocalizationId" type="Int64"/>
+        </object>
+        <object name="locstridDiamond">
+			<field name="LocalizationId" type="Int64"/>
+        </object>
+        <object name="locstridMaster">
+			<field name="LocalizationId" type="Int64"/>
+        </object>
+        <field name="uimenupageRaceCentralMenuPage" type="BinHex"/>
+        <field name="uimenutileYachtRaceModeItemTileTemplate" type="BinHex"/>
+        <object name="locstridSelectRaceMode">
+			<field name="LocalizationId" type="Int64"/>
+        </object>
+        <field name="fileTournamentLargeImage" type="String"/>
+        <object name="locstridTournamentCompleteMessage">
+            <field name="LocalizationId" type="Int64"/>
+        </object>
+        <object name="locstridPublicPartyModeBannerLocId">
+            <field name="LocalizationId" type="Int64"/>
+        </object>
+        <object name="locstridPrivatePartyModeBannerLocId">
+            <field name="LocalizationId" type="Int64"/>
+        </object>
+        <object name="locstridQuitGroupPartyRacePopupTitle">
+            <field name="LocalizationId" type="Int64"/>
+        </object>
+        <object name="locstridQuitGroupPartyRacePopupMessage">
+            <field name="LocalizationId" type="Int64"/>
+        </object>
+        <object name="locstridQuitPartyOverrideLodId">
+            <field name="LocalizationId" type="Int64"/>
+        </object>
+        <object name="locstridQuitPartyConfirmationTitleLodId">
+            <field name="LocalizationId" type="Int64"/>
+        </object>
+	</object>
+	<object name="Tiles">
+		<field name="uimenutileWeaponShopItemTileTemplate" type="BinHex"/>
+		<field name="uimenutileDecalShopItemTileTemplate" type="BinHex"/>
+		<field name="selHeaderSlotTileId" type="Enum"/>
+		<field name="selBasicDetailsTileId" type="Enum"/>
+		<field name="selStatsTileId" type="Enum"/>
+		<field name="uimenutileVehicleItemTileTemplate" type="BinHex"/>
+		<field name="selVehicleStatsTileId" type="Enum"/>
+		<field name="selVehicleDetailsTileId" type="Enum"/>
+		<field name="selVehicleClassTitleTileId" type="Enum"/>
+		<field name="uimenutileStickerTileTemplate" type="BinHex"/>
+		<field name="uimenutileColorTileTemplate" type="BinHex"/>
+		<field name="uimenutileDecalCategoryTileTemplate" type="BinHex"/>
+		<field name="uimenutileEmptyDecalItemTileTemplate" type="BinHex"/>
+		<field name="selHeaderTileId" type="Enum"/>
+		<field name="uimenutileCarDealershipDecalDetailsTileId" type="BinHex"/>
+		<field name="uimenutileVehicleClassItemTileTemplate" type="BinHex"/>
+		<field hash="74761D7E" type="BinHex"/>
+		<object name="Tile">
+			<field name="uimenutileTile" type="BinHex"/>
+		</object>
+	</object>
+	<object name="locstridLoadingTextLocId">
+	    <field name="LocalizationId" type="Int64"/>
+	</object>
+</class>

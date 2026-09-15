@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="WavereinforcementconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bRepeatLastWaveInfinitely" type="Boolean"/>
+	<field name="bUseSpawningPools" type="Boolean"/>
+	<object name="SpawningPoolConfig">
+		<object name="UnifiedPoolConfigs">
+			<object name="Config">
+				<field name="selSpawningPoolType" type="Enum"/>
+				<field name="uiPoolSize" type="Int64"/>
+				<field name="bSpawnWhenOnFoot" type="Boolean"/>
+				<field name="bSpawnWhenInVehicle" type="Boolean"/>
+				<field name="bSpawnOnlyWhenInCustomReinforcementZone" type="Boolean"/>
+			</object>
+		</object>
+	</object>
+	<object name="UnitPreset">
+		<object name="unitpresetUnitPreset">
+			<field name="unitpresetUnitPreset" type="BinHex"/>
+		</object>
+	</object>
+	<object name="WaveConfig">
+		<object name="waveconfigWaveConfig">
+			<field name="waveconfigWaveConfig" type="BinHex"/>
+		</object>
+	</object>
+</class>

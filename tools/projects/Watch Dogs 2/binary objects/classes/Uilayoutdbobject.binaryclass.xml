@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UilayoutdbobjectParameters">
+	<inherit name="SharedParameters"/>
+	<object name="LayoutSettings">
+		<field name="selUIType" type="Enum"/>
+		<field name="nDepthPriority" type="Int32"/>
+		<object name="ElementProperties">
+			<field name="bIsSafeframeEnabled" type="Boolean"/>
+			<field name="bIsMenuSafeframeEnabled" type="Boolean"/>
+			<field name="fXPositionRatio" type="Float"/>
+			<field name="fYPositionRatio" type="Float"/>
+			<field name="fAlpha" type="Float"/>
+			<field name="selScaleBehavior" type="Enum"/>
+			<field name="fHorizontalScaleRatio" type="Float"/>
+			<field name="fVerticalScaleRatio" type="Float"/>
+			<field name="selHorizontalAlignment" type="Enum"/>
+			<field name="selVerticalAlignment" type="Enum"/>
+			<field name="bMaintain16x9" type="Boolean"/>
+			<field name="bDontScaleX" type="Boolean"/>
+			<object name="ZDepth">
+				<field name="fZDepth" type="Float"/>
+			</object>
+			<object name="FOVFactor">
+				<field name="fFOVFactor" type="Float"/>
+			</object>
+			<object name="Rotation">
+				<field name="fPitch" type="Float"/>
+				<field name="fYaw" type="Float"/>
+				<field name="fRoll" type="Float"/>
+				<field name="selHorizontalPivotAlignment" type="Enum"/>
+				<field name="selVerticalPivotAlignment" type="Enum"/>
+				<field name="fXPivotOffset" type="Float"/>
+				<field name="fYPivotOffset" type="Float"/>
+				<field name="fZPivotOffset" type="Float"/>
+				<field name="bAlignPitchToWorld" type="Boolean"/>
+				<field name="bEnableSwivel" type="Boolean"/>
+				<object name="SwivelProperties">
+					<field name="fPitchThreshold" type="Float"/>
+					<field name="fYawThreshold" type="Float"/>
+					<field name="fRollThreshold" type="Float"/>
+					<field name="fSwivelSpeed" type="Float"/>
+				</object>
+				<field name="fRotation" type="Float"/>
+			</object>
+			<object name="RenderSpecificOptions">
+				<field name="fDesaturationFactor" type="Float"/>
+				<field name="bPerformWorldPostFX" type="Boolean"/>
+				<field name="bGlassEffect" type="Boolean"/>
+				<field name="bUnderMap" type="Boolean"/>
+				<object name="ThreeDRenderSpecificOptions">
+					<field name="bPerformAvatarZTest" type="Boolean"/>
+					<field name="bPerformSceneZTest" type="Boolean"/>
+					<field name="bOverMap" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

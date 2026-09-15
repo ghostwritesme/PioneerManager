@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Decryptionconfig_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="Missions">
+		<object name="Default">
+			<object name="Timers">
+				<field name="fMissionTimer" type="BinHex"/>
+				<field name="fIntroTimer" type="BinHex"/>
+				<field name="fOutroTimer" type="BinHex"/>
+			</object>
+			<object name="GameplayArea">
+				<field name="bHasGameplayArea" type="BinHex"/>
+				<field name="fGameplayAreaRadius" type="BinHex"/>
+				<field name="vec3GameplayAreaCenter" type="BinHex"/>
+				<field name="bSetByPoints" type="BinHex"/>
+				<object name="Points">
+					<field name="vec2Point0" type="BinHex"/>
+					<field name="vec2Point1" type="BinHex"/>
+					<field name="vec2Point2" type="BinHex"/>
+					<field name="vec2Point3" type="BinHex"/>
+				</object>
+			</object>
+			<object name="EntitySpawning">
+				<field name="bHasEntitySpawnPoint" type="BinHex"/>
+				<field name="vec3EntitySpawnPoint" type="BinHex"/>
+			</object>
+		</object>
+		<object name="Setup01">
+			<object name="Timers">
+				<field name="fMissionTimer" type="BinHex"/>
+				<field name="fIntroTimer" type="BinHex"/>
+				<field name="fOutroTimer" type="BinHex"/>
+			</object>
+			<object name="GameplayArea">
+				<field name="bHasGameplayArea" type="BinHex"/>
+				<field name="fGameplayAreaRadius" type="BinHex"/>
+				<field name="vec3GameplayAreaCenter" type="BinHex"/>
+				<field name="bSetByPoints" type="BinHex"/>
+				<object name="Points">
+					<field name="vec2Point0" type="BinHex"/>
+					<field name="vec2Point1" type="BinHex"/>
+					<field name="vec2Point2" type="BinHex"/>
+					<field name="vec2Point3" type="BinHex"/>
+				</object>
+			</object>
+			<object name="EntitySpawning">
+				<field name="bHasEntitySpawnPoint" type="BinHex"/>
+				<field name="vec3EntitySpawnPoint" type="BinHex"/>
+			</object>
+		</object>
+		<object name="Setup02">
+			<object name="Timers">
+				<field name="fMissionTimer" type="BinHex"/>
+				<field name="fIntroTimer" type="BinHex"/>
+				<field name="fOutroTimer" type="BinHex"/>
+			</object>
+			<object name="GameplayArea">
+				<field name="bHasGameplayArea" type="BinHex"/>
+				<field name="fGameplayAreaRadius" type="BinHex"/>
+				<field name="vec3GameplayAreaCenter" type="BinHex"/>
+				<field name="bSetByPoints" type="BinHex"/>
+				<object name="Points">
+					<field name="vec2Point0" type="BinHex"/>
+					<field name="vec2Point1" type="BinHex"/>
+					<field name="vec2Point2" type="BinHex"/>
+					<field name="vec2Point3" type="BinHex"/>
+				</object>
+			</object>
+			<object name="EntitySpawning">
+				<field name="bHasEntitySpawnPoint" type="BinHex"/>
+				<field name="vec3EntitySpawnPoint" type="BinHex"/>
+			</object>
+		</object>
+		<object name="Setup03">
+			<object name="Timers">
+				<field name="fMissionTimer" type="BinHex"/>
+				<field name="fIntroTimer" type="BinHex"/>
+				<field name="fOutroTimer" type="BinHex"/>
+			</object>
+			<object name="GameplayArea">
+				<field name="bHasGameplayArea" type="BinHex"/>
+				<field name="fGameplayAreaRadius" type="BinHex"/>
+				<field name="vec3GameplayAreaCenter" type="BinHex"/>
+				<field name="bSetByPoints" type="BinHex"/>
+				<object name="Points">
+					<field name="vec2Point0" type="BinHex"/>
+					<field name="vec2Point1" type="BinHex"/>
+					<field name="vec2Point2" type="BinHex"/>
+					<field name="vec2Point3" type="BinHex"/>
+				</object>
+			</object>
+			<object name="EntitySpawning">
+				<field name="bHasEntitySpawnPoint" type="BinHex"/>
+				<field name="vec3EntitySpawnPoint" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="Components">
+		<object name="Default">
+			<object name="RateModifiers">
+				<field name="fGlobalRateModifier" type="BinHex"/>
+				<field name="fDecryptionRateModifier" type="BinHex"/>
+				<field name="fDecryptionTeammateModifier" type="BinHex"/>
+				<field name="fTheftRateModifier" type="BinHex"/>
+				<field name="fTheftTimeoutRateModifier" type="BinHex"/>
+				<field name="fCooldownRateModifier" type="BinHex"/>
+				<field name="fOutOfBoundsRateModifier" type="BinHex"/>
+			</object>
+			<object name="InstantPickup">
+				<field name="bEnabled" type="Boolean"/>
+				<field name="fRadius" type="Float"/>
+				<field name="bEnabledInVehicle" type="BinHex"/>
+			</object>
+			<object name="Theft">
+				<field name="bEnabled" type="Boolean"/>
+				<field name="fRadius" type="Float"/>
+				<field name="bIsCylinder" type="BinHex"/>
+				<field name="fHalfHeight" type="Float"/>
+			</object>
+		</object>
+		<object name="Setup01">
+			<object name="RateModifiers">
+				<field name="fGlobalRateModifier" type="BinHex"/>
+				<field name="fDecryptionRateModifier" type="BinHex"/>
+				<field name="fDecryptionTeammateModifier" type="BinHex"/>
+				<field name="fTheftRateModifier" type="BinHex"/>
+				<field name="fTheftTimeoutRateModifier" type="BinHex"/>
+				<field name="fCooldownRateModifier" type="BinHex"/>
+				<field name="fOutOfBoundsRateModifier" type="BinHex"/>
+			</object>
+			<object name="InstantPickup">
+				<field name="bEnabled" type="Boolean"/>
+				<field name="fRadius" type="Float"/>
+				<field name="bEnabledInVehicle" type="BinHex"/>
+			</object>
+			<object name="Theft">
+				<field name="bEnabled" type="Boolean"/>
+				<field name="fRadius" type="Float"/>
+				<field name="bIsCylinder" type="BinHex"/>
+				<field name="fHalfHeight" type="Float"/>
+			</object>
+		</object>
+		<object name="Setup02">
+			<object name="RateModifiers">
+				<field name="fGlobalRateModifier" type="BinHex"/>
+				<field name="fDecryptionRateModifier" type="BinHex"/>
+				<field name="fDecryptionTeammateModifier" type="BinHex"/>
+				<field name="fTheftRateModifier" type="BinHex"/>
+				<field name="fTheftTimeoutRateModifier" type="BinHex"/>
+				<field name="fCooldownRateModifier" type="BinHex"/>
+				<field name="fOutOfBoundsRateModifier" type="BinHex"/>
+			</object>
+			<object name="InstantPickup">
+				<field name="bEnabled" type="Boolean"/>
+				<field name="fRadius" type="Float"/>
+				<field name="bEnabledInVehicle" type="BinHex"/>
+			</object>
+			<object name="Theft">
+				<field name="bEnabled" type="Boolean"/>
+				<field name="fRadius" type="Float"/>
+				<field name="bIsCylinder" type="BinHex"/>
+				<field name="fHalfHeight" type="Float"/>
+			</object>
+		</object>
+		<object name="Setup03">
+			<object name="RateModifiers">
+				<field name="fGlobalRateModifier" type="BinHex"/>
+				<field name="fDecryptionRateModifier" type="BinHex"/>
+				<field name="fDecryptionTeammateModifier" type="BinHex"/>
+				<field name="fTheftRateModifier" type="BinHex"/>
+				<field name="fTheftTimeoutRateModifier" type="BinHex"/>
+				<field name="fCooldownRateModifier" type="BinHex"/>
+				<field name="fOutOfBoundsRateModifier" type="BinHex"/>
+			</object>
+			<object name="InstantPickup">
+				<field name="bEnabled" type="Boolean"/>
+				<field name="fRadius" type="Float"/>
+				<field name="bEnabledInVehicle" type="BinHex"/>
+			</object>
+			<object name="Theft">
+				<field name="bEnabled" type="Boolean"/>
+				<field name="fRadius" type="Float"/>
+				<field name="bIsCylinder" type="BinHex"/>
+				<field name="fHalfHeight" type="Float"/>
+			</object>
+		</object>
+	</object>
+</class>

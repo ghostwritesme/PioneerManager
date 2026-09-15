@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Uimarkerinteractionbuttontypedb_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="VirtualkeysButtonClickA">
+		<object name="virtualkeyVirtualKey">
+			<field name="virtualkeyVirtualKey" type="BinHex"/>
+		</object>
+	</object>
+	<object name="VirtualkeysButtonHoldA">
+		<object name="virtualkeyVirtualKey">
+			<field name="virtualkeyVirtualKey" type="BinHex"/>
+		</object>
+	</object>
+	<object name="VirtualkeysButtonClickB">
+		<object name="virtualkeyVirtualKey">
+			<field name="virtualkeyVirtualKey" type="BinHex"/>
+		</object>
+	</object>
+	<object name="VirtualkeysButtonHoldB">
+		<object name="virtualkeyVirtualKey">
+			<field name="virtualkeyVirtualKey" type="BinHex"/>
+		</object>
+	</object>
+	<object name="VirtualkeysButtonClickX">
+		<object name="virtualkeyVirtualKey">
+			<field name="virtualkeyVirtualKey" type="BinHex"/>
+		</object>
+	</object>
+	<object name="VirtualkeysButtonHoldX">
+		<object name="virtualkeyVirtualKey">
+			<field name="virtualkeyVirtualKey" type="BinHex"/>
+		</object>
+	</object>
+	<object name="VirtualkeysButtonClickY">
+		<object name="virtualkeyVirtualKey">
+			<field name="virtualkeyVirtualKey" type="BinHex"/>
+		</object>
+	</object>
+	<object name="VirtualkeysButtonHoldY">
+		<object name="virtualkeyVirtualKey">
+			<field name="virtualkeyVirtualKey" type="BinHex"/>
+		</object>
+	</object>
+	<object name="VirtualkeysButtonRightTrigger">
+		<object name="virtualkeyVirtualKey">
+			<field name="virtualkeyVirtualKey" type="BinHex"/>
+		</object>
+	</object>
+	<object name="VirtualkeysButtonLeftBumper">
+		<object name="virtualkeyVirtualKey">
+			<field name="virtualkeyVirtualKey" type="BinHex"/>
+		</object>
+	</object>
+	<object name="VirtualkeysButtonLeftTrigger">
+		<object name="virtualkeyVirtualKey">
+			<field name="virtualkeyVirtualKey" type="BinHex"/>
+		</object>
+	</object>
+	<object name="VirtualkeysButtonRightBumper">
+		<object name="virtualkeyVirtualKey">
+			<field name="virtualkeyVirtualKey" type="BinHex"/>
+		</object>
+	</object>
+</class>

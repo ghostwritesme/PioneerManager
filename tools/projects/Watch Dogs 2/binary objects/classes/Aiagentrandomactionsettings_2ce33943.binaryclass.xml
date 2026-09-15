@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Aiagentrandomactionsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="WalkTypes">
+		<field name="fCoolDownForRegularWalkType" type="Float"/>
+		<field name="fCoolDownForNoteworthyWalkType" type="Float"/>
+		<field name="fMinDistanceToPlayer" type="Float"/>
+		<field name="fMaxDistanceToPlayer" type="Float"/>
+		<object name="WalkTypes">
+			<object name="WalkType">
+				<field name="entcontContext" type="BinHex"/>
+				<field name="selMindSet" type="Enum"/>
+				<field name="selCategory" type="Enum"/>
+				<field name="selWalkType" type="Enum"/>
+				<field name="bIsRestrictedToBehaviorModifiers" type="Boolean"/>
+				<field name="fCoolDown" type="Float"/>
+				<object name="PMSValuesNeeded">
+					<object name="PMSValue">
+						<field name="text_pmsPMSName" type="String"/>
+						<field name="pmsPMSName" type="BinHex"/>
+						<field name="selEnumValue" type="Enum"/>
+						<field name="bBoolValue" type="Boolean"/>
+					</object>
+				</object>
+				<object name="PMSValuesExcluded">
+					<object name="PMSValue">
+						<field name="text_pmsPMSName" type="String"/>
+						<field name="pmsPMSName" type="BinHex"/>
+						<field name="selEnumValue" type="Enum"/>
+						<field name="bBoolValue" type="Boolean"/>
+					</object>
+				</object>
+				<object name="BehaviorModifiersAllowed">
+					<object name="selBehaviorModifier">
+						<field name="selBehaviorModifier" type="Enum"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="Bumps">
+		<field name="fCoolDown" type="Float"/>
+		<field name="fMaxDistance" type="Float"/>
+		<field name="fMinDistanceToPlayer" type="Float"/>
+	</object>
+	<object name="GoToVehicles">
+		<field name="fCoolDown" type="Float"/>
+		<field name="fMinDistanceToPlayer" type="Float"/>
+		<object name="PMSValuesNeeded">
+			<object name="PMSValue">
+				<field name="text_pmsPMSName" type="String"/>
+				<field name="pmsPMSName" type="BinHex"/>
+				<field name="selEnumValue" type="Enum"/>
+				<field name="bBoolValue" type="Boolean"/>
+			</object>
+		</object>
+		<object name="PMSValuesExcluded"/>
+		<object name="TagsExcluded">
+			<object name="tagcategoryselectionTag">
+				<field name="text_UITagCategorySelectionClassID" type="String"/>
+				<field name="UITagCategorySelectionClassID" type="BinHex"/>
+				<field name="tagcategoryUITagCategory" type="BinHex"/>
+				<field name="tagcategoryTagCategory" type="BinHex"/>
+				<field name="tagTag" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+</class>

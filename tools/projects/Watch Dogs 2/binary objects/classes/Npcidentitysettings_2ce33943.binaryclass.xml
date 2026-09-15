@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Npcidentitysettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="npcidentityDefaultIdentity" type="BinHex"/>
+	<object name="DefaultIdentities">
+		<object name="Link">
+			<field name="npcidentityIdentity" type="BinHex"/>
+			<field name="tagVisualStereotype" type="BinHex"/>
+		</object>
+	</object>
+	<object name="SpecializedIdentities">
+		<object name="Link">
+			<field name="npcidentityIdentity" type="BinHex"/>
+			<field name="iMaximumConcurrentlySpawnedGlobally" type="Int32"/>
+			<field name="selGender" type="Enum"/>
+			<object name="VisualStereotypes">
+				<object name="tagVisualStereotype">
+					<field name="tagVisualStereotype" type="BinHex"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

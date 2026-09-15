@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="GameplayconversationsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Rules">
+		<object name="Rule">
+			<field name="text_gameplayconvoruleItemType" type="String"/>
+			<field name="gameplayconvoruleItemType" type="BinHex"/>
+			<object name="Settings">
+				<field name="fCoolDown" type="Float"/>
+				<field name="text_Bark" type="String"/>
+				<field name="Bark" type="BinHex"/>
+				<field name="fMinDamage" type="Float"/>
+				<field name="fDelayMax" type="Float"/>
+				<field name="fDistanceToStop" type="Float"/>
+				<field name="fDistanceToPause" type="Float"/>
+				<field name="fDistanceToResume" type="Float"/>
+				<field name="bInterruptUntilChaseEnd" type="Boolean" />
+				<field name="fMinDistance" type="Float"/>
+				<field name="fSpeed" type="Float"/>
+				<field name="fDelay" type="Float"/>
+			</object>
+		</object>
+	</object>
+</class>

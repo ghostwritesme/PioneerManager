@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="DetectionlevelsettingsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Intuition">
+		<field name="IntuitionHeight" type="BinHex"/>
+		<field name="TargetRCDroneIntuitionHeight" type="BinHex"/>
+		<field name="IntuitionTimeToReachMax" type="BinHex"/>
+		<field name="IntuitionTimeToReachZero" type="BinHex"/>
+		<field name="AIAgentInDefaultStateIntuitionRadius" type="BinHex"/>
+		<field name="AIAgentInAlertStateIntuitionRadius" type="BinHex"/>
+		<field name="AIAgentInConflictStateIntuitionRadius" type="BinHex"/>
+		<field name="AIAgentInSearchStateIntuitionRadius" type="BinHex"/>
+		<field name="TargetIsSprintingIntuitionRadius" type="BinHex"/>
+		<field name="TargetInRunningVehicleIntuitionRadius" type="BinHex"/>
+		<field name="TargetRCIntuitionRadius" type="BinHex"/>
+		<field name="TargetRCDroneIntuitionRadius" type="BinHex"/>
+		<field name="TargetRCToyCarIntuitionRadius" type="BinHex"/>
+	</object>
+	<object name="Detection">
+		<field name="DetectionTimeToReachTopMax" type="BinHex"/>
+		<field name="DetectionTimeToReachBottomZero" type="BinHex"/>
+	</object>
+	<object name="Modifiers">
+		<object name="Actions">
+			<field name="TargetIsArmedTimeToReachMaxModifier" type="BinHex"/>
+			<field name="TargetIsArmedTimeToReachZeroModifier" type="BinHex"/>
+			<field name="TargetIsDoingTakeDownTimeToReachMaxModifier" type="BinHex"/>
+			<field name="TargetIsDoingTakeDownTimeToReachZeroModifier" type="BinHex"/>
+			<field name="TargetIsEnterExitVehicleTimeToReachMaxModifier" type="BinHex"/>
+			<field name="TargetIsEnterExitVehicleTimeToReachZeroModifier" type="BinHex"/>
+			<field name="TargetIsThrowProjectileTimeToReachMaxModifier" type="BinHex"/>
+			<field name="TargetIsThrowProjectileTimeToReachZeroModifier" type="BinHex"/>
+			<field name="TargetIsSprintingTimeToReachMaxModifier" type="BinHex"/>
+			<field name="TargetIsSprintingTimeToReachZeroModifier" type="BinHex"/>
+			<field name="TargetIsCollidingWithMeTimeToReachMaxModifier" type="BinHex"/>
+			<field name="TargetIsCollidingWithMeTimeToReachZeroModifier" type="BinHex"/>
+			<field name="TargetIsShootingTimeToReachMaxModifier" type="BinHex"/>
+			<field name="TargetIsShootingTimeToReachZeroModifier" type="BinHex"/>
+		</object>
+		<object name="Blackout">
+			<field name="TargetInBlackoutTimeToReachMaxModifier" type="BinHex"/>
+			<field name="TargetInBlackoutTimeToReachZeroModifier" type="BinHex"/>
+			<field name="TargetInBlackoutBackupTimeToReachMaxModifier" type="BinHex"/>
+			<field name="TargetInBlackoutBackupTimeToReachZeroModifier" type="BinHex"/>
+		</object>
+		<object name="Identity">
+			<field name="TargetIsFlyingDroneTimeToReachMaxModifier" type="BinHex"/>
+			<field name="TargetIsFlyingDroneTimeToReachZeroModifier" type="BinHex"/>
+			<field name="TargetIsRCToyCarTimeToReachMaxModifier" type="BinHex"/>
+			<field name="TargetIsRCToyCarTimeToReachZeroModifier" type="BinHex"/>
+			<field name="TargetIsLargeRCTimeToReachMaxModifier" type="BinHex"/>
+			<field name="TargetIsLargeRCTimeToReachZeroModifier" type="BinHex"/>
+		</object>
+		<object name="InVehicle">
+			<field name="TargetInRunningVehicleTimeToReachMaxModifier" type="BinHex"/>
+			<field name="TargetInRunningVehicleTimeToReachZeroModifier" type="BinHex"/>
+			<field name="TargetInRunningVehicleForBlockersTimeToReachMaxModifier" type="BinHex"/>
+			<field name="TargetInRunningVehicleForBlockersTimeToReachZeroModifier" type="BinHex"/>
+		</object>
+		<object name="LockDown">
+			<field name="LockDownTimeToReachMaxModifier" type="BinHex"/>
+			<field name="LockDownTimeToReachZeroModifier" type="BinHex"/>
+		</object>
+		<object name="OffScreen">
+			<field name="AIAgentOffScreenTimeToReachMaxModifier" type="BinHex"/>
+			<field name="AIAgentOffScreenTimeToReachZeroModifier" type="BinHex"/>
+		</object>
+		<object name="States">
+			<object name="DefaultState">
+				<field name="AIAgentInDefaultStateTimeToReachMaxModifier" type="BinHex"/>
+				<field name="AIAgentInDefaultStateTimeToReachZeroModifier" type="BinHex"/>
+			</object>
+			<object name="AlertState">
+				<field name="AIAgentInAlertStateTimeToReachMaxModifier" type="BinHex"/>
+				<field name="AIAgentInAlertStateTimeToReachZeroModifier" type="BinHex"/>
+			</object>
+			<object name="ConflictState">
+				<field name="AIAgentInConflictStateLOSReacquisitionCoolDown" type="BinHex"/>
+				<field name="AIAgentInConflictStateLOSReacquisitionMaxTime" type="BinHex"/>
+				<field name="AIAgentInConflictStateTimeToReachMaxModifier" type="BinHex"/>
+				<field name="AIAgentInConflictStateTimeToReachZeroModifier" type="BinHex"/>
+			</object>
+			<object name="SearchState">
+				<field name="AIAgentInSearchStateTimeToReachMaxModifier" type="BinHex"/>
+				<field name="AIAgentInSearchStateTimeToReachZeroModifier" type="BinHex"/>
+				<field name="AIAgentInTargetedSearchStateTimeToReachMaxModifier" type="BinHex"/>
+				<field name="AIAgentInTargetedSearchStateTimeToReachZeroModifier" type="BinHex"/>
+			</object>
+		</object>
+		<object name="Stims">
+			<field name="AIAgentHasHeardGunShotTimeoutModifier" type="BinHex"/>
+			<field name="AIAgentHasHeardGunShotTimeToReachMaxModifier" type="BinHex"/>
+			<field name="AIAgentHasHeardGunShotTimeToReachZeroModifier" type="BinHex"/>
+		</object>
+		<object name="Zones">
+			<field name="TargetInRestrictedZoneTimeToReachMaxModifier" type="BinHex"/>
+			<field name="TargetInRestrictedZoneTimeToReachZeroModifier" type="BinHex"/>
+			<field name="TargetInForbiddenZoneTimeToReachMaxModifier" type="BinHex"/>
+			<field name="TargetInForbiddenZoneTimeToReachZeroModifier" type="BinHex"/>
+		</object>
+		<object name="Curves">
+			<field name="bUseTargetDistanceAndFOVRatioCurve" type="Boolean"/>
+			<object name="curveDetectionTimeModifierByTargetDistanceAndFOVRatioCurve">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="curveDetectionTimeModifierByTargetDistanceCurve">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="curveDetectionTimeModifierByTargetAngleCurve">
+				<inherit name="KnotsParameters"/>
+			</object>
+			<object name="curveDetectionTimeModifierByTargetSpeedCurve">
+				<inherit name="KnotsParameters"/>
+			</object>
+		</object>
+	</object>
+	<object name="DeadBodies">
+		<field name="DeadBodiesDetectionRadius" type="BinHex"/>
+	</object>
+	<object name="ExplodedEntities">
+		<field name="ExplodedEntitiesDetectionRadius" type="BinHex"/>
+	</object>
+	<object name="LastKnownPosition">
+		<field name="TargetIsSprintingAutomaticLKPUpdateRadius" type="BinHex"/>
+	</object>
+</class>

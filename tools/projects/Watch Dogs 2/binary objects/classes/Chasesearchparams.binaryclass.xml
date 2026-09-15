@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ChasesearchparamsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Ranges">
+		<field name="fSearchZoneRadius" type="Float"/>
+	</object>
+	<object name="Timers">
+		<field name="fNearTargetStrategyTimer" type="Float"/>
+		<field name="fNeatTargetStrategyCooldown" type="Float"/>
+		<field name="fQuickEscapeTimer" type="Float"/>
+		<field name="fFirstSlowEscapeTimer" type="Float"/>
+		<field name="fSlowEscapeTimer" type="Float"/>
+		<field name="fMinTimeForInfiniteSearch" type="Float"/>
+	</object>
+	<object name="Strategies">
+		<field name="fResetStrategyCycleTimer" type="Float"/>
+		<field name="uiMaxCarStrategyPredicAhead" type="Int64"/>
+		<field name="uiMaxCarStrategyPredictBack" type="Int64"/>
+		<field name="uiMaxCarStrategyPredictCenter" type="Int64"/>
+		<field name="uiMaxCarStrategyRandom" type="Int64"/>
+		<field name="uiMaxCarStrategyNearTarget" type="Int64"/>
+		<object name="InfiniteSearch">
+			<field name="fResetStrategyCycleTimer" type="Float"/>
+			<field name="uiMaxCarStrategyPredicAhead" type="Int64"/>
+			<field name="uiMaxCarStrategyPredictBack" type="Int64"/>
+			<field name="uiMaxCarStrategyPredictCenter" type="Int64"/>
+			<field name="uiMaxCarStrategyRandom" type="Int64"/>
+			<field name="uiMaxCarStrategyNearTarget" type="Int64"/>
+		</object>
+		<object name="PostStrategySelectionRatio">
+			<field name="fDriveTowardTargetRatio" type="Float"/>
+			<field name="fDriveInTargetDirectionRatio" type="Float"/>
+			<field name="fDriveAwayTargetRatio" type="Float"/>
+		</object>
+	</object>
+	<object name="Speed">
+		<field name="fMaxSpeedOutSearchZone" type="Float"/>
+		<field name="fSpeedLimitRatioInSearchZone" type="Float"/>
+		<field name="fSpeedLimitRatioNearTarget" type="Float"/>
+		<object name="DrivingModeAndSpeedAdjustment">
+			<object name="StandardSearch">
+				<field name="MaxDistForSpeedAdjustment" type="BinHex"/>
+				<field name="MinDistForSpeedAdjustment" type="BinHex"/>
+			</object>
+			<object name="InfiniteSearch">
+				<field name="fResetStrategyCycleTimer" type="Float"/>
+				<field name="uiMaxCarStrategyPredicAhead" type="Int64"/>
+				<field name="uiMaxCarStrategyPredictBack" type="Int64"/>
+				<field name="uiMaxCarStrategyPredictCenter" type="Int64"/>
+				<field name="uiMaxCarStrategyRandom" type="Int64"/>
+				<field name="uiMaxCarStrategyNearTarget" type="Int64"/>
+				<field name="MaxDistForSpeedAdjustment" type="BinHex"/>
+				<field name="MinDistForSpeedAdjustment" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="Misc">
+		<field name="bCanUsePartialBlockedLane" type="Boolean"/>
+		<field name="bObeyIntersections" type="Boolean"/>
+		<field name="bUseShortcutLanes" type="Boolean"/>
+	</object>
+	<object name="Alley">
+		<field name="fCooldown" type="Float"/>
+	</object>
+	<object name="PlayerZoneSize">
+		<object name="StandardSearch">
+			<field name="MaxDistForSpeedAdjustment" type="BinHex"/>
+			<field name="MinDistForSpeedAdjustment" type="BinHex"/>
+			<field name="fStartSize" type="Float"/>
+			<field name="fStopSize" type="Float"/>
+			<field name="fIncreaseSizeBySec" type="Float"/>
+		</object>
+		<object name="InfiniteSearch">
+			<field name="fResetStrategyCycleTimer" type="Float"/>
+			<field name="uiMaxCarStrategyPredicAhead" type="Int64"/>
+			<field name="uiMaxCarStrategyPredictBack" type="Int64"/>
+			<field name="uiMaxCarStrategyPredictCenter" type="Int64"/>
+			<field name="uiMaxCarStrategyRandom" type="Int64"/>
+			<field name="uiMaxCarStrategyNearTarget" type="Int64"/>
+			<field name="fStartSize" type="Float"/>
+			<field name="fStopSize" type="Float"/>
+			<field name="fIncreaseSizeBySec" type="Float"/>
+		</object>
+	</object>
+</class>

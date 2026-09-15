@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="UitagimagesettingsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="iHorizontalMargin" type="Int32"/>
+	<field name="iVerticalMargin" type="Int32"/>
+	<field name="bSetWidth" type="Boolean"/>
+	<field name="uiWidth" type="UInt32"/>
+	<field name="bSetHeight" type="Boolean"/>
+	<field name="uiHeight" type="UInt32"/>
+	<field name="selAlignment" type="Enum"/>
+	<field name="texturedbobjectImage" type="BinHex"/>
+</class>

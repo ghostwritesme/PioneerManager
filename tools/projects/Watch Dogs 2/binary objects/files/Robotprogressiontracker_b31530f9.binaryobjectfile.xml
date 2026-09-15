@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Robotprogressiontracker_b31530f9">
+	<object name="obj">
+		<inherit name="Robotprogressiontracker_b31530f9Parameters"/>
+	</object>
+</file>

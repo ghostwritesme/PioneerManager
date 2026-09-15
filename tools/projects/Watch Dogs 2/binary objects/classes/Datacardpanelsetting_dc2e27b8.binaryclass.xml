@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Datacardpanelsetting_dc2e27b8Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fDisplayTimeMin" type="Float"/>
+	<field name="fDisplayTimeMax" type="Float"/>
+</class>

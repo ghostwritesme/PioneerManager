@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Graphickit_config_ec77689fParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_archDefaultArchetype" type="String"/>
+	<field name="archDefaultArchetype" type="BinHex"/>
+	<field name="graphickitparttypeMaskPartType" type="BinHex"/>
+	<field name="graphickitmodeltypeDefaultModelType" type="BinHex"/>
+	<field name="selResourceSizePlatform" type="Enum"/>
+	<object name="BoneAttachements">
+		<object name="BoneAttachment">
+			<field name="text_BoneAttachment" type="String"/>
+			<field name="BoneAttachment" type="BinHex"/>
+		</object>
+	</object>
+	<object name="BlenderSettings">
+		<field name="graphickitmodeltypeDefaultModelType" type="BinHex"/>
+		<object name="ModelTypes"/>
+	</object>
+	<object name="MultiTagEditorSettings">
+		<field name="graphickitmodeltypeDefaultModelType" type="BinHex"/>
+	</object>
+</class>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Notificationmanagersettings_dc0deb9dParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_sNotificationRumbleId" type="String"/>
+	<field name="sNotificationRumbleId" type="BinHex"/>
+	<object name="NewDedSecWorldStory">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="fRestTimeAfterDisplay" type="Float"/>
+	</object>
+	<object name="NewDedSecMission">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="fRestTimeAfterDisplay" type="Float"/>
+	</object>
+	<object name="DedSecMissionComplete">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="fRestTimeAfterDisplay" type="Float"/>
+	</object>
+	<object name="DedSecObjectiveUpdate">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="fRestTimeAfterDisplay" type="Float"/>
+	</object>
+	<object name="Map">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="fRestTimeAfterDisplay" type="Float"/>
+	</object>
+	<object name="MediaPlayer">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="fRestTimeAfterDisplay" type="Float"/>
+	</object>
+	<object name="AppStore">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="fRestTimeAfterDisplay" type="Float"/>
+	</object>
+	<object name="Tutorial">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="fRestTimeAfterDisplay" type="Float"/>
+	</object>
+	<object name="AudioLogs">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="fRestTimeAfterDisplay" type="Float"/>
+	</object>
+	<object name="CarOnDemand">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="fRestTimeAfterDisplay" type="Float"/>
+	</object>
+	<object name="ContactList">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="fRestTimeAfterDisplay" type="Float"/>
+	</object>
+	<object name="TaxiActivity">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="fRestTimeAfterDisplay" type="Float"/>
+	</object>
+	<object name="ScoutXTargets">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="fRestTimeAfterDisplay" type="Float"/>
+	</object>
+	<object name="ScoutXFriends">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="fRestTimeAfterDisplay" type="Float"/>
+	</object>
+	<object name="ScoutXTargetNearby">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="fRestTimeAfterDisplay" type="Float"/>
+	</object>
+	<object name="ScoutXTargetNotAvailable">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="fRestTimeAfterDisplay" type="Float"/>
+	</object>
+	<object name="ScoutXRewardUnlocked">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="fRestTimeAfterDisplay" type="Float"/>
+	</object>
+	<object name="ResearchTreeUniqueIngredient">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="fRestTimeAfterDisplay" type="Float"/>
+	</object>
+	<object name="ResearchTreePurchasableResearch">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="fRestTimeAfterDisplay" type="Float"/>
+	</object>
+	<object name="SongSneak">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="fRestTimeAfterDisplay" type="Float"/>
+	</object>
+	<object name="PrepareEngage">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="fRestTimeAfterDisplay" type="Float"/>
+	</object>
+	<object name="HackerSpace">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="fRestTimeAfterDisplay" type="Float"/>
+	</object>
+	<object name="Activities">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="fRestTimeAfterDisplay" type="Float"/>
+	</object>
+	<object name="LeaderboardNewSeason">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="fRestTimeAfterDisplay" type="Float"/>
+	</object>
+	<object name="LeaderboardDivisionChange">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="fRestTimeAfterDisplay" type="Float"/>
+	</object>
+	<object name="UbisoftClubChallenge">
+		<field name="fDisplayTime" type="Float"/>
+		<field name="fRestTimeAfterDisplay" type="Float"/>
+	</object>
+</class>

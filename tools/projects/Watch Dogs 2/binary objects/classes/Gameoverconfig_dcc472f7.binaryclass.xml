@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Gameoverconfig_dcc472f7Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fGameOverTimeBeforeRespawn" type="Float"/>
+	<field name="fGameOverTimeBeforeBlackScreen" type="Float"/>
+	<field name="fTimeShiftRatio" type="Float"/>
+	<field name="fTimeShiftTransitionDuration" type="Float"/>
+	<field name="vec2TimeShiftTransitionSCurve" type="Vector2"/>
+</class>

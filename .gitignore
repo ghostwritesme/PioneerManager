@@ -1,0 +1,17 @@
+# Build output
+build/
+
+# Local runtime data / user config
+config.json
+workspace/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

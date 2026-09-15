@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Rewardglobalsettings_108b3224Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="ItemTypesCooldown">
+		<object name="ItemTypeCooldown">
+			<inherit name="SharedParameters"/>
+			<field name="text_itemdescriptorItemDescriptor" type="String"/>
+			<field name="itemdescriptorItemDescriptor" type="BinHex"/>
+			<field name="fCoolDown" type="Float"/>
+		</object>
+	</object>
+</class>

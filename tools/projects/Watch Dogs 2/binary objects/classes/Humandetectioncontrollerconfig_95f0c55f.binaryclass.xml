@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Humandetectioncontrollerconfig_95f0c55fParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fPlayerDistanceToZoomGps" type="Float"/>
+	<field name="fMaxDistanceForThreatForEliteGrenadier" type="BinHex"/>
+	<object name="Zones"/>
+	<object name="Threat">
+		<field name="LKPCombatStateThreat" type="BinHex"/>
+		<field name="DistanceWeight" type="BinHex"/>
+		<field name="DistanceWeightForEliteGrenadier" type="BinHex"/>
+		<field name="VisibilityThreat" type="BinHex"/>
+		<field name="StickyThreat" type="BinHex"/>
+		<field name="LastDamageThreat" type="BinHex"/>
+		<field name="LastDamageDecay" type="BinHex"/>
+		<field name="LastNearMissThreat" type="BinHex"/>
+		<field name="LastNearMissDecay" type="BinHex"/>
+		<field name="LastFiredGunThreat" type="BinHex"/>
+		<field name="LastFiredGunDecay" type="BinHex"/>
+		<field name="CloseRangeDistance" type="BinHex"/>
+		<field name="CloseRangeThreat" type="BinHex"/>
+		<field name="CloseRangeThreatSniperModifier" type="BinHex"/>
+		<field name="DrivingVehicleThreat" type="BinHex"/>
+		<field name="PrimaryTargetThreat" type="BinHex"/>
+		<field name="PlayerThreat" type="BinHex"/>
+		<field name="ShootingTicketAvailableThreat" type="BinHex"/>
+		<field name="AnimalThreat" type="BinHex"/>
+		<field name="EliteGrenadierCloseTeammatesThreat" type="BinHex"/>
+		<object name="ChaseTargetThreat">
+			<field name="ForPoliceSniperInLOS" type="BinHex"/>
+			<field name="ForPoliceSniperOutOfLOS" type="BinHex"/>
+			<field name="ForOthersInLOS" type="BinHex"/>
+			<field name="ForOthersOutOfLOS" type="BinHex"/>
+			<field name="Hitman" type="BinHex"/>
+		</object>
+	</object>
+</class>

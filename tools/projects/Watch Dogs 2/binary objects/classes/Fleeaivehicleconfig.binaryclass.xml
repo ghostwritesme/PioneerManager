@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="FleeaivehicleconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Behavior">
+		<field name="vehiclebhvsetupVehicleBhvSetup" type="BinHex"/>
+		<field name="floatingvehiclebhvsetupFloatingVehicleBhvSetup" type="BinHex"/>
+	</object>
+	<object name="VehicleSelection">
+		<field name="vehicleselectionconfigVehicleSelectionConfig" type="BinHex"/>
+	</object>
+</class>

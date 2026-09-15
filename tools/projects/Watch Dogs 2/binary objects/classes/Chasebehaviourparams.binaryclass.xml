@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ChasebehaviourparamsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="bAgentsTryArrest" type="Boolean"/>
+	<field name="bIsSeatedCombatAllowed" type="Boolean"/>
+	<field name="fMaxTargetSpeedForShootingWhileDrivingKPH" type="Float"/>
+	<field name="fFirstIntuitionTimer" type="Float"/>
+	<field name="fTyreShootoutTimeBeforeEnabled" type="Float"/>
+	<field name="fTyreShootoutHitChanceMax" type="Float"/>
+	<field name="fTyreShootoutHitChanceInterpolateTime" type="Float"/>
+	<field name="fTyreShootoutCooldown" type="Float"/>
+	<field name="maneuverdbManeuverDatabase" type="BinHex"/>
+	<field name="chaseperfcfgPerformanceConfig" type="BinHex"/>
+	<field name="drvstyleDrivingStyle" type="BinHex"/>
+	<field name="fCombatRange" type="Float"/>
+	<field name="fChaseRange" type="Float"/>
+	<object name="PassengerCoordination">
+		<object name="PlayerInVehicle">
+			<field name="uiDesiredOnFootNPCs" type="Int64"/>
+		</object>
+		<object name="PlayerOnFoot">
+			<field name="uiDesiredOnFootNPCs" type="Int64"/>
+			<field name="uiDesiredDriverNPCs" type="Int64"/>
+			<field name="fOnFootCombatDurationForFullDriverOffload" type="Float"/>
+		</object>
+	</object>
+</class>

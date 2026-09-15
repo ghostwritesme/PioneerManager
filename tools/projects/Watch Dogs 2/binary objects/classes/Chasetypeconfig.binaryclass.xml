@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ChasetypeconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selFelonyType" type="Enum"/>
+	<field name="bTrafficStopAtIntersection" type="Boolean"/>
+	<field name="fGateUnblockingDelay" type="Float"/>
+	<field name="fGateSubsequentUnblockingDelay" type="Float"/>
+	<field name="mapicondescRoadBlockMapIcon" type="BinHex"/>
+	<object name="Sounds">
+		<field name="sndChaseStartedSound" type="BinHex"/>
+		<field name="sndChaseStoppedSound" type="BinHex"/>
+		<field name="sndSearchStartedSound" type="BinHex"/>
+		<field name="sndSearchStoppedSound" type="BinHex"/>
+	</object>
+	<object name="SquelchSounds">
+		<field name="text_sndChopperStartSquelch" type="String"/>
+		<field name="sndChopperStartSquelch" type="BinHex"/>
+		<field name="text_sndPatrolStartSquelch" type="String"/>
+		<field name="sndPatrolStartSquelch" type="BinHex"/>
+		<field name="sndDispatchStartSquelch" type="BinHex"/>
+		<field name="sndOperator911StartSquelch" type="BinHex"/>
+		<field name="text_sndBoatStartSquelch" type="String"/>
+		<field name="sndBoatStartSquelch" type="BinHex"/>
+		<field name="text_sndChopperStopSquelch" type="String"/>
+		<field name="sndChopperStopSquelch" type="BinHex"/>
+		<field name="text_sndPatrolStopSquelch" type="String"/>
+		<field name="sndPatrolStopSquelch" type="BinHex"/>
+		<field name="sndDispatchStopSquelch" type="BinHex"/>
+		<field name="sndOperator911StopSquelch" type="BinHex"/>
+		<field name="text_sndBoatStopSquelch" type="String"/>
+		<field name="sndBoatStopSquelch" type="BinHex"/>
+	</object>
+	<object name="SoundArchetypes">
+		<object name="PilotArchetypes">
+			<object name="Pilot">
+				<field name="text_archArchetype" type="String"/>
+				<field name="archArchetype" type="BinHex"/>
+			</object>
+		</object>
+		<object name="PatrolArchetypes">
+			<object name="Patrol">
+				<field name="text_archArchetype" type="String"/>
+				<field name="archArchetype" type="BinHex"/>
+			</object>
+		</object>
+		<object name="DispatchArchetypes">
+			<object name="Dispatch">
+				<field name="text_archArchetype" type="String"/>
+				<field name="archArchetype" type="BinHex"/>
+			</object>
+		</object>
+		<object name="OperatorArchetypes">
+			<object name="Operator">
+				<field name="text_archArchetype" type="String"/>
+				<field name="archArchetype" type="BinHex"/>
+			</object>
+		</object>
+		<object name="BoatArchetypes">
+			<object name="Boat">
+				<field name="text_archArchetype" type="String"/>
+				<field name="archArchetype" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="NonPlayerTargetParams">
+		<field name="chaselevelparametersHighEscalationParams" type="BinHex"/>
+		<field name="chaselevelparametersLowEscalationParams" type="BinHex"/>
+	</object>
+	<object name="LowBudget">
+		<field name="chasestageconfigCopStage" type="BinHex"/>
+	</object>
+</class>

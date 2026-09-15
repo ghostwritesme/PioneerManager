@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="TagconflictconfigurationsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="TagConflictGroups">
+		<object name="TagConflictGroup">
+			<object name="TagConflictGroupEntries">
+				<object name="TagConflictGroupEntry">
+					<field name="tagcategoryTagCategory" type="BinHex"/>
+					<field name="bUseAllTagsFromCategory" type="Boolean"/>
+					<object name="tagcategoryselectionTagCategorySelection">
+						<field name="text_UITagCategorySelectionClassID" type="String"/>
+						<field name="UITagCategorySelectionClassID" type="BinHex"/>
+						<field name="tagcategoryUITagCategory" type="BinHex"/>
+						<object name="Tags">
+						    <object name="Tag">
+						        <field name="tagTag" type="BinHex"/>
+						    </object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="SwatreinforcementconfigParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Trucks">
+		<field name="uiMaxNumSWATTrucks" type="Int64"/>
+		<field name="fSWATTruckInitialDelay" type="Float"/>
+		<field name="fSWATTruckInterval" type="Float"/>
+	</object>
+</class>

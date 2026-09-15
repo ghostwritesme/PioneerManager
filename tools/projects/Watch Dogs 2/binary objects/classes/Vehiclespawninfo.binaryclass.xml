@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehiclespawninfoParameters">
+	<inherit name="SharedParameters"/>
+	<field name="text_archArchetype" type="String"/>
+	<field name="archArchetype" type="BinHex"/>
+	<field name="bIsTraffic" type="Boolean"/>
+	<field name="bIsParking" type="Boolean"/>
+	<field name="bIsParkingEnticer" type="Boolean"/>
+	<field name="bIsBoat" type="Boolean"/>
+	<field name="selRoadNetworkRailVehicleType" type="Enum"/>
+	<field name="selVehicleType" type="Enum"/>
+	<field name="fMaxInitialDeform" type="Float"/>
+	<field name="fMaxInitialScratches" type="Float"/>
+	<field name="bOverrideDirtValues" type="Boolean"/>
+	<field name="sDebugName" type="String"/>
+	<object name="TrafficSpawningContexts"/>
+	<object name="Parking">
+		<field name="fBaseParkingAngle" type="Float"/>
+		<field name="fRandomParkingAngle" type="Float"/>
+		<field name="fRandomParkingOffsetLow" type="Float"/>
+		<field name="fRandomParkingOffsetHigh" type="Float"/>
+	</object>
+	<object name="Spawning">
+		<field name="fCoolDown" type="Float"/>
+	</object>
+	<object name="Passenger">
+		<object name="PassengerSpec">
+			<field name="graphickittagspecNormal" type="BinHex"/>
+			<field name="graphickittagspecHighEnd" type="BinHex"/>
+		</object>
+		<object name="PeopleSpawnInfo">
+			<field name="peopleinfoNormal" type="BinHex"/>
+			<field name="peopleinfoHighEnd" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Driver">
+		<object name="DriverSpec">
+			<field name="graphickittagspecNormal" type="BinHex"/>
+			<field name="graphickittagspecHighEnd" type="BinHex"/>
+		</object>
+		<object name="DriverSpawnInfo">
+			<field name="peopleinfoNormal" type="BinHex"/>
+			<field name="peopleinfoHighEnd" type="BinHex"/>
+		</object>
+	</object>
+</class>

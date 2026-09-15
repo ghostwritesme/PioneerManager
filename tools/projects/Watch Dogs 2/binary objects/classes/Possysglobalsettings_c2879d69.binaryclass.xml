@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Possysglobalsettings_c2879d69Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fAnchorRadius" type="Float"/>
+	<field name="fAnchorFocusRadius" type="Float"/>
+	<field name="fAnchorUnfocusRadius" type="Float"/>
+	<field name="uitweensettingAnchorFocusTween" type="BinHex"/>
+	<field name="uitweensettingAnchorUnfocusTween" type="BinHex"/>
+	<field name="fHackerSpaceMissionPreviewOffset" type="Float"/>
+</class>

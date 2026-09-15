@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Onlineactivitysettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="bNeutralEncounterEnabled" type="Boolean"/>
+	<field name="bEmergentCollabEnabled" type="Boolean"/>
+	<field name="bOnlineHackingIntruderEnabled" type="Boolean"/>
+	<field name="bFriendInvasionEnabled" type="BinHex"/>
+	<field name="bOnlineHackingVictimEnabled" type="Boolean"/>
+	<field name="bBountyHunterEnabled" type="Boolean"/>
+	<field name="bBountyTargetEnabled" type="Boolean"/>
+	<field name="bCoopPullRequestEnabled" type="BinHex"/>
+	<field name="bSeamlessCoopMissionsEnabled" type="Boolean"/>
+	<field name="bVersusShowdownEnabled" type="BinHex"/>
+	<field name="availabilityrulegroupOnlineActivitiesAvailabilityRule" type="BinHex"/>
+	<field name="availabilityrulegroupSeamlessNeutralActivitiesAvailabilityRule" type="BinHex"/>
+	<field name="availabilityrulegroupHoratioIsDeadAvailabilityRule" type="BinHex"/>
+	<field name="progressiontagInvasionPlayedOnceProgressionTag" type="BinHex"/>
+	<field name="fMatchmakingActivityAvailabilityCheckTimeout" type="BinHex"/>
+	<field name="fMatchmakingTimeout" type="Float"/>
+	<field name="fMatchmakingPhaseBountyOnMeForgingEvidenceDuration" type="Float"/>
+	<field name="fMatchmakingPhase1ModeSpecificTextDuration" type="Float"/>
+	<field name="fMatchmakingPhase2ScanningTextDuration" type="Float"/>
+	<field name="fMatchmakingPhase3ExpandingTextDuration" type="Float"/>
+	<field name="fAvailabilityBlockAfterExclusiveMissionMin" type="Float"/>
+	<field name="fAvailabilityBlockAfterExclusiveMissionMax" type="Float"/>
+	<field name="fMaxDistanceForPullRequestLowImpactMerge" type="Float"/>
+	<field name="fMaxDistanceForLootTruckOnFootPullRequestLowImpactMerge" type="Float"/>
+	<field name="fMaxDistanceForLootTruckInVehiculePullRequestLowImpactMerge" type="Float"/>
+	<field name="bPullRequestBountyHunterInCoopEnabled" type="Boolean"/>
+	<field name="bPullRequestBountyTargetInCoopEnabled" type="Boolean"/>
+	<field name="fOnlineHackingSettingChangeForcedDuration" type="Float"/>
+	<field name="fBountyHunterSettingChangeForcedDuration" type="Float"/>
+	<field name="fMatchmakingFriendsTimeout" type="Float"/>
+	<field name="fDistanceFromHackerSpaceToIgnoreNeutralEncounterCooldown" type="Float"/>
+	<field name="fDistanceFromHackerSpaceToBlockOnlineActivitiesExceptNeutralEncounter" type="Float"/>
+</class>

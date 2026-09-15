@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Debugmatchingsessionconfig_2c9ffee6Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="GameSessionInfoConfig">
+		<inherit name="SharedParameters"/>
+		<field name="fWeight" type="Float"/>
+		<field name="fScoreOffset" type="Float"/>
+		<field name="sDesiredClientCount" type="BinHex"/>
+		<field name="selCoopPreference" type="BinHex"/>
+		<field name="selCoopRestriction" type="BinHex"/>
+	</object>
+</class>

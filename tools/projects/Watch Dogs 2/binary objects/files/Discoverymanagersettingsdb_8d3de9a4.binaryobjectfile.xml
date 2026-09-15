@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Discoverymanagersettingsdb_8d3de9a4">
+	<object name="obj">
+		<inherit name="Discoverymanagersettingsdb_8d3de9a4Parameters"/>
+	</object>
+</file>

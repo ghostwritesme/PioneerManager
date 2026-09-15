@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ConversationsettingParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selInterruptPriority" type="Enum"/>
+	<field name="lookatsettingDefaultLookAt" type="BinHex"/>
+	<field name="text_selConversationName" type="String"/>
+	<field name="selConversationName" type="Enum"/>
+	<field name="bDisableDefaultLayeredAnimations" type="Boolean"/>
+	<object name="AnimatedConversationLines">
+		<object name="Line">
+			<field name="LineID" type="BinHex"/>
+			<object name="ActorLines">
+				<object name="Actor">
+					<field name="bPlayFullBody" type="Boolean"/>
+					<field name="emotionEmotion" type="BinHex"/>
+					<field name="lookatsettingLookAt" type="BinHex"/>
+					<field name="text_Actor" type="String"/>
+					<field name="Actor" type="BinHex"/>
+					<field name="Text" type="String"/>
+					<object name="FullBodyMove">
+						<field name="text_fileMovePath" type="String"/>
+						<field name="fileMovePath" type="BinHex"/>
+					</object>
+					<object name="LayeredMove">
+						<field name="text_fileMovePath" type="String"/>
+						<field name="fileMovePath" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="ResumingAnimatedLines">
+		<object name="Line">
+			<field name="LineID" type="BinHex"/>
+			<object name="ActorLines">
+				<object name="Actor">
+					<field name="bPlayFullBody" type="Boolean"/>
+					<field name="emotionEmotion" type="BinHex"/>
+					<field name="lookatsettingLookAt" type="BinHex"/>
+					<field name="text_Actor" type="String"/>
+					<field name="Actor" type="BinHex"/>
+					<field name="Text" type="String"/>
+					<object name="FullBodyMove">
+						<field name="text_fileMovePath" type="String"/>
+						<field name="fileMovePath" type="BinHex"/>
+					</object>
+					<object name="LayeredMove">
+						<field name="text_fileMovePath" type="String"/>
+						<field name="fileMovePath" type="BinHex"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

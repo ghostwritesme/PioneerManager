@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Feetiksettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="EffectorWeightDamp" type="Float"/>
+	<field name="HipsHeightAdjustDamp" type="Float"/>
+	<field name="HipsPitchAdjustDamp" type="Float"/>
+	<field name="RootSpringOvershoot" type="Float"/>
+	<field name="RootSpringDefaultStiffnessUp" type="Float"/>
+	<field name="RootSpringDefaultStiffnessDown" type="Float"/>
+	<field name="FootOffGroundThreshold" type="Float"/>
+	<field name="PlaneNormalDamp" type="Float"/>
+	<field name="PlaneTransDamp" type="Float"/>
+	<field name="ExtraLegLengthForHipsAdjust" type="Float"/>
+	<field name="ExtraLegLengthForClamp" type="Float"/>
+	<field name="HipsPitchLeanMultiplier" type="Float"/>
+	<field name="HipsPitchMax" type="Float"/>
+	<field name="HipsPitchMin" type="Float"/>
+	<field name="HipsPitchLeanVelStart" type="Float"/>
+	<field name="HipsPitchLeanVelEnd" type="Float"/>
+	<field name="FootPitchLimit" type="Float"/>
+	<field name="FootRollLimit" type="Float"/>
+	<field name="ActivationDamping" type="Float"/>
+	<field name="SocketDamping" type="Float"/>
+	<field name="SocketUnlockDistanceFwd" type="Float"/>
+	<field name="SocketUnlockDistanceSide" type="Float"/>
+	<field name="SocketUnlockHeight" type="Float"/>
+	<field name="SocketUnlockAngle" type="Float"/>
+	<field name="SocketUnlockVelVertical" type="Float"/>
+	<field name="SocketLockToeVel2D" type="Float"/>
+	<field name="SocketLockMinVel2D" type="Float"/>
+	<field name="SocketLockMaxWeight" type="Float"/>
+	<field name="FootHeightBlendingBegins" type="Float"/>
+	<field name="FootHeightBlendingEnds" type="Float"/>
+	<field name="MaleToeBoneToTip" type="Float"/>
+	<field name="MaleToeBoneToHeel" type="Float"/>
+	<field name="FemaleToeBoneToTip" type="Float"/>
+	<field name="FemaleToeBoneToHeel" type="Float"/>
+	<field name="FemaleHighHeelToeBoneToTip" type="Float"/>
+	<field name="FemaleHighHeelToeBoneToHeel" type="Float"/>
+	<field name="FootRadius" type="Float"/>
+	<field name="StairCapsulePathDistance" type="Float"/>
+	<field name="StairCapsulePathHeight" type="Float"/>
+	<field name="HysteresisStairLockDistance" type="Float"/>
+	<field name="HysteresisRaycastDistance" type="Float"/>
+	<field name="HysteresisRaycastCosineAngle" type="Float"/>
+	<field name="MaxFootHeightDifference" type="Float"/>
+	<field name="MinFootHeightForLegModification" type="Float"/>
+	<field name="MaxFootHeightForLegModification" type="Float"/>
+	<field name="MinRaycastHeight" type="Float"/>
+	<field name="MinRaycastDepth" type="Float"/>
+	<field name="MaxRaycastHeightRadius" type="Float"/>
+	<field name="SlopeAngleLimitForCoverInDegrees" type="Float"/>
+	<field name="SlopeAngleHysteresisForCoverInDegrees" type="Float"/>
+	<object name="FramesPerRaycast">
+		<field name="Normal" type="Enum"/>
+		<field name="HighEnd" type="Enum"/>
+	</object>
+	<object name="MinActivationDistance">
+		<field name="Normal" type="Float"/>
+		<field name="HighEnd" type="Float"/>
+	</object>
+</class>

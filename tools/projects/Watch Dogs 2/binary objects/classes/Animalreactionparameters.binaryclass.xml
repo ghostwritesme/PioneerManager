@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="AnimalreactionparametersParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selReactionType" type="Enum"/>
+	<object name="AnimationParams">
+		<field name="text_fileAnimationPath" type="String"/>
+		<field name="fileAnimationPath" type="BinHex"/>
+		<field name="selAnimationLayerType" type="Enum"/>
+		<object name="StateMachine">
+			<field name="bPlayAnimEntry" type="Boolean"/>
+			<field name="bPlayAnimLoop" type="Boolean"/>
+			<field name="bPlayAnimExit" type="Boolean"/>
+			<field name="bPlayAnimSitEntry" type="Boolean"/>
+			<field name="bPlayAnimSitLoop" type="Boolean"/>
+			<field name="bPlayAnimSitExit" type="Boolean"/>
+			<field name="bUpdateThreatAnglePMSOnLoop" type="Boolean"/>
+			<field name="bUpdateThreatAnglePMSOnExit" type="Boolean"/>
+			<field name="bUpdateRealSpeedPMSOnStart" type="Boolean"/>
+			<field name="bUpdateRealSpeedPMSOnLoop" type="Boolean"/>
+			<field name="bUpdateDodgePMS" type="Boolean"/>
+		</object>
+	</object>
+	<object name="BarkParams">
+		<field name="bTriggerBarkOnMarkup" type="Boolean"/>
+	</object>
+	<object name="DelayParams">
+		<field name="fAsynchroReactionDelayMin" type="Float"/>
+		<field name="fAsynchroReactionDelayMax" type="Float"/>
+		<field name="bMustRetriggerIfFailed" type="Boolean"/>
+	</object>
+</class>

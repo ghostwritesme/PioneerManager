@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ProgressionlayersParameters">
+	<inherit name="SharedParameters"/>
+	<field name="LayerName" type="String"/>
+	<field name="text_WorldName" type="String"/>
+	<field name="WorldName" type="BinHex"/>
+	<field name="availabilityrulegroupAvailabilityRuleGroup" type="BinHex"/>
+	<field name="bShouldReplicate" type="Boolean"/>
+	<field name="text_objlayDependsOnLayer" type="String"/>
+	<field name="objlayDependsOnLayer" type="BinHex"/>
+</class>

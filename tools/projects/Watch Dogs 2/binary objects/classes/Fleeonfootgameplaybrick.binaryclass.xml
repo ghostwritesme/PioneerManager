@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="FleeonfootgameplaybrickParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fleebehaviordescriptorFleeToEntityBeforeSystemicFleeBhvDescriptor" type="BinHex"/>
+	<field name="fStopWhenIAOverEscapeRadius" type="Boolean"/>
+	<field name="fStopWhenWarningTimerExpired" type="Boolean"/>
+	<field name="fEscapeRadius" type="Float"/>
+	<field name="fleebehaviordescriptorFleeBhvDescriptor" type="BinHex"/>
+	<field name="bShouldDisplayAlmostLostWarning" type="Boolean"/>
+	<field name="bShouldDisplayFleeWarningWhenVehiclePick" type="Boolean"/>
+	<field name="bShouldDisplayFleeWarningAtStart" type="Boolean"/>
+	<field name="fWarningMessageDisplayduration" type="Float"/>
+	<field name="fWarningMessageCargoAlmostLostDistanceToDisplay" type="Float"/>
+	<field name="fMinDelayBetweenWarnings" type="Float"/>
+	<field name="fCatchUpDistance" type="Float"/>
+	<field name="text_BarkIdStartingBarkId" type="String"/>
+	<field name="BarkIdStartingBarkId" type="BinHex"/>
+	<field name="bIsStartingBark2D" type="Boolean"/>
+	<object name="locstridVehicleFleeingLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridFleerAlmostLostLocId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+</class>

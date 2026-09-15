@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="ChaseboatparamsParameters">
+	<inherit name="SharedParameters"/>
+	<object name="Gameplay">
+		<field name="fBoatMaxSpeed" type="Float"/>
+		<field name="fMaxSpeedForShooting" type="Float"/>
+		<field name="bSupportSingularAttacker" type="Boolean"/>
+	</object>
+	<object name="Arrest">
+		<field name="fCloseDistanceMinTime" type="Float"/>
+		<field name="fImmobilizationTime" type="Float"/>
+		<field name="fApproachDistance" type="Float"/>
+		<field name="fInBoatWarningDeltaDistance" type="Float"/>
+		<field name="fInWaterWarningDeltaDistance" type="Float"/>
+		<field name="fOnGroundWarningDeltaDistance" type="Float"/>
+		<field name="text_FirstArrestYell" type="String"/>
+		<field name="FirstArrestYell" type="BinHex"/>
+		<field name="text_WarningChanceYell" type="String"/>
+		<field name="WarningChanceYell" type="BinHex"/>
+	</object>
+	<object name="EngineBoost">
+		<field name="fHardSpeedLimit" type="Float"/>
+		<field name="fSideFrictionOverride" type="Float"/>
+		<field name="fForwardFrictionOverride" type="Float"/>
+		<field name="fThrustBoostOverride" type="Float"/>
+	</object>
+</class>

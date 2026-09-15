@@ -1,0 +1,1176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Agentincidentsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="IncidentSettings">
+		<object name="AimedByARGun">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="AimedByGun">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<field name="selState" type="Enum"/>
+				<field name="fMinDuration" type="Float"/>
+				<field name="fMaxDuration" type="Float"/>
+				<field name="bOnSpotOnly" type="Boolean"/>
+				<field name="bCanGoOnRoad" type="Boolean"/>
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="AimingWithGun">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<field name="selState" type="Enum"/>
+				<field name="fMinDuration" type="Float"/>
+				<field name="fMaxDuration" type="Float"/>
+				<field name="bOnSpotOnly" type="Boolean"/>
+				<field name="bCanGoOnRoad" type="Boolean"/>
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="AlertNearbyGuards">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="AlertNearbyGuards_CivilianCallout">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="AlertNearbyGuards_CivilianPanic">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="AlertNearbyGuards_Download">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="AlertNearbyGuards_UnholsteredGun">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="AlertNearbyGuards_LootTruck">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="AnimalCuteness">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="ARGunShot">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="Arrest">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<field name="selState" type="Enum"/>
+				<field name="fMinDuration" type="Float"/>
+				<field name="fMaxDuration" type="Float"/>
+				<field name="bOnSpotOnly" type="Boolean"/>
+				<field name="bCanGoOnRoad" type="Boolean"/>
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="Arrest_ForcedOutcomeCombat">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="Arrest_ForcedOutcomeFlee">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="Arrest_OnGoing">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<field name="selState" type="Enum"/>
+				<field name="fMinDuration" type="Float"/>
+				<field name="fMaxDuration" type="Float"/>
+				<field name="bOnSpotOnly" type="Boolean"/>
+				<field name="bCanGoOnRoad" type="Boolean"/>
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="BlackoutStart_Day">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="BlackoutStop_Day">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="BlackoutStart_Night">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="BlackoutStop_Night">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="BulletImpact">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="BulletMiss">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="CarBreak">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="CarCrash">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="CarCrashBig">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="CarCrashBigPersistant">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="CarCrashPileup">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="CarHackedAlarm">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="CarHonk">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<field name="selState" type="Enum"/>
+				<field name="fMinDuration" type="Float"/>
+				<field name="fMaxDuration" type="Float"/>
+				<field name="bOnSpotOnly" type="Boolean"/>
+				<field name="bCanGoOnRoad" type="Boolean"/>
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="CarLight">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="CarOnOpenBridge">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="CarSiren">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="CarTakedownBollard">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="CarTheft">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="CarTyreDeflate">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="Carjacking">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<field name="selState" type="Enum"/>
+				<field name="fMinDuration" type="Float"/>
+				<field name="fMaxDuration" type="Float"/>
+				<field name="bOnSpotOnly" type="Boolean"/>
+				<field name="bCanGoOnRoad" type="Boolean"/>
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="Cheer">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="CivilianAnxiety">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="CivilianHitByACarButNotDead_ReputationOnly">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="CivilianPanic">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="CollisionStumble">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="CommunicationDisrupt">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="CommunicationDisrupted">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="CopNonLethalShot">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="CopNonLethalTakedown">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="CrimeOnGoing">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="CuriousBhv">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="DeadBody">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="DedSecBroadcast">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="DenunciatorAttacked">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="DestroyedRCToy">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="DrivingVehicleHacked">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="ElectricSpark">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="EmergencyAlarmActive">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="EmergencyAlarmNoise">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="EmergencyAlarmStart">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="EmergencyAlarmStop">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="EmergentHoldupInterruption">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="EnticedInterruption">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="EscalationAttract">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="Fire">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="FleeFromShop">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="FleeingFromTarget">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="Flirt">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="FlyingDroneProximity">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="FoundDeadBody">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="FoundWoundedBody">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="GenericHard">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="GenericSoft">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="Greet">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="GrenadeInEnvironment">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="GrenadeInHand">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="GuardSearching">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="GunShot">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="GunShotAtPolice">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="GunShotInPanic">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="HackedEntityMalfunction">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="HackedEntityMoving">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="HackedSquadVehicleMalfunction">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="VehicleHacked">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="HearBreakable">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="HearGrenadeLanding">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="HearStickyProjectileLanding">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="HitByGrenade">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="HitByProjectile">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="HitByRCCrane">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="HitByRCForkLift">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="HitByRCScissorLift">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="HitByRCToyCar">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="HitByVehicle">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<field name="selState" type="Enum"/>
+				<field name="fMinDuration" type="Float"/>
+				<field name="fMaxDuration" type="Float"/>
+				<field name="bOnSpotOnly" type="Boolean"/>
+				<field name="bCanGoOnRoad" type="Boolean"/>
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="HoldUpShopkeeper">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="HumanNoiseDisgusting">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="HumanNoiseLoud">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="IncomingClimber">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="IncomingRCCrane">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="IncomingRCForkLift">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="IncomingRCScissorLift">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="IncomingRCToyCar">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="IncomingRunner">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="IncomingThreat">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="Insult">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<field name="selState" type="Enum"/>
+				<field name="fMinDuration" type="Float"/>
+				<field name="fMaxDuration" type="Float"/>
+				<field name="bOnSpotOnly" type="Boolean"/>
+				<field name="bCanGoOnRoad" type="Boolean"/>
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="Intuition">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="KeypadDestroyed">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="KilledCivilian">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="KilledCivilianByCar">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="KilledMobster">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="KilledPolice">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="LargeBump">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="LargeCloseObjectBroken">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="LargeExplosion">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="Laugh">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<field name="selState" type="Enum"/>
+				<field name="fMinDuration" type="Float"/>
+				<field name="fMaxDuration" type="Float"/>
+				<field name="bOnSpotOnly" type="Boolean"/>
+				<field name="bCanGoOnRoad" type="Boolean"/>
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="LayoutBeingHacked">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="Look">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="LostTarget">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="Lure">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="MakeFunOf">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="MeleeBePushed">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="MoodInitiatorProximityAngry">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="MyCarJackingFinished">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="MyCarJackingFinishedRunAway">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="MyCloseObjectBigBroken">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="MyCloseObjectBroken">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="NPCHacked">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="NPCHackedAttract">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="NPCHackedExposed">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="NPCHackedTraitor">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="NewTarget">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="ObjectCollisionNoise">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="OffRoadDriving">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="OnBeingHacked">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="OnCLOInterrupted">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="OnLeaderQuitAnxiety">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="OnLeaderQuitCuriosity">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="OnLeaderQuitPanic">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="OutrageousAction">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="PacifiedCalmDown">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="Pacify">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<field name="selState" type="Enum"/>
+				<field name="fMinDuration" type="Float"/>
+				<field name="fMaxDuration" type="Float"/>
+				<field name="bOnSpotOnly" type="Boolean"/>
+				<field name="bCanGoOnRoad" type="Boolean"/>
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="PeopleDie">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="PeopleDown">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="PersonAttacked">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="PersonAttackedMiss">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="PersonCrushed">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="PersonHit">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="PersonPushed">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="PersonWarned">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="PetAttacked">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="PetBusy">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="PetDisturbed">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="PhoneOverheat">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="Photobomb">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="PlayerIEDExplosion">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="PlayerPlayingARGame">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="PlayerProximity">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="PlayerStaysInWarningZone">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="PoliceVehicleHighHeat">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<field name="selState" type="Enum"/>
+				<field name="fMinDuration" type="Float"/>
+				<field name="fMaxDuration" type="Float"/>
+				<field name="bOnSpotOnly" type="Boolean"/>
+				<field name="bCanGoOnRoad" type="Boolean"/>
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="Projectile">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="Protect">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="PublicDisturbance">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="PuddleSplash">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="RCMalfunction">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="RCMoveOutOfContext">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<field name="selState" type="Enum"/>
+				<field name="fMinDuration" type="Float"/>
+				<field name="fMaxDuration" type="Float"/>
+				<field name="bOnSpotOnly" type="Boolean"/>
+				<field name="bCanGoOnRoad" type="Boolean"/>
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="RainStart">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="RainStop">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="RemoteControlAttract">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="RobotAttract">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="RobotFakeAlarm">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="RobotRepulse">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="RunningPeopleProximity">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="SECarAccident">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="SeeDeadBody">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="SeeGrenade">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="SeeIntruderIllegal">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="SeeIntruderSuspicious">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="SeePlayerInWarningZone">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="SeePlayerInWarningZoneInCar">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="SeeRCToyCar">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<field name="selState" type="Enum"/>
+				<field name="fMinDuration" type="Float"/>
+				<field name="fMaxDuration" type="Float"/>
+				<field name="bOnSpotOnly" type="Boolean"/>
+				<field name="bCanGoOnRoad" type="Boolean"/>
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="SeeStickyProjectile">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="SeeSuspectActivity">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="SeeTarget">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="SeeWoundedBody">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="SeekAttention">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="SeekAttentionEmote">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="SeekAttentionMusic">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="Sexy">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="ShopTheft">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="ShutDownMediaBroadcast">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="Silly">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="SmallBump">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="SmallCloseObjectBroken">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="SmallExplosion">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="SpecialBroadcast">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="SteamPipe">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="SteamPipeExplosion">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="SuperSexy">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="SurpriseFunny">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<field name="selState" type="Enum"/>
+				<field name="fMinDuration" type="Float"/>
+				<field name="fMaxDuration" type="Float"/>
+				<field name="bOnSpotOnly" type="Boolean"/>
+				<field name="bCanGoOnRoad" type="Boolean"/>
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="SurprisedByTarget">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="SwitchTarget">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="TakeInterest">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="TakePicture">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="TakePictureObstruction">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="Threaten">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="ThreatProximity">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="TraitorThreatenExposed">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="TrafficBlocked">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="TrafficUnblocked">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<field name="selState" type="Enum"/>
+				<field name="fMinDuration" type="Float"/>
+				<field name="fMaxDuration" type="Float"/>
+				<field name="bOnSpotOnly" type="Boolean"/>
+				<field name="bCanGoOnRoad" type="Boolean"/>
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="UncommonAction">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="UnholsteredGun">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="VehicleEntered">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="VehicleDisabledBroken">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="VehicleDisabledHacked">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="VehicleStunt">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="VehicleStuntSexy">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<field name="selState" type="Enum"/>
+				<field name="fMinDuration" type="Float"/>
+				<field name="fMaxDuration" type="Float"/>
+				<field name="bOnSpotOnly" type="Boolean"/>
+				<field name="bCanGoOnRoad" type="Boolean"/>
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="VehicleUnderwater">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="ViolenceFear">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<field name="selState" type="Enum"/>
+				<field name="fMinDuration" type="Float"/>
+				<field name="fMaxDuration" type="Float"/>
+				<field name="bOnSpotOnly" type="Boolean"/>
+				<field name="bCanGoOnRoad" type="Boolean"/>
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+		<object name="WakeUp">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="WaterPipe">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings"/>
+		</object>
+		<object name="WoundedBody">
+			<field name="selEntityOfInterest" type="Enum"/>
+			<object name="StatesSettings">
+				<field name="selState" type="Enum"/>
+				<field name="fMinDuration" type="Float"/>
+				<field name="fMaxDuration" type="Float"/>
+				<field name="bOnSpotOnly" type="Boolean"/>
+				<field name="bCanGoOnRoad" type="Boolean"/>
+				<object name="StatesSettings">
+					<field name="selState" type="Enum"/>
+					<field name="fMinDuration" type="Float"/>
+					<field name="fMaxDuration" type="Float"/>
+					<field name="bOnSpotOnly" type="Boolean"/>
+					<field name="bCanGoOnRoad" type="Boolean"/>
+				</object>
+			</object>
+		</object>
+	</object>
+</class>

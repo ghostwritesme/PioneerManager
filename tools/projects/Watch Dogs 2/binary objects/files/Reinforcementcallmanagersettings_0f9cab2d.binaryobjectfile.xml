@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="Reinforcementcallmanagersettings_0f9cab2d">
+	<object name="obj">
+		<inherit name="Reinforcementcallmanagersettings_0f9cab2dParameters"/>
+	</object>
+</file>

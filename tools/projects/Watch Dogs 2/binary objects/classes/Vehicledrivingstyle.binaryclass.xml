@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="VehicledrivingstyleParameters">
+	<inherit name="SharedParameters"/>
+	<object name="SpeedControl">
+		<field name="fMaxSpeedKmh" type="Float"/>
+		<field name="fSpeedLimitRatio" type="Float"/>
+		<object name="curveProximityMaxSpeedCurve">
+			<inherit name="KnotsParameters"/>
+		</object>
+	</object>
+	<object name="PathGeneration">
+		<field name="selRacelineAggression" type="Enum"/>
+		<field name="fObstacleRiskScale" type="Float"/>
+		<field name="selOncomingLaneAvoidLevel" type="Enum"/>
+		<field name="selAvoidanceLevel" type="Enum"/>
+		<field name="bObeyIntersections" type="Boolean"/>
+	</object>
+	<object name="Controls">
+		<field name="fThrottleAggression" type="Float"/>
+	</object>
+</class>

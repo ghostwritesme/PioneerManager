@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Mediabroadcastemittersettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="mapicondescDiskIcon" type="BinHex"/>
+	<field name="mapicondescRimIcon" type="BinHex"/>
+</class>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="AffiliationreinforcementconfigParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selAffiliation" type="Enum"/>
+	<field name="fReinforcementLowSpeedRangeReductionThreshold" type="Float"/>
+	<field name="bUseRaycastInSpawnSystem" type="Boolean"/>
+	<field name="fOutOfUsefullRange" type="Float"/>
+	<field name="fOutOfUsefullRangeEmptyCarOnFootAgent" type="Float"/>
+	<field name="fPlayerZoneInMeter" type="Float"/>
+	<field name="fRoadBlockTimeToReachPlayerZoneOnSpawn" type="Float"/>
+	<field name="fRoadBlockTimeToReachPlayerZone" type="Float"/>
+	<field name="text_archRoadBlockZone" type="String"/>
+	<field name="archRoadBlockZone" type="BinHex"/>
+	<field name="text_archRoadBlockSpikeStrip" type="String"/>
+	<field name="archRoadBlockSpikeStrip" type="BinHex"/>
+	<field name="fScoreUnspawnDelay" type="Float"/>
+	<field name="fUnspawnQueueTimeMin" type="Float"/>
+	<field name="fUnspawnQueueTimeMax" type="Float"/>
+	<object name="SpawnRules">
+		<field name="fInnerCircleStartRadius" type="Float"/>
+		<field name="fInnerCircleRadius" type="Float"/>
+		<field name="fMiddleCircleRadius" type="Float"/>
+		<field name="fOuterCircleRadius" type="Float"/>
+		<field name="fMinDistanceBetweenSpawnPoint" type="Float"/>
+		<field name="fMinDistanceToEvade" type="Float"/>
+		<object name="OnFootSpawnRules">
+			<field name="fNormalOnFootCircleStartRadius" type="Float"/>
+			<field name="fNormalOnFootCircleRadius" type="Float"/>
+		</object>
+	</object>
+	<object name="DamageModifier">
+		<field name="fAIDamageScaleFactorWhenHitByPlayer" type="Float"/>
+		<field name="fAIDamageScaleFactorWhenHitByTraffic" type="Float"/>
+		<field name="fPlayerScaleFactorWhenHitByEnemyAI" type="Float"/>
+	</object>
+	<object name="PlayerAreaMobility">
+		<field name="fStayInSameAreaTimeSec" type="Float"/>
+		<field name="fStayInSameAreaRadius" type="Float"/>
+	</object>
+	<object name="RecentSpawnExclusion">
+		<field name="fRecentSpawnRadius" type="Float"/>
+		<field name="fRecentSpawnTimer" type="Float"/>
+		<field name="fRecentRoadBlockSpawnRadius" type="Float"/>
+		<field name="fRecentRoadBlockSpawnTimer" type="Float"/>
+		<field name="fRecentOnFootSpawnRadius" type="Float"/>
+		<field name="fRecentOnFootSpawnTimer" type="Float"/>
+	</object>
+	<object name="ReinforcementCalls">
+		<field name="uiMaxSimultaneousCallers" type="Int64"/>
+	</object>
+	<object name="PresetStrategy">
+		<field name="selUnitPresetStrategy" type="Enum"/>
+	</object>
+</class>

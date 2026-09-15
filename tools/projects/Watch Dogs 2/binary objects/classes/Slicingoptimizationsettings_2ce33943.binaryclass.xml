@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Slicingoptimizationsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<object name="SecurityCamera">
+		<object name="MaxModulo">
+			<field name="Normal" type="Enum"/>
+			<field name="HighEnd" type="Enum"/>
+		</object>
+		<object name="EffectiveDistance">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+	</object>
+	<object name="LowLevelCarriage">
+		<object name="MaxModulo">
+			<field name="Normal" type="Enum"/>
+			<field name="HighEnd" type="Enum"/>
+		</object>
+		<object name="EffectiveDistance">
+			<field name="Normal" type="Float"/>
+			<field name="HighEnd" type="Float"/>
+		</object>
+	</object>
+</class>

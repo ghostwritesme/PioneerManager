@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="WeaponParameters">
+	<inherit name="SharedParameters"/>
+	<field name="selShootingType" type="Enum"/>
+	<field name="selWeaponPerkType" type="Enum"/>
+	<field name="text_archTaserProjectileArchetype" type="String"/>
+	<field name="archTaserProjectileArchetype" type="BinHex"/>
+	<field name="text_archGrenadeArchetype" type="String"/>
+	<field name="archGrenadeArchetype" type="BinHex"/>
+	<field name="text_sProjectileBoneToBind" type="String"/>
+	<field name="sProjectileBoneToBind" type="BinHex"/>
+	<field name="bHideProjectileOnSpawn" type="Boolean"/>
+	<field name="selBulletType" type="Enum"/>
+	<field name="bManualEnableAutomatic" type="Boolean"/>
+	<field name="iManualAutomaticBulletsMax" type="Int32"/>
+	<field name="fAmmoAutoRefillDuration" type="Float"/>
+	<field name="iAmmoAutoRefillCount" type="Int32"/>
+	<field name="selAmmoAutoRefillMode" type="Enum"/>
+	<field name="itemsBulletItem" type="BinHex"/>
+	<field name="fBulletsPerClip" type="Int32"/>
+	<field name="bHasInfiniteBulletInClip" type="Boolean"/>
+	<field name="fRateOfFire" type="Float"/>
+	<field name="fRateOfFireVehicleMultiplier" type="Float"/>
+	<field name="iReloadAlertMinBullets" type="Int32"/>
+	<field name="fShootingRange" type="Float"/>
+	<field name="fPrecisionRange" type="Float"/>
+	<field name="fPrecisionSpreadAngle" type="Float"/>
+	<field name="fBulletDamageDistanceStartDistance" type="Float"/>
+	<field name="fBulletDamageDistanceStartDamage" type="Float"/>
+	<field name="fBulletDamageDistanceEndDistance" type="Float"/>
+	<field name="fBulletDamageDistanceEndDamage" type="Float"/>
+	<field name="bDestroysVehicleParts" type="Boolean"/>
+	<field name="fImpactStrengthDistanceStartDistance" type="Float"/>
+	<field name="fImpactStrengthDistanceStartStrength" type="Float"/>
+	<field name="fImpactStrengthDistanceEndDistance" type="Float"/>
+	<field name="fImpactStrengthDistanceEndStrength" type="Float"/>
+	<field name="iPierceStrength" type="Int32"/>
+	<field name="iMinPiercingStrengthToDamage" type="Int32"/>
+	<field name="iMinPiercingStrengthToDamageForPlayer" type="Int16"/>
+	<field name="fMinPiercingStrengthToDamageForPlayerCurvePower" type="Float"/>
+	<field name="nTracesRatio" type="Int32"/>
+	<field name="fAccuracyModifier" type="Float"/>
+	<field name="fBulletSpreadAngle" type="Float"/>
+	<field name="fbulletImpactDelay" type="Float"/>
+	<field name="fbulletImpactDelayAtMaxDistance" type="Float"/>
+	<field name="bDisplayReticleBetweenRateOfFire" type="Boolean"/>
+	<field name="fLaserSightNoiseRangeX" type="Float"/>
+	<field name="fLaserSightNoiseRangeY" type="Float"/>
+	<field name="fLaserSightNoiseSpeedMultiplier" type="Float"/>
+	<field name="bCanHaveAutoHackBullet" type="Boolean"/>
+	<field name="bCanHaveTaggingBullet" type="Boolean"/>
+	<field name="fPelletCount" type="Enum"/>
+	<field name="fPelletSpreadAngle" type="Float"/>
+	<field name="text_sndFireSound" type="String"/>
+	<field name="sndFireSound" type="BinHex"/>
+	<field name="text_sndMovingPartSound" type="String"/>
+	<field name="sndMovingPartSound" type="BinHex"/>
+	<field name="text_sndFireAutomaticModeStartSound" type="String"/>
+	<field name="sndFireAutomaticModeStartSound" type="BinHex"/>
+	<field name="text_sndFireAutomaticModeStopSound" type="String"/>
+	<field name="sndFireAutomaticModeStopSound" type="BinHex"/>
+	<field name="fDistantSoundDistance" type="Float"/>
+	<field name="text_sndDistantFireSound" type="String"/>
+	<field name="sndDistantFireSound" type="BinHex"/>
+	<field name="text_sndDistantFireAutomaticModeStartSound" type="String"/>
+	<field name="sndDistantFireAutomaticModeStartSound" type="BinHex"/>
+	<field name="text_sndDistantFireAutomaticModeStopSound" type="String"/>
+	<field name="sndDistantFireAutomaticModeStopSound" type="BinHex"/>
+	<field name="text_sndFireNoAmmoSound" type="String"/>
+	<field name="sndFireNoAmmoSound" type="BinHex"/>
+	<field name="text_sndPressTriggerSound" type="String"/>
+	<field name="sndPressTriggerSound" type="BinHex"/>
+	<field name="text_sndReloadSound" type="String"/>
+	<field name="sndReloadSound" type="BinHex"/>
+	<field name="text_sndOnReloadCurvePushedSound" type="String"/>
+	<field name="sndOnReloadCurvePushedSound" type="BinHex"/>
+	<field name="text_sndTakeOutSound" type="String"/>
+	<field name="sndTakeOutSound" type="BinHex"/>
+	<field name="text_sndHolsterSound" type="String"/>
+	<field name="sndHolsterSound" type="BinHex"/>
+	<field name="text_sndBulletWizzSound" type="String"/>
+	<field name="sndBulletWizzSound" type="BinHex"/>
+	<field name="text_sndAmmoAutoRefillSound" type="String"/>
+	<field name="sndAmmoAutoRefillSound" type="BinHex"/>
+	<object name="VariedBulletTypes">
+		<object name="BulletType">
+			<field name="selType" type="Enum"/>
+		</object>
+	</object>
+	<object name="VariedBulletTypesIndependenceDay">
+		<object name="BulletType">
+			<field name="selType" type="Enum"/>
+		</object>
+	</object>
+	<object name="AmmoAutoRefillMeshLights">
+		<object name="LightSlot">
+			<field name="iSlot" type="Int32"/>
+		</object>
+	</object>
+	<object name="curveRecoilTranslationX">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveRecoilTranslationY">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveRecoilTranslationZ">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveRecoilRotationX">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveRecoilRotationY">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveRecoilRotationZ">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveShootingCurve">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveBodyRecoilCurve">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="curveBulletDamageModifierByAngleCurve">
+		<inherit name="KnotsParameters"/>
+	</object>
+	<object name="AnimationInfo">
+		<field name="selWeaponGrip" type="Enum"/>
+		<field name="selWeaponType" type="Enum"/>
+		<field name="selWeaponSpecific" type="Enum"/>
+		<field name="text_sHolsterWeaponBoneName" type="String"/>
+		<field name="sHolsterWeaponBoneName" type="BinHex"/>
+	</object>
+	<object name="PartsRecoil">
+		<object name="SlidePart">
+			<field name="selProceduralType" type="Enum"/>
+			<field name="vectorProceduralAxis" type="Vector3"/>
+			<object name="curveProceduralMovement">
+				<inherit name="KnotsParameters"/>
+			</object>
+		</object>
+	</object>
+	<object name="CameraAiming">
+		<field name="selAimingContext" type="Enum"/>
+		<field name="selCoverAimingLeft" type="Enum"/>
+		<field name="selCoverAimingRight" type="Enum"/>
+		<field name="selCoverAimingStraightLeft" type="Enum"/>
+		<field name="selCoverAimingStraightRight" type="Enum"/>
+	</object>
+	<object name="ScopeAimingConfig">
+		<field name="bEnabled" type="Boolean"/>
+		<field name="bHidePlayerAndWeapon" type="Boolean"/>
+		<field name="fSniperScopeCameraOffset" type="Float"/>
+		<object name="CameraModifier">
+			<field name="selModifierType" type="Enum"/>
+			<object name="fReticleDisplay">
+				<field name="fValue" type="Float"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="IdealMin">
+				<field name="vectorValue" type="Vector3"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="IdealMid">
+				<field name="vectorValue" type="Vector3"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="IdealMax">
+				<field name="vectorValue" type="Vector3"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="Fov">
+				<field name="vectorValue" type="Vector3"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="InputYawSpeed">
+				<field name="fValue" type="Float"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="InputPitchSpeed">
+				<field name="fValue" type="Float"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="InputYawExtraSpeed">
+				<field name="fValue" type="Float"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+			<object name="FocusRange">
+				<field name="vec2Value" type="Vector2"/>
+				<field name="selValueType" type="Enum"/>
+			</object>
+		</object>
+	</object>
+	<object name="AssistanceParametersOverride">
+		<field name="bEnabled" type="Boolean"/>
+		<field name="fSteadyPushingHighDecPercMultiplier" type="Float"/>
+		<field name="fSteadyPushingHighIncPercMultiplier" type="Float"/>
+		<field name="fSteadyPushingMediumDecPercMultiplier" type="Float"/>
+		<field name="fSteadyPushingMediumIncPercMultiplier" type="Float"/>
+		<field name="fSteadyPushingNoneDecPercMultiplier" type="Float"/>
+		<field name="fSteadyPushingNoneIncPercMultiplier" type="Float"/>
+		<field name="fMovingPushingHighDecPercMultiplier" type="Float"/>
+		<field name="fMovingPushingHighIncPercMultiplier" type="Float"/>
+		<field name="fMovingPushingMediumDecPercMultiplier" type="Float"/>
+		<field name="fMovingPushingMediumIncPercMultiplier" type="Float"/>
+		<field name="fMovingPushingNoneDecPercMultiplier" type="Float"/>
+		<field name="fMovingPushingNoneIncPercMultiplier" type="Float"/>
+	</object>
+	<object name="CameraRecoil">
+		<object name="InitialPhaseImpulses">
+			<field name="fDuration" type="Float"/>
+			<field name="vec2PitchLimits" type="Vector2"/>
+			<field name="vec2YawLimits" type="Vector2"/>
+			<field name="fReductionDuration" type="Float"/>
+			<field name="vec2ReductionCurve" type="Vector2"/>
+			<object name="Normal">
+				<object name="Pitch">
+					<field name="vec2ImpulsePeak" type="Vector2"/>
+					<field name="vec2ImpulseCurve" type="Vector2"/>
+					<field name="selImpulseDirection" type="Enum"/>
+					<object name="curveAccumulationMultiplierCurve">
+						<inherit name="KnotsParameters"/>
+					</object>
+				</object>
+				<object name="Yaw">
+					<field name="vec2ImpulsePeak" type="Vector2"/>
+					<field name="vec2ImpulseCurve" type="Vector2"/>
+					<field name="selImpulseDirection" type="Enum"/>
+					<object name="curveAccumulationMultiplierCurve">
+						<inherit name="KnotsParameters"/>
+					</object>
+				</object>
+			</object>
+		</object>
+		<object name="ClampedPhaseImpulses">
+			<field name="fDuration" type="Float"/>
+			<field name="vec2PitchLimits" type="Vector2"/>
+			<field name="vec2YawLimits" type="Vector2"/>
+			<field name="fReductionDuration" type="Float"/>
+			<field name="vec2ReductionCurve" type="Vector2"/>
+			<object name="Normal">
+				<object name="Pitch">
+					<field name="vec2ImpulsePeak" type="Vector2"/>
+					<field name="vec2ImpulseCurve" type="Vector2"/>
+					<field name="selImpulseDirection" type="Enum"/>
+					<object name="curveAccumulationMultiplierCurve">
+						<inherit name="KnotsParameters"/>
+					</object>
+				</object>
+				<object name="Yaw">
+					<field name="vec2ImpulsePeak" type="Vector2"/>
+					<field name="vec2ImpulseCurve" type="Vector2"/>
+					<field name="selImpulseDirection" type="Enum"/>
+					<object name="curveAccumulationMultiplierCurve">
+						<inherit name="KnotsParameters"/>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="Sniper">
+		<field name="fCamShakeStrength" type="Float"/>
+		<field name="fCamShakeDuration" type="Float"/>
+		<field name="vec3CamShakeRotationRange" type="Vector3"/>
+		<field name="iScopeMaterialOverrideIndex" type="Int32"/>
+	</object>
+	<object name="FriendlyFireOptions">
+		<field name="bSkipCollisionsWithMobsterNPCs" type="Boolean"/>
+		<field name="bSkipCollisionsWithMobsterVehicles" type="Boolean"/>
+		<field name="bSkipCollisionsWithPoliceNPCs" type="Boolean"/>
+		<field name="bSkipCollisionsWithPoliceVehicles" type="Boolean"/>
+		<field name="bSkipCollisionsWithCivilians" type="Boolean"/>
+		<field name="bSkipCollisionsWithTraffics" type="Boolean"/>
+		<field name="bSkipCollisionsWithPlayers" type="Boolean"/>
+	</object>
+	<object name="DamageMultiplier">
+		<field name="fVehicleMultplier" type="Float"/>
+		<field name="fSmallElectronicsMultiplier" type="Float"/>
+		<field name="fPVPDamageMultiplier" type="Float"/>
+		<object name="LocationDamageMultiplier">
+			<object name="LocationMultiplier">
+				<field name="selLocation" type="Enum"/>
+				<object name="curveDamageMultOverDistance">
+					<inherit name="KnotsParameters"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object name="ShootingPatterns">
+		<object name="Patterns">
+			<object name="choreographyshootingpatternsShootingPattern">
+				<field name="choreographyshootingpatternsShootingPattern" type="BinHex"/>
+			</object>
+		</object>
+	</object>
+	<object name="sndvarSoundDistanceVar">
+		<field name="text_SoundId" type="String"/>
+		<field name="SoundId" type="BinHex"/>
+		<field name="text_SoundGuid" type="String"/>
+		<field name="SoundGuid" type="BinHex"/>
+	</object>
+</class>

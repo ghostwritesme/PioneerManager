@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="EffectsParameters">
+	<inherit name="SharedParameters"/>
+	<field name="fMaxDistanceToCamera" type="Float"/>
+	<object name="Puddles">
+		<field name="text_psSplashParticleResId" type="String"/>
+		<field name="psSplashParticleResId" type="BinHex"/>
+		<field name="psSplashTrailParticleResId" type="BinHex"/>
+		<field name="text_psTwoWheeledSplashParticleResId" type="String"/>
+		<field name="psTwoWheeledSplashParticleResId" type="BinHex"/>
+		<field name="psTwoWheeledsplashTrailParticleResId" type="BinHex"/>
+		<object name="PuddleTweaks">
+			<field name="fSpawnInterval" type="Float"/>
+			<field name="iMaxNumberOfSpawnedEffectsOnPath" type="Int32"/>
+			<field name="fReferenceSpeed" type="Float"/>
+			<field name="fEffectMinLifeTime" type="Float"/>
+			<field name="fEffectMaxLifeTime" type="Float"/>
+			<field name="fSpeedThreshold" type="Float"/>
+			<field name="sndStartSoundID" type="BinHex"/>
+			<field name="text_sndStopSoundID" type="String"/>
+			<field name="sndStopSoundID" type="BinHex"/>
+		</object>
+	</object>
+	<object name="Leaves">
+		<field name="psLeavesParticleResId" type="BinHex"/>
+		<field name="text_psLeavesTrailParticleResId" type="String"/>
+		<field name="psLeavesTrailParticleResId" type="BinHex"/>
+		<object name="LeavesTweaks">
+			<field name="fSpawnInterval" type="Float"/>
+			<field name="iMaxNumberOfSpawnedEffectsOnPath" type="Int32"/>
+			<field name="fReferenceSpeed" type="Float"/>
+			<field name="fEffectMinLifeTime" type="Float"/>
+			<field name="fEffectMaxLifeTime" type="Float"/>
+			<field name="fSpeedThreshold" type="Float"/>
+			<field name="sndStartSoundID" type="BinHex"/>
+			<field name="sndStopSoundID" type="BinHex"/>
+		</object>
+	</object>
+	<object name="RoadCovers">
+		<field name="text_sndStartSoundID" type="String"/>
+		<field name="sndStartSoundID" type="BinHex"/>
+		<field name="text_sndStartNPCSoundID" type="String"/>
+		<field name="sndStartNPCSoundID" type="BinHex"/>
+	</object>
+</class>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Narrativeinteldbsettings_4302584dParameters">
+	<inherit name="SharedParameters"/>
+	<field name="itemsGenericNPCHackItemID" type="BinHex"/>
+	<field name="itemsGenericHoneypotHackItemID" type="BinHex"/>
+</class>

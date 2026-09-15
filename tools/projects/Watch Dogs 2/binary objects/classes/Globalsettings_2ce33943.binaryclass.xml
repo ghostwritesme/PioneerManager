@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class name="Globalsettings_2ce33943Parameters">
+	<inherit name="SharedParameters"/>
+	<field name="fActivationMaxPlayerSpeed" type="Float"/>
+	<field name="fActivationDelayMin" type="Float"/>
+	<field name="fActivationDelayMax" type="Float"/>
+	<field name="fIconAnimationTime" type="Float"/>
+	<field name="iIconsOnMinimap" type="Int32"/>
+	<field name="fMaxDistanceForIconsOnMinimap" type="Float"/>
+	<field name="fSubtitleDisplayTime" type="Float"/>
+	<field name="bUseMinDistanceBetweenIcons" type="Boolean"/>
+	<field name="fm_delayAfterMission" type="Float"/>
+	<field name="fSubtitleRangeMax" type="Float"/>
+	<field name="fMinimumRequiredTimePlayerOnFoot" type="Float"/>
+	<field name="fMaximumRequiredTimePlayerOnFoot" type="Float"/>
+	<field name="fSpecialBroadcastInterval" type="Float"/>
+	<field name="fMinDistanceBetweenIcons" type="Float"/>
+	<object name="locstridBroadcastCompanionInProgressId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="locstridBroadcastPanelTitleId">
+		<field name="LocalizationId" type="Int64"/>
+	</object>
+	<object name="NarrativeManagerSettings">
+		<field name="fRespawnGlobalDelay" type="Float"/>
+		<field name="fDelayMinimum" type="Float"/>
+		<field name="fDelayMaximum" type="Float"/>
+	</object>
+	<object name="GenericBroadcastPrograms">
+		<object name="GenericBroadcastProgram">
+			<field name="fileBink" type="String"/>
+			<field name="fSubtitleDisplayTime" type="Float"/>
+			<field name="bIsBinkStreamed" type="Boolean"/>
+			<field name="bIsBinkInGameOnly" type="Boolean"/>
+			<field name="bNoSignalBlockedDuringBroadcast" type="Boolean"/>
+			<field name="bSendSpecialBroadcastStim" type="Boolean"/>
+			<object name="Sounds"/>
+			<object name="locstridDefaultLocalizationID">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+	<object name="ShopBroadcastPrograms">
+		<object name="ShopBroadcastProgram">
+			<field name="fileBink" type="String"/>
+			<field name="fSubtitleDisplayTime" type="Float"/>
+			<field name="bIsBinkStreamed" type="Boolean"/>
+			<field name="bIsBinkInGameOnly" type="Boolean"/>
+			<field name="bNoSignalBlockedDuringBroadcast" type="Boolean"/>
+			<field name="bSendSpecialBroadcastStim" type="Boolean"/>
+			<object name="Sounds"/>
+			<object name="locstridDefaultLocalizationID">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+	<object name="BarBroadcastPrograms">
+		<object name="BarBroadcastPrograms">
+			<field name="fileBink" type="String"/>
+			<field name="fSubtitleDisplayTime" type="Float"/>
+			<field name="bIsBinkStreamed" type="Boolean"/>
+			<field name="bIsBinkInGameOnly" type="Boolean"/>
+			<field name="bNoSignalBlockedDuringBroadcast" type="Boolean"/>
+			<field name="bSendSpecialBroadcastStim" type="Boolean"/>
+			<object name="Sounds"/>
+			<object name="locstridDefaultLocalizationID">
+				<field name="LocalizationId" type="Int64"/>
+			</object>
+		</object>
+	</object>
+	<object name="MANDATORY_DEFAULT_TEXTURES">
+		<field name="text_matNoSignalMaterial" type="String"/>
+		<field name="matNoSignalMaterial" type="BinHex"/>
+		<field name="text_matGenericChannelMaterial" type="String"/>
+		<field name="matGenericChannelMaterial" type="BinHex"/>
+		<field name="text_matShopChannelMaterial" type="String"/>
+		<field name="matShopChannelMaterial" type="BinHex"/>
+		<field name="text_matBarChannelMaterial" type="String"/>
+		<field name="matBarChannelMaterial" type="BinHex"/>
+	</object>
+</class>
