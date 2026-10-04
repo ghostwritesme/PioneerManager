@@ -1,24 +1,34 @@
-"""Nexus Mods API client + nxm:// link handling + the Windows registry bit that
-makes "Mod Manager Download" on the site actually open this app.
+"""Nexus Mods OAuth client, API calls, and nxm:// link handling."""
 
-stdlib only (urllib, no requests) - didn't want to drag in a dependency just
-for this, especially with PyInstaller in the picture.
-"""
-
+import base64
+import ctypes
 import difflib
 import hashlib
+import http.server
 import io
 import json
 import os
 import re
+import secrets
 import sys
+import threading
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import webbrowser
+from ctypes import wintypes
+from pathlib import Path
 from typing import Callable, Optional
 
 API_BASE = "https://api.nexusmods.com/v1"
 USER_AGENT = "WD2-Mod-Manager/1.0"
+OAUTH_AUTHORIZE = "https://users.nexusmods.com/oauth/authorize"
+OAUTH_TOKEN = "https://users.nexusmods.com/oauth/token"
+OAUTH_REDIRECT_URI = "http://127.0.0.1:8089/callback"
+# Nexus Support must register this desktop app and issue its public client ID.
+# The environment override is for development only; set the issued ID here for releases.
+OAUTH_CLIENT_ID = os.environ.get("PIONEER_NEXUS_CLIENT_ID", "").strip()
 
 # HKCU (not HKLM/HKCR) so registration needs no admin elevation.
 NXM_REGISTRY_PATH = r"Software\Classes\nxm"
@@ -30,28 +40,265 @@ class NexusApiError(Exception):
         self.status = status
 
 
+class _DataBlob(ctypes.Structure):
+    _fields_ = [("cbData", wintypes.DWORD), ("pbData", ctypes.POINTER(ctypes.c_byte))]
+
+
+def _blob(data: bytes):
+    buffer = ctypes.create_string_buffer(data)
+    return _DataBlob(len(data), ctypes.cast(buffer, ctypes.POINTER(ctypes.c_byte))), buffer
+
+
+def _protect(data: bytes) -> bytes:
+    """Encrypt token data for the current Windows user, not for the repository."""
+    if os.name != "nt":
+        raise NexusApiError("Secure Nexus token storage requires Windows.")
+    source, buffer = _blob(data)
+    result = _DataBlob()
+    crypt32 = ctypes.windll.crypt32
+    if not crypt32.CryptProtectData(ctypes.byref(source), None, None, None, None, 0,
+                                    ctypes.byref(result)):
+        raise ctypes.WinError()
+    try:
+        return ctypes.string_at(result.pbData, result.cbData)
+    finally:
+        ctypes.windll.kernel32.LocalFree(result.pbData)
+
+
+def _unprotect(data: bytes) -> bytes:
+    if os.name != "nt":
+        raise NexusApiError("Secure Nexus token storage requires Windows.")
+    source, buffer = _blob(data)
+    result = _DataBlob()
+    crypt32 = ctypes.windll.crypt32
+    if not crypt32.CryptUnprotectData(ctypes.byref(source), None, None, None, None, 0,
+                                      ctypes.byref(result)):
+        raise ctypes.WinError()
+    try:
+        return ctypes.string_at(result.pbData, result.cbData)
+    finally:
+        ctypes.windll.kernel32.LocalFree(result.pbData)
+
+
+class NexusOAuth:
+    def __init__(self, token_path: Path):
+        self.token_path = Path(token_path)
+        self._lock = threading.RLock()
+        self._tokens = None
+        self.load_error = None
+        if self.token_path.exists():
+            try:
+                tokens = json.loads(_unprotect(self.token_path.read_bytes()))
+                if not isinstance(tokens, dict):
+                    raise ValueError("token data is not an object")
+                if tokens.get("access_token") and tokens.get("refresh_token"):
+                    self._tokens = tokens
+                else:
+                    raise ValueError("token data is incomplete")
+            except (OSError, ValueError, TypeError) as exc:
+                # A damaged or copied DPAPI file must not prevent the manager from
+                # launching. Keep it in place for diagnosis and let sign-in replace it.
+                self.load_error = f"Saved Nexus sign-in could not be read: {exc}"
+
+    @property
+    def connected(self) -> bool:
+        return bool(self._tokens and self._tokens.get("access_token")
+                    and self._tokens.get("refresh_token"))
+
+    def sensitive_values(self):
+        """Return credentials that must be redacted from user-shareable logs."""
+        if not self._tokens:
+            return ()
+        return tuple(value for value in (
+            self._tokens.get("access_token"),
+            self._tokens.get("refresh_token"),
+        ) if value)
+
+    def sign_out(self) -> None:
+        with self._lock:
+            self._tokens = None
+            self.load_error = None
+            try:
+                self.token_path.unlink(missing_ok=True)
+                self.token_path.with_suffix(".tmp").unlink(missing_ok=True)
+            except OSError as exc:
+                raise NexusApiError(f"Could not remove the saved Nexus sign-in: {exc}") from exc
+
+    def _save(self, tokens: dict) -> None:
+        if not tokens.get("access_token") or not tokens.get("refresh_token"):
+            raise NexusApiError("Nexus did not return complete OAuth tokens.")
+        saved = dict(tokens)
+        try:
+            saved["expires_at"] = time.time() + int(saved.get("expires_in", 0))
+        except (TypeError, ValueError) as exc:
+            raise NexusApiError("Nexus returned an invalid token lifetime.") from exc
+        encrypted = _protect(json.dumps(saved).encode("utf-8"))
+        temporary = self.token_path.with_suffix(".tmp")
+        try:
+            self.token_path.parent.mkdir(parents=True, exist_ok=True)
+            temporary.write_bytes(encrypted)
+            temporary.replace(self.token_path)
+        except OSError as exc:
+            try:
+                temporary.unlink(missing_ok=True)
+            except OSError:
+                pass
+            raise NexusApiError(f"Could not securely save the Nexus sign-in: {exc}") from exc
+        self._tokens = saved
+        self.load_error = None
+
+    @staticmethod
+    def _post_token(fields: dict) -> dict:
+        request = urllib.request.Request(
+            OAUTH_TOKEN, data=urllib.parse.urlencode(fields).encode("ascii"),
+            headers={"Content-Type": "application/x-www-form-urlencoded", "User-Agent": USER_AGENT},
+        )
+        try:
+            with urllib.request.urlopen(request, timeout=20) as response:
+                result = json.load(response)
+                if not isinstance(result, dict):
+                    raise ValueError("token response is not an object")
+                return result
+        except urllib.error.HTTPError as exc:
+            detail = ""
+            try:
+                payload = json.loads(exc.read().decode("utf-8", errors="replace"))
+                if isinstance(payload, dict):
+                    detail = payload.get("error_description") or payload.get("error") or ""
+            except (OSError, ValueError):
+                pass
+            suffix = f": {detail[:160]}" if detail else "."
+            raise NexusApiError(f"Nexus sign-in failed (HTTP {exc.code}){suffix}", exc.code) from exc
+        except (urllib.error.URLError, ValueError) as exc:
+            raise NexusApiError(f"Could not complete Nexus sign-in: {exc}") from exc
+
+    def access_token(self, force_refresh: bool = False) -> str:
+        with self._lock:
+            if not self.connected:
+                raise NexusApiError("Connect to Nexus Mods in Settings first.")
+            if not force_refresh and time.time() < self._tokens.get("expires_at", 0) - 60:
+                return self._tokens["access_token"]
+            if not OAUTH_CLIENT_ID:
+                raise NexusApiError("Nexus OAuth client ID is not configured.")
+            try:
+                refreshed = self._post_token({
+                    "grant_type": "refresh_token", "client_id": OAUTH_CLIENT_ID,
+                    "refresh_token": self._tokens["refresh_token"],
+                })
+            except NexusApiError as exc:
+                if exc.status and 400 <= exc.status < 500:
+                    try:
+                        self.sign_out()
+                    except NexusApiError:
+                        # The credentials are invalid even if their file cannot be removed.
+                        self._tokens = None
+                raise
+            if not refreshed.get("refresh_token"):
+                refreshed["refresh_token"] = self._tokens["refresh_token"]
+            self._save(refreshed)
+            return refreshed["access_token"]
+
+    def connect(self, timeout: float = 180) -> dict:
+        """Run the public-client PKCE flow using a loopback callback."""
+        if not OAUTH_CLIENT_ID:
+            raise NexusApiError("Nexus OAuth client ID is pending registration.")
+        verifier = secrets.token_urlsafe(64)
+        challenge = base64.urlsafe_b64encode(hashlib.sha256(verifier.encode("ascii")).digest()).rstrip(b"=").decode("ascii")
+        state = secrets.token_urlsafe(32)
+        callback = {}
+
+        class Handler(http.server.BaseHTTPRequestHandler):
+            def do_GET(self):
+                parsed = urllib.parse.urlparse(self.path)
+                params = urllib.parse.parse_qs(parsed.query)
+                if parsed.path != "/callback" or params.get("state", [None])[0] != state:
+                    self.send_error(400, "Invalid OAuth callback")
+                    return
+                callback["code"] = params.get("code", [None])[0]
+                callback["error"] = params.get("error", [None])[0]
+                callback["error_description"] = params.get("error_description", [None])[0]
+                if callback["code"]:
+                    body = b"Nexus sign-in received. You can return to Pioneer Manager."
+                    status = 200
+                else:
+                    body = b"Nexus sign-in was not completed. You can return to Pioneer Manager."
+                    status = 400
+                self.send_response(status)
+                self.send_header("Content-Type", "text/plain; charset=utf-8")
+                self.send_header("Content-Length", str(len(body)))
+                self.send_header("Cache-Control", "no-store")
+                self.send_header("Content-Security-Policy", "default-src 'none'")
+                self.end_headers()
+                self.wfile.write(body)
+
+            def log_message(self, format, *args):
+                pass  # Callback URLs contain one-time codes: never log them.
+
+        try:
+            server = http.server.HTTPServer(("127.0.0.1", 8089), Handler)
+        except OSError as exc:
+            raise NexusApiError(f"Could not start Nexus callback on port 8089: {exc}") from exc
+        server.timeout = 1
+        params = urllib.parse.urlencode({
+            "client_id": OAUTH_CLIENT_ID, "response_type": "code", "scope": "",
+            "redirect_uri": OAUTH_REDIRECT_URI, "state": state,
+            "code_challenge_method": "S256", "code_challenge": challenge,
+        })
+        try:
+            if not webbrowser.open(f"{OAUTH_AUTHORIZE}?{params}"):
+                raise NexusApiError("Could not open a browser for Nexus sign-in.")
+            deadline = time.monotonic() + timeout
+            while "code" not in callback and "error" not in callback and time.monotonic() < deadline:
+                server.handle_request()
+        finally:
+            server.server_close()
+        if callback.get("error"):
+            detail = callback.get("error_description") or callback["error"]
+            raise NexusApiError(f"Nexus sign-in was not completed: {detail}")
+        if not callback.get("code"):
+            raise NexusApiError("Nexus sign-in timed out. Please try again.")
+        tokens = self._post_token({
+            "grant_type": "authorization_code", "redirect_uri": OAUTH_REDIRECT_URI,
+            "client_id": OAUTH_CLIENT_ID, "code": callback["code"],
+            "code_verifier": verifier,
+        })
+        with self._lock:
+            self._save(tokens)
+        try:
+            return NexusClient(self.access_token).validate()
+        except Exception:
+            try:
+                self.sign_out()
+            except NexusApiError:
+                self._tokens = None
+            raise
+
+
 class NexusClient:
-    def __init__(self, api_key: str):
-        self.api_key = (api_key or "").strip()
+    def __init__(self, token_provider: Callable[..., str]):
+        self.token_provider = token_provider
 
     def _request(self, path: str, params: Optional[dict] = None) -> dict:
-        if not self.api_key:
-            raise NexusApiError("No Nexus API key configured.")
         url = f"{API_BASE}{path}"
         if params:
             clean = {k: v for k, v in params.items() if v is not None}
             if clean:
                 url += "?" + urllib.parse.urlencode(clean)
-        req = urllib.request.Request(
-            url,
-            headers={
-                "apikey": self.api_key,
-                "User-Agent": USER_AGENT,
+        def send(token):
+            req = urllib.request.Request(url, headers={
+                "Authorization": f"Bearer {token}", "User-Agent": USER_AGENT,
                 "Accept": "application/json",
-            },
-        )
+            })
+            return urllib.request.urlopen(req, timeout=20)
         try:
-            with urllib.request.urlopen(req, timeout=20) as resp:
+            try:
+                response = send(self.token_provider())
+            except urllib.error.HTTPError as exc:
+                if exc.code != 401:
+                    raise
+                exc.close()
+                response = send(self.token_provider(force_refresh=True))
+            with response as resp:
                 body = resp.read().decode("utf-8", errors="replace")
                 data = json.loads(body) if body else {}
                 # download_link.json comes back as a bare array, so nowhere to stash rate limit info on it
@@ -68,7 +315,7 @@ class NexusClient:
             # codes below are per Nexus docs, never actually tested against a live call -
             # if the message's wrong trust the raw body over this
             if exc.code == 401:
-                raise NexusApiError("API key rejected (401). Check the key in Settings.", 401)
+                raise NexusApiError("Nexus sign-in expired or was revoked. Reconnect in Settings.", 401)
             if exc.code == 403:
                 raise NexusApiError(f"Nexus returned 403 Forbidden: {detail[:200] or '(no detail)'}", 403)
             if exc.code == 429:

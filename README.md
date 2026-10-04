@@ -34,6 +34,15 @@ python main.py
 On first launch, set your Watch Dogs 2 executable path and the `tools`
 folder path (bundled in this repo under `tools/`) from the Settings tab.
 
+Nexus Mods features use browser-based OAuth2 sign-in with PKCE. After Nexus
+registers the application and issues its public client ID, set
+`OAUTH_CLIENT_ID` in `nexus.py` and register
+`http://127.0.0.1:8089/callback` as its redirect URI. For local development,
+`PIONEER_NEXUS_CLIENT_ID` can override the ID. Access and refresh tokens are
+encrypted for the current Windows user in the ignored `nexus_auth.dat` file;
+personal API keys are not used. The Nexus sign-in button stays disabled until
+an application ID is configured.
+
 ## Building a standalone release
 
 `build.bat` compiles the app with [Nuitka](https://nuitka.net/) into a

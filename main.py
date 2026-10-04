@@ -148,6 +148,7 @@ WORKSPACE_DIR = ROOT_DIR / "workspace"
 TOOLS_DIR = ROOT_DIR / "tools"
 ARCHIVES_DIR = WORKSPACE_DIR / "archives"
 CONFIG_FILE = ROOT_DIR / "config.json"
+NEXUS_TOKEN_FILE = ROOT_DIR / "nexus_auth.dat"
 LOAD_ORDER_FILE = WORKSPACE_DIR / "load_order.json"
 CONFLICT_RULES_FILE = WORKSPACE_DIR / "conflict_rules.json"
 NEXUS_META_FILE = WORKSPACE_DIR / "nexus_meta.json"
@@ -490,7 +491,15 @@ class Backend(QObject):
 
     def __init__(self) -> None:
         super().__init__()
-        self.game_exe_path, self.tools_dir, self.eac_method, self.eac_enabled, self.nexus_api_key = self.load_config()
+        self.game_exe_path, self.tools_dir, self.eac_method, self.eac_enabled = self.load_config()
+        self.nexus_auth = nexus.NexusOAuth(NEXUS_TOKEN_FILE)
+        if CONFIG_FILE.exists():
+            # Migrate existing installs away from the disallowed personal-key field.
+            try:
+                if "nexus_api_key" in json.loads(CONFIG_FILE.read_text(encoding="utf-8")):
+                    self.save_config()
+            except (OSError, ValueError, TypeError):
+                pass
         self.auto_reference = True
         self.merging_enabled = True
         self.pipe = None
@@ -515,7 +524,6 @@ class Backend(QObject):
         tools = str(TOOLS_DIR)
         eac = 0
         eac_enabled = True
-        nexus_key = ""
         if CONFIG_FILE.exists():
             try:
                 with CONFIG_FILE.open("r", encoding="utf-8") as fh:
@@ -525,7 +533,6 @@ class Backend(QObject):
                     tools = data.get("tools_dir") or tools
                     eac = data.get("eac_method", 0)
                     eac_enabled = data.get("eac_enabled", True)
-                    nexus_key = data.get("nexus_api_key", "")
             except Exception:
                 pass
         
@@ -534,10 +541,10 @@ class Backend(QObject):
             if detected:
                 exe = detected
 
-        return exe, tools, eac, eac_enabled, nexus_key
+        return exe, tools, eac, eac_enabled
 
     def save_config(self, path: str = None, tools_dir: str = None, eac_method: int = None,
-                    eac_enabled: bool = None, nexus_api_key: str = None) -> None:
+                    eac_enabled: bool = None) -> None:
         data = {}
         if CONFIG_FILE.exists():
             try:
@@ -552,13 +559,12 @@ class Backend(QObject):
         if tools_dir is not None: self.tools_dir = tools_dir
         if eac_method is not None: self.eac_method = eac_method
         if eac_enabled is not None: self.eac_enabled = eac_enabled
-        if nexus_api_key is not None: self.nexus_api_key = nexus_api_key
             
         data["exe_path"] = self.game_exe_path
         data["tools_dir"] = str(self.tools_dir)
         data["eac_method"] = self.eac_method
         data["eac_enabled"] = self.eac_enabled
-        data["nexus_api_key"] = self.nexus_api_key
+        data.pop("nexus_api_key", None)
         with CONFIG_FILE.open("w", encoding="utf-8") as fh:
             json.dump(data, fh, indent=2)
 
@@ -656,10 +662,10 @@ class Backend(QObject):
         mod_id = nexus.parse_mod_reference(reference)
         if mod_id is None:
             return False, f"'{reference}' doesn't look like a mod URL or a mod ID."
-        if not self.nexus_api_key:
-            return False, "No Nexus API key set. Add one in Settings."
+        if not self.nexus_connected():
+            return False, "Connect to Nexus Mods in Settings first."
 
-        client = nexus.NexusClient(self.nexus_api_key)
+        client = self.nexus_client()
         try:
             info = client.get_mod_display_info("watchdogs2", mod_id)
         except nexus.NexusApiError as exc:
@@ -684,14 +690,14 @@ class Backend(QObject):
         # filename convention and sanity check the name matches. this is a guess,
         # not proof, hence the different log message - fixable via right-click Re-link.
         # no match at all is normal for Discord/manual installs, not an error.
-        if not self.nexus_api_key:
-            return False, "skipped (no API key)"
+        if not self.nexus_connected():
+            return False, "skipped (not connected to Nexus)"
 
         archive = self.find_source_archive(mod_folder)
         if archive is not None:
             try:
                 md5 = nexus.hash_file_md5(str(archive))
-                client = nexus.NexusClient(self.nexus_api_key)
+                client = self.nexus_client()
                 match = client.search_by_md5("watchdogs2", md5, expected_size=archive.stat().st_size)
             except nexus.NexusApiError as exc:
                 return False, f"lookup failed: {exc}"
@@ -707,7 +713,7 @@ class Backend(QObject):
             return False, "no source archive to hash"
 
         try:
-            client = nexus.NexusClient(self.nexus_api_key)
+            client = self.nexus_client()
             info = client.get_mod_display_info("watchdogs2", guessed_id)
         except nexus.NexusApiError as exc:
             return False, f"no source archive; filename suggested mod {guessed_id} but lookup failed: {exc}"
@@ -756,14 +762,14 @@ class Backend(QObject):
         # the first check since we've got nothing to compare against.
         # update_available/latest_version are stored separately from the installed
         # version so the flag persists across restarts and clears itself once they match again.
-        if not self.nexus_api_key:
+        if not self.nexus_connected():
             return []
         meta = self.load_nexus_meta()
         linked = [(folder, info) for folder, info in meta.items() if info.get("mod_id")]
         if not linked:
             return []
 
-        client = nexus.NexusClient(self.nexus_api_key)
+        client = self.nexus_client()
         updates = []
         for i, (mod_folder, info) in enumerate(linked):
             display = info.get("name", mod_folder)
@@ -862,15 +868,17 @@ class Backend(QObject):
             lines.append("  Fewer than 2 mods queued -- nothing to scan.")
 
         lines.append("\n[ NEXUS ]")
-        if not self.nexus_api_key:
-            lines.append("  API key: not set")
+        if not self.nexus_connected():
+            lines.append("  Account: not connected")
+            if self.nexus_auth.load_error:
+                lines.append(f"  Saved sign-in: FAILED -- {self.nexus_auth.load_error}")
         else:
             try:
-                info = nexus.NexusClient(self.nexus_api_key).validate()
+                info = self.nexus_client().validate()
                 tier = "Premium" if info.get("is_premium") else "Free"
-                lines.append(f"  API key: valid ({info.get('name', '?')}, {tier})")
+                lines.append(f"  Account: connected ({info.get('name', '?')}, {tier})")
             except nexus.NexusApiError as exc:
-                lines.append(f"  API key: FAILED -- {exc}")
+                lines.append(f"  Account: FAILED -- {exc}")
             linked = sum(1 for m in mods if m.get("nexus_mod_id"))
             updates_pending = sum(1 for m in mods if m.get("nexus_update_available"))
             lines.append(f"  Mods linked to Nexus: {linked} of {len(mods)}")
@@ -889,10 +897,9 @@ class Backend(QObject):
         lines.append("\n" + "=" * 50)
         report = "\n".join(lines)
 
-        # redact the key unconditionally - error bodies from Nexus get echoed verbatim
-        # above and this report is meant to be pasted into bug reports
-        if self.nexus_api_key:
-            report = report.replace(self.nexus_api_key, "[REDACTED]")
+        # A health report must never contain OAuth credentials.
+        for token in self.nexus_auth.sensitive_values():
+            report = report.replace(token, "[REDACTED]")
         return report
 
     def get_installed_mods(self):
@@ -1283,16 +1290,16 @@ class Backend(QObject):
     # ------------------------------------------------------------------
     # Nexus Mods integration
     # ------------------------------------------------------------------
-    def get_nexus_api_key(self) -> str:
-        return self.nexus_api_key
+    def nexus_connected(self) -> bool:
+        return self.nexus_auth.connected
 
-    def set_nexus_api_key(self, key: str) -> None:
-        self.save_config(nexus_api_key=(key or "").strip())
+    def nexus_client(self) -> nexus.NexusClient:
+        return nexus.NexusClient(self.nexus_auth.access_token)
 
-    def validate_nexus_key(self, key: str):
-        # worker thread
+    def connect_nexus(self):
+        # Worker thread: browser redirect, local callback, and token exchange.
         try:
-            info = nexus.NexusClient(key).validate()
+            info = self.nexus_auth.connect()
             name = info.get("name", "?")
             premium = "Premium" if info.get("is_premium") else "Free"
             return True, f"Connected as {name} ({premium})"
@@ -1300,6 +1307,14 @@ class Backend(QObject):
             return False, str(exc)
         except Exception as exc:
             return False, f"Unexpected error: {exc}"
+
+    def disconnect_nexus(self):
+        try:
+            self.nexus_auth.sign_out()
+            self.save_config()  # Remove any legacy personal API key from config.json.
+            return True, "Disconnected"
+        except (nexus.NexusApiError, OSError) as exc:
+            return False, str(exc)
 
     def register_nxm_handler(self):
         try:
@@ -1323,12 +1338,12 @@ class Backend(QObject):
         # worker thread. resolves nxm:// to a real URL, downloads, then runs it through
         # the same import path as a manually dropped archive so we get extraction
         # failure detection etc for free. also grabs name/author/category like MO2 does.
-        if not self.nexus_api_key:
-            return "Download failed: no Nexus API key set. Add one in Settings."
+        if not self.nexus_connected():
+            return "Download failed: connect to Nexus Mods in Settings first."
         if self.pipe is None:
             return "Download failed: pipeline.py could not be imported."
 
-        client = nexus.NexusClient(self.nexus_api_key)
+        client = self.nexus_client()
         game_domain = nxm_info.get("game_domain", "watchdogs2")
         mod_id = nxm_info.get("mod_id")
         file_id = nxm_info.get("file_id")
@@ -1396,7 +1411,7 @@ class Backend(QObject):
                 failed.append(mod_name)
             else:
                 succeeded.append(mod_name)
-                if self.nexus_api_key:
+                if self.nexus_connected():
                     ok, detail = self.auto_identify_mod(mod_name)
                     if ok:
                         self.ui_logger(f"Identified '{mod_name}' as a Nexus mod: {detail}")
@@ -3167,25 +3182,29 @@ class WD2ModManagerNative(QMainWindow):
             self.tools_input.setText(path)
             self.refresh_from_backend()
 
-    def save_nexus_key(self):
-        self.backend.set_nexus_api_key(self.nexus_key_input.text())
-
-    def validate_nexus_key(self):
-        key = self.nexus_key_input.text().strip()
-        if not key:
-            self.nexus_status_label.setText("> ENTER A KEY FIRST")
-            self.nexus_status_label.setStyleSheet("color:#FF6B00; background:transparent;")
-            return
-        self.save_nexus_key()
-        self.nexus_status_label.setText("> CHECKING...")
+    def connect_nexus(self):
+        self.btn_connect_nexus.setEnabled(False)
+        self.btn_disconnect_nexus.setEnabled(False)
+        self.nexus_status_label.setText("> OPENING NEXUS SIGN-IN...")
         self.nexus_status_label.setStyleSheet("color:#888888; background:transparent;")
-        self.start_worker(self.backend.validate_nexus_key, key, on_result=self.on_nexus_validated)
+        self.start_worker(self.backend.connect_nexus, on_result=self.on_nexus_connected)
 
-    def on_nexus_validated(self, result):
+    def on_nexus_connected(self, result):
         ok, message = result
+        self.btn_connect_nexus.setEnabled(bool(nexus.OAUTH_CLIENT_ID))
         self.nexus_status_label.setText(f"> {message}")
         self.nexus_status_label.setStyleSheet(
             "color:#55C98A; background:transparent;" if ok else "color:#FF4444; background:transparent;"
+        )
+        self.btn_disconnect_nexus.setEnabled(self.backend.nexus_connected())
+
+    def disconnect_nexus(self):
+        ok, message = self.backend.disconnect_nexus()
+        self.btn_disconnect_nexus.setEnabled(self.backend.nexus_connected())
+        self.nexus_status_label.setText(f"> {message.upper()}")
+        self.nexus_status_label.setStyleSheet(
+            "color:#666666; background:transparent;" if ok else
+            "color:#FF4444; background:transparent;"
         )
 
     def register_nxm_handler(self):
@@ -3919,39 +3938,41 @@ class WD2ModManagerNative(QMainWindow):
         fl.addWidget(nexus_label)
 
         nexus_note = QLabel(
-            "Add your personal API key (Nexus account \u2192 Settings \u2192 API Access) to enable "
-            "the \"Mod Manager Download\" button on mod pages. Free accounts still work -- the "
-            "site's download button is what supplies the one-time key, Premium just isn't required."
+            "Connect your Nexus Mods account in your browser to enable mod identification, "
+            "update checks, and Mod Manager Download. Your password is never entered here."
         )
         nexus_note.setFont(make_font(self.fonts.helvetica, 12, QFont.Weight.Normal, 0.4))
         nexus_note.setWordWrap(True)
         nexus_note.setStyleSheet("color:#666666; background:transparent;")
         fl.addWidget(nexus_note)
 
-        nexus_key_row = QHBoxLayout()
-        nexus_key_row.setSpacing(8)
-        self.nexus_key_input = QLineEdit(self.backend.get_nexus_api_key())
-        self.nexus_key_input.setEchoMode(QLineEdit.EchoMode.Password)
-        self.nexus_key_input.setFont(make_font(self.fonts.pexico, 13, QFont.Weight.Normal, 0.6))
-        self.nexus_key_input.setStyleSheet(
-            "QLineEdit{background:rgba(0,0,0,130); border:1px solid #1F1F1F; color:#FFFFFF; padding:12px 14px;}"
-            "QLineEdit:focus{border:1px solid #00A3E0;}"
-        )
-        self.nexus_key_input.editingFinished.connect(self.save_nexus_key)
-        nexus_key_row.addWidget(self.nexus_key_input, 1)
-
-        btn_validate_key = QPushButton("VALIDATE")
-        btn_validate_key.setFont(make_font(self.fonts.univers, 12, QFont.Weight.Normal, 1.1))
-        btn_validate_key.setCursor(interactive_cursor())
-        btn_validate_key.setStyleSheet(
+        nexus_auth_row = QHBoxLayout()
+        nexus_auth_row.setSpacing(8)
+        self.btn_connect_nexus = QPushButton("CONNECT TO NEXUS MODS")
+        self.btn_connect_nexus.setFont(make_font(self.fonts.univers, 12, QFont.Weight.Normal, 1.1))
+        self.btn_connect_nexus.setCursor(interactive_cursor())
+        self.btn_connect_nexus.setStyleSheet(
             "QPushButton{color:#FFFFFF;background:#111111;border:1px solid #1F1F1F;padding:12px 22px;}"
             "QPushButton:hover{background:#00A3E0;color:#000000;}"
         )
-        btn_validate_key.clicked.connect(self.validate_nexus_key)
-        nexus_key_row.addWidget(btn_validate_key)
-        fl.addLayout(nexus_key_row)
+        self.btn_connect_nexus.setEnabled(bool(nexus.OAUTH_CLIENT_ID))
+        self.btn_connect_nexus.clicked.connect(self.connect_nexus)
+        nexus_auth_row.addWidget(self.btn_connect_nexus)
+        self.btn_disconnect_nexus = QPushButton("DISCONNECT")
+        self.btn_disconnect_nexus.setFont(make_font(self.fonts.univers, 12, QFont.Weight.Normal, 1.1))
+        self.btn_disconnect_nexus.setCursor(interactive_cursor())
+        self.btn_disconnect_nexus.setStyleSheet(self.btn_connect_nexus.styleSheet())
+        self.btn_disconnect_nexus.setEnabled(self.backend.nexus_connected())
+        self.btn_disconnect_nexus.clicked.connect(self.disconnect_nexus)
+        nexus_auth_row.addWidget(self.btn_disconnect_nexus)
+        fl.addLayout(nexus_auth_row)
 
-        self.nexus_status_label = QLabel("> NO API KEY SET")
+        auth_status = ("> CONNECTED" if self.backend.nexus_connected() else
+                       f"> {self.backend.nexus_auth.load_error}" if self.backend.nexus_auth.load_error else
+                       "> CLIENT REGISTRATION PENDING" if not nexus.OAUTH_CLIENT_ID else
+                       "> NOT CONNECTED")
+        self.nexus_status_label = QLabel(auth_status)
+        self.nexus_status_label.setTextFormat(Qt.TextFormat.PlainText)
         self.nexus_status_label.setFont(make_font(self.fonts.pexico, 11, QFont.Weight.Normal, 0.8))
         self.nexus_status_label.setWordWrap(True)
         self.nexus_status_label.setStyleSheet("color:#666666; background:transparent;")
@@ -4332,10 +4353,10 @@ class WD2ModManagerNative(QMainWindow):
         if info is None:
             self.append_log(f"[WARN] Ignored unrecognized link: {url[:120]}")
             return
-        if not self.backend.get_nexus_api_key():
+        if not self.backend.nexus_connected():
             QMessageBox.warning(
-                self, "Nexus API Key Required",
-                "Add your Nexus API key in Settings before using \"Mod Manager Download\"."
+                self, "Nexus Sign-In Required",
+                "Connect to Nexus Mods in Settings before using \"Mod Manager Download\"."
             )
             self.switch_tab(3)
             return
@@ -4350,10 +4371,10 @@ class WD2ModManagerNative(QMainWindow):
 
     def link_mod_to_nexus(self, row):
         # right-click "Link to Nexus Mod..." - backfills name/author/category
-        if not self.backend.get_nexus_api_key():
+        if not self.backend.nexus_connected():
             QMessageBox.warning(
-                self, "Nexus API Key Required",
-                "Add your Nexus API key in Settings before linking a mod to Nexus."
+                self, "Nexus Sign-In Required",
+                "Connect to Nexus Mods in Settings before linking a mod to Nexus."
             )
             self.switch_tab(3)
             return
@@ -4379,10 +4400,10 @@ class WD2ModManagerNative(QMainWindow):
             self.refresh_from_backend()
 
     def identify_all_mods(self):
-        if not self.backend.get_nexus_api_key():
+        if not self.backend.nexus_connected():
             QMessageBox.warning(
-                self, "Nexus API Key Required",
-                "Add your Nexus API key in Settings before identifying mods."
+                self, "Nexus Sign-In Required",
+                "Connect to Nexus Mods in Settings before identifying mods."
             )
             self.switch_tab(3)
             return
@@ -4456,10 +4477,10 @@ class WD2ModManagerNative(QMainWindow):
         dialog.exec()
 
     def check_for_updates(self):
-        if not self.backend.get_nexus_api_key():
+        if not self.backend.nexus_connected():
             QMessageBox.warning(
-                self, "Nexus API Key Required",
-                "Add your Nexus API key in Settings before checking for updates."
+                self, "Nexus Sign-In Required",
+                "Connect to Nexus Mods in Settings before checking for updates."
             )
             self.switch_tab(3)
             return

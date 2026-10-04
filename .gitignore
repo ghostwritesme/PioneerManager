@@ -3,6 +3,8 @@ build/
 
 # Local runtime data / user config
 config.json
+nexus_auth.dat
+nexus_auth.tmp
 workspace/
 
 # Python
