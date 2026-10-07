@@ -73,7 +73,10 @@ class NexusOAuthTests(unittest.TestCase):
             return "new" if force_refresh else "old"
 
         def urlopen(request, timeout):
-            self.assertNotIn("apikey", dict(request.header_items()))
+            headers = dict(request.header_items())
+            self.assertNotIn("apikey", headers)
+            self.assertEqual(request.get_header("Application-name"), "Pioneer Manager")
+            self.assertEqual(request.get_header("Application-version"), "1.0.0")
             if request.get_header("Authorization") == "Bearer old":
                 raise urllib.error.HTTPError(request.full_url, 401, "Unauthorized", None, io.BytesIO())
             self.assertEqual(request.get_header("Authorization"), "Bearer new")
@@ -84,6 +87,22 @@ class NexusOAuthTests(unittest.TestCase):
         with mock.patch.object(nexus.urllib.request, "urlopen", side_effect=urlopen):
             self.assertEqual(nexus.NexusClient(token_provider).validate()["name"], "Tester")
         self.assertEqual(seen, [False, True])
+
+    def test_token_exchange_uses_required_application_headers(self):
+        def urlopen(request, timeout):
+            self.assertEqual(request.get_header("Application-name"), "Pioneer Manager")
+            self.assertEqual(request.get_header("Application-version"), "1.0.0")
+            self.assertEqual(request.get_header("Content-type"),
+                             "application/x-www-form-urlencoded")
+            response = io.BytesIO(json.dumps({
+                "access_token": "access", "refresh_token": "refresh", "expires_in": 3600,
+            }).encode())
+            response.headers = {}
+            return response
+
+        with mock.patch.object(nexus.urllib.request, "urlopen", side_effect=urlopen):
+            result = nexus.NexusOAuth._post_token({"grant_type": "authorization_code"})
+        self.assertEqual(result["access_token"], "access")
 
     def test_connect_uses_pkce_state_and_loopback_callback(self):
         with self.temporary_directory() as directory:

@@ -22,7 +22,9 @@ from pathlib import Path
 from typing import Callable, Optional
 
 API_BASE = "https://api.nexusmods.com/v1"
-USER_AGENT = "WD2-Mod-Manager/1.0"
+APPLICATION_NAME = "Pioneer Manager"
+APPLICATION_VERSION = "1.0.0"
+USER_AGENT = f"Pioneer-Manager/{APPLICATION_VERSION}"
 OAUTH_AUTHORIZE = "https://users.nexusmods.com/oauth/authorize"
 OAUTH_TOKEN = "https://users.nexusmods.com/oauth/token"
 OAUTH_REDIRECT_URI = "http://127.0.0.1:8089/callback"
@@ -32,6 +34,18 @@ OAUTH_CLIENT_ID = os.environ.get("PIONEER_NEXUS_CLIENT_ID", "").strip()
 
 # HKCU (not HKLM/HKCR) so registration needs no admin elevation.
 NXM_REGISTRY_PATH = r"Software\Classes\nxm"
+
+
+def _request_headers(extra: Optional[dict] = None) -> dict:
+    """Headers required by the Nexus Mods Acceptable Use Policy."""
+    headers = {
+        "Application-Name": APPLICATION_NAME,
+        "Application-Version": APPLICATION_VERSION,
+        "User-Agent": USER_AGENT,
+    }
+    if extra:
+        headers.update(extra)
+    return headers
 
 
 class NexusApiError(Exception):
@@ -151,7 +165,7 @@ class NexusOAuth:
     def _post_token(fields: dict) -> dict:
         request = urllib.request.Request(
             OAUTH_TOKEN, data=urllib.parse.urlencode(fields).encode("ascii"),
-            headers={"Content-Type": "application/x-www-form-urlencoded", "User-Agent": USER_AGENT},
+            headers=_request_headers({"Content-Type": "application/x-www-form-urlencoded"}),
         )
         try:
             with urllib.request.urlopen(request, timeout=20) as response:
@@ -285,10 +299,10 @@ class NexusClient:
             if clean:
                 url += "?" + urllib.parse.urlencode(clean)
         def send(token):
-            req = urllib.request.Request(url, headers={
-                "Authorization": f"Bearer {token}", "User-Agent": USER_AGENT,
+            req = urllib.request.Request(url, headers=_request_headers({
+                "Authorization": f"Bearer {token}",
                 "Accept": "application/json",
-            })
+            }))
             return urllib.request.urlopen(req, timeout=20)
         try:
             try:
@@ -445,7 +459,7 @@ class NexusClient:
         scheme = urllib.parse.urlparse(url).scheme.lower()
         if scheme not in ("http", "https"):
             raise NexusApiError(f"Refusing to download from a non-web URL (scheme: {scheme or 'none'}).")
-        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        req = urllib.request.Request(url, headers=_request_headers())
         with urllib.request.urlopen(req, timeout=30) as resp:
             total = int(resp.headers.get("Content-Length", 0) or 0)
             downloaded = 0
