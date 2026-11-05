@@ -27,10 +27,11 @@ APPLICATION_VERSION = "1.0.0"
 USER_AGENT = f"Pioneer-Manager/{APPLICATION_VERSION}"
 OAUTH_AUTHORIZE = "https://users.nexusmods.com/oauth/authorize"
 OAUTH_TOKEN = "https://users.nexusmods.com/oauth/token"
+OAUTH_USERINFO = "https://users.nexusmods.com/oauth/userinfo"
 OAUTH_REDIRECT_URI = "http://127.0.0.1:8089/callback"
-# Nexus Support must register this desktop app and issue its public client ID.
-# The environment override is for development only; set the issued ID here for releases.
-OAUTH_CLIENT_ID = os.environ.get("PIONEER_NEXUS_CLIENT_ID", "").strip()
+# Public identifier registered by Nexus Mods for this native PKCE client.
+# Public desktop applications cannot securely retain a client secret.
+OAUTH_CLIENT_ID = os.environ.get("PIONEER_NEXUS_CLIENT_ID", "pioneer_manager").strip()
 
 # HKCU (not HKLM/HKCR) so registration needs no admin elevation.
 NXM_REGISTRY_PATH = r"Software\Classes\nxm"
@@ -94,6 +95,24 @@ def _unprotect(data: bytes) -> bytes:
         ctypes.windll.kernel32.LocalFree(result.pbData)
 
 
+def _decode_jwt_payload(token: str) -> dict:
+    """Decode unverified JWT payload claims.
+
+    The official Nexus OAuth service issues access tokens as JWTs with user
+    metadata (e.g. ``username``, ``membership_roles``, ``id``) in the ``user`` claim.
+    """
+    try:
+        parts = token.split(".")
+        if len(parts) >= 2:
+            padded = parts[1] + "=" * (-len(parts[1]) % 4)
+            data = json.loads(base64.urlsafe_b64decode(padded.encode("ascii")).decode("utf-8", errors="replace"))
+            if isinstance(data, dict):
+                return data
+    except Exception:
+        pass
+    return {}
+
+
 class NexusOAuth:
     def __init__(self, token_path: Path):
         self.token_path = Path(token_path)
@@ -118,6 +137,17 @@ class NexusOAuth:
     def connected(self) -> bool:
         return bool(self._tokens and self._tokens.get("access_token")
                     and self._tokens.get("refresh_token"))
+
+    @property
+    def username(self) -> Optional[str]:
+        """Username extracted from the active token JWT claims."""
+        with self._lock:
+            if not self._tokens or not self._tokens.get("access_token"):
+                return None
+            user = _decode_jwt_payload(self._tokens["access_token"]).get("user")
+            if isinstance(user, dict) and user.get("username"):
+                return user["username"]
+            return None
 
     def sensitive_values(self):
         """Return credentials that must be redacted from user-shareable logs."""
@@ -249,12 +279,15 @@ class NexusOAuth:
                 pass  # Callback URLs contain one-time codes: never log them.
 
         try:
-            server = http.server.HTTPServer(("127.0.0.1", 8089), Handler)
+            # Chromium may open idle connections to a loopback address before it
+            # follows the OAuth redirect. A one-request server can then block on
+            # an idle connection and never receive the real callback.
+            server = http.server.ThreadingHTTPServer(("127.0.0.1", 8089), Handler)
         except OSError as exc:
             raise NexusApiError(f"Could not start Nexus callback on port 8089: {exc}") from exc
         server.timeout = 1
         params = urllib.parse.urlencode({
-            "client_id": OAUTH_CLIENT_ID, "response_type": "code", "scope": "",
+            "client_id": OAUTH_CLIENT_ID, "response_type": "code", "scope": "openid",
             "redirect_uri": OAUTH_REDIRECT_URI, "state": state,
             "code_challenge_method": "S256", "code_challenge": challenge,
         })
@@ -291,14 +324,16 @@ class NexusOAuth:
 class NexusClient:
     def __init__(self, token_provider: Callable[..., str]):
         self.token_provider = token_provider
+        self._last_token = None
 
     def _request(self, path: str, params: Optional[dict] = None) -> dict:
-        url = f"{API_BASE}{path}"
+        url = path if path.startswith("http://") or path.startswith("https://") else f"{API_BASE}{path}"
         if params:
             clean = {k: v for k, v in params.items() if v is not None}
             if clean:
                 url += "?" + urllib.parse.urlencode(clean)
         def send(token):
+            self._last_token = token
             req = urllib.request.Request(url, headers=_request_headers({
                 "Authorization": f"Bearer {token}",
                 "Accept": "application/json",
@@ -341,8 +376,43 @@ class NexusClient:
             raise NexusApiError("Nexus returned an unreadable response.")
 
     def validate(self) -> dict:
-        # also tells us if they're Premium
-        return self._request("/users/validate.json")
+        """Fetch the signed-in user's profile from the Nexus OAuth userinfo endpoint.
+
+        The OIDC userinfo endpoint returns ``sub``. The official Nexus OAuth service
+        also embeds user metadata (username, membership_roles, id) in the JWT
+        access token claims. We merge both sources so ``name``, ``user_id``, and
+        ``is_premium`` are always populated.
+        """
+        data = self._request(OAUTH_USERINFO)
+        if not isinstance(data, dict):
+            data = {}
+
+        try:
+            token = self._last_token or self.token_provider()
+            user_info = _decode_jwt_payload(token).get("user", {})
+            if not isinstance(user_info, dict):
+                user_info = {}
+        except Exception:
+            user_info = {}
+
+        name = data.get("name") or user_info.get("username")
+        if name:
+            data["name"] = name
+
+        roles = data.get("membership_roles") or user_info.get("membership_roles") or []
+        if isinstance(roles, str):
+            roles = [roles]
+        data["membership_roles"] = roles
+        data["is_premium"] = bool(
+            data.get("is_premium")
+            or any(r in ("premium", "lifetimepremium") for r in roles)
+        )
+
+        user_id = data.get("user_id") or data.get("sub") or user_info.get("id")
+        if user_id:
+            data["user_id"] = user_id
+
+        return data
 
     def get_mod_info(self, game_domain: str, mod_id: int) -> dict:
         return self._request(f"/games/{game_domain}/mods/{mod_id}.json")

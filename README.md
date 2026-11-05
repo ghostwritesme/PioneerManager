@@ -1,80 +1,68 @@
 # Pioneer Manager
 
-A mod manager for **Watch Dogs 2**. Handles mod archive imports, load order,
-XML conflict detection with a 3-way merge, deployment into the game's data
-folder, Easy Anti-Cheat bypass toggling, and Nexus Mods integration
-(identify installed mods, check for updates, `nxm://` download links).
+A standalone mod manager for **Watch Dogs 2** designed to kill the headache of manual mod installs. Instead of extracting `.fat`/`.dat` archives by hand and praying two mods don't overwrite each other's files, Pioneer Manager handles your load order, runs 3-way merges on conflicting XMLs, and deploys everything straight to your game folder.
 
-## Features
+## What it does
 
-- Drag-and-drop mod import from `.zip` / `.rar` / `.7z` / `.fat` archives
-- Reorderable load order with drag-and-drop
-- Conflict scan across queued mods, with automatic XML merging where safe
-- One-click deploy/merge into the game's `data_win64` folder
-- EAC bypass toggle for running with mods active
-- Nexus Mods: identify installed mods by archive hash, check for updates,
-  register as the "Mod Manager Download" handler for `nxm://` links
-- Archive cache / deploy-state views for troubleshooting missing tools or
-  a misconfigured game path
+- **Drop-in installs**: Drag and drop `.zip`, `.rar`, `.7z`, or raw `.fat` files directly into the window.
+- **Visual load order**: Reorder your mod priority via drag and drop without touching config files.
+- **Smart XML merging**: Automatic conflict scanner that performs 3-way merges on overlapping XML tables so you don't lose tweaks from competing mods.
+- **One-click deploy**: Packages and pushes your active load order directly into `data_win64`.
+- **Built-in EAC toggle**: Turn Easy Anti-Cheat off with a single click so your mods actually load without game crashes.
+- **Native Nexus Mods support**: Log in via official OAuth2 PKCE (no sketchy raw API keys to paste, tokens stay encrypted locally in `nexus_auth.dat`). Supports one-click `nxm://` downloads, automatic update checks, and mod identification.
+- **Health check tab**: Instantly flags broken game paths, missing unpacker binaries, or permission snags before you hit launch.
 
 ## Requirements
 
-- Windows
-- Python 3.10+ (only needed if running from source; the packaged release
-  is a standalone `.exe`)
-- [PyQt6](https://pypi.org/project/PyQt6/)
+- **OS**: Windows 10 / 11 (x64)
+- **Running the release**: Just grab the latest zip from [Releases](https://github.com/ghostwritesme/PioneerManager/releases), extract it anywhere, and run `Pioneer_Manager.exe`.
+- **Running from source**: Python 3.10+ with [PyQt6](https://pypi.org/project/PyQt6/).
 
 ## Running from source
 
 ```bash
+git clone https://github.com/ghostwritesme/PioneerManager.git
+cd PioneerManager
 pip install -r requirements.txt
 python main.py
 ```
 
-On first launch, set your Watch Dogs 2 executable path and the `tools`
-folder path (bundled in this repo under `tools/`) from the Settings tab.
+### First launch setup
 
-Nexus Mods features use browser-based OAuth2 sign-in with PKCE. After Nexus
-registers the application and issues its public client ID, set
-`OAUTH_CLIENT_ID` in `nexus.py` and register
-`http://127.0.0.1:8089/callback` as its redirect URI. For local development,
-`PIONEER_NEXUS_CLIENT_ID` can override the ID. Access and refresh tokens are
-encrypted for the current Windows user in the ignored `nexus_auth.dat` file;
-personal API keys are not used. The Nexus sign-in button stays disabled until
-an application ID is configured.
+1. Open the **Settings** tab.
+2. Point the game path to your `WatchDogs2.exe` (or your root install directory).
+3. Confirm the `tools/` path points to the bundled unpacker directory.
+4. *(Optional)* Click **Connect to Nexus Mods** to authenticate via your default browser.
 
-## Building a standalone release
+## Building a standalone binary
 
-`build.bat` compiles the app with [Nuitka](https://nuitka.net/) into a
-standalone folder, copies in the bundled tools, and zips the result:
+To compile the standalone `.exe` using [Nuitka](https://nuitka.net/):
 
 ```bash
 build.bat
 ```
 
-Output lands in `build/main.dist/` (unzipped) and
-`build/Pioneer_Manager_Release.zip`.
+This packages the entire Python environment, embeds the bundled tools, and drops a portable zip into `build/Pioneer_Manager_Release.zip`.
 
-## Project layout
+> **Build requirement**: Needs **Visual Studio 2022 Build Tools** with the **Desktop development with C++** workload installed. The script targets MSVC specifically to avoid AVX instruction crashes on older or budget x64 CPUs, ensuring broad compatibility.
 
-- `main.py` — UI and application entry point (PyQt6)
-- `pipeline.py` — mod extraction/deployment pipeline
-- `merger.py` — XML 3-way merge logic for conflicting mod files
-- `gibbed.py` — wrapper around the bundled Gibbed unpack/pack/convert tools
-- `nexus.py` — Nexus Mods API client, `nxm://` link handling, single-instance guard
-- `tools/` — third-party WD2 archive tools (see `tools/license.txt`)
-- `assets/` — icons, fonts, loading GIFs
+## Architecture
 
-## Credits & licensing
+```plaintext
+PioneerManager/
+├── main.py        # PyQt6 GUI and main loop
+├── pipeline.py    # Unpacking, mod staging, and patch repacking
+├── merger.py      # 3-way XML conflict resolution and diff merging
+├── gibbed.py      # Wrapper around Rick's Gibbed.Disrupt tools
+├── nexus.py       # Nexus Mods API client, OAuth2 PKCE, and nxm:// handler
+├── tools/         # Gibbed unpack/pack binaries (see tools/license.txt)
+└── assets/        # Stylesheets, icons, and bundled typography
+```
 
-- **Archive tools** (`tools/`): Gibbed.Disrupt tools by Rick (`rick@gibbed.us`),
-  with community modifications — see `tools/license.txt` (zlib-style license).
-- **Fonts** (`assets/fonts/`): Rajdhani, Inter, IBM Plex Sans, Archivo, and
-  Pixeloid Mono are distributed under the SIL Open Font License 1.1. See
-  `assets/fonts/LICENSES.md` and `assets/fonts/OFL.txt` for copyright notices,
-  source information, and the license text.
-- This project (source code in this repository) is licensed under the
-  **GNU General Public License v3.0** — see `LICENSE`.
+## Credits & License
 
-Not affiliated with Ubisoft. Watch Dogs is a trademark of Ubisoft
-Entertainment.
+- **Archive tools** (`tools/`): Built on Rick's Gibbed.Disrupt suite (`rick@gibbed.us`) with community updates.
+- **Fonts** (`assets/fonts/`): Rajdhani, Inter, IBM Plex Sans, Archivo, and Pixeloid Mono (SIL Open Font License 1.1).
+- **License**: Open-source under the GNU General Public License v3.0 (see `LICENSE`).
+
+**Disclaimer**: Not affiliated with Ubisoft. Watch Dogs 2 is a registered trademark of Ubisoft Entertainment.

@@ -1300,7 +1300,7 @@ class Backend(QObject):
         # Worker thread: browser redirect, local callback, and token exchange.
         try:
             info = self.nexus_auth.connect()
-            name = info.get("name", "?")
+            name = info.get("name") or getattr(self.nexus_auth, "username", None) or "?"
             premium = "Premium" if info.get("is_premium") else "Free"
             return True, f"Connected as {name} ({premium})"
         except nexus.NexusApiError as exc:
@@ -3182,6 +3182,12 @@ class WD2ModManagerNative(QMainWindow):
             self.tools_input.setText(path)
             self.refresh_from_backend()
 
+    def update_nexus_auth_controls(self):
+        connected = self.backend.nexus_connected()
+        self.btn_connect_nexus.setText("RECONNECT" if connected else "CONNECT TO NEXUS MODS")
+        self.btn_connect_nexus.setEnabled(bool(nexus.OAUTH_CLIENT_ID))
+        self.btn_disconnect_nexus.setEnabled(connected)
+
     def connect_nexus(self):
         self.btn_connect_nexus.setEnabled(False)
         self.btn_disconnect_nexus.setEnabled(False)
@@ -3191,16 +3197,15 @@ class WD2ModManagerNative(QMainWindow):
 
     def on_nexus_connected(self, result):
         ok, message = result
-        self.btn_connect_nexus.setEnabled(bool(nexus.OAUTH_CLIENT_ID))
+        self.update_nexus_auth_controls()
         self.nexus_status_label.setText(f"> {message}")
         self.nexus_status_label.setStyleSheet(
             "color:#55C98A; background:transparent;" if ok else "color:#FF4444; background:transparent;"
         )
-        self.btn_disconnect_nexus.setEnabled(self.backend.nexus_connected())
 
     def disconnect_nexus(self):
         ok, message = self.backend.disconnect_nexus()
-        self.btn_disconnect_nexus.setEnabled(self.backend.nexus_connected())
+        self.update_nexus_auth_controls()
         self.nexus_status_label.setText(f"> {message.upper()}")
         self.nexus_status_label.setStyleSheet(
             "color:#666666; background:transparent;" if ok else
@@ -3819,6 +3824,7 @@ class WD2ModManagerNative(QMainWindow):
         browse.setStyleSheet(
             "QPushButton{color:#FFFFFF;background:#111111;border:1px solid #1F1F1F;padding:12px 22px;}"
             "QPushButton:hover{background:#00A3E0;color:#000000;}"
+            "QPushButton:disabled{color:#555555;background:#0D0D0D;border-color:#161616;}"
         )
         browse.clicked.connect(self.browse_exe)
         path_row.addWidget(browse)
@@ -3966,8 +3972,9 @@ class WD2ModManagerNative(QMainWindow):
         self.btn_disconnect_nexus.clicked.connect(self.disconnect_nexus)
         nexus_auth_row.addWidget(self.btn_disconnect_nexus)
         fl.addLayout(nexus_auth_row)
+        self.update_nexus_auth_controls()
 
-        auth_status = ("> CONNECTED" if self.backend.nexus_connected() else
+        auth_status = ((f"> CONNECTED AS {self.backend.nexus_auth.username.upper()}" if getattr(self.backend.nexus_auth, "username", None) else "> CONNECTED") if self.backend.nexus_connected() else
                        f"> {self.backend.nexus_auth.load_error}" if self.backend.nexus_auth.load_error else
                        "> CLIENT REGISTRATION PENDING" if not nexus.OAUTH_CLIENT_ID else
                        "> NOT CONNECTED")
@@ -3975,7 +3982,8 @@ class WD2ModManagerNative(QMainWindow):
         self.nexus_status_label.setTextFormat(Qt.TextFormat.PlainText)
         self.nexus_status_label.setFont(make_font(self.fonts.pexico, 11, QFont.Weight.Normal, 0.8))
         self.nexus_status_label.setWordWrap(True)
-        self.nexus_status_label.setStyleSheet("color:#666666; background:transparent;")
+        status_color = "#55C98A" if self.backend.nexus_connected() else "#666666"
+        self.nexus_status_label.setStyleSheet(f"color:{status_color}; background:transparent;")
         fl.addWidget(self.nexus_status_label)
 
         # not shown in the UI, keeping the wiring (register_nxm_handler / update_nxm_status) around for later

@@ -88,6 +88,56 @@ class NexusOAuthTests(unittest.TestCase):
             self.assertEqual(nexus.NexusClient(token_provider).validate()["name"], "Tester")
         self.assertEqual(seen, [False, True])
 
+    def test_validate_uses_userinfo_endpoint_and_parses_roles(self):
+        client = nexus.NexusClient(lambda: "test-token")
+        for roles, expected_premium in [
+            (["member"], False),
+            (["member", "premium"], True),
+            (["lifetimepremium"], True),
+            ([], False),
+        ]:
+            def urlopen(request, timeout):
+                self.assertEqual(request.full_url, nexus.OAUTH_USERINFO)
+                self.assertEqual(request.get_header("Authorization"), "Bearer test-token")
+                self.assertEqual(request.get_header("Application-name"), "Pioneer Manager")
+                response = io.BytesIO(json.dumps({
+                    "sub": 99999,
+                    "name": "NexusUser",
+                    "membership_roles": roles,
+                }).encode())
+                response.headers = {}
+                return response
+
+            with mock.patch.object(nexus.urllib.request, "urlopen", side_effect=urlopen):
+                result = client.validate()
+                self.assertEqual(result["name"], "NexusUser")
+                self.assertEqual(result["user_id"], 99999)
+                self.assertEqual(result["is_premium"], expected_premium)
+
+    def test_validate_extracts_user_from_jwt_token_when_userinfo_only_has_sub(self):
+        payload = {
+            "sub": "121317093",
+            "user": {
+                "id": 121317093,
+                "username": "ghostwritesme",
+                "membership_roles": ["member"],
+            },
+        }
+        raw_b64 = nexus.base64.urlsafe_b64encode(nexus.json.dumps(payload).encode()).decode().rstrip("=")
+        fake_jwt = f"header.{raw_b64}.sig"
+        client = nexus.NexusClient(lambda: fake_jwt)
+
+        def urlopen(request, timeout):
+            response = io.BytesIO(nexus.json.dumps({"sub": "121317093"}).encode())
+            response.headers = {}
+            return response
+
+        with mock.patch.object(nexus.urllib.request, "urlopen", side_effect=urlopen):
+            result = client.validate()
+            self.assertEqual(result["name"], "ghostwritesme")
+            self.assertEqual(result["user_id"], "121317093")
+            self.assertFalse(result["is_premium"])
+
     def test_token_exchange_uses_required_application_headers(self):
         def urlopen(request, timeout):
             self.assertEqual(request.get_header("Application-name"), "Pioneer Manager")
