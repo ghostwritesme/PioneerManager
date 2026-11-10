@@ -28,3 +28,8 @@ Developed using the Gibbed.Disrupt framework tools (WD2Extract, WD2Pack, and Con
 ## License
 
 GNU General Public License v3.0 (GPL-3.0). See [LICENSE](LICENSE) for more details.
+
+## Development & Authenticity Disclaimer
+
+This project is 100% human-crafted. No generative AI or LLMs were used to write the application code, logic, or structure.
+
